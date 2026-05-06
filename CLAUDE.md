@@ -23,32 +23,80 @@ contract. The submodule at
 | What figure came from where | [`experiments/PROVENANCE.md`](./experiments/PROVENANCE.md) |
 | How to compile / sync the paper | this file → *Overleaf sync* |
 
-## The workshop demo (canonical task list)
+## The workshop demo
 
-Whether the demo runs through Claude Code or through the Colab notebook
-(`experiments/notebooks/01_workshop_followalong.ipynb`), the **task list is
-identical**. The notebook is one cell per step; the agent is one prompt for
-all six.
+### Canonical Phase-1 prompt (local run)
 
-1. **Smoke-test the environment.** `cd experiments/tools/manylatents-omics &&
-   uv sync && .venv/bin/python -c "import manylatents; print(manylatents.__version__)"`.
-   Bail out and report if the import fails.
-2. **Encode DNA.** `.venv/bin/python -m manylatents.main +experiment=encode_evo2 data.preset=brca1`.
-   Output: per-variant Evo2 embeddings under `experiments/outputs/`.
-3. **Encode protein.** `.venv/bin/python -m manylatents.main +experiment=encode_esm3 data.preset=brca1`.
-4. **Compute cross-modal alignment.** `.venv/bin/python -m manylatents.main +experiment=alignment_matrix`.
-   Output: a 2×2 alignment matrix and per-sample $k$-NN Jaccard scores.
-5. **Generate Figure 1.** Plot the alignment heatmap to
-   `experiments/analysis/figures/alignment_heatmap.pdf`. (When `analysis/`
-   has a `NN_figures.py`, call it; otherwise, write a one-off script.)
-6. **Update the paper.** Fill in `paper/main.tex` §Results with the headline
-   number from step 4, point Figure 1 at the new PDF, then `expaper build
-   --open` to compile locally (or `expaper sync push` to publish to Overleaf
-   if linked).
+When the user says some variant of:
 
-A successful run produces an entry in `experiments/EXPERIMENT_LOG.md` and a
-`PROVENANCE.md` line for the figure. The agent should make these entries
-itself — they are the demo's reproducibility evidence.
+> *"Just score the top 200 ClinVar missense variants, for BRCA1 or whatever,
+> with ESM-1b. Plot a UMAP of the embeddings colored by pathogenic vs benign,
+> log to wandb so I can see the thing already."*
+
+the harness is wired so the answer is two commands. **Do not improvise around
+this** — the wiring is the demo.
+
+```bash
+# 0. Smoke-check the env (skip if already done)
+cd experiments/tools/manylatents-omics
+uv sync
+.venv/bin/python -c "import manylatents; print(manylatents.__version__)"
+
+# 1. Encode ESM-1b on top 200 BRCA1 ClinVar missense, log to wandb
+.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1
+
+# 2. UMAP + scatter plot + wandb image (resumes the same project)
+cd ../..
+.venv/bin/python experiments/analysis/00_demo_umap.py
+```
+
+Both commands read `WANDB_ENTITY` / `WANDB_PROJECT` from env (defaults
+`cmvcordova` / `upper-bound-2026`, baked via `${oc.env:...}` in the experiment
+config). Output: a wandb run under
+[`cmvcordova/upper-bound-2026`](https://wandb.ai/cmvcordova/upper-bound-2026)
+with a UMAP scatter image, a coordinates table, and pathogenic/benign counts.
+Local artifacts at `experiments/analysis/figures/demo_umap_brca1.pdf` and
+`experiments/analysis/results/demo_umap_brca1.csv`.
+
+**If the user changes the gene** (e.g. "do TP53 instead"), override at the CLI:
+
+```bash
+.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1 \
+    data.genes=[TP53] name=encode_esm1b_tp53
+.venv/bin/python experiments/analysis/00_demo_umap.py --experiment encode_esm1b_tp53
+```
+
+Append an entry to [`experiments/EXPERIMENT_LOG.md`](./experiments/EXPERIMENT_LOG.md)
+with the wandb run URL — that's the demo's reproducibility evidence.
+
+### Phase-2 prompt (cluster handoff)
+
+Same prompt, plus *"run it on the cluster."* Add `+cluster=mila` (or `tamia`,
+`drac`) and the harness dispatches via sbatch instead of running locally:
+
+```bash
+.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1 \
+    +cluster=mila +resources=gpu
+```
+
+Cluster configs come from the parent `manylatents` package (`configs/cluster/*.yaml`).
+The post-step (`00_demo_umap.py`) still runs locally once the sbatch finishes
+and embeddings land in `outputs/`.
+
+### Generic multi-modal pattern
+
+For deeper experimentation (the cross-modal alignment story), the harness
+also supports the encode/encode/align flow used in earlier merging-dogma
+runs:
+
+```bash
+.venv/bin/python -m manylatents.main +experiment=encode_evo2          # DNA
+.venv/bin/python -m manylatents.main +experiment=encode_esm3          # protein
+.venv/bin/python -m manylatents.main +experiment=alignment_matrix     # k-NN Jaccard
+```
+
+Configs at `experiments/configs/manylatents-omics/experiment/`. The agent can
+chain these the same way as the demo prompt.
 
 ## Working with this project
 

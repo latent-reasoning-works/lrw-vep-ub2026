@@ -140,29 +140,50 @@ Scaffolding tool — already used to generate this layout. Relevant commands:
   `.gitmodules` for reproducibility.
 - **Overleaf** (optional): `paper/` is bidirectionally synced via git subtree.
   Linked post-init with `expaper link-overleaf <url>`.
-- **Hugging Face Hub:** model weights for Evo2 and ESM3 download on first
-  encode. Orthrus may require a separate path.
-- **W&B** (optional): logger configured in `encode_*.yaml` configs as
-  `logger: wandb`. Override to `logger: null` if not logging.
+- **Hugging Face Hub:** model weights for Evo2, ESM-1b/2, and ESM3 download on
+  first encode. Orthrus may require a separate path.
+- **W&B:** every `encode_*.yaml` sets `logger: wandb`. Defaults baked via
+  `${oc.env:WANDB_PROJECT,upper-bound-2026}` and `${oc.env:WANDB_ENTITY,cmvcordova}`
+  — set in `.env` to override per-checkout. Auth via `wandb login` (writes
+  `~/.netrc`).
 - **Anthropic API** (Claude Code): the agent's runtime — not a code dep, but a
   participant in the demo loop.
 
 ## 6. Deployment & Infrastructure
 
 This is a research repo, not a service — "deployment" means *the demo path*.
+The workshop ships two demo phases:
 
-- **Live demo (preferred):** Claude Code on the presenter's laptop, against a
-  fresh clone. Heavy GPU steps run remotely via SSH if needed.
+**Phase 1 — local agentic run (the canonical test):** the user prompts the
+agent ("score top 200 ClinVar BRCA1 missense with ESM-1b, UMAP, log to
+wandb"). The agent reads `CLAUDE.md`, runs:
+
+```
+cd experiments/tools/manylatents-omics
+.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1
+cd ../..
+.venv/bin/python experiments/analysis/00_demo_umap.py
+```
+
+Results land in W&B at `cmvcordova/upper-bound-2026`.
+
+**Phase 2 — cluster sbatch handoff:** same prompt, but the agent dispatches
+the encode step via `sbatch` to Mila / Tamia / DRAC (whichever cluster's
+config the user picks at run time). Demonstrates the harness's portability.
+
 - **Attendee fallback (Colab):** `experiments/notebooks/01_workshop_followalong.ipynb`
-  has an "Open in Colab" badge; runs end-to-end on a free T4 with the same
-  six-task script the agent executes.
+  has an "Open in Colab" badge; runs the same six tasks manually on a free
+  T4. Available once the repo is flipped public.
 - **CI** (future): a `--smoke` flag on each numbered script (per
-  `experiments/CLAUDE.md` contract); runs in <60s on CPU.
+  `experiments/CLAUDE.md` contract); runs in <60s on CPU. `00_demo_umap.py`
+  already supports `--smoke`.
 
 ## 7. Security Considerations
 
-- **Credentials:** none committed. `WANDB_API_KEY`, `HUGGING_FACE_HUB_TOKEN`
-  read from env. `.env.example` lists names; `.env` is gitignored.
+- **Credentials:** none committed. `WANDB_API_KEY` lives in `~/.netrc` after
+  `wandb login` (never in env or committed). `WANDB_ENTITY`,
+  `WANDB_PROJECT`, and `HUGGING_FACE_HUB_TOKEN` read from env via `.env`.
+  `.env.example` lists names; `.env` is gitignored.
 - **Public exposure:** the repo is **private** during workshop preparation;
   intended to be flipped public the day of the talk. No PHI / PII used —
   ClinVar variants are public.

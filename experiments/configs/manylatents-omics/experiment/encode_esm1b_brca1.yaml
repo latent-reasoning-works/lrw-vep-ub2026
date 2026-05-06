@@ -1,0 +1,58 @@
+# @package _global_
+# Workshop canonical demo: encode top 200 BRCA1 ClinVar missense variants
+# with ESM-1b. UMAP + plot + wandb image happens in the follow-up script
+# experiments/analysis/00_demo_umap.py.
+#
+# Resolves the prompt:
+#   "Just score the top 200 clinvar missense variants, for BRCA1 or whatever,
+#    with esm-1b. plot a umap of the embeddings colored by pathogenic vs
+#    benign, run it on the cluster and log to wandb so I can see the thing
+#    already"
+#
+# Run from experiments/tools/manylatents-omics:
+#   .venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1
+# Then from experiments/:
+#   .venv/bin/python analysis/00_demo_umap.py
+
+defaults:
+  - /config
+  - override /data: clinvar
+  - override /algorithms/latent: esm
+  - override /metrics: null
+  - override /logger: wandb
+  - _self_
+
+name: encode_esm1b_brca1
+project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
+seed: 42
+
+data:
+  genes: [BRCA1]
+  pathogenicity: all
+  max_variants: 200
+  batch_size: 32
+
+algorithms:
+  latent:
+    model_name: esm1b_t33_650M_UR50S
+    repr_layer: null   # final layer
+    max_length: 1022
+
+# Save embeddings + labels so 00_demo_umap.py can pick them up without
+# re-encoding. Hydra outputs land under outputs/<date>/<time>/.
+callbacks:
+  embedding:
+    save:
+      _target_: manylatents.callbacks.embedding.SaveEmbeddings
+      save_dir: ${paths.output_dir}/embeddings
+      experiment_name: ${name}
+      save_format: npy
+      use_timestamp: true
+      save_metric_tables: true
+
+logger:
+  wandb:
+    project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
+    entity: ${oc.env:WANDB_ENTITY,cmvcordova}
+    tags: [workshop, vep, brca1, esm1b]
+    job_type: encode
