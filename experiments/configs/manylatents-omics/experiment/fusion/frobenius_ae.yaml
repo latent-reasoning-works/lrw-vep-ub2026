@@ -1,0 +1,37 @@
+# @package _global_
+#
+# Fusion: Frobenius-Regularized Autoencoder (MBYL-style)
+#
+# Extends autoencoder with Jacobian Frobenius norm penalty.
+# Encourages smooth, locally-linear mappings that preserve local geometry.
+# Output dim: 256
+#
+# Run with:
+#   python scripts/run_experiment manylatents fusion/frobenius_ae
+#
+#   # Adjust regularization strength:
+#   python scripts/run_experiment manylatents fusion/frobenius_ae \
+#     algorithms.latent.jacobian_weight=0.001
+
+defaults:
+  - ../fusion_base
+
+name: fusion_frobenius_ae
+
+# Disable eval_only for training
+eval_only: false
+
+algorithms:
+  latent:
+    _target_: manylatents.dogma.algorithms.FrobeniusAEFusion
+    target_dim: 256
+    hidden_dims: [512, 256]
+    dropout: 0.1
+    activation: gelu
+    lr: 1e-3
+    epochs: 50
+    batch_size: 128
+    normalize: false
+    # Jacobian regularization
+    jacobian_weight: 0.01
+    n_jacobian_samples: 10

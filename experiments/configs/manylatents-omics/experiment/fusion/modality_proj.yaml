@@ -1,0 +1,24 @@
+# @package _global_
+#
+# Fusion: Per-Modality PCA Projection
+#
+# Apply PCA independently to each channel, then concatenate.
+# Preserves modality-specific structure before fusion.
+# Output dim: 512 (256 per modality)
+#
+# Run with:
+#   python scripts/run_experiment manylatents fusion/modality_proj
+
+defaults:
+  - ../fusion_base
+
+name: fusion_modality_proj
+
+algorithms:
+  latent:
+    _target_: manylatents.algorithms.latent.MergingModule
+    strategy: modality_proj
+    channels: null
+    normalize: false
+    target_dim: 256  # Per-modality dimension
+    proj_aggregation: concat  # concat or mean

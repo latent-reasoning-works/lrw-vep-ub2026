@@ -1,0 +1,22 @@
+# @package _global_
+# Evo2 DNA Encoder Experiment
+# Encodes DNA sequences using Evo-2 foundation model
+#
+# Run with:
+#   python scripts/run_experiment manylatents encode_evo2
+
+defaults:
+  - /config
+  - override /data: sequences_dna
+  - override /algorithms/latent: evo2
+  - override /metrics: null
+  - override /logger: wandb
+  - _self_
+
+name: evo2_encoding
+project: cross-dogma
+seed: 42
+
+# Override data preset at runtime: data.preset=gfp,brca1,synthetic_8aa
+data:
+  preset: gfp

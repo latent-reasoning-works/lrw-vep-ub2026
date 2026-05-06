@@ -1,0 +1,74 @@
+# @package _global_
+#
+# Pairwise Alignment Matrix Experiment
+#
+# Computes k-NN Jaccard overlap between DNA and Protein embeddings.
+# Quantifies cross-modal geometric alignment.
+#
+# Run with:
+#   python scripts/run_experiment manylatents alignment_matrix
+#
+# Outputs:
+#   - 2x2 symmetric alignment matrix (diagonal=1.0, off-diagonal=Jaccard)
+#   - Per-sample overlap scores for analysis
+#   - Figure 1 data: alignment heatmap
+
+defaults:
+  - /config
+  - override /metrics/embedding: null
+  - _self_
+
+name: alignment_matrix
+project: cross-dogma
+
+seed: 42
+debug: false
+eval_only: true
+
+# Alignment parameters
+alignment:
+  k: 25  # Neighborhood size for Jaccard computation
+
+# Data: multi-channel precomputed embeddings
+data:
+  _target_: manylatents.data.PrecomputedDataModule
+  path: ${paths.output_dir}/embeddings/clinvar
+  channels:
+    - evo2   # DNA embeddings
+    - esm3   # Protein embeddings
+  labels_path: ${paths.output_dir}/embeddings/clinvar/labels.pt
+  batch_size: 128
+  num_workers: 0
+  mode: full
+
+# No algorithm transformation - compute alignment on raw embeddings
+algorithms:
+  latent:
+    _target_: manylatents.algorithms.latent.NoOp
+    n_components: null
+
+# Metrics: k-NN preservation (Jaccard overlap) between modalities
+metrics:
+  embedding:
+    knn_preservation:
+      _target_: manylatents.metrics.KNNPreservation
+      _partial_: true
+      n_neighbors: ${alignment.k}
+      metric: euclidean
+      return_per_sample: true
+    lid:
+      _target_: manylatents.metrics.LocalIntrinsicDimensionality
+      _partial_: true
+      k: ${alignment.k}
+      return_per_sample: true
+
+# Callbacks: save alignment results
+callbacks:
+  embedding:
+    save:
+      _target_: manylatents.callbacks.embedding.SaveEmbeddings
+      save_dir: ${paths.output_dir}/alignment
+      experiment_name: ${name}
+      save_format: npy
+      use_timestamp: true
+      save_metric_tables: true

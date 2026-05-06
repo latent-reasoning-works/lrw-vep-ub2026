@@ -1,12 +1,16 @@
-# Tool registry for lrw-vep-ub2026
-tools: {}
-
+tools:
+  manylatents-omics:
+    path: tools/manylatents-omics
+    entrypoint: -m manylatents.main
+    run_from: tools/manylatents-omics
+    description: 'Biological extensions for manylatents (Hydra plugin): popgen and
+      central dogma encoders. Invoked via manylatents.main with extension-registered
+      configs.'
 experiment:
   name: lrw-vep-ub2026
-  description: "lrw-vep-ub2026 experiments"
+  description: lrw-vep-ub2026 experiments
   authors: []
   date_created: '2026-05-06'
-
 validation:
   require_commit_pins: false
   validate_configs: true

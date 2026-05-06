@@ -1,0 +1,30 @@
+# @package _global_
+#
+# Fusion: Bottleneck Autoencoder
+#
+# Learned fusion using symmetric encoder-decoder with bottleneck.
+# Trained with MSE reconstruction loss.
+# Output dim: 256
+#
+# Run with:
+#   python scripts/run_experiment manylatents fusion/autoencoder
+
+defaults:
+  - ../fusion_base
+
+name: fusion_autoencoder
+
+# Disable eval_only for training
+eval_only: false
+
+algorithms:
+  latent:
+    _target_: manylatents.dogma.algorithms.AutoencoderFusion
+    target_dim: 256
+    hidden_dims: [512, 256]
+    dropout: 0.1
+    activation: gelu
+    lr: 1e-3
+    epochs: 50
+    batch_size: 128
+    normalize: false

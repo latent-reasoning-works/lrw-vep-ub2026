@@ -1,0 +1,22 @@
+# @package _global_
+# ESM3 Protein Encoder Experiment
+# Encodes protein sequences using ESM-3 foundation model
+#
+# Run with:
+#   python scripts/run_experiment manylatents encode_esm3
+
+defaults:
+  - /config
+  - override /data: sequences_protein
+  - override /algorithms/latent: esm3
+  - override /metrics: null
+  - override /logger: wandb
+  - _self_
+
+name: esm3_encoding
+project: cross-dogma
+seed: 42
+
+# Override data preset at runtime: data.preset=gfp,brca1,synthetic_8aa
+data:
+  preset: gfp

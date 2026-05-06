@@ -1,0 +1,79 @@
+# @package _global_
+#
+# Single-Modality Baselines Experiment
+#
+# Computes LID distributions and downstream AUC for each modality separately.
+# Used to establish baselines before fusion comparison.
+#
+# Run with:
+#   python scripts/run_experiment manylatents single_modality_baselines modality=evo2
+#   python scripts/run_experiment manylatents single_modality_baselines modality=esm3
+#
+# Outputs:
+#   - Per-sample LID values for each modality
+#   - Per-modality AUC via logistic regression
+#   - Table 1 data: modality, dim, mean_lid, std_lid, auc
+
+defaults:
+  - /config
+  - override /metrics/embedding: null
+  - _self_
+
+name: single_modality_baselines
+project: cross-dogma
+
+seed: 42
+debug: false
+eval_only: true
+
+# Modality to evaluate - override at runtime: modality=evo2 or modality=esm3
+modality: evo2
+
+# Data: single channel from precomputed embeddings
+data:
+  _target_: manylatents.data.PrecomputedDataModule
+  path: ${paths.output_dir}/embeddings/clinvar
+  channels:
+    - ${modality}
+  labels_path: ${paths.output_dir}/embeddings/clinvar/labels.pt
+  batch_size: 128
+  num_workers: 0
+  mode: full
+
+# No algorithm transformation - just evaluate raw embeddings
+algorithms:
+  latent:
+    _target_: manylatents.algorithms.latent.NoOp
+    n_components: null
+
+# Metrics: LID with multi-k sweep for robustness
+metrics:
+  embedding:
+    lid:
+      _target_: manylatents.metrics.LocalIntrinsicDimensionality
+      _partial_: true
+      k: [5, 10, 25, 50, 100]
+      return_per_sample: true
+    pr:
+      _target_: manylatents.metrics.ParticipationRatio
+      _partial_: true
+      n_neighbors: [5, 10, 25, 50, 100]
+      return_per_sample: true
+
+# Callbacks: save metrics and run linear probe
+callbacks:
+  embedding:
+    save:
+      _target_: manylatents.callbacks.embedding.SaveEmbeddings
+      save_dir: ${paths.output_dir}/baselines
+      experiment_name: ${name}_${modality}
+      save_format: npy
+      use_timestamp: true
+      save_metric_tables: true
+    probe:
+      _target_: manylatents.callbacks.embedding.LinearProbeCallback
+      embedding_key: embeddings
+      probes: [logistic]
+      cv_folds: 5
+      metrics: [auroc]
+      scale_features: true

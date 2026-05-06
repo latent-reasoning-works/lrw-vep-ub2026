@@ -1,0 +1,21 @@
+# @package _global_
+#
+# Fusion: Concatenation with L2 Normalization
+#
+# Concatenate L2-normalized embeddings.
+# Output dim: 3584 (evo2=2048 + esm3=1536)
+#
+# Run with:
+#   python scripts/run_experiment manylatents fusion/concat_norm
+
+defaults:
+  - ../fusion_base
+
+name: fusion_concat_norm
+
+algorithms:
+  latent:
+    _target_: manylatents.algorithms.latent.MergingModule
+    strategy: concat
+    channels: null
+    normalize: true  # L2-normalize each channel before concat

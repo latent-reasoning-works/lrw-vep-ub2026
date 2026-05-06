@@ -1,0 +1,23 @@
+# @package _global_
+#
+# Fusion: Truncated SVD
+#
+# Concatenate embeddings, then apply truncated SVD.
+# Similar to concat_pca but with different centering behavior.
+# Output dim: 256
+#
+# Run with:
+#   python scripts/run_experiment manylatents fusion/svd
+
+defaults:
+  - ../fusion_base
+
+name: fusion_svd
+
+algorithms:
+  latent:
+    _target_: manylatents.algorithms.latent.MergingModule
+    strategy: svd
+    channels: null
+    normalize: false
+    target_dim: 256

@@ -1,0 +1,22 @@
+# @package _global_
+# Orthrus RNA Encoder Experiment
+# Encodes RNA sequences using Orthrus foundation model
+#
+# Run with:
+#   python scripts/run_experiment manylatents encode_orthrus
+
+defaults:
+  - /config
+  - override /data: sequences_rna
+  - override /algorithms/latent: orthrus
+  - override /metrics: null
+  - override /logger: wandb
+  - _self_
+
+name: orthrus_encoding
+project: cross-dogma
+seed: 42
+
+# Override data preset at runtime: data.preset=gfp,brca1,synthetic_8aa
+data:
+  preset: gfp

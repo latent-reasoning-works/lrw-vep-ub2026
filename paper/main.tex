@@ -1,0 +1,99 @@
+\documentclass{article}
+
+% arXiv-bound preprint. Switch to \usepackage{neurips_2024} for anonymous
+% submission, or \usepackage[final]{neurips_2024} for camera-ready.
+\usepackage[preprint]{neurips_2024}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{../shared/figures/}{../experiments/analysis/figures/}}
+
+\title{A Well-Plugged Harness for Agentic Variant Effect Prediction}
+
+\author{%
+  C\'esar M. Valdez C\'ordova \\
+  Latent Reasoning Works \\
+  \texttt{cesar@latent-reasoning.works} \\
+  % Co-authors go here
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Tool-calling is necessary but insufficient for biological research engineering.
+Agents can shell out to bioinformatics CLIs, but the surface they land on is
+hostile: stateful pipelines, undocumented config conventions, and silent
+failure modes that look like success. We argue that the missing piece is a
+\emph{harness}: opinionated geometric primitives, reproducibility scaffolding,
+and agent-friendly APIs over normally-unfriendly biological surfaces. We
+demonstrate this with a worked variant effect prediction (VEP) example driven
+end-to-end from a natural-language prompt, using the \texttt{manylatents-omics}
+extension to the \texttt{manylatents} framework. The harness, the experiment,
+and this paper were produced by an agent operating against the same repository
+the reader can clone today. % TODO(agent): tighten after results land.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+% TODO(agent): expand stakes — current pipelines for VEP require manual model
+% selection, config wiring, and CSV plumbing. The agent failure mode is silent
+% misalignment: predictions look reasonable but the wrong embedding space was
+% used.
+
+\section{Background}
+\label{sec:background}
+
+% TODO(agent): brief on (a) Evo2 / Orthrus / ESM3 as foundation models,
+% (b) cross-modal embedding alignment, (c) why VEP is the right testbed.
+
+\section{Method}
+\label{sec:method}
+
+We use the \texttt{manylatents-omics} extension as the substrate. Configs in
+\texttt{experiments/configs/manylatents-omics/experiment/} act as prompts:
+\texttt{encode\_evo2.yaml} for DNA encoding, \texttt{encode\_esm3.yaml} for
+protein encoding, and \texttt{alignment\_matrix.yaml} for cross-modal $k$-NN
+Jaccard overlap.
+
+% TODO(agent): describe the alignment matrix computation. Reference §3.2 of
+% the manylatents-omics ARCHITECTURE.md for the formal definition.
+
+\section{Results}
+\label{sec:results}
+
+% TODO(agent): produce Table 1 from results/alignment.csv after running:
+%   cd experiments/tools/manylatents-omics
+%   .venv/bin/python -m manylatents.main +experiment=alignment_matrix
+% Then generate Figure 1 via experiments/analysis/NN_figures.py::figure_alignment.
+
+\section{Discussion}
+\label{sec:discussion}
+
+% TODO(agent): one paragraph each on (a) what the harness made cheap, (b) what
+% the agent still needed human input for, (c) the failure modes encountered.
+
+\section{Limitations}
+\label{sec:limitations}
+
+% TODO(agent): be honest about what the demo did and did not cover.
+
+\section*{Acknowledgments}
+
+This paper, the experiments cited within, and the harness used to produce
+both, were authored in collaboration with a Claude Code agent operating
+against the public \texttt{lrw-vep-ub2026} repository.
+
+\bibliographystyle{plainnat}
+\bibliography{../shared/bib/references}
+
+\end{document}

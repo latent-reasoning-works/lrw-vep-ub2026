@@ -1,0 +1,27 @@
+# @package _global_
+#
+# Fusion: Concatenation + PCA
+#
+# Concatenate embeddings, then apply PCA to reduce dimensionality.
+# Provides interpretable loadings for channel importance analysis.
+# Output dim: 256
+#
+# Run with:
+#   python scripts/run_experiment manylatents fusion/concat_pca
+#
+#   # Different target dimensions:
+#   python scripts/run_experiment manylatents fusion/concat_pca \
+#     algorithms.latent.target_dim=128
+
+defaults:
+  - ../fusion_base
+
+name: fusion_concat_pca
+
+algorithms:
+  latent:
+    _target_: manylatents.algorithms.latent.MergingModule
+    strategy: concat_pca
+    channels: null
+    normalize: false
+    target_dim: 256

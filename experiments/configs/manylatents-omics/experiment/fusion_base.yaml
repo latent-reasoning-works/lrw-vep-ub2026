@@ -1,0 +1,82 @@
+# @package _global_
+#
+# Base configuration for fusion strategy comparison experiments.
+#
+# Defines shared settings for evaluating fusion methods on preservation and AUC.
+# Override `algorithms.latent` in derived configs for specific strategies.
+#
+# Prerequisites:
+#   Run encoding experiments first:
+#   - python scripts/run_experiment manylatents encode_evo2
+#   - python scripts/run_experiment manylatents encode_esm3
+#
+# Usage (use derived configs, not this directly):
+#   python scripts/run_experiment manylatents fusion/concat_pca
+#
+# Outputs:
+#   - Fused embeddings saved to outputs/fusion/
+#   - Per-sample LID (pre and post fusion)
+#   - Preservation score: Spearman rho between pre/post LID
+#   - Downstream AUC via logistic regression
+#   - Table 2 data: method, output_dim, preservation, auc
+
+defaults:
+  - /config
+  - override /metrics/embedding: null
+  - _self_
+
+name: fusion_comparison
+project: cross-dogma
+
+seed: 42
+debug: false
+eval_only: true
+
+# Data: multi-channel precomputed embeddings with labels
+data:
+  _target_: manylatents.data.PrecomputedDataModule
+  path: ${paths.output_dir}/embeddings/clinvar
+  channels:
+    - evo2   # DNA embeddings (2048-dim)
+    - esm3   # Protein embeddings (1536-dim)
+  labels_path: ${paths.output_dir}/embeddings/clinvar/labels.pt
+  batch_size: 128
+  num_workers: 0
+  mode: full
+
+# Metrics: LID with multi-k sweep for preservation analysis
+metrics:
+  embedding:
+    lid:
+      _target_: manylatents.metrics.LocalIntrinsicDimensionality
+      _partial_: true
+      k: [5, 10, 25, 50, 100]
+      return_per_sample: true
+    pr:
+      _target_: manylatents.metrics.ParticipationRatio
+      _partial_: true
+      n_neighbors: [5, 10, 25, 50, 100]
+      return_per_sample: true
+    tsa:
+      _target_: manylatents.metrics.TangentSpaceApproximation
+      _partial_: true
+      n_neighbors: [5, 10, 25, 50, 100]
+      return_per_sample: true
+
+# Callbacks: save embeddings and run downstream evaluation
+callbacks:
+  embedding:
+    save:
+      _target_: manylatents.callbacks.embedding.SaveEmbeddings
+      save_dir: ${paths.output_dir}/fusion
+      experiment_name: ${name}
+      save_format: npy
+      use_timestamp: true
+      save_metric_tables: true
+    probe:
+      _target_: manylatents.callbacks.embedding.LinearProbeCallback
+      embedding_key: embeddings
+      probes: [logistic, mlp]
+      cv_folds: 5
+      metrics: [accuracy, auroc, auprc]
+      scale_features: true
