@@ -1,0 +1,186 @@
+#!/usr/bin/env python3
+"""
+Run experiment using Hydra group overrides.
+
+Uses experiment=<name> (group override) instead of --config-name, which breaks
+Hydra composition. Supports run_from field in meta.yaml for tools that need an
+inner subdirectory as CWD.
+
+Usage:
+  python3 scripts/run_experiment manylatents eval_algorithm
+  python3 scripts/run_experiment manylatents eval_algorithm --validate-only
+  python3 scripts/run_experiment manylatents eval_algorithm seed=123
+"""
+
+import sys
+import os
+import argparse
+import yaml
+import subprocess
+import signal
+import time
+from pathlib import Path
+
+
+def error(msg):
+    print(f"[ERROR] {msg}")
+    return False
+
+
+def info(msg):
+    print(f"[INFO] {msg}")
+
+
+def load_yaml(path):
+    try:
+        with open(path) as f:
+            return yaml.safe_load(f)
+    except Exception as e:
+        error(f"Failed to load {path}: {e}")
+        return None
+
+
+def validate_setup():
+    for path in ["configs", "configs/meta.yaml", "tools"]:
+        if not os.path.exists(path):
+            return error(f"{path} not found")
+    return True
+
+
+def build_command(entrypoint, tool_config_dir, config_name, additional_args):
+    if entrypoint.startswith("-m "):
+        base_cmd = ["python3", "-m", entrypoint[3:]]
+    else:
+        base_cmd = ["python3", entrypoint]
+
+    # Use group override, not --config-name (which breaks Hydra composition)
+    return base_cmd + [
+        f"--config-path={tool_config_dir}",
+        f"experiment={config_name}"
+    ] + additional_args
+
+
+def run_process(cmd, cwd, search_packages=None):
+    """Run the command with optional Hydra search path packages."""
+    env = os.environ.copy()
+
+    # Set HYDRA_SEARCH_PACKAGES if tool specifies search_packages
+    # This enables DynamicSearchPathPlugin to discover pkg:// configs
+    if search_packages:
+        env["HYDRA_SEARCH_PACKAGES"] = search_packages
+        info(f"SearchPath packages: {search_packages}")
+
+    in_venv = env.get('VIRTUAL_ENV') is not None
+    final_cmd = cmd if in_venv else ["uv", "run"] + cmd
+
+    if in_venv:
+        info(f"Using venv: {os.environ.get('VIRTUAL_ENV')}")
+
+    process = subprocess.Popen(
+        final_cmd, cwd=cwd, env=env,
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+        text=True, bufsize=1, universal_newlines=True
+    )
+
+    def handle_signal(signum, frame):
+        print(f"\n[WARNING] Signal {signum} received, terminating...")
+        if process.poll() is None:
+            process.terminate()
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                process.kill()
+                process.wait()
+        sys.exit(1)
+
+    signal.signal(signal.SIGTERM, handle_signal)
+    signal.signal(signal.SIGINT, handle_signal)
+
+    start_time = last_output = time.time()
+    timeout = 300
+
+    while process.poll() is None:
+        if time.time() - start_time > timeout:
+            error(f"Timeout after {timeout}s")
+            process.terminate()
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                process.kill()
+            return 1
+
+        if time.time() - last_output > 60:
+            print("[WARNING] No output for 60s - process may be hanging")
+            last_output = time.time()
+
+        try:
+            line = process.stdout.readline()
+            if line:
+                print(line.rstrip())
+                last_output = time.time()
+        except Exception:
+            break
+
+    code = process.poll()
+    if code != 0:
+        error(f"Process exited with code {code}")
+    return code
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Run experiments with direct config paths")
+    parser.add_argument("tool", help="Tool name (e.g., manylatents)")
+    parser.add_argument("config_path", help="Config path (e.g., figure1_method_comparison/pca_swissroll)")
+    parser.add_argument("--validate-only", action="store_true", help="Only validate, don't run")
+    args, additional_args = parser.parse_known_args()
+
+    if not validate_setup():
+        return 1
+
+    meta = load_yaml("configs/meta.yaml")
+    if not meta:
+        return 1
+
+    tool_info = meta.get("tools", {}).get(args.tool)
+    if not tool_info:
+        error(f"Tool '{args.tool}' not found. Available: {list(meta.get('tools', {}).keys())}")
+        return 1
+
+    config_file = Path("configs") / args.tool / "experiment" / f"{args.config_path}.yaml"
+    if not config_file.exists():
+        return error(f"Config not found: {config_file}") or 1
+
+    tool_path = tool_info.get("path")
+    if not tool_path or not os.path.exists(tool_path):
+        return error(f"Tool path invalid: {tool_path}") or 1
+
+    entrypoint = tool_info.get("entrypoint")
+    if not entrypoint:
+        return error(f"No entrypoint for '{args.tool}'") or 1
+
+    config_name = args.config_path[:-5] if args.config_path.endswith('.yaml') else args.config_path
+    tool_config_dir = (Path("configs") / args.tool).resolve()
+    cmd = build_command(entrypoint, tool_config_dir, config_name, additional_args)
+
+    print("=" * 60)
+    print(f"Experiment: {config_name}")
+    print(f"Tool: {args.tool} | Config: {config_file}")
+    print(f"Command: {' '.join(cmd)}")
+    print("=" * 60)
+
+    if args.validate_only:
+        info("Validation only - not running")
+        return 0
+
+    info("Launching experiment...")
+    search_packages = tool_info.get("search_packages")
+
+    # Support run_from field for tools that need an inner subdirectory as CWD
+    run_from = tool_info.get("run_from")
+    run_cwd = os.path.join(tool_path, run_from) if run_from else tool_path
+
+    return run_process(cmd, run_cwd, search_packages=search_packages)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

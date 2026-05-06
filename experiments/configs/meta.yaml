@@ -1,0 +1,13 @@
+# Tool registry for lrw-vep-ub2026
+tools: {}
+
+experiment:
+  name: lrw-vep-ub2026
+  description: "lrw-vep-ub2026 experiments"
+  authors: []
+  date_created: '2026-05-06'
+
+validation:
+  require_commit_pins: false
+  validate_configs: true
+  check_dependencies: true
