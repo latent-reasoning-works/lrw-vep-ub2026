@@ -40,6 +40,12 @@ this** — the wiring is the demo.
 > experiment config pins `data_dir` and `hydra.run.dir` against
 > `${hydra:runtime.cwd}` — running from anywhere else lands files in the
 > wrong place.
+>
+> **Sandbox fallback:** if your environment blocks direct `.venv/bin/python`
+> invocation (some Claude Code sandboxes do), swap in
+> `uv run --project experiments/tools/manylatents-omics --extra workshop python`
+> for the `experiments/tools/manylatents-omics/.venv/bin/python` prefix in
+> both commands below. Same args after the prefix.
 
 ```bash
 # 0. Sync the venv (workshop extra brings fair-esm + umap-learn)

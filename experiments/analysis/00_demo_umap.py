@@ -106,7 +106,7 @@ def main():
         name=f"{args.experiment}_umap",
         job_type="plot",
         tags=["workshop", "vep", "brca1", "esm1b", "umap"],
-        reinit=True,
+        reinit="finish_previous",
     )
     run.log({
         "umap_scatter": wandb.Image(str(fig_paths[1])),
