@@ -53,17 +53,29 @@ def latest_hydra_run(experiment_name: str) -> Path:
 
 
 def load_encoded(experiment_name: str) -> tuple[np.ndarray, pd.DataFrame]:
-    """Load (embeddings, metadata) saved by SaveEmbeddings callback."""
+    """Load (embeddings, metadata) from the BatchEncoder save_path .pt file.
+
+    BatchEncoder._save_embeddings writes torch.save(dict, path) where the
+    dict is {embeddings: Tensor, labels: ndarray, variant_ids: list[str]}.
+    Returns embeddings as numpy + a DataFrame with label/variant_id columns.
+    """
+    import torch
     run = latest_hydra_run(experiment_name)
-    emb_dir = run / "embeddings"
-    npys = sorted(emb_dir.glob("*.npy"))
-    if not npys:
-        raise FileNotFoundError(f"No .npy embeddings under {emb_dir}")
-    emb = np.load(npys[0])
-    meta_path = emb_dir / "metadata.csv"
-    if not meta_path.exists():
-        meta_path = next(emb_dir.glob("*.csv"), None)
-    meta = pd.read_csv(meta_path) if meta_path else pd.DataFrame()
+    pt_path = run / "embeddings.pt"
+    if not pt_path.exists():
+        # Fall back to any .pt under the run dir
+        pts = sorted(run.rglob("*.pt"))
+        if not pts:
+            raise FileNotFoundError(f"No .pt embeddings under {run}")
+        pt_path = pts[0]
+    state = torch.load(pt_path, map_location="cpu", weights_only=False)
+    emb = state["embeddings"]
+    if hasattr(emb, "numpy"):
+        emb = emb.numpy()
+    meta = pd.DataFrame({
+        "variant_id": state.get("variant_ids", list(range(len(emb)))),
+        "label": state.get("labels", np.full(len(emb), -1)),
+    })
     return emb, meta
 
 

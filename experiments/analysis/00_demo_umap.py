@@ -36,12 +36,11 @@ from manylatents.algorithms.latent.umap import UMAPModule
 import _config as cfg
 
 
+LABEL_NAMES = {0: "benign", 1: "pathogenic", -1: "vus"}
 PALETTE = {
     "pathogenic": "#D72638",
-    "likely_pathogenic": "#F7A072",
     "benign": "#2A9D8F",
-    "likely_benign": "#86CD82",
-    "uncertain": "#888888",
+    "vus": "#888888",
 }
 
 
@@ -56,16 +55,18 @@ def main():
     if args.smoke:
         rng = np.random.default_rng(0)
         emb = rng.standard_normal((40, 1280)).astype(np.float32)
-        labels = np.array(["pathogenic"] * 20 + ["benign"] * 20)
-        meta = pd.DataFrame({"clinical_significance": labels,
-                             "variant_id": [f"v{i}" for i in range(40)]})
+        meta = pd.DataFrame({
+            "label": [1] * 20 + [0] * 20,
+            "variant_id": [f"v{i}" for i in range(40)],
+        })
     else:
         emb, meta = cfg.load_encoded(args.experiment)
-        if "clinical_significance" not in meta.columns:
+        if "label" not in meta.columns:
             raise ValueError(
-                f"metadata missing 'clinical_significance' column. Got: {list(meta.columns)}"
+                f"metadata missing 'label' column. Got: {list(meta.columns)}"
             )
-        labels = meta["clinical_significance"].str.lower().str.replace(" ", "_").to_numpy()
+
+    labels = np.array([LABEL_NAMES.get(int(v), "vus") for v in meta["label"]])
 
     # UMAP via manylatents — direct API, no wrapper.
     reducer = UMAPModule(
