@@ -30,6 +30,28 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py  (workshop-pace: bundled data + max_variants=50)
+
+- **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026); manylatents v0.1.5; fair-esm 2.0.0
+- **Cmd (encode):** `WANDB_INIT_TIMEOUT=180 WANDB_ENTITY=... experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=encode_esm1b_brca1 algorithms.latent.encoder_config.device=mps data.max_variants=50`
+- **Cmd (umap):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/00_demo_umap.py`
+- **Output:** `experiments/outputs/2026-05-07/14-07-48/embeddings.pt` (50 × 1280); figures + CSV
+- **wandb (encode):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/62tyx05m
+- **wandb (umap):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/io084q8b
+- **Data:** Bundled `experiments/data/clinvar/` (committed snapshot from 2026-05-07). `data.max_variants=50` cap → 35 pathogenic / 15 benign (P-heavy slice of the top of the TSV).
+- **Notes:** Workshop-pace path. **Encode took 15 s on MPS** (3.25 it/s, 50 sequences). End-to-end ~25 s including UMAP. Validates the bundled data load (no NCBI download needed) and the `data.max_variants=50` workshop override. First-run wandb init timed out at the default 90 s — `WANDB_INIT_TIMEOUT=180` (now in `.env.example`) fixed it; relevant on conference Wi-Fi.
+
+## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py  (sandboxed agent re-run, post-940dc58)
+
+- **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026); manylatents v0.1.5; fair-esm 2.0.0
+- **Cmd (encode):** `WANDB_ENTITY=cesar-valdez-mcgill-university WANDB_PROJECT=upper-bound-2026 uv run --project experiments/tools/manylatents-omics --extra workshop python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=encode_esm1b_brca1 algorithms.latent.encoder_config.device=mps` (run from project root)
+- **Cmd (umap):** `uv run --project experiments/tools/manylatents-omics --extra workshop python experiments/analysis/00_demo_umap.py`
+- **Output:** `experiments/outputs/2026-05-07/12-12-25/embeddings.pt` (200 × 1280); `experiments/analysis/figures/demo_umap_brca1.{pdf,png}`; `experiments/analysis/results/demo_umap_brca1.csv`
+- **wandb (encode):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/0bafk3xk
+- **wandb (umap):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/4cfcb862
+- **Data:** ClinVar BRCA1 ≥1-star missense (cached). Final split: 131 benign / 69 pathogenic — identical to prior runs at `seed=42`.
+- **Notes:** Sandboxed agent run forced onto the `uv run --project ... --extra workshop` overlay (direct `.venv/bin/python` invocation blocked). Confirms the commit-`940dc58` fixes hold under sandbox: **no `data_dir=<abs>` override needed** and **no post-hoc `cp` of the hydra run dir** — `embeddings.pt` landed at `experiments/outputs/2026-05-07/12-12-25/` and `00_demo_umap.py` resolved it via `_config.latest_hydra_run` on the first try. MPS encode at 3.38 it/s, ~60 s for 200 sequences. UMAP step ~5 s. End-to-end Phase-1 wall clock ~70 s after warm-up. Difficulty 8.5/10 vs the prior 6/10 — both CWD-coupled landmines and the MPS device note are now folded into the canonical CLAUDE.md sequence.
+
 ## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py  (post-fix baseline, MPS, run-from-project-root)
 
 - **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026); manylatents v0.1.5; fair-esm 2.0.0

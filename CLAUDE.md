@@ -48,28 +48,40 @@ this** — the wiring is the demo.
 > both commands below. Same args after the prefix.
 
 ```bash
-# 0. Sync the venv (workshop extra brings fair-esm + umap-learn)
+# 0. Sync the venv (workshop extra brings fair-esm + umap-learn).
+#    Variant data is ALREADY in the repo at experiments/data/clinvar/
+#    (~2 MB, see that dir's README). No NCBI download needed.
 (cd experiments/tools/manylatents-omics && uv sync --extra workshop)
 
-# 1. One-time data prep (BRCA1 ClinVar missense; ~440MB cached download)
-python3 experiments/tools/manylatents-omics/scripts/download_clinvar.py \
-    --gene BRCA1 --max-variants 1000 \
-    --data-dir experiments/tools/manylatents-omics/data/clinvar
-
-# 2. Encode ESM-1b on top 200 BRCA1 missense, log to wandb. Mac users:
+# 1. Encode ESM-1b on top 200 BRCA1 missense, log to wandb. Mac users:
 #    add `algorithms.latent.encoder_config.device=mps` for ~5x speedup over
-#    the cpu default. The --config-path is required: our experiment YAMLs
-#    live outside the manylatents pkg search path. Use `experiment=...`
-#    (override) not `+experiment=...` (add) — `experiment` is already in
-#    the base config's defaults.
+#    the cpu default. For a faster live demo (~15s on MPS, ~75s on CPU),
+#    append `data.max_variants=50`. The --config-path is required: our
+#    experiment YAMLs live outside the manylatents pkg search path. Use
+#    `experiment=...` (override) not `+experiment=...` (add) — `experiment`
+#    is already in the base config's defaults.
 experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
     --config-path=$(pwd)/experiments/configs/manylatents-omics \
     experiment=encode_esm1b_brca1
 
-# 3. UMAP + scatter plot + wandb image (separate run under same project)
+# 2. UMAP + scatter plot + wandb image (separate run under same project)
 experiments/tools/manylatents-omics/.venv/bin/python \
     experiments/analysis/00_demo_umap.py
 ```
+
+**Want a different gene or a fresher snapshot?** The bundled data is the
+2026-05-07 BRCA1 pull. To regenerate (requires a ~440 MB NCBI download
+on the first run; cached after):
+
+```bash
+python3 experiments/tools/manylatents-omics/scripts/download_clinvar.py \
+    --gene <GENE> --max-variants 1000 \
+    --data-dir experiments/data/clinvar
+```
+
+See `experiments/data/clinvar/README.md` for built-in UniProt mappings
+(BRCA1, BRCA2, TP53, PTEN, MLH1, MSH2) and the `--uniprot <accession>`
+flag for everything else.
 
 Both commands read `WANDB_ENTITY` / `WANDB_PROJECT` from env (defaults
 `cesar-valdez-mcgill-university` / `upper-bound-2026`, baked via
@@ -79,13 +91,13 @@ with a UMAP scatter image, a coordinates table, and pathogenic/benign counts.
 Local artifacts at `experiments/analysis/figures/demo_umap_brca1.pdf` and
 `experiments/analysis/results/demo_umap_brca1.csv`.
 
-**If the user changes the gene** (e.g. "do TP53 instead"), re-run download
-with the new gene + override at the CLI (still from project root):
+**If the user changes the gene** (e.g. "do TP53 instead"), they need to
+regenerate the bundled data first (BRCA1 is what's pre-cached):
 
 ```bash
 python3 experiments/tools/manylatents-omics/scripts/download_clinvar.py \
     --gene TP53 --max-variants 1000 \
-    --data-dir experiments/tools/manylatents-omics/data/clinvar
+    --data-dir experiments/data/clinvar
 experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
     --config-path=$(pwd)/experiments/configs/manylatents-omics \
     experiment=encode_esm1b_brca1 \

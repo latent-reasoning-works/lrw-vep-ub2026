@@ -31,7 +31,7 @@ name: encode_esm1b_brca1_mila
 project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
 seed: 42
 
-data_dir: ${hydra:runtime.cwd}/experiments/tools/manylatents-omics/data
+data_dir: ${hydra:runtime.cwd}/experiments/data
 
 data:
   genes: [BRCA1]

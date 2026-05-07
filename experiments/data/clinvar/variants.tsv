@@ -1,0 +1,1001 @@
+variation_id	gene_symbol	label	clinical_significance	review_status	chromosome	start	stop	variant_type	name	uniprot	wt_aa	position	alt_aa
+55634	BRCA1	0	Benign	reviewed by expert panel	17	43045694	43045694	single nucleotide variant	NM_007294.4(BRCA1):c.5576C>G (p.Pro1859Arg)	P38398	P	1859	R
+183951	BRCA1	0	Benign	reviewed by expert panel	17	43045698	43045698	single nucleotide variant	NM_007294.4(BRCA1):c.5572A>C (p.Ile1858Leu)	P38398	I	1858	L
+55631	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43045709	43045709	single nucleotide variant	NM_007294.4(BRCA1):c.5561T>C (p.Leu1854Pro)	P38398	L	1854	P
+55615	BRCA1	0	Benign	reviewed by expert panel	17	43045739	43045739	single nucleotide variant	NM_007294.4(BRCA1):c.5531T>G (p.Leu1844Arg)	P38398	L	1844	R
+55613	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43045748	43045748	single nucleotide variant	NM_007294.4(BRCA1):c.5522G>A (p.Ser1841Asn)	P38398	S	1841	N
+91656	BRCA1	1	Pathogenic	reviewed by expert panel	17	43045754	43045754	single nucleotide variant	NM_007294.4(BRCA1):c.5516T>C (p.Leu1839Ser)	P38398	L	1839	S
+55611	BRCA1	1	Pathogenic	reviewed by expert panel	17	43045757	43045757	single nucleotide variant	NM_007294.4(BRCA1):c.5513T>A (p.Val1838Glu)	P38398	V	1838	E
+37679	BRCA1	1	Pathogenic	reviewed by expert panel	17	43045761	43045761	single nucleotide variant	NM_007294.4(BRCA1):c.5509T>C (p.Trp1837Arg)	P38398	W	1837	R
+55607	BRCA1	1	Pathogenic	reviewed by expert panel	17	43045761	43045761	single nucleotide variant	NM_007294.4(BRCA1):c.5509T>G (p.Trp1837Gly)	P38398	W	1837	G
+55573	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43047685	43047685	single nucleotide variant	NM_007294.4(BRCA1):c.5425G>T (p.Val1809Phe)	P38398	V	1809	F
+55568	BRCA1	0	Benign	reviewed by expert panel	17	43047699	43047699	single nucleotide variant	NM_007294.4(BRCA1):c.5411T>A (p.Val1804Asp)	P38398	V	1804	D
+55552	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43049162	43049162	single nucleotide variant	NM_007294.4(BRCA1):c.5365G>A (p.Ala1789Thr)	P38398	A	1789	T
+37660	BRCA1	1	Pathogenic	reviewed by expert panel	17	43049164	43049164	single nucleotide variant	NM_007294.4(BRCA1):c.5363G>T (p.Gly1788Val)	P38398	G	1788	V
+55551	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43049164	43049164	single nucleotide variant	NM_007294.4(BRCA1):c.5363G>A (p.Gly1788Asp)	P38398	G	1788	D
+55548	BRCA1	-1	not provided	reviewed by expert panel	17	43049168	43049168	single nucleotide variant	NM_007294.4(BRCA1):c.5359T>A (p.Cys1787Ser)	P38398	C	1787	S
+91649	BRCA1	1	Pathogenic	reviewed by expert panel	17	43049170	43049170	single nucleotide variant	NM_007294.4(BRCA1):c.5357T>C (p.Leu1786Pro)	P38398	L	1786	P
+96949	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43049188	43049188	single nucleotide variant	NM_007294.4(BRCA1):c.5339T>G (p.Leu1780Arg)	P38398	L	1780	R
+55530	BRCA1	1	Pathogenic	reviewed by expert panel	17	43051063	43051063	single nucleotide variant	NM_007294.4(BRCA1):c.5332G>A (p.Asp1778Asn)	P38398	D	1778	N
+17694	BRCA1	1	Pathogenic	reviewed by expert panel	17	43051071	43051071	single nucleotide variant	NM_007294.4(BRCA1):c.5324T>G (p.Met1775Arg)	P38398	M	1775	R
+17695	BRCA1	1	Pathogenic	reviewed by expert panel	17	43051071	43051071	single nucleotide variant	NM_007294.4(BRCA1):c.5324T>A (p.Met1775Lys)	P38398	M	1775	K
+37656	BRCA1	1	Pathogenic	reviewed by expert panel	17	43051098	43051098	single nucleotide variant	NM_007294.4(BRCA1):c.5297T>G (p.Ile1766Ser)	P38398	I	1766	S
+55510	BRCA1	1	Pathogenic	reviewed by expert panel	17	43051104	43051104	single nucleotide variant	NM_007294.4(BRCA1):c.5291T>C (p.Leu1764Pro)	P38398	L	1764	P
+55505	BRCA1	1	Pathogenic	reviewed by expert panel	17	43051113	43051113	single nucleotide variant	NM_007294.4(BRCA1):c.5282T>C (p.Phe1761Ser)	P38398	F	1761	S
+96944	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43057075	43057075	single nucleotide variant	NM_007294.4(BRCA1):c.5254G>A (p.Ala1752Thr)	P38398	A	1752	T
+55481	BRCA1	0	Benign	reviewed by expert panel	17	43057077	43057077	single nucleotide variant	NM_007294.4(BRCA1):c.5252G>A (p.Arg1751Gln)	P38398	R	1751	Q
+55482	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43057077	43057077	single nucleotide variant	NM_007294.4(BRCA1):c.5252G>C (p.Arg1751Pro)	P38398	R	1751	P
+37650	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43057087	43057087	single nucleotide variant	NM_007294.4(BRCA1):c.5242G>T (p.Gly1748Cys)	P38398	G	1748	C
+55461	BRCA1	1	Pathogenic	reviewed by expert panel	17	43057117	43057117	single nucleotide variant	NM_007294.4(BRCA1):c.5212G>A (p.Gly1738Arg)	P38398	G	1738	R
+37648	BRCA1	1	Pathogenic	reviewed by expert panel	17	43057122	43057122	single nucleotide variant	NM_007294.4(BRCA1):c.5207T>C (p.Val1736Ala)	P38398	V	1736	A
+55453	BRCA1	0	Benign	reviewed by expert panel	17	43057131	43057131	single nucleotide variant	NM_007294.4(BRCA1):c.5198A>G (p.Asp1733Gly)	P38398	D	1733	G
+91641	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43063335	43063335	single nucleotide variant	NM_007294.4(BRCA1):c.5191G>A (p.Glu1731Lys)	P38398	E	1731	K
+55438	BRCA1	0	Benign	reviewed by expert panel	17	43063368	43063368	single nucleotide variant	NM_007294.4(BRCA1):c.5158A>G (p.Thr1720Ala)	P38398	T	1720	A
+55433	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43063373	43063373	single nucleotide variant	NM_007294.4(BRCA1):c.5153G>C (p.Trp1718Ser)	P38398	W	1718	S
+55416	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063882	43063882	single nucleotide variant	NM_007294.4(BRCA1):c.5144G>A (p.Ser1715Asn)	P38398	S	1715	N
+55414	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063883	43063883	single nucleotide variant	NM_007294.4(BRCA1):c.5143A>C (p.Ser1715Arg)	P38398	S	1715	R
+55415	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43063883	43063883	single nucleotide variant	NM_007294.4(BRCA1):c.5143A>T (p.Ser1715Cys)	P38398	S	1715	C
+55412	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43063888	43063888	single nucleotide variant	NM_007294.4(BRCA1):c.5138T>C (p.Val1713Ala)	P38398	V	1713	A
+55407	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063903	43063903	single nucleotide variant	NM_007294.4(BRCA1):c.5123C>A (p.Ala1708Glu)	P38398	A	1708	E
+37638	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063909	43063909	single nucleotide variant	NM_007294.4(BRCA1):c.5117G>A (p.Gly1706Glu)	P38398	G	1706	E
+55406	BRCA1	0	Benign	reviewed by expert panel	17	43063909	43063909	single nucleotide variant	NM_007294.4(BRCA1):c.5117G>C (p.Gly1706Ala)	P38398	G	1706	A
+55399	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43063928	43063928	single nucleotide variant	NM_007294.4(BRCA1):c.5098A>G (p.Thr1700Ala)	P38398	T	1700	A
+37636	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063930	43063930	single nucleotide variant	NM_007294.4(BRCA1):c.5096G>A (p.Arg1699Gln)	P38398	R	1699	Q
+55397	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43063930	43063930	single nucleotide variant	NM_007294.4(BRCA1):c.5096G>C (p.Arg1699Pro)	P38398	R	1699	P
+55396	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063931	43063931	single nucleotide variant	NM_007294.4(BRCA1):c.5095C>T (p.Arg1699Trp)	P38398	R	1699	W
+37635	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43063936	43063936	single nucleotide variant	NM_007294.4(BRCA1):c.5090G>A (p.Cys1697Tyr)	P38398	C	1697	Y
+55392	BRCA1	1	Pathogenic	reviewed by expert panel	17	43063937	43063937	single nucleotide variant	NM_007294.4(BRCA1):c.5089T>C (p.Cys1697Arg)	P38398	C	1697	R
+55383	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43063951	43063951	single nucleotide variant	NM_007294.4(BRCA1):c.5075A>T (p.Asp1692Val)	P38398	D	1692	V
+37633	BRCA1	1	Pathogenic	reviewed by expert panel	17	43067608	43067608	single nucleotide variant	NM_007294.4(BRCA1):c.5074G>C (p.Asp1692His)	P38398	D	1692	H
+55365	BRCA1	1	Pathogenic	reviewed by expert panel	17	43067628	43067628	single nucleotide variant	NM_007294.4(BRCA1):c.5054C>T (p.Thr1685Ile)	P38398	T	1685	I
+55364	BRCA1	1	Pathogenic	reviewed by expert panel	17	43067629	43067629	single nucleotide variant	NM_007294.4(BRCA1):c.5053A>G (p.Thr1685Ala)	P38398	T	1685	A
+55361	BRCA1	0	Benign	reviewed by expert panel	17	43067638	43067638	single nucleotide variant	NM_007294.4(BRCA1):c.5044G>A (p.Glu1682Lys)	P38398	E	1682	K
+37621	BRCA1	0	Benign	reviewed by expert panel	17	43067691	43067691	single nucleotide variant	NM_007294.4(BRCA1):c.4991T>C (p.Leu1664Pro)	P38398	L	1664	P
+55339	BRCA1	0	Benign	reviewed by expert panel	17	43070929	43070929	single nucleotide variant	NM_007294.4(BRCA1):c.4985T>C (p.Phe1662Ser)	P38398	F	1662	S
+41830	BRCA1	0	Benign	reviewed by expert panel	17	43070958	43070958	single nucleotide variant	NM_007294.4(BRCA1):c.4956G>A (p.Met1652Ile)	P38398	M	1652	I
+37615	BRCA1	0	Benign	reviewed by expert panel	17	43070959	43070959	single nucleotide variant	NM_007294.4(BRCA1):c.4955T>C (p.Met1652Thr)	P38398	M	1652	T
+55314	BRCA1	0	Benign	reviewed by expert panel	17	43071004	43071004	single nucleotide variant	NM_007294.4(BRCA1):c.4910C>T (p.Pro1637Leu)	P38398	P	1637	L
+41828	BRCA1	0	Benign	reviewed by expert panel	17	43071031	43071031	single nucleotide variant	NM_007294.4(BRCA1):c.4883T>C (p.Met1628Thr)	P38398	M	1628	T
+55301	BRCA1	0	Benign	reviewed by expert panel	17	43071074	43071074	single nucleotide variant	NM_007294.4(BRCA1):c.4840C>T (p.Pro1614Ser)	P38398	P	1614	S
+41827	BRCA1	0	Benign	reviewed by expert panel	17	43071077	43071077	single nucleotide variant	NM_007294.4(BRCA1):c.4837A>G (p.Ser1613Gly)	P38398	S	1613	G
+37612	BRCA1	0	Benign	reviewed by expert panel	17	43071098	43071098	single nucleotide variant	NM_007294.4(BRCA1):c.4816A>G (p.Lys1606Glu)	P38398	K	1606	E
+55262	BRCA1	0	Benign	reviewed by expert panel	17	43071223	43071223	single nucleotide variant	NM_007294.4(BRCA1):c.4691T>C (p.Leu1564Pro)	P38398	L	1564	P
+37604	BRCA1	1	Pathogenic	reviewed by expert panel	17	43074331	43074331	single nucleotide variant	NM_007294.4(BRCA1):c.4675G>A (p.Glu1559Lys)	P38398	E	1559	K
+55245	BRCA1	0	Benign	reviewed by expert panel	17	43074370	43074370	single nucleotide variant	NM_007294.4(BRCA1):c.4636G>A (p.Asp1546Asn)	P38398	D	1546	N
+55246	BRCA1	0	Benign	reviewed by expert panel	17	43074370	43074370	single nucleotide variant	NM_007294.4(BRCA1):c.4636G>T (p.Asp1546Tyr)	P38398	D	1546	Y
+55235	BRCA1	0	Benign	reviewed by expert panel	17	43074406	43074406	single nucleotide variant	NM_007294.4(BRCA1):c.4600G>A (p.Val1534Met)	P38398	V	1534	M
+41826	BRCA1	0	Benign	reviewed by expert panel	17	43074471	43074471	single nucleotide variant	NM_007294.4(BRCA1):c.4535G>T (p.Ser1512Ile)	P38398	S	1512	I
+41825	BRCA1	0	Benign	reviewed by expert panel	17	43074486	43074486	single nucleotide variant	NM_007294.4(BRCA1):c.4520G>C (p.Arg1507Thr)	P38398	R	1507	T
+55193	BRCA1	0	Benign	reviewed by expert panel	17	43076570	43076570	single nucleotide variant	NM_007294.4(BRCA1):c.4402A>C (p.Asn1468His)	P38398	N	1468	H
+17676	BRCA1	0	Benign	reviewed by expert panel	17	43082434	43082434	single nucleotide variant	NM_007294.4(BRCA1):c.4327C>G (p.Arg1443Gly)	P38398	R	1443	G
+55154	BRCA1	0	Benign	reviewed by expert panel	17	43082506	43082506	single nucleotide variant	NM_007294.4(BRCA1):c.4255G>C (p.Glu1419Gln)	P38398	E	1419	Q
+55140	BRCA1	0	Benign	reviewed by expert panel	17	43082557	43082557	single nucleotide variant	NM_007294.4(BRCA1):c.4204C>T (p.His1402Tyr)	P38398	H	1402	Y
+55111	BRCA1	0	Benign	reviewed by expert panel	17	43090997	43090997	single nucleotide variant	NM_007294.4(BRCA1):c.4132G>A (p.Val1378Ile)	P38398	V	1378	I
+55099	BRCA1	0	Benign	reviewed by expert panel	17	43091450	43091450	single nucleotide variant	NM_007294.4(BRCA1):c.4081A>C (p.Met1361Leu)	P38398	M	1361	L
+55085	BRCA1	0	Benign	reviewed by expert panel	17	43091485	43091485	single nucleotide variant	NM_007294.4(BRCA1):c.4046C>T (p.Thr1349Met)	P38398	T	1349	M
+41821	BRCA1	0	Benign	reviewed by expert panel	17	43091492	43091492	single nucleotide variant	NM_007294.4(BRCA1):c.4039A>G (p.Arg1347Gly)	P38398	R	1347	G
+37549	BRCA1	0	Benign	reviewed by expert panel	17	43091708	43091708	single nucleotide variant	NM_007294.4(BRCA1):c.3823A>G (p.Ile1275Val)	P38398	I	1275	V
+55009	BRCA1	0	Benign	reviewed by expert panel	17	43091734	43091734	single nucleotide variant	NM_007294.4(BRCA1):c.3797G>C (p.Ser1266Thr)	P38398	S	1266	T
+54987	BRCA1	0	Benign	reviewed by expert panel	17	43091783	43091783	single nucleotide variant	NM_007294.4(BRCA1):c.3748G>A (p.Glu1250Lys)	P38398	E	1250	K
+54985	BRCA1	0	Benign	reviewed by expert panel	17	43091792	43091792	single nucleotide variant	NM_007294.4(BRCA1):c.3739G>A (p.Val1247Ile)	P38398	V	1247	I
+54982	BRCA1	0	Benign	reviewed by expert panel	17	43091807	43091807	single nucleotide variant	NM_007294.4(BRCA1):c.3724A>G (p.Thr1242Ala)	P38398	T	1242	A
+37543	BRCA1	0	Benign	reviewed by expert panel	17	43091818	43091818	single nucleotide variant	NM_007294.4(BRCA1):c.3713C>T (p.Pro1238Leu)	P38398	P	1238	L
+54970	BRCA1	0	Benign	reviewed by expert panel	17	43091823	43091823	single nucleotide variant	NM_007294.4(BRCA1):c.3708T>G (p.Asn1236Lys)	P38398	N	1236	K
+37537	BRCA1	0	Benign	reviewed by expert panel	17	43091874	43091874	single nucleotide variant	NM_007294.4(BRCA1):c.3657G>C (p.Glu1219Asp)	P38398	E	1219	D
+54948	BRCA1	0	Benign	reviewed by expert panel	17	43091891	43091891	single nucleotide variant	NM_007294.4(BRCA1):c.3640G>A (p.Glu1214Lys)	P38398	E	1214	K
+54935	BRCA1	0	Benign	reviewed by expert panel	17	43091923	43091923	single nucleotide variant	NM_007294.4(BRCA1):c.3608G>A (p.Arg1203Gln)	P38398	R	1203	Q
+54931	BRCA1	0	Benign	reviewed by expert panel	17	43091931	43091931	single nucleotide variant	NM_007294.4(BRCA1):c.3600G>T (p.Gln1200His)	P38398	Q	1200	H
+41818	BRCA1	0	Benign	reviewed by expert panel	17	43091983	43091983	single nucleotide variant	NM_007294.4(BRCA1):c.3548A>G (p.Lys1183Arg)	P38398	K	1183	R
+54911	BRCA1	0	Benign	reviewed by expert panel	17	43091990	43091990	single nucleotide variant	NM_007294.4(BRCA1):c.3541G>A (p.Val1181Ile)	P38398	V	1181	I
+54891	BRCA1	0	Benign	reviewed by expert panel	17	43092068	43092068	single nucleotide variant	NM_007294.4(BRCA1):c.3463G>C (p.Asp1155His)	P38398	D	1155	H
+54887	BRCA1	0	Benign	reviewed by expert panel	17	43092083	43092083	single nucleotide variant	NM_007294.4(BRCA1):c.3448C>T (p.Pro1150Ser)	P38398	P	1150	S
+41817	BRCA1	0	Benign	reviewed by expert panel	17	43092113	43092113	single nucleotide variant	NM_007294.4(BRCA1):c.3418A>G (p.Ser1140Gly)	P38398	S	1140	G
+54873	BRCA1	0	Benign	reviewed by expert panel	17	43092115	43092115	single nucleotide variant	NM_007294.4(BRCA1):c.3416G>T (p.Ser1139Ile)	P38398	S	1139	I
+37522	BRCA1	0	Benign	reviewed by expert panel	17	43092204	43092204	single nucleotide variant	NM_007294.4(BRCA1):c.3327A>C (p.Lys1109Asn)	P38398	K	1109	N
+54830	BRCA1	0	Benign	reviewed by expert panel	17	43092229	43092229	single nucleotide variant	NM_007294.4(BRCA1):c.3302G>A (p.Ser1101Asn)	P38398	S	1101	N
+41816	BRCA1	0	Benign	reviewed by expert panel	17	43092235	43092235	single nucleotide variant	NM_007294.4(BRCA1):c.3296C>T (p.Pro1099Leu)	P38398	P	1099	L
+54777	BRCA1	0	Benign	reviewed by expert panel	17	43092388	43092388	single nucleotide variant	NM_007294.4(BRCA1):c.3143G>T (p.Gly1048Val)	P38398	G	1048	V
+37510	BRCA1	0	Benign	reviewed by expert panel	17	43092401	43092401	single nucleotide variant	NM_007294.4(BRCA1):c.3130A>G (p.Ile1044Val)	P38398	I	1044	V
+17670	BRCA1	0	Benign	reviewed by expert panel	17	43092412	43092412	single nucleotide variant	NM_007294.4(BRCA1):c.3119G>A (p.Ser1040Asn)	P38398	S	1040	N
+41815	BRCA1	0	Benign	reviewed by expert panel	17	43092418	43092418	single nucleotide variant	NM_007294.4(BRCA1):c.3113A>G (p.Glu1038Gly)	P38398	E	1038	G
+37507	BRCA1	0	Benign	reviewed by expert panel	17	43092448	43092448	single nucleotide variant	NM_007294.4(BRCA1):c.3083G>A (p.Arg1028His)	P38398	R	1028	H
+37506	BRCA1	0	Benign	reviewed by expert panel	17	43092449	43092449	single nucleotide variant	NM_007294.4(BRCA1):c.3082C>T (p.Arg1028Cys)	P38398	R	1028	C
+41814	BRCA1	0	Benign	reviewed by expert panel	17	43092507	43092507	single nucleotide variant	NM_007294.4(BRCA1):c.3024G>A (p.Met1008Ile)	P38398	M	1008	I
+54755	BRCA1	0	Benign	reviewed by expert panel	17	43092509	43092509	single nucleotide variant	NM_007294.4(BRCA1):c.3022A>G (p.Met1008Val)	P38398	M	1008	V
+54709	BRCA1	0	Benign	reviewed by expert panel	17	43092647	43092647	single nucleotide variant	NM_007294.4(BRCA1):c.2884G>A (p.Glu962Lys)	P38398	E	962	K
+37489	BRCA1	0	Benign	reviewed by expert panel	17	43092758	43092758	single nucleotide variant	NM_007294.4(BRCA1):c.2773A>C (p.Ile925Leu)	P38398	I	925	L
+37488	BRCA1	0	Benign	reviewed by expert panel	17	43092773	43092773	single nucleotide variant	NM_007294.4(BRCA1):c.2758G>A (p.Val920Ile)	P38398	V	920	I
+37479	BRCA1	0	Benign	reviewed by expert panel	17	43092862	43092862	single nucleotide variant	NM_007294.4(BRCA1):c.2669G>T (p.Gly890Val)	P38398	G	890	V
+41812	BRCA1	0	Benign	reviewed by expert panel	17	43092919	43092919	single nucleotide variant	NM_007294.4(BRCA1):c.2612C>T (p.Pro871Leu)	P38398	P	871	L
+54613	BRCA1	0	Benign	reviewed by expert panel	17	43092934	43092934	single nucleotide variant	NM_007294.4(BRCA1):c.2597G>A (p.Arg866His)	P38398	R	866	H
+41811	BRCA1	0	Benign	reviewed by expert panel	17	43092935	43092935	single nucleotide variant	NM_007294.4(BRCA1):c.2596C>T (p.Arg866Cys)	P38398	R	866	C
+37476	BRCA1	0	Benign	reviewed by expert panel	17	43092947	43092947	single nucleotide variant	NM_007294.4(BRCA1):c.2584A>G (p.Lys862Glu)	P38398	K	862	E
+54604	BRCA1	0	Benign	reviewed by expert panel	17	43092965	43092965	single nucleotide variant	NM_007294.4(BRCA1):c.2566T>C (p.Tyr856His)	P38398	Y	856	H
+91592	BRCA1	0	Benign	reviewed by expert panel	17	43093006	43093006	single nucleotide variant	NM_007294.4(BRCA1):c.2525A>G (p.Glu842Gly)	P38398	E	842	G
+17681	BRCA1	0	Benign	reviewed by expert panel	17	43093010	43093010	single nucleotide variant	NM_007294.4(BRCA1):c.2521C>T (p.Arg841Trp)	P38398	R	841	W
+37473	BRCA1	0	Benign	reviewed by expert panel	17	43093054	43093054	single nucleotide variant	NM_007294.4(BRCA1):c.2477C>A (p.Thr826Lys)	P38398	T	826	K
+41810	BRCA1	0	Benign	reviewed by expert panel	17	43093073	43093073	single nucleotide variant	NM_007294.4(BRCA1):c.2458A>G (p.Lys820Glu)	P38398	K	820	E
+54567	BRCA1	0	Benign	reviewed by expert panel	17	43093103	43093103	single nucleotide variant	NM_007294.4(BRCA1):c.2428A>T (p.Asn810Tyr)	P38398	N	810	Y
+54561	BRCA1	0	Benign	reviewed by expert panel	17	43093119	43093119	single nucleotide variant	NM_007294.4(BRCA1):c.2412G>C (p.Gln804His)	P38398	Q	804	H
+37464	BRCA1	0	Benign	reviewed by expert panel	17	43093180	43093180	single nucleotide variant	NM_007294.4(BRCA1):c.2351C>T (p.Ser784Leu)	P38398	S	784	L
+41809	BRCA1	0	Benign	reviewed by expert panel	17	43093216	43093216	single nucleotide variant	NM_007294.4(BRCA1):c.2315T>C (p.Val772Ala)	P38398	V	772	A
+54522	BRCA1	0	Benign	reviewed by expert panel	17	43093245	43093245	single nucleotide variant	NM_007294.4(BRCA1):c.2286A>T (p.Arg762Ser)	P38398	R	762	S
+54486	BRCA1	0	Benign	reviewed by expert panel	17	43093351	43093351	single nucleotide variant	NM_007294.4(BRCA1):c.2180C>T (p.Pro727Leu)	P38398	P	727	L
+37454	BRCA1	0	Benign	reviewed by expert panel	17	43093364	43093364	single nucleotide variant	NM_007294.4(BRCA1):c.2167A>G (p.Asn723Asp)	P38398	N	723	D
+37452	BRCA1	0	Benign	reviewed by expert panel	17	43093376	43093376	single nucleotide variant	NM_007294.4(BRCA1):c.2155A>G (p.Lys719Glu)	P38398	K	719	E
+54456	BRCA1	0	Benign	reviewed by expert panel	17	43093448	43093448	single nucleotide variant	NM_007294.4(BRCA1):c.2083G>T (p.Asp695Tyr)	P38398	D	695	Y
+41808	BRCA1	0	Benign	reviewed by expert panel	17	43093454	43093454	single nucleotide variant	NM_007294.4(BRCA1):c.2077G>A (p.Asp693Asn)	P38398	D	693	N
+37441	BRCA1	0	Benign	reviewed by expert panel	17	43093529	43093529	single nucleotide variant	NM_007294.4(BRCA1):c.2002C>T (p.Leu668Phe)	P38398	L	668	F
+54402	BRCA1	0	Benign	reviewed by expert panel	17	43093604	43093604	single nucleotide variant	NM_007294.4(BRCA1):c.1927A>G (p.Ser643Gly)	P38398	S	643	G
+54401	BRCA1	0	Benign	reviewed by expert panel	17	43093607	43093607	single nucleotide variant	NM_007294.4(BRCA1):c.1924G>C (p.Asp642His)	P38398	D	642	H
+54371	BRCA1	0	Benign	reviewed by expert panel	17	43093666	43093666	single nucleotide variant	NM_007294.4(BRCA1):c.1865C>T (p.Ala622Val)	P38398	A	622	V
+54367	BRCA1	0	Benign	reviewed by expert panel	17	43093697	43093697	single nucleotide variant	NM_007294.4(BRCA1):c.1834A>G (p.Arg612Gly)	P38398	R	612	G
+41806	BRCA1	0	Benign	reviewed by expert panel	17	43093742	43093742	single nucleotide variant	NM_007294.4(BRCA1):c.1789G>A (p.Glu597Lys)	P38398	E	597	K
+54329	BRCA1	0	Benign	reviewed by expert panel	17	43093828	43093828	single nucleotide variant	NM_007294.4(BRCA1):c.1703C>T (p.Pro568Leu)	P38398	P	568	L
+37423	BRCA1	0	Benign	reviewed by expert panel	17	43093883	43093883	single nucleotide variant	NM_007294.4(BRCA1):c.1648A>C (p.Asn550His)	P38398	N	550	H
+54310	BRCA1	0	Benign	reviewed by expert panel	17	43093915	43093915	single nucleotide variant	NM_007294.4(BRCA1):c.1616C>T (p.Thr539Met)	P38398	T	539	M
+37420	BRCA1	0	Benign	reviewed by expert panel	17	43093997	43093997	single nucleotide variant	NM_007294.4(BRCA1):c.1534C>T (p.Leu512Phe)	P38398	L	512	F
+54278	BRCA1	0	Benign	reviewed by expert panel	17	43094020	43094020	single nucleotide variant	NM_007294.4(BRCA1):c.1511G>A (p.Arg504His)	P38398	R	504	H
+41805	BRCA1	0	Benign	reviewed by expert panel	17	43094044	43094044	single nucleotide variant	NM_007294.4(BRCA1):c.1487G>A (p.Arg496His)	P38398	R	496	H
+37416	BRCA1	0	Benign	reviewed by expert panel	17	43094045	43094045	single nucleotide variant	NM_007294.4(BRCA1):c.1486C>T (p.Arg496Cys)	P38398	R	496	C
+54258	BRCA1	0	Benign	reviewed by expert panel	17	43094075	43094075	single nucleotide variant	NM_007294.4(BRCA1):c.1456T>C (p.Phe486Leu)	P38398	F	486	L
+54248	BRCA1	0	Benign	reviewed by expert panel	17	43094113	43094113	single nucleotide variant	NM_007294.4(BRCA1):c.1418A>G (p.Asn473Ser)	P38398	N	473	S
+54249	BRCA1	0	Benign	reviewed by expert panel	17	43094113	43094113	single nucleotide variant	NM_007294.4(BRCA1):c.1418A>T (p.Asn473Ile)	P38398	N	473	I
+54228	BRCA1	0	Benign	reviewed by expert panel	17	43094148	43094148	single nucleotide variant	NM_007294.4(BRCA1):c.1383T>A (p.Phe461Leu)	P38398	F	461	L
+41804	BRCA1	0	Benign	reviewed by expert panel	17	43094298	43094298	single nucleotide variant	NM_007294.4(BRCA1):c.1233T>G (p.Asp411Glu)	P38398	D	411	E
+37390	BRCA1	0	Benign	reviewed by expert panel	17	43094426	43094426	single nucleotide variant	NM_007294.4(BRCA1):c.1105G>A (p.Asp369Asn)	P38398	D	369	N
+41803	BRCA1	0	Benign	reviewed by expert panel	17	43094464	43094464	single nucleotide variant	NM_007294.4(BRCA1):c.1067A>G (p.Gln356Arg)	P38398	Q	356	R
+37389	BRCA1	0	Benign	reviewed by expert panel	17	43094495	43094495	single nucleotide variant	NM_007294.4(BRCA1):c.1036C>T (p.Pro346Ser)	P38398	P	346	S
+54099	BRCA1	0	Benign	reviewed by expert panel	17	43094530	43094530	single nucleotide variant	NM_007294.4(BRCA1):c.1001C>T (p.Pro334Leu)	P38398	P	334	L
+37709	BRCA1	0	Benign	reviewed by expert panel	17	43094585	43094585	single nucleotide variant	NM_007294.4(BRCA1):c.946A>G (p.Ser316Gly)	P38398	S	316	G
+55743	BRCA1	0	Benign	reviewed by expert panel	17	43094640	43094640	single nucleotide variant	NM_007294.4(BRCA1):c.891G>A (p.Met297Ile)	P38398	M	297	I
+55731	BRCA1	0	Benign	reviewed by expert panel	17	43094692	43094692	single nucleotide variant	NM_007294.4(BRCA1):c.839C>G (p.Ala280Gly)	P38398	A	280	G
+37706	BRCA1	0	Benign	reviewed by expert panel	17	43094704	43094704	single nucleotide variant	NM_007294.4(BRCA1):c.827C>G (p.Thr276Arg)	P38398	T	276	R
+55726	BRCA1	0	Benign	reviewed by expert panel	17	43094707	43094707	single nucleotide variant	NM_007294.4(BRCA1):c.824G>A (p.Gly275Asp)	P38398	G	275	D
+55725	BRCA1	0	Benign	reviewed by expert panel	17	43094708	43094708	single nucleotide variant	NM_007294.4(BRCA1):c.823G>A (p.Gly275Ser)	P38398	G	275	S
+55720	BRCA1	0	Benign	reviewed by expert panel	17	43094720	43094720	single nucleotide variant	NM_007294.4(BRCA1):c.811G>A (p.Val271Met)	P38398	V	271	M
+41835	BRCA1	0	Benign	reviewed by expert panel	17	43094795	43094795	single nucleotide variant	NM_007294.4(BRCA1):c.736T>G (p.Leu246Val)	P38398	L	246	V
+55677	BRCA1	0	Benign	reviewed by expert panel	17	43094815	43094815	single nucleotide variant	NM_007294.4(BRCA1):c.716A>G (p.His239Arg)	P38398	H	239	R
+37689	BRCA1	0	Benign	reviewed by expert panel	17	43095875	43095875	single nucleotide variant	NM_007294.4(BRCA1):c.641A>G (p.Asp214Gly)	P38398	D	214	G
+37684	BRCA1	0	Benign	reviewed by expert panel	17	43097266	43097266	single nucleotide variant	NM_007294.4(BRCA1):c.571G>A (p.Val191Ile)	P38398	V	191	I
+55635	BRCA1	0	Benign	reviewed by expert panel	17	43097280	43097280	single nucleotide variant	NM_007294.4(BRCA1):c.557C>A (p.Ser186Tyr)	P38398	S	186	Y
+37661	BRCA1	0	Benign	reviewed by expert panel	17	43099786	43099786	single nucleotide variant	NM_007294.4(BRCA1):c.536A>G (p.Tyr179Cys)	P38398	Y	179	C
+55393	BRCA1	0	Benign	reviewed by expert panel	17	43099814	43099814	single nucleotide variant	NM_007294.4(BRCA1):c.508C>T (p.Arg170Trp)	P38398	R	170	W
+55247	BRCA1	0	Benign	reviewed by expert panel	17	43099859	43099859	single nucleotide variant	NM_007294.4(BRCA1):c.463C>G (p.Gln155Glu)	P38398	Q	155	E
+37580	BRCA1	0	Benign	reviewed by expert panel	17	43104136	43104136	single nucleotide variant	NM_007294.4(BRCA1):c.427G>A (p.Glu143Lys)	P38398	E	143	K
+41823	BRCA1	0	Benign	reviewed by expert panel	17	43104138	43104138	single nucleotide variant	NM_007294.4(BRCA1):c.425C>A (p.Pro142His)	P38398	P	142	H
+55067	BRCA1	0	Benign	reviewed by expert panel	17	43104166	43104166	single nucleotide variant	NM_007294.4(BRCA1):c.397C>T (p.Arg133Cys)	P38398	R	133	C
+55064	BRCA1	0	Benign	reviewed by expert panel	17	43104167	43104167	single nucleotide variant	NM_007294.4(BRCA1):c.396C>A (p.Asn132Lys)	P38398	N	132	K
+54971	BRCA1	0	Benign	reviewed by expert panel	17	43104193	43104193	single nucleotide variant	NM_007294.4(BRCA1):c.370A>G (p.Ile124Val)	P38398	I	124	V
+54780	BRCA1	0	Benign	reviewed by expert panel	17	43104249	43104249	single nucleotide variant	NM_007294.4(BRCA1):c.314A>G (p.Tyr105Cys)	P38398	Y	105	C
+37505	BRCA1	0	Benign	reviewed by expert panel	17	43104258	43104258	single nucleotide variant	NM_007294.4(BRCA1):c.305C>G (p.Ala102Gly)	P38398	A	102	G
+54704	BRCA1	1	Likely pathogenic	reviewed by expert panel	17	43104883	43104883	single nucleotide variant	NM_007294.4(BRCA1):c.286G>A (p.Asp96Asn)	P38398	D	96	N
+17693	BRCA1	1	Pathogenic	reviewed by expert panel	17	43106457	43106457	single nucleotide variant	NM_007294.4(BRCA1):c.211A>G (p.Arg71Gly)	P38398	R	71	G
+54431	BRCA1	0	Benign	reviewed by expert panel	17	43106469	43106469	single nucleotide variant	NM_007294.4(BRCA1):c.199G>T (p.Asp67Tyr)	P38398	D	67	Y
+54400	BRCA1	1	Pathogenic	reviewed by expert panel	17	43106477	43106477	single nucleotide variant	NM_007294.4(BRCA1):c.191G>A (p.Cys64Tyr)	P38398	C	64	Y
+17661	BRCA1	1	Pathogenic	reviewed by expert panel	17	43106487	43106487	single nucleotide variant	NM_007294.4(BRCA1):c.181T>G (p.Cys61Gly)	P38398	C	61	G
+54246	BRCA1	1	Pathogenic	reviewed by expert panel	17	43106528	43106528	single nucleotide variant	NM_007294.4(BRCA1):c.140G>A (p.Cys47Tyr)	P38398	C	47	Y
+54199	BRCA1	1	Pathogenic	reviewed by expert panel	17	43115729	43115729	single nucleotide variant	NM_007294.4(BRCA1):c.131G>A (p.Cys44Tyr)	P38398	C	44	Y
+54200	BRCA1	1	Pathogenic	reviewed by expert panel	17	43115729	43115729	single nucleotide variant	NM_007294.4(BRCA1):c.131G>T (p.Cys44Phe)	P38398	C	44	F
+54191	BRCA1	1	Pathogenic	reviewed by expert panel	17	43115730	43115730	single nucleotide variant	NM_007294.4(BRCA1):c.130T>A (p.Cys44Ser)	P38398	C	44	S
+54166	BRCA1	1	Pathogenic	reviewed by expert panel	17	43115738	43115738	single nucleotide variant	NM_007294.4(BRCA1):c.122A>G (p.His41Arg)	P38398	H	41	R
+54152	BRCA1	1	Pathogenic	reviewed by expert panel	17	43115745	43115745	single nucleotide variant	NM_007294.4(BRCA1):c.115T>C (p.Cys39Arg)	P38398	C	39	R
+54131	BRCA1	1	Pathogenic	reviewed by expert panel	17	43115750	43115750	single nucleotide variant	NM_007294.4(BRCA1):c.110C>A (p.Thr37Lys)	P38398	T	37	K
+55732	BRCA1	-1	Uncertain significance	reviewed by expert panel	17	43115777	43115777	single nucleotide variant	NM_007294.4(BRCA1):c.83T>C (p.Leu28Pro)	P38398	L	28	P
+55656	BRCA1	1	Pathogenic	reviewed by expert panel	17	43124032	43124032	single nucleotide variant	NM_007294.4(BRCA1):c.65T>C (p.Leu22Ser)	P38398	L	22	S
+37664	BRCA1	1	Pathogenic	reviewed by expert panel	17	43124044	43124044	single nucleotide variant	NM_007294.4(BRCA1):c.53T>C (p.Met18Thr)	P38398	M	18	T
+55072	BRCA1	1	Pathogenic	reviewed by expert panel	17	43124094	43124094	single nucleotide variant	NM_007294.4(BRCA1):c.3G>T (p.Met1Ile)	P38398	M	1	I
+55637	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43045685	43045685	single nucleotide variant	NM_007294.4(BRCA1):c.5585A>T (p.His1862Leu)	P38398	H	1862	L
+185265	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43045699	43045699	single nucleotide variant	NM_007294.4(BRCA1):c.5571G>C (p.Gln1857His)	P38398	Q	1857	H
+55632	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43045704	43045704	single nucleotide variant	NM_007294.4(BRCA1):c.5566C>T (p.Pro1856Ser)	P38398	P	1856	S
+55627	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43045712	43045712	single nucleotide variant	NM_007294.4(BRCA1):c.5558A>G (p.Tyr1853Cys)	P38398	Y	1853	C
+55614	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43045743	43045743	single nucleotide variant	NM_007294.4(BRCA1):c.5527G>C (p.Ala1843Pro)	P38398	A	1843	P
+37681	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43045749	43045749	single nucleotide variant	NM_007294.4(BRCA1):c.5521A>C (p.Ser1841Arg)	P38398	S	1841	R
+37680	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43045759	43045759	single nucleotide variant	NM_007294.4(BRCA1):c.5511G>T (p.Trp1837Cys)	P38398	W	1837	C
+182172	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43045766	43045766	single nucleotide variant	NM_007294.4(BRCA1):c.5504G>C (p.Arg1835Pro)	P38398	R	1835	P
+142256	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43045772	43045772	single nucleotide variant	NM_007294.4(BRCA1):c.5498T>C (p.Val1833Ala)	P38398	V	1833	A
+55598	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43045773	43045773	single nucleotide variant	NM_007294.4(BRCA1):c.5497G>A (p.Val1833Met)	P38398	V	1833	M
+55588	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43047643	43047643	single nucleotide variant	NM_007294.4(BRCA1):c.5467G>A (p.Ala1823Thr)	P38398	A	1823	T
+55585	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43047654	43047654	single nucleotide variant	NM_007294.4(BRCA1):c.5456A>G (p.Asn1819Ser)	P38398	N	1819	S
+37672	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43047657	43047657	single nucleotide variant	NM_007294.4(BRCA1):c.5453A>G (p.Asp1818Gly)	P38398	D	1818	G
+37670	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43047676	43047676	single nucleotide variant	NM_007294.4(BRCA1):c.5434C>G (p.Pro1812Ala)	P38398	P	1812	A
+55578	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43047678	43047678	single nucleotide variant	NM_007294.4(BRCA1):c.5432A>G (p.Gln1811Arg)	P38398	Q	1811	R
+55576	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43047681	43047681	single nucleotide variant	NM_007294.4(BRCA1):c.5429T>G (p.Val1810Gly)	P38398	V	1810	G
+55572	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43047687	43047687	single nucleotide variant	NM_007294.4(BRCA1):c.5423T>C (p.Val1808Ala)	P38398	V	1808	A
+37668	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43047702	43047702	single nucleotide variant	NM_007294.4(BRCA1):c.5408G>C (p.Gly1803Ala)	P38398	G	1803	A
+55550	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43049165	43049165	single nucleotide variant	NM_007294.4(BRCA1):c.5362G>T (p.Gly1788Cys)	P38398	G	1788	C
+55541	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43049188	43049188	single nucleotide variant	NM_007294.4(BRCA1):c.5339T>C (p.Leu1780Pro)	P38398	L	1780	P
+55531	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43051063	43051063	single nucleotide variant	NM_007294.4(BRCA1):c.5332G>C (p.Asp1778His)	P38398	D	1778	H
+182167	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43051092	43051092	single nucleotide variant	NM_007294.4(BRCA1):c.5303G>A (p.Cys1768Tyr)	P38398	C	1768	Y
+96948	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43051093	43051093	single nucleotide variant	NM_007294.4(BRCA1):c.5302T>G (p.Cys1768Gly)	P38398	C	1768	G
+55484	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43057074	43057074	single nucleotide variant	NM_007294.4(BRCA1):c.5255C>T (p.Ala1752Val)	P38398	A	1752	V
+55483	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057075	43057075	single nucleotide variant	NM_007294.4(BRCA1):c.5254G>C (p.Ala1752Pro)	P38398	A	1752	P
+55476	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057086	43057086	single nucleotide variant	NM_007294.4(BRCA1):c.5243G>A (p.Gly1748Asp)	P38398	G	1748	D
+185702	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43057091	43057091	single nucleotide variant	NM_007294.4(BRCA1):c.5238C>G (p.His1746Gln)	P38398	H	1746	Q
+55472	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43057093	43057093	single nucleotide variant	NM_007294.4(BRCA1):c.5236C>A (p.His1746Asn)	P38398	H	1746	N
+55465	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057113	43057113	single nucleotide variant	NM_007294.4(BRCA1):c.5216A>G (p.Asp1739Gly)	P38398	D	1739	G
+55466	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057113	43057113	single nucleotide variant	NM_007294.4(BRCA1):c.5216A>T (p.Asp1739Val)	P38398	D	1739	V
+55464	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057114	43057114	single nucleotide variant	NM_007294.4(BRCA1):c.5215G>T (p.Asp1739Tyr)	P38398	D	1739	Y
+55462	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057116	43057116	single nucleotide variant	NM_007294.4(BRCA1):c.5213G>A (p.Gly1738Glu)	P38398	G	1738	E
+55456	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43057122	43057122	single nucleotide variant	NM_007294.4(BRCA1):c.5207T>G (p.Val1736Gly)	P38398	V	1736	G
+91643	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43057132	43057132	single nucleotide variant	NM_007294.4(BRCA1):c.5197G>A (p.Asp1733Asn)	P38398	D	1733	N
+125791	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43063362	43063362	single nucleotide variant	NM_007294.4(BRCA1):c.5164T>C (p.Ser1722Pro)	P38398	S	1722	P
+55435	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43063372	43063372	single nucleotide variant	NM_007294.4(BRCA1):c.5154G>T (p.Trp1718Cys)	P38398	W	1718	C
+55418	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43063881	43063881	single nucleotide variant	NM_007294.4(BRCA1):c.5145C>G (p.Ser1715Arg)	P38398	S	1715	R
+55413	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43063885	43063885	single nucleotide variant	NM_007294.4(BRCA1):c.5141T>G (p.Val1714Gly)	P38398	V	1714	G
+37637	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43063912	43063912	single nucleotide variant	NM_007294.4(BRCA1):c.5114T>C (p.Leu1705Pro)	P38398	L	1705	P
+55398	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43063930	43063930	single nucleotide variant	NM_007294.4(BRCA1):c.5096G>T (p.Arg1699Leu)	P38398	R	1699	L
+141077	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43063937	43063937	single nucleotide variant	NM_007294.4(BRCA1):c.5089T>A (p.Cys1697Ser)	P38398	C	1697	S
+55390	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43063940	43063940	single nucleotide variant	NM_007294.4(BRCA1):c.5086G>C (p.Val1696Leu)	P38398	V	1696	L
+37632	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067608	43067608	single nucleotide variant	NM_007294.4(BRCA1):c.5074G>A (p.Asp1692Asn)	P38398	D	1692	N
+37627	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067610	43067610	single nucleotide variant	NM_007294.4(BRCA1):c.5072C>A (p.Thr1691Lys)	P38398	T	1691	K
+37628	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067610	43067610	single nucleotide variant	NM_007294.4(BRCA1):c.5072C>T (p.Thr1691Ile)	P38398	T	1691	I
+55373	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067610	43067610	single nucleotide variant	NM_007294.4(BRCA1):c.5072C>G (p.Thr1691Arg)	P38398	T	1691	R
+37625	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067616	43067616	single nucleotide variant	NM_007294.4(BRCA1):c.5066T>G (p.Met1689Arg)	P38398	M	1689	R
+55366	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067624	43067624	single nucleotide variant	NM_007294.4(BRCA1):c.5058T>A (p.His1686Gln)	P38398	H	1686	Q
+183179	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43067625	43067625	single nucleotide variant	NM_007294.4(BRCA1):c.5057A>G (p.His1686Arg)	P38398	H	1686	R
+55349	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43067694	43067694	single nucleotide variant	NM_007294.4(BRCA1):c.4988T>A (p.Met1663Lys)	P38398	M	1663	K
+55333	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43070950	43070950	single nucleotide variant	NM_007294.4(BRCA1):c.4964C>T (p.Ser1655Phe)	P38398	S	1655	F
+55330	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43070962	43070962	single nucleotide variant	NM_007294.4(BRCA1):c.4952C>T (p.Ser1651Phe)	P38398	S	1651	F
+55320	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43070980	43070980	single nucleotide variant	NM_007294.4(BRCA1):c.4934G>T (p.Arg1645Met)	P38398	R	1645	M
+186979	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071020	43071020	single nucleotide variant	NM_007294.4(BRCA1):c.4894G>T (p.Val1632Leu)	P38398	V	1632	L
+55307	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071030	43071030	single nucleotide variant	NM_007294.4(BRCA1):c.4884G>T (p.Met1628Ile)	P38398	M	1628	I
+182164	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071040	43071040	single nucleotide variant	NM_007294.4(BRCA1):c.4874A>G (p.Tyr1625Cys)	P38398	Y	1625	C
+37614	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43071046	43071046	single nucleotide variant	NM_007294.4(BRCA1):c.4868C>G (p.Ala1623Gly)	P38398	A	1623	G
+185243	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071050	43071050	single nucleotide variant	NM_007294.4(BRCA1):c.4864A>G (p.Thr1622Ala)	P38398	T	1622	A
+37613	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43071077	43071077	single nucleotide variant	NM_007294.4(BRCA1):c.4837A>T (p.Ser1613Cys)	P38398	S	1613	C
+185283	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071078	43071078	single nucleotide variant	NM_007294.4(BRCA1):c.4836G>C (p.Gln1612His)	P38398	Q	1612	H
+55296	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071091	43071091	single nucleotide variant	NM_007294.4(BRCA1):c.4823C>T (p.Ala1608Val)	P38398	A	1608	V
+185823	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071101	43071101	single nucleotide variant	NM_007294.4(BRCA1):c.4813T>A (p.Leu1605Met)	P38398	L	1605	M
+141272	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071124	43071124	single nucleotide variant	NM_007294.4(BRCA1):c.4790C>A (p.Thr1597Asn)	P38398	T	1597	N
+141789	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071134	43071134	single nucleotide variant	NM_007294.4(BRCA1):c.4780C>G (p.Pro1594Ala)	P38398	P	1594	A
+55285	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071137	43071137	single nucleotide variant	NM_007294.4(BRCA1):c.4777A>G (p.Ile1593Val)	P38398	I	1593	V
+142926	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071143	43071143	single nucleotide variant	NM_007294.4(BRCA1):c.4771G>A (p.Gly1591Ser)	P38398	G	1591	S
+55284	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43071148	43071148	single nucleotide variant	NM_007294.4(BRCA1):c.4766G>A (p.Arg1589His)	P38398	R	1589	H
+55279	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43071164	43071164	single nucleotide variant	NM_007294.4(BRCA1):c.4750G>T (p.Ala1584Ser)	P38398	A	1584	S
+55275	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071175	43071175	single nucleotide variant	NM_007294.4(BRCA1):c.4739C>T (p.Ser1580Phe)	P38398	S	1580	F
+55272	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43071185	43071185	single nucleotide variant	NM_007294.4(BRCA1):c.4729T>C (p.Ser1577Pro)	P38398	S	1577	P
+55270	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071190	43071190	single nucleotide variant	NM_007294.4(BRCA1):c.4724C>A (p.Pro1575His)	P38398	P	1575	H
+55268	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071202	43071202	single nucleotide variant	NM_007294.4(BRCA1):c.4712T>C (p.Phe1571Ser)	P38398	F	1571	S
+55265	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071212	43071212	single nucleotide variant	NM_007294.4(BRCA1):c.4702A>G (p.Ile1568Val)	P38398	I	1568	V
+182163	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071218	43071218	single nucleotide variant	NM_007294.4(BRCA1):c.4696T>G (p.Ser1566Ala)	P38398	S	1566	A
+55259	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43071232	43071232	single nucleotide variant	NM_007294.4(BRCA1):c.4682C>T (p.Thr1561Ile)	P38398	T	1561	I
+142627	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43071235	43071235	single nucleotide variant	NM_007294.4(BRCA1):c.4679G>T (p.Gly1560Val)	P38398	G	1560	V
+37605	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43074331	43074331	single nucleotide variant	NM_007294.4(BRCA1):c.4675G>C (p.Glu1559Gln)	P38398	E	1559	Q
+185428	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43074342	43074342	single nucleotide variant	NM_007294.4(BRCA1):c.4664G>A (p.Arg1555Lys)	P38398	R	1555	K
+55251	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43074357	43074357	single nucleotide variant	NM_007294.4(BRCA1):c.4649C>T (p.Thr1550Ile)	P38398	T	1550	I
+182162	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43074367	43074367	single nucleotide variant	NM_007294.4(BRCA1):c.4639T>A (p.Leu1547Met)	P38398	L	1547	M
+91633	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43074417	43074417	single nucleotide variant	NM_007294.4(BRCA1):c.4589A>C (p.Lys1530Thr)	P38398	K	1530	T
+55231	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43074427	43074427	single nucleotide variant	NM_007294.4(BRCA1):c.4579G>A (p.Glu1527Lys)	P38398	E	1527	K
+91632	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43074462	43074462	single nucleotide variant	NM_007294.4(BRCA1):c.4544G>A (p.Gly1515Glu)	P38398	G	1515	E
+55218	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43074502	43074502	single nucleotide variant	NM_007294.4(BRCA1):c.4504C>T (p.Pro1502Ser)	P38398	P	1502	S
+37597	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43076488	43076488	single nucleotide variant	NM_007294.4(BRCA1):c.4484G>A (p.Arg1495Lys)	P38398	R	1495	K
+37598	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43076488	43076488	single nucleotide variant	NM_007294.4(BRCA1):c.4484G>T (p.Arg1495Met)	P38398	R	1495	M
+55207	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076501	43076501	single nucleotide variant	NM_007294.4(BRCA1):c.4471C>G (p.Pro1491Ala)	P38398	P	1491	A
+55206	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076512	43076512	single nucleotide variant	NM_007294.4(BRCA1):c.4460A>G (p.Lys1487Arg)	P38398	K	1487	R
+37593	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076516	43076516	single nucleotide variant	NM_007294.4(BRCA1):c.4456A>T (p.Ser1486Cys)	P38398	S	1486	C
+41824	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076558	43076558	single nucleotide variant	NM_007294.4(BRCA1):c.4414C>T (p.Leu1472Phe)	P38398	L	1472	F
+142774	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076560	43076560	single nucleotide variant	NM_007294.4(BRCA1):c.4412G>C (p.Gly1471Ala)	P38398	G	1471	A
+55194	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076567	43076567	single nucleotide variant	NM_007294.4(BRCA1):c.4405C>T (p.Pro1469Ser)	P38398	P	1469	S
+37591	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076570	43076570	single nucleotide variant	NM_007294.4(BRCA1):c.4402A>G (p.Asn1468Asp)	P38398	N	1468	D
+96932	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076589	43076589	single nucleotide variant	NM_007294.4(BRCA1):c.4383T>A (p.Ser1461Arg)	P38398	S	1461	R
+55185	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43076593	43076593	single nucleotide variant	NM_007294.4(BRCA1):c.4379G>A (p.Ser1460Asn)	P38398	S	1460	N
+55147	BRCA1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43082529	43082529	single nucleotide variant	NM_007294.4(BRCA1):c.4232T>C (p.Met1411Thr)	P38398	M	1411	T
+141465	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082530	43082530	single nucleotide variant	NM_007294.4(BRCA1):c.4231A>G (p.Met1411Val)	P38398	M	1411	V
+37576	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082542	43082542	single nucleotide variant	NM_007294.4(BRCA1):c.4219C>G (p.Leu1407Val)	P38398	L	1407	V
+37575	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43082548	43082548	single nucleotide variant	NM_007294.4(BRCA1):c.4213A>G (p.Ile1405Val)	P38398	I	1405	V
+55143	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082550	43082550	single nucleotide variant	NM_007294.4(BRCA1):c.4211T>C (p.Leu1404Pro)	P38398	L	1404	P
+55141	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082556	43082556	single nucleotide variant	NM_007294.4(BRCA1):c.4205A>G (p.His1402Arg)	P38398	H	1402	R
+55138	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082562	43082562	single nucleotide variant	NM_007294.4(BRCA1):c.4199T>C (p.Met1400Thr)	P38398	M	1400	T
+55137	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082563	43082563	single nucleotide variant	NM_007294.4(BRCA1):c.4198A>G (p.Met1400Val)	P38398	M	1400	V
+182160	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43082575	43082575	single nucleotide variant	NM_007294.4(BRCA1):c.4186C>A (p.Gln1396Lys)	P38398	Q	1396	K
+142985	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43090952	43090952	single nucleotide variant	NM_007294.4(BRCA1):c.4177A>G (p.Thr1393Ala)	P38398	T	1393	A
+55123	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43090957	43090957	single nucleotide variant	NM_007294.4(BRCA1):c.4172T>C (p.Ile1391Thr)	P38398	I	1391	T
+55110	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43090998	43090998	single nucleotide variant	NM_007294.4(BRCA1):c.4131C>A (p.Ser1377Arg)	P38398	S	1377	R
+182159	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43091000	43091000	single nucleotide variant	NM_007294.4(BRCA1):c.4129A>G (p.Ser1377Gly)	P38398	S	1377	G
+96925	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43091435	43091435	single nucleotide variant	NM_007294.4(BRCA1):c.4096G>A (p.Gly1366Ser)	P38398	G	1366	S
+37561	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43091495	43091495	single nucleotide variant	NM_007294.4(BRCA1):c.4036G>A (p.Glu1346Lys)	P38398	E	1346	K
+55028	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43091683	43091683	single nucleotide variant	NM_007294.4(BRCA1):c.3848A>G (p.His1283Arg)	P38398	H	1283	R
+96917	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43091713	43091713	single nucleotide variant	NM_007294.4(BRCA1):c.3818A>G (p.Gln1273Arg)	P38398	Q	1273	R
+54932	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43091930	43091930	single nucleotide variant	NM_007294.4(BRCA1):c.3601G>A (p.Gly1201Ser)	P38398	G	1201	S
+54930	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43091931	43091931	single nucleotide variant	NM_007294.4(BRCA1):c.3600G>C (p.Gln1200His)	P38398	Q	1200	H
+54727	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43092596	43092596	single nucleotide variant	NM_007294.4(BRCA1):c.2935C>T (p.Arg979Cys)	P38398	R	979	C
+37487	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43092796	43092796	single nucleotide variant	NM_007294.4(BRCA1):c.2735A>G (p.Lys912Arg)	P38398	K	912	R
+54591	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43093009	43093009	single nucleotide variant	NM_007294.4(BRCA1):c.2522G>A (p.Arg841Gln)	P38398	R	841	Q
+54541	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43093184	43093184	single nucleotide variant	NM_007294.4(BRCA1):c.2347A>G (p.Ile783Val)	P38398	I	783	V
+37455	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43093324	43093324	single nucleotide variant	NM_007294.4(BRCA1):c.2207A>C (p.Glu736Ala)	P38398	E	736	A
+54259	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43094073	43094073	single nucleotide variant	NM_007294.4(BRCA1):c.1458T>A (p.Phe486Leu)	P38398	F	486	L
+54251	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43094104	43094104	single nucleotide variant	NM_007294.4(BRCA1):c.1427A>G (p.His476Arg)	P38398	H	476	R
+54143	BRCA1	0	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	17	43094394	43094394	single nucleotide variant	NM_007294.4(BRCA1):c.1137T>G (p.Ile379Met)	P38398	I	379	M
+96893	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43094530	43094530	single nucleotide variant	NM_007294.4(BRCA1):c.1001C>A (p.Pro334His)	P38398	P	334	H
+96954	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095846	43095846	single nucleotide variant	NM_007294.4(BRCA1):c.670G>A (p.Ala224Thr)	P38398	A	224	T
+91660	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095851	43095851	single nucleotide variant	NM_007294.4(BRCA1):c.665A>G (p.Lys222Arg)	P38398	K	222	R
+96953	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095857	43095857	single nucleotide variant	NM_007294.4(BRCA1):c.659C>G (p.Ser220Cys)	P38398	S	220	C
+55652	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095879	43095879	single nucleotide variant	NM_007294.4(BRCA1):c.637A>G (p.Arg213Gly)	P38398	R	213	G
+182125	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095891	43095891	single nucleotide variant	NM_007294.4(BRCA1):c.625C>T (p.Pro209Ser)	P38398	P	209	S
+91658	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095909	43095909	single nucleotide variant	NM_007294.4(BRCA1):c.607G>A (p.Glu203Lys)	P38398	E	203	K
+55645	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43095915	43095915	single nucleotide variant	NM_007294.4(BRCA1):c.601G>A (p.Asp201Asn)	P38398	D	201	N
+141458	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43099787	43099787	single nucleotide variant	NM_007294.4(BRCA1):c.535T>C (p.Tyr179His)	P38398	Y	179	H
+55266	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43099852	43099852	single nucleotide variant	NM_007294.4(BRCA1):c.470C>G (p.Ser157Cys)	P38398	S	157	C
+133722	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43099856	43099856	single nucleotide variant	NM_007294.4(BRCA1):c.466C>G (p.Leu156Val)	P38398	L	156	V
+37600	BRCA1	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	43099865	43099865	single nucleotide variant	NM_007294.4(BRCA1):c.457A>C (p.Ser153Arg)	P38398	S	153	R
+96934	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43099865	43099865	single nucleotide variant	NM_007294.4(BRCA1):c.457A>G (p.Ser153Gly)	P38398	S	153	G
+55152	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104139	43104139	single nucleotide variant	NM_007294.4(BRCA1):c.424C>G (p.Pro142Ala)	P38398	P	142	A
+55041	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104174	43104174	single nucleotide variant	NM_007294.4(BRCA1):c.389A>T (p.Tyr130Phe)	P38398	Y	130	F
+96919	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104174	43104174	single nucleotide variant	NM_007294.4(BRCA1):c.389A>G (p.Tyr130Cys)	P38398	Y	130	C
+55012	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104183	43104183	single nucleotide variant	NM_007294.4(BRCA1):c.380G>A (p.Ser127Asn)	P38398	S	127	N
+156193	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104190	43104190	single nucleotide variant	NM_007294.4(BRCA1):c.373A>G (p.Ile125Val)	P38398	I	125	V
+141096	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104204	43104204	single nucleotide variant	NM_007294.4(BRCA1):c.359A>G (p.Asp120Gly)	P38398	D	120	G
+143000	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104205	43104205	single nucleotide variant	NM_007294.4(BRCA1):c.358G>A (p.Asp120Asn)	P38398	D	120	N
+89058	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104224	43104224	single nucleotide variant	NM_007294.4(BRCA1):c.339C>G (p.Asn113Lys)	P38398	N	113	K
+136084	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104225	43104225	single nucleotide variant	NM_007294.4(BRCA1):c.338A>G (p.Asn113Ser)	P38398	N	113	S
+141794	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104229	43104229	single nucleotide variant	NM_007294.4(BRCA1):c.334A>G (p.Asn112Asp)	P38398	N	112	D
+141504	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104261	43104261	single nucleotide variant	NM_007294.4(BRCA1):c.302A>G (p.Tyr101Cys)	P38398	Y	101	C
+96909	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104879	43104879	single nucleotide variant	NM_007294.4(BRCA1):c.290C>G (p.Thr97Arg)	P38398	T	97	R
+133721	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43104879	43104879	single nucleotide variant	NM_007294.4(BRCA1):c.290C>T (p.Thr97Ile)	P38398	T	97	I
+54471	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43106456	43106456	single nucleotide variant	NM_007294.4(BRCA1):c.212G>A (p.Arg71Lys)	P38398	R	71	K
+54444	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43106465	43106465	single nucleotide variant	NM_007294.4(BRCA1):c.203T>A (p.Ile68Lys)	P38398	I	68	K
+17660	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43106478	43106478	single nucleotide variant	NM_007294.4(BRCA1):c.190T>G (p.Cys64Gly)	P38398	C	64	G
+54394	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43106478	43106478	single nucleotide variant	NM_007294.4(BRCA1):c.190T>C (p.Cys64Arg)	P38398	C	64	R
+54364	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43106486	43106486	single nucleotide variant	NM_007294.4(BRCA1):c.182G>A (p.Cys61Tyr)	P38398	C	61	Y
+54359	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43106487	43106487	single nucleotide variant	NM_007294.4(BRCA1):c.181T>A (p.Cys61Ser)	P38398	C	61	S
+54360	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43106487	43106487	single nucleotide variant	NM_007294.4(BRCA1):c.181T>C (p.Cys61Arg)	P38398	C	61	R
+54247	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43106528	43106528	single nucleotide variant	NM_007294.4(BRCA1):c.140G>T (p.Cys47Phe)	P38398	C	47	F
+54219	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43106533	43106533	single nucleotide variant	NM_007294.4(BRCA1):c.135A>T (p.Lys45Asn)	P38398	K	45	N
+37392	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43115744	43115744	single nucleotide variant	NM_007294.4(BRCA1):c.116G>A (p.Cys39Tyr)	P38398	C	39	Y
+37393	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43115744	43115744	single nucleotide variant	NM_007294.4(BRCA1):c.116G>T (p.Cys39Phe)	P38398	C	39	F
+54151	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43115745	43115745	single nucleotide variant	NM_007294.4(BRCA1):c.115T>A (p.Cys39Ser)	P38398	C	39	S
+54153	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43115745	43115745	single nucleotide variant	NM_007294.4(BRCA1):c.115T>G (p.Cys39Gly)	P38398	C	39	G
+54132	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43115750	43115750	single nucleotide variant	NM_007294.4(BRCA1):c.110C>G (p.Thr37Arg)	P38398	T	37	R
+55684	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43124024	43124024	single nucleotide variant	NM_007294.4(BRCA1):c.73C>A (p.Pro25Thr)	P38398	P	25	T
+55678	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43124026	43124026	single nucleotide variant	NM_007294.4(BRCA1):c.71G>A (p.Cys24Tyr)	P38398	C	24	Y
+55674	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43124027	43124027	single nucleotide variant	NM_007294.4(BRCA1):c.70T>C (p.Cys24Arg)	P38398	C	24	R
+55559	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43124044	43124044	single nucleotide variant	NM_007294.4(BRCA1):c.53T>A (p.Met18Lys)	P38398	M	18	K
+55217	BRCA1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	43124053	43124053	single nucleotide variant	NM_007294.4(BRCA1):c.44T>C (p.Ile15Thr)	P38398	I	15	T
+54745	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43124095	43124095	single nucleotide variant	NM_007294.4(BRCA1):c.2T>C (p.Met1Thr)	P38398	M	1	T
+54746	BRCA1	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	43124095	43124095	single nucleotide variant	NM_007294.4(BRCA1):c.2T>G (p.Met1Arg)	P38398	M	1	R
+54432	BRCA1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	43124096	43124096	single nucleotide variant	NM_007294.4(BRCA1):c.1A>G (p.Met1Val)	P38398	M	1	V
+186496	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045697	43045697	single nucleotide variant	NM_007294.4(BRCA1):c.5573T>C (p.Ile1858Thr)	P38398	I	1858	T
+182174	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045715	43045715	single nucleotide variant	NM_007294.4(BRCA1):c.5555C>T (p.Thr1852Ile)	P38398	T	1852	I
+55624	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43045717	43045717	single nucleotide variant	NM_007294.4(BRCA1):c.5553C>A (p.Asp1851Glu)	P38398	D	1851	E
+182082	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045742	43045742	single nucleotide variant	NM_007294.4(BRCA1):c.5528C>A (p.Ala1843Glu)	P38398	A	1843	E
+182173	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045758	43045758	single nucleotide variant	NM_007294.4(BRCA1):c.5512G>A (p.Val1838Met)	P38398	V	1838	M
+184981	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045758	43045758	single nucleotide variant	NM_007294.4(BRCA1):c.5512G>T (p.Val1838Leu)	P38398	V	1838	L
+55605	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045764	43045764	single nucleotide variant	NM_007294.4(BRCA1):c.5506G>A (p.Glu1836Lys)	P38398	E	1836	K
+55604	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045766	43045766	single nucleotide variant	NM_007294.4(BRCA1):c.5504G>A (p.Arg1835Gln)	P38398	R	1835	Q
+182171	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045769	43045769	single nucleotide variant	NM_007294.4(BRCA1):c.5501C>T (p.Thr1834Ile)	P38398	T	1834	I
+142865	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045778	43045778	single nucleotide variant	NM_007294.4(BRCA1):c.5492C>G (p.Pro1831Arg)	P38398	P	1831	R
+55594	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045782	43045782	single nucleotide variant	NM_007294.4(BRCA1):c.5488G>A (p.Ala1830Thr)	P38398	A	1830	T
+142395	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045789	43045789	single nucleotide variant	NM_007294.4(BRCA1):c.5481G>A (p.Met1827Ile)	P38398	M	1827	I
+55592	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045792	43045792	single nucleotide variant	NM_007294.4(BRCA1):c.5478G>T (p.Gln1826His)	P38398	Q	1826	H
+182170	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045793	43045793	single nucleotide variant	NM_007294.4(BRCA1):c.5477A>T (p.Gln1826Leu)	P38398	Q	1826	L
+143005	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045794	43045794	single nucleotide variant	NM_007294.4(BRCA1):c.5476C>A (p.Gln1826Lys)	P38398	Q	1826	K
+91654	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045797	43045797	single nucleotide variant	NM_007294.4(BRCA1):c.5473G>A (p.Gly1825Arg)	P38398	G	1825	R
+141804	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43045800	43045800	single nucleotide variant	NM_007294.4(BRCA1):c.5470A>G (p.Ile1824Val)	P38398	I	1824	V
+91650	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43047652	43047652	single nucleotide variant	NM_007294.4(BRCA1):c.5458G>A (p.Gly1820Ser)	P38398	G	1820	S
+185996	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43047681	43047681	single nucleotide variant	NM_007294.4(BRCA1):c.5429T>C (p.Val1810Ala)	P38398	V	1810	A
+55575	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43047684	43047684	single nucleotide variant	NM_007294.4(BRCA1):c.5426T>C (p.Val1809Ala)	P38398	V	1809	A
+186137	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43047691	43047691	single nucleotide variant	NM_007294.4(BRCA1):c.5419A>G (p.Ile1807Val)	P38398	I	1807	V
+55570	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43047694	43047694	single nucleotide variant	NM_007294.4(BRCA1):c.5416C>G (p.Pro1806Ala)	P38398	P	1806	A
+142988	BRCA1	0	Likely benign	criteria provided, single submitter	17	43047697	43047697	single nucleotide variant	NM_007294.4(BRCA1):c.5413C>T (p.His1805Tyr)	P38398	H	1805	Y
+142834	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049125	43049125	single nucleotide variant	NM_007294.4(BRCA1):c.5402G>A (p.Gly1801Asp)	P38398	G	1801	D
+156196	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049126	43049126	single nucleotide variant	NM_007294.4(BRCA1):c.5401G>A (p.Gly1801Ser)	P38398	G	1801	S
+185124	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049131	43049131	single nucleotide variant	NM_007294.4(BRCA1):c.5396C>T (p.Thr1799Ile)	P38398	T	1799	I
+182081	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049149	43049149	single nucleotide variant	NM_007294.4(BRCA1):c.5378A>C (p.Lys1793Thr)	P38398	K	1793	T
+142002	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049156	43049156	single nucleotide variant	NM_007294.4(BRCA1):c.5371G>T (p.Val1791Leu)	P38398	V	1791	L
+55553	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049162	43049162	single nucleotide variant	NM_007294.4(BRCA1):c.5365G>T (p.Ala1789Ser)	P38398	A	1789	S
+141796	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049178	43049178	single nucleotide variant	NM_007294.4(BRCA1):c.5349G>A (p.Met1783Ile)	P38398	M	1783	I
+37659	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049179	43049179	single nucleotide variant	NM_007294.4(BRCA1):c.5348T>C (p.Met1783Thr)	P38398	M	1783	T
+55545	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049180	43049180	single nucleotide variant	NM_007294.4(BRCA1):c.5347A>C (p.Met1783Leu)	P38398	M	1783	L
+55539	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43049194	43049194	single nucleotide variant	NM_007294.4(BRCA1):c.5333A>G (p.Asp1778Gly)	P38398	D	1778	G
+91648	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43051065	43051065	single nucleotide variant	NM_007294.4(BRCA1):c.5330C>T (p.Thr1777Ile)	P38398	T	1777	I
+91647	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051068	43051068	single nucleotide variant	NM_007294.4(BRCA1):c.5327C>T (p.Pro1776Leu)	P38398	P	1776	L
+141467	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051074	43051074	single nucleotide variant	NM_007294.4(BRCA1):c.5321A>G (p.Asn1774Ser)	P38398	N	1774	S
+55522	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051077	43051077	single nucleotide variant	NM_007294.4(BRCA1):c.5318C>T (p.Thr1773Ile)	P38398	T	1773	I
+55521	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051078	43051078	single nucleotide variant	NM_007294.4(BRCA1):c.5317A>T (p.Thr1773Ser)	P38398	T	1773	S
+55518	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051083	43051083	single nucleotide variant	NM_007294.4(BRCA1):c.5312C>G (p.Pro1771Arg)	P38398	P	1771	R
+55519	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051083	43051083	single nucleotide variant	NM_007294.4(BRCA1):c.5312C>T (p.Pro1771Leu)	P38398	P	1771	L
+55513	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051089	43051089	single nucleotide variant	NM_007294.4(BRCA1):c.5306A>G (p.Tyr1769Cys)	P38398	Y	1769	C
+55507	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051107	43051107	single nucleotide variant	NM_007294.4(BRCA1):c.5288G>T (p.Gly1763Val)	P38398	G	1763	V
+91646	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43051110	43051110	single nucleotide variant	NM_007294.4(BRCA1):c.5285G>T (p.Arg1762Met)	P38398	R	1762	M
+96947	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43057053	43057053	single nucleotide variant	NM_007294.4(BRCA1):c.5276A>G (p.Lys1759Arg)	P38398	K	1759	R
+55488	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43057071	43057071	single nucleotide variant	NM_007294.4(BRCA1):c.5258G>C (p.Arg1753Thr)	P38398	R	1753	T
+55479	BRCA1	1	Pathogenic	criteria provided, single submitter	17	43057083	43057083	single nucleotide variant	NM_007294.4(BRCA1):c.5246C>G (p.Pro1749Arg)	P38398	P	1749	R
+55478	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43057084	43057084	single nucleotide variant	NM_007294.4(BRCA1):c.5245C>G (p.Pro1749Ala)	P38398	P	1749	A
+55475	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43057087	43057087	single nucleotide variant	NM_007294.4(BRCA1):c.5242G>A (p.Gly1748Ser)	P38398	G	1748	S
+55467	BRCA1	1	Likely pathogenic	criteria provided, single submitter	17	43057112	43057112	single nucleotide variant	NM_007294.4(BRCA1):c.5217T>G (p.Asp1739Glu)	P38398	D	1739	E
+96943	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43057124	43057124	single nucleotide variant	NM_007294.4(BRCA1):c.5205A>T (p.Glu1735Asp)	P38398	E	1735	D
+55454	BRCA1	1	Pathogenic	criteria provided, single submitter	17	43057128	43057128	single nucleotide variant	NM_007294.4(BRCA1):c.5201T>C (p.Phe1734Ser)	P38398	F	1734	S
+125806	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43057129	43057129	single nucleotide variant	NM_007294.4(BRCA1):c.5200T>C (p.Phe1734Leu)	P38398	F	1734	L
+55447	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063337	43063337	single nucleotide variant	NM_007294.4(BRCA1):c.5189A>G (p.Asn1730Ser)	P38398	N	1730	S
+182166	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063340	43063340	single nucleotide variant	NM_007294.4(BRCA1):c.5186T>A (p.Leu1729Gln)	P38398	L	1729	Q
+187201	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063349	43063349	single nucleotide variant	NM_007294.4(BRCA1):c.5177G>T (p.Arg1726Ile)	P38398	R	1726	I
+55443	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063350	43063350	single nucleotide variant	NM_007294.4(BRCA1):c.5176A>G (p.Arg1726Gly)	P38398	R	1726	G
+55441	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063361	43063361	single nucleotide variant	NM_007294.4(BRCA1):c.5165C>T (p.Ser1722Phe)	P38398	S	1722	F
+142424	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063879	43063879	single nucleotide variant	NM_007294.4(BRCA1):c.5147A>G (p.Tyr1716Cys)	P38398	Y	1716	C
+187156	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063879	43063879	single nucleotide variant	NM_007294.4(BRCA1):c.5147A>C (p.Tyr1716Ser)	P38398	Y	1716	S
+55417	BRCA1	1	Likely pathogenic	criteria provided, single submitter	17	43063881	43063881	single nucleotide variant	NM_007294.4(BRCA1):c.5145C>A (p.Ser1715Arg)	P38398	S	1715	R
+91638	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063897	43063897	single nucleotide variant	NM_007294.4(BRCA1):c.5129G>A (p.Gly1710Glu)	P38398	G	1710	E
+37640	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063903	43063903	single nucleotide variant	NM_007294.4(BRCA1):c.5123C>T (p.Ala1708Val)	P38398	A	1708	V
+37639	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063904	43063904	single nucleotide variant	NM_007294.4(BRCA1):c.5122G>A (p.Ala1708Thr)	P38398	A	1708	T
+41832	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063913	43063913	single nucleotide variant	NM_007294.4(BRCA1):c.5113C>G (p.Leu1705Val)	P38398	L	1705	V
+55389	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43063941	43063941	single nucleotide variant	NM_007294.4(BRCA1):c.5085T>A (p.Phe1695Leu)	P38398	F	1695	L
+55376	BRCA1	1	Pathogenic	criteria provided, single submitter	17	43067608	43067608	single nucleotide variant	NM_007294.4(BRCA1):c.5074G>T (p.Asp1692Tyr)	P38398	D	1692	Y
+55371	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067611	43067611	single nucleotide variant	NM_007294.4(BRCA1):c.5071A>G (p.Thr1691Ala)	P38398	T	1691	A
+55370	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067614	43067614	single nucleotide variant	NM_007294.4(BRCA1):c.5068A>C (p.Lys1690Gln)	P38398	K	1690	Q
+55369	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067616	43067616	single nucleotide variant	NM_007294.4(BRCA1):c.5066T>C (p.Met1689Thr)	P38398	M	1689	T
+55362	BRCA1	1	Likely pathogenic	criteria provided, single submitter	17	43067637	43067637	single nucleotide variant	NM_007294.4(BRCA1):c.5045A>T (p.Glu1682Val)	P38398	E	1682	V
+141076	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067668	43067668	single nucleotide variant	NM_007294.4(BRCA1):c.5014C>T (p.His1672Tyr)	P38398	H	1672	Y
+41831	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067677	43067677	single nucleotide variant	NM_007294.4(BRCA1):c.5005G>T (p.Ala1669Ser)	P38398	A	1669	S
+141071	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067680	43067680	single nucleotide variant	NM_007294.4(BRCA1):c.5002T>A (p.Phe1668Ile)	P38398	F	1668	I
+55352	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067685	43067685	single nucleotide variant	NM_007294.4(BRCA1):c.4997A>G (p.Tyr1666Cys)	P38398	Y	1666	C
+55350	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43067689	43067689	single nucleotide variant	NM_007294.4(BRCA1):c.4993G>A (p.Val1665Met)	P38398	V	1665	M
+55348	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43067695	43067695	single nucleotide variant	NM_007294.4(BRCA1):c.4987A>T (p.Met1663Leu)	P38398	M	1663	L
+55337	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43070947	43070947	single nucleotide variant	NM_007294.4(BRCA1):c.4967G>A (p.Gly1656Asp)	P38398	G	1656	D
+55331	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43070957	43070957	single nucleotide variant	NM_007294.4(BRCA1):c.4957G>A (p.Val1653Met)	P38398	V	1653	M
+55325	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43070973	43070973	single nucleotide variant	NM_007294.4(BRCA1):c.4941C>A (p.Asn1647Lys)	P38398	N	1647	K
+55321	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43070979	43070979	single nucleotide variant	NM_007294.4(BRCA1):c.4935G>C (p.Arg1645Ser)	P38398	R	1645	S
+142312	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43070980	43070980	single nucleotide variant	NM_007294.4(BRCA1):c.4934G>C (p.Arg1645Thr)	P38398	R	1645	T
+55319	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43070981	43070981	single nucleotide variant	NM_007294.4(BRCA1):c.4933A>G (p.Arg1645Gly)	P38398	R	1645	G
+55318	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43070983	43070983	single nucleotide variant	NM_007294.4(BRCA1):c.4931A>G (p.Glu1644Gly)	P38398	E	1644	G
+55316	BRCA1	0	Likely benign	criteria provided, single submitter	17	43070993	43070993	single nucleotide variant	NM_007294.4(BRCA1):c.4921G>A (p.Ala1641Thr)	P38398	A	1641	T
+41829	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071011	43071011	single nucleotide variant	NM_007294.4(BRCA1):c.4903G>A (p.Glu1635Lys)	P38398	E	1635	K
+55309	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071022	43071022	single nucleotide variant	NM_007294.4(BRCA1):c.4892G>A (p.Ser1631Asn)	P38398	S	1631	N
+186154	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071023	43071023	single nucleotide variant	NM_007294.4(BRCA1):c.4891A>T (p.Ser1631Cys)	P38398	S	1631	C
+55306	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071032	43071032	single nucleotide variant	NM_007294.4(BRCA1):c.4882A>G (p.Met1628Val)	P38398	M	1628	V
+185934	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43071049	43071049	single nucleotide variant	NM_007294.4(BRCA1):c.4865C>G (p.Thr1622Ser)	P38398	T	1622	S
+141333	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071056	43071056	single nucleotide variant	NM_007294.4(BRCA1):c.4858A>G (p.Thr1620Ala)	P38398	T	1620	A
+55302	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071071	43071071	single nucleotide variant	NM_007294.4(BRCA1):c.4843G>A (p.Ala1615Thr)	P38398	A	1615	T
+55292	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071103	43071103	single nucleotide variant	NM_007294.4(BRCA1):c.4811A>G (p.Gln1604Arg)	P38398	Q	1604	R
+55288	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071125	43071125	single nucleotide variant	NM_007294.4(BRCA1):c.4789A>G (p.Thr1597Ala)	P38398	T	1597	A
+55287	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43071127	43071127	single nucleotide variant	NM_007294.4(BRCA1):c.4787C>T (p.Ser1596Leu)	P38398	S	1596	L
+183931	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071138	43071138	single nucleotide variant	NM_007294.4(BRCA1):c.4776C>G (p.Asn1592Lys)	P38398	N	1592	K
+187395	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071139	43071139	single nucleotide variant	NM_007294.4(BRCA1):c.4775A>G (p.Asn1592Ser)	P38398	N	1592	S
+55283	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071149	43071149	single nucleotide variant	NM_007294.4(BRCA1):c.4765C>T (p.Arg1589Cys)	P38398	R	1589	C
+1742857	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43071161	43071161	single nucleotide variant	NM_007294.4(BRCA1):c.4753C>T (p.Pro1585Ser)	P38398	P	1585	S
+142301	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071179	43071179	single nucleotide variant	NM_007294.4(BRCA1):c.4735C>G (p.Pro1579Ala)	P38398	P	1579	A
+55274	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071181	43071181	single nucleotide variant	NM_007294.4(BRCA1):c.4733A>G (p.Asp1578Gly)	P38398	D	1578	G
+125729	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071184	43071184	single nucleotide variant	NM_007294.4(BRCA1):c.4730C>A (p.Ser1577Tyr)	P38398	S	1577	Y
+55261	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43071229	43071229	single nucleotide variant	NM_007294.4(BRCA1):c.4685C>T (p.Pro1562Leu)	P38398	P	1562	L
+141610	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43071237	43071237	single nucleotide variant	NM_007294.4(BRCA1):c.4677G>C (p.Glu1559Asp)	P38398	E	1559	D
+55255	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074337	43074337	single nucleotide variant	NM_007294.4(BRCA1):c.4669G>C (p.Asp1557His)	P38398	D	1557	H
+55254	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074349	43074349	single nucleotide variant	NM_007294.4(BRCA1):c.4657T>A (p.Leu1553Met)	P38398	L	1553	M
+55249	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074363	43074363	single nucleotide variant	NM_007294.4(BRCA1):c.4643C>T (p.Thr1548Met)	P38398	T	1548	M
+37601	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074368	43074368	single nucleotide variant	NM_007294.4(BRCA1):c.4638T>G (p.Asp1546Glu)	P38398	D	1546	E
+55244	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074375	43074375	single nucleotide variant	NM_007294.4(BRCA1):c.4631C>T (p.Pro1544Leu)	P38398	P	1544	L
+55242	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074381	43074381	single nucleotide variant	NM_007294.4(BRCA1):c.4625C>G (p.Ser1542Cys)	P38398	S	1542	C
+184744	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074412	43074412	single nucleotide variant	NM_007294.4(BRCA1):c.4594G>A (p.Val1532Ile)	P38398	V	1532	I
+55233	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074421	43074421	single nucleotide variant	NM_007294.4(BRCA1):c.4585A>G (p.Ile1529Val)	P38398	I	1529	V
+55228	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074441	43074441	single nucleotide variant	NM_007294.4(BRCA1):c.4565A>G (p.Tyr1522Cys)	P38398	Y	1522	C
+55224	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43074472	43074472	single nucleotide variant	NM_007294.4(BRCA1):c.4534A>T (p.Ser1512Cys)	P38398	S	1512	C
+55208	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43076492	43076492	single nucleotide variant	NM_007294.4(BRCA1):c.4480G>A (p.Glu1494Lys)	P38398	E	1494	K
+141615	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43076506	43076506	single nucleotide variant	NM_007294.4(BRCA1):c.4466A>G (p.Lys1489Arg)	P38398	K	1489	R
+55203	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43076518	43076518	single nucleotide variant	NM_007294.4(BRCA1):c.4454C>T (p.Thr1485Ile)	P38398	T	1485	I
+55201	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43076522	43076522	single nucleotide variant	NM_007294.4(BRCA1):c.4450T>A (p.Ser1484Thr)	P38398	S	1484	T
+91630	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43076555	43076555	single nucleotide variant	NM_007294.4(BRCA1):c.4417T>C (p.Ser1473Pro)	P38398	S	1473	P
+89064	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43076562	43076562	single nucleotide variant	NM_007294.4(BRCA1):c.4410A>T (p.Glu1470Asp)	P38398	E	1470	D
+142639	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43076611	43076611	single nucleotide variant	NM_007294.4(BRCA1):c.4361T>C (p.Val1454Ala)	P38398	V	1454	A
+125707	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082418	43082418	single nucleotide variant	NM_007294.4(BRCA1):c.4343G>A (p.Ser1448Asn)	P38398	S	1448	N
+55174	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082419	43082419	single nucleotide variant	NM_007294.4(BRCA1):c.4342A>G (p.Ser1448Gly)	P38398	S	1448	G
+182161	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082422	43082422	single nucleotide variant	NM_007294.4(BRCA1):c.4339C>A (p.Gln1447Lys)	P38398	Q	1447	K
+55169	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082433	43082433	single nucleotide variant	NM_007294.4(BRCA1):c.4328G>A (p.Arg1443Gln)	P38398	R	1443	Q
+182080	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43082456	43082456	single nucleotide variant	NM_007294.4(BRCA1):c.4305C>G (p.Asp1435Glu)	P38398	D	1435	E
+55163	BRCA1	0	Likely benign	criteria provided, single submitter	17	43082467	43082467	single nucleotide variant	NM_007294.4(BRCA1):c.4294A>C (p.Ile1432Leu)	P38398	I	1432	L
+55162	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082473	43082473	single nucleotide variant	NM_007294.4(BRCA1):c.4288C>T (p.Pro1430Ser)	P38398	P	1430	S
+91627	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082489	43082489	single nucleotide variant	NM_007294.4(BRCA1):c.4272G>C (p.Gln1424His)	P38398	Q	1424	H
+55157	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082499	43082499	single nucleotide variant	NM_007294.4(BRCA1):c.4262A>G (p.His1421Arg)	P38398	H	1421	R
+55156	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43082500	43082500	single nucleotide variant	NM_007294.4(BRCA1):c.4261C>T (p.His1421Tyr)	P38398	H	1421	Y
+55144	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43082541	43082541	single nucleotide variant	NM_007294.4(BRCA1):c.4220T>C (p.Leu1407Pro)	P38398	L	1407	P
+55127	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43090945	43090945	single nucleotide variant	NM_007294.4(BRCA1):c.4184A>G (p.Gln1395Arg)	P38398	Q	1395	R
+37573	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43090948	43090948	single nucleotide variant	NM_007294.4(BRCA1):c.4181C>T (p.Thr1394Ile)	P38398	T	1394	I
+55119	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43090963	43090963	single nucleotide variant	NM_007294.4(BRCA1):c.4166G>A (p.Ser1389Asn)	P38398	S	1389	N
+37571	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091002	43091002	single nucleotide variant	NM_007294.4(BRCA1):c.4127C>G (p.Thr1376Arg)	P38398	T	1376	R
+55105	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091014	43091014	single nucleotide variant	NM_007294.4(BRCA1):c.4115G>A (p.Cys1372Tyr)	P38398	C	1372	Y
+91622	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091443	43091443	single nucleotide variant	NM_007294.4(BRCA1):c.4088C>T (p.Ser1363Leu)	P38398	S	1363	L
+37564	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091448	43091448	single nucleotide variant	NM_007294.4(BRCA1):c.4083G>A (p.Met1361Ile)	P38398	M	1361	I
+37563	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091456	43091456	single nucleotide variant	NM_007294.4(BRCA1):c.4075C>G (p.Gln1359Glu)	P38398	Q	1359	E
+37562	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091458	43091458	single nucleotide variant	NM_007294.4(BRCA1):c.4073A>G (p.Glu1358Gly)	P38398	E	1358	G
+55096	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091459	43091459	single nucleotide variant	NM_007294.4(BRCA1):c.4072G>A (p.Glu1358Lys)	P38398	E	1358	K
+55089	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091477	43091477	single nucleotide variant	NM_007294.4(BRCA1):c.4054G>A (p.Glu1352Lys)	P38398	E	1352	K
+55084	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091486	43091486	single nucleotide variant	NM_007294.4(BRCA1):c.4045A>C (p.Thr1349Pro)	P38398	T	1349	P
+55081	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091491	43091491	single nucleotide variant	NM_007294.4(BRCA1):c.4040G>A (p.Arg1347Lys)	P38398	R	1347	K
+55077	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091500	43091500	single nucleotide variant	NM_007294.4(BRCA1):c.4031A>G (p.Asp1344Gly)	P38398	D	1344	G
+182157	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091516	43091516	single nucleotide variant	NM_007294.4(BRCA1):c.4015G>A (p.Glu1339Lys)	P38398	E	1339	K
+55075	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091520	43091520	single nucleotide variant	NM_007294.4(BRCA1):c.4011C>G (p.Asp1337Glu)	P38398	D	1337	E
+182156	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091536	43091536	single nucleotide variant	NM_007294.4(BRCA1):c.3995G>T (p.Gly1332Val)	P38398	G	1332	V
+182079	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091551	43091551	single nucleotide variant	NM_007294.4(BRCA1):c.3980A>G (p.Gln1327Arg)	P38398	Q	1327	R
+142109	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091561	43091561	single nucleotide variant	NM_007294.4(BRCA1):c.3970A>T (p.Met1324Leu)	P38398	M	1324	L
+55060	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091566	43091566	single nucleotide variant	NM_007294.4(BRCA1):c.3965A>T (p.Lys1322Ile)	P38398	K	1322	I
+41820	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091569	43091569	single nucleotide variant	NM_007294.4(BRCA1):c.3962C>G (p.Ser1321Cys)	P38398	S	1321	C
+142790	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091569	43091569	single nucleotide variant	NM_007294.4(BRCA1):c.3962C>A (p.Ser1321Tyr)	P38398	S	1321	Y
+142673	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091575	43091575	single nucleotide variant	NM_007294.4(BRCA1):c.3956G>A (p.Gly1319Asp)	P38398	G	1319	D
+96922	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091576	43091576	single nucleotide variant	NM_007294.4(BRCA1):c.3955G>A (p.Gly1319Ser)	P38398	G	1319	S
+55058	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091579	43091579	single nucleotide variant	NM_007294.4(BRCA1):c.3952A>G (p.Ile1318Val)	P38398	I	1318	V
+55057	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091587	43091587	single nucleotide variant	NM_007294.4(BRCA1):c.3944C>A (p.Pro1315His)	P38398	P	1315	H
+96921	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091587	43091587	single nucleotide variant	NM_007294.4(BRCA1):c.3944C>G (p.Pro1315Arg)	P38398	P	1315	R
+55056	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091591	43091591	single nucleotide variant	NM_007294.4(BRCA1):c.3940G>A (p.Asp1314Asn)	P38398	D	1314	N
+55053	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091602	43091602	single nucleotide variant	NM_007294.4(BRCA1):c.3929C>A (p.Thr1310Lys)	P38398	T	1310	K
+96920	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091617	43091617	single nucleotide variant	NM_007294.4(BRCA1):c.3914A>T (p.Asp1305Val)	P38398	D	1305	V
+55044	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091628	43091628	single nucleotide variant	NM_007294.4(BRCA1):c.3903T>A (p.Ser1301Arg)	P38398	S	1301	R
+91618	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091634	43091634	single nucleotide variant	NM_007294.4(BRCA1):c.3897G>T (p.Gln1299His)	P38398	Q	1299	H
+55035	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091653	43091653	single nucleotide variant	NM_007294.4(BRCA1):c.3878C>A (p.Ala1293Asp)	P38398	A	1293	D
+55036	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091653	43091653	single nucleotide variant	NM_007294.4(BRCA1):c.3878C>T (p.Ala1293Val)	P38398	A	1293	V
+37555	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091654	43091654	single nucleotide variant	NM_007294.4(BRCA1):c.3877G>C (p.Ala1293Pro)	P38398	A	1293	P
+96918	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091662	43091662	single nucleotide variant	NM_007294.4(BRCA1):c.3869A>C (p.Lys1290Thr)	P38398	K	1290	T
+91617	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091663	43091663	single nucleotide variant	NM_007294.4(BRCA1):c.3868A>G (p.Lys1290Glu)	P38398	K	1290	E
+55029	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091680	43091680	single nucleotide variant	NM_007294.4(BRCA1):c.3851A>G (p.His1284Arg)	P38398	H	1284	R
+55027	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091686	43091686	single nucleotide variant	NM_007294.4(BRCA1):c.3845A>T (p.Glu1282Val)	P38398	E	1282	V
+55025	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091689	43091689	single nucleotide variant	NM_007294.4(BRCA1):c.3842A>C (p.Gln1281Pro)	P38398	Q	1281	P
+55020	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091696	43091696	single nucleotide variant	NM_007294.4(BRCA1):c.3835G>A (p.Ala1279Thr)	P38398	A	1279	T
+182155	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091701	43091701	single nucleotide variant	NM_007294.4(BRCA1):c.3830C>T (p.Ala1277Val)	P38398	A	1277	V
+55019	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091702	43091702	single nucleotide variant	NM_007294.4(BRCA1):c.3829G>C (p.Ala1277Pro)	P38398	A	1277	P
+55011	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091728	43091728	single nucleotide variant	NM_007294.4(BRCA1):c.3803A>G (p.Asn1268Ser)	P38398	N	1268	S
+142031	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091731	43091731	single nucleotide variant	NM_007294.4(BRCA1):c.3800T>C (p.Leu1267Ser)	P38398	L	1267	S
+91615	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091733	43091733	single nucleotide variant	NM_007294.4(BRCA1):c.3798C>G (p.Ser1266Arg)	P38398	S	1266	R
+141540	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091734	43091734	single nucleotide variant	NM_007294.4(BRCA1):c.3797G>T (p.Ser1266Ile)	P38398	S	1266	I
+55007	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091746	43091746	single nucleotide variant	NM_007294.4(BRCA1):c.3785C>T (p.Ser1262Leu)	P38398	S	1262	L
+41819	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091748	43091748	single nucleotide variant	NM_007294.4(BRCA1):c.3783A>T (p.Leu1261Phe)	P38398	L	1261	F
+37548	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091749	43091749	single nucleotide variant	NM_007294.4(BRCA1):c.3782T>C (p.Leu1261Ser)	P38398	L	1261	S
+125651	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091755	43091755	single nucleotide variant	NM_007294.4(BRCA1):c.3776A>C (p.Asn1259Thr)	P38398	N	1259	T
+96916	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091757	43091757	single nucleotide variant	NM_007294.4(BRCA1):c.3774G>T (p.Glu1258Asp)	P38398	E	1258	D
+54994	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091771	43091771	single nucleotide variant	NM_007294.4(BRCA1):c.3760A>G (p.Lys1254Glu)	P38398	K	1254	E
+54990	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091773	43091773	single nucleotide variant	NM_007294.4(BRCA1):c.3758C>A (p.Ser1253Tyr)	P38398	S	1253	Y
+141786	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091781	43091781	single nucleotide variant	NM_007294.4(BRCA1):c.3750G>C (p.Glu1250Asp)	P38398	E	1250	D
+54986	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091785	43091785	single nucleotide variant	NM_007294.4(BRCA1):c.3746C>G (p.Thr1249Ser)	P38398	T	1249	S
+156192	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091795	43091795	single nucleotide variant	NM_007294.4(BRCA1):c.3736A>G (p.Thr1246Ala)	P38398	T	1246	A
+54979	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091809	43091809	single nucleotide variant	NM_007294.4(BRCA1):c.3722C>A (p.Ser1241Tyr)	P38398	S	1241	Y
+54980	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091809	43091809	single nucleotide variant	NM_007294.4(BRCA1):c.3722C>G (p.Ser1241Cys)	P38398	S	1241	C
+54974	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091818	43091818	single nucleotide variant	NM_007294.4(BRCA1):c.3713C>G (p.Pro1238Arg)	P38398	P	1238	R
+54973	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091820	43091820	single nucleotide variant	NM_007294.4(BRCA1):c.3711A>G (p.Ile1237Met)	P38398	I	1237	M
+54964	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091833	43091833	single nucleotide variant	NM_007294.4(BRCA1):c.3698A>G (p.Lys1233Arg)	P38398	K	1233	R
+37541	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091840	43091840	single nucleotide variant	NM_007294.4(BRCA1):c.3691T>C (p.Phe1231Leu)	P38398	F	1231	L
+182154	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091850	43091850	single nucleotide variant	NM_007294.4(BRCA1):c.3681A>T (p.Gln1227His)	P38398	Q	1227	H
+54958	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091869	43091869	single nucleotide variant	NM_007294.4(BRCA1):c.3662A>C (p.Glu1221Ala)	P38398	E	1221	A
+54956	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091876	43091876	single nucleotide variant	NM_007294.4(BRCA1):c.3655G>A (p.Glu1219Lys)	P38398	E	1219	K
+37536	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091879	43091879	single nucleotide variant	NM_007294.4(BRCA1):c.3652A>G (p.Ser1218Gly)	P38398	S	1218	G
+54955	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091879	43091879	single nucleotide variant	NM_007294.4(BRCA1):c.3652A>T (p.Ser1218Cys)	P38398	S	1218	C
+91611	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091881	43091881	single nucleotide variant	NM_007294.4(BRCA1):c.3650C>G (p.Ser1217Cys)	P38398	S	1217	C
+54953	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091882	43091882	single nucleotide variant	NM_007294.4(BRCA1):c.3649T>C (p.Ser1217Pro)	P38398	S	1217	P
+91610	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091889	43091889	single nucleotide variant	NM_007294.4(BRCA1):c.3642G>T (p.Glu1214Asp)	P38398	E	1214	D
+54942	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091906	43091906	single nucleotide variant	NM_007294.4(BRCA1):c.3625T>G (p.Leu1209Val)	P38398	L	1209	V
+54940	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091909	43091909	single nucleotide variant	NM_007294.4(BRCA1):c.3622A>G (p.Lys1208Glu)	P38398	K	1208	E
+89060	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091912	43091912	single nucleotide variant	NM_007294.4(BRCA1):c.3619A>G (p.Lys1207Glu)	P38398	K	1207	E
+54936	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091918	43091918	single nucleotide variant	NM_007294.4(BRCA1):c.3613G>A (p.Gly1205Arg)	P38398	G	1205	R
+54937	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091918	43091918	single nucleotide variant	NM_007294.4(BRCA1):c.3613G>C (p.Gly1205Arg)	P38398	G	1205	R
+54934	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091924	43091924	single nucleotide variant	NM_007294.4(BRCA1):c.3607C>G (p.Arg1203Gly)	P38398	R	1203	G
+142428	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091935	43091935	single nucleotide variant	NM_007294.4(BRCA1):c.3596C>T (p.Ala1199Val)	P38398	A	1199	V
+54925	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091944	43091944	single nucleotide variant	NM_007294.4(BRCA1):c.3587C>A (p.Thr1196Lys)	P38398	T	1196	K
+54926	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091944	43091944	single nucleotide variant	NM_007294.4(BRCA1):c.3587C>T (p.Thr1196Ile)	P38398	T	1196	I
+142258	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091947	43091947	single nucleotide variant	NM_007294.4(BRCA1):c.3584A>G (p.His1195Arg)	P38398	H	1195	R
+54922	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091950	43091950	single nucleotide variant	NM_007294.4(BRCA1):c.3581C>T (p.Thr1194Ile)	P38398	T	1194	I
+54917	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091971	43091971	single nucleotide variant	NM_007294.4(BRCA1):c.3560G>A (p.Ser1187Asn)	P38398	S	1187	N
+89059	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091976	43091976	single nucleotide variant	NM_007294.4(BRCA1):c.3555G>T (p.Glu1185Asp)	P38398	E	1185	D
+54912	BRCA1	0	Likely benign	criteria provided, single submitter	17	43091989	43091989	single nucleotide variant	NM_007294.4(BRCA1):c.3542T>C (p.Val1181Ala)	P38398	V	1181	A
+142028	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43091996	43091996	single nucleotide variant	NM_007294.4(BRCA1):c.3535A>C (p.Lys1179Gln)	P38398	K	1179	Q
+54908	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092004	43092004	single nucleotide variant	NM_007294.4(BRCA1):c.3527T>A (p.Val1176Asp)	P38398	V	1176	D
+54907	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092016	43092016	single nucleotide variant	NM_007294.4(BRCA1):c.3515A>G (p.Glu1172Gly)	P38398	E	1172	G
+54905	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092023	43092023	single nucleotide variant	NM_007294.4(BRCA1):c.3508A>T (p.Ile1170Phe)	P38398	I	1170	F
+54900	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092040	43092040	single nucleotide variant	NM_007294.4(BRCA1):c.3491G>T (p.Ser1164Ile)	P38398	S	1164	I
+54899	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092043	43092043	single nucleotide variant	NM_007294.4(BRCA1):c.3488C>T (p.Thr1163Ile)	P38398	T	1163	I
+54890	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092077	43092077	single nucleotide variant	NM_007294.4(BRCA1):c.3454G>A (p.Asp1152Asn)	P38398	D	1152	N
+142830	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092082	43092082	single nucleotide variant	NM_007294.4(BRCA1):c.3449C>T (p.Pro1150Leu)	P38398	P	1150	L
+54886	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092094	43092094	single nucleotide variant	NM_007294.4(BRCA1):c.3437G>C (p.Cys1146Ser)	P38398	C	1146	S
+96913	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092094	43092094	single nucleotide variant	NM_007294.4(BRCA1):c.3437G>A (p.Cys1146Tyr)	P38398	C	1146	Y
+96912	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092098	43092098	single nucleotide variant	NM_007294.4(BRCA1):c.3433G>T (p.Val1145Phe)	P38398	V	1145	F
+54884	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092099	43092099	single nucleotide variant	NM_007294.4(BRCA1):c.3432G>T (p.Gln1144His)	P38398	Q	1144	H
+54880	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092103	43092103	single nucleotide variant	NM_007294.4(BRCA1):c.3428C>T (p.Ser1143Phe)	P38398	S	1143	F
+54878	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092107	43092107	single nucleotide variant	NM_007294.4(BRCA1):c.3424G>C (p.Ala1142Pro)	P38398	A	1142	P
+141462	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092116	43092116	single nucleotide variant	NM_007294.4(BRCA1):c.3415A>C (p.Ser1139Arg)	P38398	S	1139	R
+54871	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092121	43092121	single nucleotide variant	NM_007294.4(BRCA1):c.3410T>C (p.Met1137Thr)	P38398	M	1137	T
+54869	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092124	43092124	single nucleotide variant	NM_007294.4(BRCA1):c.3407C>G (p.Pro1136Arg)	P38398	P	1136	R
+96911	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092125	43092125	single nucleotide variant	NM_007294.4(BRCA1):c.3406C>A (p.Pro1136Thr)	P38398	P	1136	T
+54862	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092154	43092154	single nucleotide variant	NM_007294.4(BRCA1):c.3377C>T (p.Pro1126Leu)	P38398	P	1126	L
+54860	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092164	43092164	single nucleotide variant	NM_007294.4(BRCA1):c.3367G>T (p.Asp1123Tyr)	P38398	D	1123	Y
+37527	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092169	43092169	single nucleotide variant	NM_007294.4(BRCA1):c.3362A>G (p.Asn1121Ser)	P38398	N	1121	S
+54855	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092176	43092176	single nucleotide variant	NM_007294.4(BRCA1):c.3355A>T (p.Thr1119Ser)	P38398	T	1119	S
+37525	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092177	43092177	single nucleotide variant	NM_007294.4(BRCA1):c.3354G>T (p.Gln1118His)	P38398	Q	1118	H
+54853	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092185	43092185	single nucleotide variant	NM_007294.4(BRCA1):c.3346G>C (p.Val1116Leu)	P38398	V	1116	L
+54834	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092218	43092218	single nucleotide variant	NM_007294.4(BRCA1):c.3313C>A (p.His1105Asn)	P38398	H	1105	N
+54832	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092223	43092223	single nucleotide variant	NM_007294.4(BRCA1):c.3308G>T (p.Cys1103Phe)	P38398	C	1103	F
+54831	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092226	43092226	single nucleotide variant	NM_007294.4(BRCA1):c.3305A>G (p.Asn1102Ser)	P38398	N	1102	S
+142978	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092242	43092242	single nucleotide variant	NM_007294.4(BRCA1):c.3289A>T (p.Ser1097Cys)	P38398	S	1097	C
+54820	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092244	43092244	single nucleotide variant	NM_007294.4(BRCA1):c.3287A>G (p.Gln1096Arg)	P38398	Q	1096	R
+133724	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092254	43092254	single nucleotide variant	NM_007294.4(BRCA1):c.3277G>T (p.Val1093Phe)	P38398	V	1093	F
+182153	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092261	43092261	single nucleotide variant	NM_007294.4(BRCA1):c.3270A>T (p.Gln1090His)	P38398	Q	1090	H
+54814	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092268	43092268	single nucleotide variant	NM_007294.4(BRCA1):c.3263T>A (p.Val1088Asp)	P38398	V	1088	D
+54812	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092271	43092271	single nucleotide variant	NM_007294.4(BRCA1):c.3260G>C (p.Gly1087Ala)	P38398	G	1087	A
+54809	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092274	43092274	single nucleotide variant	NM_007294.4(BRCA1):c.3257T>C (p.Leu1086Ser)	P38398	L	1086	S
+37517	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092284	43092284	single nucleotide variant	NM_007294.4(BRCA1):c.3247A>C (p.Met1083Leu)	P38398	M	1083	L
+54803	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092303	43092303	single nucleotide variant	NM_007294.4(BRCA1):c.3228A>T (p.Arg1076Ser)	P38398	R	1076	S
+54802	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092304	43092304	single nucleotide variant	NM_007294.4(BRCA1):c.3227G>C (p.Arg1076Thr)	P38398	R	1076	T
+54800	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092311	43092311	single nucleotide variant	NM_007294.4(BRCA1):c.3220A>G (p.Arg1074Gly)	P38398	R	1074	G
+37515	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092322	43092322	single nucleotide variant	NM_007294.4(BRCA1):c.3209C>G (p.Ala1070Gly)	P38398	A	1070	G
+54795	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092341	43092341	single nucleotide variant	NM_007294.4(BRCA1):c.3190A>T (p.Ser1064Cys)	P38398	S	1064	C
+37513	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092346	43092346	single nucleotide variant	NM_007294.4(BRCA1):c.3185G>T (p.Gly1062Val)	P38398	G	1062	V
+54790	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092352	43092352	single nucleotide variant	NM_007294.4(BRCA1):c.3179A>C (p.Glu1060Ala)	P38398	E	1060	A
+156191	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092361	43092361	single nucleotide variant	NM_007294.4(BRCA1):c.3170G>A (p.Ser1057Asn)	P38398	S	1057	N
+54787	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092362	43092362	single nucleotide variant	NM_007294.4(BRCA1):c.3169A>G (p.Ser1057Gly)	P38398	S	1057	G
+141223	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092364	43092364	single nucleotide variant	NM_007294.4(BRCA1):c.3167C>G (p.Ser1056Cys)	P38398	S	1056	C
+91606	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092376	43092376	single nucleotide variant	NM_007294.4(BRCA1):c.3155A>G (p.Asn1052Ser)	P38398	N	1052	S
+54781	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092379	43092379	single nucleotide variant	NM_007294.4(BRCA1):c.3152C>G (p.Thr1051Ser)	P38398	T	1051	S
+91605	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092380	43092380	single nucleotide variant	NM_007294.4(BRCA1):c.3151A>G (p.Thr1051Ala)	P38398	T	1051	A
+54776	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092388	43092388	single nucleotide variant	NM_007294.4(BRCA1):c.3143G>A (p.Gly1048Asp)	P38398	G	1048	D
+54775	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092391	43092391	single nucleotide variant	NM_007294.4(BRCA1):c.3140T>C (p.Val1047Ala)	P38398	V	1047	A
+142668	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092404	43092404	single nucleotide variant	NM_007294.4(BRCA1):c.3127A>G (p.Asn1043Asp)	P38398	N	1043	D
+182152	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092434	43092434	single nucleotide variant	NM_007294.4(BRCA1):c.3097G>A (p.Glu1033Lys)	P38398	E	1033	K
+54767	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092451	43092451	single nucleotide variant	NM_007294.4(BRCA1):c.3080G>A (p.Ser1027Asn)	P38398	S	1027	N
+54766	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092457	43092457	single nucleotide variant	NM_007294.4(BRCA1):c.3074C>T (p.Thr1025Ile)	P38398	T	1025	I
+54765	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092459	43092459	single nucleotide variant	NM_007294.4(BRCA1):c.3072C>G (p.Ser1024Arg)	P38398	S	1024	R
+37504	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092476	43092476	single nucleotide variant	NM_007294.4(BRCA1):c.3055A>G (p.Ile1019Val)	P38398	I	1019	V
+54762	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092485	43092485	single nucleotide variant	NM_007294.4(BRCA1):c.3046A>G (p.Asn1016Asp)	P38398	N	1016	D
+54761	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092490	43092490	single nucleotide variant	NM_007294.4(BRCA1):c.3041T>A (p.Met1014Lys)	P38398	M	1014	K
+91604	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092490	43092490	single nucleotide variant	NM_007294.4(BRCA1):c.3041T>C (p.Met1014Thr)	P38398	M	1014	T
+54759	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092491	43092491	single nucleotide variant	NM_007294.4(BRCA1):c.3040A>G (p.Met1014Val)	P38398	M	1014	V
+54760	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092491	43092491	single nucleotide variant	NM_007294.4(BRCA1):c.3040A>T (p.Met1014Leu)	P38398	M	1014	L
+142775	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092509	43092509	single nucleotide variant	NM_007294.4(BRCA1):c.3022A>C (p.Met1008Leu)	P38398	M	1008	L
+54742	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092533	43092533	single nucleotide variant	NM_007294.4(BRCA1):c.2998G>A (p.Glu1000Lys)	P38398	E	1000	K
+54741	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092536	43092536	single nucleotide variant	NM_007294.3(BRCA1):c.2995C>A (p.Leu999Ile)	P38398	L	999	I
+156190	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092551	43092551	single nucleotide variant	NM_007294.4(BRCA1):c.2980T>A (p.Cys994Ser)	P38398	C	994	S
+54734	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092563	43092563	single nucleotide variant	NM_007294.4(BRCA1):c.2968G>A (p.Val990Ile)	P38398	V	990	I
+37494	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092568	43092568	single nucleotide variant	NM_007294.4(BRCA1):c.2963C>T (p.Ser988Leu)	P38398	S	988	L
+54728	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092595	43092595	single nucleotide variant	NM_007294.4(BRCA1):c.2936G>A (p.Arg979His)	P38398	R	979	H
+182078	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092596	43092596	single nucleotide variant	NM_007294.4(BRCA1):c.2935C>A (p.Arg979Ser)	P38398	R	979	S
+182151	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092609	43092609	single nucleotide variant	NM_007294.4(BRCA1):c.2922A>C (p.Leu974Phe)	P38398	L	974	F
+54720	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092610	43092610	single nucleotide variant	NM_007294.4(BRCA1):c.2921T>C (p.Leu974Ser)	P38398	L	974	S
+54717	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092614	43092614	single nucleotide variant	NM_007294.4(BRCA1):c.2917C>G (p.Leu973Val)	P38398	L	973	V
+142793	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092616	43092616	single nucleotide variant	NM_007294.4(BRCA1):c.2915G>A (p.Gly972Glu)	P38398	G	972	E
+54714	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092620	43092620	single nucleotide variant	NM_007294.4(BRCA1):c.2911C>A (p.His971Asn)	P38398	H	971	N
+96910	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092621	43092621	single nucleotide variant	NM_007294.4(BRCA1):c.2910A>C (p.Lys970Asn)	P38398	K	970	N
+141301	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092626	43092626	single nucleotide variant	NM_007294.4(BRCA1):c.2905A>G (p.Asn969Asp)	P38398	N	969	D
+54711	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092632	43092632	single nucleotide variant	NM_007294.4(BRCA1):c.2899A>T (p.Thr967Ser)	P38398	T	967	S
+182077	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092643	43092643	single nucleotide variant	NM_007294.4(BRCA1):c.2888C>T (p.Thr963Ile)	P38398	T	963	I
+54708	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092652	43092652	single nucleotide variant	NM_007294.4(BRCA1):c.2879G>A (p.Gly960Asp)	P38398	G	960	D
+142819	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092654	43092654	single nucleotide variant	NM_007294.4(BRCA1):c.2877A>C (p.Arg959Ser)	P38398	R	959	S
+54706	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092659	43092659	single nucleotide variant	NM_007294.4(BRCA1):c.2872T>A (p.Phe958Ile)	P38398	F	958	I
+182150	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092685	43092685	single nucleotide variant	NM_007294.4(BRCA1):c.2846G>A (p.Gly949Asp)	P38398	G	949	D
+54689	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092713	43092713	single nucleotide variant	NM_007294.4(BRCA1):c.2818G>T (p.Asp940Tyr)	P38398	D	940	Y
+182149	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092723	43092723	single nucleotide variant	NM_007294.4(BRCA1):c.2808T>G (p.Asp936Glu)	P38398	D	936	E
+37490	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092733	43092733	single nucleotide variant	NM_007294.4(BRCA1):c.2798G>A (p.Gly933Asp)	P38398	G	933	D
+54680	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092742	43092742	single nucleotide variant	NM_007294.4(BRCA1):c.2789C>T (p.Pro930Leu)	P38398	P	930	L
+41813	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092748	43092748	single nucleotide variant	NM_007294.4(BRCA1):c.2783G>A (p.Gly928Asp)	P38398	G	928	D
+54679	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092749	43092749	single nucleotide variant	NM_007294.4(BRCA1):c.2782G>A (p.Gly928Ser)	P38398	G	928	S
+54676	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092766	43092766	single nucleotide variant	NM_007294.4(BRCA1):c.2765C>G (p.Thr922Arg)	P38398	T	922	R
+54672	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092772	43092772	single nucleotide variant	NM_007294.4(BRCA1):c.2759T>C (p.Val920Ala)	P38398	V	920	A
+91600	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092777	43092777	single nucleotide variant	NM_007294.4(BRCA1):c.2754G>T (p.Lys918Asn)	P38398	K	918	N
+54671	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092779	43092779	single nucleotide variant	NM_007294.4(BRCA1):c.2752A>C (p.Lys918Gln)	P38398	K	918	Q
+141097	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092781	43092781	single nucleotide variant	NM_007294.4(BRCA1):c.2750T>C (p.Ile917Thr)	P38398	I	917	T
+91598	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092785	43092785	single nucleotide variant	NM_007294.4(BRCA1):c.2746A>T (p.Asn916Tyr)	P38398	N	916	Y
+54665	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092792	43092792	single nucleotide variant	NM_007294.4(BRCA1):c.2739T>A (p.Asn913Lys)	P38398	N	913	K
+96908	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092799	43092799	single nucleotide variant	NM_007294.4(BRCA1):c.2732G>A (p.Gly911Glu)	P38398	G	911	E
+37486	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092805	43092805	single nucleotide variant	NM_007294.4(BRCA1):c.2726A>T (p.Asn909Ile)	P38398	N	909	I
+37485	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092817	43092817	single nucleotide variant	NM_007294.4(BRCA1):c.2714A>G (p.Gln905Arg)	P38398	Q	905	R
+141808	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092821	43092821	single nucleotide variant	NM_007294.4(BRCA1):c.2710G>C (p.Glu904Gln)	P38398	E	904	Q
+91597	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092825	43092825	single nucleotide variant	NM_007294.4(BRCA1):c.2706A>C (p.Glu902Asp)	P38398	E	902	D
+37482	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092829	43092829	single nucleotide variant	NM_007294.4(BRCA1):c.2702T>C (p.Phe901Ser)	P38398	F	901	S
+54649	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092839	43092839	single nucleotide variant	NM_007294.4(BRCA1):c.2692A>G (p.Lys898Glu)	P38398	K	898	E
+156188	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092841	43092841	single nucleotide variant	NM_007294.4(BRCA1):c.2690C>T (p.Pro897Leu)	P38398	P	897	L
+54647	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092845	43092845	single nucleotide variant	NM_007294.4(BRCA1):c.2686A>T (p.Ser896Cys)	P38398	S	896	C
+141656	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092847	43092847	single nucleotide variant	NM_007294.4(BRCA1):c.2684A>G (p.Gln895Arg)	P38398	Q	895	R
+141468	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092852	43092852	single nucleotide variant	NM_007294.4(BRCA1):c.2679G>T (p.Lys893Asn)	P38398	K	893	N
+54640	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092854	43092854	single nucleotide variant	NM_007294.4(BRCA1):c.2677A>C (p.Lys893Gln)	P38398	K	893	Q
+54638	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092856	43092856	single nucleotide variant	NM_007294.4(BRCA1):c.2675T>C (p.Leu892Ser)	P38398	L	892	S
+54634	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092863	43092863	single nucleotide variant	NM_007294.4(BRCA1):c.2668G>A (p.Gly890Arg)	P38398	G	890	R
+54632	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092869	43092869	single nucleotide variant	NM_007294.4(BRCA1):c.2662C>T (p.His888Tyr)	P38398	H	888	Y
+141950	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092874	43092874	single nucleotide variant	NM_007294.4(BRCA1):c.2657C>G (p.Ser886Cys)	P38398	S	886	C
+54628	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092881	43092881	single nucleotide variant	NM_007294.4(BRCA1):c.2650A>G (p.Thr884Ala)	P38398	T	884	A
+96907	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092883	43092883	single nucleotide variant	NM_007294.4(BRCA1):c.2648C>T (p.Ala883Val)	P38398	A	883	V
+142303	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092893	43092893	single nucleotide variant	NM_007294.4(BRCA1):c.2638G>C (p.Glu880Gln)	P38398	E	880	Q
+54624	BRCA1	0	Likely benign	criteria provided, single submitter	17	43092896	43092896	single nucleotide variant	NM_007294.4(BRCA1):c.2635G>A (p.Glu879Lys)	P38398	E	879	K
+54623	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092899	43092899	single nucleotide variant	NM_007294.4(BRCA1):c.2632G>A (p.Ala878Thr)	P38398	A	878	T
+54618	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092919	43092919	single nucleotide variant	NM_007294.4(BRCA1):c.2612C>A (p.Pro871Gln)	P38398	P	871	Q
+91594	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092919	43092919	single nucleotide variant	NM_007294.4(BRCA1):c.2612C>G (p.Pro871Arg)	P38398	P	871	R
+54615	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092931	43092931	single nucleotide variant	NM_007294.4(BRCA1):c.2600A>G (p.Gln867Arg)	P38398	Q	867	R
+54611	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092940	43092940	single nucleotide variant	NM_007294.4(BRCA1):c.2591C>T (p.Ser864Leu)	P38398	S	864	L
+54609	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092941	43092941	single nucleotide variant	NM_007294.4(BRCA1):c.2590T>G (p.Ser864Ala)	P38398	S	864	A
+54608	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092949	43092949	single nucleotide variant	NM_007294.4(BRCA1):c.2582T>G (p.Phe861Cys)	P38398	F	861	C
+54601	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092970	43092970	single nucleotide variant	NM_007294.4(BRCA1):c.2561C>T (p.Ala854Val)	P38398	A	854	V
+91593	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092980	43092980	single nucleotide variant	NM_007294.4(BRCA1):c.2551G>A (p.Glu851Lys)	P38398	E	851	K
+54594	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092990	43092990	single nucleotide variant	NM_007294.4(BRCA1):c.2541G>A (p.Met847Ile)	P38398	M	847	I
+54593	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43092997	43092997	single nucleotide variant	NM_007294.4(BRCA1):c.2534T>C (p.Ile845Thr)	P38398	I	845	T
+54592	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093004	43093004	single nucleotide variant	NM_007294.4(BRCA1):c.2527A>G (p.Thr843Ala)	P38398	T	843	A
+89056	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093013	43093013	single nucleotide variant	NM_007294.4(BRCA1):c.2518A>T (p.Ser840Cys)	P38398	S	840	C
+54581	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093049	43093049	single nucleotide variant	NM_007294.4(BRCA1):c.2482G>A (p.Gly828Ser)	P38398	G	828	S
+54580	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093050	43093050	single nucleotide variant	NM_007294.4(BRCA1):c.2481A>C (p.Glu827Asp)	P38398	E	827	D
+54576	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093057	43093057	single nucleotide variant	NM_007294.4(BRCA1):c.2474A>T (p.Asp825Val)	P38398	D	825	V
+54575	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093058	43093058	single nucleotide variant	NM_007294.4(BRCA1):c.2473G>T (p.Asp825Tyr)	P38398	D	825	Y
+156187	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093075	43093075	single nucleotide variant	NM_007294.4(BRCA1):c.2456C>G (p.Ser819Cys)	P38398	S	819	C
+37470	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093084	43093084	single nucleotide variant	NM_007294.4(BRCA1):c.2447A>G (p.His816Arg)	P38398	H	816	R
+182148	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093087	43093087	single nucleotide variant	NM_007294.4(BRCA1):c.2444T>C (p.Ile815Thr)	P38398	I	815	T
+37468	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093105	43093105	single nucleotide variant	NM_007294.4(BRCA1):c.2426A>G (p.Glu809Gly)	P38398	E	809	G
+91589	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093108	43093108	single nucleotide variant	NM_007294.4(BRCA1):c.2423T>C (p.Phe808Ser)	P38398	F	808	S
+54566	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093111	43093111	single nucleotide variant	NM_007294.4(BRCA1):c.2420C>A (p.Ala807Glu)	P38398	A	807	E
+54564	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093112	43093112	single nucleotide variant	NM_007294.4(BRCA1):c.2419G>T (p.Ala807Ser)	P38398	A	807	S
+54563	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093115	43093115	single nucleotide variant	NM_007294.4(BRCA1):c.2416G>A (p.Ala806Thr)	P38398	A	806	T
+54562	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093118	43093118	single nucleotide variant	NM_007294.4(BRCA1):c.2413T>C (p.Cys805Arg)	P38398	C	805	R
+54556	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093134	43093134	single nucleotide variant	NM_007294.4(BRCA1):c.2397T>A (p.Asn799Lys)	P38398	N	799	K
+141806	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093135	43093135	single nucleotide variant	NM_007294.4(BRCA1):c.2396A>G (p.Asn799Ser)	P38398	N	799	S
+91587	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093139	43093139	single nucleotide variant	NM_007294.4(BRCA1):c.2392C>T (p.Pro798Ser)	P38398	P	798	S
+91586	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093142	43093142	single nucleotide variant	NM_007294.4(BRCA1):c.2389G>A (p.Glu797Lys)	P38398	E	797	K
+54551	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093144	43093144	single nucleotide variant	NM_007294.4(BRCA1):c.2387C>T (p.Thr796Ile)	P38398	T	796	I
+37465	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093163	43093163	single nucleotide variant	NM_007294.4(BRCA1):c.2368A>G (p.Thr790Ala)	P38398	T	790	A
+54550	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093169	43093169	single nucleotide variant	NM_007294.4(BRCA1):c.2362G>A (p.Val788Ile)	P38398	V	788	I
+54542	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093181	43093181	single nucleotide variant	NM_007294.4(BRCA1):c.2350T>G (p.Ser784Ala)	P38398	S	784	A
+156186	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093189	43093189	single nucleotide variant	NM_007294.4(BRCA1):c.2342A>C (p.Glu781Ala)	P38398	E	781	A
+54539	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093193	43093193	single nucleotide variant	NM_007294.4(BRCA1):c.2338C>A (p.Gln780Lys)	P38398	Q	780	K
+91584	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093193	43093193	single nucleotide variant	NM_007294.4(BRCA1):c.2338C>G (p.Gln780Glu)	P38398	Q	780	E
+182147	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093198	43093198	single nucleotide variant	NM_007294.4(BRCA1):c.2333G>A (p.Gly778Asp)	P38398	G	778	D
+133723	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093201	43093201	single nucleotide variant	NM_007294.4(BRCA1):c.2330A>G (p.Tyr777Cys)	P38398	Y	777	C
+37463	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093202	43093202	single nucleotide variant	NM_007294.4(BRCA1):c.2329T>G (p.Tyr777Asp)	P38398	Y	777	D
+182146	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093210	43093210	single nucleotide variant	NM_007294.4(BRCA1):c.2321G>A (p.Gly774Asp)	P38398	G	774	D
+182145	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093219	43093219	single nucleotide variant	NM_007294.4(BRCA1):c.2312T>C (p.Leu771Ser)	P38398	L	771	S
+125553	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43093222	43093222	single nucleotide variant	NM_007294.4(BRCA1):c.2309C>T (p.Ser770Leu)	P38398	S	770	L
+91583	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093229	43093229	single nucleotide variant	NM_007294.4(BRCA1):c.2302A>G (p.Ser768Gly)	P38398	S	768	G
+37461	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093232	43093232	single nucleotide variant	NM_007294.4(BRCA1):c.2299A>G (p.Ser767Gly)	P38398	S	767	G
+91582	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093232	43093232	single nucleotide variant	NM_007294.4(BRCA1):c.2299A>T (p.Ser767Cys)	P38398	S	767	C
+91581	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093235	43093235	single nucleotide variant	NM_007294.4(BRCA1):c.2296A>G (p.Ser766Gly)	P38398	S	766	G
+54525	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093237	43093237	single nucleotide variant	NM_007294.4(BRCA1):c.2294A>G (p.Glu765Gly)	P38398	E	765	G
+54520	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093249	43093249	single nucleotide variant	NM_007294.4(BRCA1):c.2282A>C (p.Glu761Ala)	P38398	E	761	A
+37460	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093250	43093250	single nucleotide variant	NM_007294.4(BRCA1):c.2281G>A (p.Glu761Lys)	P38398	E	761	K
+54518	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093263	43093263	single nucleotide variant	NM_007294.4(BRCA1):c.2268G>C (p.Arg756Ser)	P38398	R	756	S
+182144	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093272	43093272	single nucleotide variant	NM_007294.4(BRCA1):c.2259T>G (p.Ser753Arg)	P38398	S	753	R
+141357	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093279	43093279	single nucleotide variant	NM_007294.4(BRCA1):c.2252T>C (p.Met751Thr)	P38398	M	751	T
+182143	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093285	43093285	single nucleotide variant	NM_007294.4(BRCA1):c.2246A>T (p.Asp749Val)	P38398	D	749	V
+54512	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093286	43093286	single nucleotide variant	NM_007294.4(BRCA1):c.2245G>T (p.Asp749Tyr)	P38398	D	749	Y
+125550	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093286	43093286	single nucleotide variant	NM_007294.4(BRCA1):c.2245G>C (p.Asp749His)	P38398	D	749	H
+54506	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093309	43093309	single nucleotide variant	NM_007294.4(BRCA1):c.2222C>G (p.Ser741Cys)	P38398	S	741	C
+54507	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093309	43093309	single nucleotide variant	NM_007294.4(BRCA1):c.2222C>T (p.Ser741Phe)	P38398	S	741	F
+54505	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093313	43093313	single nucleotide variant	NM_007294.4(BRCA1):c.2218G>C (p.Val740Leu)	P38398	V	740	L
+141481	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093328	43093328	single nucleotide variant	NM_007294.4(BRCA1):c.2203C>G (p.Leu735Val)	P38398	L	735	V
+54487	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093348	43093348	single nucleotide variant	NM_007294.4(BRCA1):c.2183G>A (p.Arg728Lys)	P38398	R	728	K
+54479	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093373	43093373	single nucleotide variant	NM_007294.4(BRCA1):c.2158G>A (p.Glu720Lys)	P38398	E	720	K
+182142	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093383	43093383	single nucleotide variant	NM_007294.4(BRCA1):c.2148T>A (p.Ser716Arg)	P38398	S	716	R
+182141	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093388	43093388	single nucleotide variant	NM_007294.4(BRCA1):c.2143A>T (p.Thr715Ser)	P38398	T	715	S
+37447	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093408	43093408	single nucleotide variant	NM_007294.4(BRCA1):c.2123C>A (p.Ser708Tyr)	P38398	S	708	Y
+91576	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093408	43093408	single nucleotide variant	NM_007294.4(BRCA1):c.2123C>T (p.Ser708Phe)	P38398	S	708	F
+54468	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093411	43093411	single nucleotide variant	NM_007294.4(BRCA1):c.2120G>A (p.Gly707Asp)	P38398	G	707	D
+140990	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093412	43093412	single nucleotide variant	NM_007294.4(BRCA1):c.2119G>C (p.Gly707Arg)	P38398	G	707	R
+182140	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093441	43093441	single nucleotide variant	NM_007294.4(BRCA1):c.2090T>C (p.Phe697Ser)	P38398	F	697	S
+54457	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093445	43093445	single nucleotide variant	NM_007294.4(BRCA1):c.2086A>G (p.Thr696Ala)	P38398	T	696	A
+54455	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093448	43093448	single nucleotide variant	NM_007294.4(BRCA1):c.2083G>A (p.Asp695Asn)	P38398	D	695	N
+96904	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093450	43093450	single nucleotide variant	NM_007294.4(BRCA1):c.2081G>A (p.Ser694Asn)	P38398	S	694	N
+142622	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093455	43093455	single nucleotide variant	NM_007294.4(BRCA1):c.2076T>A (p.His692Gln)	P38398	H	692	Q
+141034	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093463	43093463	single nucleotide variant	NM_007294.4(BRCA1):c.2068A>G (p.Lys690Glu)	P38398	K	690	E
+37443	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093471	43093471	single nucleotide variant	NM_007294.4(BRCA1):c.2060A>C (p.Gln687Pro)	P38398	Q	687	P
+54447	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093481	43093481	single nucleotide variant	NM_007294.4(BRCA1):c.2050C>T (p.Pro684Ser)	P38398	P	684	S
+182139	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093492	43093492	single nucleotide variant	NM_007294.4(BRCA1):c.2039A>G (p.Lys680Arg)	P38398	K	680	R
+54433	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093523	43093523	single nucleotide variant	NM_007294.4(BRCA1):c.2008G>A (p.Glu670Lys)	P38398	E	670	K
+37442	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093525	43093525	single nucleotide variant	NM_007294.4(BRCA1):c.2006T>C (p.Met669Thr)	P38398	M	669	T
+54428	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093536	43093536	single nucleotide variant	NM_007294.4(BRCA1):c.1995C>G (p.Asn665Lys)	P38398	N	665	K
+54427	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093546	43093546	single nucleotide variant	NM_007294.4(BRCA1):c.1985A>G (p.His662Arg)	P38398	H	662	R
+54426	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093547	43093547	single nucleotide variant	NM_007294.4(BRCA1):c.1984C>T (p.His662Tyr)	P38398	H	662	Y
+156185	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093556	43093556	single nucleotide variant	NM_007294.4(BRCA1):c.1975C>G (p.Pro659Ala)	P38398	P	659	A
+54425	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093557	43093557	single nucleotide variant	NM_007294.4(BRCA1):c.1974G>C (p.Met658Ile)	P38398	M	658	I
+54422	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093564	43093564	single nucleotide variant	NM_007294.4(BRCA1):c.1967A>G (p.Asn656Ser)	P38398	N	656	S
+54421	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093567	43093567	single nucleotide variant	NM_007294.4(BRCA1):c.1964A>T (p.Tyr655Phe)	P38398	Y	655	F
+54418	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093568	43093568	single nucleotide variant	NM_007294.4(BRCA1):c.1963T>G (p.Tyr655Asp)	P38398	Y	655	D
+54415	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093571	43093571	single nucleotide variant	NM_007294.4(BRCA1):c.1960A>G (p.Lys654Glu)	P38398	K	654	E
+54407	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093586	43093586	single nucleotide variant	NM_007294.4(BRCA1):c.1945G>C (p.Glu649Gln)	P38398	E	649	Q
+54404	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093597	43093597	single nucleotide variant	NM_007294.4(BRCA1):c.1934C>A (p.Ser645Tyr)	P38398	S	645	Y
+54403	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093599	43093599	single nucleotide variant	NM_007294.4(BRCA1):c.1932T>G (p.Cys644Trp)	P38398	C	644	W
+182138	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093609	43093609	single nucleotide variant	NM_007294.4(BRCA1):c.1922T>C (p.Ile641Thr)	P38398	I	641	T
+142950	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093611	43093611	single nucleotide variant	NM_007294.4(BRCA1):c.1920A>T (p.Gln640His)	P38398	Q	640	H
+37433	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093619	43093619	single nucleotide variant	NM_007294.4(BRCA1):c.1912G>A (p.Glu638Lys)	P38398	E	638	K
+91570	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093624	43093624	single nucleotide variant	NM_007294.4(BRCA1):c.1907G>A (p.Cys636Tyr)	P38398	C	636	Y
+54392	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093630	43093630	single nucleotide variant	NM_007294.4(BRCA1):c.1901C>G (p.Pro634Arg)	P38398	P	634	R
+182137	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093630	43093630	single nucleotide variant	NM_007294.4(BRCA1):c.1901C>T (p.Pro634Leu)	P38398	P	634	L
+54391	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093631	43093631	single nucleotide variant	NM_007294.4(BRCA1):c.1900C>T (p.Pro634Ser)	P38398	P	634	S
+91568	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093633	43093633	single nucleotide variant	NM_007294.4(BRCA1):c.1898C>T (p.Pro633Leu)	P38398	P	633	L
+54386	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093634	43093634	single nucleotide variant	NM_007294.4(BRCA1):c.1897C>A (p.Pro633Thr)	P38398	P	633	T
+54387	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093634	43093634	single nucleotide variant	NM_007294.4(BRCA1):c.1897C>T (p.Pro633Ser)	P38398	P	633	S
+54385	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093636	43093636	single nucleotide variant	NM_007294.4(BRCA1):c.1895G>A (p.Ser632Asn)	P38398	S	632	N
+54380	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093647	43093647	single nucleotide variant	NM_007294.4(BRCA1):c.1884T>G (p.Ser628Arg)	P38398	S	628	R
+54377	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093652	43093652	single nucleotide variant	NM_007294.4(BRCA1):c.1879G>A (p.Val627Ile)	P38398	V	627	I
+54374	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093661	43093661	single nucleotide variant	NM_007294.4(BRCA1):c.1870G>A (p.Glu624Lys)	P38398	E	624	K
+54373	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093663	43093663	single nucleotide variant	NM_007294.4(BRCA1):c.1868T>C (p.Leu623Pro)	P38398	L	623	P
+41807	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093682	43093682	single nucleotide variant	NM_007294.4(BRCA1):c.1849A>G (p.Thr617Ala)	P38398	T	617	A
+91566	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093687	43093687	single nucleotide variant	NM_007294.4(BRCA1):c.1844C>T (p.Ser615Phe)	P38398	S	615	F
+91565	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093703	43093703	single nucleotide variant	NM_007294.4(BRCA1):c.1828A>G (p.Arg610Gly)	P38398	R	610	G
+37429	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093705	43093705	single nucleotide variant	NM_007294.4(BRCA1):c.1826A>G (p.Asn609Ser)	P38398	N	609	S
+141262	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093718	43093718	single nucleotide variant	NM_007294.4(BRCA1):c.1813G>T (p.Ala605Ser)	P38398	A	605	S
+54354	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093731	43093731	single nucleotide variant	NM_007294.4(BRCA1):c.1800C>G (p.Ile600Met)	P38398	I	600	M
+91564	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093732	43093732	single nucleotide variant	NM_007294.4(BRCA1):c.1799T>G (p.Ile600Ser)	P38398	I	600	S
+54347	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093745	43093745	single nucleotide variant	NM_007294.4(BRCA1):c.1786C>G (p.Leu596Val)	P38398	L	596	V
+182136	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093745	43093745	single nucleotide variant	NM_007294.4(BRCA1):c.1786C>T (p.Leu596Phe)	P38398	L	596	F
+54345	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093759	43093759	single nucleotide variant	NM_007294.4(BRCA1):c.1772T>C (p.Ile591Thr)	P38398	I	591	T
+54344	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093763	43093763	single nucleotide variant	NM_007294.4(BRCA1):c.1768A>G (p.Ser590Gly)	P38398	S	590	G
+156486	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093764	43093764	single nucleotide variant	NM_007294.4(BRCA1):c.1767C>A (p.Ser589Arg)	P38398	S	589	R
+54342	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093775	43093775	single nucleotide variant	NM_007294.4(BRCA1):c.1756C>T (p.Pro586Ser)	P38398	P	586	S
+91562	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093784	43093784	single nucleotide variant	NM_007294.4(BRCA1):c.1747A>G (p.Lys583Glu)	P38398	K	583	E
+54340	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093787	43093787	single nucleotide variant	NM_007294.4(BRCA1):c.1744A>G (p.Thr582Ala)	P38398	T	582	A
+54338	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093798	43093798	single nucleotide variant	NM_007294.4(BRCA1):c.1733C>A (p.Ser578Tyr)	P38398	S	578	Y
+54334	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093808	43093808	single nucleotide variant	NM_007294.4(BRCA1):c.1723G>A (p.Glu575Lys)	P38398	E	575	K
+54330	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093819	43093819	single nucleotide variant	NM_007294.4(BRCA1):c.1712T>C (p.Ile571Thr)	P38398	I	571	T
+140844	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093826	43093826	single nucleotide variant	NM_007294.4(BRCA1):c.1705A>G (p.Asn569Asp)	P38398	N	569	D
+54328	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093828	43093828	single nucleotide variant	NM_007294.4(BRCA1):c.1703C>G (p.Pro568Arg)	P38398	P	568	R
+37427	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093841	43093841	single nucleotide variant	NM_007294.4(BRCA1):c.1690A>T (p.Asn564Tyr)	P38398	N	564	Y
+54326	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093841	43093841	single nucleotide variant	NM_007294.4(BRCA1):c.1690A>C (p.Asn564His)	P38398	N	564	H
+54323	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093855	43093855	single nucleotide variant	NM_007294.4(BRCA1):c.1676G>T (p.Gly559Val)	P38398	G	559	V
+37424	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093859	43093859	single nucleotide variant	NM_007294.4(BRCA1):c.1672A>C (p.Lys558Gln)	P38398	K	558	Q
+54321	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093862	43093862	single nucleotide variant	NM_007294.4(BRCA1):c.1669A>G (p.Thr557Ala)	P38398	T	557	A
+156488	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093865	43093865	single nucleotide variant	NM_007294.4(BRCA1):c.1666A>C (p.Lys556Gln)	P38398	K	556	Q
+54319	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093876	43093876	single nucleotide variant	NM_007294.4(BRCA1):c.1655G>T (p.Gly552Val)	P38398	G	552	V
+182134	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093880	43093880	single nucleotide variant	NM_007294.4(BRCA1):c.1651A>G (p.Ser551Gly)	P38398	S	551	G
+54316	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093889	43093889	single nucleotide variant	NM_007294.4(BRCA1):c.1642A>G (p.Ile548Val)	P38398	I	548	V
+142331	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093895	43093895	single nucleotide variant	NM_007294.4(BRCA1):c.1636A>G (p.Met546Val)	P38398	M	546	V
+54314	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093900	43093900	single nucleotide variant	NM_007294.4(BRCA1):c.1631A>C (p.Gln544Pro)	P38398	Q	544	P
+182133	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093913	43093913	single nucleotide variant	NM_007294.4(BRCA1):c.1618G>A (p.Glu540Lys)	P38398	E	540	K
+182132	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093915	43093915	single nucleotide variant	NM_007294.4(BRCA1):c.1616C>A (p.Thr539Lys)	P38398	T	539	K
+91558	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093922	43093922	single nucleotide variant	NM_007294.4(BRCA1):c.1609A>G (p.Asn537Asp)	P38398	N	537	D
+91557	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093924	43093924	single nucleotide variant	NM_007294.4(BRCA1):c.1607C>G (p.Thr536Ser)	P38398	T	536	S
+54304	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093930	43093930	single nucleotide variant	NM_007294.4(BRCA1):c.1601A>G (p.Gln534Arg)	P38398	Q	534	R
+54300	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093950	43093950	single nucleotide variant	NM_007294.4(BRCA1):c.1581G>C (p.Lys527Asn)	P38398	K	527	N
+54298	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093958	43093958	single nucleotide variant	NM_007294.4(BRCA1):c.1573G>A (p.Val525Ile)	P38398	V	525	I
+54297	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093960	43093960	single nucleotide variant	NM_007294.4(BRCA1):c.1571C>T (p.Ala524Val)	P38398	A	524	V
+54295	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093963	43093963	single nucleotide variant	NM_007294.4(BRCA1):c.1568T>G (p.Leu523Trp)	P38398	L	523	W
+54293	BRCA1	0	Likely benign	criteria provided, single submitter	17	43093967	43093967	single nucleotide variant	NM_007294.4(BRCA1):c.1564G>A (p.Asp522Asn)	P38398	D	522	N
+54291	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093970	43093970	single nucleotide variant	NM_007294.4(BRCA1):c.1561G>A (p.Ala521Thr)	P38398	A	521	T
+54290	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093976	43093976	single nucleotide variant	NM_007294.4(BRCA1):c.1555A>C (p.Lys519Gln)	P38398	K	519	Q
+54288	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093987	43093987	single nucleotide variant	NM_007294.4(BRCA1):c.1544A>G (p.Glu515Gly)	P38398	E	515	G
+141741	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093997	43093997	single nucleotide variant	NM_007294.4(BRCA1):c.1534C>G (p.Leu512Val)	P38398	L	512	V
+37419	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43093999	43093999	single nucleotide variant	NM_007294.4(BRCA1):c.1532G>T (p.Gly511Val)	P38398	G	511	V
+91555	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094008	43094008	single nucleotide variant	NM_007294.4(BRCA1):c.1523C>T (p.Pro508Leu)	P38398	P	508	L
+54284	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094011	43094011	single nucleotide variant	NM_007294.4(BRCA1):c.1520G>T (p.Arg507Ile)	P38398	R	507	I
+54277	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094021	43094021	single nucleotide variant	NM_007294.4(BRCA1):c.1510C>T (p.Arg504Cys)	P38398	R	504	C
+54274	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094023	43094023	single nucleotide variant	NM_007294.4(BRCA1):c.1508A>G (p.Lys503Arg)	P38398	K	503	R
+54267	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094045	43094045	single nucleotide variant	NM_007294.4(BRCA1):c.1486C>A (p.Arg496Ser)	P38398	R	496	S
+54265	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094059	43094059	single nucleotide variant	NM_007294.4(BRCA1):c.1472A>G (p.Gln491Arg)	P38398	Q	491	R
+54261	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094066	43094066	single nucleotide variant	NM_007294.4(BRCA1):c.1465G>A (p.Glu489Lys)	P38398	E	489	K
+37414	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094072	43094072	single nucleotide variant	NM_007294.4(BRCA1):c.1459G>T (p.Val487Phe)	P38398	V	487	F
+54260	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094073	43094073	single nucleotide variant	NM_007294.4(BRCA1):c.1458T>G (p.Phe486Leu)	P38398	F	486	L
+182090	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094075	43094075	single nucleotide variant	NM_007294.4(BRCA1):c.1456T>A (p.Phe486Ile)	P38398	F	486	I
+54255	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094083	43094083	single nucleotide variant	NM_007294.4(BRCA1):c.1448T>C (p.Ile483Thr)	P38398	I	483	T
+54245	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094125	43094125	single nucleotide variant	NM_007294.4(BRCA1):c.1406C>G (p.Ala469Gly)	P38398	A	469	G
+37411	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094126	43094126	single nucleotide variant	NM_007294.4(BRCA1):c.1405G>A (p.Ala469Thr)	P38398	A	469	T
+91552	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094134	43094134	single nucleotide variant	NM_007294.4(BRCA1):c.1397G>A (p.Arg466Gln)	P38398	R	466	Q
+37410	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094135	43094135	single nucleotide variant	NM_007294.4(BRCA1):c.1396C>T (p.Arg466Trp)	P38398	R	466	W
+54240	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094135	43094135	single nucleotide variant	NM_007294.4(BRCA1):c.1396C>G (p.Arg466Gly)	P38398	R	466	G
+54239	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094138	43094138	single nucleotide variant	NM_007294.4(BRCA1):c.1393T>G (p.Tyr465Asp)	P38398	Y	465	D
+54237	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094140	43094140	single nucleotide variant	NM_007294.4(BRCA1):c.1391C>T (p.Thr464Ile)	P38398	T	464	I
+54230	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094147	43094147	single nucleotide variant	NM_007294.4(BRCA1):c.1384G>A (p.Gly462Arg)	P38398	G	462	R
+54227	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094150	43094150	single nucleotide variant	NM_007294.4(BRCA1):c.1381T>C (p.Phe461Leu)	P38398	F	461	L
+91551	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094152	43094152	single nucleotide variant	NM_007294.4(BRCA1):c.1379T>G (p.Ile460Arg)	P38398	I	460	R
+54222	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094164	43094164	single nucleotide variant	NM_007294.4(BRCA1):c.1367T>C (p.Ile456Thr)	P38398	I	456	T
+54220	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094170	43094170	single nucleotide variant	NM_007294.4(BRCA1):c.1361G>A (p.Ser454Asn)	P38398	S	454	N
+142873	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094192	43094192	single nucleotide variant	NM_007294.4(BRCA1):c.1339G>A (p.Val447Ile)	P38398	V	447	I
+141392	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094195	43094195	single nucleotide variant	NM_007294.4(BRCA1):c.1336A>G (p.Arg446Gly)	P38398	R	446	G
+54203	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094198	43094198	single nucleotide variant	NM_007294.4(BRCA1):c.1333G>C (p.Glu445Gln)	P38398	E	445	Q
+54196	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094212	43094212	single nucleotide variant	NM_007294.4(BRCA1):c.1319T>C (p.Leu440Ser)	P38398	L	440	S
+182131	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094218	43094218	single nucleotide variant	NM_007294.4(BRCA1):c.1313A>C (p.Glu438Ala)	P38398	E	438	A
+54195	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094221	43094221	single nucleotide variant	NM_007294.4(BRCA1):c.1310A>C (p.His437Pro)	P38398	H	437	P
+156183	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094236	43094236	single nucleotide variant	NM_007294.4(BRCA1):c.1295T>C (p.Leu432Pro)	P38398	L	432	P
+54180	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094269	43094269	single nucleotide variant	NM_007294.4(BRCA1):c.1262A>G (p.Glu421Gly)	P38398	E	421	G
+54179	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094270	43094270	single nucleotide variant	NM_007294.4(BRCA1):c.1261G>A (p.Glu421Lys)	P38398	E	421	K
+182076	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094272	43094272	single nucleotide variant	NM_007294.4(BRCA1):c.1259A>G (p.Asp420Gly)	P38398	D	420	G
+54178	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094273	43094273	single nucleotide variant	NM_007294.4(BRCA1):c.1258G>T (p.Asp420Tyr)	P38398	D	420	Y
+91542	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094275	43094275	single nucleotide variant	NM_007294.4(BRCA1):c.1256T>G (p.Val419Gly)	P38398	V	419	G
+54175	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094280	43094280	single nucleotide variant	NM_007294.4(BRCA1):c.1251T>G (p.Asn417Lys)	P38398	N	417	K
+54174	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094281	43094281	single nucleotide variant	NM_007294.4(BRCA1):c.1250A>G (p.Asn417Ser)	P38398	N	417	S
+142855	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094288	43094288	single nucleotide variant	NM_007294.4(BRCA1):c.1243G>A (p.Val415Ile)	P38398	V	415	I
+156182	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094297	43094297	single nucleotide variant	NM_007294.4(BRCA1):c.1234G>A (p.Val412Ile)	P38398	V	412	I
+182130	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094299	43094299	single nucleotide variant	NM_007294.4(BRCA1):c.1232A>T (p.Asp411Val)	P38398	D	411	V
+54168	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094300	43094300	single nucleotide variant	NM_007294.4(BRCA1):c.1231G>A (p.Asp411Asn)	P38398	D	411	N
+37399	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094309	43094309	single nucleotide variant	NM_007294.4(BRCA1):c.1222A>G (p.Lys408Glu)	P38398	K	408	E
+54163	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094323	43094323	single nucleotide variant	NM_007294.4(BRCA1):c.1208C>T (p.Ser403Phe)	P38398	S	403	F
+37398	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094329	43094329	single nucleotide variant	NM_007294.4(BRCA1):c.1202G>A (p.Gly401Glu)	P38398	G	401	E
+91541	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094329	43094329	single nucleotide variant	NM_007294.4(BRCA1):c.1202G>C (p.Gly401Ala)	P38398	G	401	A
+136078	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094335	43094335	single nucleotide variant	NM_007294.4(BRCA1):c.1196A>G (p.His399Arg)	P38398	H	399	R
+54142	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094401	43094401	single nucleotide variant	NM_007294.4(BRCA1):c.1130G>A (p.Ser377Asn)	P38398	S	377	N
+54139	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094404	43094404	single nucleotide variant	NM_007294.4(BRCA1):c.1127A>G (p.Asn376Ser)	P38398	N	376	S
+54136	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094410	43094410	single nucleotide variant	NM_007294.4(BRCA1):c.1121C>T (p.Thr374Ile)	P38398	T	374	I
+54129	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094425	43094425	single nucleotide variant	NM_007294.4(BRCA1):c.1106A>G (p.Asp369Gly)	P38398	D	369	G
+141466	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094434	43094434	single nucleotide variant	NM_007294.4(BRCA1):c.1097A>T (p.Asp366Val)	P38398	D	366	V
+54120	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094450	43094450	single nucleotide variant	NM_007294.4(BRCA1):c.1081T>C (p.Ser361Pro)	P38398	S	361	P
+142880	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094453	43094453	single nucleotide variant	NM_007294.4(BRCA1):c.1078T>C (p.Cys360Arg)	P38398	C	360	R
+54118	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094455	43094455	single nucleotide variant	NM_007294.4(BRCA1):c.1076C>T (p.Pro359Leu)	P38398	P	359	L
+54112	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094467	43094467	single nucleotide variant	NM_007294.4(BRCA1):c.1064A>G (p.Lys355Arg)	P38398	K	355	R
+37388	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094498	43094498	single nucleotide variant	NM_007294.4(BRCA1):c.1033G>T (p.Asp345Tyr)	P38398	D	345	Y
+54104	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094501	43094501	single nucleotide variant	NM_007294.4(BRCA1):c.1030G>A (p.Ala344Thr)	P38398	A	344	T
+141428	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094515	43094515	single nucleotide variant	NM_007294.4(BRCA1):c.1016A>C (p.Lys339Thr)	P38398	K	339	T
+96894	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094516	43094516	single nucleotide variant	NM_007294.4(BRCA1):c.1015A>G (p.Lys339Glu)	P38398	K	339	E
+96957	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094533	43094533	single nucleotide variant	NM_007294.4(BRCA1):c.998C>T (p.Thr333Ile)	P38398	T	333	I
+55776	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094536	43094536	single nucleotide variant	NM_007294.4(BRCA1):c.995G>A (p.Arg332Gln)	P38398	R	332	Q
+55775	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094537	43094537	single nucleotide variant	NM_007294.4(BRCA1):c.994C>T (p.Arg332Trp)	P38398	R	332	W
+55774	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094538	43094538	single nucleotide variant	NM_007294.4(BRCA1):c.993G>C (p.Arg331Ser)	P38398	R	331	S
+37713	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094543	43094543	single nucleotide variant	NM_007294.4(BRCA1):c.988G>A (p.Asp330Asn)	P38398	D	330	N
+55766	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094567	43094567	single nucleotide variant	NM_007294.4(BRCA1):c.964G>A (p.Ala322Thr)	P38398	A	322	T
+55767	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094567	43094567	single nucleotide variant	NM_007294.4(BRCA1):c.964G>C (p.Ala322Pro)	P38398	A	322	P
+37711	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094575	43094575	single nucleotide variant	NM_007294.4(BRCA1):c.956A>G (p.Asn319Ser)	P38398	N	319	S
+55761	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094588	43094588	single nucleotide variant	NM_007294.4(BRCA1):c.943A>G (p.Arg315Gly)	P38398	R	315	G
+55756	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094605	43094605	single nucleotide variant	NM_007294.4(BRCA1):c.926A>C (p.Lys309Thr)	P38398	K	309	T
+182129	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094608	43094608	single nucleotide variant	NM_007294.4(BRCA1):c.923G>C (p.Ser308Thr)	P38398	S	308	T
+55747	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094631	43094631	single nucleotide variant	NM_007294.4(BRCA1):c.900A>C (p.Glu300Asp)	P38398	E	300	D
+55742	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094641	43094641	single nucleotide variant	NM_007294.4(BRCA1):c.890T>A (p.Met297Lys)	P38398	M	297	K
+55741	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094642	43094642	single nucleotide variant	NM_007294.4(BRCA1):c.889A>C (p.Met297Leu)	P38398	M	297	L
+142628	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094642	43094642	single nucleotide variant	NM_007294.4(BRCA1):c.889A>G (p.Met297Val)	P38398	M	297	V
+55739	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094680	43094680	single nucleotide variant	NM_007294.4(BRCA1):c.851A>G (p.Gln284Arg)	P38398	Q	284	R
+55730	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094695	43094695	single nucleotide variant	NM_007294.4(BRCA1):c.836A>G (p.His279Arg)	P38398	H	279	R
+55721	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094720	43094720	single nucleotide variant	NM_007294.4(BRCA1):c.811G>C (p.Val271Leu)	P38398	V	271	L
+141103	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094732	43094732	single nucleotide variant	NM_007294.4(BRCA1):c.799T>C (p.Ser267Pro)	P38398	S	267	P
+55706	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094739	43094739	single nucleotide variant	NM_007294.4(BRCA1):c.792T>G (p.Ser264Arg)	P38398	S	264	R
+55704	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094740	43094740	single nucleotide variant	NM_007294.4(BRCA1):c.791G>A (p.Ser264Asn)	P38398	S	264	N
+55703	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094741	43094741	single nucleotide variant	NM_007294.4(BRCA1):c.790A>T (p.Ser264Cys)	P38398	S	264	C
+55700	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094743	43094743	single nucleotide variant	NM_007294.4(BRCA1):c.788G>C (p.Gly263Ala)	P38398	G	263	A
+55701	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094743	43094743	single nucleotide variant	NM_007294.4(BRCA1):c.788G>T (p.Gly263Val)	P38398	G	263	V
+182127	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094743	43094743	single nucleotide variant	NM_007294.4(BRCA1):c.788G>A (p.Gly263Asp)	P38398	G	263	D
+55699	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094744	43094744	single nucleotide variant	NM_007294.4(BRCA1):c.787G>T (p.Gly263Cys)	P38398	G	263	C
+133725	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094744	43094744	single nucleotide variant	NM_007294.4(BRCA1):c.787G>A (p.Gly263Ser)	P38398	G	263	S
+55696	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094758	43094758	single nucleotide variant	NM_007294.4(BRCA1):c.773C>G (p.Pro258Arg)	P38398	P	258	R
+141549	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094765	43094765	single nucleotide variant	NM_007294.4(BRCA1):c.766A>T (p.Arg256Trp)	P38398	R	256	W
+55690	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094774	43094774	single nucleotide variant	NM_007294.4(BRCA1):c.757G>A (p.Ala253Thr)	P38398	A	253	T
+55689	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094776	43094776	single nucleotide variant	NM_007294.4(BRCA1):c.755G>A (p.Arg252His)	P38398	R	252	H
+55688	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094777	43094777	single nucleotide variant	NM_007294.4(BRCA1):c.754C>T (p.Arg252Cys)	P38398	R	252	C
+37696	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094786	43094786	single nucleotide variant	NM_007294.4(BRCA1):c.745A>T (p.Thr249Ser)	P38398	T	249	S
+55687	BRCA1	0	Likely benign	criteria provided, single submitter	17	43094788	43094788	single nucleotide variant	NM_007294.4(BRCA1):c.743C>A (p.Thr248Asn)	P38398	T	248	N
+55682	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094797	43094797	single nucleotide variant	NM_007294.4(BRCA1):c.734A>T (p.Asp245Val)	P38398	D	245	V
+142867	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094798	43094798	single nucleotide variant	NM_007294.4(BRCA1):c.733G>T (p.Asp245Tyr)	P38398	D	245	Y
+182126	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094802	43094802	single nucleotide variant	NM_007294.4(BRCA1):c.729T>G (p.Asn243Lys)	P38398	N	243	K
+141938	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094804	43094804	single nucleotide variant	NM_007294.4(BRCA1):c.727A>G (p.Asn243Asp)	P38398	N	243	D
+55679	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094809	43094809	single nucleotide variant	NM_007294.4(BRCA1):c.722C>T (p.Pro241Leu)	P38398	P	241	L
+141900	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094818	43094818	single nucleotide variant	NM_007294.4(BRCA1):c.713A>G (p.His238Arg)	P38398	H	238	R
+55673	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094824	43094824	single nucleotide variant	NM_007294.4(BRCA1):c.707C>G (p.Thr236Ser)	P38398	T	236	S
+91664	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094836	43094836	single nucleotide variant	NM_007294.4(BRCA1):c.695A>T (p.Asp232Val)	P38398	D	232	V
+55672	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094837	43094837	single nucleotide variant	NM_007294.4(BRCA1):c.694G>A (p.Asp232Asn)	P38398	D	232	N
+55669	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43094839	43094839	single nucleotide variant	NM_007294.4(BRCA1):c.692C>T (p.Thr231Met)	P38398	T	231	M
+55658	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43095848	43095848	single nucleotide variant	NM_007294.4(BRCA1):c.668A>G (p.Lys223Arg)	P38398	K	223	R
+37690	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43095855	43095855	single nucleotide variant	NM_007294.4(BRCA1):c.661G>T (p.Ala221Ser)	P38398	A	221	S
+55655	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43095861	43095861	single nucleotide variant	NM_007294.4(BRCA1):c.655G>A (p.Asp219Asn)	P38398	D	219	N
+91659	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43095870	43095870	single nucleotide variant	NM_007294.4(BRCA1):c.646A>G (p.Ile216Val)	P38398	I	216	V
+55646	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43095904	43095904	single nucleotide variant	NM_007294.4(BRCA1):c.612G>C (p.Leu204Phe)	P38398	L	204	F
+55641	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43097265	43097265	single nucleotide variant	NM_007294.4(BRCA1):c.572T>A (p.Val191Asp)	P38398	V	191	D
+55636	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43097280	43097280	single nucleotide variant	NM_007294.4(BRCA1):c.557C>T (p.Ser186Phe)	P38398	S	186	F
+55633	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43097281	43097281	single nucleotide variant	NM_007294.4(BRCA1):c.556T>G (p.Ser186Ala)	P38398	S	186	A
+142823	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43099795	43099795	single nucleotide variant	NM_007294.4(BRCA1):c.527C>G (p.Thr176Arg)	P38398	T	176	R
+55400	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43099813	43099813	single nucleotide variant	NM_007294.4(BRCA1):c.509G>A (p.Arg170Gln)	P38398	R	170	Q
+136087	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43099816	43099816	single nucleotide variant	NM_007294.4(BRCA1):c.506A>C (p.Gln169Pro)	P38398	Q	169	P
+55359	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43099819	43099819	single nucleotide variant	NM_007294.4(BRCA1):c.503A>C (p.Lys168Thr)	P38398	K	168	T
+55313	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43099832	43099832	single nucleotide variant	NM_007294.4(BRCA1):c.490A>C (p.Thr164Pro)	P38398	T	164	P
+55303	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43099838	43099838	single nucleotide variant	NM_007294.4(BRCA1):c.484G>C (p.Val162Leu)	P38398	V	162	L
+55264	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43099853	43099853	single nucleotide variant	NM_007294.4(BRCA1):c.469T>C (p.Ser157Pro)	P38398	S	157	P
+55227	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43099867	43099867	single nucleotide variant	NM_007294.4(BRCA1):c.455T>C (p.Leu152Pro)	P38398	L	152	P
+37594	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43099876	43099876	single nucleotide variant	NM_007294.4(BRCA1):c.446A>C (p.Glu149Ala)	P38398	E	149	A
+37582	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104134	43104134	single nucleotide variant	NM_007294.4(BRCA1):c.429A>C (p.Glu143Asp)	P38398	E	143	D
+142796	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43104151	43104151	single nucleotide variant	NM_007294.4(BRCA1):c.412C>G (p.Leu138Val)	P38398	L	138	V
+37557	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104165	43104165	single nucleotide variant	NM_007294.4(BRCA1):c.398G>A (p.Arg133His)	P38398	R	133	H
+91619	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43104166	43104166	single nucleotide variant	NM_007294.4(BRCA1):c.397C>A (p.Arg133Ser)	P38398	R	133	S
+142655	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104183	43104183	single nucleotide variant	NM_007294.4(BRCA1):c.380G>T (p.Ser127Ile)	P38398	S	127	I
+54893	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43104217	43104217	single nucleotide variant	NM_007294.4(BRCA1):c.346G>A (p.Glu116Lys)	P38398	E	116	K
+54844	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104231	43104231	single nucleotide variant	NM_007294.4(BRCA1):c.332A>C (p.Glu111Ala)	P38398	E	111	A
+54651	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43104900	43104900	single nucleotide variant	NM_007294.4(BRCA1):c.269T>C (p.Ile90Thr)	P38398	I	90	T
+54642	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104902	43104902	single nucleotide variant	NM_007294.4(BRCA1):c.267C>G (p.Ile89Met)	P38398	I	89	M
+54635	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104903	43104903	single nucleotide variant	NM_007294.4(BRCA1):c.266T>C (p.Ile89Thr)	P38398	I	89	T
+54614	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104910	43104910	single nucleotide variant	NM_007294.4(BRCA1):c.259T>G (p.Leu87Val)	P38398	L	87	V
+54528	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104939	43104939	single nucleotide variant	NM_007294.4(BRCA1):c.230C>G (p.Thr77Arg)	P38398	T	77	R
+54529	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104939	43104939	single nucleotide variant	NM_007294.4(BRCA1):c.230C>T (p.Thr77Met)	P38398	T	77	M
+182124	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104947	43104947	single nucleotide variant	NM_007294.4(BRCA1):c.222A>C (p.Gln74His)	P38398	Q	74	H
+54481	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104953	43104953	single nucleotide variant	NM_007294.4(BRCA1):c.216C>A (p.Ser72Arg)	P38398	S	72	R
+182123	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43104953	43104953	single nucleotide variant	NM_007294.4(BRCA1):c.216C>G (p.Ser72Arg)	P38398	S	72	R
+54450	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43106462	43106462	single nucleotide variant	NM_007294.4(BRCA1):c.206C>A (p.Thr69Asn)	P38398	T	69	N
+54445	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106465	43106465	single nucleotide variant	NM_007294.4(BRCA1):c.203T>G (p.Ile68Arg)	P38398	I	68	R
+54439	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43106467	43106467	single nucleotide variant	NM_007294.4(BRCA1):c.201T>G (p.Asp67Glu)	P38398	D	67	E
+54389	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106479	43106479	single nucleotide variant	NM_007294.4(BRCA1):c.189A>T (p.Leu63Phe)	P38398	L	63	F
+141093	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106489	43106489	single nucleotide variant	NM_007294.4(BRCA1):c.179A>G (p.Gln60Arg)	P38398	Q	60	R
+54337	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106496	43106496	single nucleotide variant	NM_007294.4(BRCA1):c.172C>G (p.Pro58Ala)	P38398	P	58	A
+182122	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106496	43106496	single nucleotide variant	NM_007294.4(BRCA1):c.172C>A (p.Pro58Thr)	P38398	P	58	T
+37422	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106507	43106507	single nucleotide variant	NM_007294.4(BRCA1):c.161A>G (p.Gln54Arg)	P38398	Q	54	R
+91559	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43106508	43106508	single nucleotide variant	NM_007294.4(BRCA1):c.160C>A (p.Gln54Lys)	P38398	Q	54	K
+37421	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106514	43106514	single nucleotide variant	NM_007294.4(BRCA1):c.154C>T (p.Leu52Phe)	P38398	L	52	F
+91556	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106514	43106514	single nucleotide variant	NM_007294.4(BRCA1):c.154C>A (p.Leu52Ile)	P38398	L	52	I
+54263	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106522	43106522	single nucleotide variant	NM_007294.4(BRCA1):c.146T>G (p.Leu49Arg)	P38398	L	49	R
+156487	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43106524	43106524	single nucleotide variant	NM_007294.4(BRCA1):c.144G>A (p.Met48Ile)	P38398	M	48	I
+54242	BRCA1	1	Likely pathogenic	criteria provided, single submitter	17	43106529	43106529	single nucleotide variant	NM_007294.4(BRCA1):c.139T>G (p.Cys47Gly)	P38398	C	47	G
+37402	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43115726	43115726	single nucleotide variant	NM_007294.4(BRCA1):c.134A>C (p.Lys45Thr)	P38398	K	45	T
+54192	BRCA1	1	Pathogenic	criteria provided, single submitter	17	43115730	43115730	single nucleotide variant	NM_007294.4(BRCA1):c.130T>C (p.Cys44Arg)	P38398	C	44	R
+54172	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43115736	43115736	single nucleotide variant	NM_007294.4(BRCA1):c.124A>G (p.Ile42Val)	P38398	I	42	V
+54147	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43115746	43115746	single nucleotide variant	NM_007294.4(BRCA1):c.114G>T (p.Lys38Asn)	P38398	K	38	N
+55769	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43115763	43115763	single nucleotide variant	NM_007294.4(BRCA1):c.97G>C (p.Glu33Gln)	P38398	E	33	Q
+55760	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43115767	43115767	single nucleotide variant	NM_007294.4(BRCA1):c.93C>G (p.Ile31Met)	P38398	I	31	M
+55648	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43124036	43124036	single nucleotide variant	NM_007294.4(BRCA1):c.61A>G (p.Ile21Val)	P38398	I	21	V
+182121	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43124037	43124037	single nucleotide variant	NM_007294.4(BRCA1):c.60A>C (p.Lys20Asn)	P38398	K	20	N
+55192	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43124054	43124054	single nucleotide variant	NM_007294.4(BRCA1):c.43A>C (p.Ile15Leu)	P38398	I	15	L
+54828	BRCA1	-1	Uncertain significance	criteria provided, single submitter	17	43124065	43124065	single nucleotide variant	NM_007294.4(BRCA1):c.32T>C (p.Val11Ala)	P38398	V	11	A
+37440	BRCA1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	43124078	43124078	single nucleotide variant	NM_007294.4(BRCA1):c.19C>T (p.Arg7Cys)	P38398	R	7	C

@@ -37,11 +37,11 @@ name: encode_esm1b_brca1
 project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
 seed: 42
 
-# Override manylatents' top-level `data_dir` (which defaults to `./data`,
-# cwd-relative) so the ClinVarDataModule looks in the submodule's data dir
-# regardless of where the user invokes the harness from. Assumes invocation
-# from the lrw-vep-ub2026 project root.
-data_dir: ${hydra:runtime.cwd}/experiments/tools/manylatents-omics/data
+# Override manylatents' top-level `data_dir` (defaults to `./data`,
+# cwd-relative) to point at the workshop repo's pre-bundled ClinVar files
+# (see experiments/data/clinvar/README.md). Assumes invocation from the
+# lrw-vep-ub2026 project root.
+data_dir: ${hydra:runtime.cwd}/experiments/data
 
 data:
   genes: [BRCA1]
