@@ -9,14 +9,22 @@
 #    benign, run it on the cluster and log to wandb so I can see the thing
 #    already"
 #
-# One-time data prep (BRCA1 missense + protein FASTA):
-#   cd experiments/tools/manylatents-omics
-#   python3 scripts/download_clinvar.py --gene BRCA1 --max-variants 1000
+# Run from the lrw-vep-ub2026 PROJECT ROOT (the harness pins data_dir and
+# hydra.run.dir relative to ${hydra:runtime.cwd}, so cwd matters):
 #
-# Then run from experiments/tools/manylatents-omics:
-#   .venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1
-# Then from the project root:
-#   .venv/bin/python experiments/analysis/00_demo_umap.py
+#   # one-time: pull BRCA1 missense + protein FASTA (from project root)
+#   python3 experiments/tools/manylatents-omics/scripts/download_clinvar.py \
+#       --gene BRCA1 --max-variants 1000 \
+#       --data-dir experiments/tools/manylatents-omics/data/clinvar
+#
+#   # encode (Mac users: append `algorithms.latent.encoder_config.device=mps`)
+#   experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
+#       --config-path=$(pwd)/experiments/configs/manylatents-omics \
+#       experiment=encode_esm1b_brca1
+#
+#   # umap + plot + wandb
+#   experiments/tools/manylatents-omics/.venv/bin/python \
+#       experiments/analysis/00_demo_umap.py
 
 defaults:
   - override /data: clinvar
@@ -28,6 +36,12 @@ defaults:
 name: encode_esm1b_brca1
 project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
 seed: 42
+
+# Override manylatents' top-level `data_dir` (which defaults to `./data`,
+# cwd-relative) so the ClinVarDataModule looks in the submodule's data dir
+# regardless of where the user invokes the harness from. Assumes invocation
+# from the lrw-vep-ub2026 project root.
+data_dir: ${hydra:runtime.cwd}/experiments/tools/manylatents-omics/data
 
 data:
   genes: [BRCA1]
@@ -44,7 +58,7 @@ algorithms:
     _recursive_: false
     save_path: ${hydra:runtime.output_dir}/embeddings.pt
     encoder_config:
-      device: cpu          # override to cuda/mps for GPU runs
+      device: cpu          # Mac override: append `algorithms.latent.encoder_config.device=mps` to the CLI for ~5x speedup
 
 logger:
   wandb:
@@ -52,3 +66,14 @@ logger:
     entity: ${oc.env:WANDB_ENTITY,cesar-valdez-mcgill-university}
     tags: [workshop, vep, brca1, esm1b]
     job_type: encode
+
+# Pin Hydra's run dir to a project-relative location so the post-step
+# (00_demo_umap.py) can find embeddings.pt via _config.latest_hydra_run.
+# Without this, outputs land at <cwd>/outputs/... which the post-step
+# only finds if cwd happens to be the submodule (the historical default).
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/experiments/outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: ${hydra:runtime.cwd}/experiments/outputs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}

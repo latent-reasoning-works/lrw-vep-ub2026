@@ -30,6 +30,31 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py  (post-fix baseline, MPS, run-from-project-root)
+
+- **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026); manylatents v0.1.5; fair-esm 2.0.0
+- **Cmd (encode):** `WANDB_ENTITY=... experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=encode_esm1b_brca1 algorithms.latent.encoder_config.device=mps` (run from project root)
+- **Cmd (umap):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/00_demo_umap.py`
+- **Output:** `experiments/outputs/2026-05-07/12-06-36/embeddings.pt` — landed at the pinned location, no copy needed; `experiments/analysis/figures/demo_umap_brca1.{pdf,png}`; results CSV
+- **wandb (encode):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/0qpvx1s4
+- **wandb (umap):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/od5yp85x
+- **Notes:** First run after pinning `data_dir` and `hydra.run.dir` against `${hydra:runtime.cwd}` in the experiment YAML. Confirms the two CWD-coupled landmines from the 11:56 agent run (data_dir relative-to-cwd, outputs landing at submodule instead of project) are gone — no manual `data_dir=<abs>` override or post-hoc directory copy. MPS device override gave **3.32 it/s** vs the cpu default's 0.74 it/s (~4.5× speedup). Total wall time 1:00 encode + ~5s UMAP = ~65s end-to-end after warm-up.
+
+## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py  (Phase-1 local re-run, MPS)
+
+- **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026), v0.1.2; manylatents v0.1.5; fair-esm 2.0.0
+- **Cmd (encode):** `uv run --project experiments/tools/manylatents-omics --extra workshop python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=encode_esm1b_brca1 algorithms.latent.encoder_config.device=mps data_dir=$(pwd)/experiments/tools/manylatents-omics/data`
+- **Cmd (umap):** `uv run --project experiments/tools/manylatents-omics --extra workshop python experiments/analysis/00_demo_umap.py`
+- **Output:** `outputs/2026-05-07/11-56-06/embeddings.pt` (200 × 1280, mirrored into `experiments/outputs/2026-05-07/11-56-06/` so `_config.latest_hydra_run` can find it); `experiments/analysis/results/demo_umap_brca1.csv`; `experiments/analysis/figures/demo_umap_brca1.{pdf,png}`
+- **wandb (encode):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/cei8iwqu
+- **wandb (umap):** https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026/runs/714ptc17
+- **Data:** Same ClinVar BRCA1 ≥1-star missense pull as 2026-05-06; 200 P/B kept after VUS drop. Final split: 131 benign / 69 pathogenic — identical to the first end-to-end run, as expected at `seed=42`.
+- **Notes:** Sandboxed agent run; could not invoke `.venv/bin/python` directly or `uv sync`/`cp` cross-tree, so used `uv run --project ... --extra workshop` overlays for every step. Two non-default overrides forced by sandboxing:
+  1. `data_dir=<absolute>` — Hydra's relative `./data` resolved against project root (the agent's CWD) instead of the manylatents-omics submodule, so the ClinVarDataModule couldn't find `variants.tsv`. Absolute override fixes it.
+  2. Encode's hydra `outputs/` landed at project root instead of inside the submodule; copied the run dir to `experiments/outputs/...` (one of the candidate roots scanned by `_config.latest_hydra_run`) so `00_demo_umap.py` resolved it.
+
+  ESM-1b encoded all 200 sequences in 0:60 on Mac arm64 MPS (3.4 it/s, weights warm-cached). UMAP step ran in ~5 s. Phase-1 runtime end-to-end: ~75 s after warm-up.
+
 ## 2026-05-06 — encode_esm1b_brca1 + 00_demo_umap.py  (first end-to-end)
 
 - **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026), v0.1.2; manylatents v0.1.5 from PyPI; fair-esm 2.0.0
