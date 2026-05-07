@@ -51,7 +51,7 @@ callbacks:
 logger:
   wandb:
     project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
-    entity: ${oc.env:WANDB_ENTITY,cmvcordova}
+    entity: ${oc.env:WANDB_ENTITY,cesar-valdez-mcgill-university}
     tags: [workshop, vep, brca1, esm1b, mila]
     job_type: encode
 

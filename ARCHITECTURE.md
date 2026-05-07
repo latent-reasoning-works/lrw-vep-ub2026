@@ -143,9 +143,10 @@ Scaffolding tool — already used to generate this layout. Relevant commands:
 - **Hugging Face Hub:** model weights for Evo2, ESM-1b/2, and ESM3 download on
   first encode. Orthrus may require a separate path.
 - **W&B:** every `encode_*.yaml` sets `logger: wandb`. Defaults baked via
-  `${oc.env:WANDB_PROJECT,upper-bound-2026}` and `${oc.env:WANDB_ENTITY,cmvcordova}`
-  — set in `.env` to override per-checkout. Auth via `wandb login` (writes
-  `~/.netrc`).
+  `${oc.env:WANDB_PROJECT,upper-bound-2026}` and
+  `${oc.env:WANDB_ENTITY,cesar-valdez-mcgill-university}` — set in `.env`
+  to override per-checkout. Auth via `wandb login` (writes `~/.netrc`).
+  Note: free wandb accounts disable personal entities; route to a team.
 - **Anthropic API** (Claude Code): the agent's runtime — not a code dep, but a
   participant in the demo loop.
 
@@ -165,7 +166,7 @@ cd ../..
 .venv/bin/python experiments/analysis/00_demo_umap.py
 ```
 
-Results land in W&B at `cmvcordova/upper-bound-2026`.
+Results land in W&B at `cesar-valdez-mcgill-university/upper-bound-2026`.
 
 **Phase 2 — cluster sbatch handoff:** same prompt, but the agent dispatches
 the encode step via `sbatch` to Mila / Tamia / DRAC (whichever cluster's

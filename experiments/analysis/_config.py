@@ -19,35 +19,48 @@ ANALYSIS_DIR = EXPERIMENTS_DIR / "analysis"
 RESULTS_DIR = ANALYSIS_DIR / "results"
 FIGURES_DIR = ANALYSIS_DIR / "figures"
 EMBEDDINGS_DIR = ANALYSIS_DIR / "embeddings"
-OUTPUTS_DIR = EXPERIMENTS_DIR / "outputs"
 
-WANDB_ENTITY = os.environ.get("WANDB_ENTITY", "cmvcordova")
+# Hydra writes to <cwd>/outputs/<date>/<time>/. The encode runs from inside
+# the manylatents-omics submodule, so check both candidate roots.
+OUTPUT_ROOTS = [
+    EXPERIMENTS_DIR / "outputs",
+    EXPERIMENTS_DIR / "tools" / "manylatents-omics" / "outputs",
+]
+
+WANDB_ENTITY = os.environ.get("WANDB_ENTITY", "cesar-valdez-mcgill-university")
 WANDB_PROJECT = os.environ.get("WANDB_PROJECT", "upper-bound-2026")
 
 
 def latest_hydra_run(experiment_name: str) -> Path:
     """Return the path to the most recent Hydra output dir for an experiment.
 
-    Hydra writes runs to outputs/YYYY-MM-DD/HH-MM-SS/. The experiment name
-    appears in the run's config.yaml, so we scan all timestamped dirs and
-    pick the most-recent one whose config.yaml matches.
+    Hydra writes runs to <cwd>/outputs/YYYY-MM-DD/HH-MM-SS/. We scan every
+    candidate root (project + tool-relative) and pick the most-recent run
+    whose config.yaml records the matching experiment name.
     """
     candidates = []
-    for date_dir in OUTPUTS_DIR.glob("*"):
-        if not date_dir.is_dir():
+    for root in OUTPUT_ROOTS:
+        if not root.exists():
             continue
-        for run_dir in date_dir.glob("*"):
-            cfg = run_dir / ".hydra" / "config.yaml"
-            if not cfg.exists():
+        for date_dir in root.glob("*"):
+            if not date_dir.is_dir():
                 continue
-            text = cfg.read_text()
-            if f"name: {experiment_name}" in text:
-                candidates.append(run_dir)
+            for run_dir in date_dir.glob("*"):
+                cfg = run_dir / ".hydra" / "config.yaml"
+                if not cfg.exists():
+                    continue
+                text = cfg.read_text()
+                if f"name: {experiment_name}" in text:
+                    candidates.append(run_dir)
     if not candidates:
+        roots = ", ".join(str(r) for r in OUTPUT_ROOTS)
         raise FileNotFoundError(
-            f"No Hydra outputs/<date>/<time>/ found for experiment '{experiment_name}'. "
-            f"Run it first: cd ../tools/manylatents-omics && "
-            f".venv/bin/python -m manylatents.main +experiment={experiment_name}"
+            f"No Hydra outputs/<date>/<time>/ found for experiment '{experiment_name}' "
+            f"under any of: {roots}. Run the encode first: "
+            f"cd experiments/tools/manylatents-omics && "
+            f".venv/bin/python -m manylatents.main "
+            f"--config-path=$(pwd)/../../configs/manylatents-omics "
+            f"experiment={experiment_name}"
         )
     return max(candidates, key=lambda p: p.stat().st_mtime)
 

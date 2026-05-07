@@ -37,33 +37,48 @@ the harness is wired so the answer is two commands. **Do not improvise around
 this** — the wiring is the demo.
 
 ```bash
-# 0. Smoke-check the env (skip if already done)
+# 0. Sync the venv (workshop extra brings fair-esm + umap-learn)
 cd experiments/tools/manylatents-omics
-uv sync
-.venv/bin/python -c "import manylatents; print(manylatents.__version__)"
+uv sync --extra workshop
 
-# 1. Encode ESM-1b on top 200 BRCA1 ClinVar missense, log to wandb
-.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1
+# 1. One-time data prep (BRCA1 ClinVar missense; ~440MB cached download)
+python3 scripts/download_clinvar.py --gene BRCA1 --max-variants 1000
 
-# 2. UMAP + scatter plot + wandb image (resumes the same project)
-cd ../..
-.venv/bin/python experiments/analysis/00_demo_umap.py
+# 2. Encode ESM-1b on top 200 BRCA1 missense, log to wandb. The
+#    --config-path is required: our experiment YAMLs live outside the
+#    manylatents pkg search path. Use `experiment=...` not `+experiment=...`
+#    (the experiment group is already declared in the base config).
+.venv/bin/python -m manylatents.main \
+    --config-path=$(pwd)/../../configs/manylatents-omics \
+    experiment=encode_esm1b_brca1
+
+# 3. UMAP + scatter plot + wandb image (separate run under same project)
+cd ../../..
+experiments/tools/manylatents-omics/.venv/bin/python \
+    experiments/analysis/00_demo_umap.py
 ```
 
 Both commands read `WANDB_ENTITY` / `WANDB_PROJECT` from env (defaults
-`cmvcordova` / `upper-bound-2026`, baked via `${oc.env:...}` in the experiment
-config). Output: a wandb run under
-[`cmvcordova/upper-bound-2026`](https://wandb.ai/cmvcordova/upper-bound-2026)
+`cesar-valdez-mcgill-university` / `upper-bound-2026`, baked via
+`${oc.env:...}` in the experiment config). Output: a wandb run under
+[`cesar-valdez-mcgill-university/upper-bound-2026`](https://wandb.ai/cesar-valdez-mcgill-university/upper-bound-2026)
 with a UMAP scatter image, a coordinates table, and pathogenic/benign counts.
 Local artifacts at `experiments/analysis/figures/demo_umap_brca1.pdf` and
 `experiments/analysis/results/demo_umap_brca1.csv`.
 
-**If the user changes the gene** (e.g. "do TP53 instead"), override at the CLI:
+**If the user changes the gene** (e.g. "do TP53 instead"), re-run download
+with the new gene + override at the CLI:
 
 ```bash
-.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1 \
+cd experiments/tools/manylatents-omics
+python3 scripts/download_clinvar.py --gene TP53 --max-variants 1000
+.venv/bin/python -m manylatents.main \
+    --config-path=$(pwd)/../../configs/manylatents-omics \
+    experiment=encode_esm1b_brca1 \
     data.genes=[TP53] name=encode_esm1b_tp53
-.venv/bin/python experiments/analysis/00_demo_umap.py --experiment encode_esm1b_tp53
+cd ../../..
+experiments/tools/manylatents-omics/.venv/bin/python \
+    experiments/analysis/00_demo_umap.py --experiment encode_esm1b_tp53
 ```
 
 Append an entry to [`experiments/EXPERIMENT_LOG.md`](./experiments/EXPERIMENT_LOG.md)
@@ -71,28 +86,30 @@ with the wandb run URL — that's the demo's reproducibility evidence.
 
 ### Phase-2 prompt (cluster handoff)
 
-Same prompt, plus *"run it on the cluster."* Add `+cluster=mila` (or `tamia`,
-`drac`) and the harness dispatches via sbatch instead of running locally:
+Same prompt, plus *"run it on the cluster."* Use `experiment=encode_esm1b_brca1_mila`
+which inherits the Phase-1 config and adds `cluster: mila` + `launcher: mila_cluster`
+defaults. Hydra dispatches via `submitit_slurm`:
 
 ```bash
-.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1 \
-    +cluster=mila +resources=gpu
+.venv/bin/python -m manylatents.main \
+    --config-path=$(pwd)/../../configs/manylatents-omics \
+    experiment=encode_esm1b_brca1_mila
 ```
 
-Cluster configs come from the parent `manylatents` package (`configs/cluster/*.yaml`).
+For other clusters, override at the CLI: `cluster=narval launcher=narval_cluster`.
 The post-step (`00_demo_umap.py`) still runs locally once the sbatch finishes
 and embeddings land in `outputs/`.
 
 ### Generic multi-modal pattern
 
-For deeper experimentation (the cross-modal alignment story), the harness
-also supports the encode/encode/align flow used in earlier merging-dogma
-runs:
+For deeper experimentation (cross-modal alignment), the harness also supports
+the encode/encode/align flow inherited from merging-dogma. Same invocation
+pattern (`--config-path=...` + `experiment=<name>`):
 
 ```bash
-.venv/bin/python -m manylatents.main +experiment=encode_evo2          # DNA
-.venv/bin/python -m manylatents.main +experiment=encode_esm3          # protein
-.venv/bin/python -m manylatents.main +experiment=alignment_matrix     # k-NN Jaccard
+.venv/bin/python -m manylatents.main --config-path=$(pwd)/../../configs/manylatents-omics experiment=encode_evo2          # DNA
+.venv/bin/python -m manylatents.main --config-path=$(pwd)/../../configs/manylatents-omics experiment=encode_esm3          # protein
+.venv/bin/python -m manylatents.main --config-path=$(pwd)/../../configs/manylatents-omics experiment=alignment_matrix     # k-NN Jaccard
 ```
 
 Configs at `experiments/configs/manylatents-omics/experiment/`. The agent can

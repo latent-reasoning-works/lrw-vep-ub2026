@@ -19,7 +19,6 @@
 #   .venv/bin/python experiments/analysis/00_demo_umap.py
 
 defaults:
-  - /config
   - override /data: clinvar
   - override /algorithms/latent: batch_encoder_esm1b
   - override /metrics: null
@@ -38,15 +37,18 @@ data:
 
 # BatchEncoder writes a .pt with {embeddings, labels, variant_ids} to save_path.
 # The follow-up script (00_demo_umap.py) loads from that .pt directly.
+# `_recursive_: false` keeps encoder_config as a DictConfig — BatchEncoder
+# instantiates the encoder lazily inside `_ensure_encoder_loaded`.
 algorithms:
   latent:
-    save_path: ${paths.output_dir}/embeddings.pt
+    _recursive_: false
+    save_path: ${hydra:runtime.output_dir}/embeddings.pt
     encoder_config:
       device: cpu          # override to cuda/mps for GPU runs
 
 logger:
   wandb:
     project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
-    entity: ${oc.env:WANDB_ENTITY,cmvcordova}
+    entity: ${oc.env:WANDB_ENTITY,cesar-valdez-mcgill-university}
     tags: [workshop, vep, brca1, esm1b]
     job_type: encode
