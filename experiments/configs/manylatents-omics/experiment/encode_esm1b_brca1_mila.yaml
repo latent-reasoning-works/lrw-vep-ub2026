@@ -1,0 +1,63 @@
+# @package _global_
+# Phase-2 demo: same ESM-1b BRCA1 encode as encode_esm1b_brca1.yaml,
+# but dispatched to Mila via Hydra's submitit_slurm launcher.
+#
+# Run from experiments/tools/manylatents-omics on a Mila login node:
+#   .venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1_mila
+#
+# For other clusters, override at the CLI:
+#   +experiment=encode_esm1b_brca1_mila +cluster=narval +launcher=narval_cluster
+#
+# After the slurm job lands, run the post-step locally:
+#   .venv/bin/python experiments/analysis/00_demo_umap.py --experiment encode_esm1b_brca1_mila
+
+defaults:
+  - /config
+  - override /data: clinvar
+  - override /algorithms/latent: esm
+  - override /metrics: null
+  - override /logger: wandb
+  - override /cluster: mila
+  - override /launcher: mila_cluster
+  - _self_
+
+name: encode_esm1b_brca1_mila
+project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
+seed: 42
+
+data:
+  genes: [BRCA1]
+  pathogenicity: all
+  max_variants: 200
+  batch_size: 32
+
+algorithms:
+  latent:
+    model_name: esm1b_t33_650M_UR50S
+    repr_layer: null
+    max_length: 1022
+    device: cuda
+
+callbacks:
+  embedding:
+    save:
+      _target_: manylatents.callbacks.embedding.SaveEmbeddings
+      save_dir: ${paths.output_dir}/embeddings
+      experiment_name: ${name}
+      save_format: npy
+      use_timestamp: true
+      save_metric_tables: true
+
+logger:
+  wandb:
+    project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
+    entity: ${oc.env:WANDB_ENTITY,cmvcordova}
+    tags: [workshop, vep, brca1, esm1b, mila]
+    job_type: encode
+
+# Slurm overrides — keep modest; ESM-1b 650M on 200 sequences fits comfortably.
+hydra:
+  launcher:
+    timeout_min: 30
+    cpus_per_task: 4
+    mem_gb: 32
