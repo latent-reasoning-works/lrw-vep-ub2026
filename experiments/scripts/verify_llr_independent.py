@@ -32,8 +32,8 @@ import numpy as np
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "experiments" / "notebooks" / "data"
-CSV_PATH = DATA_DIR / "validation_variants.csv"
-FASTA_PATH = DATA_DIR / "validation_proteins.fasta"
+TSV_PATH = DATA_DIR / "workshop_set.tsv"
+FASTA_PATH = DATA_DIR / "workshop_set_proteins.fasta"
 CACHE_PATH = DATA_DIR / "s3_scores.npz"
 
 N_SAMPLE = 10
@@ -95,14 +95,14 @@ def main() -> int:
         rng = random.Random(SEED)
         indices = sorted(rng.sample(range(n), N_SAMPLE))
 
-    csv_rows: list[dict] = []
-    with CSV_PATH.open() as fh:
-        for r in csv.DictReader(fh):
-            csv_rows.append(r)
-    csv_by_id = {r["variant_id"]: r for r in csv_rows}
+    tsv_rows: list[dict] = []
+    with TSV_PATH.open() as fh:
+        for r in csv.DictReader(fh, delimiter="\t"):
+            tsv_rows.append(r)
+    rows_by_id = {r["variant_id"]: r for r in tsv_rows}
 
     fastas = load_fasta(FASTA_PATH)
-    print(f"[INFO] loaded {len(csv_rows)} rows from {CSV_PATH.name}")
+    print(f"[INFO] loaded {len(tsv_rows)} rows from {TSV_PATH.name}")
     print(f"[INFO] loaded {len(fastas)} sequences from {FASTA_PATH.name}")
 
     # Load fair-esm — different code path than HF transformers
@@ -133,7 +133,7 @@ def main() -> int:
         cached_label = int(cache["label"][i])
         cached_gene = str(cache["gene"][i])
 
-        row = csv_by_id[vid]
+        row = rows_by_id[vid]
         pos0 = int(row["protein_pos"])  # 0-indexed in CSV
         pos1 = pos0 + 1                  # 1-indexed for ESM-1b
         wt_aa = row["aa_ref"]

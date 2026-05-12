@@ -2,7 +2,7 @@
 """cache_s3_scores.py — Build experiments/notebooks/data/s3_scores.npz.
 
 Standalone CLI mirror of notebook cell 17 (S3 scoring loop). Scores every
-variant in validation_variants.csv with the notebook's HF-transformers
+variant in workshop_set.tsv with the notebook's HF-transformers
 ESM1bEncoder + LLR + delta-norm, writes a .npz the notebook then loads
 instantly. **B10's invisible fallback for the Friday boss demo.**
 
