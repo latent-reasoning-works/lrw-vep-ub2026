@@ -30,11 +30,12 @@ Format:
   for anyone who wants them.
 - Inputs (n=499): `notebooks/data/s3_scores.npz`
   (sha256 `74225259…b09b865a1`, 499 rows: 250 P + 249 B across
-  ~280 genes) — pre-scored by `scripts/cache_s3_scores.py` from
-  `experiments/notebooks/data/validation_variants.csv` (500 rows
-  source; one variant skipped at encode time). Same encoder as n=2.
-  AUROCs computed via `sklearn.metrics.roc_auc_score`: delta_norm
-  0.6065, LLR 0.6381.
+  **437 unique genes**) — pre-scored by `scripts/cache_s3_scores.py`
+  from `experiments/notebooks/data/validation_variants.csv`
+  (500 rows source; one benign skipped at encode time). Same encoder
+  as n=2. AUROCs computed via `sklearn.metrics.roc_auc_score`:
+  delta_norm 0.6065, LLR 0.6381. **Cross-gene generalization,
+  not BRCA1-specific** — see "Validation set composition" below.
 - Inputs (n=36,537): no local data — literature anchor from
   Brandes et al., *Nat. Genet.* 2023, Fig 2B. Single bar at ESM-1b
   zero-shot AUROC 0.905 on ClinVar missense, plus one dashed
@@ -64,3 +65,55 @@ Format:
 - Generated: 2026-05-11 against `manylatents-omics` `cceb1fa`.
   Regenerate post-2.11 with `manylatents.dogma.vep` to keep n=2 and
   n=499 parity-clean against Path B/C.
+
+### Validation set composition (`notebooks/data/validation_variants.csv`)
+
+This is the dataset behind panel B and the notebook's S3 scoring
+loop. It is **not** BRCA1-specific. Recording the composition here
+because the slide narration easily implies otherwise.
+
+**Upstream source.** No script in this repo produces these files.
+The CSV and the matching FASTA are pre-bundled workshop assets
+(mtime 2026-05-06 17:07). The notebook fetches them at runtime from
+`https://raw.githubusercontent.com/latent-reasoning-works/lrw-vep-ub2026/main/experiments/notebooks/data/`,
+i.e. the same files served raw from this repo's GitHub mirror. The
+upstream draw (ClinVar query → label-balanced sample) was done
+before this repo's history began and is not reproducible from any
+script here — the files are the source of truth.
+
+**Files (sha256 / size / mtime):**
+| file | sha256 (12 char) | size | mtime |
+|---|---|---|---|
+| `experiments/notebooks/data/validation_variants.csv` | `7c4a83683eb7` | 22,981 B | 2026-05-06 17:07 |
+| `experiments/notebooks/data/validation_proteins.fasta` | `74b68cc26479` | 366,221 B | 2026-05-06 17:07 |
+
+**Composition (n=500 in source, n=499 in scored set):**
+
+| dimension | value |
+|---|---|
+| Total source rows | 500 |
+| Label balance (source) | 250 pathogenic + 250 benign (deliberately stratified on label) |
+| Label balance (scored) | 250 pathogenic + 249 benign (one benign dropped at encode time) |
+| Unique genes (source) | **438** |
+| Unique genes (scored) | **437** |
+| Singletons in source | 392 of 438 (78%) |
+| Singletons in scored | 391 of 437 (89%) |
+| Genes with ≥10 variants | **0** |
+| Top gene by count | COL1A1 (n=6, all pathogenic) |
+| BRCA1 rows | **1** — `clinvar_845361`, H40L, Pathogenic/Likely_pathogenic |
+| Position range | 0 – 1,566 |
+| Variant-id ordering | unsorted; range `clinvar_15070` → `clinvar_4796951` — confirms this is a curated sample, not a top-N slice |
+
+**Caveats for downstream framing:**
+1. The 0.6065 / 0.6381 AUROCs are a 437-gene mixture, not BRCA1
+   performance. Slide narration should say "ClinVar workshop set
+   across 437 disease genes," not "BRCA1 validation."
+2. Per-gene P/B balance is broken at the top — COL1A1 has 6 P / 0 B,
+   LDLR 4 P / 0 B, etc. Label balance is global only. Any per-gene
+   analysis from this set is meaningless for gene-specific claims.
+3. Two different data layers easily conflate:
+   - `experiments/data/clinvar/variants.tsv` — BRCA1-only; the demo
+     pair and the audience-pick gene-bundle flow live here.
+   - `experiments/notebooks/data/validation_variants.csv` — this
+     438-gene workshop set; the notebook's S3 loop + `cache_s3_scores.py`
+     consume it.

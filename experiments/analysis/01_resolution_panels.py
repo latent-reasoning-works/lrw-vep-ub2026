@@ -125,7 +125,7 @@ def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray) -> Non
     ax.set_ylim(0, 1)
     ax.set_xlabel("False positive rate")
     ax.set_ylabel("True positive rate")
-    ax.set_title(f"n = {int((~np.isnan(dn)).sum())} — workshop validation set")
+    ax.set_title(f"n = {int((~np.isnan(dn)).sum())} — ClinVar workshop set, 437 genes")
     ax.legend(loc="lower right", fontsize=8, frameon=False)
     ax.set_aspect("equal")
     ax.spines[["top", "right"]].set_visible(False)
@@ -210,6 +210,14 @@ def main() -> int:
     fig.suptitle(
         "Resolution: same harness, three scales",
         fontsize=12, y=1.02, weight="bold",
+    )
+    fig.text(
+        0.5, -0.04,
+        "Panel B: ClinVar workshop set — 250 pathogenic + 249 benign variants across "
+        "437 unique genes (438 in the source file; one variant dropped at encode time). "
+        "Mostly singletons (391 / 437 genes have a single variant). Cross-gene "
+        "generalization, not BRCA1-specific performance.",
+        ha="center", va="top", fontsize=8, color="#444444", wrap=True,
     )
 
     fig_paths = cfg.save_figure(OUT_NAME, fig)
