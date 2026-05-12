@@ -229,8 +229,8 @@ def main() -> int:
     fig.text(
         0.5, -0.04,
         f"Panel B: workshop_set_v2 — 250 P + 250 B across {n_genes} disease genes; "
-        "Brandes-matching label scope (canonical text + Conflicting via ClinSigSimple), "
-        "canonical-isoform-validated.\n"
+        "Brandes-matching label scope (canonical text + Conflicting via ClinSigSimple),\n"
+        "canonical-isoform-validated. "
         "LLR AUROC 0.925 (CI95 0.900–0.947) — within noise of Brandes 2023's 0.905.",
         ha="center", va="top", fontsize=8, color="#444444",
     )
