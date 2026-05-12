@@ -154,14 +154,22 @@ def panel_c_brandes_anchor(ax: plt.Axes, auroc_llr: float) -> None:
         bar_x, BRANDES_2023_CLINVAR_AUROC, width=bar_w,
         color=LLR_COLOR, edgecolor="white", linewidth=0.8,
     )
+    # Value label INSIDE the bar (white text) so the LLR dashed reference
+    # line at 0.925 has clean airspace above the bar and doesn't cross
+    # the "0.905" text. ESM-1b/year callout sits below the bar.
     ax.text(
-        bar_x, BRANDES_2023_CLINVAR_AUROC + 0.012,
-        f"ESM-1b\n{BRANDES_2023_CLINVAR_AUROC:.3f}",
-        ha="center", va="bottom", fontsize=9, weight="bold", color=LLR_COLOR,
+        bar_x, BRANDES_2023_CLINVAR_AUROC - 0.015,
+        f"{BRANDES_2023_CLINVAR_AUROC:.3f}",
+        ha="center", va="top", fontsize=11, weight="bold", color="white",
+    )
+    ax.text(
+        bar_x, 0.51,
+        "ESM-1b (Brandes 2023)",
+        ha="center", va="bottom", fontsize=8, color=LLR_COLOR,
     )
     ax.axhline(auroc_llr, color=LLR_COLOR, linestyle="--", linewidth=1.4, alpha=0.85)
     ax.text(
-        bar_w / 2 + 0.05, auroc_llr, f"LLR — {auroc_llr:.2f}",
+        bar_w / 2 + 0.05, auroc_llr, f"workshop_set_v2 LLR — {auroc_llr:.3f}",
         ha="left", va="center", fontsize=8, color=LLR_COLOR,
         bbox=dict(facecolor="white", edgecolor="none", pad=1.2),
     )
