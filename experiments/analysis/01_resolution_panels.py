@@ -228,11 +228,9 @@ def main() -> int:
     )
     fig.text(
         0.5, -0.04,
-        f"Panel B: workshop_set_v2 — 250 pathogenic + 250 benign ClinVar missense "
-        f"across {n_genes} disease genes.\n"
-        "Brandes-matching label scope: canonical Pathogenic*/Benign* by text class;\n"
-        "Conflicting* by ClinSigSimple lean; Uncertain* dropped. "
-        "All canonical-isoform-validated.\n"
+        f"Panel B: workshop_set_v2 — 250 P + 250 B across {n_genes} disease genes; "
+        "Brandes-matching label scope (canonical text + Conflicting via ClinSigSimple), "
+        "canonical-isoform-validated.\n"
         "LLR AUROC 0.925 (CI95 0.900–0.947) — within noise of Brandes 2023's 0.905.",
         ha="center", va="top", fontsize=8, color="#444444",
     )
