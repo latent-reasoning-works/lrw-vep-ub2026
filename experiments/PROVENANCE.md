@@ -31,12 +31,19 @@ Format:
   AUROCs computed via `sklearn.metrics.roc_auc_score`: delta_norm
   0.6065, LLR 0.6381.
 - Inputs (n=36,537): no local data — literature anchor from
-  Brandes et al., *Nat. Genet.* 2023, Fig 2B (ESM-1b zero-shot,
-  ClinVar missense). AUROC 0.74 plotted as a horizontal reference on
-  the same FPR/TPR axes as panel B. Curve not reproduced; citation
-  is the data. Constants live in
-  `01_resolution_panels.py::BRANDES_2023_CLINVAR_{AUROC,N}` —
-  verify against the source paper before the May 23 deck.
+  Brandes et al., *Nat. Genet.* 2023, Fig 2B. Reproduced as a bar
+  chart of ESM-1b zero-shot vs EVE on ClinVar (0.905 vs 0.885) and
+  HGMD/gnomAD (0.897 vs 0.882) in our palette (ESM-1b = pathogenic
+  red, EVE = panel B's delta-norm blue). Numbers locked from Fig 2B
+  and cross-checked against slide 3 of the deck. Constants live in
+  `01_resolution_panels.py::BRANDES_2023_FIG2B`.
+  **Correction (2026-05-11):** the prior rendering cited AUROC 0.74
+  on a horizontal-line reference — wrong number, wrong figure type.
+  The headline AUROC from Brandes Fig 2B is **0.905**, not 0.74; the
+  earlier value was an unverified recall and is replaced here. The
+  bar-chart rendering also restores the ESM-1b-vs-EVE comparison
+  that gives the panel its argument (zero-shot pLM beats a
+  task-specific supervised baseline).
 - Outputs: `analysis/figures/resolution_panels.{pdf,png}`,
   `analysis/results/resolution_panels.csv`.
 - Generated: 2026-05-11 against `manylatents-omics` `cceb1fa`.

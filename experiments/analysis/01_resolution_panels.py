@@ -22,11 +22,10 @@ The figure has three panels arranged left-to-right, shared color palette
     validation set, AUROC in the legend, dashed chance line. The
     "validate" beat.
   Panel C — n=36,537: Brandes et al. 2023 (Nature Genetics) literature
-    anchor, ESM-1b zero-shot on ClinVar missense. Plotted on the same
-    FPR/TPR axes as panel B for visual continuity, with the AUROC scalar
-    rendered as a horizontal reference and the citation in-figure. We
-    cite the literature value rather than fabricate a curve we do not
-    own. Verify the AUROC against the source before the May 23 deck.
+    anchor, ESM-1b zero-shot vs EVE on ClinVar and HGMD/gnomAD. Bar
+    chart reproducing Fig 2B in our palette. Curve not reproduced —
+    cite-only. Numbers locked from the source paper and cross-checked
+    against slide 3 of the deck.
 
 The n=2 and n=500 panels share an encoder code path (HF transformers via
 vep_utils.ESM1bEncoder). Post-2.11 + NB.1, regenerate both via
@@ -124,39 +123,47 @@ def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray) -> Non
     ax.spines[["top", "right"]].set_visible(False)
 
 
-BRANDES_2023_CLINVAR_AUROC = 0.74
 BRANDES_2023_CLINVAR_N = 36_537
+BRANDES_2023_FIG2B = {
+    "ClinVar":       {"ESM-1b": 0.905, "EVE": 0.885},
+    "HGMD/gnomAD":   {"ESM-1b": 0.897, "EVE": 0.882},
+}
+ESM1B_COLOR = PALETTE["Pathogenic"]
+EVE_COLOR = "#3a7ca5"
 
 
 def panel_c_brandes_anchor(ax: plt.Axes) -> None:
-    """n=36,537 — Brandes et al. 2023 ClinVar zero-shot anchor.
+    """n=36,537 — Brandes et al. 2023 Fig 2B reproduction.
 
-    We do not own Brandes' per-variant scores, so we render the cited
-    summary as a horizontal reference at TPR = AUROC on the same axes as
-    panel B. The chance diagonal and palette match panel B for visual
-    continuity. AUROC value sourced from Brandes 2023 Fig 2B / Table 1
-    (ESM-1b zero-shot on ClinVar, n=36,537 missense). Verify against the
-    paper before the May 23 deck.
+    Bar chart of ESM-1b vs EVE zero-shot AUROC on ClinVar and
+    HGMD/gnomAD missense, numbers from Brandes et al., Nat. Genet.
+    2023, Fig 2B. Same figure cited on slide 3 of the deck. Rendered
+    in our palette (ESM-1b in the pathogenic red used elsewhere in
+    the figure; EVE in panel B's delta-norm blue) so the resolution
+    figure reads as one design.
     """
-    auroc = BRANDES_2023_CLINVAR_AUROC
-    ax.plot([0, 1], [0, 1], "k--", alpha=0.3, linewidth=0.8, label="chance")
-    ax.axhline(
-        auroc, color=PALETTE["Pathogenic"], linewidth=2,
-        label=f"ESM-1b zero-shot — AUROC {auroc:.2f}",
-    )
-    ax.text(
-        0.5, 0.05,
-        "Brandes et al., Nat. Genet. 2023, Fig 2B\nClinVar missense (all genes)",
-        ha="center", va="bottom", fontsize=8, color="#444444",
-        transform=ax.transAxes,
-    )
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.set_xlabel("False positive rate")
-    ax.set_ylabel("True positive rate")
+    benchmarks = list(BRANDES_2023_FIG2B.keys())
+    esm = [BRANDES_2023_FIG2B[b]["ESM-1b"] for b in benchmarks]
+    eve = [BRANDES_2023_FIG2B[b]["EVE"] for b in benchmarks]
+    x = np.arange(len(benchmarks))
+    w = 0.35
+    ax.bar(x - w / 2, esm, width=w, color=ESM1B_COLOR, label="ESM-1b (zero-shot)")
+    ax.bar(x + w / 2, eve, width=w, color=EVE_COLOR, label="EVE")
+    for i, (e, v) in enumerate(zip(esm, eve)):
+        ax.text(i - w / 2, e + 0.003, f"{e:.3f}", ha="center", va="bottom", fontsize=8)
+        ax.text(i + w / 2, v + 0.003, f"{v:.3f}", ha="center", va="bottom", fontsize=8)
+    ax.set_xticks(x)
+    ax.set_xticklabels(benchmarks)
+    ax.set_ylim(0.85, 0.93)
+    ax.set_ylabel("AUROC")
     ax.set_title(f"n = {BRANDES_2023_CLINVAR_N:,} — Brandes et al. 2023")
     ax.legend(loc="lower right", fontsize=8, frameon=False)
-    ax.set_aspect("equal")
+    ax.text(
+        0.5, -0.22,
+        "Brandes et al., Nat. Genet. 2023, Fig 2B (ESM-1b zero-shot AUROC = 0.905 on ClinVar)",
+        ha="center", va="top", fontsize=7, color="#444444",
+        transform=ax.transAxes,
+    )
     ax.spines[["top", "right"]].set_visible(False)
 
 
@@ -219,11 +226,14 @@ def main() -> int:
              "id": "validation_set", "metric": "llr",
              "value": float(roc_auc_score(y[m_llr], llr[m_llr]))},
         ]
-    rows += [
-        {"panel": "C", "n": BRANDES_2023_CLINVAR_N, "label": "auroc", "gene": "all",
-         "id": "brandes_2023_fig2b", "metric": "esm1b_zero_shot",
-         "value": BRANDES_2023_CLINVAR_AUROC},
-    ]
+    for benchmark, scores in BRANDES_2023_FIG2B.items():
+        for model, auroc in scores.items():
+            rows.append({
+                "panel": "C", "n": BRANDES_2023_CLINVAR_N, "label": "auroc",
+                "gene": benchmark, "id": "brandes_2023_fig2b",
+                "metric": f"{model.lower().replace('-', '')}_zero_shot",
+                "value": auroc,
+            })
     csv_path = cfg.save_csv(OUT_NAME, pd.DataFrame(rows))
     print(f"  saved csv → {csv_path.relative_to(cfg.EXPERIMENTS_DIR.parent)}")
     return 0

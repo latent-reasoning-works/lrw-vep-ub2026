@@ -5,4 +5,7 @@ A,1,benign,BRCA1,clinvar_55634,delta_norm,0.027454923838377
 A,1,benign,BRCA1,clinvar_55634,llr,0.21722745895385742
 B,499,auroc,all,validation_set,delta_norm,0.6065381526104417
 B,499,auroc,all,validation_set,llr,0.6381365461847389
-C,36537,auroc,all,brandes_2023_fig2b,esm1b_zero_shot,0.74
+C,36537,auroc,ClinVar,brandes_2023_fig2b,esm1b_zero_shot,0.905
+C,36537,auroc,ClinVar,brandes_2023_fig2b,eve_zero_shot,0.885
+C,36537,auroc,HGMD/gnomAD,brandes_2023_fig2b,esm1b_zero_shot,0.897
+C,36537,auroc,HGMD/gnomAD,brandes_2023_fig2b,eve_zero_shot,0.882
