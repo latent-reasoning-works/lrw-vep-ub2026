@@ -156,16 +156,12 @@ def panel_c_brandes_anchor(ax: plt.Axes, auroc_llr: float) -> None:
     )
     # Value label INSIDE the bar (white text) so the LLR dashed reference
     # line at 0.925 has clean airspace above the bar and doesn't cross
-    # the "0.905" text. ESM-1b/year callout sits below the bar.
+    # the "0.905" text. Bar identity already named in the panel title
+    # ("n = 36,537 — Brandes et al. 2023"); no separate callout needed.
     ax.text(
         bar_x, BRANDES_2023_CLINVAR_AUROC - 0.015,
         f"{BRANDES_2023_CLINVAR_AUROC:.3f}",
         ha="center", va="top", fontsize=11, weight="bold", color="white",
-    )
-    ax.text(
-        bar_x, 0.51,
-        "ESM-1b (Brandes 2023)",
-        ha="center", va="bottom", fontsize=8, color=LLR_COLOR,
     )
     ax.axhline(auroc_llr, color=LLR_COLOR, linestyle="--", linewidth=1.4, alpha=0.85)
     ax.text(
