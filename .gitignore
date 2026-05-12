@@ -130,6 +130,7 @@ ENV/
 # Experiment outputs
 # =============================================================================
 experiments/outputs/
+experiments/cache/
 *.pt
 *.pth
 *.ckpt

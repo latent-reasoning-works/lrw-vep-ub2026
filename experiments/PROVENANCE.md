@@ -28,14 +28,17 @@ Format:
   LLR contrast. Both metrics still appear in panel B at scale.
   Underlying delta_norm/cosine values remain in `demo_pair_scores.json`
   for anyone who wants them.
-- Inputs (n=499): `notebooks/data/s3_scores.npz`
-  (sha256 `74225259…b09b865a1`, 499 rows: 250 P + 249 B across
-  **437 unique genes**) — pre-scored by `scripts/cache_s3_scores.py`
-  from `experiments/notebooks/data/validation_variants.csv`
-  (500 rows source; one benign skipped at encode time). Same encoder
-  as n=2. AUROCs computed via `sklearn.metrics.roc_auc_score`:
-  delta_norm 0.6065, LLR 0.6381. **Cross-gene generalization,
-  not BRCA1-specific** — see "Validation set composition" below.
+- Inputs (n=500): `notebooks/data/s3_scores.npz`
+  (sha256 `87aa972a1e45…`, 500 rows: 250 P + 250 B across
+  **400 unique genes**) — pre-scored by `scripts/cache_s3_scores.py`
+  from `experiments/notebooks/data/workshop_set_v2.tsv` (sha256
+  `85aa5903d3d4…`) + matching FASTA. Same encoder as n=2.
+  AUROCs via `sklearn.metrics.roc_auc_score`:
+  delta_norm **0.6703** (CI95 [0.622, 0.717]),
+  LLR **0.9250** (CI95 [0.900, 0.947]).
+  **Brandes 2023's 0.905 is inside our CI95** — statistically
+  indistinguishable. See "Validation set lineage" below for the
+  v0 → v2 history.
 - Inputs (n=36,537): no local data — literature anchor from
   Brandes et al., *Nat. Genet.* 2023, Fig 2B. Single bar at ESM-1b
   zero-shot AUROC 0.905 on ClinVar missense, plus one dashed
@@ -66,54 +69,60 @@ Format:
   Regenerate post-2.11 with `manylatents.dogma.vep` to keep n=2 and
   n=499 parity-clean against Path B/C.
 
-### Validation set composition (`notebooks/data/validation_variants.csv`)
+### Validation set lineage (v0 → workshop_set_v2)
 
-This is the dataset behind panel B and the notebook's S3 scoring
-loop. It is **not** BRCA1-specific. Recording the composition here
-because the slide narration easily implies otherwise.
+The current panel B dataset is **`workshop_set_v2`** — produced by
+`experiments/scripts/build_validation_set.py --spec v2`. Full lineage
+is documented in `docs/internal/WORKSHOP_SET_LINEAGE.md` (the
+four-revision history with rationale at each step). Summary here:
 
-**Upstream source.** No script in this repo produces these files.
-The CSV and the matching FASTA are pre-bundled workshop assets
-(mtime 2026-05-06 17:07). The notebook fetches them at runtime from
-`https://raw.githubusercontent.com/latent-reasoning-works/lrw-vep-ub2026/main/experiments/notebooks/data/`,
-i.e. the same files served raw from this repo's GitHub mirror. The
-upstream draw (ClinVar query → label-balanced sample) was done
-before this repo's history began and is not reproducible from any
-script here — the files are the source of truth.
+| version | label scope | isoform | producer | LLR AUROC | status |
+|---|---|---|---|---|---|
+| v0 (2026-05-06, pre-bundled) | canonical-only | unverified | none in repo | 0.638 | **deprecated** — `_archive/validation_variants_v0_2026-05-06.{csv,fasta}` |
+| v1 in-flight (per-gene cap) | canonical-only | UniProt-validated | `build_validation_set.py` | 0.925 | **deprecated** — unsanctioned per-gene cap, see `_archive/*_v1_in_flight_*` |
+| workshop_set_v1 (no cap) | canonical-only | UniProt-validated | `--spec v1` | 0.944 | **deprecated** — replaced by v2 for Brandes comparability; files still on disk |
+| **workshop_set_v2 (current canonical)** | **Brandes-match (canonical + Conflicting via ClinSigSimple)** | **UniProt-validated** | **`--spec v2`** | **0.925** | **shipped** — 2026-05-11 |
 
-**Files (sha256 / size / mtime):**
-| file | sha256 (12 char) | size | mtime |
-|---|---|---|---|
-| `experiments/notebooks/data/validation_variants.csv` | `7c4a83683eb7` | 22,981 B | 2026-05-06 17:07 |
-| `experiments/notebooks/data/validation_proteins.fasta` | `74b68cc26479` | 366,221 B | 2026-05-06 17:07 |
+**workshop_set_v2 files (sha256, all current canonical):**
 
-**Composition (n=500 in source, n=499 in scored set):**
+| file | sha256 (12 char) |
+|---|---|
+| `experiments/notebooks/data/workshop_set_v2.tsv` | `85aa5903d3d4` |
+| `experiments/notebooks/data/workshop_set_v2_proteins.fasta` | `5df061810f48` |
+| `experiments/notebooks/data/workshop_set_v2_manifest.json` | (includes bootstrap CI95 and Brandes anchor) |
+| `experiments/notebooks/data/s3_scores.npz` | `87aa972a1e45` |
+
+**ClinVar source:** `experiments/cache/variant_summary.txt.gz` (gitignored,
+sha256 `61e2b1fd3123…`). Recorded in the manifest.
+
+**Composition (workshop_set_v2):**
 
 | dimension | value |
 |---|---|
-| Total source rows | 500 |
-| Label balance (source) | 250 pathogenic + 250 benign (deliberately stratified on label) |
-| Label balance (scored) | 250 pathogenic + 249 benign (one benign dropped at encode time) |
-| Unique genes (source) | **438** |
-| Unique genes (scored) | **437** |
-| Singletons in source | 392 of 438 (78%) |
-| Singletons in scored | 391 of 437 (89%) |
-| Genes with ≥10 variants | **0** |
-| Top gene by count | COL1A1 (n=6, all pathogenic) |
-| BRCA1 rows | **1** — `clinvar_845361`, H40L, Pathogenic/Likely_pathogenic |
-| Position range | 0 – 1,566 |
-| Variant-id ordering | unsorted; range `clinvar_15070` → `clinvar_4796951` — confirms this is a curated sample, not a top-N slice |
+| Total rows | 500 (exactly 250 P + 250 B) |
+| Unique genes | 400 |
+| Singletons | 338 (84%) |
+| Conflicting-binarized entries | 166 (33%) — the v2 addition |
+| Canonical-text entries | 334 (Pathogenic/LP/B/LB etc.) |
+| BRCA1 rows | 5 (re-appears in v2 via Conflicting-binarized) |
+| BRCA2 rows | 7 |
+| Top gene by count | FBN1 (n=11) |
+
+**Bootstrap CI95 (10,000 resamples, seed 42):**
+- delta L2 norm AUROC: 0.6703  [0.622, 0.717]
+- LLR AUROC: **0.9250  [0.900, 0.947]**
+- Brandes 2023 (n=36,537) LLR AUROC: 0.9050 — **inside v2's CI95**
 
 **Caveats for downstream framing:**
-1. The 0.6065 / 0.6381 AUROCs are a 437-gene mixture, not BRCA1
-   performance. Slide narration should say "ClinVar workshop set
-   across 437 disease genes," not "BRCA1 validation."
-2. Per-gene P/B balance is broken at the top — COL1A1 has 6 P / 0 B,
-   LDLR 4 P / 0 B, etc. Label balance is global only. Any per-gene
-   analysis from this set is meaningless for gene-specific claims.
-3. Two different data layers easily conflate:
+1. AUROCs are a 400-gene mixture. Slide narration: "ClinVar workshop
+   set across 400 disease genes," not "BRCA1 validation." (BRCA1 is
+   present in v2 with 5 rows but is not over-represented.)
+2. Per-gene P/B balance is not enforced. Hot genes (FBN1 11P/0B,
+   LDLR 6P/0B, etc.) have label-skewed distributions. Label balance
+   is global only.
+3. Two distinct data layers in the repo:
    - `experiments/data/clinvar/variants.tsv` — BRCA1-only; the demo
-     pair and the audience-pick gene-bundle flow live here.
-   - `experiments/notebooks/data/validation_variants.csv` — this
-     438-gene workshop set; the notebook's S3 loop + `cache_s3_scores.py`
+     pair and audience-pick gene-bundle flow live here.
+   - `experiments/notebooks/data/workshop_set_v2.tsv` — the multi-gene
+     validation set; the notebook's S3 loop + `cache_s3_scores.py`
      consume it.

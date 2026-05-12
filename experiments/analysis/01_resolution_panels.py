@@ -107,7 +107,8 @@ def panel_a(ax: plt.Axes, scores: dict) -> None:
     ax.spines[["top", "right"]].set_visible(False)
 
 
-def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray) -> None:
+def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray,
+             n_genes: int) -> None:
     """n=500 — ROC curves for delta_norm and llr over the validation set."""
     from sklearn.metrics import roc_auc_score, roc_curve
 
@@ -125,7 +126,9 @@ def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray) -> Non
     ax.set_ylim(0, 1)
     ax.set_xlabel("False positive rate")
     ax.set_ylabel("True positive rate")
-    ax.set_title(f"n = {int((~np.isnan(dn)).sum())} — ClinVar workshop set, 437 genes")
+    ax.set_title(
+        f"n = {int((~np.isnan(dn)).sum())} — workshop_set_v2, {n_genes} genes"
+    )
     ax.legend(loc="lower right", fontsize=8, frameon=False)
     ax.set_aspect("equal")
     ax.spines[["top", "right"]].set_visible(False)
@@ -203,9 +206,13 @@ def main() -> int:
     auroc_dn = float(roc_auc_score(y[m_dn], dn[m_dn]))
     auroc_llr = float(roc_auc_score(y[m_llr], llr[m_llr]))
 
+    # Derive panel B's gene count from the cache for the title + caption.
+    n_genes = len(set(np.load(S3_CACHE, allow_pickle=True)["gene"].tolist())) \
+        if not args.smoke else 0
+
     fig, axes = plt.subplots(1, 3, figsize=(14, 4.4), gridspec_kw={"wspace": 0.32})
     panel_a(axes[0], scores)
-    panel_b(axes[1], y, dn, llr)
+    panel_b(axes[1], y, dn, llr, n_genes=n_genes)
     panel_c_brandes_anchor(axes[2], auroc_llr=auroc_llr)
     fig.suptitle(
         "Resolution: same harness, three scales",
@@ -213,10 +220,11 @@ def main() -> int:
     )
     fig.text(
         0.5, -0.04,
-        "Panel B: ClinVar workshop set — 250 pathogenic + 249 benign variants across "
-        "437 unique genes (438 in the source file; one variant dropped at encode time). "
-        "Mostly singletons (391 / 437 genes have a single variant). Cross-gene "
-        "generalization, not BRCA1-specific performance.",
+        "Panel B: workshop_set_v2 — 250 pathogenic + 250 benign ClinVar missense across "
+        f"{n_genes} disease genes. Brandes-matching label scope: canonical "
+        "Pathogenic*/Benign* by text class; Conflicting* by ClinSigSimple lean; "
+        "Uncertain* dropped. All canonical-isoform-validated. LLR AUROC 0.925 "
+        "(CI95 0.900–0.947) — within noise of Brandes 2023's 0.905.",
         ha="center", va="top", fontsize=8, color="#444444", wrap=True,
     )
 
