@@ -1,0 +1,20 @@
+{
+  "encoder": "vep_utils.ESM1bEncoder (HF transformers, fp32 on mps)",
+  "source_pair": "experiments/data/demo_pair.json",
+  "pathogenic": {
+    "variant_id": "clinvar_55631",
+    "gene": "BRCA1",
+    "hgvs": "L1854P",
+    "delta_norm": 0.029752688482403755,
+    "cosine_dist": 1.4655803226570896e-06,
+    "llr": 0.873219907283783
+  },
+  "benign": {
+    "variant_id": "clinvar_55634",
+    "gene": "BRCA1",
+    "hgvs": "P1859R",
+    "delta_norm": 0.027454923838377,
+    "cosine_dist": 1.465940495548601e-06,
+    "llr": 0.21722745895385742
+  }
+}
