@@ -1,7 +1,7 @@
 {
   "spec_version": "1.0.0",
   "spec": "v2",
-  "name": "workshop_set_v2",
+  "name": "workshop_set",
   "generated_utc": "2026-05-12T05:30:14Z",
   "script": "experiments/scripts/build_validation_set.py",
   "clinvar_source": {
@@ -35,11 +35,23 @@
     "phase_order": "1: stream-filter ClinVar (197k variants, ~15k genes); 2: stratified random oversample (3x target per label class); 3: resolve UniProt for genes in oversample (~few hundred); 4: rejection-validate oversample, take first N valid per class"
   },
   "outputs": {
-    "workshop_set_v2.tsv": {
-      "sha256": "85aa5903d3d423e7f278721376a70a161aa2e43ffbc51995201189dff2a71009",
-      "n_rows": 500
+    "workshop_set.tsv": {
+      "sha256": "355822298e09b3bf1c0172ac9d7195f32a1171072bc99bffb44094781b99ebb2",
+      "n_rows": 500,
+      "schema": [
+        "variant_id",
+        "gene",
+        "protein_pos (0-indexed)",
+        "aa_ref",
+        "aa_alt",
+        "clinical_significance",
+        "label",
+        "uniprot_id",
+        "isoform_validated"
+      ],
+      "schema_note": "Leading 7 columns match the notebook's legacy column naming (protein_pos is 0-indexed; HGVS positions are pos+1). uniprot_id and isoform_validated appended as audit metadata."
     },
-    "workshop_set_v2_proteins.fasta": {
+    "workshop_set_proteins.fasta": {
       "sha256": "5df061810f488e77f838d6afa12a5c19b734d4ccf1cd81b48f61f2cea38d9dda",
       "n_seqs": 500
     }

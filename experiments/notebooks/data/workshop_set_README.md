@@ -1,8 +1,8 @@
-# workshop_set_v2 — ClinVar workshop validation set (v2)
+# workshop_set — ClinVar workshop validation set
 
 **Generated:** 2026-05-12T05:30:14Z
 **Script:** `experiments/scripts/build_validation_set.py --spec v2`
-**Manifest:** `workshop_set_v2_manifest.json` (canonical record;
+**Manifest:** `workshop_set_manifest.json` (canonical record;
 read it for filter rules, seed, ClinVar sha, gene→UniProt map)
 
 ## What's in the set
@@ -46,5 +46,5 @@ Comparable in methodology to Brandes' AUROC reporting on ClinVar — same label-
 - `_archive/validation_variants_v1_in_flight_2026-05-11.csv` —
   per-gene-capped variant; rolled back because the cap was
   unsanctioned and skewed the gene distribution.
-- `workshop_set_v1.tsv` (still on disk) — strict canonical-only
+- `_archive/workshop_set_v1_canonical-only_2026-05-11.tsv` — strict canonical-only
   binarization; replaced by v2 for Brandes comparability.

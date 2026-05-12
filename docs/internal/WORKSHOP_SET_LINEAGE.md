@@ -1,10 +1,10 @@
 # Workshop validation set — lineage and catch ledger
 
-**Current canonical:** `workshop_set_v2` (shipped 2026-05-11)
-**Producer:** `experiments/scripts/build_validation_set.py --spec v2`
+**Current canonical:** `workshop_set` (built with v2 spec, shipped 2026-05-11)
+**Producer:** `experiments/scripts/build_validation_set.py --spec v2 --name workshop_set`
 **LLR AUROC:** 0.925 (CI95 [0.900, 0.947]) — within noise of Brandes 2023's 0.905
 **Manifest with full filter spec + sha256 + Brandes-anchor proof:**
-`experiments/notebooks/data/workshop_set_v2_manifest.json`
+`experiments/notebooks/data/workshop_set_manifest.json`
 
 This document captures the four-revision history of the workshop's
 n=500 validation set. Each revision was held back from shipping
@@ -70,7 +70,7 @@ number was right.
 
 ---
 
-### workshop_set_v1 — no per-gene cap, canonical-only labels (2026-05-11, deprecated by v2)
+### v1 canonical-only — no per-gene cap (2026-05-11, deprecated by v2)
 
 **What changed.** Removed the per-gene cap. Re-derived via
 oversample-then-validate (rejection sampling, equivalent in
@@ -94,11 +94,11 @@ number, the ladder reads as "we score an easier slice well" — a
 defensible but smaller claim. The user pushed back: rebuild to match
 Brandes' label scope rather than ship a defensive footnote.
 
-**Files still on disk:** `experiments/notebooks/data/workshop_set_v1.{tsv,proteins.fasta,manifest.json,README.md}` — kept for audit comparison; not consumed by any active pipeline.
+**Archived at:** `_archive/workshop_set_v1_canonical-only_2026-05-11.{tsv,fasta,json,md}` — kept for audit comparison.
 
 ---
 
-### workshop_set_v2 — Brandes-matching label scope (2026-05-11, shipped)
+### workshop_set (v2 spec) — Brandes-matching label scope (2026-05-11, shipped)
 
 **What changed.** Extended the binarization to match Brandes 2023's
 methodology: include Conflicting entries, binarize them via ClinVar's
@@ -121,11 +121,11 @@ restores BRCA1 (5 rows) and BRCA2 (7 rows) to the validation set.
 
 **Producer + manifest:**
 - Script: `experiments/scripts/build_validation_set.py --spec v2`
-- Manifest: `experiments/notebooks/data/workshop_set_v2_manifest.json`
-- TSV: `workshop_set_v2.tsv` (sha256 `85aa5903d3d4…`)
-- FASTA: `workshop_set_v2_proteins.fasta` (sha256 `5df061810f48…`)
+- Manifest: `experiments/notebooks/data/workshop_set_manifest.json`
+- TSV: `workshop_set.tsv` (sha256 `85aa5903d3d4…`)
+- FASTA: `workshop_set_proteins.fasta` (sha256 `5df061810f48…`)
 - Scored: `s3_scores.npz` (sha256 `87aa972a1e45…`)
-- README: `workshop_set_v2_README.md` (~200 words, paste-ready
+- README: `workshop_set_README.md` (~200 words, paste-ready
   reproducibility instructions)
 
 ---
@@ -137,14 +137,15 @@ by a different category of error:
 
 1. **v0 → v1 in-flight:** missing producer + opaque isoform handling
    (a *correctness* failure).
-2. **v1 in-flight → workshop_set_v1:** unsanctioned per-gene cap
+2. **v1 in-flight → v1 canonical-only:** unsanctioned per-gene cap
    inside an unrelated panel-update task (a *process* failure).
-3. **workshop_set_v1 → v2:** label scope mismatched Brandes,
-   producing an inflated AUROC that wasn't directly comparable to
-   the literature anchor (a *methodology* failure).
-4. **v2:** matches Brandes' label scope, ships within statistical
-   noise of the literature number. Bootstrap CI95 documented in the
-   manifest.
+3. **v1 canonical-only → workshop_set (v2 spec):** label scope
+   mismatched Brandes, producing an inflated AUROC that wasn't
+   directly comparable to the literature anchor (a *methodology*
+   failure).
+4. **workshop_set (v2 spec):** matches Brandes' label scope, ships
+   within statistical noise of the literature number. Bootstrap CI95
+   documented in the manifest.
 
 The discipline that caught these wasn't the agent's autonomy — it
 was the user's pushback at each step. *"Change the validation set"
@@ -186,7 +187,7 @@ to the workshop's own pipeline:
 
 None of these made it to a published slide. The discipline is working.
 
-## How to reproduce workshop_set_v2
+## How to reproduce workshop_set
 
 ```bash
 # From repo root. Cold-cache ~10 min (UniProt fetches); warm <1 min.
@@ -202,7 +203,7 @@ experiments/tools/manylatents-omics/.venv/bin/python \
     experiments/analysis/01_resolution_panels.py
 ```
 
-Manifest at `experiments/notebooks/data/workshop_set_v2_manifest.json`
+Manifest at `experiments/notebooks/data/workshop_set_manifest.json`
 records the ClinVar dump sha256, all filter rules, sampling seed,
 output sha256s, the gene→UniProt map, and the bootstrap CI95 with
 Brandes-anchor verification. Anyone reading that file can re-derive

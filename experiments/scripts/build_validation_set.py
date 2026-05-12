@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """build_validation_set.py — Build the canonical workshop validation set.
 
-Produces `workshop_set_v1.*` files. Label-balanced random draw on the
-universe of canonical-isoform-validated, high-confidence ClinVar
-missense variants. Replaces both the pre-bundled v0 (no producer) and
-the in-flight v1 (per-gene capped, sampled-before-isoform-validated).
+Produces `workshop_set.*` files (filename intentionally unversioned;
+spec version recorded in the manifest's `spec` field). Label-balanced
+random draw on the universe of canonical-isoform-validated,
+high-confidence ClinVar missense variants. Replaces both the
+pre-bundled v0 (no producer) and the in-flight v1 (per-gene capped,
+sampled-before-isoform-validated).
 
-## Canonical spec (workshop_set_v1, frozen 2026-05-11)
+## Canonical spec (v2, frozen 2026-05-11; --spec flag selects)
 
 **Source.** NCBI `variant_summary.txt.gz`, cached at
 `experiments/cache/variant_summary.txt.gz` (gitignored, ~440 MB). The
@@ -45,15 +47,18 @@ itself is `rng.sample(pool, K)` — already random — so "first 250 valid"
 is statistically the same as "random 250 valid."
 
 **Outputs (under <output-dir>/, default `experiments/notebooks/data/`):**
-  * `workshop_set_v1.tsv` — `variant_id, gene, uniprot_id, position
-    (1-indexed), ref_aa, alt_aa, clinsig_raw, label (0/1), isoform_validated`
-  * `workshop_set_v1_proteins.fasta` — WT canonical sequence per
+  * `workshop_set.tsv` — `variant_id, gene, protein_pos (0-indexed),
+    aa_ref, aa_alt, clinical_significance, label (0/1), uniprot_id,
+    isoform_validated`. Leading 7 columns match the notebook's legacy
+    naming for code-cell compatibility (just a URL change is enough);
+    uniprot_id and isoform_validated are appended as audit metadata.
+  * `workshop_set_proteins.fasta` — WT canonical sequence per
     variant_id (header is variant_id; sequences are repeated per
     variant for notebook lookup convenience)
-  * `workshop_set_v1_manifest.json` — ClinVar sha, all filter rules
+  * `workshop_set_manifest.json` — ClinVar sha, all filter rules
     verbatim, seed, sampling timestamp, ClinVar release date if
     available, output sha256s, gene_to_uniprot map
-  * `workshop_set_v1_README.md` — ~200 words on what's in the set,
+  * `workshop_set_README.md` — ~200 words on what's in the set,
     how to re-derive, what it does NOT claim
 
 ## Usage
@@ -113,7 +118,7 @@ from download_clinvar import (  # type: ignore  # noqa: E402
 
 # ---- v1 binarization (strict canonical-only) -------------------------------
 # Drops Uncertain, Conflicting, low-penetrance, drug-response, risk-factor.
-# Used by `--spec v1` for backward compat with workshop_set_v1.
+# Used by `--spec v1` for the strict canonical-only ladder rung.
 V1_ACCEPTED_CLINSIGS = {
     "Pathogenic",
     "Likely_pathogenic",
@@ -278,8 +283,10 @@ def main() -> int:
              "Default v2 (current canonical).",
     )
     p.add_argument(
-        "--name", default=None,
-        help="Output basename (default: workshop_set_<spec>).",
+        "--name", default="workshop_set",
+        help="Output basename. Default 'workshop_set' (the canonical "
+             "unversioned name; spec lives inside the manifest). Override "
+             "to compare specs side-by-side, e.g. --name workshop_set_v1_strict.",
     )
     p.add_argument("--n-pathogenic", type=int, default=250)
     p.add_argument("--n-benign", type=int, default=250)
@@ -310,7 +317,7 @@ def main() -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
     rng = random.Random(args.seed)
     classify = CLASSIFIERS[args.spec]
-    name = args.name or f"workshop_set_{args.spec}"
+    name = args.name
     print(f"[INFO] spec={args.spec}  output_basename={name}", flush=True)
 
     # ---- Phase 0: download (cached) -----------------------------------------
@@ -537,15 +544,16 @@ def main() -> int:
     with tsv_path.open("w", newline="") as fh:
         w = csv.writer(fh, delimiter="\t")
         w.writerow(
-            ["variant_id", "gene", "uniprot_id", "position",
-             "ref_aa", "alt_aa", "clinsig_raw", "label", "isoform_validated"]
+            ["variant_id", "gene", "protein_pos", "aa_ref", "aa_alt",
+             "clinical_significance", "label", "uniprot_id", "isoform_validated"]
         )
         for r, acc in final:
             w.writerow([
-                r["variant_id"], r["gene"], acc,
-                r["pos"],  # 1-indexed per spec
+                r["variant_id"], r["gene"],
+                r["pos"] - 1,  # 0-indexed for notebook-legacy compat
                 r["ref_aa"], r["alt_aa"],
                 r["clinsig"], r["label"],
+                acc,
                 str(r["isoform_validated"]).lower(),
             ])
 
@@ -680,7 +688,7 @@ def main() -> int:
             "NOT directly comparable to Brandes 2023. Our set drops "
             "Conflicting and Uncertain entries (the harder cases); "
             "Brandes keeps them via `ClinSigSimple` binarization. Use "
-            "`workshop_set_v2` for a Brandes-matching comparison."
+            "the v2 spec (default) for a Brandes-matching comparison."
         )
 
     readme = f"""# {name} — ClinVar workshop validation set ({args.spec})
@@ -731,7 +739,7 @@ UniProt REST throughput). Cached runs <1 min.
 - `_archive/validation_variants_v1_in_flight_2026-05-11.csv` —
   per-gene-capped variant; rolled back because the cap was
   unsanctioned and skewed the gene distribution.
-- `workshop_set_v1.tsv` (still on disk) — strict canonical-only
+- `_archive/workshop_set_v1_canonical-only_2026-05-11.tsv` — strict canonical-only
   binarization; replaced by v2 for Brandes comparability.
 """
     readme_path.write_text(readme)

@@ -127,7 +127,7 @@ def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray,
     ax.set_xlabel("False positive rate")
     ax.set_ylabel("True positive rate")
     ax.set_title(
-        f"n = {int((~np.isnan(dn)).sum())} — workshop_set_v2, {n_genes} genes"
+        f"n = {int((~np.isnan(dn)).sum())} — ClinVar workshop set, {n_genes} genes"
     )
     ax.legend(loc="lower right", fontsize=8, frameon=False)
     ax.set_aspect("equal")
@@ -165,7 +165,7 @@ def panel_c_brandes_anchor(ax: plt.Axes, auroc_llr: float) -> None:
     )
     ax.axhline(auroc_llr, color=LLR_COLOR, linestyle="--", linewidth=1.4, alpha=0.85)
     ax.text(
-        bar_w / 2 + 0.05, auroc_llr, f"workshop_set_v2 LLR — {auroc_llr:.3f}",
+        bar_w / 2 + 0.05, auroc_llr, f"workshop set LLR — {auroc_llr:.3f}",
         ha="left", va="center", fontsize=8, color=LLR_COLOR,
         bbox=dict(facecolor="white", edgecolor="none", pad=1.2),
     )
@@ -224,7 +224,7 @@ def main() -> int:
     )
     fig.text(
         0.5, -0.04,
-        f"Panel B: workshop_set_v2 — 250 P + 250 B across {n_genes} disease genes; "
+        f"Panel B: ClinVar workshop set — 250 P + 250 B across {n_genes} disease genes; "
         "Brandes-matching label scope (canonical text + Conflicting via ClinSigSimple),\n"
         "canonical-isoform-validated. "
         "LLR AUROC 0.925 (CI95 0.900–0.947) — within noise of Brandes 2023's 0.905.",

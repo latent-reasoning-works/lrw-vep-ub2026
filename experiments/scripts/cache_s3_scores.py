@@ -31,8 +31,8 @@ import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 NOTEBOOK_DIR = REPO_ROOT / "experiments" / "notebooks"
-TSV_PATH = NOTEBOOK_DIR / "data" / "workshop_set_v2.tsv"
-FASTA_PATH = NOTEBOOK_DIR / "data" / "workshop_set_v2_proteins.fasta"
+TSV_PATH = NOTEBOOK_DIR / "data" / "workshop_set.tsv"
+FASTA_PATH = NOTEBOOK_DIR / "data" / "workshop_set_proteins.fasta"
 CACHE_PATH = NOTEBOOK_DIR / "data" / "s3_scores.npz"
 
 # vep_utils.py lives next to the notebook; add the dir to the import path.
@@ -110,9 +110,9 @@ def main() -> int:
     skipped = 0
     for i, r in enumerate(df.itertuples(index=False)):
         seq = wt_seqs[r.variant_id]
-        pos1 = int(r.position)  # workshop_set_v1.tsv is 1-indexed already
+        pos1 = int(r.protein_pos) + 1  # TSV is 0-indexed; HGVS is 1-indexed
         seq_t, pos_t = truncate_around_mutation(seq, pos1, window=encoder.MAX_LEN)
-        mut_str = f"{r.ref_aa}{pos_t}{r.alt_aa}"
+        mut_str = f"{r.aa_ref}{pos_t}{r.aa_alt}"
         try:
             validate_mutation(seq_t, parse_mutation(mut_str))
             result = encode_variant(encoder, seq_t, mut_str)
@@ -127,8 +127,8 @@ def main() -> int:
                 result["wt_logits"],
                 result["mut_logits"],
                 result["mutation"],
-                wt_token_ids[r.ref_aa],
-                wt_token_ids[r.alt_aa],
+                wt_token_ids[r.aa_ref],
+                wt_token_ids[r.aa_alt],
             )
         )
         slen.append(len(seq))
