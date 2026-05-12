@@ -21,8 +21,13 @@ Format:
   `scripts/score_demo_pair.py` from the demo pair in
   `experiments/data/demo_pair.json` (sha256 `faf7ac58…a654b08cc`).
   Encoder: HF transformers ESM-1b via `vep_utils.ESM1bEncoder`,
-  fp32 on MPS. Variant pair: BRCA1 L1854P (pathogenic, `clinvar_55631`)
-  vs BRCA1 P1859R (benign, `clinvar_55634`).
+  fp32 on MPS. Variant pair: BRCA1 L1854P (pathogenic, `clinvar_55631`,
+  LLR +0.873) vs BRCA1 P1859R (benign, `clinvar_55634`, LLR +0.217).
+  **Panel A is LLR-only as of 2026-05-11.** Delta L2 norm bars
+  dropped — at n=2 the values (~0.03) sit near zero and dilute the
+  LLR contrast. Both metrics still appear in panel B at scale.
+  Underlying delta_norm/cosine values remain in `demo_pair_scores.json`
+  for anyone who wants them.
 - Inputs (n=499): `notebooks/data/s3_scores.npz`
   (sha256 `74225259…b09b865a1`, 499 rows: 250 P + 249 B across
   ~280 genes) — pre-scored by `scripts/cache_s3_scores.py` from

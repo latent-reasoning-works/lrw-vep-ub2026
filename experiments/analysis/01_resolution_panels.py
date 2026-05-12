@@ -16,8 +16,10 @@ Runtime: ~5 s on CPU (no encoder calls; reads pre-computed artifacts).
 The figure has three panels arranged left-to-right, shared color palette
 (pathogenic = #D72638, benign = #2A9D8F):
 
-  Panel A — n=2: bar chart of pathogenic vs benign for delta-norm and
-    LLR on the BRCA1 demo pair. The "prototype" beat.
+  Panel A — n=2: LLR bars for the BRCA1 demo pair (benign vs
+    pathogenic). LLR-only at n=2; delta_norm dropped here because at
+    this scale it sits near zero and dilutes the visual. The
+    "prototype" beat.
   Panel B — n=500: ROC curves for delta-norm and LLR over the workshop
     validation set, AUROC in the legend, dashed chance line. The
     "validate" beat.
@@ -80,24 +82,28 @@ def _load_n500() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
 
 
 def panel_a(ax: plt.Axes, scores: dict) -> None:
-    """n=2 — bar chart of pathogenic vs benign on the BRCA1 demo pair."""
+    """n=2 — LLR bars for the BRCA1 demo pair (benign vs pathogenic).
+
+    Delta L2 norm is dropped from this panel: at n=2 the two values
+    (~0.03) are visually indistinguishable from zero and dilute the
+    LLR signal the prototype is meant to demonstrate. Both metrics
+    still appear in panel B at scale, where the AUROC comparison
+    makes them mutually informative.
+    """
     p, b = scores["pathogenic"], scores["benign"]
-    metrics = ["delta_norm", "llr"]
-    p_vals = [p["delta_norm"], p["llr"]]
-    b_vals = [b["delta_norm"], b["llr"]]
-    x = np.arange(len(metrics))
-    w = 0.35
-    ax.bar(x - w / 2, b_vals, width=w, color=PALETTE["Benign"], label=f"Benign ({b['hgvs']})")
-    ax.bar(x + w / 2, p_vals, width=w, color=PALETTE["Pathogenic"], label=f"Pathogenic ({p['hgvs']})")
-    for i, (bv, pv) in enumerate(zip(b_vals, p_vals)):
-        ax.text(i - w / 2, bv, f"{bv:.2f}", ha="center", va="bottom", fontsize=8)
-        ax.text(i + w / 2, pv, f"{pv:.2f}", ha="center", va="bottom", fontsize=8)
+    labels = [f"Benign\n{b['hgvs']}", f"Pathogenic\n{p['hgvs']}"]
+    values = [b["llr"], p["llr"]]
+    colors = [PALETTE["Benign"], PALETTE["Pathogenic"]]
+    x = np.arange(len(labels))
+    ax.bar(x, values, width=0.55, color=colors, edgecolor="white", linewidth=0.8)
+    for xi, v in zip(x, values):
+        ax.text(xi, v + 0.02, f"{v:+.2f}", ha="center", va="bottom",
+                fontsize=10, weight="bold")
     ax.set_xticks(x)
-    ax.set_xticklabels(["delta L2 norm", "LLR"])
-    ax.set_title(f"n = 2 — BRCA1 prototype\n{p['gene']} {p['hgvs']} vs {b['gene']} {b['hgvs']}")
-    ax.set_ylabel("score")
+    ax.set_xticklabels(labels)
+    ax.set_title(f"n = 2 — BRCA1 prototype, LLR")
+    ax.set_ylabel("LLR")
     ax.axhline(0, color="black", linewidth=0.4)
-    ax.legend(loc="best", fontsize=8, frameon=False)
     ax.spines[["top", "right"]].set_visible(False)
 
 
@@ -216,18 +222,12 @@ def main() -> int:
         print(f"  saved figure → {fp.relative_to(cfg.EXPERIMENTS_DIR.parent)}")
 
     rows = [
-        {"panel": "A", "n": 1, "label": "pathogenic", "gene": scores["pathogenic"]["gene"],
-         "id": scores["pathogenic"].get("variant_id", scores["pathogenic"]["hgvs"]),
-         "metric": "delta_norm", "value": scores["pathogenic"]["delta_norm"]},
-        {"panel": "A", "n": 1, "label": "pathogenic", "gene": scores["pathogenic"]["gene"],
-         "id": scores["pathogenic"].get("variant_id", scores["pathogenic"]["hgvs"]),
-         "metric": "llr", "value": scores["pathogenic"]["llr"]},
-        {"panel": "A", "n": 1, "label": "benign", "gene": scores["benign"]["gene"],
-         "id": scores["benign"].get("variant_id", scores["benign"]["hgvs"]),
-         "metric": "delta_norm", "value": scores["benign"]["delta_norm"]},
         {"panel": "A", "n": 1, "label": "benign", "gene": scores["benign"]["gene"],
          "id": scores["benign"].get("variant_id", scores["benign"]["hgvs"]),
          "metric": "llr", "value": scores["benign"]["llr"]},
+        {"panel": "A", "n": 1, "label": "pathogenic", "gene": scores["pathogenic"]["gene"],
+         "id": scores["pathogenic"].get("variant_id", scores["pathogenic"]["hgvs"]),
+         "metric": "llr", "value": scores["pathogenic"]["llr"]},
     ]
     if not args.smoke:
         rows += [
