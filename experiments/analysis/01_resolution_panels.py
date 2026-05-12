@@ -21,11 +21,13 @@ The figure has three panels arranged left-to-right, shared color palette
   Panel B — n=500: ROC curves for delta-norm and LLR over the workshop
     validation set, AUROC in the legend, dashed chance line. The
     "validate" beat.
-  Panel C — n=36,537: Brandes et al. 2023 (Nature Genetics) literature
-    anchor, ESM-1b zero-shot vs EVE on ClinVar and HGMD/gnomAD. Bar
-    chart reproducing Fig 2B in our palette. Curve not reproduced —
-    cite-only. Numbers locked from the source paper and cross-checked
-    against slide 3 of the deck.
+  Panel C — n=36,537: Brandes et al. 2023 (Nature Genetics) anchor,
+    ESM-1b zero-shot on ClinVar missense (AUROC 0.905). Single bar
+    showing the ceiling, with two dashed reference lines pulled
+    forward from panel B (delta L2 norm 0.61 in blue, LLR 0.64 in
+    red) so the gap from "where we are" to "where Brandes is" is
+    legible at a glance. The ladder is the slide's argument; this
+    panel is its top rung.
 
 The n=2 and n=500 panels share an encoder code path (HF transformers via
 vep_utils.ESM1bEncoder). Post-2.11 + NB.1, regenerate both via
@@ -124,44 +126,51 @@ def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray) -> Non
 
 
 BRANDES_2023_CLINVAR_N = 36_537
-BRANDES_2023_FIG2B = {
-    "ClinVar":       {"ESM-1b": 0.905, "EVE": 0.885},
-    "HGMD/gnomAD":   {"ESM-1b": 0.897, "EVE": 0.882},
-}
-ESM1B_COLOR = PALETTE["Pathogenic"]
-EVE_COLOR = "#3a7ca5"
+BRANDES_2023_CLINVAR_AUROC = 0.905
+DELTA_NORM_COLOR = "#3a7ca5"
+LLR_COLOR = PALETTE["Pathogenic"]
 
 
-def panel_c_brandes_anchor(ax: plt.Axes) -> None:
-    """n=36,537 — Brandes et al. 2023 Fig 2B reproduction.
+def panel_c_brandes_anchor(ax: plt.Axes, auroc_dn: float, auroc_llr: float) -> None:
+    """n=36,537 — Brandes et al. 2023 ceiling, with panel B floor pulled forward.
 
-    Bar chart of ESM-1b vs EVE zero-shot AUROC on ClinVar and
-    HGMD/gnomAD missense, numbers from Brandes et al., Nat. Genet.
-    2023, Fig 2B. Same figure cited on slide 3 of the deck. Rendered
-    in our palette (ESM-1b in the pathogenic red used elsewhere in
-    the figure; EVE in panel B's delta-norm blue) so the resolution
-    figure reads as one design.
+    Single bar at AUROC 0.905 (ESM-1b zero-shot, ClinVar missense)
+    from Brandes Fig 2B, plus two dashed reference lines at panel B's
+    measured AUROCs (delta L2 norm in blue, LLR in red) so the
+    floor->ceiling gap is the visual argument. Caption frames the
+    ceiling as "the climb the harness enables."
     """
-    benchmarks = list(BRANDES_2023_FIG2B.keys())
-    esm = [BRANDES_2023_FIG2B[b]["ESM-1b"] for b in benchmarks]
-    eve = [BRANDES_2023_FIG2B[b]["EVE"] for b in benchmarks]
-    x = np.arange(len(benchmarks))
-    w = 0.35
-    ax.bar(x - w / 2, esm, width=w, color=ESM1B_COLOR, label="ESM-1b (zero-shot)")
-    ax.bar(x + w / 2, eve, width=w, color=EVE_COLOR, label="EVE")
-    for i, (e, v) in enumerate(zip(esm, eve)):
-        ax.text(i - w / 2, e + 0.003, f"{e:.3f}", ha="center", va="bottom", fontsize=8)
-        ax.text(i + w / 2, v + 0.003, f"{v:.3f}", ha="center", va="bottom", fontsize=8)
-    ax.set_xticks(x)
-    ax.set_xticklabels(benchmarks)
-    ax.set_ylim(0.85, 0.95)
+    bar_x = 0.0
+    bar_w = 0.55
+    ax.bar(
+        bar_x, BRANDES_2023_CLINVAR_AUROC, width=bar_w,
+        color=LLR_COLOR, edgecolor="white", linewidth=0.8,
+    )
+    ax.text(
+        bar_x, BRANDES_2023_CLINVAR_AUROC + 0.012,
+        f"ESM-1b\n{BRANDES_2023_CLINVAR_AUROC:.3f}",
+        ha="center", va="bottom", fontsize=9, weight="bold", color=LLR_COLOR,
+    )
+    for label, value, color in [
+        ("delta L2 norm", auroc_dn, DELTA_NORM_COLOR),
+        ("LLR", auroc_llr, LLR_COLOR),
+    ]:
+        ax.axhline(value, color=color, linestyle="--", linewidth=1.4, alpha=0.85)
+        ax.text(
+            bar_w / 2 + 0.05, value, f"{label} — {value:.2f}",
+            ha="left", va="center", fontsize=8, color=color,
+            bbox=dict(facecolor="white", edgecolor="none", pad=1.2),
+        )
+    ax.set_xlim(-bar_w, bar_w + 0.7)
+    ax.set_ylim(0.5, 1.0)
+    ax.set_xticks([])
     ax.set_ylabel("AUROC")
     ax.set_title(f"n = {BRANDES_2023_CLINVAR_N:,} — Brandes et al. 2023")
-    ax.legend(loc="upper right", fontsize=8, frameon=False)
     ax.text(
-        0.5, -0.22,
-        "Brandes et al., Nat. Genet. 2023, Fig 2B (ESM-1b zero-shot AUROC = 0.905 on ClinVar)",
-        ha="center", va="top", fontsize=7, color="#444444",
+        0.5, -0.10,
+        "ESM-1b zero-shot, ClinVar missense (all genes).\n"
+        "The ceiling this harness climbs toward.",
+        ha="center", va="top", fontsize=8, color="#444444",
         transform=ax.transAxes,
     )
     ax.spines[["top", "right"]].set_visible(False)
@@ -187,10 +196,16 @@ def main() -> int:
         scores = _load_n2()
         y, dn, llr = _load_n500()
 
+    from sklearn.metrics import roc_auc_score
+    m_dn = ~np.isnan(dn)
+    m_llr = ~np.isnan(llr)
+    auroc_dn = float(roc_auc_score(y[m_dn], dn[m_dn]))
+    auroc_llr = float(roc_auc_score(y[m_llr], llr[m_llr]))
+
     fig, axes = plt.subplots(1, 3, figsize=(14, 4.4), gridspec_kw={"wspace": 0.32})
     panel_a(axes[0], scores)
     panel_b(axes[1], y, dn, llr)
-    panel_c_brandes_anchor(axes[2])
+    panel_c_brandes_anchor(axes[2], auroc_dn=auroc_dn, auroc_llr=auroc_llr)
     fig.suptitle(
         "Resolution: same harness, three scales",
         fontsize=12, y=1.02, weight="bold",
@@ -215,25 +230,17 @@ def main() -> int:
          "metric": "llr", "value": scores["benign"]["llr"]},
     ]
     if not args.smoke:
-        from sklearn.metrics import roc_auc_score
-        m_dn = ~np.isnan(dn)
-        m_llr = ~np.isnan(llr)
         rows += [
             {"panel": "B", "n": int(m_dn.sum()), "label": "auroc", "gene": "all",
-             "id": "validation_set", "metric": "delta_norm",
-             "value": float(roc_auc_score(y[m_dn], dn[m_dn]))},
+             "id": "validation_set", "metric": "delta_norm", "value": auroc_dn},
             {"panel": "B", "n": int(m_llr.sum()), "label": "auroc", "gene": "all",
-             "id": "validation_set", "metric": "llr",
-             "value": float(roc_auc_score(y[m_llr], llr[m_llr]))},
+             "id": "validation_set", "metric": "llr", "value": auroc_llr},
         ]
-    for benchmark, scores in BRANDES_2023_FIG2B.items():
-        for model, auroc in scores.items():
-            rows.append({
-                "panel": "C", "n": BRANDES_2023_CLINVAR_N, "label": "auroc",
-                "gene": benchmark, "id": "brandes_2023_fig2b",
-                "metric": f"{model.lower().replace('-', '')}_zero_shot",
-                "value": auroc,
-            })
+    rows.append({
+        "panel": "C", "n": BRANDES_2023_CLINVAR_N, "label": "auroc",
+        "gene": "ClinVar", "id": "brandes_2023_fig2b",
+        "metric": "esm1b_zero_shot", "value": BRANDES_2023_CLINVAR_AUROC,
+    })
     csv_path = cfg.save_csv(OUT_NAME, pd.DataFrame(rows))
     print(f"  saved csv → {csv_path.relative_to(cfg.EXPERIMENTS_DIR.parent)}")
     return 0
