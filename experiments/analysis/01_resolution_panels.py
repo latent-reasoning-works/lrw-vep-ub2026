@@ -154,10 +154,10 @@ def panel_c_brandes_anchor(ax: plt.Axes) -> None:
         ax.text(i + w / 2, v + 0.003, f"{v:.3f}", ha="center", va="bottom", fontsize=8)
     ax.set_xticks(x)
     ax.set_xticklabels(benchmarks)
-    ax.set_ylim(0.85, 0.93)
+    ax.set_ylim(0.85, 0.95)
     ax.set_ylabel("AUROC")
     ax.set_title(f"n = {BRANDES_2023_CLINVAR_N:,} — Brandes et al. 2023")
-    ax.legend(loc="lower right", fontsize=8, frameon=False)
+    ax.legend(loc="upper right", fontsize=8, frameon=False)
     ax.text(
         0.5, -0.22,
         "Brandes et al., Nat. Genet. 2023, Fig 2B (ESM-1b zero-shot AUROC = 0.905 on ClinVar)",
