@@ -37,11 +37,13 @@ Format:
   0.6065, LLR 0.6381.
 - Inputs (n=36,537): no local data — literature anchor from
   Brandes et al., *Nat. Genet.* 2023, Fig 2B. Single bar at ESM-1b
-  zero-shot AUROC 0.905 on ClinVar missense, plus two dashed
-  reference lines pulled forward from panel B at the measured panel
-  B AUROCs (delta L2 norm 0.61 in blue, LLR 0.64 in red). The
-  floor->ceiling gap is the panel's visual argument. Constant lives
-  in `01_resolution_panels.py::BRANDES_2023_CLINVAR_AUROC`.
+  zero-shot AUROC 0.905 on ClinVar missense, plus one dashed
+  reference line pulled forward from panel B at the measured LLR
+  AUROC (0.64, red). Delta L2 norm reference line dropped to keep
+  panel C aligned with panel A (also LLR-only); delta_norm is shown
+  in panel B only. The floor->ceiling gap (LLR 0.64 -> Brandes
+  0.905) is the panel's visual argument. Constant lives in
+  `01_resolution_panels.py::BRANDES_2023_CLINVAR_AUROC`.
   **Revision history:**
   - 2026-05-11 (initial): cited AUROC 0.74 on a horizontal-line
     reference — wrong number, wrong figure type. Replaced.
@@ -49,10 +51,14 @@ Format:
     ClinVar (0.905 vs 0.885) and HGMD/gnomAD (0.897 vs 0.882).
     Numbers correct but re-litigated a comparison already made on
     slide 3. Replaced.
-  - 2026-05-11 (current): EVE bars removed; panel collapses to one
-    bar (ESM-1b ClinVar 0.905) plus panel B reference lines. Job
-    of the panel is to anchor the top of the scale ladder, not to
-    re-stage the model comparison.
+  - 2026-05-11 (interim): EVE bars removed; panel collapses to one
+    bar (ESM-1b ClinVar 0.905) plus two panel B reference lines
+    (delta L2 norm + LLR).
+  - 2026-05-11 (current): delta L2 norm reference line dropped to
+    match panel A's LLR-only treatment. Panel C is now: one bar at
+    0.905 + one LLR floor line at 0.64. Single metric across panels
+    A and C; both metrics live in panel B where the at-scale
+    comparison is the point.
 - Outputs: `analysis/figures/resolution_panels.{pdf,png}`,
   `analysis/results/resolution_panels.csv`.
 - Generated: 2026-05-11 against `manylatents-omics` `cceb1fa`.

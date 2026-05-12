@@ -133,18 +133,17 @@ def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray) -> Non
 
 BRANDES_2023_CLINVAR_N = 36_537
 BRANDES_2023_CLINVAR_AUROC = 0.905
-DELTA_NORM_COLOR = "#3a7ca5"
 LLR_COLOR = PALETTE["Pathogenic"]
 
 
-def panel_c_brandes_anchor(ax: plt.Axes, auroc_dn: float, auroc_llr: float) -> None:
-    """n=36,537 — Brandes et al. 2023 ceiling, with panel B floor pulled forward.
+def panel_c_brandes_anchor(ax: plt.Axes, auroc_llr: float) -> None:
+    """n=36,537 — Brandes et al. 2023 ceiling, with panel B LLR floor pulled forward.
 
     Single bar at AUROC 0.905 (ESM-1b zero-shot, ClinVar missense)
-    from Brandes Fig 2B, plus two dashed reference lines at panel B's
-    measured AUROCs (delta L2 norm in blue, LLR in red) so the
-    floor->ceiling gap is the visual argument. Caption frames the
-    ceiling as "the climb the harness enables."
+    from Brandes Fig 2B, plus one dashed reference line at panel B's
+    measured LLR AUROC so the floor->ceiling gap is the visual
+    argument. Panel A is LLR-only and panel C now matches: the LLR
+    line is the climb. Delta L2 norm is shown only in panel B.
     """
     bar_x = 0.0
     bar_w = 0.55
@@ -157,16 +156,12 @@ def panel_c_brandes_anchor(ax: plt.Axes, auroc_dn: float, auroc_llr: float) -> N
         f"ESM-1b\n{BRANDES_2023_CLINVAR_AUROC:.3f}",
         ha="center", va="bottom", fontsize=9, weight="bold", color=LLR_COLOR,
     )
-    for label, value, color in [
-        ("delta L2 norm", auroc_dn, DELTA_NORM_COLOR),
-        ("LLR", auroc_llr, LLR_COLOR),
-    ]:
-        ax.axhline(value, color=color, linestyle="--", linewidth=1.4, alpha=0.85)
-        ax.text(
-            bar_w / 2 + 0.05, value, f"{label} — {value:.2f}",
-            ha="left", va="center", fontsize=8, color=color,
-            bbox=dict(facecolor="white", edgecolor="none", pad=1.2),
-        )
+    ax.axhline(auroc_llr, color=LLR_COLOR, linestyle="--", linewidth=1.4, alpha=0.85)
+    ax.text(
+        bar_w / 2 + 0.05, auroc_llr, f"LLR — {auroc_llr:.2f}",
+        ha="left", va="center", fontsize=8, color=LLR_COLOR,
+        bbox=dict(facecolor="white", edgecolor="none", pad=1.2),
+    )
     ax.set_xlim(-bar_w, bar_w + 0.7)
     ax.set_ylim(0.5, 1.0)
     ax.set_xticks([])
@@ -211,7 +206,7 @@ def main() -> int:
     fig, axes = plt.subplots(1, 3, figsize=(14, 4.4), gridspec_kw={"wspace": 0.32})
     panel_a(axes[0], scores)
     panel_b(axes[1], y, dn, llr)
-    panel_c_brandes_anchor(axes[2], auroc_dn=auroc_dn, auroc_llr=auroc_llr)
+    panel_c_brandes_anchor(axes[2], auroc_llr=auroc_llr)
     fig.suptitle(
         "Resolution: same harness, three scales",
         fontsize=12, y=1.02, weight="bold",
