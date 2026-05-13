@@ -22,75 +22,40 @@ contract. The submodule at
 | What's been run | [`experiments/EXPERIMENT_LOG.md`](./experiments/EXPERIMENT_LOG.md) |
 | What figure came from where | [`experiments/PROVENANCE.md`](./experiments/PROVENANCE.md) |
 | How to compile / sync the paper | this file → *Overleaf sync* |
-| Encoder / VEP scoring primitives | this file → *Core abstractions* |
-| External CLIs (expaper, expstash) | this file → *External tooling* |
-| Conventions (bootstrap, wandb, launchers) | this file → *Conventions* |
+| Encoder protocol, prototype-vs-library API table | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §3 |
+| External CLIs (`expaper`, `expstash`, `expanalysis`) | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §3 |
+| Conventions (bootstrap seed, wandb schema, hosted encoders, figure paths) | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §5 |
+| Sweep launcher (submitit_slurm / joblib) | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §6 |
+| How an agent should behave when handoffs land | this file → *Operating principles* |
 
-## Core abstractions (post-2.11 collapse)
+## Operating principles
 
-The workshop story is *the prototype became the library*. The notebook
-ships with a self-contained prototype at
-`experiments/notebooks/vep_utils.py` so the live demo cold-starts in
-seconds without a submodule import dance. The same surface — slightly
-broader and production-grade — lives upstream in
-`manylatents.dogma.{encoders,vep}`. **S1–S3 of the notebook use the
-prototype; S4 agent handoffs target the library.**
+Behavioral rules. Reference content (paths, signatures, schemas) lives
+in `ARCHITECTURE.md` — pull facts from there, not from this file.
 
-| Layer | Pre-collapse (prototype) | Post-collapse (library) |
-|---|---|---|
-| Encoder | `vep_utils.ESM1bEncoder` (HF transformers, ESM-1b only) | `manylatents.dogma.encoders.ESMEncoder` (fair-esm, `repr_layer=k` for layer-specific outputs, registry of ESM-1/-1b/-1v/-2 model names) |
-| Encoder interface | `.encode(seq) -> (embedding, logits)`, `.MAX_LEN`, `.tokenizer` | `.encode_with_logits(seq) -> (embedding, logits)`, `.max_length`, registry-driven backbone |
-| VEP scoring helpers | `vep_utils.{encode_variant, truncate_around_mutation, validate_sequence, validate_mutation, parse_mutation, apply_mutation}` | `manylatents.dogma.vep.*` with the same helpers **plus** `compute_delta_norm`, `compute_cosine_distance`, `compute_llr`, `compute_lid`, and the composer `score_variant_report` |
-
-**Critical convention.** ESM-1b's effective max input is **1022
-residues** (the 1024-slot position table minus BOS + EOS). Callers
-**must** `truncate_around_mutation(seq, pos1, window=max_length)`
-before `encode_variant` whenever the sequence may exceed
-`max_length`. Neither `vep_utils.encode_variant` nor
-`manylatents.dogma.vep.encode_variant` does this internally — they
-expect a pre-truncated sequence. See the encoder protocol in
-[`ARCHITECTURE.md`](./ARCHITECTURE.md).
-
-**Available score functions** (`manylatents.dogma.vep`,
-selectable-by-string in `score_variant_report`):
-`delta_norm`, `cosine_dist`, `llr`, `lid` (with configurable `k`).
-
-## External tooling
-
-These CLIs live outside the repo but the harness depends on them. Agents
-landing on S4 prompts should know they exist and where to invoke them.
-
-| Tool | Path | What it does | Typical commands |
-|---|---|---|---|
-| `expaper` | `/network/scratch/c/cesar.valdez/expaper` | Paper-project scaffolding + Overleaf sync | `expaper init <name>`, `expaper add-tool`, `expaper link-overleaf <url>`, `expaper sync pull/push`, `expaper build --open` |
-| `expstash` | `/network/scratch/c/cesar.valdez/expstash` | Experiment-registry + sweep orchestration (wandb-native) | `expstash add-experiment`, `expstash launch <experiment>`, `expstash fetch <sweep_id>` |
-| `expanalysis` | `/network/scratch/c/cesar.valdez/expanalysis` (if present; otherwise `which expanalysis`) | Figure aggregation + cross-experiment summaries | `expanalysis aggregate`, `expanalysis figure <name>` |
-
-Run `<tool> --help` for the authoritative interface. The agent should
-prefer these CLIs over hand-rolling equivalents — they enforce the
-conventions below.
-
-## Conventions
-
-- **Bootstrap AUROC CIs**: `n_resamples=10000`, `seed=42` (matches the
-  workshop set manifest and PROVENANCE.md). Use
-  `sklearn.metrics.roc_auc_score` for the point estimate;
-  `np.random.default_rng(42).integers(...)` for resamples.
-- **Wandb run schema**: every run logs `auroc`, `ci_lo`, `ci_hi`,
-  `n_variants` alongside all config fields (`layer`, `score`, `model`,
-  `dataset`, etc.). The agent should not invent new field names —
-  these are what `expstash fetch` + `expanalysis` expect.
-- **Sweep launcher**: `hydra/launcher=submitit_slurm` for cluster
-  (mila, narval, tamia), `hydra/launcher=joblib` for local. Set
-  per-experiment in the Hydra config's defaults; never inline-override.
-- **Figure outputs**: `shared/figures/` for cross-experiment artifacts
-  consumed by `expaper`-managed papers; `experiments/analysis/figures/`
-  for in-experiment paper figures cited via PROVENANCE.md.
-- **Encoder protocol**: any new encoder (hosted, batched, distilled)
-  must conform to the contract documented in
-  [`ARCHITECTURE.md`](./ARCHITECTURE.md). The S3 scoring loop and
-  `manylatents.dogma.vep.encode_variant` are interface-agnostic over
-  the protocol.
+- **The prototype is the live demo; the library is the handoff.** S1–S3
+  of the notebook use `experiments/notebooks/vep_utils.py`. S4 agent
+  handoffs target `manylatents.dogma.{encoders,vep}`. The two surfaces
+  are compatible by design — see `ARCHITECTURE.md` §3.
+- **Truncate before you encode.** ESM-1b's effective max input is 1022
+  residues. Neither `encode_variant` truncates internally; the caller
+  does, via `truncate_around_mutation(seq, pos1, window=max_length)`.
+  Skip this and you'll hit `ValueError` from `apply_mutation` on any
+  protein longer than 1022 aa.
+- **Don't reimplement what the library already provides.** If you need
+  layer-specific outputs, `ESMEncoder(repr_layer=k)` already does that.
+  If you need a score function by name, `score_variant_report` already
+  composes them. Check `ARCHITECTURE.md` §3 and the
+  `manylatents.dogma.vep` module before writing new code.
+- **Don't bypass the harness CLIs.** `expaper`, `expstash`, `expanalysis`
+  enforce conventions (figure paths, wandb schema, sweep launchers)
+  that downstream aggregators depend on. Reach for them first; see
+  `ARCHITECTURE.md` §3 for paths and command surfaces.
+- **Follow the conventions** (bootstrap seed, wandb log schema, sweep
+  launcher rules, figure output paths) documented in
+  `ARCHITECTURE.md` §5 *Conventions for external systems* and §6
+  *Sweep launcher convention*. New runs that invent alternative schemas
+  won't be picked up by aggregators.
 
 ## The workshop demo
 

@@ -17,8 +17,8 @@ contract. This file is the notebook-specific orientation.
 | The matching WT protein sequences | `data/workshop_set_proteins.fasta` (one record per `variant_id`) |
 | The dataset's schema, conventions, build provenance | `data/workshop_set_manifest.json` (includes ClinVar source, label scope, AUROCs, bootstrap CI95, literature anchor) |
 | The S2 demo pair (canonical pathogenic + benign for the live demo) | `data/demo_pair.tsv` (2 rows; current pick: BRCA1 L1854P + P1859R) |
-| Encoder primitive (current: ESM-1b via HF transformers) | `vep_utils.ESM1bEncoder` — the **pre-collapse prototype**. Production-grade equivalent: `manylatents.dogma.encoders.ESMEncoder` (fair-esm backed, supports `repr_layer` for layer-specific outputs). The prototype intentionally stays in the notebook for live-demo simplicity; S4 handoffs target the library. |
-| Variant-scoring primitives | `vep_utils.{encode_variant, truncate_around_mutation, validate_sequence, validate_mutation, parse_mutation, apply_mutation}`. The library's equivalent is `manylatents.dogma.vep` with the same surface plus `compute_delta_norm`, `compute_cosine_distance`, `compute_llr`, `compute_lid`, `score_variant_report`. |
+| Encoder primitive (notebook scope, HF transformers ESM-1b) | `vep_utils.ESM1bEncoder` — the live-demo prototype. Library equivalent + protocol contract: `ARCHITECTURE.md` §3. |
+| Variant-scoring primitives (notebook scope) | `vep_utils.{encode_variant, truncate_around_mutation, validate_sequence, validate_mutation, parse_mutation, apply_mutation, load_fasta}`. Library equivalents + the full scorer list: `ARCHITECTURE.md` §3 + §5. |
 | FASTA loader | `vep_utils.load_fasta` |
 | Cached S3 scores (for the figure's fast path) | `data/s3_scores.npz` (`variant_id`, `gene`, `label`, `delta_norm`, `llr`, `seq_len`) |
 | Script that regenerates `s3_scores.npz` | `../scripts/cache_s3_scores.py` (notebook-scoped; lives alongside the infra scripts in `../scripts/` but is **not** a numbered analysis script) |
@@ -37,7 +37,7 @@ contract. This file is the notebook-specific orientation.
   ```
   This implements Brandes 2023's "option 4" strategy (variant-centered single window). Brandes' Extended Data Fig. 6a shows it's within noise of their sliding-window weighted-average method at `w=1022`.
 
-- **Encoder interface.** Encoders implement `.encode(seq) -> (embedding, logits)` with `.MAX_LEN`. New backends (hosted inference, batched, distilled) **subclass this interface** and live in `vep_utils.py` alongside `ESM1bEncoder`. The S3 scoring loop is interface-agnostic.
+- **Encoder interface (notebook scope).** The prototype's API is `.encode(seq) -> (embedding, logits)` with `.MAX_LEN` (HF-transformers convention; deliberately single-method). The library uses a different shape — see `ARCHITECTURE.md` §3 for the two-API table. New **notebook-scope** backends (hosted inference, batched, distilled) subclass `ESM1bEncoder` and live in `vep_utils.py`. Library-scope subclasses (`FoundationEncoder`) live upstream. For "no local GPU" prompts, the notebook scope is canonical.
 
 - **Backend parity protocol.** When adding a new encoder backend, parity-test it against `ESM1bEncoder` on a 10-variant subsample of `data/workshop_set.tsv` before declaring it usable. Expected agreement: `delta_norm` and `llr` within 3 decimals (i.e. abs diff ≤ 5e-4); embedding cosine similarity ≥ 0.99. Add the parity test to `test_vep_utils.py` and log latency-per-call + cost-per-call (if hosted) in `../EXPERIMENT_LOG.md`.
 

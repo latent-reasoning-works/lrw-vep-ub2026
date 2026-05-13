@@ -94,11 +94,32 @@ cd experiments/tools/manylatents-omics
 
 ### Encoder protocol (the central abstraction)
 
-VEP scoring is interface-agnostic over the encoder. Both the notebook
-prototype (`experiments/notebooks/vep_utils.ESM1bEncoder`) and the
-library (`manylatents.dogma.encoders.ESMEncoder`) conform to the same
-contract, which any new backend — hosted inference, batched, distilled,
-cross-modal — must preserve.
+VEP scoring is interface-agnostic over the encoder. The repo ships two
+implementations of the same conceptual contract — a notebook prototype
+and a library — that differ in method-name shape but produce compatible
+outputs. Any new backend (hosted inference, batched, distilled,
+cross-modal) must preserve one of these surfaces:
+
+| Layer | Module | Tuple-returning method | Embedding-only method | Max-length attr | Backend |
+|---|---|---|---|---|---|
+| **Prototype** (live demo) | `experiments/notebooks/vep_utils.ESM1bEncoder` | `.encode(seq) -> (embedding, logits)` | — (the tuple form is the only encode method) | `.MAX_LEN` | HF `transformers` |
+| **Library** (sweep + cluster) | `manylatents.dogma.encoders.ESMEncoder` | `.encode_with_logits(seq) -> (embedding, logits)` | `.encode(seq) -> embedding` | `.max_length` | `fair-esm` |
+
+The two implementations differ deliberately: the prototype's
+single-method API minimizes the live-demo cell count; the library's
+two-method API supports the common case where callers (e.g.,
+`BatchEncoder`) want embeddings only. `manylatents.dogma.vep.encode_variant`
+duck-types against `encode_with_logits` and `max_length`; the notebook's
+own `vep_utils.encode_variant` duck-types against `encode` and `MAX_LEN`.
+Either backend → either scoring helper is the matrix the harness
+supports.
+
+**S1–S3 of the notebook use the prototype. S4 agent handoffs target the
+library.** That's the workshop's narrative arc encoded in code. The
+canonical scope for "score variants without a local GPU" is the
+**notebook scope** — subclass `vep_utils.ESM1bEncoder` and live in
+`experiments/notebooks/vep_utils.py`. The library scope (subclass
+`FoundationEncoder`) is the cluster/sweep path.
 
 **Contract.** A conforming encoder exposes:
 
@@ -153,11 +174,23 @@ NeurIPS-style preprint scaffold. Compiles locally via `tectonic`
 (`expaper sync push/pull`). The `[preprint]` style option keeps author names
 visible (arXiv-bound, not anonymous submission).
 
-### `expaper` (external CLI)
+### External CLIs (`expaper`, `expstash`, `expanalysis`)
 
-Scaffolding tool — already used to generate this layout. Relevant commands:
-`expaper build`, `expaper link-overleaf <url>`, `expaper sync pull|push`,
-`expaper tool add`.
+The harness depends on three external CLIs that live outside the repo. An
+agent landing on any S4-style handoff task reaches for these rather than
+hand-rolling equivalents. Each enforces conventions documented in §6.
+
+| Tool | Path | Purpose | Primary commands |
+|---|---|---|---|
+| `expaper` | `/network/scratch/c/cesar.valdez/expaper` | Paper-project scaffolding + Overleaf sync. Already used to generate this repo's layout. | `expaper init <name>`, `expaper add-tool <path>`, `expaper link-overleaf <url>`, `expaper sync pull/push`, `expaper build --open` |
+| `expstash` | `/network/scratch/c/cesar.valdez/expstash` | Experiment-registry + wandb-native sweep orchestration | `expstash add-experiment`, `expstash launch <experiment>`, `expstash fetch <sweep_id>` |
+| `expanalysis` | `/network/scratch/c/cesar.valdez/expanalysis` | Cross-experiment figure aggregation + summary tables | `expanalysis aggregate`, `expanalysis figure <name>` |
+
+The canonical sub-command form for `expaper` is `add-tool` (hyphenated,
+single noun-verb pair). `<tool> --help` is the authoritative interface
+for each. If a `which expaper` returns no result, the CLI hasn't been
+installed on the current machine — fall back to running through the
+scratch path directly.
 
 ## 4. Data Stores
 
@@ -190,6 +223,67 @@ Scaffolding tool — already used to generate this layout. Relevant commands:
 - **Anthropic API** (Claude Code): the agent's runtime — not a code dep, but a
   participant in the demo loop.
 
+### Conventions for external systems
+
+These are the schemas, parameters, and rules that downstream tooling
+(`expstash fetch`, `expanalysis aggregate`, paper figure scripts)
+assumes. A run that deviates won't be picked up by the aggregators.
+
+**W&B logging schema.** Every encode/score run logs `auroc`, `ci_lo`,
+`ci_hi`, `n_variants`, plus all config fields the run varies
+(`layer`, `score`, `model`, `dataset`, …). The tags `[workshop, vep,
+sweep]` are conventional for the workshop demos.
+
+**Bootstrap.** AUROC confidence intervals: `n_resamples=10000`,
+`seed=42`. Point estimate via `sklearn.metrics.roc_auc_score`;
+resampling indices via `np.random.default_rng(42).integers(...)`. The
+workshop set manifest and `experiments/PROVENANCE.md` record CIs
+under this convention.
+
+**Available score functions** (selectable-by-string in
+`manylatents.dogma.vep.score_variant_report`): `delta_norm`,
+`cosine_dist`, `llr`, `lid` (with configurable `k`). New scorers
+extend the same module-level registry.
+
+**Hosted-encoder backends.** Subclasses that wrap a remote inference
+endpoint follow these invariants:
+- **Env vars.** API keys go in `.env` (gitignored) under provider-
+  matching names: `HF_API_KEY` for HuggingFace Inference,
+  `VLLM_API_KEY` for self-hosted vLLM, `AWS_HEALTHOMICS_ROLE_ARN` for
+  HealthOmics. `.env.example` lists the canonical names.
+- **Retry policy.** Retry on 429 / 5xx with exponential backoff
+  (3 attempts, base 2s). Raise on the 4th failure.
+- **Vocab/alphabet invariant.** `logits` shape `(L+2, V)` must use
+  the fair-esm ESM-1b alphabet ordering for index/residue alignment
+  with `compute_llr`. A backend whose tokenizer reorders the alphabet
+  must emit a permutation and apply it before return, or LLR silently
+  corrupts.
+- **Notebook-scope is canonical for the no-GPU path.** Subclass
+  `vep_utils.ESM1bEncoder` and live in `experiments/notebooks/vep_utils.py`.
+  Selected at runtime via `WORKSHOP_ENCODER_BACKEND={local,hosted}`
+  read in the `s2-load-encoder` cell. The library scope (subclass
+  `FoundationEncoder`) is the cluster/sweep path, not the live demo.
+- **Parity-gating.** Gated by the protocol in
+  `experiments/notebooks/CLAUDE.md` ("Backend parity protocol"):
+  10-variant subsample of `workshop_set.tsv`, 3-decimal agreement on
+  `delta_norm`/`llr`, embedding cosine ≥ 0.99. Add the test to
+  `test_vep_utils.py`; log latency-per-call and per-1000-call cost to
+  `EXPERIMENT_LOG.md` under a `Cost-per-1000-calls:` line.
+
+**Figure output paths.** `experiments/analysis/figures/` for
+in-experiment paper figures cited via `PROVENANCE.md` (the workshop
+default). `shared/figures/` for cross-experiment artifacts consumed by
+`expaper`-managed papers; used by sweep aggregation scripts that span
+multiple experiments. Filenames default to the script's number prefix
+(e.g., `01_resolution_panels.py` → `figures/resolution_panels.{pdf,png}`).
+
+**`\includegraphics` path convention** (paper-side). `paper/main.tex`
+lives at `paper/`; in-experiment figures live at
+`experiments/analysis/figures/`. Use a relative path:
+`\includegraphics{../experiments/analysis/figures/<name>.pdf}`. The
+existing `demo_umap_brca1.pdf` and `resolution_panels.pdf` references
+in `paper/main.tex` follow this pattern.
+
 ## 6. Deployment & Infrastructure
 
 This is a research repo, not a service — "deployment" means *the demo path*.
@@ -218,6 +312,16 @@ config the user picks at run time). Demonstrates the harness's portability.
 - **CI** (future): a `--smoke` flag on each numbered script (per
   `experiments/CLAUDE.md` contract); runs in <60s on CPU. `00_demo_umap.py`
   already supports `--smoke`.
+
+**Sweep launcher convention.** Hydra multiruns dispatch through one of:
+- `hydra/launcher=submitit_slurm` for cluster work (mila, narval, tamia
+  — each has a paired `cluster=<name>` config under
+  `experiments/configs/manylatents-omics/cluster/`).
+- `hydra/launcher=joblib` for local multiruns (laptop / workstation).
+
+Set per-experiment in the Hydra config's `defaults` block; never
+inline-override at the CLI. The `encode_esm1b_brca1_mila.yaml`
+experiment shows the cluster-handoff pattern.
 
 ## 7. Security Considerations
 
