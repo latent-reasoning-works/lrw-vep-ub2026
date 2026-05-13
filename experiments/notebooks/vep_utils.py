@@ -112,6 +112,27 @@ def apply_mutation(sequence: str, mutation: MutationSpec) -> str:
     return sequence[:mutation.position - 1] + mutation.mut_aa + sequence[mutation.position:]
 
 
+def load_fasta(path: str) -> dict[str, str]:
+    """Parse a multi-record FASTA file into a {record_id: sequence} dict.
+
+    Record IDs are the first whitespace-separated token after `>`. Empty
+    lines and headers without a record body are skipped.
+    """
+    seqs, cur, chunks = {}, None, []
+    with open(path) as fh:
+        for line in fh:
+            line = line.rstrip()
+            if line.startswith(">"):
+                if cur is not None:
+                    seqs[cur] = "".join(chunks)
+                cur, chunks = line[1:].split()[0], []
+            else:
+                chunks.append(line)
+        if cur is not None:
+            seqs[cur] = "".join(chunks)
+    return seqs
+
+
 def truncate_around_mutation(
     sequence: str, position_1idx: int, window: int = 1024,
 ) -> tuple[str, int]:
