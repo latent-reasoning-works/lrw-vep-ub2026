@@ -150,6 +150,22 @@ def test_encoder_handles_different_lengths(encoder):
     assert emb_long.shape == (1280,)
 
 
+def test_encoder_max_len_respects_bos_eos(encoder):
+    # Regression: ESM-1b's position-embedding table has 1024 slots; the HF
+    # tokenizer adds BOS + EOS, so the max residue count must be <= 1022.
+    # Before the fix MAX_LEN was 1024, which produced 1026 tokens and crashed
+    # with an IndexError inside the position embedding lookup. Encoding a
+    # sequence of length MAX_LEN must now succeed.
+    assert ESM1bEncoder.MAX_LEN <= 1022, (
+        f"MAX_LEN={ESM1bEncoder.MAX_LEN} would overflow ESM-1b's 1024-slot "
+        f"position table once BOS/EOS are added."
+    )
+    seq = "M" * ESM1bEncoder.MAX_LEN
+    emb, logits = encoder.encode(seq)
+    assert emb.shape == (1280,)
+    assert logits.shape[0] == ESM1bEncoder.MAX_LEN + 2  # BOS + L + EOS
+
+
 def test_encode_variant_returns_wt_and_mut(encoder):
     sequence = "MVSKGEELFT"
     result = encode_variant(encoder, sequence, "S3A")

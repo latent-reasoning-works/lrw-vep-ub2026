@@ -142,7 +142,12 @@ class ESM1bEncoder:
 
     MODEL_NAME = "facebook/esm1b_t33_650M_UR50S"
     EMBED_DIM = 1280
-    MAX_LEN = 1024
+    # Max residue count the encoder can ingest. ESM-1b's position-embedding
+    # table has 1024 slots, and the HF tokenizer prepends BOS and appends EOS,
+    # so a sequence of L residues becomes L+2 tokens. L must therefore be
+    # <= 1022. All call sites (validate_sequence(max_length=MAX_LEN),
+    # truncate_around_mutation(window=MAX_LEN)) treat MAX_LEN as residues.
+    MAX_LEN = 1022
 
     def __init__(self, device: str | None = None) -> None:
         from transformers import AutoModelForMaskedLM, AutoTokenizer
