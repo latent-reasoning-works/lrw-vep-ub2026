@@ -26,6 +26,23 @@ contract. This file is the notebook-specific orientation.
 | Expected AUROCs + Brandes 2023 anchor + lineage | `../PROVENANCE.md` — **canonical**. (The manifest's AUROC field is a build-time snapshot; PROVENANCE is what's updated when the cache regenerates.) |
 | What's been run (chronicle) | `../EXPERIMENT_LOG.md` |
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
+| Pinned env for local + Colab attendees | `requirements-workshop.txt` (pip / uv). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
+
+## Running the notebook locally
+
+For attendees not on Colab:
+
+```bash
+cd experiments/notebooks
+pip install -r requirements-workshop.txt   # or: uv pip install -r requirements-workshop.txt
+jupyter notebook 01_workshop_followalong.ipynb
+```
+
+The notebook's `s1-install` cell is a no-op when these are already installed — pip detects "Requirement already satisfied" and skips.
+
+On Colab: just run cells top-to-bottom; `s1-install` brings the env up.
+
+If something breaks on the env, the pins in `requirements-workshop.txt` are the source of truth; the inline `s1-install` cell mirrors them. Keep them synchronized when bumping a floor.
 
 ## Conventions
 
