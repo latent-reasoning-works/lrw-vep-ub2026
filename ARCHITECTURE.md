@@ -92,6 +92,46 @@ cd experiments/tools/manylatents-omics
 .venv/bin/python -m manylatents.main +experiment=<name>
 ```
 
+### Encoder protocol (the central abstraction)
+
+VEP scoring is interface-agnostic over the encoder. Both the notebook
+prototype (`experiments/notebooks/vep_utils.ESM1bEncoder`) and the
+library (`manylatents.dogma.encoders.ESMEncoder`) conform to the same
+contract, which any new backend — hosted inference, batched, distilled,
+cross-modal — must preserve.
+
+**Contract.** A conforming encoder exposes:
+
+| Member | Type | Invariants |
+|---|---|---|
+| `.encode_with_logits(seq: str) -> (np.ndarray, np.ndarray)` | method | Returns `(embedding, logits)`. `embedding` is mean-pooled across residue positions, shape `(D,)`, `D=1280` for ESM-1b/ESM-2-650M. `logits` is per-position over the model vocabulary, shape `(L+2, V)` — BOS at index 0, residues 1..L, EOS at L+1. The +2 framing is preserved across backends so downstream LLR / delta computations index the same way. |
+| `.max_length` *(library)* or `.MAX_LEN` *(prototype)* | int | Max residue count the backend can process without truncation. For ESM-1b: **1022** (the 1024-slot position table minus BOS + EOS). Callers must `truncate_around_mutation` upstream when sequences exceed this. |
+| `.encode(seq: str) -> np.ndarray` | method *(optional)* | Returns embedding only. Convenience for callers that don't need logits. Default impl: discard the second return of `encode_with_logits`. |
+
+**Where to add a new backend.**
+
+- *Library scope* (sweep-able, cluster-launchable, registry-discoverable):
+  subclass `manylatents.algorithms.latent.foundation_encoder.FoundationEncoder`
+  and register in `manylatents.dogma.encoders.__init__`. Existing
+  examples: `ESMEncoder`, `Esm3Encoder`, `Evo2Encoder`,
+  `OrthrusNativeEncoder`, `AlphaGenomeEncoder`.
+- *Notebook scope* (live-demo backend swap, e.g., a hosted-inference
+  encoder for no-GPU attendees): mirror the prototype contract by
+  subclassing `vep_utils.ESM1bEncoder` and overriding `.encode`. Keep
+  the file in `experiments/notebooks/vep_utils.py` alongside the
+  baseline. See the parity protocol in
+  [`experiments/notebooks/CLAUDE.md`](./experiments/notebooks/CLAUDE.md)
+  for the validation pattern (10-variant subsample, 3-decimal agreement).
+
+**Truncation responsibility.** Neither `vep_utils.encode_variant` nor
+`manylatents.dogma.vep.encode_variant` truncates around the mutation
+site. The caller does, via `truncate_around_mutation(seq, pos1, window=encoder.max_length)`.
+If a caller forgets, both encoders raise a `ValueError` from
+`apply_mutation` when the mutation position falls outside the
+validate-and-chop window. The notebook's `s2-encode` and
+`s3-score-loop` cells, and `experiments/scripts/cache_s3_scores.py`,
+all follow this convention.
+
 ### `experiments/configs/manylatents-omics/experiment/` — *configs as prompts*
 
 Each YAML file is a structured prompt. `encode_evo2.yaml` says "encode DNA via
