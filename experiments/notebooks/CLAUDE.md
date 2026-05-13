@@ -84,7 +84,8 @@ When the validator fails, the per-check FAIL lines name the diverging value and 
 
 - **Don't bypass `vep_utils`.** If you reach for `transformers` / `fair-esm` / a model SDK directly in notebook code, add the missing primitive to `vep_utils` first. The notebook should import only from `vep_utils` and the standard scientific stack (numpy, pandas, sklearn, matplotlib, seaborn).
 
-- **Cache mtime is the freshness signal.** If `s3_scores.npz` is older than `vep_utils.py`, the cache is stale. Regenerate via `../scripts/cache_s3_scores.py --device {mps,cuda,cpu}`.
+- **Cache mtime is the freshness signal — for cell-driven runs.** If `s3_scores.npz` is older than `vep_utils.py`, the cache is stale. The s3-score-loop cell short-circuits to a cache read when fresh, so the live demo's figure-pass is fast. Regenerate via `../scripts/cache_s3_scores.py --device {mps,cuda,cpu}`.
+- **Agent-driven runs of the S3 prompt should regenerate, not shortcut.** The s3-agent-prompt asks the agent to *run* S2's pattern across 500 variants — actually run it. The cache is described as *output* (`Write the result to data/s3_scores.npz`), never as input. An agent that reads the cache to satisfy the s3 prompt has misread the contract; the audience needs to see the encoder churn, not a `np.load` in 30ms.
 
 - **Notebook cell tags.** Cells are tagged with a stage prefix (`s1-*`, `s2-*`, `s3-*`, `s4-*`). When patching, find by tag id, not by index. **Markdown cells are the workshop's teaching voice — do not modify them without explicit user instruction.** Code cells are fair game when the task requires it. Stage purposes:
 
