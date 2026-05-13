@@ -243,7 +243,34 @@ under this convention.
 **Available score functions** (selectable-by-string in
 `manylatents.dogma.vep.score_variant_report`): `delta_norm`,
 `cosine_dist`, `llr`, `lid` (with configurable `k`). New scorers
-extend the same module-level registry.
+extend the same module-level registry. Sign conventions (which
+direction is "more disruptive"):
+
+| Scorer | More disruptive when… | Computed from |
+|---|---|---|
+| `delta_norm` | **larger** | `‖mut_emb − wt_emb‖₂` over mean-pooled embeddings |
+| `cosine_dist` | **larger** | `1 − cos(wt_emb, mut_emb)` |
+| `llr` | **more negative** | `log p(mut | seq) − log p(wt | seq)` over masked-LM logits; negative ⇒ MUT less likely than WT ⇒ pathogenic-leaning |
+| `lid` | varies with `k` | local intrinsic dim shift; interpret per-`k`, not signed |
+
+At n=2 (the S2 demo pair) the verdict rule is: pathogenic should
+have *larger* `delta_norm` AND *more negative* `llr` than benign. If
+either inverts, S2 didn't separate them — flag rather than push past.
+
+**Breakdown axes for analyses.** When an agent is asked to surface
+"where the signal breaks", the harness-blessed axes are:
+- **By gene** — per-gene AUROC requires at least 3 P and 3 B rows;
+  below that, fall back to mean-rank or skip. PROVENANCE.md caveat #2
+  flags hot label-skewed genes (FBN1 11P/0B, LDLR 6P/0B) as
+  not-evaluable.
+- **By length regime** — split at `MAX_LEN = 1022` aa (the Brandes /
+  ESM-1b boundary). Workshop set: 264 short / 236 long.
+- **By ClinVar label-source** — canonical (n=334) vs
+  Conflicting-binarized (n=166). Workshop v2's distinguishing
+  inclusion; PROVENANCE.md "Composition" table.
+- **By substitution property** — BLOSUM62 bucket, charge change,
+  or hydrophobicity flip from `aa_ref` / `aa_alt`. Agent's choice;
+  disclose which property was used.
 
 **Hosted-encoder backends.** Subclasses that wrap a remote inference
 endpoint follow these invariants:
