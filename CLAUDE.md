@@ -59,16 +59,11 @@ in `ARCHITECTURE.md` — pull facts from there, not from this file.
 
 ## The workshop demo
 
-### Canonical Phase-1 prompt (local run)
+### Phase 1 — local agentic run
 
-When the user says some variant of:
-
-> *"Just score the top 200 ClinVar missense variants, for BRCA1 or whatever,
-> with ESM-1b. Plot a UMAP of the embeddings colored by pathogenic vs benign,
-> log to wandb so I can see the thing already."*
-
-the harness is wired so the answer is two commands. **Do not improvise around
-this** — the wiring is the demo.
+The Phase-1 demo is "encode + UMAP a small ClinVar slice; log to wandb." The
+canonical phrasing the workshop uses lives in the slides; this section is the
+*wiring* the agent should reach for when it understands a Phase-1 ask.
 
 > **All commands run from the project root** (`lrw-vep-ub2026/`). The
 > experiment config pins `data_dir` and `hydra.run.dir` against
@@ -143,12 +138,13 @@ experiments/tools/manylatents-omics/.venv/bin/python \
 Append an entry to [`experiments/EXPERIMENT_LOG.md`](./experiments/EXPERIMENT_LOG.md)
 with the wandb run URL — that's the demo's reproducibility evidence.
 
-### Phase-2 prompt (cluster handoff)
+### Phase 2 — cluster handoff
 
-Same prompt, plus *"run it on the cluster."* Use `experiment=encode_esm1b_brca1_mila`
-which inherits the Phase-1 wiring and adds `cluster: mila` + `launcher: mila_cluster`
-defaults. Hydra dispatches via `submitit_slurm`. **Untested live as of 2026-05-07** —
-needs a Mila login session to validate.
+The Phase-2 demo is Phase 1 dispatched to a cluster via SLURM. The wiring
+inherits Phase 1 and adds `cluster: mila` + `launcher: mila_cluster`
+defaults via `experiment=encode_esm1b_brca1_mila`. Hydra dispatches via
+`submitit_slurm`. **Untested live as of 2026-05-07** — needs a Mila login
+session to validate.
 
 ```bash
 # From the project root, on a Mila login node:
