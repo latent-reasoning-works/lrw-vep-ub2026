@@ -1,0 +1,73 @@
+# @package _global_
+# Phase-2 SLURM template: same ESM-1b BRCA1 encode as encode_esm1b_brca1.yaml,
+# dispatched to a SLURM cluster via Hydra's submitit_slurm launcher.
+#
+# This is a template — it does NOT ship a cluster default. You provide a
+# cluster + launcher config for your environment under
+# `experiments/configs/manylatents-omics/{cluster,launcher}/<your-name>.yaml`,
+# then uncomment the two `override` lines in the `defaults` block below (or
+# pass `cluster=<your-cluster> launcher=<your-cluster>_launcher` at the CLI).
+#
+# Run from the lrw-vep-ub2026 PROJECT ROOT, on your SLURM cluster's login node:
+#
+#   experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
+#       --config-path=$(pwd)/experiments/configs/manylatents-omics \
+#       experiment=encode_esm1b_brca1_slurm_template \
+#       cluster=<your-cluster> launcher=<your-cluster>_launcher
+#
+# Alternative — agent-driven via the dispatcher skill
+# (`latent-reasoning-works/shop`, `.claude/skills/dispatcher/`): drop a backend
+# manifest at `~/.claude/skills/dispatcher/backends/<your-name>.json`. The
+# dispatcher picks the substrate and emits the sbatch plan. Preferable for
+# workloads that aren't Hydra-shaped (S4-sweep, ad-hoc scoring).
+#
+# After the SLURM job lands, run the post-step locally:
+#   experiments/tools/manylatents-omics/.venv/bin/python \
+#       experiments/analysis/00_demo_umap.py --experiment encode_esm1b_brca1_slurm_template
+
+defaults:
+  - override /data: clinvar
+  - override /algorithms/latent: batch_encoder_esm1b
+  - override /metrics: null
+  - override /logger: wandb
+  # Required: provide a cluster + launcher under
+  # `experiments/configs/manylatents-omics/{cluster,launcher}/<your-name>.yaml`,
+  # then uncomment + replace the two lines below (or override at the CLI).
+  # - override /cluster: <your-cluster>
+  # - override /launcher: <your-cluster>_launcher
+  - _self_
+
+name: encode_esm1b_brca1_slurm_template
+project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
+seed: 42
+
+data_dir: ${hydra:runtime.cwd}/experiments/data
+
+data:
+  genes: [BRCA1]
+  pathogenicity: all
+  max_variants: 200
+  batch_size: 32
+
+algorithms:
+  latent:
+    _recursive_: false
+    save_path: ${hydra:runtime.output_dir}/embeddings.pt
+    encoder_config:
+      device: cuda
+
+logger:
+  wandb:
+    project: ${oc.env:WANDB_PROJECT,upper-bound-2026}
+    entity: ${oc.env:WANDB_ENTITY,cesar-valdez-mcgill-university}
+    tags: [workshop, vep, brca1, esm1b, slurm]
+    job_type: encode
+
+# SLURM overrides — keep modest; ESM-1b 650M on 200 sequences fits comfortably.
+# These are passed to whichever launcher the user wires in via the `defaults`
+# block above. Adjust to your cluster's policies.
+hydra:
+  launcher:
+    timeout_min: 30
+    cpus_per_task: 4
+    mem_gb: 32

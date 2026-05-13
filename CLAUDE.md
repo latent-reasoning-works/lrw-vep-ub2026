@@ -61,10 +61,6 @@ in `ARCHITECTURE.md` — pull facts from there, not from this file.
 
 ### Phase 1 — local agentic run
 
-The Phase-1 demo is "encode + UMAP a small ClinVar slice; log to wandb." The
-canonical phrasing the workshop uses lives in the slides; this section is the
-*wiring* the agent should reach for when it understands a Phase-1 ask.
-
 > **All commands run from the project root** (`lrw-vep-ub2026/`). The
 > experiment config pins `data_dir` and `hydra.run.dir` against
 > `${hydra:runtime.cwd}` — running from anywhere else lands files in the
@@ -140,22 +136,35 @@ with the wandb run URL — that's the demo's reproducibility evidence.
 
 ### Phase 2 — cluster handoff
 
-The Phase-2 demo is Phase 1 dispatched to a cluster via SLURM. The wiring
-inherits Phase 1 and adds `cluster: mila` + `launcher: mila_cluster`
-defaults via `experiment=encode_esm1b_brca1_mila`. Hydra dispatches via
-`submitit_slurm`. **Untested live as of 2026-05-07** — needs a Mila login
-session to validate.
+Two paths, depending on workload shape:
+
+**Hydra-config path** (workshop-native; same shape as Phase 1).
+`experiment=encode_esm1b_brca1_slurm_template` inherits Phase 1 and expects
+the caller to supply a cluster + launcher for their environment. The repo
+does not ship a canonical cluster default — the maintainer's cluster configs
+live in their personal overlay, not in the public wiring. Override at the CLI:
 
 ```bash
-# From the project root, on a Mila login node:
+# From the project root, on your SLURM cluster's login node:
 experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
     --config-path=$(pwd)/experiments/configs/manylatents-omics \
-    experiment=encode_esm1b_brca1_mila
+    experiment=encode_esm1b_brca1_slurm_template \
+    cluster=<your-cluster> launcher=<your-cluster>_launcher
 ```
 
-For other clusters, override at the CLI: `cluster=narval launcher=narval_cluster`.
-The post-step (`00_demo_umap.py`) still runs locally once the sbatch finishes
-and embeddings land in `experiments/outputs/`.
+You provide `cluster/<your-cluster>.yaml` + `launcher/<your-cluster>_launcher.yaml`
+under `experiments/configs/manylatents-omics/`. The post-step
+(`00_demo_umap.py`) still runs locally once the sbatch finishes and
+embeddings land in `experiments/outputs/`.
+
+**Dispatcher-skill path** (substrate-agnostic; for workloads that aren't
+Hydra-shaped — S4-sweep, ad-hoc scoring, anything outside the notebook's
+pre-wired flows). Drop a backend manifest at
+`~/.claude/skills/dispatcher/backends/<your-name>.json`; the dispatcher's
+`route.py` picks the substrate and emits the sbatch plan. See the
+`dispatcher` skill in `latent-reasoning-works/shop` for the schema. The
+dispatcher knows about local CPU/GPU/MPS too, so the same workload can
+target your laptop or your cluster depending on what's available.
 
 ### Generic multi-modal pattern
 

@@ -347,8 +347,10 @@ config the user picks at run time). Demonstrates the harness's portability.
 - `hydra/launcher=joblib` for local multiruns (laptop / workstation).
 
 Set per-experiment in the Hydra config's `defaults` block; never
-inline-override at the CLI. The `encode_esm1b_brca1_mila.yaml`
-experiment shows the cluster-handoff pattern.
+inline-override at the CLI. The `encode_esm1b_brca1_slurm_template.yaml`
+experiment shows the cluster-handoff pattern; it does not ship a
+default cluster — the caller supplies `cluster=<name> launcher=<name>_launcher`
+either as Hydra-config `override` lines or at the CLI.
 
 ## 7. Security Considerations
 
