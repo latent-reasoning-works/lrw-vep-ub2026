@@ -27,6 +27,7 @@ contract. This file is the notebook-specific orientation.
 | What's been run (chronicle) | `../EXPERIMENT_LOG.md` |
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
 | Pinned env for local + Colab attendees | `requirements-workshop.txt` (pip / uv). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
+| Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
 
 ## Running the notebook locally
 
@@ -35,6 +36,7 @@ For attendees not on Colab:
 ```bash
 cd experiments/notebooks
 pip install -r requirements-workshop.txt   # or: uv pip install -r requirements-workshop.txt
+python validate.py --quick                 # ~10s: confirms install reproduces demo-pair LLRs
 jupyter notebook 01_workshop_followalong.ipynb
 ```
 
@@ -43,6 +45,28 @@ The notebook's `s1-install` cell is a no-op when these are already installed —
 On Colab: just run cells top-to-bottom; `s1-install` brings the env up.
 
 If something breaks on the env, the pins in `requirements-workshop.txt` are the source of truth; the inline `s1-install` cell mirrors them. Keep them synchronized when bumping a floor.
+
+## Validating reproducibility
+
+`validate.py` is the workshop's "did my setup work" check. It runs the same logic as the notebook cells and asserts the computed values match `data/workshop_set_manifest.json` within documented tolerances. Two modes:
+
+```bash
+cd experiments/notebooks
+python validate.py --quick   # ~10s: schema + demo pair + 5-variant sample
+python validate.py --full    # ~4 min: regenerates 500-variant cache, asserts AUROC + CI95
+```
+
+Quick mode runs:
+- Stage 1: schema (500 rows, 250P/250B, 400 genes, required columns)
+- Stage 2: demo pair encoding (pathogenic L1854P + benign P1859R LLRs match the cached `analysis/data/demo_pair_scores.json` within ±0.05; sign convention check)
+- Stage 3a: 5-variant sample (all LLRs negative; pathogenic mean < benign mean)
+
+Full mode adds:
+- Stage 3b: regenerates the full 500-variant cache from scratch, computes AUROCs + bootstrap CI95, asserts they match the manifest's `llr_auroc` (±5e-4), `delta_norm_auroc` (±5e-4), and both CI95 bounds (±1e-3).
+
+When the validator fails, the per-check FAIL lines name the diverging value and the tolerance. Common causes are listed in the failure footer (wrong `transformers` version, stale cache, cross-device numerical drift).
+
+**Use this when:** verifying your local install before the workshop; debugging a divergent number on someone else's machine; confirming a fix didn't break the headline numbers.
 
 ## Conventions
 
