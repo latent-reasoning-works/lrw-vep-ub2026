@@ -364,10 +364,12 @@ Python pin: 3.12 (manylatents-omics requires `<3.13,>=3.11`). uv-managed.
   during the workshop demo as the agent produces results.
 - **Public ICSB-bound or NeurIPS-bound version** — fork once the workshop
   ships, retitled as the formal paper.
-- **`expaper tool add` patch** for namespace packages — current `add_tool`
-  script doesn't find configs/main.py when the tool's package dir name
-  differs from the tool name (e.g. `manylatents-omics` ships under
-  `manylatents/`). Worked around manually here.
+- **`expaper add-tool` patch** for namespace packages — current
+  `experiments/scripts/add_tool` doesn't find configs/main.py when the
+  tool's package dir name differs from the tool name (e.g.
+  `manylatents-omics` ships under `manylatents/`). Worked around
+  manually here. Note: `add-tool` is the CLI subcommand form (canonical
+  per §3); `add_tool` is the in-repo script file. Different things.
 
 ## 10. Project Identification
 

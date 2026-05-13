@@ -51,7 +51,7 @@ contract. This file is the notebook-specific orientation.
   |---|---|---|
   | S1 | Bootstrap: install deps, fetch assets, load `df` + `wt_seqs`, EDA | `s1-install`, `s1-download`, `s1-load`, `s1-eda` |
   | S2 | Prototype end-to-end on the canonical demo pair (BRCA1 L1854P + P1859R) | `s2-load-encoder`, `s2-pick-pair`, `s2-encode`, `s2-visualize`, `s2-interactive` |
-  | S3 | Scale to 500 variants; ROC + diagnostic figures | `s3-score-loop`, `s3-auroc`, `s3-distributions`, `s3-roc`, `s3-per-gene`, `s3-seqlen` |
+  | S3 | Scale to 500 variants; ROC + diagnostic figures | Compute: `s3-score-loop` (cache + table), `s3-auroc` (CIs). **Four figure-producing cells**: `s3-distributions`, `s3-roc`, `s3-per-gene`, `s3-seqlen`. When extracted to numbered analysis scripts, filenames default to `s3_<panel>.{pdf,png}` in `../analysis/figures/`. |
   | S4 | Handoff prompts — agent-driven follow-ups (writing, sweeping, serving); not executed in the notebook | `s4-paper-prompt`, `s4-sweep-prompt`, `s4-hosted-prompt` (all markdown) |
 
   Agent-prompt markdown cells follow the pattern `s{N}-agent-prompt` (one each for S1, S2, S3) plus the three `s4-*-prompt` variants. These are the surfaces the workshop demos as drivable by an agent.

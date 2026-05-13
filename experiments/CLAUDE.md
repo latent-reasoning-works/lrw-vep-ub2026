@@ -63,6 +63,13 @@ Inputs:  <prior numbered outputs + cfg.load_*>
 Outputs: results/<name>.csv, results/<name>.json
 Runtime: <CPU/GPU>, ~<minutes>
 """
+# Default § anchors when the prompt doesn't specify:
+#   data prep / setup scripts   → §Methods
+#   headline-result scripts     → §Results
+#   diagnostic / ablation       → §Experiments
+#   sweeps + supplementary      → §Appendix
+# Override in the script's docstring with the real anchor once
+# paper/main.tex is structured.
 
 import numpy as np
 import pandas as pd
