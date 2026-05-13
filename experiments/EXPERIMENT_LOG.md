@@ -30,6 +30,83 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-13 — Tolerance test (two subagents on s3) + dispatcher e2e verification
+
+After the Brandes LLR fix landed, ran two verifications:
+
+### Test A — Two fresh subagents on the s3 consequential prompt
+
+Goal: do two independent agents reading the same prompt converge on the
+same answer? If yes, the prompt + harness are unambiguous; if not, one
+of them has a gap.
+
+Both agents got the same instructions: read the CLAUDE.md hierarchy +
+PROVENANCE.md, then answer the s3 prompt (scale to 500 variants;
+report AUROC + CI95 + per-axis breakdowns). They ran independently in
+parallel with no shared context.
+
+Results:
+
+| Metric | Agent A | Agent B | Verdict |
+|---|---|---|---|
+| LLR AUROC | 0.9300 | 0.9300 | ✓ bit-identical |
+| CI95 | [0.9062, 0.9512] | [0.9062, 0.9512] | ✓ bit-identical |
+| Length ≤1022 AUROC | 0.9435 | 0.9435 | ✓ |
+| Length >1022 AUROC | 0.9197 | 0.9197 | ✓ |
+| Per-gene evaluability | not-evaluable (≥3/≥3 rule) | not-evaluable | ✓ same verdict |
+| Mutation-class axis | charge-change | BLOSUM62 substitution score | ✗ divergent (expected) |
+| Sign-convention reasoning | -llr predictor; cache stores Brandes-sign | -llr predictor; same | ✓ |
+
+The mutation-class axis divergence is **within the harness contract**:
+ARCHITECTURE.md §5 lists three blessed axes (BLOSUM, charge, hydro
+flip) and explicitly says "agent's choice; disclose which." Both agents
+picked from the blessed list, both disclosed. Different axis ≠ different
+answer — just a different *lens* on the same data.
+
+The bit-identical match on AUROC + CI + length breakdowns reproduces
+PROVENANCE.md exactly to 4 decimals, confirming the bootstrap seed,
+the sign-flip-at-callsite convention, and the cache freshness rule all
+wire together correctly when read cold from the harness.
+
+### Test B — End-to-end dispatcher (VEP via dispatcher skill)
+
+A separate subagent was given a two-repo task: use the dispatcher at
+`/tmp/shop-skill/.claude/skills/dispatcher` to plan a 5-variant VEP
+scoring task, then run the plan against `vep_utils.encode_variant`.
+Tests that the dispatcher's substrate decision + device_override
+contract actually delivers an end-to-end run with no layer crossing.
+
+Result: **DISPATCH_E2E_PASS**
+
+- Substrate decision: `mps` (correct for Apple Silicon, no nvidia-smi,
+  no SLURM backends configured).
+- `device_override` flows cleanly: `ESM1bEncoder(device=plan["device_override"])`
+  produces `encoder.device == "mps"`.
+- All 5 LLRs negative (Brandes sign). Pathogenic mean −11.18; benign
+  mean −4.79. Sign-convention sanity check passes.
+- Fail-fast on missing `gpu_memory_gb`: structured JSON error, exit 1.
+- No layer crossing: vep_utils and dispatcher code unchanged; agent
+  didn't write substrate-detection logic of its own; only invoked
+  `route.py` and passed the resulting `device_override` to the encoder.
+- Wall time: 1.29 s for 5 variants post-model-load on MPS.
+
+Both tests confirm the harness carries the weight it claims: agents
+landing cold can drive both the prompt-shaped tasks (s3 narrative
+analysis) and the skill-shaped tasks (dispatcher routing) without
+grepping past the harness docs.
+
+### Note on the manylatents.dogma.vep upstream "bug"
+
+The 2026-05-13 LLR commit (`565958a`) flagged that the submodule's
+`manylatents.dogma.vep.compute_llr` had the same two-pass / inverted-sign
+errors. On follow-up: the submodule's `manylatents/dogma/vep.py` is
+**untracked locally** — not yet in the submodule's git history. The
+file is in-progress collapse work that hasn't shipped. The Brandes fix
+has been applied to the local untracked copy, so the user's eventual
+`vep.py` commit will carry the corrected formula. No public artifact
+ever shipped with the buggy upstream `compute_llr`; the only shipped
+copy was `experiments/notebooks/vep_utils.py`, which is now fixed.
+
 ## 2026-05-13 — Brandes-correct LLR + S3 cache regeneration
 
 The LLR computed by `vep_utils.compute_llr` did not match Brandes 2023's
