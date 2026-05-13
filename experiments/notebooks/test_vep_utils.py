@@ -199,41 +199,38 @@ def test_cosine_distance_orthogonal_is_one():
     assert compute_cosine_distance(a, b) == pytest.approx(1.0)
 
 
-def test_compute_llr_increases_with_unlikely_mutation():
-    # Tests the LLR contract: when the MUT model is LESS confident in the
-    # MUT residue (relative to the WT model's confidence in WT), LLR grows.
+def test_compute_llr_brandes_unlikely_mutation_is_negative():
+    # Brandes LLR = log P(mut|WT_seq) - log P(wt|WT_seq), both from the same
+    # WT softmax. When WT is far more likely than MUT under WT-context,
+    # LLR is large and negative (= deleterious).
     vocab_size = 33
     seq_len = 10
     mutation = MutationSpec(wt_aa="A", position=3, mut_aa="F")
     wt_token_id = 5
     mut_token_id = 7
 
-    # Case 1: Both models highly confident at their respective residue.
-    # log P_wt(wt) ~ log P_mut(mut) -> LLR close to 0.
+    # Case 1: WT and MUT roughly equally likely under WT-context -> LLR ~ 0.
     wt_logits_a = np.full((seq_len + 2, vocab_size), -10.0)
-    mut_logits_a = np.full((seq_len + 2, vocab_size), -10.0)
-    wt_logits_a[3, wt_token_id] = 10.0   # WT model very confident in WT
-    mut_logits_a[3, mut_token_id] = 10.0  # MUT model very confident in MUT
-    llr_small = compute_llr(
-        wt_logits_a, mut_logits_a, mutation,
+    wt_logits_a[3, wt_token_id] = 5.0
+    wt_logits_a[3, mut_token_id] = 5.0
+    llr_neutral = compute_llr(
+        wt_logits_a, mutation,
         wt_token_id=wt_token_id, mut_token_id=mut_token_id,
     )
 
-    # Case 2: WT model confident in WT, but MUT model UNCONFIDENT in MUT.
-    # log P_mut(mut) is much lower -> LLR = log P_wt(wt) - log P_mut(mut) larger.
+    # Case 2: WT-context strongly prefers WT; MUT is rare. LLR << 0.
     wt_logits_b = np.full((seq_len + 2, vocab_size), -10.0)
-    mut_logits_b = np.full((seq_len + 2, vocab_size), 0.0)  # flat -> low log-prob
-    wt_logits_b[3, wt_token_id] = 10.0   # WT model very confident in WT
-    # Leave mut_logits_b[3, mut_token_id] == 0.0 (uniform/unconfident)
-    llr_large = compute_llr(
-        wt_logits_b, mut_logits_b, mutation,
+    wt_logits_b[3, wt_token_id] = 10.0
+    # mut_token_id stays at the floor (-10.0) — model says MUT is very unlikely
+    llr_deleterious = compute_llr(
+        wt_logits_b, mutation,
         wt_token_id=wt_token_id, mut_token_id=mut_token_id,
     )
 
-    assert np.isfinite(llr_small) and np.isfinite(llr_large)
-    assert llr_large > llr_small, (
-        f"Expected LLR to grow when MUT model is unconfident in MUT residue; "
-        f"got llr_small={llr_small}, llr_large={llr_large}"
+    assert np.isfinite(llr_neutral) and np.isfinite(llr_deleterious)
+    assert abs(llr_neutral) < 1e-6, f"neutral case expected ~0, got {llr_neutral}"
+    assert llr_deleterious < -1.0, (
+        f"deleterious mutation should give large-negative LLR; got {llr_deleterious}"
     )
 
 
@@ -249,26 +246,23 @@ def test_compute_llr_uses_correct_bos_offset():
     mut_token_id = 7
 
     wt_logits = np.zeros((seq_len + 2, vocab_size))
-    mut_logits = np.zeros((seq_len + 2, vocab_size))
 
     # Index 0 (BOS slot): wildly different values. If the function reads
     # here, LLR would be dominated by these.
     wt_logits[0, :] = -1000.0
     wt_logits[0, wt_token_id] = 1000.0
-    mut_logits[0, :] = 1000.0
-    mut_logits[0, mut_token_id] = -1000.0
+    wt_logits[0, mut_token_id] = -2000.0  # so LLR would be ~ -3000 if BOS read
 
     # Index 1 (the real position-1 residue): controlled flat logits.
     # log_softmax of a uniform row is -log(vocab_size) for every entry,
-    # so llr = -log(V) - (-log(V)) = 0 exactly.
+    # so log P(mut) - log P(wt) = 0 exactly.
     wt_logits[1, :] = 0.0
-    mut_logits[1, :] = 0.0
 
     llr = compute_llr(
-        wt_logits, mut_logits, mutation,
+        wt_logits, mutation,
         wt_token_id=wt_token_id, mut_token_id=mut_token_id,
     )
-    # If BOS (index 0) were read, LLR would be ~2000. Reading index 1
+    # If BOS (index 0) were read, LLR would be ~-3000. Reading index 1
     # gives exactly 0. Use a tight tolerance to distinguish the two.
     assert np.isfinite(llr)
     assert abs(llr) < 1e-6, (

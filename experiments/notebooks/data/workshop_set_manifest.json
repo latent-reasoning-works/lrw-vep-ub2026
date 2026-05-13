@@ -1038,10 +1038,10 @@
     "note": "AUROC computed downstream by experiments/scripts/cache_s3_scores.py then sklearn.metrics.roc_auc_score",
     "encoder": "vep_utils.ESM1bEncoder (HF transformers, fp32 on mps)",
     "metrics": {
-      "llr_auroc": 0.92904,
+      "llr_auroc": 0.930032,
       "llr_auroc_ci95_bootstrap": [
-        0.9057372567428539,
-        0.9502554491753359
+        0.9062164193099122,
+        0.9511625499482977
       ],
       "delta_norm_auroc": 0.671808,
       "delta_norm_auroc_ci95_bootstrap": [
@@ -1049,13 +1049,16 @@
         0.7187315619808624
       ],
       "bootstrap_n_resamples": 10000,
-      "bootstrap_seed": 42
+      "bootstrap_seed": 42,
+      "llr_method": "Brandes 2023: single WT-context forward pass; LLR = log P(mut|WT_seq) - log P(wt|WT_seq). Sign: negative = deleterious. AUROC predictor is -llr (pathogenic = positive class).",
+      "llr_method_history": "Prior cache (pre 2026-05-13) used log P_wt(wt|wt_seq) - log P_mut(mut|mut_seq), a two-pass formula with inverted sign. AUROC happened to be 0.929 — methodology was wrong but the two formulas are highly correlated. See EXPERIMENT_LOG.md 2026-05-13 entry."
     },
     "literature_anchor": {
       "reference": "Brandes et al., Nat. Genet. 2023, Fig 2B",
       "n": 36537,
       "llr_auroc": 0.905,
-      "inside_workshop_ci95": false
+      "inside_workshop_ci95": false,
+      "note": "Brandes 0.905 lies 0.001 below our CI95 lower bound (0.906); within their n=36,537 standard-error band."
     }
   }
 }

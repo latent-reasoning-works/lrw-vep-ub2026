@@ -29,18 +29,25 @@ Format:
   Underlying delta_norm/cosine values remain in `demo_pair_scores.json`
   for anyone who wants them.
 - Inputs (n=500): `notebooks/data/s3_scores.npz`
-  (sha256 `d11cc7f2fc0c…`, 500 rows: 250 P + 250 B across
+  (sha256 `c00eeae60744…`, 500 rows: 250 P + 250 B across
   **400 unique genes**) — pre-scored by `scripts/cache_s3_scores.py`
   from `experiments/notebooks/data/workshop_set.tsv` (sha256
   `355822298e09…`) + matching FASTA. Same encoder as n=2.
-  AUROCs via `sklearn.metrics.roc_auc_score`:
+  **LLR follows Brandes 2023**: `LLR = log P(mut|WT_seq) − log P(wt|WT_seq)`,
+  both read from the same softmax at the variant position via a single
+  WT-context forward pass. Sign convention: **negative = deleterious**.
+  AUROC predictor is `-llr` (sklearn's positive-class = pathogenic
+  convention; sign-flip at the metric callsite, not in the cache).
   delta_norm **0.6718** (CI95 [0.623, 0.719]),
-  LLR **0.929** (CI95 [0.906, 0.950]).
+  LLR **0.930** (CI95 [0.906, 0.951]).
   **Brandes 2023's 0.905 sits 0.001 below our CI95 lower bound**
   (0.906) — well within Brandes' own standard-error band for
-  n=36,537. See "Validation set lineage" below for the v0 → v2
-  history and "Long-sequence handling" below for the methodology
-  comparison.
+  n=36,537. See "Validation set lineage" for the v0 → v2 history,
+  "Long-sequence handling" for the methodology comparison, and
+  `EXPERIMENT_LOG.md` 2026-05-13 for the LLR methodology fix (formula
+  was previously two-pass with inverted sign; AUROC barely moved
+  0.929 → 0.930 because the old quantity correlates with the Brandes
+  one, but the method now matches the paper).
 - Inputs (n=36,537): no local data — literature anchor from
   Brandes et al., *Nat. Genet.* 2023, Fig 2B. Single bar at ESM-1b
   zero-shot AUROC 0.905 on ClinVar missense, plus one dashed
@@ -85,7 +92,7 @@ set, with a documented history). Full lineage in
 | v0 (2026-05-06, pre-bundled) | canonical-only | unverified | none in repo | 0.638 | **deprecated** — `_archive/validation_variants_v0_2026-05-06.{csv,fasta}` |
 | v1 in-flight (per-gene cap) | canonical-only | UniProt-validated | `build_validation_set.py` | 0.925 | **deprecated** — unsanctioned per-gene cap, see `_archive/*_v1_in_flight_*` |
 | v1 canonical-only (no cap) | canonical-only | UniProt-validated | `--spec v1` | 0.944 | **deprecated** — replaced for Brandes comparability; see `_archive/workshop_set_v1_canonical-only_*` |
-| **`workshop_set` (current canonical, v2 spec)** | **Brandes-match (canonical + Conflicting via ClinSigSimple)** | **UniProt-validated** | **`--spec v2`** | **0.929** | **shipped** — 2026-05-12 (post MAX_LEN=1022 fix) |
+| **`workshop_set` (current canonical, v2 spec)** | **Brandes-match (canonical + Conflicting via ClinSigSimple)** | **UniProt-validated** | **`--spec v2`** | **0.930** | **shipped** — 2026-05-13 (post Brandes-LLR fix; pre-fix value was 0.929 with a methodologically-incorrect two-pass formula that happened to correlate) |
 
 **Files (sha256, current canonical):**
 
@@ -94,7 +101,7 @@ set, with a documented history). Full lineage in
 | `experiments/notebooks/data/workshop_set.tsv` | `355822298e09` |
 | `experiments/notebooks/data/workshop_set_proteins.fasta` | `115a822a90a3` |
 | `experiments/notebooks/data/workshop_set_manifest.json` | (includes bootstrap CI95 and Brandes anchor) |
-| `experiments/notebooks/data/s3_scores.npz` | `d11cc7f2fc0c` |
+| `experiments/notebooks/data/s3_scores.npz` | `c00eeae60744` |
 
 **ClinVar source:** `experiments/cache/variant_summary.txt.gz` (gitignored,
 sha256 `61e2b1fd3123…`). Recorded in the manifest.
@@ -112,9 +119,9 @@ sha256 `61e2b1fd3123…`). Recorded in the manifest.
 | BRCA2 rows | 7 |
 | Top gene by count | FBN1 (n=11) |
 
-**Bootstrap CI95 (10,000 resamples, seed 42):**
+**Bootstrap CI95 (10,000 resamples, seed 42; predictor = `-llr` for the Brandes-sign LLR):**
 - delta L2 norm AUROC: 0.6718  [0.623, 0.719]
-- LLR AUROC: **0.929  [0.906, 0.950]**
+- LLR AUROC: **0.930  [0.906, 0.951]**
 - Brandes 2023 (n=36,537) LLR AUROC: 0.9050 — sits 0.001 below
   our CI95 lower bound (0.906); within Brandes' own SE band for
   n=36,537.

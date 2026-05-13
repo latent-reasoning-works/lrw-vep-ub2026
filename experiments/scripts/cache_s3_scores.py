@@ -122,10 +122,13 @@ def main() -> int:
             continue
         rows.append((r.variant_id, r.gene, int(r.label)))
         dn.append(compute_delta_norm(result["wt_embedding"], result["mut_embedding"]))
+        # Brandes 2023 LLR: single WT pass; both wt_aa and mut_aa probabilities
+        # read from the same softmax. Sign: negative = deleterious.
+        # (`result["mut_logits"]` is unused by compute_llr now — kept in the
+        # encode_variant return for delta_norm/cosine_dist callers.)
         llr_vals.append(
             compute_llr(
                 result["wt_logits"],
-                result["mut_logits"],
                 result["mutation"],
                 wt_token_ids[r.aa_ref],
                 wt_token_ids[r.aa_alt],

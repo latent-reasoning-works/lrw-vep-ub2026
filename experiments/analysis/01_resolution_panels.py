@@ -109,12 +109,17 @@ def panel_a(ax: plt.Axes, scores: dict) -> None:
 
 def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray,
              n_genes: int) -> None:
-    """n=500 — ROC curves for delta_norm and llr over the validation set."""
+    """n=500 — ROC curves for delta_norm and llr over the validation set.
+
+    Brandes LLR convention: negative = deleterious. sklearn's roc_auc_score
+    treats higher score = positive class, so we feed -llr (pathogenic = 1).
+    delta_norm uses its native sign (larger = more disruptive).
+    """
     from sklearn.metrics import roc_auc_score, roc_curve
 
     for name, s, color, linestyle in [
         ("delta L2 norm", dn, "#3a7ca5", "-"),
-        ("LLR", llr, PALETTE["Pathogenic"], "-"),
+        ("LLR (Brandes; -llr as predictor)", -llr, PALETTE["Pathogenic"], "-"),
     ]:
         m = ~np.isnan(s)
         fpr, tpr, _ = roc_curve(y[m], s[m])
@@ -155,7 +160,7 @@ def panel_c_brandes_anchor(ax: plt.Axes, auroc_llr: float) -> None:
         color=LLR_COLOR, edgecolor="white", linewidth=0.8,
     )
     # Value label INSIDE the bar (white text) so the LLR dashed reference
-    # line at 0.929 has clean airspace above the bar and doesn't cross
+    # line at 0.930 has clean airspace above the bar and doesn't cross
     # the "0.905" text. Bar identity already named in the panel title
     # ("n = 36,537 — Brandes et al. 2023"); no separate callout needed.
     ax.text(
@@ -197,8 +202,9 @@ def main() -> int:
         dn = rng.normal(loc=y * 0.2, scale=0.5)
         llr = rng.normal(loc=y * 0.4, scale=0.5)
         scores = {
-            "pathogenic": {"gene": "BRCA1", "hgvs": "L1854P", "delta_norm": 0.030, "llr": 0.87},
-            "benign":     {"gene": "BRCA1", "hgvs": "P1859R", "delta_norm": 0.027, "llr": 0.22},
+            # Brandes-sign LLRs: negative = deleterious; pathogenic more negative than benign.
+            "pathogenic": {"gene": "BRCA1", "hgvs": "L1854P", "delta_norm": 0.030, "llr": -6.53},
+            "benign":     {"gene": "BRCA1", "hgvs": "P1859R", "delta_norm": 0.027, "llr": -3.76},
         }
     else:
         scores = _load_n2()
@@ -208,7 +214,8 @@ def main() -> int:
     m_dn = ~np.isnan(dn)
     m_llr = ~np.isnan(llr)
     auroc_dn = float(roc_auc_score(y[m_dn], dn[m_dn]))
-    auroc_llr = float(roc_auc_score(y[m_llr], llr[m_llr]))
+    # Brandes LLR is negative=deleterious; sign-flip for sklearn (pathogenic=1, higher score=positive class).
+    auroc_llr = float(roc_auc_score(y[m_llr], -llr[m_llr]))
 
     # Derive panel B's gene count from the cache for the title + caption.
     n_genes = len(set(np.load(S3_CACHE, allow_pickle=True)["gene"].tolist())) \
@@ -227,7 +234,7 @@ def main() -> int:
         f"Panel B: ClinVar workshop set — 250 P + 250 B across {n_genes} disease genes; "
         "Brandes-matching label scope (canonical text + Conflicting via ClinSigSimple),\n"
         "canonical-isoform-validated. "
-        "LLR AUROC 0.929 (CI95 0.906–0.950) — within noise of Brandes 2023's 0.905.",
+        "LLR AUROC 0.930 (CI95 0.906–0.951) — within noise of Brandes 2023's 0.905.",
         ha="center", va="top", fontsize=8, color="#444444",
     )
 

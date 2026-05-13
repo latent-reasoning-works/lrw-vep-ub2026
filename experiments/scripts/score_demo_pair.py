@@ -70,8 +70,9 @@ def main() -> int:
         r = encode_variant(encoder, seq, hgvs)
         delta_norm = compute_delta_norm(r["wt_embedding"], r["mut_embedding"])
         cosine_dist = compute_cosine_distance(r["wt_embedding"], r["mut_embedding"])
+        # Brandes 2023 LLR (single WT pass; negative = deleterious).
         llr = compute_llr(
-            r["wt_logits"], r["mut_logits"], parse_mutation(hgvs),
+            r["wt_logits"], parse_mutation(hgvs),
             wt_token_ids[v["wt_aa"]], wt_token_ids[v["alt_aa"]],
         )
         results[tag] = {

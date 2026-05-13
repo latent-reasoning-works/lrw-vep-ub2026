@@ -30,6 +30,77 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-13 — Brandes-correct LLR + S3 cache regeneration
+
+The LLR computed by `vep_utils.compute_llr` did not match Brandes 2023's
+Methods. Two errors, both documented in the docstring at the time:
+
+1. **Two-pass formula** instead of one. The function was computing
+   `log P_wt(wt_aa | wt_seq) − log P_mut(mut_aa | mut_seq)` — i.e., two
+   ESM-1b forward passes per variant, each reading one amino-acid
+   probability from a different softmax. Brandes 2023 uses **one
+   forward pass** on the WT sequence and reads **both** `wt_aa` and
+   `mut_aa` probabilities from the **same** softmax.
+2. **Inverted sign.** The old docstring said "LLR > 0 → pathogenic."
+   Brandes: `LLR = log P(mut|WT_seq) − log P(wt|WT_seq)`, **negative =
+   deleterious** (MUT is less likely than WT under WT-context).
+
+Both errors are subtle enough that the AUROC barely moved — the two
+quantities are highly correlated for SNP scoring, because the
+MUT-context model in the old formula is just the WT-context model with
+one residue swapped, so the softmax at the variant position doesn't
+change radically. We landed at **0.929** with the wrong methodology and
+**0.930** with Brandes' methodology. *Right number was almost
+guaranteed; right method was not.*
+
+- **Fix:** `vep_utils.compute_llr` now takes `(wt_logits, mutation,
+  wt_token_id, mut_token_id)` and returns
+  `log P(mut|WT_seq) − log P(wt|WT_seq)`. The `mut_logits` argument
+  was removed. `encode_variant` still does two forward passes for
+  `delta_norm`/`cosine_dist`; a single-pass optimization is a
+  follow-up.
+- **Sign-flip lives at the AUROC call site**, not in the cache.
+  `s3_scores.npz` stores Brandes-sign LLR (negative = deleterious);
+  callers pass `-llr` to `roc_auc_score` so pathogenic = positive
+  class. Documented in PROVENANCE.md and the manifest's
+  `evaluation.metrics.llr_method` field.
+- **Tests rewritten:** `test_compute_llr_brandes_unlikely_mutation_is_negative`
+  (deleterious case → large-negative LLR) and
+  `test_compute_llr_uses_correct_bos_offset` (single-arg signature,
+  controlled-zero logits). 35/35 pass.
+- **Pin:** main HEAD after this commit. The submodule
+  `manylatents.dogma.vep.compute_llr` carries the **same** bug; not
+  fixed in this commit. The workshop live demo uses `vep_utils.py`
+  (notebook scope) which is now correct. The upstream library fix is a
+  follow-up — it affects the S4 sweep handoff path, which is still
+  PARTIAL on Phase-2 wiring anyway.
+- **Cmd (regen):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/scripts/cache_s3_scores.py --device mps --force`
+- **Cmd (figure regen):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/01_resolution_panels.py`
+- **Cmd (demo-pair regen):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/scripts/score_demo_pair.py`
+- **Output:** `experiments/notebooks/data/s3_scores.npz` (sha256
+  `c00eeae60744…`); `experiments/analysis/data/demo_pair_scores.json`
+  (sha256 `acc170ccd948…`); `experiments/analysis/figures/resolution_panels.{pdf,png}`
+  (caption + smoke-mode LLRs updated to Brandes sign).
+- **AUROCs (workshop set, n=500, balanced 250 P / 250 B; predictor = -llr):**
+  - LLR: **0.930032** (was 0.92904)
+  - delta L2 norm: 0.671808 (unchanged — different metric)
+  - Bootstrap CI95 (n_resamples=10000, seed=42): LLR
+    [0.9062, 0.9512], delta_norm [0.6235, 0.7187] (unchanged).
+- **Sign sanity (demo pair):**
+  - Pathogenic L1854P: LLR = −6.5283 (more negative)
+  - Benign P1859R:     LLR = −3.7580
+  - Both negative, pathogenic more negative. ✓
+- **Long-protein spot check (ASPM, 3477 aa):** LLR = −8.20 (finite,
+  consistent with center-windowed scoring at MAX_LEN=1022). All 236
+  long-protein variants finite; no `|LLR| > 50` outliers. AUROC by
+  length regime: short (n=264) 0.944, long (n=236) 0.920.
+- **Notes:** The methodology change is invisible in headline numbers
+  (0.929 → 0.930, CI95 essentially unchanged) but corrects what we
+  *did* relative to what we *say we did*. The slide narration
+  "AUROC 0.93 within noise of Brandes 0.905" doesn't change. The
+  "we use Brandes' option-4 single-window strategy" framing in
+  PROVENANCE.md is now defensible — we also use Brandes' LLR.
+
 ## 2026-05-12 — MAX_LEN off-by-2 fix + S3 cache regeneration
 
 Pre-talk regression test on the notebook caught a latent bug in

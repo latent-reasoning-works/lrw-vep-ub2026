@@ -260,33 +260,33 @@ def compute_cosine_distance(wt_embedding: np.ndarray, mut_embedding: np.ndarray)
 
 def compute_llr(
     wt_logits: np.ndarray,
-    mut_logits: np.ndarray,
     mutation: MutationSpec,
     wt_token_id: int,
     mut_token_id: int,
 ) -> float:
-    """Log-likelihood "surprise ratio" across WT and MUT contexts.
+    """ESM-1b masked-LM LLR per Brandes et al. 2023 Methods.
 
     Computes:
-        LLR = log P_wt(wt_aa | wt_sequence) - log P_mut(mut_aa | mut_sequence)
+        LLR = log P(mut_aa | WT_seq) − log P(wt_aa | WT_seq)
 
-    i.e. how much log-probability is lost when we move from the WT model
-    evaluating the WT residue at the mutation site to the MUT model
-    evaluating the MUT residue at the same site. Both terms are evaluated
-    at `mutation.position`, each in its own context.
+    Both probabilities are read off the **same softmax** at the variant
+    position, from the unmasked forward pass of the WT sequence. There
+    is no MUT-sequence forward pass — the model evaluates both amino
+    acid identities against the same WT context. This matches Brandes'
+    "compute everything from one WT pass per variant" recipe.
 
-    Sign convention (single source of truth for downstream reports):
-        - LLR > 0  -> MUT model is LESS confident in the MUT residue than
-                      the WT model was in the WT residue. Bigger confidence
-                      drop at the mutation site, often correlates with
-                      pathogenicity.
-        - LLR ~ 0  -> The model is about equally confident in both states.
-        - LLR < 0  -> MUT model is MORE confident in the MUT residue than
-                      the WT model was in the WT residue (unusual; typically
-                      benign or a case where MUT fits the context better).
+    Sign convention (single source of truth, matches Brandes):
+        - LLR < 0  -> deleterious  (MUT is LESS likely than WT under
+                                    WT-context; the model "prefers" WT)
+        - LLR ~ 0  -> neutral
+        - LLR > 0  -> tolerated / WT-displacing  (MUT more likely than
+                                    WT, e.g. a permissive substitution)
 
-    Note on indexing: the ESM-1b token array has BOS at index 0, so
-    sequence position p (1-indexed) maps directly to token index p.
+    For AUROC where pathogenic = positive class, pass `-llr` as the
+    score (sklearn convention: higher = positive class).
+
+    Indexing: the ESM-1b token array has BOS at index 0, so 1-indexed
+    sequence position p maps to logits row index p.
     """
     pos = mutation.position  # 1-indexed sequence pos -> token index p (BOS at index 0)
 
@@ -295,11 +295,8 @@ def compute_llr(
         shifted = x - x_max
         return shifted - np.log(np.sum(np.exp(shifted)))
 
-    wt_log_probs = log_softmax(wt_logits[pos])
-    mut_log_probs = log_softmax(mut_logits[pos])
-    # Surprise ratio: log P_wt(wt | wt_seq) - log P_mut(mut | mut_seq).
-    # Higher value = bigger confidence drop at the mutation site.
-    return float(wt_log_probs[wt_token_id] - mut_log_probs[mut_token_id])
+    log_probs = log_softmax(wt_logits[pos])
+    return float(log_probs[mut_token_id] - log_probs[wt_token_id])
 
 
 def compute_lid(
