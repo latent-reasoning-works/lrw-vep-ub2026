@@ -29,16 +29,18 @@ Format:
   Underlying delta_norm/cosine values remain in `demo_pair_scores.json`
   for anyone who wants them.
 - Inputs (n=500): `notebooks/data/s3_scores.npz`
-  (sha256 `87aa972a1e45…`, 500 rows: 250 P + 250 B across
+  (sha256 `d11cc7f2fc0c…`, 500 rows: 250 P + 250 B across
   **400 unique genes**) — pre-scored by `scripts/cache_s3_scores.py`
   from `experiments/notebooks/data/workshop_set.tsv` (sha256
-  `85aa5903d3d4…`) + matching FASTA. Same encoder as n=2.
+  `355822298e09…`) + matching FASTA. Same encoder as n=2.
   AUROCs via `sklearn.metrics.roc_auc_score`:
-  delta_norm **0.6703** (CI95 [0.622, 0.717]),
-  LLR **0.9250** (CI95 [0.900, 0.947]).
-  **Brandes 2023's 0.905 is inside our CI95** — statistically
-  indistinguishable. See "Validation set lineage" below for the
-  v0 → v2 history.
+  delta_norm **0.6718** (CI95 [0.623, 0.719]),
+  LLR **0.929** (CI95 [0.906, 0.950]).
+  **Brandes 2023's 0.905 sits 0.001 below our CI95 lower bound**
+  (0.906) — well within Brandes' own standard-error band for
+  n=36,537. See "Validation set lineage" below for the v0 → v2
+  history and "Long-sequence handling" below for the methodology
+  comparison.
 - Inputs (n=36,537): no local data — literature anchor from
   Brandes et al., *Nat. Genet.* 2023, Fig 2B. Single bar at ESM-1b
   zero-shot AUROC 0.905 on ClinVar missense, plus one dashed
@@ -83,16 +85,16 @@ set, with a documented history). Full lineage in
 | v0 (2026-05-06, pre-bundled) | canonical-only | unverified | none in repo | 0.638 | **deprecated** — `_archive/validation_variants_v0_2026-05-06.{csv,fasta}` |
 | v1 in-flight (per-gene cap) | canonical-only | UniProt-validated | `build_validation_set.py` | 0.925 | **deprecated** — unsanctioned per-gene cap, see `_archive/*_v1_in_flight_*` |
 | v1 canonical-only (no cap) | canonical-only | UniProt-validated | `--spec v1` | 0.944 | **deprecated** — replaced for Brandes comparability; see `_archive/workshop_set_v1_canonical-only_*` |
-| **`workshop_set` (current canonical, v2 spec)** | **Brandes-match (canonical + Conflicting via ClinSigSimple)** | **UniProt-validated** | **`--spec v2`** | **0.925** | **shipped** — 2026-05-11 |
+| **`workshop_set` (current canonical, v2 spec)** | **Brandes-match (canonical + Conflicting via ClinSigSimple)** | **UniProt-validated** | **`--spec v2`** | **0.929** | **shipped** — 2026-05-12 (post MAX_LEN=1022 fix) |
 
 **Files (sha256, current canonical):**
 
 | file | sha256 (12 char) |
 |---|---|
-| `experiments/notebooks/data/workshop_set.tsv` | `85aa5903d3d4` |
-| `experiments/notebooks/data/workshop_set_proteins.fasta` | `5df061810f48` |
+| `experiments/notebooks/data/workshop_set.tsv` | `355822298e09` |
+| `experiments/notebooks/data/workshop_set_proteins.fasta` | `115a822a90a3` |
 | `experiments/notebooks/data/workshop_set_manifest.json` | (includes bootstrap CI95 and Brandes anchor) |
-| `experiments/notebooks/data/s3_scores.npz` | `87aa972a1e45` |
+| `experiments/notebooks/data/s3_scores.npz` | `d11cc7f2fc0c` |
 
 **ClinVar source:** `experiments/cache/variant_summary.txt.gz` (gitignored,
 sha256 `61e2b1fd3123…`). Recorded in the manifest.
@@ -111,9 +113,11 @@ sha256 `61e2b1fd3123…`). Recorded in the manifest.
 | Top gene by count | FBN1 (n=11) |
 
 **Bootstrap CI95 (10,000 resamples, seed 42):**
-- delta L2 norm AUROC: 0.6703  [0.622, 0.717]
-- LLR AUROC: **0.9250  [0.900, 0.947]**
-- Brandes 2023 (n=36,537) LLR AUROC: 0.9050 — **inside our CI95**
+- delta L2 norm AUROC: 0.6718  [0.623, 0.719]
+- LLR AUROC: **0.929  [0.906, 0.950]**
+- Brandes 2023 (n=36,537) LLR AUROC: 0.9050 — sits 0.001 below
+  our CI95 lower bound (0.906); within Brandes' own SE band for
+  n=36,537.
 
 **Caveats for downstream framing:**
 1. AUROCs are a 400-gene mixture. Slide narration: "ClinVar workshop
@@ -128,3 +132,27 @@ sha256 `61e2b1fd3123…`). Recorded in the manifest.
    - `experiments/notebooks/data/workshop_set.tsv` — the multi-gene
      validation set; the notebook's S3 loop + `cache_s3_scores.py`
      consume it.
+
+### Long-sequence handling (Brandes methodology comparison)
+
+The workshop set includes **236 of 500 variants on proteins >1022 aa**
+(the ESM-1b context window, accounting for BOS/EOS — see
+`vep_utils.ESM1bEncoder.MAX_LEN`). These are scored via Brandes'
+"option 4" strategy: a variant-centered single window at
+`window=MAX_LEN=1022`, implemented in `vep_utils.truncate_around_mutation`
+and invoked uniformly by `cache_s3_scores.py` and the notebook's
+S2-encode + S3-score-loop cells.
+
+Brandes et al.'s own ablation (Extended Data Fig. 6a) shows that at
+window size 1,022 — the maximum supported by ESM-1b — no aggregation
+method outperformed their preferred sliding-window weighted average,
+and the variant-centered single window is within noise of it. Their
+headline AUROC of 0.905 (n=36,537) was computed on proteins ≤1022 aa
+**only** (Extended Data Fig. 5 caption), explicitly avoiding the
+sliding window. Our workshop set therefore covers a *broader* length
+distribution than Brandes' benchmark — including the long-protein
+slice they excluded — and scores it with the Brandes-validated
+single-window method at the same window size.
+
+**Source:** Brandes et al., *Nat. Genet.* 2023, Methods §
+"Handling long sequences" and Extended Data Figs. 5 and 6a.

@@ -30,6 +30,85 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-12 — MAX_LEN off-by-2 fix + S3 cache regeneration
+
+Pre-talk regression test on the notebook caught a latent bug in
+`vep_utils.ESM1bEncoder.MAX_LEN = 1024`: the HF tokenizer adds BOS +
+EOS, so a length-1024 input becomes a 1026-token sequence that
+overflows ESM-1b's 1024-slot position-embedding table with
+`IndexError`. S2-encode crashed on the new canonical demo pair
+(BRCA1 L1854P / P1859R, both >1022 aa into a 1863-aa protein). S3
+appeared healthy only because it was reading a stale on-disk cache
+produced under different library/version conditions.
+
+- **Fix:** `MAX_LEN = 1024 → 1022` in `vep_utils.py`; new regression
+  test `test_encoder_max_len_respects_bos_eos` locks it in.
+  `notebook/01_workshop_followalong.ipynb` S2-encode cell now mirrors
+  S3's `truncate_around_mutation(seq, pos1, window=encoder.MAX_LEN)`
+  pattern. Cache regenerated via
+  `experiments/scripts/cache_s3_scores.py --device mps --force`
+  in 4.2 min on Apple Silicon MPS (500 variants, 0 skipped).
+- **Pin:** main branch HEAD `71381f7` for the code fix; this entry
+  captures the downstream artifact updates.
+- **Cmd (regen):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/scripts/cache_s3_scores.py --device mps --force`
+- **Cmd (figure regen):** `experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/01_resolution_panels.py`
+- **Output:** `experiments/notebooks/data/s3_scores.npz` (sha256
+  `d11cc7f2fc0c…`), `experiments/notebooks/data/workshop_set_manifest.json`
+  (metrics + literature-anchor block updated), `experiments/analysis/figures/resolution_panels.{pdf,png}`
+  (caption + comment updated to new numbers), `experiments/PROVENANCE.md`
+  (CI95 + sha refresh + new "Long-sequence handling" section), and
+  `experiments/analysis/results/resolution_panels.csv`.
+- **wandb:** n/a (cache regen, not a tracked training run).
+- **AUROCs (workshop set, n=500, balanced 250 P / 250 B):**
+  - LLR: **0.929** (was 0.9250)
+  - delta L2 norm: **0.6718** (was 0.6703)
+  - Bootstrap CI95 (10,000 resamples, seed=42): LLR
+    [0.9057, 0.9503], delta_norm [0.6235, 0.7187].
+- **Brandes anchor:** Brandes' 0.905 (n=36,537) sits 0.001 below
+  our CI95 lower bound (0.906) — i.e. our point estimate is higher
+  on a *broader* length distribution. Their headline benchmark
+  excluded proteins >1022 aa (Extended Data Fig. 5 caption);
+  ours includes 236 of 500 such variants, scored with Brandes'
+  "option 4" (variant-centered single window at w=1022), which
+  Brandes' own ablation (Extended Data Fig. 6a) shows is within
+  noise of their sliding-window weighted-average method at the
+  same window size.
+- **Notes:** Five-prompt notebook lockdown sequence (rename → S1 swap →
+  S2 demo pair → final sweep → regression) caught the bug in the
+  regression step before slides were locked. The 0.004 shift in LLR
+  AUROC is small but the underlying fix is load-bearing: any fresh
+  clone re-running the cache would have crashed before; now it
+  reproduces cleanly. Updated artifacts kept apples-to-apples
+  (manifest + figure + provenance all reflect the post-fix cache).
+
+## 2026-05-10 — workshop prep (no wandb runs)
+
+Three artifacts shipped; no model training. Pre-flight for the workshop demos.
+
+- **Pre-bundled ClinVar data for five genes** at `experiments/data/clinvar/` —
+  BRCA1 at the root, plus `tp53/`, `brca2/`, `pten/`, `mlh1/` subdirectories.
+  See [the clinvar README](./data/clinvar/README.md) for per-gene P/B/VUS
+  counts. Built against a warm NCBI cache; no live download required for
+  any of the five.
+- **Variant-pair picker** [`scripts/pick_demo_pair.py`](./scripts/pick_demo_pair.py)
+  reproducibly selects one pathogenic + one benign BRCA1 ClinVar variant
+  and writes [`experiments/data/demo_pair.json`](./data/demo_pair.json)
+  (parse-and-cite metadata + the canonical WT BRCA1 sequence, reconstructed
+  from the bundled mutant FASTA). Current pick: BRCA1 L1854P (pathogenic,
+  `clinvar_55631`) vs BRCA1 P1859R (benign, `clinvar_55634`).
+- **S3 scoring cache** [`scripts/cache_s3_scores.py`](./scripts/cache_s3_scores.py)
+  scored 499/500 validation variants on Apple Silicon MPS in 3.8 min.
+  Output: [`notebooks/data/s3_scores.npz`](./notebooks/data/s3_scores.npz) (64 KB).
+  Notebook S3 cell 17 now loads this in <100 ms instead of running ~10 min of
+  live scoring. AUROC: `delta_norm` 0.61, `llr` 0.64 (both above chance,
+  LLR > delta_norm). One variant skipped (`clinvar_701307` has a `*` stop
+  codon in its WT FASTA).
+
+Maintainer notes — uncommitted submodule changes from the same day, the
+`manylatents.dogma.vep` collapse plan, and the Friday demo spec / runbook —
+live in [`docs/internal/`](../docs/internal/) and are not part of the public
+reproduction surface.
+
 ## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py  (workshop-pace: bundled data + max_variants=50)
 
 - **Pin:** manylatents-omics `cceb1fa` (workshop/lrw-ub2026); manylatents v0.1.5; fair-esm 2.0.0

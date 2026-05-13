@@ -1038,15 +1038,15 @@
     "note": "AUROC computed downstream by experiments/scripts/cache_s3_scores.py then sklearn.metrics.roc_auc_score",
     "encoder": "vep_utils.ESM1bEncoder (HF transformers, fp32 on mps)",
     "metrics": {
-      "llr_auroc": 0.925024,
+      "llr_auroc": 0.92904,
       "llr_auroc_ci95_bootstrap": [
-        0.9004238290736141,
-        0.947297093807975
+        0.9057372567428539,
+        0.9502554491753359
       ],
-      "delta_norm_auroc": 0.670288,
+      "delta_norm_auroc": 0.671808,
       "delta_norm_auroc_ci95_bootstrap": [
-        0.6220790917096625,
-        0.7172917804902663
+        0.6234621254869612,
+        0.7187315619808624
       ],
       "bootstrap_n_resamples": 10000,
       "bootstrap_seed": 42
@@ -1055,7 +1055,7 @@
       "reference": "Brandes et al., Nat. Genet. 2023, Fig 2B",
       "n": 36537,
       "llr_auroc": 0.905,
-      "inside_v2_ci95": true
+      "inside_workshop_ci95": false
     }
   }
 }

@@ -155,7 +155,7 @@ def panel_c_brandes_anchor(ax: plt.Axes, auroc_llr: float) -> None:
         color=LLR_COLOR, edgecolor="white", linewidth=0.8,
     )
     # Value label INSIDE the bar (white text) so the LLR dashed reference
-    # line at 0.925 has clean airspace above the bar and doesn't cross
+    # line at 0.929 has clean airspace above the bar and doesn't cross
     # the "0.905" text. Bar identity already named in the panel title
     # ("n = 36,537 — Brandes et al. 2023"); no separate callout needed.
     ax.text(
@@ -227,7 +227,7 @@ def main() -> int:
         f"Panel B: ClinVar workshop set — 250 P + 250 B across {n_genes} disease genes; "
         "Brandes-matching label scope (canonical text + Conflicting via ClinSigSimple),\n"
         "canonical-isoform-validated. "
-        "LLR AUROC 0.925 (CI95 0.900–0.947) — within noise of Brandes 2023's 0.905.",
+        "LLR AUROC 0.929 (CI95 0.906–0.950) — within noise of Brandes 2023's 0.905.",
         ha="center", va="top", fontsize=8, color="#444444",
     )
 

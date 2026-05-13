@@ -1,6 +1,6 @@
 panel,n,label,gene,id,metric,value
 A,1,benign,BRCA1,clinvar_55634,llr,0.21722745895385742
 A,1,pathogenic,BRCA1,clinvar_55631,llr,0.873219907283783
-B,500,auroc,all,validation_set,delta_norm,0.670288
-B,500,auroc,all,validation_set,llr,0.925024
+B,500,auroc,all,validation_set,delta_norm,0.6718080000000001
+B,500,auroc,all,validation_set,llr,0.92904
 C,36537,auroc,ClinVar,brandes_2023_fig2b,esm1b_zero_shot,0.905
