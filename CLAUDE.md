@@ -236,9 +236,11 @@ path; the PDF lands at `paper/main.pdf`.
 
 ## Writing directives
 
-> Default venue for this repo is **arXiv preprint, NeurIPS-style** (the
-> `[preprint]` option of `neurips_2024.sty`). Switch to `[final]` for
-> camera-ready, or remove the option for anonymous submission.
+> No submission venue — the paper is a workshop artifact, not a journal
+> or conference target. LaTeX style is NeurIPS-preprint (the `[preprint]`
+> option of `neurips_2024.sty`) for layout familiarity, not because we
+> plan to submit. The directives below still apply: clean conference-
+> tier writing makes the artifact more useful as a reference.
 
 ### Format — conference paper, NeurIPS / ICML / ICLR tier
 

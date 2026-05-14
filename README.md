@@ -149,7 +149,6 @@ This repo follows two complementary conventions:
 
 - **Venue:** Upper Bound 2026
 - **Talk:** The Biology of Agentic Research Engineering — An Agent-Driven Variant Effect Prediction Workshop
-- **Companion paper:** arXiv preprint (NeurIPS-style; venue TBD)
 
 ## Acknowledgments
 

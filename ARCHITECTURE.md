@@ -452,7 +452,6 @@ Python pin: 3.12 (manylatents-omics requires `<3.13,>=3.11`). uv-managed.
 | License | TBD (likely MIT, matching expaper / manylatents) |
 | Maintainer | César M. Valdez Córdova |
 | Workshop | Upper Bound 2026 |
-| Companion paper | arXiv preprint (NeurIPS-style; venue TBD) |
 | Companion talk | Upper Bound 2026 — *The Biology of Agentic Research Engineering: An Agent-Driven Variant Effect Prediction Workshop* |
 
 ## 11. Glossary
