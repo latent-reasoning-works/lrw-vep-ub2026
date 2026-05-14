@@ -166,6 +166,28 @@ pre-wired flows). Drop a backend manifest at
 dispatcher knows about local CPU/GPU/MPS too, so the same workload can
 target your laptop or your cluster depending on what's available.
 
+Install the dispatcher (one time, per machine):
+
+```bash
+mkdir -p ~/.claude/skills && \
+git clone --depth 1 https://github.com/latent-reasoning-works/shop /tmp/shop && \
+cp -r /tmp/shop/.claude/skills/dispatcher ~/.claude/skills/ && \
+rm -rf /tmp/shop
+```
+
+After install, any Claude Code session on this machine sees `dispatcher` in
+its skill list and invokes via the Skill tool natively. **Bash-fallback
+invocation** (for sessions where the skill isn't registered, or for
+non-Claude-Code callers):
+
+```bash
+echo '{"n_items": 60, "requires_gpu": true, "gpu_memory_gb": 16, "per_item_memory_gb": 8}' \
+    | python3 ~/.claude/skills/dispatcher/scripts/route.py
+```
+
+Swap `~/.claude/skills/dispatcher` for wherever you cloned `shop` if you
+haven't installed globally.
+
 ### Generic multi-modal pattern
 
 For deeper experimentation (cross-modal alignment), the harness also supports
