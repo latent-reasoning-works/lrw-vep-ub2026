@@ -28,13 +28,16 @@ You are a workshop attendee. Do these four things in order:
 
 1. **Clone with submodules** —
    `git clone --recurse-submodules https://github.com/latent-reasoning-works/lrw-vep-ub2026`
-2. **Confirm your install works** — pick one installer (both target the same
-   pinned `requirements-workshop.txt`):
+2. **Confirm your install works** — pick one installer:
    ```bash
    cd experiments/notebooks
-   pip install -r requirements-workshop.txt         # OR: uv pip install -r requirements-workshop.txt
-   python validate.py --quick                       # ~10 s; PASS if the env reproduces the demo-pair LLRs
+   # uv (recommended — uses pyproject.toml + uv.lock for bit-identical pins):
+   uv sync && uv run python validate.py --quick
+
+   # pip (works against the same floors via requirements-workshop.txt):
+   pip install -r requirements-workshop.txt && python validate.py --quick
    ```
+   ~10 s; PASS line if the env reproduces the demo-pair LLRs.
 3. **Open the notebook** — either via Colab (button below) or any local
    Jupyter / VS Code. Run cells S1 → S2 → S3 → S4 in order.
 4. **When you hit a 🤖 markdown cell, that's a *prompt*, not instructions.**

@@ -26,7 +26,7 @@ contract. This file is the notebook-specific orientation.
 | Expected AUROCs + Brandes 2023 anchor + lineage | `../PROVENANCE.md` — **canonical**. (The manifest's AUROC field is a build-time snapshot; PROVENANCE is what's updated when the cache regenerates.) |
 | What's been run (chronicle) | `../EXPERIMENT_LOG.md` |
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
-| Pinned env for local + Colab attendees | `requirements-workshop.txt` (pip / uv). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
+| Pinned env for local + Colab attendees | `pyproject.toml` + `uv.lock` (uv-native: `uv sync`); `requirements-workshop.txt` (pip path; same floors). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
 | Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
 | Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and the PDF page count. Ships its own LaTeX renderer: tectonic from PATH, then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to auto-download. The "does the prompt → paper edit half of the workshop story work" check. |
 
@@ -36,8 +36,14 @@ For attendees not on Colab:
 
 ```bash
 cd experiments/notebooks
-pip install -r requirements-workshop.txt   # or: uv pip install -r requirements-workshop.txt
-python validate.py --quick                 # ~10s: confirms install reproduces demo-pair LLRs
+# uv (recommended — uses pyproject.toml + uv.lock for bit-identical pins):
+uv sync                                    # creates .venv/, installs locked deps
+uv run python validate.py --quick          # ~10s: confirms install reproduces demo-pair LLRs
+uv run jupyter notebook 01_workshop_followalong.ipynb
+
+# pip (works against the same floors via requirements-workshop.txt):
+pip install -r requirements-workshop.txt
+python validate.py --quick
 jupyter notebook 01_workshop_followalong.ipynb
 ```
 
@@ -45,7 +51,7 @@ The notebook's `s1-install` cell is a no-op when these are already installed —
 
 On Colab: just run cells top-to-bottom; `s1-install` brings the env up.
 
-If something breaks on the env, the pins in `requirements-workshop.txt` are the source of truth; the inline `s1-install` cell mirrors them. Keep them synchronized when bumping a floor.
+If something breaks on the env, the pins live in three places (in priority order: `pyproject.toml`/`uv.lock` for the uv path, `requirements-workshop.txt` for the pip path, the inline `s1-install` cell for Colab). When bumping a floor, update all three to keep them in sync.
 
 ## Validating reproducibility
 
