@@ -57,21 +57,6 @@ Format:
   in panel B only. The floor->ceiling gap (LLR 0.64 -> Brandes
   0.905) is the panel's visual argument. Constant lives in
   `01_resolution_panels.py::BRANDES_2023_CLINVAR_AUROC`.
-  **Revision history:**
-  - 2026-05-11 (initial): cited AUROC 0.74 on a horizontal-line
-    reference — wrong number, wrong figure type. Replaced.
-  - 2026-05-11 (correction): rendered as ESM-1b-vs-EVE bar chart on
-    ClinVar (0.905 vs 0.885) and HGMD/gnomAD (0.897 vs 0.882).
-    Numbers correct but re-litigated a comparison already made on
-    slide 3. Replaced.
-  - 2026-05-11 (interim): EVE bars removed; panel collapses to one
-    bar (ESM-1b ClinVar 0.905) plus two panel B reference lines
-    (delta L2 norm + LLR).
-  - 2026-05-11 (current): delta L2 norm reference line dropped to
-    match panel A's LLR-only treatment. Panel C is now: one bar at
-    0.905 + one LLR floor line at 0.64. Single metric across panels
-    A and C; both metrics live in panel B where the at-scale
-    comparison is the point.
 - Outputs: `analysis/figures/resolution_panels.{pdf,png}`,
   `analysis/results/resolution_panels.csv`.
 - Generated: 2026-05-11 against `manylatents-omics` `cceb1fa`.
