@@ -37,3 +37,10 @@ matplotlib>=3.7
 # (nbconvert + ExecutePreprocessor). Already preinstalled on Colab.
 jupyter>=1.0
 ipykernel>=6.0
+
+# Slide-fallback script (`experiments/scripts/run_first_prompt.py`): UMAP of
+# the embeddings + optional wandb logging. Phase 1's `00_demo_umap.py` uses
+# the submodule's `[workshop]` extra for these; the standalone fallback runs
+# from the notebook env, so the deps live here too.
+umap-learn>=0.5
+wandb>=0.16

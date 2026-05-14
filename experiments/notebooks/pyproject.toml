@@ -26,6 +26,8 @@ dependencies = [
     "matplotlib>=3.7",
     "jupyter>=1.0",
     "ipykernel>=6.0",
+    "umap-learn>=0.5",   # slide-fallback script: experiments/scripts/run_first_prompt.py
+    "wandb>=0.16",       # slide-fallback wandb logging (offline mode supported)
 ]
 
 [project.urls]

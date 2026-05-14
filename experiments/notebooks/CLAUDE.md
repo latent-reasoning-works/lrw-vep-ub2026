@@ -28,8 +28,9 @@ contract. This file is the notebook-specific orientation.
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
 | Pinned env for local + Colab attendees | `pyproject.toml` + `uv.lock` (uv-native: `uv sync`); `requirements-workshop.txt` (pip path; same floors). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
 | Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
-| Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and the PDF page count. Ships its own LaTeX renderer: tectonic from PATH, then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to auto-download. The "does the prompt → paper edit half of the workshop story work" check. |
+| Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and the PDF page count. Ships its own LaTeX renderer: tectonic from PATH, then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to auto-download. `--real-paper` builds `paper/main.tex` (structural compile only — TODO placeholders are expected). |
 | Literal-notebook smoke test | `validate_notebook.py` — executes every code cell in `01_workshop_followalong.ipynb` via nbconvert's `ExecutePreprocessor` and reports per-cell PASS/FAIL. Catches a different class of bugs from `validate.py`: a typo in `s3-distributions`, a stale import in `s2-visualize`, a `plt.show()` glitch under the non-interactive backend. Numbers come from `validate.py`; this is the "cells don't explode" check. ~20 s when the s3 cache short-circuit fires; ~4 min cold. |
+| Audience-pick gene smoke | `validate_genes.py` — for each bundled gene (TP53/BRCA2/PTEN/MLH1) loads the clinvar/<gene>/ snapshot, picks N P / N B, encodes via `vep_utils.ESM1bEncoder` (with `truncate_around_mutation` for long proteins like BRCA2 at 3418 aa), and asserts pathogenic mean LLR < benign mean LLR. Workshop-day insurance for "do TP53 instead". ~18 s on MPS. |
 
 ## Running the notebook locally
 
@@ -85,14 +86,20 @@ uv run python validate_notebook.py     # ~20 s when the s3 cache short-circuit f
 
 15 code cells span S1 → S3 (S4 is markdown-only handoff prompts; no execution). The script exits non-zero on any cell error and prints the failing cell's id, first line, and traceback ename/evalue.
 
-Two more bridges complete the chain:
+More targeted checks:
 
 ```bash
+# Audience-pick gene smoke (TP53 / BRCA2 / PTEN / MLH1, ~18 s on MPS):
+cd experiments/notebooks && uv run python validate_genes.py
+
 # Library-scope path (fair-esm + manylatents.dogma.vep, run from the submodule venv):
 experiments/tools/manylatents-omics/.venv/bin/python experiments/scripts/verify_library_vep.py
 
-# Real paper compile (paper/main.tex with all its TODO placeholders — structural only):
+# Real paper compile (paper/main.tex with its TODO placeholders — structural only):
 cd experiments/notebooks && uv run python validate_paper.py --real-paper
+
+# Slide-1 fallback (regenerate the first-prompt UMAP figure, ~3-5 min on MPS):
+experiments/notebooks/.venv/bin/python experiments/scripts/run_first_prompt.py
 ```
 
 `verify_library_vep.py` exercises the just-upstreamed library scope (notebook validators only cover notebook-scope `vep_utils.ESM1bEncoder`). It encodes the demo pair via `ESMEncoder.encode_with_logits` + `manylatents.dogma.vep.compute_llr` and asserts cross-library agreement with the notebook cache (LLR_TOL 0.05; in practice diff is 0 on identical hardware). `validate_paper.py --real-paper` builds `paper/main.tex` and asserts structural compile only — TODO sections are expected.
