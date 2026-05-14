@@ -248,6 +248,11 @@ path; the PDF lands at `paper/main.pdf`.
   discussion → limitations → conclusion.
 - Length: 8–9 pages main body + unlimited references (NeurIPS 2024 budget).
 - Citations: `\citep{}` / `\citet{}` (natbib loaded by `neurips_2024.sty`).
+  Every bib entry for a methodology paper must include a `doi = {...}`
+  field; prefer DOI-resolvable references over URL-only or arXiv-only
+  entries, even when both exist. The `validate_paper.py` smoke test
+  enforces this on the test paper; the rule applies to every paper the
+  agent writes for this repo.
 - Quotation marks: LaTeX style — ` ``...'' ` or `\enquote{}` (csquotes).
 - Heading case: sentence case (NeurIPS convention; not Title Case).
 - Figures: each must stand alone. Caption = one sentence on what it shows +
