@@ -151,6 +151,15 @@ This repo follows two complementary conventions:
 - **Talk:** The Biology of Agentic Research Engineering — An Agent-Driven Variant Effect Prediction Workshop
 - **Companion paper:** arXiv preprint (NeurIPS-style; venue TBD)
 
+## Acknowledgments
+
+- Matt Scicluna
+- Aaron Wenteler
+- Joey Ton (Amii)
+- Anjana Puliyanda (Amii)
+- LRW contributors
+- **Amii** — institutional
+
 ## License
 
 MIT — see [LICENSE](./LICENSE) once it lands (TBD this week per the workshop checklist).
