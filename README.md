@@ -1,4 +1,11 @@
-# lrw-vep-ub2026
+# The Biology of Agentic Research Engineering
+
+### An Agent-Driven Variant Effect Prediction Workshop · Upper Bound 2026
+
+You'll score genetic variants with a protein language model, scale the work
+from one variant to hundreds, and learn how to organize a codebase so an AI
+agent can drive it. The notebook below is the workshop. The
+[CLAUDE.md](./CLAUDE.md) is for the agent.
 
 <div align="center">
 
@@ -9,42 +16,97 @@
             CLAUDE.md • ARCHITECTURE.md
             Hydra configs as prompts
             manylatents-omics (pinned submodule)
-
-  Upper Bound 2026 — agentic research engineering for biology
 </pre>
 
 </div>
 
-A workshop harness demonstrating that **a well-plugged-in harness lets agents
-drive biological research tasks automagically.** A Claude Code agent reads
-[`CLAUDE.md`](./CLAUDE.md), runs a variant effect prediction (VEP) experiment
-via [`manylatents-omics`](https://github.com/latent-reasoning-works/manylatents-omics),
-and writes the results into the accompanying NeurIPS-style preprint.
+---
 
-The repo is the argument. The talk is the demo of the repo.
+## First time here? Start here.
+
+You are a workshop attendee. Do these four things in order:
+
+1. **Clone with submodules** —
+   `git clone --recurse-submodules https://github.com/latent-reasoning-works/lrw-vep-ub2026`
+2. **Confirm your install works** —
+   `cd experiments/notebooks && pip install -r requirements-workshop.txt && python validate.py --quick`
+   (~10 s; prints a clean PASS line if the env reproduces the demo-pair LLRs).
+3. **Open the notebook** — either via Colab (button below) or any local
+   Jupyter / VS Code. Run cells S1 → S2 → S3 → S4 in order.
+4. **When you hit a 🤖 markdown cell, that's a *prompt*, not instructions.**
+   The text inside is what you paste into a Claude Code session running in
+   the same repo. Claude reads the harness and does the work; you keep
+   running notebook cells once it lands its output.
+
+That's the whole story. Everything below is detail.
 
 ---
 
 ## Quickstart
 
-### With Claude Code (preferred)
+### Run the workshop notebook (primary path)
 
-```bash
-git clone --recurse-submodules https://github.com/latent-reasoning-works/lrw-vep-ub2026
-cd lrw-vep-ub2026
-claude                       # then: "do the workshop demo"
-```
-
-The agent reads [`CLAUDE.md`](./CLAUDE.md) → [`ARCHITECTURE.md`](./ARCHITECTURE.md)
-→ [`experiments/CLAUDE.md`](./experiments/CLAUDE.md) and runs the six-task
-demo end-to-end. Expect questions if the environment is missing pieces.
-
-### Without Claude Code (Colab fallback)
-
-Open [`experiments/notebooks/01_workshop_followalong.ipynb`](./experiments/notebooks/01_workshop_followalong.ipynb)
-in Colab — same six tasks, executed manually cell-by-cell:
+The Colab notebook is the workshop, executed cell-by-cell on a free T4 GPU.
+Open it, run S1 → S2 → S3 → S4 in order, and you'll have a working
+variant-effect-prediction prototype at the end.
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/latent-reasoning-works/lrw-vep-ub2026/blob/main/experiments/notebooks/01_workshop_followalong.ipynb)
+
+The notebook source is at
+[`experiments/notebooks/01_workshop_followalong.ipynb`](./experiments/notebooks/01_workshop_followalong.ipynb)
+if you'd rather run it locally. The `s1-install` cell brings the pip deps;
+the rest is self-contained.
+
+### Drive the harness with Claude Code
+
+The 🤖 markdown cells inside the notebook are the agent prompts. Open
+[Claude Code](https://claude.com/claude-code) in the repo root, paste a
+prompt, watch it work, then continue with the next notebook cell:
+
+```bash
+cd lrw-vep-ub2026
+claude
+# in the Claude Code prompt, paste the contents of any 🤖 markdown cell
+```
+
+The agent reads [`CLAUDE.md`](./CLAUDE.md) →
+[`ARCHITECTURE.md`](./ARCHITECTURE.md) →
+[`experiments/CLAUDE.md`](./experiments/CLAUDE.md) and works from there.
+Expect questions if the environment is missing pieces.
+
+### See the whole "prompt → paper" pipeline end-to-end
+
+`validate_paper.py` is a smoke test for the second half of the workshop
+story — taking a real biological result and turning it into a 2-page LaTeX
+preprint citing the methodology paper by DOI:
+
+```bash
+cd experiments/notebooks
+python validate_paper.py --prepare       # cleans the workdir, writes PROMPT.md
+# in your Claude Code session, paste:
+#     read experiments/notebooks/_paper_validation_tmp/PROMPT.md and execute it
+python validate_paper.py --fetch-tectonic  # builds the PDF and validates it
+```
+
+First run downloads tectonic (~50 MB; cached at `~/.cache/lrw-vep-ub2026/`,
+never re-downloaded). Subsequent runs need no flag.
+
+### Logging configuration
+
+The notebook works without any cloud accounts. The Hydra harness logs to
+[Weights & Biases](https://wandb.ai) by default, but you don't need an
+account to run the demo — set `WANDB_MODE=offline` and runs log to a local
+folder instead:
+
+```bash
+export WANDB_MODE=offline                          # no cloud account needed
+# or, if you have your own wandb team:
+export WANDB_ENTITY=<your-team>
+export WANDB_PROJECT=<your-project>
+```
+
+The defaults are baked for the maintainer's team and will fail on a fresh
+account — set one of the above before running the Hydra path.
 
 ### Just want to compile the paper
 
@@ -59,12 +121,14 @@ expaper build --open         # tectonic compiles paper/main.pdf
 
 | Path | What |
 |---|---|
-| [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Living orientation doc (architecture.md spec, 11 sections) |
-| [`CLAUDE.md`](./CLAUDE.md) | Agent operation manual + writing directives |
-| `experiments/configs/manylatents-omics/experiment/` | Hydra configs — *the prompts* |
-| `experiments/tools/manylatents-omics/` | Pinned submodule of the tool itself |
-| `experiments/notebooks/01_workshop_followalong.ipynb` | Colab fallback |
-| `paper/main.tex` | NeurIPS-style preprint scaffold |
+| [`experiments/notebooks/01_workshop_followalong.ipynb`](./experiments/notebooks/01_workshop_followalong.ipynb) | The workshop, runnable on Colab |
+| [`experiments/data/clinvar/`](./experiments/data/clinvar/) | Pre-bundled ClinVar variants for BRCA1, BRCA2, TP53, PTEN, MLH1 — no NCBI download required |
+| [`experiments/scripts/`](./experiments/scripts/) | `pick_demo_pair.py`, `cache_s3_scores.py`, plus tool-management helpers |
+| [`experiments/tools/manylatents-omics/`](./experiments/tools/manylatents-omics/) | Pinned submodule: the upstream library with `manylatents.dogma.vep` and the encoders |
+| [`paper/main.tex`](./paper/main.tex) | NeurIPS-style preprint scaffold |
+| [`CLAUDE.md`](./CLAUDE.md) | Agent operation manual (for Claude Code, not for humans) |
+| [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Living orientation doc (11 sections, architecture.md spec) |
+| [`docs/internal/`](./docs/internal/) | Workshop-prep coordination docs — internal, kept in-tree for future-you |
 
 ## Conventions
 
@@ -75,10 +139,12 @@ This repo follows two complementary conventions:
 - **[expaper](https://github.com/cmvcordova/expaper)** — operational scaffolding
   (uv + Hydra + git-submodule tools + Overleaf via git subtree).
 
-The repo was generated by `expaper init` and extended with `ARCHITECTURE.md`.
-
 ## Workshop
 
 - **Venue:** Upper Bound 2026
-- **Talk:** Agentic Research Engineering for Biology
+- **Talk:** The Biology of Agentic Research Engineering — An Agent-Driven Variant Effect Prediction Workshop
 - **Companion paper:** arXiv preprint (NeurIPS-style; venue TBD)
+
+## License
+
+MIT — see [LICENSE](./LICENSE) once it lands (TBD this week per the workshop checklist).
