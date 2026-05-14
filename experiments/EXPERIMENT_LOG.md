@@ -30,6 +30,32 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-14 — Tolerance test: S2 + S3 agent prompts vs cell-path manifest
+
+Spawned two parallel subagents with the verbatim S1+S2 and S3 agent-prompt markdown cells from `01_workshop_followalong.ipynb` to confirm the prompts replicate the cell-path run-through. Each subagent landed cold (no shared context with this session), read the project root + notebook CLAUDE.md, picked its own approach.
+
+**S1+S2 subagent (data sanity + demo pair).** Used `vep_utils.ESM1bEncoder(device="mps")` directly; fresh encode on the demo pair (no cache). LLRs:
+- Pathogenic `clinvar_55631 BRCA1 L1854P`: **-6.5283** (manifest demo_pair_scores.json: -6.528341)
+- Benign `clinvar_55634 BRCA1 P1859R`: **-3.7580** (manifest: -3.757988)
+- Both match to 4 decimal places; sign convention (path more negative) holds.
+
+S1 surprises were genuine (long-protein truncation hit class-skewed, 166/500 conflicting-binarized labels, top genes single-label only, 5 start-codon pathogenics, 338/400 singleton genes). Not generic — actually surfaced from the data.
+
+**S3 subagent (500-variant scoring).** Honored the "not a cache read" instruction: fresh encode of all 500 variants on MPS, 270 s wall-clock, wrote `notebooks/data/s3_scores__validation_rerun.npz` as a sibling to the canonical cache (no overwrite). Numbers:
+- AUROC LLR: **0.9300** (manifest 0.930032; matches within 5e-4)
+- CI95: **[0.9062, 0.9512]** (manifest [0.9062, 0.9512]; matches to 4 dp)
+- AUROC delta_norm: **0.6718** (manifest 0.671808; matches)
+- Diff vs canonical cache: max abs = 0.0 on both `llr` and `delta_norm` (deterministic forward pass on identical MPS hardware).
+
+Breakdown findings (agent's own):
+- **Gene axis:** zero genes meet the ≥3P+≥3B threshold per ARCHITECTURE.md §5; relaxed ≥2/≥2 leaves only DNAH11 (AUROC 0.75) and BRCA2 (AUROC 1.00). Per-gene AUROC is structurally not a useful axis on this set.
+- **Length regime:** short (≤1022) AUROC 0.9435 vs long (>1022) AUROC 0.9197; 0.024 absolute gap, CI95 of the difference crosses zero (suggestive, not significant at n=500).
+- **BLOSUM62:** monotonic — disruptive (≤-3) 0.9454 → moderate 0.9286 → conservative (≥+1) **0.9053**. Charge-changing 0.9492 vs charge-neutral 0.9172. Signal weakens where biochemical disruption is smallest, never inverts.
+
+**Verdict:** prompts replicate the cell path. Both subagents reached manifest-pinned numbers via independent code without being told what number to expect.
+
+Sibling validation rerun cache (`notebooks/data/s3_scores__validation_rerun.npz`, 70.6 KB) left in place pending cleanup decision; can `git rm` once we're done diffing.
+
 ## 2026-05-14 — manylatents-omics submodule SHA bump (cceb1fa → e97d469)
 
 - **Pin:** manylatents-omics commit `e97d469` (branch `workshop/lrw-ub2026`).
