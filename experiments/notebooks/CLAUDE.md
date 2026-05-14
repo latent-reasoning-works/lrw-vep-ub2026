@@ -28,6 +28,7 @@ contract. This file is the notebook-specific orientation.
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
 | Pinned env for local + Colab attendees | `requirements-workshop.txt` (pip / uv). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
 | Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
+| Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and (if a LaTeX compiler is on PATH) the PDF page count. The "does the prompt → paper edit half of the workshop story work" check. |
 
 ## Running the notebook locally
 
@@ -67,6 +68,19 @@ Full mode adds:
 When the validator fails, the per-check FAIL lines name the diverging value and the tolerance. Common causes are listed in the failure footer (wrong `transformers` version, stale cache, cross-device numerical drift).
 
 **Use this when:** verifying your local install before the workshop; debugging a divergent number on someone else's machine; confirming a fix didn't break the headline numbers.
+
+`validate_paper.py` is the matching check for the other half of the workshop story: prompt → biological result is covered by `validate.py`; prompt → paper edit is covered here. Two-phase:
+
+```bash
+cd experiments/notebooks
+python validate_paper.py --prepare    # wipe + recreate _paper_validation_tmp/, emit PROMPT.md
+# now, from your Claude Code session, spawn a subagent with PROMPT.md
+python validate_paper.py              # validate what the agent produced
+```
+
+Per-stage checks: required files present (main.tex + references.bib), TeX structure (NeurIPS preprint style, required sections, `\cite` + `\bibliography`), Brandes DOI present in the bib, cite-keys resolve, headline AUROC mentioned, and — if `tectonic` or `pdflatex` is on PATH — the PDF builds to roughly 2 pages. The workdir is gitignored, so re-running `--prepare` is a clean slate.
+
+**Use this when:** verifying the agent-driven paper-prep pipeline works end-to-end; debugging a stuck or hallucinating subagent (compare its output to the prompt spec); demonstrating "prompt → paper" to a workshop attendee.
 
 ## Conventions
 
