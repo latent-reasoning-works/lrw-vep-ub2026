@@ -151,7 +151,7 @@ The validator ships its own LaTeX renderer to keep the smoke test self-contained
 
 ## When to escalate
 
-- **The dataset doesn't fit your need.** Don't silently re-spec the validation set inside an unrelated task. Surface as an explicit decision with trade-off framing. The build history is in `../../docs/internal/WORKSHOP_SET_LINEAGE.md`; the current spec is `--spec v2` in `../scripts/build_validation_set.py`.
+- **The dataset doesn't fit your need.** Don't silently re-spec the validation set inside an unrelated task. Surface as an explicit decision with trade-off framing. The four-revision build history + catch ledger lives in `../PROVENANCE.md` → "Validation set lineage"; the current spec is `--spec v2` in `../scripts/build_validation_set.py`.
 
 - **A workshop attendee wants a different gene** (TP53, BRCA2, PTEN, MLH1). The data-regeneration block in the root [`CLAUDE.md`](../../CLAUDE.md) handles this for the **demo encode path** (Phase 1: BRCA1 → TP53 swap for the Encode+UMAP demo). Pre-bundled gene pulls live in `../data/clinvar/<gene>/`. The notebook's **S3 validation set is separate** — `data/workshop_set.tsv` has a fixed multi-gene composition (400 unique disease genes; see `data/workshop_set_manifest.json`). Rescoping S3 is a different operation; if asked, escalate per the validation-set-decision rule rather than silently swapping.
 

@@ -29,9 +29,40 @@ B18 ("Same harness, any gene") so audience picks never hit NCBI live.
 | `pten/`  | P60484  | 403  | 234 / 6 / 760   | **thin benign set (n=6) — redirect if too sparse** |
 | `mlh1/`  | P40692  | 756  | 135 / 32 / 833  | balanced; medium sequence |
 
-To invoke from the canonical Phase-1 harness, override
-`data.data_dir` directly (not the top-level `data_dir`) — see
-`docs/internal/FRIDAY_CODEALONG.md` B18 for the override map.
+### Running the Phase-1 demo on a different gene
+
+Override the experiment config's `data.data_dir` (the leaf) — *not* the
+top-level `data_dir`. The `clinvar` data config does
+`data.data_dir: ${data_dir}/clinvar`, so the top-level gets `/clinvar`
+appended, and the bundled per-gene dirs live at
+`experiments/data/clinvar/<gene>/`, not `…/clinvar/<gene>/clinvar/`.
+
+Example — TP53, `max_variants=50` (~15-20 s on Apple Silicon MPS):
+
+```bash
+experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
+    --config-path=$(pwd)/experiments/configs/manylatents-omics \
+    experiment=encode_esm1b_brca1 \
+    data.genes=[TP53] \
+    data.data_dir=$(pwd)/experiments/data/clinvar/tp53 \
+    name=encode_esm1b_tp53 \
+    algorithms.latent.encoder_config.device=mps \
+    data.max_variants=50
+```
+
+Override map for the five pre-bundled genes:
+
+| Gene  | `data.data_dir` override                          |
+|-------|---------------------------------------------------|
+| BRCA1 | `$(pwd)/experiments/data/clinvar` (default)       |
+| TP53  | `$(pwd)/experiments/data/clinvar/tp53`            |
+| BRCA2 | `$(pwd)/experiments/data/clinvar/brca2`           |
+| PTEN  | `$(pwd)/experiments/data/clinvar/pten`            |
+| MLH1  | `$(pwd)/experiments/data/clinvar/mlh1`            |
+
+PTEN's benign set is thin (n=6) — if the audience picks PTEN and the
+encode finishes too fast for the UMAP to be visually compelling,
+redirect to BRCA2 or MLH1 for a richer P-vs-B contrast.
 
 ## Refreshing or expanding
 

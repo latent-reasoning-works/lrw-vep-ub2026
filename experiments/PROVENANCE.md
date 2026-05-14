@@ -125,6 +125,31 @@ sha256 `61e2b1fd3123…`). Recorded in the manifest.
      validation set; the notebook's S3 loop + `cache_s3_scores.py`
      consume it.
 
+### Catch ledger — what each revision held back, in one sentence
+
+Four revisions to ship the n=500 validation set; each held back by a different category of error caught by the parse-and-cite discipline:
+
+1. **v0 → v1 in-flight (correctness):** pre-bundled v0 had no producer + no canonical-isoform validation — silent isoform mismatch was plausible, so the AUROC 0.638 couldn't be defended.
+2. **v1 in-flight → v1 canonical-only (process):** the agent added an unsanctioned per-gene cap of 6 inside an unrelated panel-update task. Held because "change the validation set" deserves an explicit decision, not a quiet one.
+3. **v1 canonical-only → v2 (methodology):** label scope dropped Conflicting + Uncertain entries, producing AUROC 0.944 on a strictly easier subset than Brandes 2023's 0.905 on unfiltered ClinVar — the literature comparison was not apples-to-apples.
+4. **v2 ships:** Brandes-matching binarization (Conflicting via `ClinSigSimple`), AUROC 0.930, CI95 contains Brandes' 0.905. Numerically and methodologically comparable.
+
+Workshop-prep also caught four downstream framing/methodology issues before any slide shipped: (a) the LLR sign convention was inverted in early slide narration; (b) Brandes' AUROC was misremembered as 0.74 in panel C of the resolution figure (correct: 0.905); (c) the multi-gene workshop set was being framed as "BRCA1 validation" despite having only 5 BRCA1 rows out of 500; (d) the two-pass LLR formula that produced 0.929 was methodologically wrong (corrected to single-pass Brandes formulation on 2026-05-13, moving AUROC 0.929 → 0.930 because the two quantities are highly correlated). None of these made it to a public slide.
+
+### Reproduce `workshop_set` from scratch
+
+```bash
+# Cold-cache ~10 min (UniProt fetches); warm <1 min.
+experiments/tools/manylatents-omics/.venv/bin/python \
+    experiments/scripts/build_validation_set.py --spec v2
+
+# Score through ESM-1b (~4 min on Apple Silicon MPS)
+experiments/tools/manylatents-omics/.venv/bin/python \
+    experiments/scripts/cache_s3_scores.py --force
+```
+
+The manifest at `experiments/notebooks/data/workshop_set_manifest.json` records the ClinVar dump sha256, all filter rules, sampling seed, output sha256s, the gene→UniProt map, and the bootstrap CI95 with Brandes-anchor verification.
+
 ### Long-sequence handling (Brandes methodology comparison)
 
 The workshop set includes **236 of 500 variants on proteins >1022 aa**

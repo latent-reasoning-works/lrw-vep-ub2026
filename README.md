@@ -135,7 +135,6 @@ expaper build --open         # tectonic compiles paper/main.pdf
 | [`paper/main.tex`](./paper/main.tex) | NeurIPS-style preprint scaffold |
 | [`CLAUDE.md`](./CLAUDE.md) | Agent operation manual (for Claude Code, not for humans) |
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Living orientation doc (11 sections, architecture.md spec) |
-| [`docs/internal/`](./docs/internal/) | Workshop-prep coordination docs — internal, kept in-tree for future-you |
 
 ## Conventions
 

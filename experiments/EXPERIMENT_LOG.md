@@ -302,11 +302,6 @@ Three artifacts shipped; no model training. Pre-flight for the workshop demos.
   LLR > delta_norm). One variant skipped (`clinvar_701307` has a `*` stop
   codon in its WT FASTA).
 
-Maintainer notes — uncommitted submodule changes from the same day, the
-`manylatents.dogma.vep` collapse plan, and the Friday demo spec / runbook —
-live in [`docs/internal/`](../docs/internal/) and are not part of the public
-reproduction surface.
-
 ## 2026-05-07 — encode_esm1b_brca1 + 00_demo_umap.py (post-fix baseline + workshop-pace + sandbox findings)
 
 Consolidates four runs across 2026-05-07 (workshop-pace, sandboxed agent re-run, post-fix baseline, Phase-1 local re-run). The numbers are consistent across runs; what each one *added* is captured below.
