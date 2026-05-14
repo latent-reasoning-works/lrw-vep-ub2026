@@ -1,0 +1,15 @@
+{
+  "name": "<lowercase-backend-name>",
+  "substrate": "slurm",
+  "ssh_alias": "<lowercase-backend-name>",
+  "allocation": "flexible",
+  "max_gpus_per_node": 4,
+  "gpu_types": ["<gpu-type>"],
+  "max_wall": "24h",
+  "internet": true,
+  "login_host": "<host.domain>",
+  "automation_host": null,
+  "hostname_patterns": ["*<short-name>*"],
+  "gotchas": [],
+  "notes": "Drop a personal copy at ~/.claude/skills/dispatcher/backends/<name>.json. See ../backend_schema.md for the full field list."
+}

@@ -164,3 +164,7 @@ ehthumbs.db
 *.tmp
 scratch/
 tmp/
+
+# Claude Code local state (personal; not committed)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock

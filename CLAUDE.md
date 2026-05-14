@@ -159,34 +159,36 @@ embeddings land in `experiments/outputs/`.
 
 **Dispatcher-skill path** (substrate-agnostic; for workloads that aren't
 Hydra-shaped — S4-sweep, ad-hoc scoring, anything outside the notebook's
-pre-wired flows). Drop a backend manifest at
-`~/.claude/skills/dispatcher/backends/<your-name>.json`; the dispatcher's
-`route.py` picks the substrate and emits the sbatch plan. See the
-`dispatcher` skill in `latent-reasoning-works/shop` for the schema. The
-dispatcher knows about local CPU/GPU/MPS too, so the same workload can
-target your laptop or your cluster depending on what's available.
+pre-wired flows). A workshop mirror of the skill ships in this repo at
+`.claude/skills/dispatcher/`. Drop a backend manifest at
+`.claude/skills/dispatcher/references/backends/<your-name>.json` (or the
+user-global path; see below); `route.py` picks the substrate and emits the
+sbatch plan. The dispatcher knows about local CPU/GPU/MPS too, so the same
+workload can target your laptop or your cluster depending on what's
+available.
 
-Install the dispatcher (one time, per machine):
-
-```bash
-mkdir -p ~/.claude/skills && \
-git clone --depth 1 https://github.com/latent-reasoning-works/shop /tmp/shop && \
-cp -r /tmp/shop/.claude/skills/dispatcher ~/.claude/skills/ && \
-rm -rf /tmp/shop
-```
-
-After install, any Claude Code session on this machine sees `dispatcher` in
-its skill list and invokes via the Skill tool natively. **Bash-fallback
-invocation** (for sessions where the skill isn't registered, or for
-non-Claude-Code callers):
+The bundled mirror runs out of the box (Bash-direct invocation works in any
+environment):
 
 ```bash
 echo '{"n_items": 60, "requires_gpu": true, "gpu_memory_gb": 16, "per_item_memory_gb": 8}' \
-    | python3 ~/.claude/skills/dispatcher/scripts/route.py
+    | python3 .claude/skills/dispatcher/scripts/route.py
 ```
 
-Swap `~/.claude/skills/dispatcher` for wherever you cloned `shop` if you
-haven't installed globally.
+For Claude Code's Skill tool to discover the dispatcher across *any*
+session on your machine (not just sessions opened in this repo), copy to
+the user-global skills dir once:
+
+```bash
+mkdir -p ~/.claude/skills && \
+cp -r .claude/skills/dispatcher ~/.claude/skills/
+```
+
+After that, future Claude Code sessions list `dispatcher` in their
+available-skills set and invoke via the Skill tool natively. The bundled
+mirror tracks the upstream `dispatcher` skill (`latent-reasoning-works/shop`,
+private as of 2026-05-13); for full schema docs, anonymized backend
+examples, and SSH-config templates see upstream once it's public.
 
 ### Generic multi-modal pattern
 
