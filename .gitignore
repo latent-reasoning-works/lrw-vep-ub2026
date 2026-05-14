@@ -132,6 +132,7 @@ ENV/
 experiments/outputs/
 experiments/cache/
 experiments/notebooks/_paper_validation_tmp/
+/outputs/
 *.pt
 *.pth
 *.ckpt
