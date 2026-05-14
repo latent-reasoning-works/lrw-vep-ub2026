@@ -43,7 +43,8 @@ PROMPT_PATH = WORKDIR / "PROMPT.md"
 PAPER_DIR = REPO_ROOT / "paper"
 NEURIPS_STY = PAPER_DIR / "neurips_2024.sty"
 MANIFEST_PATH = NB_DIR / "data" / "workshop_set_manifest.json"
-FIGURE_REL = "experiments/analysis/figures/demo_umap_brca1.pdf"
+FIGURE_REL = "experiments/analysis/figures/llr_distribution_500.pdf"
+FIGURE_STEM = "llr_distribution_500"
 
 BRANDES_DOI = "10.1038/s41588-023-01465-0"
 BRANDES_TITLE_FRAGMENT = "Genome-wide prediction of disease variant"
@@ -98,8 +99,10 @@ NeurIPS .sty copied in).
    - **§Results** (1 paragraph + 1 figure): report AUROC = {auroc:.4f}
      (95 % CI [{lo:.4f}, {hi:.4f}]) on the 500-variant ClinVar workshop set.
      Include the figure with
-     `\\includegraphics[width=\\linewidth]{{demo_umap_brca1}}` and a
-     one-sentence caption. The PDF lives at `{fig_abs}` — copy it into
+     `\\includegraphics[width=\\linewidth]{{{FIGURE_STEM}}}` and a
+     one-sentence caption — the figure shows the LLR KDE for pathogenic
+     vs benign across all 500 variants, so the AUROC literally is what
+     the reader sees. The PDF lives at `{fig_abs}` — copy it into
      `{WORKDIR}/` so the `\\includegraphics` resolves locally.
    - `\\bibliographystyle{{plainnat}}` + `\\bibliography{{references}}`.
 

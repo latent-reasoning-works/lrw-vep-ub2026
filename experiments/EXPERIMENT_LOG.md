@@ -30,6 +30,17 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-14 — 02_llr_distribution.py (new headline figure)
+
+- **Pin:** manylatents-omics submodule (unchanged from 2026-05-13 cache rebuild); analysis script lives in this repo, no submodule bump.
+- **Cmd:** `experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/02_llr_distribution.py`
+- **Output:**
+  - `analysis/figures/llr_distribution_500.{pdf,png}` (KDE: pathogenic vs benign LLR over the full n=500 workshop set)
+  - `analysis/results/llr_distribution_500.csv` (500 rows: variant_id, gene, label, llr)
+  - `analysis/results/llr_distribution_500.json` (AUROC + CI + bootstrap config)
+- **Numbers:** AUROC = 0.9300 (95 % CI [0.9062, 0.9512], 10k bootstrap, seed 42). Bit-identical to `data/workshop_set_manifest.json::evaluation.metrics.llr_auroc` within 5e-4; the script asserts this anchor at the bottom of `main()`.
+- **Notes:** Replaces `00_demo_umap.py` (BRCA1 UMAP) as the headline visual for `validate_paper.py` and the slide deck. The figure literally is the AUROC — readers see pathogenic and benign densities separating along the LLR axis, with medians (-12 vs -5) and the AUROC + CI in the title. Same cache (`notebooks/data/s3_scores.npz`) `01_resolution_panels.py` already uses for its panel B, so no encoder calls — runs in ≲ 30 s on CPU. Dispatcher not involved: the workload is one process reading a cached npz; sub-second per metric. PROVENANCE.md updated.
+
 ## 2026-05-13 — Tolerance test (two subagents on s3) + dispatcher e2e verification
 
 After the Brandes LLR fix landed, ran two verifications:

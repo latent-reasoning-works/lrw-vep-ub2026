@@ -1,0 +1,12 @@
+{
+  "scorer": "llr",
+  "auroc": 0.930032,
+  "ci95_lo": 0.9062298850651044,
+  "ci95_hi": 0.9512445073459491,
+  "n_variants": 500,
+  "n_pathogenic": 250,
+  "n_benign": 250,
+  "n_bootstrap": 10000,
+  "bootstrap_seed": 42,
+  "auroc_predictor": "-llr"
+}

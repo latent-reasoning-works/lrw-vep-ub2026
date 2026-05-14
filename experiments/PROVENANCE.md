@@ -163,3 +163,22 @@ single-window method at the same window size.
 
 **Source:** Brandes et al., *Nat. Genet.* 2023, Methods §
 "Handling long sequences" and Extended Data Figs. 5 and 6a.
+
+---
+
+## LLR distribution (headline §Results figure, n=500)
+
+- Script: `analysis/02_llr_distribution.py`
+- Inputs:
+  - `notebooks/data/s3_scores.npz` (sha256 `c00eeae60744…`, 500 rows: 250 P + 250 B across 400 unique genes) — same cache `01_resolution_panels.py` uses for panel B.
+  - `notebooks/data/workshop_set_manifest.json` for the anchor AUROC + CI; script asserts the computed AUROC matches the manifest's `evaluation.metrics.llr_auroc` within 5e-4.
+- Outputs:
+  - `analysis/figures/llr_distribution_500.{pdf,png}` — KDE of pathogenic vs benign LLRs with the AUROC + 95 % CI in the title.
+  - `analysis/results/llr_distribution_500.csv` — long-form `(variant_id, gene, label, llr)` for parse-and-cite.
+  - `analysis/results/llr_distribution_500.json` — `(auroc, ci95_lo, ci95_hi, n_variants, n_pathogenic, n_benign, n_bootstrap, bootstrap_seed, auroc_predictor)`.
+- Conventions:
+  - **Bootstrap:** `n_resamples=10000`, `seed=42`, predictor `-llr` (sklearn positive-class = pathogenic).
+  - **Sign convention:** raw LLRs are plotted on the x-axis (more negative ⇒ more pathogenic, Brandes 2023); the legend labels each KDE with its median.
+  - **No encoder calls.** Reads the cached score table; bit-identical given a fresh cache, ≲30 s on CPU.
+- Use: the smoke-test paper from `validate_paper.py` `\includegraphics`'s this figure as its headline visual; same paper-anchor (§Results) the slide deck cites.
+- Generated: 2026-05-14 against the s3 cache rebuilt 2026-05-13 (Brandes-correct LLR; see `EXPERIMENT_LOG.md` 2026-05-13). Regenerate via `experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/02_llr_distribution.py`.
