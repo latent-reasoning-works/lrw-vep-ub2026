@@ -28,7 +28,7 @@ contract. This file is the notebook-specific orientation.
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
 | Pinned env for local + Colab attendees | `requirements-workshop.txt` (pip / uv). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
 | Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
-| Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and (if a LaTeX compiler is on PATH) the PDF page count. The "does the prompt → paper edit half of the workshop story work" check. |
+| Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and the PDF page count. Ships its own LaTeX renderer: tectonic from PATH, then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to auto-download. The "does the prompt → paper edit half of the workshop story work" check. |
 
 ## Running the notebook locally
 
@@ -78,7 +78,9 @@ python validate_paper.py --prepare    # wipe + recreate _paper_validation_tmp/, 
 python validate_paper.py              # validate what the agent produced
 ```
 
-Per-stage checks: required files present (main.tex + references.bib), TeX structure (NeurIPS preprint style, required sections, `\cite` + `\bibliography`), Brandes DOI present in the bib, cite-keys resolve, headline AUROC mentioned, and — if `tectonic` or `pdflatex` is on PATH — the PDF builds to roughly 2 pages. The workdir is gitignored, so re-running `--prepare` is a clean slate.
+Per-stage checks: required files present (main.tex + references.bib), TeX structure (NeurIPS preprint style, required sections, `\cite` + `\bibliography`), Brandes DOI present in the bib, cite-keys resolve, headline AUROC mentioned, and a 2-page PDF build. The workdir is gitignored, so re-running `--prepare` is a clean slate.
+
+The validator ships its own LaTeX renderer to keep the smoke test self-contained — if `tectonic` isn't on PATH it looks at `~/.cache/lrw-vep-ub2026/tectonic/`, and `--fetch-tectonic` will pull the binary from the official tectonic GitHub releases on first use (~50 MB, cached forever). Page count is parsed directly from the PDF's compressed object streams, so no `pdfinfo` / `mdls` / poppler dep.
 
 **Use this when:** verifying the agent-driven paper-prep pipeline works end-to-end; debugging a stuck or hallucinating subagent (compare its output to the prompt spec); demonstrating "prompt → paper" to a workshop attendee.
 

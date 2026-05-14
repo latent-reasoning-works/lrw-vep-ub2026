@@ -9,10 +9,12 @@ Two phases:
       prompt — the subagent writes main.tex + references.bib into the workdir
       and tries to build it.
 
-  python validate_paper.py
+  python validate_paper.py [--fetch-tectonic]
       Validate what the agent produced: TeX structure, DOI citation, figure
-      include, headline-AUROC mention, and (if a LaTeX compiler is on PATH)
-      page count.
+      include, headline-AUROC mention, and the PDF page count. If main.pdf
+      is missing, the validator builds it itself using tectonic (from PATH,
+      a local cache at ~/.cache/lrw-vep-ub2026/tectonic/, or — with
+      --fetch-tectonic — auto-downloaded from GitHub releases on first use).
 
 Per-check PASS/FAIL. Non-zero exit on any FAIL.
 """
@@ -21,10 +23,16 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import platform
 import re
 import shutil
 import subprocess
 import sys
+import tarfile
+import urllib.request
+import zipfile
+import zlib
 from pathlib import Path
 
 NB_DIR = Path(__file__).resolve().parent
@@ -41,6 +49,9 @@ BRANDES_DOI = "10.1038/s41588-023-01465-0"
 BRANDES_TITLE_FRAGMENT = "Genome-wide prediction of disease variant"
 TARGET_PAGES = 2
 PAGE_TOLERANCE = 1  # accept 1–3 pages
+
+TECTONIC_VERSION = "0.15.0"
+TECTONIC_CACHE = Path.home() / ".cache" / "lrw-vep-ub2026" / "tectonic"
 
 
 def _load_auroc() -> tuple[float, float, float]:
@@ -108,7 +119,8 @@ NeurIPS .sty copied in).
 - Do not touch `{REPO_ROOT}/paper/` — that is the real paper, untouched by
   this smoke test.
 - No new LaTeX packages beyond what `neurips_2024.sty` pulls in plus
-  `graphicx` + `hyperref` (already common).
+  `graphicx`, `hyperref`, and `amsmath` (the last is needed if you write
+  the LLR equation with `\text{...}` or any other `amsmath`-only macro).
 - If `tectonic` and `pdflatex` are both missing, write the `.tex` + `.bib`
   anyway and report the missing builder — the validator's source checks
   will still pass.
@@ -116,6 +128,91 @@ NeurIPS .sty copied in).
 Report at the end: the cite-key you used, the final page count, and the
 path to the PDF.
 """
+
+
+def _tectonic_url() -> str | None:
+    sys_name = platform.system()
+    arch = platform.machine()
+    if sys_name == "Darwin":
+        suffix = (
+            "aarch64-apple-darwin" if arch in ("arm64", "aarch64")
+            else "x86_64-apple-darwin"
+        )
+        ext = "tar.gz"
+    elif sys_name == "Linux":
+        arch_part = "aarch64" if arch in ("aarch64", "arm64") else "x86_64"
+        suffix = f"{arch_part}-unknown-linux-gnu"
+        ext = "tar.gz"
+    elif sys_name == "Windows":
+        suffix = "x86_64-pc-windows-msvc"
+        ext = "zip"
+    else:
+        return None
+    return (
+        f"https://github.com/tectonic-typesetting/tectonic/releases/"
+        f"download/tectonic%40{TECTONIC_VERSION}/"
+        f"tectonic-{TECTONIC_VERSION}-{suffix}.{ext}"
+    )
+
+
+def _ensure_tectonic(allow_fetch: bool) -> tuple[Path | None, str | None]:
+    """Return (tectonic path, reason-for-none).
+
+    Looks on PATH, then in TECTONIC_CACHE, then optionally downloads.
+    """
+    if (p := shutil.which("tectonic")):
+        return Path(p), None
+    bin_name = "tectonic.exe" if platform.system() == "Windows" else "tectonic"
+    cached = TECTONIC_CACHE / bin_name
+    if cached.exists() and os.access(cached, os.X_OK):
+        return cached, None
+    url = _tectonic_url()
+    if url is None:
+        return None, f"unsupported platform ({platform.system()}/{platform.machine()})"
+    if not allow_fetch:
+        return None, (
+            f"not on PATH or in cache; re-run with --fetch-tectonic to download "
+            f"(~50 MB) from {url}"
+        )
+    print(f"  fetching tectonic {TECTONIC_VERSION} from {url}")
+    TECTONIC_CACHE.mkdir(parents=True, exist_ok=True)
+    archive = TECTONIC_CACHE / Path(url).name
+    try:
+        urllib.request.urlretrieve(url, archive)
+    except Exception as e:
+        return None, f"download failed: {e}"
+    try:
+        if archive.suffix == ".zip":
+            with zipfile.ZipFile(archive) as z:
+                z.extractall(TECTONIC_CACHE)
+        else:
+            with tarfile.open(archive) as t:
+                t.extractall(TECTONIC_CACHE)
+    except Exception as e:
+        return None, f"extract failed: {e}"
+    archive.unlink(missing_ok=True)
+    if not cached.exists():
+        return None, f"binary not found after extract at {cached}"
+    cached.chmod(0o755)
+    print(f"  cached at {cached}")
+    return cached, None
+
+
+def _build_pdf(tectonic: Path, workdir: Path) -> tuple[bool, str]:
+    try:
+        proc = subprocess.run(
+            [str(tectonic), "main.tex"],
+            cwd=workdir,
+            capture_output=True,
+            text=True,
+            timeout=180,
+        )
+    except subprocess.TimeoutExpired:
+        return False, "tectonic build timed out after 180s"
+    if proc.returncode != 0:
+        tail = (proc.stderr or proc.stdout)[-600:]
+        return False, f"tectonic exit {proc.returncode}; tail:\n{tail}"
+    return True, "ok"
 
 
 def _section(title: str) -> None:
@@ -265,31 +362,28 @@ def _check_headline(res: CheckResult, tex: Path) -> None:
         res.failed(f"no AUROC mention; expected one of {candidates}")
 
 
-def _check_build(res: CheckResult) -> None:
-    _section("Stage 6: PDF build (optional)")
+def _check_build(res: CheckResult, allow_fetch: bool) -> None:
+    _section("Stage 6: PDF build")
     pdf = WORKDIR / "main.pdf"
-    builder = None
-    for cand in ("tectonic", "pdflatex"):
-        if shutil.which(cand):
-            builder = cand
-            break
-    if not builder:
-        res.warned(
-            "no LaTeX compiler on PATH; skipping build + page-count check "
-            "(install `tectonic` via `brew install tectonic` or use a TeX Live "
-            "distribution to enable this stage)"
-        )
-        return
     if not pdf.exists():
-        res.warned(
-            f"{builder} is installed but main.pdf is missing — "
-            "subagent did not build it"
-        )
-        return
-    res.passed(f"main.pdf present ({pdf.stat().st_size} bytes), builder={builder}")
+        tectonic, reason = _ensure_tectonic(allow_fetch=allow_fetch)
+        if tectonic is None:
+            res.warned(
+                f"main.pdf missing and tectonic unavailable: {reason} — "
+                "source-level checks still validate"
+            )
+            return
+        print(f"  building with {tectonic}")
+        ok, msg = _build_pdf(tectonic, WORKDIR)
+        if not ok:
+            res.failed(f"build failed: {msg}")
+            return
+        res.passed(f"built main.pdf with {tectonic.name}")
+    else:
+        res.passed(f"main.pdf present ({pdf.stat().st_size} bytes)")
     pages = _pdf_page_count(pdf)
     if pages is None:
-        res.warned("could not determine page count")
+        res.warned("could not determine page count from PDF structure")
         return
     lo, hi = TARGET_PAGES - PAGE_TOLERANCE, TARGET_PAGES + PAGE_TOLERANCE
     if lo <= pages <= hi:
@@ -299,22 +393,31 @@ def _check_build(res: CheckResult) -> None:
 
 
 def _pdf_page_count(pdf: Path) -> int | None:
-    for cmd in (["pdfinfo", str(pdf)], ["mdls", "-name", "kMDItemNumberOfPages", str(pdf)]):
-        try:
-            out = subprocess.check_output(cmd, text=True, stderr=subprocess.DEVNULL)
-        except (FileNotFoundError, subprocess.CalledProcessError):
-            continue
-        m = re.search(r"(?:Pages|kMDItemNumberOfPages\s*=)\s*(\d+)", out)
-        if m:
-            return int(m.group(1))
+    # Pure-Python parse: the catalog's /Pages dict has /Type /Pages /Count N.
+    # In modern (PDF 1.5+) outputs from tectonic the catalog lives inside a
+    # compressed object stream, so we decompress every Flate stream first.
     try:
         data = pdf.read_bytes()
-        return len(re.findall(rb"/Type\s*/Page[^s]", data))
     except OSError:
         return None
+    for m in re.finditer(rb"stream\r?\n(.*?)\r?\nendstream", data, re.DOTALL):
+        try:
+            decompressed = zlib.decompress(m.group(1))
+        except zlib.error:
+            continue
+        for t in re.finditer(rb"/Type\s*/Pages\b", decompressed):
+            cm = re.search(rb"/Count\s+(\d+)", decompressed[t.start():t.start() + 300])
+            if cm:
+                return int(cm.group(1))
+    # Fallback for uncompressed PDFs (older producers).
+    for t in re.finditer(rb"/Type\s*/Pages\b", data):
+        cm = re.search(rb"/Count\s+(\d+)", data[t.start():t.start() + 300])
+        if cm:
+            return int(cm.group(1))
+    return None
 
 
-def cmd_check() -> int:
+def cmd_check(allow_fetch: bool) -> int:
     if not WORKDIR.exists():
         print(f"FAIL  workdir missing: {WORKDIR}")
         print("Run `python validate_paper.py --prepare` first.")
@@ -327,7 +430,7 @@ def cmd_check() -> int:
         _check_bib(res, bib)
         _check_cite_consistency(res, tex, bib)
         _check_headline(res, tex)
-        _check_build(res)
+        _check_build(res, allow_fetch=allow_fetch)
 
     _section("Summary")
     print(f"  {len(res.passes)} PASS, {len(res.fails)} FAIL, {len(res.warns)} WARN")
@@ -351,10 +454,19 @@ def main() -> int:
         action="store_true",
         help="wipe + recreate the workdir and emit PROMPT.md, then exit",
     )
+    p.add_argument(
+        "--fetch-tectonic",
+        action="store_true",
+        help=(
+            "if tectonic is not on PATH or in the local cache, download the "
+            f"{TECTONIC_VERSION} binary (~50 MB) to {TECTONIC_CACHE} and use it "
+            "to build the PDF"
+        ),
+    )
     args = p.parse_args()
     if args.prepare:
         return cmd_prepare()
-    return cmd_check()
+    return cmd_check(allow_fetch=args.fetch_tectonic)
 
 
 if __name__ == "__main__":
