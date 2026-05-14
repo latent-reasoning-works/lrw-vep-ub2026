@@ -29,6 +29,7 @@ contract. This file is the notebook-specific orientation.
 | Pinned env for local + Colab attendees | `pyproject.toml` + `uv.lock` (uv-native: `uv sync`); `requirements-workshop.txt` (pip path; same floors). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
 | Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
 | Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and the PDF page count. Ships its own LaTeX renderer: tectonic from PATH, then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to auto-download. The "does the prompt → paper edit half of the workshop story work" check. |
+| Literal-notebook smoke test | `validate_notebook.py` — executes every code cell in `01_workshop_followalong.ipynb` via nbconvert's `ExecutePreprocessor` and reports per-cell PASS/FAIL. Catches a different class of bugs from `validate.py`: a typo in `s3-distributions`, a stale import in `s2-visualize`, a `plt.show()` glitch under the non-interactive backend. Numbers come from `validate.py`; this is the "cells don't explode" check. ~20 s when the s3 cache short-circuit fires; ~4 min cold. |
 
 ## Running the notebook locally
 
@@ -74,6 +75,15 @@ Full mode adds:
 When the validator fails, the per-check FAIL lines name the diverging value and the tolerance. Common causes are listed in the failure footer (wrong `transformers` version, stale cache, cross-device numerical drift).
 
 **Use this when:** verifying your local install before the workshop; debugging a divergent number on someone else's machine; confirming a fix didn't break the headline numbers.
+
+`validate_notebook.py` is the third validator — it executes every code cell in `01_workshop_followalong.ipynb` via `nbconvert.ExecutePreprocessor` and reports per-cell PASS/FAIL. Catches cell-level bugs (typo, broken import, plot backend glitch) that `validate.py` doesn't see because `validate.py` calls the primitives directly, not the cells.
+
+```bash
+cd experiments/notebooks
+uv run python validate_notebook.py     # ~20 s when the s3 cache short-circuit fires
+```
+
+15 code cells span S1 → S3 (S4 is markdown-only handoff prompts; no execution). The script exits non-zero on any cell error and prints the failing cell's id, first line, and traceback ename/evalue.
 
 `validate_paper.py` is the matching check for the other half of the workshop story: prompt → biological result is covered by `validate.py`; prompt → paper edit is covered here. Two-phase:
 
