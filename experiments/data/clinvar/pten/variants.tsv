@@ -1,0 +1,1001 @@
+variation_id	gene_symbol	label	clinical_significance	review_status	chromosome	start	stop	variant_type	name	uniprot	wt_aa	position	alt_aa
+484600	PTEN	1	Pathogenic	reviewed by expert panel	10	87864470	87864470	single nucleotide variant	NM_000314.8(PTEN):c.1A>G (p.Met1Val)	P60484	M	1	V
+1704153	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87864479	87864479	single nucleotide variant	NM_000314.8(PTEN):c.10A>G (p.Ile4Val)	P60484	I	4	V
+644390	PTEN	1	Pathogenic	reviewed by expert panel	10	87864485	87864485	single nucleotide variant	NM_000314.8(PTEN):c.16A>G (p.Lys6Glu)	P60484	K	6	E
+3236456	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87864498	87864498	single nucleotide variant	NM_000314.8(PTEN):c.29G>C (p.Ser10Thr)	P60484	S	10	T
+1320976	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87864504	87864504	single nucleotide variant	NM_000314.8(PTEN):c.35A>G (p.Asn12Ser)	P60484	N	12	S
+427589	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87864509	87864509	single nucleotide variant	NM_000314.8(PTEN):c.40A>G (p.Arg14Gly)	P60484	R	14	G
+404147	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87864513	87864513	single nucleotide variant	NM_000314.8(PTEN):c.44G>A (p.Arg15Lys)	P60484	R	15	K
+428243	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87864513	87864513	single nucleotide variant	NM_000314.8(PTEN):c.44G>C (p.Arg15Thr)	P60484	R	15	T
+428195	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87864515	87864515	single nucleotide variant	NM_000314.8(PTEN):c.46T>C (p.Tyr16His)	P60484	Y	16	H
+428266	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87864528	87864528	single nucleotide variant	NM_000314.8(PTEN):c.59G>T (p.Gly20Val)	P60484	G	20	V
+233456	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87864533	87864533	single nucleotide variant	NM_000314.8(PTEN):c.64G>C (p.Asp22His)	P60484	D	22	H
+234830	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87864536	87864536	single nucleotide variant	NM_000314.8(PTEN):c.67T>G (p.Leu23Val)	P60484	L	23	V
+186005	PTEN	1	Pathogenic	reviewed by expert panel	10	87864539	87864539	single nucleotide variant	NM_000314.8(PTEN):c.70G>C (p.Asp24His)	P60484	D	24	H
+280724	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87894025	87894025	single nucleotide variant	NM_000314.8(PTEN):c.80A>C (p.Tyr27Ser)	P60484	Y	27	S
+404160	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87894025	87894025	single nucleotide variant	NM_000314.8(PTEN):c.80A>G (p.Tyr27Cys)	P60484	Y	27	C
+943637	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87894036	87894036	single nucleotide variant	NM_000314.8(PTEN):c.91A>G (p.Asn31Asp)	P60484	N	31	D
+536543	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87894043	87894043	single nucleotide variant	NM_000314.8(PTEN):c.98T>C (p.Ile33Thr)	P60484	I	33	T
+822002	PTEN	1	Pathogenic	reviewed by expert panel	10	87894045	87894045	single nucleotide variant	NM_000314.8(PTEN):c.100G>C (p.Ala34Pro)	P60484	A	34	P
+231916	PTEN	1	Pathogenic	reviewed by expert panel	10	87894048	87894048	single nucleotide variant	NM_000314.8(PTEN):c.103A>G (p.Met35Val)	P60484	M	35	V
+7825	PTEN	1	Pathogenic	reviewed by expert panel	10	87894049	87894049	single nucleotide variant	NM_000314.8(PTEN):c.104T>G (p.Met35Arg)	P60484	M	35	R
+536558	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87894050	87894050	single nucleotide variant	NM_000314.8(PTEN):c.105G>A (p.Met35Ile)	P60484	M	35	I
+189400	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87894051	87894051	single nucleotide variant	NM_000314.8(PTEN):c.106G>C (p.Gly36Arg)	P60484	G	36	R
+1334551	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87894051	87894051	single nucleotide variant	NM_000314.8(PTEN):c.106G>A (p.Gly36Arg)	P60484	G	36	R
+486972	PTEN	1	Pathogenic	reviewed by expert panel	10	87894052	87894052	single nucleotide variant	NM_000314.8(PTEN):c.107G>A (p.Gly36Glu)	P60484	G	36	E
+127688	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87894057	87894057	single nucleotide variant	NM_000314.8(PTEN):c.112C>T (p.Pro38Ser)	P60484	P	38	S
+818421	PTEN	1	Pathogenic	reviewed by expert panel	10	87894058	87894058	single nucleotide variant	NM_000314.8(PTEN):c.113C>T (p.Pro38Leu)	P60484	P	38	L
+189401	PTEN	1	Pathogenic	reviewed by expert panel	10	87894084	87894084	single nucleotide variant	NM_000314.8(PTEN):c.139A>G (p.Arg47Gly)	P60484	R	47	G
+373446	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87894085	87894085	single nucleotide variant	NM_000314.8(PTEN):c.140G>A (p.Arg47Lys)	P60484	R	47	K
+492727	PTEN	1	Pathogenic	reviewed by expert panel	10	87894094	87894094	single nucleotide variant	NM_000314.8(PTEN):c.149T>C (p.Ile50Thr)	P60484	I	50	T
+185713	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87925518	87925518	single nucleotide variant	NM_000314.8(PTEN):c.170T>G (p.Leu57Trp)	P60484	L	57	W
+7841	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87925529	87925529	single nucleotide variant	NM_000314.8(PTEN):c.181C>G (p.His61Asp)	P60484	H	61	D
+189402	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87925530	87925530	single nucleotide variant	NM_000314.8(PTEN):c.182A>G (p.His61Arg)	P60484	H	61	R
+1691744	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87925546	87925546	single nucleotide variant	NM_000314.8(PTEN):c.198G>T (p.Lys66Asn)	P60484	K	66	N
+7826	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87925557	87925557	single nucleotide variant	NM_000314.8(PTEN):c.209T>C (p.Leu70Pro)	P60484	L	70	P
+936561	PTEN	1	Pathogenic	reviewed by expert panel	10	87931048	87931048	single nucleotide variant	NM_000314.8(PTEN):c.212G>A (p.Cys71Tyr)	P60484	C	71	Y
+41682	PTEN	0	Likely benign	reviewed by expert panel	10	87931071	87931071	single nucleotide variant	NM_000314.8(PTEN):c.235G>A (p.Ala79Thr)	P60484	A	79	T
+7848	PTEN	1	Pathogenic	reviewed by expert panel	10	87933037	87933037	single nucleotide variant	NM_000314.8(PTEN):c.278A>G (p.His93Arg)	P60484	H	93	R
+468680	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933037	87933037	single nucleotide variant	NM_000314.8(PTEN):c.278A>C (p.His93Pro)	P60484	H	93	P
+428204	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933042	87933042	single nucleotide variant	NM_000314.8(PTEN):c.283C>A (p.Pro95Thr)	P60484	P	95	T
+189403	PTEN	1	Pathogenic	reviewed by expert panel	10	87933043	87933043	single nucleotide variant	NM_000314.8(PTEN):c.284C>T (p.Pro95Leu)	P60484	P	95	L
+449089	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933046	87933046	single nucleotide variant	NM_000314.8(PTEN):c.287C>T (p.Pro96Leu)	P60484	P	96	L
+186427	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933063	87933063	single nucleotide variant	NM_000314.8(PTEN):c.304A>C (p.Lys102Gln)	P60484	K	102	Q
+142261	PTEN	1	Pathogenic	reviewed by expert panel	10	87933073	87933073	single nucleotide variant	NM_000314.8(PTEN):c.314G>A (p.Cys105Tyr)	P60484	C	105	Y
+484614	PTEN	1	Pathogenic	reviewed by expert panel	10	87933078	87933078	single nucleotide variant	NM_000314.8(PTEN):c.319G>T (p.Asp107Tyr)	P60484	D	107	Y
+372481	PTEN	1	Pathogenic	reviewed by expert panel	10	87933079	87933079	single nucleotide variant	NM_000314.8(PTEN):c.320A>T (p.Asp107Val)	P60484	D	107	V
+92820	PTEN	1	Pathogenic	reviewed by expert panel	10	87933090	87933090	single nucleotide variant	NM_000314.8(PTEN):c.331T>C (p.Trp111Arg)	P60484	W	111	R
+1406308	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933093	87933093	single nucleotide variant	NM_000314.8(PTEN):c.334C>G (p.Leu112Val)	P60484	L	112	V
+139567	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933097	87933097	single nucleotide variant	NM_000314.8(PTEN):c.338G>T (p.Ser113Ile)	P60484	S	113	I
+224542	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933103	87933103	single nucleotide variant	NM_000314.8(PTEN):c.344A>G (p.Asp115Gly)	P60484	D	115	G
+428193	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933114	87933114	single nucleotide variant	NM_000314.8(PTEN):c.355G>T (p.Val119Phe)	P60484	V	119	F
+3256748	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933115	87933115	single nucleotide variant	NM_000314.8(PTEN):c.356T>C (p.Val119Ala)	P60484	V	119	A
+428222	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933118	87933118	single nucleotide variant	NM_000314.8(PTEN):c.359C>A (p.Ala120Glu)	P60484	A	120	E
+186161	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933123	87933123	single nucleotide variant	NM_000314.8(PTEN):c.364A>G (p.Ile122Val)	P60484	I	122	V
+428277	PTEN	1	Pathogenic	reviewed by expert panel	10	87933126	87933126	single nucleotide variant	NM_000314.8(PTEN):c.367C>G (p.His123Asp)	P60484	H	123	D
+7816	PTEN	1	Pathogenic	reviewed by expert panel	10	87933127	87933127	single nucleotide variant	NM_000314.8(PTEN):c.368A>G (p.His123Arg)	P60484	H	123	R
+7817	PTEN	1	Pathogenic	reviewed by expert panel	10	87933129	87933129	single nucleotide variant	NM_000314.8(PTEN):c.370T>C (p.Cys124Arg)	P60484	C	124	R
+1338262	PTEN	1	Pathogenic	reviewed by expert panel	10	87933132	87933132	single nucleotide variant	NM_000314.8(PTEN):c.373A>G (p.Lys125Glu)	P60484	K	125	E
+375958	PTEN	1	Pathogenic	reviewed by expert panel	10	87933147	87933147	single nucleotide variant	NM_000314.8(PTEN):c.388C>G (p.Arg130Gly)	P60484	R	130	G
+7829	PTEN	1	Pathogenic	reviewed by expert panel	10	87933148	87933148	single nucleotide variant	NM_000314.8(PTEN):c.389G>A (p.Arg130Gln)	P60484	R	130	Q
+142018	PTEN	1	Pathogenic	reviewed by expert panel	10	87933148	87933148	single nucleotide variant	NM_000314.8(PTEN):c.389G>C (p.Arg130Pro)	P60484	R	130	P
+39669	PTEN	1	Pathogenic	reviewed by expert panel	10	87933151	87933151	single nucleotide variant	NM_000314.8(PTEN):c.392C>T (p.Thr131Ile)	P60484	T	131	I
+92822	PTEN	1	Pathogenic	reviewed by expert panel	10	87933154	87933154	single nucleotide variant	NM_000314.8(PTEN):c.395G>A (p.Gly132Asp)	P60484	G	132	D
+619908	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933161	87933161	single nucleotide variant	NM_000314.8(PTEN):c.402G>C (p.Met134Ile)	P60484	M	134	I
+1010008	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933163	87933163	single nucleotide variant	NM_000314.8(PTEN):c.404T>C (p.Ile135Thr)	P60484	I	135	T
+189406	PTEN	1	Pathogenic	reviewed by expert panel	10	87933166	87933166	single nucleotide variant	NM_000314.8(PTEN):c.407G>A (p.Cys136Tyr)	P60484	C	136	Y
+224543	PTEN	1	Pathogenic	reviewed by expert panel	10	87933167	87933167	single nucleotide variant	NM_000314.8(PTEN):c.408T>G (p.Cys136Trp)	P60484	C	136	W
+216422	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933181	87933181	single nucleotide variant	NM_000314.8(PTEN):c.422A>C (p.His141Pro)	P60484	H	141	P
+197662	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87933183	87933183	single nucleotide variant	NM_000314.8(PTEN):c.424C>T (p.Arg142Trp)	P60484	R	142	W
+404168	PTEN	1	Pathogenic	reviewed by expert panel	10	87933223	87933223	single nucleotide variant	NM_000314.8(PTEN):c.464A>G (p.Tyr155Cys)	P60484	Y	155	C
+646006	PTEN	1	Pathogenic	reviewed by expert panel	10	87933235	87933235	single nucleotide variant	NM_000314.8(PTEN):c.476G>A (p.Arg159Lys)	P60484	R	159	K
+375959	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87933236	87933236	single nucleotide variant	NM_000314.8(PTEN):c.477G>T (p.Arg159Ser)	P60484	R	159	S
+428256	PTEN	1	Pathogenic	reviewed by expert panel	10	87952118	87952118	single nucleotide variant	NM_000314.8(PTEN):c.493G>A (p.Gly165Arg)	P60484	G	165	R
+39668	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952125	87952125	single nucleotide variant	NM_000314.8(PTEN):c.500C>A (p.Thr167Asn)	P60484	T	167	N
+7815	PTEN	1	Pathogenic	reviewed by expert panel	10	87952135	87952135	single nucleotide variant	NM_000314.8(PTEN):c.510T>A (p.Ser170Arg)	P60484	S	170	R
+844941	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952136	87952136	single nucleotide variant	NM_000314.8(PTEN):c.511C>G (p.Gln171Glu)	P60484	Q	171	E
+189412	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952137	87952137	single nucleotide variant	NM_000314.8(PTEN):c.512A>G (p.Gln171Arg)	P60484	Q	171	R
+189500	PTEN	1	Pathogenic	reviewed by expert panel	10	87952142	87952142	single nucleotide variant	NM_000314.8(PTEN):c.517C>T (p.Arg173Cys)	P60484	R	173	C
+142220	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952145	87952145	single nucleotide variant	NM_000314.8(PTEN):c.520T>A (p.Tyr174Asn)	P60484	Y	174	N
+220007	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952146	87952146	single nucleotide variant	NM_000314.8(PTEN):c.521A>G (p.Tyr174Cys)	P60484	Y	174	C
+580948	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952155	87952155	single nucleotide variant	NM_000314.8(PTEN):c.530A>G (p.Tyr177Cys)	P60484	Y	177	C
+825730	PTEN	1	Pathogenic	reviewed by expert panel	10	87952167	87952167	single nucleotide variant	NM_000314.8(PTEN):c.542T>C (p.Leu181Pro)	P60484	L	181	P
+187827	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87952170	87952170	single nucleotide variant	NM_000314.8(PTEN):c.545T>C (p.Leu182Ser)	P60484	L	182	S
+189414	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87952224	87952224	single nucleotide variant	NM_000314.8(PTEN):c.599T>C (p.Phe200Ser)	P60484	F	200	S
+189415	PTEN	1	Pathogenic	reviewed by expert panel	10	87952235	87952235	single nucleotide variant	NM_000314.8(PTEN):c.610C>G (p.Pro204Ala)	P60484	P	204	A
+279878	PTEN	1	Pathogenic	reviewed by expert panel	10	87952258	87952258	single nucleotide variant	NM_000314.8(PTEN):c.633C>G (p.Cys211Trp)	P60484	C	211	W
+141771	PTEN	0	Likely benign	reviewed by expert panel	10	87957903	87957903	single nucleotide variant	NM_000314.8(PTEN):c.685T>A (p.Ser229Thr)	P60484	S	229	T
+376510	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87957916	87957916	single nucleotide variant	NM_000314.8(PTEN):c.698G>A (p.Arg233Gln)	P60484	R	233	Q
+184844	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87957918	87957918	single nucleotide variant	NM_000314.8(PTEN):c.700C>T (p.Arg234Trp)	P60484	R	234	W
+7840	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87957919	87957919	single nucleotide variant	NM_000314.8(PTEN):c.701G>A (p.Arg234Gln)	P60484	R	234	Q
+184878	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87957933	87957933	single nucleotide variant	NM_000314.8(PTEN):c.715A>G (p.Met239Val)	P60484	M	239	V
+7850	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87957940	87957940	single nucleotide variant	NM_000314.8(PTEN):c.722T>C (p.Phe241Ser)	P60484	F	241	S
+142269	PTEN	1	Pathogenic	reviewed by expert panel	10	87957955	87957955	single nucleotide variant	NM_000314.8(PTEN):c.737C>T (p.Pro246Leu)	P60484	P	246	L
+223142	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87957958	87957958	single nucleotide variant	NM_000314.8(PTEN):c.740T>C (p.Leu247Ser)	P60484	L	247	S
+536548	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87957970	87957970	single nucleotide variant	NM_000314.8(PTEN):c.752G>T (p.Gly251Val)	P60484	G	251	V
+7849	PTEN	1	Pathogenic	reviewed by expert panel	10	87957973	87957973	single nucleotide variant	NM_000314.8(PTEN):c.755A>G (p.Asp252Gly)	P60484	D	252	G
+536549	PTEN	1	Pathogenic	reviewed by expert panel	10	87958019	87958019	single nucleotide variant	NM_000314.8(PTEN):c.801G>T (p.Lys267Asn)	P60484	K	267	N
+184277	PTEN	1	Pathogenic	reviewed by expert panel	10	87960922	87960922	single nucleotide variant	NM_000314.8(PTEN):c.830C>T (p.Thr277Ile)	P60484	T	277	I
+428268	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87960922	87960922	single nucleotide variant	NM_000314.8(PTEN):c.830C>G (p.Thr277Arg)	P60484	T	277	R
+468719	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87960930	87960930	single nucleotide variant	NM_000314.8(PTEN):c.838A>G (p.Ile280Val)	P60484	I	280	V
+184466	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87960933	87960933	single nucleotide variant	NM_000314.8(PTEN):c.841C>G (p.Pro281Ala)	P60484	P	281	A
+127693	PTEN	0	Likely benign	reviewed by expert panel	10	87960974	87960974	single nucleotide variant	NM_000314.8(PTEN):c.882T>G (p.Ser294Arg)	P60484	S	294	R
+127695	PTEN	0	Likely benign	reviewed by expert panel	10	87960984	87960984	single nucleotide variant	NM_000314.8(PTEN):c.892C>G (p.Gln298Glu)	P60484	Q	298	E
+127696	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87961006	87961006	single nucleotide variant	NM_000314.8(PTEN):c.914G>A (p.Ser305Asn)	P60484	S	305	N
+418653	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87961039	87961039	single nucleotide variant	NM_000314.8(PTEN):c.947T>C (p.Leu316Pro)	P60484	L	316	P
+1043063	PTEN	1	Likely pathogenic	reviewed by expert panel	10	87961051	87961051	single nucleotide variant	NM_000314.8(PTEN):c.959T>C (p.Leu320Ser)	P60484	L	320	S
+427580	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87961096	87961096	single nucleotide variant	NM_000314.8(PTEN):c.1004G>A (p.Arg335Gln)	P60484	R	335	Q
+495806	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87961113	87961113	single nucleotide variant	NM_000314.8(PTEN):c.1021T>G (p.Phe341Val)	P60484	F	341	V
+484605	PTEN	1	Pathogenic	reviewed by expert panel	10	87965294	87965294	single nucleotide variant	NM_000314.8(PTEN):c.1034T>C (p.Leu345Pro)	P60484	L	345	P
+142212	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87965321	87965321	single nucleotide variant	NM_000314.8(PTEN):c.1061C>T (p.Pro354Leu)	P60484	P	354	L
+143020	PTEN	0	Likely benign	reviewed by expert panel	10	87965321	87965321	single nucleotide variant	NM_000314.8(PTEN):c.1061C>A (p.Pro354Gln)	P60484	P	354	Q
+140777	PTEN	0	Likely benign	reviewed by expert panel	10	87965338	87965338	single nucleotide variant	NM_000314.8(PTEN):c.1078A>G (p.Ser360Gly)	P60484	S	360	G
+237639	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87965353	87965353	single nucleotide variant	NM_000314.8(PTEN):c.1093G>A (p.Val365Ile)	P60484	V	365	I
+142088	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87965365	87965365	single nucleotide variant	NM_000314.8(PTEN):c.1105G>A (p.Val369Ile)	P60484	V	369	I
+187673	PTEN	-1	Uncertain significance	reviewed by expert panel	10	87965431	87965431	single nucleotide variant	NM_000314.8(PTEN):c.1171C>T (p.Pro391Ser)	P60484	P	391	S
+2674279	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864471	87864471	single nucleotide variant	NM_000314.8(PTEN):c.2T>G (p.Met1Arg)	P60484	M	1	R
+827381	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864476	87864476	single nucleotide variant	NM_000314.8(PTEN):c.7G>A (p.Ala3Thr)	P60484	A	3	T
+629265	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864477	87864477	single nucleotide variant	NM_000314.8(PTEN):c.8C>T (p.Ala3Val)	P60484	A	3	V
+1420594	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864480	87864480	single nucleotide variant	NM_000314.8(PTEN):c.11T>C (p.Ile4Thr)	P60484	I	4	T
+1447678	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864483	87864483	single nucleotide variant	NM_000314.8(PTEN):c.14T>A (p.Ile5Asn)	P60484	I	5	N
+3254879	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864483	87864483	single nucleotide variant	NM_000314.8(PTEN):c.14T>C (p.Ile5Thr)	P60484	I	5	T
+1780350	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864486	87864486	single nucleotide variant	NM_000314.8(PTEN):c.17A>G (p.Lys6Arg)	P60484	K	6	R
+3387544	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864486	87864486	single nucleotide variant	NM_000314.8(PTEN):c.17A>C (p.Lys6Thr)	P60484	K	6	T
+536560	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864490	87864490	single nucleotide variant	NM_000314.8(PTEN):c.21G>C (p.Glu7Asp)	P60484	E	7	D
+484601	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864503	87864503	single nucleotide variant	NM_000314.8(PTEN):c.34A>G (p.Asn12Asp)	P60484	N	12	D
+1473634	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864503	87864503	single nucleotide variant	NM_000314.8(PTEN):c.34A>C (p.Asn12His)	P60484	N	12	H
+988004	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864506	87864506	single nucleotide variant	NM_000314.8(PTEN):c.37A>G (p.Lys13Glu)	P60484	K	13	E
+1736845	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864508	87864508	single nucleotide variant	NM_000314.8(PTEN):c.39A>C (p.Lys13Asn)	P60484	K	13	N
+852741	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864510	87864510	single nucleotide variant	NM_000314.8(PTEN):c.41G>C (p.Arg14Thr)	P60484	R	14	T
+419769	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864514	87864514	single nucleotide variant	NM_000314.8(PTEN):c.45A>T (p.Arg15Ser)	P60484	R	15	S
+428194	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864514	87864514	single nucleotide variant	NM_000314.8(PTEN):c.45A>C (p.Arg15Ser)	P60484	R	15	S
+422899	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864515	87864515	single nucleotide variant	NM_000314.8(PTEN):c.46T>G (p.Tyr16Asp)	P60484	Y	16	D
+850232	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864523	87864523	single nucleotide variant	NM_000314.8(PTEN):c.54G>T (p.Glu18Asp)	P60484	E	18	D
+7837	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864524	87864524	single nucleotide variant	NM_000314.8(PTEN):c.55G>A (p.Asp19Asn)	P60484	D	19	N
+492333	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864525	87864525	single nucleotide variant	NM_000314.8(PTEN):c.56A>G (p.Asp19Gly)	P60484	D	19	G
+422740	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864528	87864528	single nucleotide variant	NM_000314.8(PTEN):c.59G>A (p.Gly20Glu)	P60484	G	20	E
+1333229	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864535	87864535	single nucleotide variant	NM_000314.8(PTEN):c.66C>G (p.Asp22Glu)	P60484	D	22	E
+185200	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87864539	87864539	single nucleotide variant	NM_000314.8(PTEN):c.70G>A (p.Asp24Asn)	P60484	D	24	N
+189398	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87864539	87864539	single nucleotide variant	NM_000314.8(PTEN):c.70G>T (p.Asp24Tyr)	P60484	D	24	Y
+208723	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864540	87864540	single nucleotide variant	NM_000314.8(PTEN):c.71A>G (p.Asp24Gly)	P60484	D	24	G
+1511392	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864540	87864540	single nucleotide variant	NM_000314.8(PTEN):c.71A>T (p.Asp24Val)	P60484	D	24	V
+482071	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864541	87864541	single nucleotide variant	NM_000314.8(PTEN):c.72C>G (p.Asp24Glu)	P60484	D	24	E
+92826	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87864542	87864542	single nucleotide variant	NM_000314.8(PTEN):c.73T>G (p.Leu25Val)	P60484	L	25	V
+1068214	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87864544	87864544	single nucleotide variant	NM_000314.8(PTEN):c.75G>C (p.Leu25Phe)	P60484	L	25	F
+234410	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87864545	87864545	single nucleotide variant	NM_000314.8(PTEN):c.76A>C (p.Thr26Pro)	P60484	T	26	P
+189399	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864546	87864546	single nucleotide variant	NM_000314.8(PTEN):c.77C>T (p.Thr26Ile)	P60484	T	26	I
+949068	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864546	87864546	single nucleotide variant	NM_000314.8(PTEN):c.77C>A (p.Thr26Asn)	P60484	T	26	N
+2735432	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87864548	87864548	single nucleotide variant	NM_000314.8(PTEN):c.79T>A (p.Tyr27Asn)	P60484	Y	27	N
+864251	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894027	87894027	single nucleotide variant	NM_000314.8(PTEN):c.82A>G (p.Ile28Val)	P60484	I	28	V
+2567270	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894033	87894033	single nucleotide variant	NM_000314.8(PTEN):c.88C>G (p.Pro30Ala)	P60484	P	30	A
+822881	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894034	87894034	single nucleotide variant	NM_000314.8(PTEN):c.89C>G (p.Pro30Arg)	P60484	P	30	R
+1052223	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894034	87894034	single nucleotide variant	NM_000314.8(PTEN):c.89C>T (p.Pro30Leu)	P60484	P	30	L
+1958206	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894039	87894039	single nucleotide variant	NM_000314.8(PTEN):c.94A>G (p.Ile32Val)	P60484	I	32	V
+373288	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894040	87894040	single nucleotide variant	NM_000314.8(PTEN):c.95T>C (p.Ile32Thr)	P60484	I	32	T
+3071692	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894041	87894041	single nucleotide variant	NM_000314.8(PTEN):c.96T>G (p.Ile32Met)	P60484	I	32	M
+492726	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894046	87894046	single nucleotide variant	NM_000314.8(PTEN):c.101C>T (p.Ala34Val)	P60484	A	34	V
+428244	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87894049	87894049	single nucleotide variant	NM_000314.8(PTEN):c.104T>C (p.Met35Thr)	P60484	M	35	T
+195061	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894067	87894067	single nucleotide variant	NM_000314.8(PTEN):c.122G>T (p.Arg41Ile)	P60484	R	41	I
+2123059	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894067	87894067	single nucleotide variant	NM_000314.8(PTEN):c.122G>A (p.Arg41Lys)	P60484	R	41	K
+484604	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894075	87894075	single nucleotide variant	NM_000314.8(PTEN):c.130G>A (p.Gly44Ser)	P60484	G	44	S
+427582	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87894076	87894076	single nucleotide variant	NM_000314.8(PTEN):c.131G>A (p.Gly44Asp)	P60484	G	44	D
+918670	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894087	87894087	single nucleotide variant	NM_000314.8(PTEN):c.142A>G (p.Asn48Asp)	P60484	N	48	D
+1379224	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87894088	87894088	single nucleotide variant	NM_000314.8(PTEN):c.143A>G (p.Asn48Ser)	P60484	N	48	S
+231771	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87894089	87894089	single nucleotide variant	NM_000314.8(PTEN):c.144C>G (p.Asn48Lys)	P60484	N	48	K
+580731	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87894089	87894089	single nucleotide variant	NM_000314.8(PTEN):c.144C>A (p.Asn48Lys)	P60484	N	48	K
+480377	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894091	87894091	single nucleotide variant	NM_000314.8(PTEN):c.146A>G (p.Asn49Ser)	P60484	N	49	S
+2502625	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894101	87894101	single nucleotide variant	NM_000314.8(PTEN):c.156T>G (p.Asp52Glu)	P60484	D	52	E
+186980	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894103	87894103	single nucleotide variant	NM_000314.8(PTEN):c.158T>A (p.Val53Glu)	P60484	V	53	E
+2567281	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87894108	87894108	single nucleotide variant	NM_000314.8(PTEN):c.163A>G (p.Arg55Gly)	P60484	R	55	G
+811083	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925514	87925514	single nucleotide variant	NM_000314.8(PTEN):c.166T>A (p.Phe56Ile)	P60484	F	56	I
+924880	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925514	87925514	single nucleotide variant	NM_000314.8(PTEN):c.166T>G (p.Phe56Val)	P60484	F	56	V
+1056826	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925515	87925515	single nucleotide variant	NM_000314.8(PTEN):c.167T>G (p.Phe56Cys)	P60484	F	56	C
+1318778	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925517	87925517	single nucleotide variant	NM_000314.8(PTEN):c.169T>G (p.Leu57Val)	P60484	L	57	V
+468672	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925520	87925520	single nucleotide variant	NM_000314.8(PTEN):c.172G>A (p.Asp58Asn)	P60484	D	58	N
+630185	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925532	87925532	single nucleotide variant	NM_000314.8(PTEN):c.184A>G (p.Lys62Glu)	P60484	K	62	E
+570232	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925534	87925534	single nucleotide variant	NM_000314.8(PTEN):c.186A>C (p.Lys62Asn)	P60484	K	62	N
+141154	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925538	87925538	single nucleotide variant	NM_000314.8(PTEN):c.190C>T (p.His64Tyr)	P60484	H	64	Y
+820340	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925539	87925539	single nucleotide variant	NM_000314.8(PTEN):c.191A>G (p.His64Arg)	P60484	H	64	R
+2574362	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87925539	87925539	single nucleotide variant	NM_000314.8(PTEN):c.191A>C (p.His64Pro)	P60484	H	64	P
+2754588	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925549	87925549	single nucleotide variant	NM_000314.8(PTEN):c.201A>G (p.Ile67Met)	P60484	I	67	M
+189474	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87925550	87925550	single nucleotide variant	NM_000314.8(PTEN):c.202T>C (p.Tyr68His)	P60484	Y	68	H
+536540	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87925550	87925550	single nucleotide variant	NM_000314.8(PTEN):c.202T>G (p.Tyr68Asp)	P60484	Y	68	D
+233777	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87925551	87925551	single nucleotide variant	NM_000314.8(PTEN):c.203A>G (p.Tyr68Cys)	P60484	Y	68	C
+196250	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87925556	87925556	single nucleotide variant	NM_000314.8(PTEN):c.208C>T (p.Leu70Phe)	P60484	L	70	F
+2118663	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87931056	87931056	single nucleotide variant	NM_000314.8(PTEN):c.220A>G (p.Arg74Gly)	P60484	R	74	G
+1788388	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87931060	87931060	single nucleotide variant	NM_000314.8(PTEN):c.224A>G (p.His75Arg)	P60484	H	75	R
+1355461	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87931062	87931062	single nucleotide variant	NM_000314.8(PTEN):c.226T>C (p.Tyr76His)	P60484	Y	76	H
+1210590	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87931063	87931063	single nucleotide variant	NM_000314.8(PTEN):c.227A>G (p.Tyr76Cys)	P60484	Y	76	C
+3075547	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87931066	87931066	single nucleotide variant	NM_000314.8(PTEN):c.230A>G (p.Asp77Gly)	P60484	D	77	G
+628968	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87931078	87931078	single nucleotide variant	NM_000314.8(PTEN):c.242T>A (p.Phe81Tyr)	P60484	F	81	Y
+428239	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933013	87933013	single nucleotide variant	NM_000314.8(PTEN):c.254T>G (p.Val85Gly)	P60484	V	85	G
+1330063	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933025	87933025	single nucleotide variant	NM_000314.8(PTEN):c.266C>G (p.Pro89Arg)	P60484	P	89	R
+976246	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933028	87933028	single nucleotide variant	NM_000314.8(PTEN):c.269T>C (p.Phe90Ser)	P60484	F	90	S
+821745	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933032	87933032	single nucleotide variant	NM_000314.8(PTEN):c.273A>C (p.Glu91Asp)	P60484	E	91	D
+468679	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933033	87933033	single nucleotide variant	NM_000314.8(PTEN):c.274G>T (p.Asp92Tyr)	P60484	D	92	Y
+428196	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933034	87933034	single nucleotide variant	NM_000314.8(PTEN):c.275A>C (p.Asp92Ala)	P60484	D	92	A
+565960	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933034	87933034	single nucleotide variant	NM_000314.8(PTEN):c.275A>G (p.Asp92Gly)	P60484	D	92	G
+646993	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933036	87933036	single nucleotide variant	NM_000314.8(PTEN):c.277C>T (p.His93Tyr)	P60484	H	93	Y
+2132256	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933045	87933045	single nucleotide variant	NM_000314.8(PTEN):c.286C>A (p.Pro96Thr)	P60484	P	96	T
+492730	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933046	87933046	single nucleotide variant	NM_000314.8(PTEN):c.287C>G (p.Pro96Arg)	P60484	P	96	R
+1457597	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933046	87933046	single nucleotide variant	NM_000314.8(PTEN):c.287C>A (p.Pro96Gln)	P60484	P	96	Q
+536539	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933048	87933048	single nucleotide variant	NM_000314.8(PTEN):c.289C>G (p.Gln97Glu)	P60484	Q	97	E
+404143	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933052	87933052	single nucleotide variant	NM_000314.8(PTEN):c.293T>G (p.Leu98Arg)	P60484	L	98	R
+822443	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933057	87933057	single nucleotide variant	NM_000314.8(PTEN):c.298C>G (p.Leu100Val)	P60484	L	100	V
+2774180	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933060	87933060	single nucleotide variant	NM_000314.8(PTEN):c.301A>G (p.Ile101Val)	P60484	I	101	V
+648578	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933061	87933061	single nucleotide variant	NM_000314.8(PTEN):c.302T>A (p.Ile101Asn)	P60484	I	101	N
+822660	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933061	87933061	single nucleotide variant	NM_000314.8(PTEN):c.302T>C (p.Ile101Thr)	P60484	I	101	T
+1513427	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933063	87933063	single nucleotide variant	NM_000314.8(PTEN):c.304A>G (p.Lys102Glu)	P60484	K	102	E
+404141	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933067	87933067	single nucleotide variant	NM_000314.8(PTEN):c.308C>G (p.Pro103Arg)	P60484	P	103	R
+2628372	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933072	87933072	single nucleotide variant	NM_000314.8(PTEN):c.313T>C (p.Cys105Arg)	P60484	C	105	R
+1047003	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933077	87933077	single nucleotide variant	NM_000314.8(PTEN):c.318A>T (p.Glu106Asp)	P60484	E	106	D
+418436	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933082	87933082	single nucleotide variant	NM_000314.8(PTEN):c.323T>C (p.Leu108Pro)	P60484	L	108	P
+567265	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933088	87933088	single nucleotide variant	NM_000314.8(PTEN):c.329A>G (p.Gln110Arg)	P60484	Q	110	R
+2674303	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87933094	87933094	single nucleotide variant	NM_000314.8(PTEN):c.335T>G (p.Leu112Arg)	P60484	L	112	R
+2735435	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933102	87933102	single nucleotide variant	NM_000314.8(PTEN):c.343G>A (p.Asp115Asn)	P60484	D	115	N
+3231153	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933105	87933105	single nucleotide variant	NM_000314.8(PTEN):c.346G>C (p.Asp116His)	P60484	D	116	H
+484622	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933112	87933112	single nucleotide variant	NM_000314.8(PTEN):c.353A>G (p.His118Arg)	P60484	H	118	R
+428226	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933114	87933114	single nucleotide variant	NM_000314.8(PTEN):c.355G>C (p.Val119Leu)	P60484	V	119	L
+658145	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933118	87933118	single nucleotide variant	NM_000314.8(PTEN):c.359C>T (p.Ala120Val)	P60484	A	120	V
+189486	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933126	87933126	single nucleotide variant	NM_000314.8(PTEN):c.367C>T (p.His123Tyr)	P60484	H	123	Y
+427587	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933128	87933128	single nucleotide variant	NM_000314.8(PTEN):c.369C>G (p.His123Gln)	P60484	H	123	Q
+185817	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87933129	87933129	single nucleotide variant	NM_000314.8(PTEN):c.370T>G (p.Cys124Gly)	P60484	C	124	G
+824108	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933129	87933129	single nucleotide variant	NM_000314.8(PTEN):c.370T>A (p.Cys124Ser)	P60484	C	124	S
+233631	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933130	87933130	single nucleotide variant	NM_000314.8(PTEN):c.371G>A (p.Cys124Tyr)	P60484	C	124	Y
+2447220	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933130	87933130	single nucleotide variant	NM_000314.8(PTEN):c.371G>C (p.Cys124Ser)	P60484	C	124	S
+1734391	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933131	87933131	single nucleotide variant	NM_000314.8(PTEN):c.372T>G (p.Cys124Trp)	P60484	C	124	W
+468683	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933135	87933135	single nucleotide variant	NM_000314.8(PTEN):c.376G>A (p.Ala126Thr)	P60484	A	126	T
+1067089	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87933135	87933135	single nucleotide variant	NM_000314.8(PTEN):c.376G>C (p.Ala126Pro)	P60484	A	126	P
+428234	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933136	87933136	single nucleotide variant	NM_000314.8(PTEN):c.377C>T (p.Ala126Val)	P60484	A	126	V
+2674280	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933136	87933136	single nucleotide variant	NM_000314.8(PTEN):c.377C>A (p.Ala126Asp)	P60484	A	126	D
+139568	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933138	87933138	single nucleotide variant	NM_000314.8(PTEN):c.379G>A (p.Gly127Arg)	P60484	G	127	R
+958105	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933141	87933141	single nucleotide variant	NM_000314.8(PTEN):c.382A>G (p.Lys128Glu)	P60484	K	128	E
+864223	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933142	87933142	single nucleotide variant	NM_000314.8(PTEN):c.383A>G (p.Lys128Arg)	P60484	K	128	R
+428220	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933143	87933143	single nucleotide variant	NM_000314.8(PTEN):c.384G>C (p.Lys128Asn)	P60484	K	128	N
+189484	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933144	87933144	single nucleotide variant	NM_000314.8(PTEN):c.385G>A (p.Gly129Arg)	P60484	G	129	R
+804339	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87933144	87933144	single nucleotide variant	NM_000314.8(PTEN):c.385G>C (p.Gly129Arg)	P60484	G	129	R
+7812	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933145	87933145	single nucleotide variant	NM_000314.8(PTEN):c.386G>A (p.Gly129Glu)	P60484	G	129	E
+856036	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933145	87933145	single nucleotide variant	NM_000314.8(PTEN):c.386G>T (p.Gly129Val)	P60484	G	129	V
+376509	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933148	87933148	single nucleotide variant	NM_000314.8(PTEN):c.389G>T (p.Arg130Leu)	P60484	R	130	L
+856796	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933153	87933153	single nucleotide variant	NM_000314.8(PTEN):c.394G>A (p.Gly132Ser)	P60484	G	132	S
+7852	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933154	87933154	single nucleotide variant	NM_000314.8(PTEN):c.395G>T (p.Gly132Val)	P60484	G	132	V
+1736693	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933156	87933156	single nucleotide variant	NM_000314.8(PTEN):c.397G>C (p.Val133Leu)	P60484	V	133	L
+427588	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933160	87933160	single nucleotide variant	NM_000314.8(PTEN):c.401T>C (p.Met134Thr)	P60484	M	134	T
+428267	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933161	87933161	single nucleotide variant	NM_000314.8(PTEN):c.402G>T (p.Met134Ile)	P60484	M	134	I
+142287	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933162	87933162	single nucleotide variant	NM_000314.8(PTEN):c.403A>G (p.Ile135Val)	P60484	I	135	V
+428235	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933163	87933163	single nucleotide variant	NM_000314.8(PTEN):c.404T>A (p.Ile135Lys)	P60484	I	135	K
+183726	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933165	87933165	single nucleotide variant	NM_000314.8(PTEN):c.406T>C (p.Cys136Arg)	P60484	C	136	R
+1737618	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933166	87933166	single nucleotide variant	NM_000314.8(PTEN):c.407G>T (p.Cys136Phe)	P60484	C	136	F
+486230	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933172	87933172	single nucleotide variant	NM_000314.8(PTEN):c.413A>G (p.Tyr138Cys)	P60484	Y	138	C
+2145849	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933174	87933174	single nucleotide variant	NM_000314.8(PTEN):c.415T>A (p.Leu139Ile)	P60484	L	139	I
+486231	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933180	87933180	single nucleotide variant	NM_000314.8(PTEN):c.421C>T (p.His141Tyr)	P60484	H	141	Y
+1708039	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933181	87933181	single nucleotide variant	NM_000314.8(PTEN):c.422A>T (p.His141Leu)	P60484	H	141	L
+1739065	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933183	87933183	single nucleotide variant	NM_000314.8(PTEN):c.424C>G (p.Arg142Gly)	P60484	R	142	G
+185276	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933187	87933187	single nucleotide variant	NM_000314.8(PTEN):c.428G>A (p.Gly143Asp)	P60484	G	143	D
+233304	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933201	87933201	single nucleotide variant	NM_000314.8(PTEN):c.442G>A (p.Ala148Thr)	P60484	A	148	T
+1476274	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933210	87933210	single nucleotide variant	NM_000314.8(PTEN):c.451G>A (p.Ala151Thr)	P60484	A	151	T
+2687522	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933213	87933213	single nucleotide variant	NM_000314.8(PTEN):c.454C>G (p.Leu152Val)	P60484	L	152	V
+536551	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933214	87933214	single nucleotide variant	NM_000314.8(PTEN):c.455T>C (p.Leu152Pro)	P60484	L	152	P
+973270	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933216	87933216	single nucleotide variant	NM_000314.8(PTEN):c.457G>C (p.Asp153His)	P60484	D	153	H
+428237	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933222	87933222	single nucleotide variant	NM_000314.8(PTEN):c.463T>C (p.Tyr155His)	P60484	Y	155	H
+547759	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933223	87933223	single nucleotide variant	NM_000314.8(PTEN):c.464A>C (p.Tyr155Ser)	P60484	Y	155	S
+2435279	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933228	87933228	single nucleotide variant	NM_000314.8(PTEN):c.469G>A (p.Glu157Lys)	P60484	E	157	K
+1370842	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933229	87933229	single nucleotide variant	NM_000314.8(PTEN):c.470A>C (p.Glu157Ala)	P60484	E	157	A
+186094	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933234	87933234	single nucleotide variant	NM_000314.8(PTEN):c.475A>G (p.Arg159Gly)	P60484	R	159	G
+3231159	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933243	87933243	single nucleotide variant	NM_000314.8(PTEN):c.484G>C (p.Asp162His)	P60484	D	162	H
+224544	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87933245	87933245	single nucleotide variant	NM_000314.8(PTEN):c.486C>G (p.Asp162Glu)	P60484	D	162	E
+1061726	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933246	87933246	single nucleotide variant	NM_000314.8(PTEN):c.487A>C (p.Lys163Gln)	P60484	K	163	Q
+186180	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933247	87933247	single nucleotide variant	NM_000314.8(PTEN):c.488A>G (p.Lys163Arg)	P60484	K	163	R
+2579603	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87933249	87933249	single nucleotide variant	NM_000314.8(PTEN):c.490A>G (p.Lys164Glu)	P60484	K	164	E
+1067498	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87952118	87952118	single nucleotide variant	NM_000314.8(PTEN):c.493G>C (p.Gly165Arg)	P60484	G	165	R
+1341516	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87952119	87952119	single nucleotide variant	NM_000314.8(PTEN):c.494G>T (p.Gly165Val)	P60484	G	165	V
+639793	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952121	87952121	single nucleotide variant	NM_000314.8(PTEN):c.496G>C (p.Val166Leu)	P60484	V	166	L
+1878988	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952127	87952127	single nucleotide variant	NM_000314.8(PTEN):c.502A>T (p.Ile168Phe)	P60484	I	168	F
+569301	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87952133	87952133	single nucleotide variant	NM_000314.8(PTEN):c.508A>C (p.Ser170Arg)	P60484	S	170	R
+233590	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87952134	87952134	single nucleotide variant	NM_000314.8(PTEN):c.509G>T (p.Ser170Ile)	P60484	S	170	I
+951765	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87952134	87952134	single nucleotide variant	NM_000314.8(PTEN):c.509G>A (p.Ser170Asn)	P60484	S	170	N
+825458	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87952135	87952135	single nucleotide variant	NM_000314.8(PTEN):c.510T>G (p.Ser170Arg)	P60484	S	170	R
+1176553	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87952142	87952142	single nucleotide variant	NM_000314.8(PTEN):c.517C>G (p.Arg173Gly)	P60484	R	173	G
+185195	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87952143	87952143	single nucleotide variant	NM_000314.8(PTEN):c.518G>C (p.Arg173Pro)	P60484	R	173	P
+376032	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87952143	87952143	single nucleotide variant	NM_000314.8(PTEN):c.518G>A (p.Arg173His)	P60484	R	173	H
+1067224	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87952148	87952148	single nucleotide variant	NM_000314.8(PTEN):c.523G>A (p.Val175Met)	P60484	V	175	M
+484608	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952164	87952164	single nucleotide variant	NM_000314.8(PTEN):c.539A>C (p.Tyr180Ser)	P60484	Y	180	S
+231562	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952174	87952174	single nucleotide variant	NM_000314.8(PTEN):c.549G>T (p.Lys183Asn)	P60484	K	183	N
+1347066	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952176	87952176	single nucleotide variant	NM_000314.8(PTEN):c.551A>G (p.Asn184Ser)	P60484	N	184	S
+825836	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952181	87952181	single nucleotide variant	NM_000314.8(PTEN):c.556C>G (p.Leu186Val)	P60484	L	186	V
+189501	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952185	87952185	single nucleotide variant	NM_000314.8(PTEN):c.560A>G (p.Asp187Gly)	P60484	D	187	G
+1489316	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952193	87952193	single nucleotide variant	NM_000314.8(PTEN):c.568C>A (p.Pro190Thr)	P60484	P	190	T
+536538	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952194	87952194	single nucleotide variant	NM_000314.8(PTEN):c.569C>G (p.Pro190Arg)	P60484	P	190	R
+404173	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952196	87952196	single nucleotide variant	NM_000314.8(PTEN):c.571G>T (p.Val191Leu)	P60484	V	191	L
+826023	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952211	87952211	single nucleotide variant	NM_000314.8(PTEN):c.586C>G (p.His196Asp)	P60484	H	196	D
+1694039	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952212	87952212	single nucleotide variant	NM_000314.8(PTEN):c.587A>C (p.His196Pro)	P60484	H	196	P
+468701	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952217	87952217	single nucleotide variant	NM_000314.8(PTEN):c.592A>G (p.Met198Val)	P60484	M	198	V
+1481095	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952218	87952218	single nucleotide variant	NM_000314.8(PTEN):c.593T>C (p.Met198Thr)	P60484	M	198	T
+141157	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952221	87952221	single nucleotide variant	NM_000314.8(PTEN):c.596T>C (p.Met199Thr)	P60484	M	199	T
+237651	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952221	87952221	single nucleotide variant	NM_000314.8(PTEN):c.596T>A (p.Met199Lys)	P60484	M	199	K
+1014247	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952222	87952222	single nucleotide variant	NM_000314.8(PTEN):c.597G>A (p.Met199Ile)	P60484	M	199	I
+189502	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952229	87952229	single nucleotide variant	NM_000314.8(PTEN):c.604A>T (p.Thr202Ser)	P60484	T	202	S
+654178	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952229	87952229	single nucleotide variant	NM_000314.8(PTEN):c.604A>G (p.Thr202Ala)	P60484	T	202	A
+1331912	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952232	87952232	single nucleotide variant	NM_000314.8(PTEN):c.607A>T (p.Ile203Phe)	P60484	I	203	F
+2001581	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952232	87952232	single nucleotide variant	NM_000314.8(PTEN):c.607A>C (p.Ile203Leu)	P60484	I	203	L
+1481117	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952236	87952236	single nucleotide variant	NM_000314.8(PTEN):c.611C>T (p.Pro204Leu)	P60484	P	204	L
+404146	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952238	87952238	single nucleotide variant	NM_000314.8(PTEN):c.613A>G (p.Met205Val)	P60484	M	205	V
+838223	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952247	87952247	single nucleotide variant	NM_000314.8(PTEN):c.622G>A (p.Gly208Ser)	P60484	G	208	S
+1035121	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952248	87952248	single nucleotide variant	NM_000314.8(PTEN):c.623G>A (p.Gly208Asp)	P60484	G	208	D
+480943	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952253	87952253	single nucleotide variant	NM_000314.8(PTEN):c.628A>G (p.Thr210Ala)	P60484	T	210	A
+1999180	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952254	87952254	single nucleotide variant	NM_000314.8(PTEN):c.629C>T (p.Thr210Ile)	P60484	T	210	I
+1042754	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952256	87952256	single nucleotide variant	NM_000314.8(PTEN):c.631T>C (p.Cys211Arg)	P60484	C	211	R
+948056	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87952259	87952259	single nucleotide variant	NM_000314.8(PTEN):c.634A>C (p.Asn212His)	P60484	N	212	H
+495808	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957853	87957853	single nucleotide variant	NM_000314.8(PTEN):c.635A>G (p.Asn212Ser)	P60484	N	212	S
+655477	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957864	87957864	single nucleotide variant	NM_000314.8(PTEN):c.646G>A (p.Val216Met)	P60484	V	216	M
+826431	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957865	87957865	single nucleotide variant	NM_000314.8(PTEN):c.647T>C (p.Val216Ala)	P60484	V	216	A
+7838	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957867	87957867	single nucleotide variant	NM_000314.8(PTEN):c.649G>A (p.Val217Ile)	P60484	V	217	I
+404152	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957868	87957868	single nucleotide variant	NM_000314.8(PTEN):c.650T>G (p.Val217Gly)	P60484	V	217	G
+923643	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957871	87957871	single nucleotide variant	NM_000314.8(PTEN):c.653G>C (p.Cys218Ser)	P60484	C	218	S
+945328	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957871	87957871	single nucleotide variant	NM_000314.8(PTEN):c.653G>A (p.Cys218Tyr)	P60484	C	218	Y
+1754111	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957871	87957871	single nucleotide variant	NM_000314.8(PTEN):c.653G>T (p.Cys218Phe)	P60484	C	218	F
+385323	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957882	87957882	single nucleotide variant	NM_000314.8(PTEN):c.664G>A (p.Val222Met)	P60484	V	222	M
+1401574	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957883	87957883	single nucleotide variant	NM_000314.8(PTEN):c.665T>C (p.Val222Ala)	P60484	V	222	A
+574870	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957886	87957886	single nucleotide variant	NM_000314.8(PTEN):c.668A>G (p.Lys223Arg)	P60484	K	223	R
+490116	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957888	87957888	single nucleotide variant	NM_000314.8(PTEN):c.670A>T (p.Ile224Leu)	P60484	I	224	L
+653399	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957889	87957889	single nucleotide variant	NM_000314.8(PTEN):c.671T>C (p.Ile224Thr)	P60484	I	224	T
+189505	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957890	87957890	single nucleotide variant	NM_000314.8(PTEN):c.672A>G (p.Ile224Met)	P60484	I	224	M
+1330017	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957895	87957895	single nucleotide variant	NM_000314.8(PTEN):c.677C>T (p.Ser226Phe)	P60484	S	226	F
+924852	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957901	87957901	single nucleotide variant	NM_000314.8(PTEN):c.683A>T (p.Asn228Ile)	P60484	N	228	I
+536552	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957910	87957910	single nucleotide variant	NM_000314.8(PTEN):c.692C>T (p.Pro231Leu)	P60484	P	231	L
+2567273	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957912	87957912	single nucleotide variant	NM_000314.8(PTEN):c.694A>G (p.Thr232Ala)	P60484	T	232	A
+1315922	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957913	87957913	single nucleotide variant	NM_000314.8(PTEN):c.695C>T (p.Thr232Ile)	P60484	T	232	I
+843242	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957915	87957915	single nucleotide variant	NM_000314.8(PTEN):c.697C>G (p.Arg233Gly)	P60484	R	233	G
+492337	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957918	87957918	single nucleotide variant	NM_000314.8(PTEN):c.700C>G (p.Arg234Gly)	P60484	R	234	G
+2678096	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957921	87957921	single nucleotide variant	NM_000314.8(PTEN):c.703G>A (p.Glu235Lys)	P60484	E	235	K
+1718817	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957922	87957922	single nucleotide variant	NM_000314.8(PTEN):c.704A>C (p.Glu235Ala)	P60484	E	235	A
+1016535	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957924	87957924	single nucleotide variant	NM_000314.8(PTEN):c.706G>C (p.Asp236His)	P60484	D	236	H
+189418	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957934	87957934	single nucleotide variant	NM_000314.8(PTEN):c.716T>G (p.Met239Arg)	P60484	M	239	R
+1757614	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957937	87957937	single nucleotide variant	NM_000314.8(PTEN):c.719A>G (p.Tyr240Cys)	P60484	Y	240	C
+440220	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87957939	87957939	single nucleotide variant	NM_000314.8(PTEN):c.721T>C (p.Phe241Leu)	P60484	F	241	L
+856828	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957939	87957939	single nucleotide variant	NM_000314.8(PTEN):c.721T>A (p.Phe241Ile)	P60484	F	241	I
+917595	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957943	87957943	single nucleotide variant	NM_000314.8(PTEN):c.725A>T (p.Glu242Val)	P60484	E	242	V
+3070126	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957949	87957949	single nucleotide variant	NM_000314.8(PTEN):c.731C>T (p.Pro244Leu)	P60484	P	244	L
+373667	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957952	87957952	single nucleotide variant	NM_000314.8(PTEN):c.734A>C (p.Gln245Pro)	P60484	Q	245	P
+2231857	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957955	87957955	single nucleotide variant	NM_000314.8(PTEN):c.737C>A (p.Pro246Gln)	P60484	P	246	Q
+627646	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957960	87957960	single nucleotide variant	NM_000314.8(PTEN):c.742C>T (p.Pro248Ser)	P60484	P	248	S
+1378842	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957963	87957963	single nucleotide variant	NM_000314.8(PTEN):c.745G>A (p.Val249Met)	P60484	V	249	M
+1066565	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87957964	87957964	single nucleotide variant	NM_000314.8(PTEN):c.746T>G (p.Val249Gly)	P60484	V	249	G
+827117	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957972	87957972	single nucleotide variant	NM_000314.8(PTEN):c.754G>A (p.Asp252Asn)	P60484	D	252	N
+575811	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87957973	87957973	single nucleotide variant	NM_000314.8(PTEN):c.755A>T (p.Asp252Val)	P60484	D	252	V
+480942	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87957976	87957976	single nucleotide variant	NM_000314.8(PTEN):c.758T>A (p.Ile253Asn)	P60484	I	253	N
+1001963	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87957976	87957976	single nucleotide variant	NM_000314.8(PTEN):c.758T>C (p.Ile253Thr)	P60484	I	253	T
+428207	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87957979	87957979	single nucleotide variant	NM_000314.8(PTEN):c.761A>C (p.Lys254Thr)	P60484	K	254	T
+623214	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87957982	87957982	single nucleotide variant	NM_000314.8(PTEN):c.764T>A (p.Val255Glu)	P60484	V	255	E
+468716	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87958018	87958018	single nucleotide variant	NM_000314.8(PTEN):c.800A>G (p.Lys267Arg)	P60484	K	267	R
+1014805	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87958019	87958019	single nucleotide variant	NM_000314.8(PTEN):c.801G>C (p.Lys267Asn)	P60484	K	267	N
+449644	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960900	87960900	single nucleotide variant	NM_000314.8(PTEN):c.808A>G (p.Met270Val)	P60484	M	270	V
+1762038	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960902	87960902	single nucleotide variant	NM_000314.8(PTEN):c.810G>A (p.Met270Ile)	P60484	M	270	I
+427600	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87960913	87960913	single nucleotide variant	NM_000314.8(PTEN):c.821G>T (p.Trp274Leu)	P60484	W	274	L
+2502345	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87960919	87960919	single nucleotide variant	NM_000314.8(PTEN):c.827A>G (p.Asn276Ser)	P60484	N	276	S
+92835	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960922	87960922	single nucleotide variant	NM_000314.8(PTEN):c.830C>A (p.Thr277Lys)	P60484	T	277	K
+822319	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960926	87960926	single nucleotide variant	NM_000314.8(PTEN):c.834C>A (p.Phe278Leu)	P60484	F	278	L
+822361	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960930	87960930	single nucleotide variant	NM_000314.8(PTEN):c.838A>C (p.Ile280Leu)	P60484	I	280	L
+954195	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960937	87960937	single nucleotide variant	NM_000314.8(PTEN):c.845G>A (p.Gly282Glu)	P60484	G	282	E
+3662351	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960937	87960937	single nucleotide variant	NM_000314.8(PTEN):c.845G>C (p.Gly282Ala)	P60484	G	282	A
+231154	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960939	87960939	single nucleotide variant	NM_000314.8(PTEN):c.847C>T (p.Pro283Ser)	P60484	P	283	S
+629197	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960939	87960939	single nucleotide variant	NM_000314.8(PTEN):c.847C>G (p.Pro283Ala)	P60484	P	283	A
+923099	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960940	87960940	single nucleotide variant	NM_000314.8(PTEN):c.848C>T (p.Pro283Leu)	P60484	P	283	L
+1474758	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960940	87960940	single nucleotide variant	NM_000314.8(PTEN):c.848C>G (p.Pro283Arg)	P60484	P	283	R
+589540	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960945	87960945	single nucleotide variant	NM_000314.8(PTEN):c.853G>A (p.Glu285Lys)	P60484	E	285	K
+1440481	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960947	87960947	single nucleotide variant	NM_000314.8(PTEN):c.855A>T (p.Glu285Asp)	P60484	E	285	D
+536547	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960951	87960951	single nucleotide variant	NM_000314.8(PTEN):c.859T>C (p.Ser287Pro)	P60484	S	287	P
+484603	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960954	87960954	single nucleotide variant	NM_000314.8(PTEN):c.862G>A (p.Glu288Lys)	P60484	E	288	K
+142912	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960957	87960957	single nucleotide variant	NM_000314.8(PTEN):c.865A>G (p.Lys289Glu)	P60484	K	289	E
+234815	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960961	87960961	single nucleotide variant	NM_000314.8(PTEN):c.869T>C (p.Val290Ala)	P60484	V	290	A
+2587206	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960970	87960970	single nucleotide variant	NM_000314.8(PTEN):c.878G>C (p.Gly293Ala)	P60484	G	293	A
+185480	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960978	87960978	single nucleotide variant	NM_000314.8(PTEN):c.886T>C (p.Cys296Arg)	P60484	C	296	R
+822798	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960980	87960980	single nucleotide variant	NM_000314.8(PTEN):c.888T>G (p.Cys296Trp)	P60484	C	296	W
+404172	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960981	87960981	single nucleotide variant	NM_000314.8(PTEN):c.889G>C (p.Asp297His)	P60484	D	297	H
+418439	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960981	87960981	single nucleotide variant	NM_000314.8(PTEN):c.889G>T (p.Asp297Tyr)	P60484	D	297	Y
+570880	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960984	87960984	single nucleotide variant	NM_000314.8(PTEN):c.892C>A (p.Gln298Lys)	P60484	Q	298	K
+484624	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960988	87960988	single nucleotide variant	NM_000314.8(PTEN):c.896A>G (p.Glu299Gly)	P60484	E	299	G
+872239	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960993	87960993	single nucleotide variant	NM_000314.8(PTEN):c.901G>T (p.Asp301Tyr)	P60484	D	301	Y
+234182	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960998	87960998	single nucleotide variant	NM_000314.8(PTEN):c.906C>G (p.Ser302Arg)	P60484	S	302	R
+428242	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87960999	87960999	single nucleotide variant	NM_000314.8(PTEN):c.907A>G (p.Ile303Val)	P60484	I	303	V
+1765878	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961003	87961003	single nucleotide variant	NM_000314.8(PTEN):c.911G>T (p.Cys304Phe)	P60484	C	304	F
+619910	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961006	87961006	single nucleotide variant	NM_000314.8(PTEN):c.914G>T (p.Ser305Ile)	P60484	S	305	I
+230040	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961007	87961007	single nucleotide variant	NM_000314.8(PTEN):c.915T>G (p.Ser305Arg)	P60484	S	305	R
+187604	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961008	87961008	single nucleotide variant	NM_000314.8(PTEN):c.916A>G (p.Ile306Val)	P60484	I	306	V
+1356075	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961009	87961009	single nucleotide variant	NM_000314.8(PTEN):c.917T>C (p.Ile306Thr)	P60484	I	306	T
+2912092	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961010	87961010	single nucleotide variant	NM_000314.8(PTEN):c.918A>G (p.Ile306Met)	P60484	I	306	M
+484626	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961012	87961012	single nucleotide variant	NM_000314.8(PTEN):c.920A>G (p.Glu307Gly)	P60484	E	307	G
+2104965	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961015	87961015	single nucleotide variant	NM_000314.8(PTEN):c.923G>T (p.Arg308Leu)	P60484	R	308	L
+1766444	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961020	87961020	single nucleotide variant	NM_000314.8(PTEN):c.928G>A (p.Asp310Asn)	P60484	D	310	N
+566673	PTEN	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87961021	87961021	single nucleotide variant	NM_000314.8(PTEN):c.929A>G (p.Asp310Gly)	P60484	D	310	G
+2896208	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961024	87961024	single nucleotide variant	NM_000314.8(PTEN):c.932A>T (p.Asn311Ile)	P60484	N	311	I
+3231173	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961027	87961027	single nucleotide variant	NM_000314.8(PTEN):c.935A>C (p.Asp312Ala)	P60484	D	312	A
+639572	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961029	87961029	single nucleotide variant	NM_000314.8(PTEN):c.937A>C (p.Lys313Gln)	P60484	K	313	Q
+1766981	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961036	87961036	single nucleotide variant	NM_000314.8(PTEN):c.944A>T (p.Tyr315Phe)	P60484	Y	315	F
+468723	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961038	87961038	single nucleotide variant	NM_000314.8(PTEN):c.946C>A (p.Leu316Ile)	P60484	L	316	I
+230554	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961041	87961041	single nucleotide variant	NM_000314.8(PTEN):c.949G>A (p.Val317Ile)	P60484	V	317	I
+2587212	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961041	87961041	single nucleotide variant	NM_000314.8(PTEN):c.949G>T (p.Val317Leu)	P60484	V	317	L
+2746803	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961045	87961045	single nucleotide variant	NM_000314.8(PTEN):c.953T>C (p.Leu318Pro)	P60484	L	318	P
+3075549	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961045	87961045	single nucleotide variant	NM_000314.8(PTEN):c.953T>G (p.Leu318Arg)	P60484	L	318	R
+1010093	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961048	87961048	single nucleotide variant	NM_000314.8(PTEN):c.956C>A (p.Thr319Asn)	P60484	T	319	N
+2504932	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961056	87961056	single nucleotide variant	NM_000314.8(PTEN):c.964A>G (p.Lys322Glu)	P60484	K	322	E
+823437	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961063	87961063	single nucleotide variant	NM_000314.8(PTEN):c.971A>G (p.Asp324Gly)	P60484	D	324	G
+834923	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961064	87961064	single nucleotide variant	NM_000314.8(PTEN):c.972T>A (p.Asp324Glu)	P60484	D	324	E
+2498032	PTEN	1	Pathogenic	criteria provided, multiple submitters, no conflicts	10	87961068	87961068	single nucleotide variant	NM_000314.8(PTEN):c.976G>A (p.Asp326Asn)	P60484	D	326	N
+857109	PTEN	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	10	87961069	87961069	single nucleotide variant	NM_000314.8(PTEN):c.977A>G (p.Asp326Gly)	P60484	D	326	G
+1056002	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961070	87961070	single nucleotide variant	NM_000314.8(PTEN):c.978C>G (p.Asp326Glu)	P60484	D	326	E
+630780	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961080	87961080	single nucleotide variant	NM_000314.8(PTEN):c.988A>G (p.Lys330Glu)	P60484	K	330	E
+823591	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961090	87961090	single nucleotide variant	NM_000314.8(PTEN):c.998C>A (p.Ala333Asp)	P60484	A	333	D
+492310	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961094	87961094	single nucleotide variant	NM_000314.8(PTEN):c.1002C>G (p.Asn334Lys)	P60484	N	334	K
+836781	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961098	87961098	single nucleotide variant	NM_000314.8(PTEN):c.1006T>C (p.Tyr336His)	P60484	Y	336	H
+484613	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961102	87961102	single nucleotide variant	NM_000314.8(PTEN):c.1010T>A (p.Phe337Tyr)	P60484	F	337	Y
+1728487	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961102	87961102	single nucleotide variant	NM_000314.8(PTEN):c.1010T>C (p.Phe337Ser)	P60484	F	337	S
+1736322	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961105	87961105	single nucleotide variant	NM_000314.8(PTEN):c.1013C>G (p.Ser338Cys)	P60484	S	338	C
+961193	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961107	87961107	single nucleotide variant	NM_000314.8(PTEN):c.1015C>T (p.Pro339Ser)	P60484	P	339	S
+185586	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961110	87961110	single nucleotide variant	NM_000314.8(PTEN):c.1018A>G (p.Asn340Asp)	P60484	N	340	D
+536555	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961112	87961112	single nucleotide variant	NM_000314.8(PTEN):c.1020T>A (p.Asn340Lys)	P60484	N	340	K
+419745	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961117	87961117	single nucleotide variant	NM_000314.8(PTEN):c.1025A>C (p.Lys342Thr)	P60484	K	342	T
+92811	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87961118	87961118	single nucleotide variant	NM_000314.8(PTEN):c.1026G>C (p.Lys342Asn)	P60484	K	342	N
+404161	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965287	87965287	single nucleotide variant	NM_000314.8(PTEN):c.1027G>A (p.Val343Met)	P60484	V	343	M
+2576380	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965287	87965287	single nucleotide variant	NM_000314.8(PTEN):c.1027G>T (p.Val343Leu)	P60484	V	343	L
+428214	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965293	87965293	single nucleotide variant	NM_000314.8(PTEN):c.1033C>G (p.Leu345Val)	P60484	L	345	V
+480380	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965297	87965297	single nucleotide variant	NM_000314.8(PTEN):c.1037A>G (p.Tyr346Cys)	P60484	Y	346	C
+2860672	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965302	87965302	single nucleotide variant	NM_000314.8(PTEN):c.1042A>C (p.Thr348Pro)	P60484	T	348	P
+628248	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965311	87965311	single nucleotide variant	NM_000314.8(PTEN):c.1051G>A (p.Val351Ile)	P60484	V	351	I
+627921	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965314	87965314	single nucleotide variant	NM_000314.8(PTEN):c.1054G>C (p.Glu352Gln)	P60484	E	352	Q
+2567264	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965317	87965317	single nucleotide variant	NM_000314.8(PTEN):c.1057G>A (p.Glu353Lys)	P60484	E	353	K
+1685048	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965324	87965324	single nucleotide variant	NM_000314.8(PTEN):c.1064C>T (p.Ser355Leu)	P60484	S	355	L
+189397	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965326	87965326	single nucleotide variant	NM_000314.8(PTEN):c.1066A>T (p.Asn356Tyr)	P60484	N	356	Y
+569595	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965328	87965328	single nucleotide variant	NM_000314.8(PTEN):c.1068T>A (p.Asn356Lys)	P60484	N	356	K
+2567280	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965330	87965330	single nucleotide variant	NM_000314.8(PTEN):c.1070C>T (p.Pro357Leu)	P60484	P	357	L
+220596	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965335	87965335	single nucleotide variant	NM_000314.8(PTEN):c.1075G>T (p.Ala359Ser)	P60484	A	359	S
+404169	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965339	87965339	single nucleotide variant	NM_000314.8(PTEN):c.1079G>C (p.Ser360Thr)	P60484	S	360	T
+576100	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965356	87965356	single nucleotide variant	NM_000314.8(PTEN):c.1096A>G (p.Thr366Ala)	P60484	T	366	A
+3311256	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965357	87965357	single nucleotide variant	NM_000314.8(PTEN):c.1097C>T (p.Thr366Ile)	P60484	T	366	I
+185298	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965364	87965364	single nucleotide variant	NM_000314.8(PTEN):c.1104T>A (p.Asp368Glu)	P60484	D	368	E
+1503862	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965374	87965374	single nucleotide variant	NM_000314.8(PTEN):c.1114A>G (p.Asn372Asp)	P60484	N	372	D
+2488773	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965380	87965380	single nucleotide variant	NM_000314.8(PTEN):c.1120C>T (p.Pro374Ser)	P60484	P	374	S
+2502682	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965386	87965386	single nucleotide variant	NM_000314.8(PTEN):c.1126C>T (p.His376Tyr)	P60484	H	376	Y
+576918	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965420	87965420	single nucleotide variant	NM_000314.8(PTEN):c.1160C>T (p.Pro387Leu)	P60484	P	387	L
+924240	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965424	87965424	single nucleotide variant	NM_000314.8(PTEN):c.1164G>C (p.Glu388Asp)	P60484	E	388	D
+1373194	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965426	87965426	single nucleotide variant	NM_000314.8(PTEN):c.1166A>G (p.Asn389Ser)	P60484	N	389	S
+1806618	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965429	87965429	single nucleotide variant	NM_000314.8(PTEN):c.1169A>G (p.Glu390Gly)	P60484	E	390	G
+841411	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965437	87965437	single nucleotide variant	NM_000314.8(PTEN):c.1177G>T (p.Asp393Tyr)	P60484	D	393	Y
+1912822	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965442	87965442	single nucleotide variant	NM_000314.8(PTEN):c.1182A>T (p.Glu394Asp)	P60484	E	394	D
+818542	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965449	87965449	single nucleotide variant	NM_000314.8(PTEN):c.1189C>T (p.His397Tyr)	P60484	H	397	Y
+234434	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965450	87965450	single nucleotide variant	NM_000314.8(PTEN):c.1190A>G (p.His397Arg)	P60484	H	397	R
+818548	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965450	87965450	single nucleotide variant	NM_000314.8(PTEN):c.1190A>T (p.His397Leu)	P60484	H	397	L
+1037031	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965451	87965451	single nucleotide variant	NM_000314.8(PTEN):c.1191T>G (p.His397Gln)	P60484	H	397	Q
+1039305	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965453	87965453	single nucleotide variant	NM_000314.8(PTEN):c.1193C>T (p.Thr398Ile)	P60484	T	398	I
+216420	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965458	87965458	single nucleotide variant	NM_000314.8(PTEN):c.1198A>G (p.Ile400Val)	P60484	I	400	V
+847238	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965462	87965462	single nucleotide variant	NM_000314.8(PTEN):c.1202C>T (p.Thr401Ile)	P60484	T	401	I
+1747840	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965462	87965462	single nucleotide variant	NM_000314.8(PTEN):c.1202C>A (p.Thr401Lys)	P60484	T	401	K
+536557	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965464	87965464	single nucleotide variant	NM_000314.8(PTEN):c.1204A>G (p.Lys402Glu)	P60484	K	402	E
+2101671	PTEN	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	10	87965467	87965467	single nucleotide variant	NM_000314.8(PTEN):c.1207G>T (p.Val403Phe)	P60484	V	403	F
+3148533	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87864470	87864470	single nucleotide variant	NM_000314.8(PTEN):c.1A>T (p.Met1Leu)	P60484	M	1	L
+3340277	PTEN	1	Pathogenic	criteria provided, single submitter	10	87864470	87864470	single nucleotide variant	NM_000314.8(PTEN):c.1A>C (p.Met1Leu)	P60484	M	1	L
+1686106	PTEN	1	Pathogenic	criteria provided, single submitter	10	87864471	87864471	single nucleotide variant	NM_000314.8(PTEN):c.2T>C (p.Met1Thr)	P60484	M	1	T
+1457954	PTEN	1	Pathogenic	criteria provided, single submitter	10	87864472	87864472	single nucleotide variant	NM_000314.8(PTEN):c.3G>A (p.Met1Ile)	P60484	M	1	I
+922734	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864480	87864480	single nucleotide variant	NM_000314.8(PTEN):c.11T>G (p.Ile4Ser)	P60484	I	4	S
+404139	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864482	87864482	single nucleotide variant	NM_000314.8(PTEN):c.13A>G (p.Ile5Val)	P60484	I	5	V
+1518129	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864482	87864482	single nucleotide variant	NM_000314.8(PTEN):c.13A>T (p.Ile5Phe)	P60484	I	5	F
+2561217	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864487	87864487	single nucleotide variant	NM_000314.8(PTEN):c.18A>C (p.Lys6Asn)	P60484	K	6	N
+3231148	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864491	87864491	single nucleotide variant	NM_000314.8(PTEN):c.22A>T (p.Ile8Phe)	P60484	I	8	F
+3340638	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864491	87864491	single nucleotide variant	NM_000314.8(PTEN):c.22A>G (p.Ile8Val)	P60484	I	8	V
+631333	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864494	87864494	single nucleotide variant	NM_000314.8(PTEN):c.25G>A (p.Val9Ile)	P60484	V	9	I
+3648820	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864494	87864494	single nucleotide variant	NM_000314.8(PTEN):c.25G>C (p.Val9Leu)	P60484	V	9	L
+428272	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864497	87864497	single nucleotide variant	NM_000314.8(PTEN):c.28A>G (p.Ser10Gly)	P60484	S	10	G
+560657	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864499	87864499	single nucleotide variant	NM_000314.8(PTEN):c.30C>G (p.Ser10Arg)	P60484	S	10	R
+1003310	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864500	87864500	single nucleotide variant	NM_000314.8(PTEN):c.31A>G (p.Arg11Gly)	P60484	R	11	G
+2088470	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864501	87864501	single nucleotide variant	NM_000314.8(PTEN):c.32G>A (p.Arg11Lys)	P60484	R	11	K
+3372634	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864501	87864501	single nucleotide variant	NM_000314.8(PTEN):c.32G>C (p.Arg11Thr)	P60484	R	11	T
+427586	PTEN	1	Pathogenic	criteria provided, single submitter	10	87864504	87864504	single nucleotide variant	NM_000314.8(PTEN):c.35A>C (p.Asn12Thr)	P60484	N	12	T
+944445	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87864504	87864504	single nucleotide variant	NM_000314.8(PTEN):c.35A>T (p.Asn12Ile)	P60484	N	12	I
+141715	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864505	87864505	single nucleotide variant	NM_000314.8(PTEN):c.36C>G (p.Asn12Lys)	P60484	N	12	K
+846550	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87864506	87864506	single nucleotide variant	NM_000314.8(PTEN):c.37A>C (p.Lys13Gln)	P60484	K	13	Q
+2774177	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864507	87864507	single nucleotide variant	NM_000314.8(PTEN):c.38A>G (p.Lys13Arg)	P60484	K	13	R
+2819090	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864509	87864509	single nucleotide variant	NM_000314.8(PTEN):c.40A>T (p.Arg14Trp)	P60484	R	14	W
+824671	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864510	87864510	single nucleotide variant	NM_000314.8(PTEN):c.41G>A (p.Arg14Lys)	P60484	R	14	K
+2561216	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87864512	87864512	single nucleotide variant	NM_000314.8(PTEN):c.43A>G (p.Arg15Gly)	P60484	R	15	G
+4530405	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87864513	87864513	single nucleotide variant	NM_000314.8(PTEN):c.44G>T (p.Arg15Ile)	P60484	R	15	I
+857591	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864515	87864515	single nucleotide variant	NM_000314.8(PTEN):c.46T>A (p.Tyr16Asn)	P60484	Y	16	N
+2798148	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864516	87864516	single nucleotide variant	NM_000314.8(PTEN):c.47A>G (p.Tyr16Cys)	P60484	Y	16	C
+2811915	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864516	87864516	single nucleotide variant	NM_000314.8(PTEN):c.47A>C (p.Tyr16Ser)	P60484	Y	16	S
+948026	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864519	87864519	single nucleotide variant	NM_000314.8(PTEN):c.50A>G (p.Gln17Arg)	P60484	Q	17	R
+2001733	PTEN	1	Pathogenic	criteria provided, single submitter	10	87864525	87864525	single nucleotide variant	NM_000314.8(PTEN):c.56A>T (p.Asp19Val)	P60484	D	19	V
+1392070	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864528	87864528	single nucleotide variant	NM_000314.8(PTEN):c.59G>C (p.Gly20Ala)	P60484	G	20	A
+3338761	PTEN	1	Pathogenic	criteria provided, single submitter	10	87864531	87864531	single nucleotide variant	NM_000314.8(PTEN):c.62T>C (p.Phe21Ser)	P60484	F	21	S
+1411463	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864532	87864532	single nucleotide variant	NM_000314.8(PTEN):c.63C>A (p.Phe21Leu)	P60484	F	21	L
+468706	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87864533	87864533	single nucleotide variant	NM_000314.8(PTEN):c.64G>T (p.Asp22Tyr)	P60484	D	22	Y
+486221	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87864534	87864534	single nucleotide variant	NM_000314.8(PTEN):c.65A>G (p.Asp22Gly)	P60484	D	22	G
+3231166	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87864534	87864534	single nucleotide variant	NM_000314.8(PTEN):c.65A>T (p.Asp22Val)	P60484	D	22	V
+2827098	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87864537	87864537	single nucleotide variant	NM_000314.8(PTEN):c.68T>C (p.Leu23Ser)	P60484	L	23	S
+2032096	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864540	87864540	single nucleotide variant	NM_000314.8(PTEN):c.71A>C (p.Asp24Ala)	P60484	D	24	A
+2896983	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864541	87864541	single nucleotide variant	NM_000314.8(PTEN):c.72C>A (p.Asp24Glu)	P60484	D	24	E
+189460	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87864543	87864543	single nucleotide variant	NM_000314.8(PTEN):c.74T>C (p.Leu25Ser)	P60484	L	25	S
+490117	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87864544	87864544	single nucleotide variant	NM_000314.8(PTEN):c.75G>T (p.Leu25Phe)	P60484	L	25	F
+2663192	PTEN	1	Pathogenic	criteria provided, single submitter	10	87894025	87894025	single nucleotide variant	NM_000314.8(PTEN):c.80A>T (p.Tyr27Phe)	P60484	Y	27	F
+1003503	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894028	87894028	single nucleotide variant	NM_000314.8(PTEN):c.83T>G (p.Ile28Ser)	P60484	I	28	S
+1192170	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894028	87894028	single nucleotide variant	NM_000314.8(PTEN):c.83T>C (p.Ile28Thr)	P60484	I	28	T
+1489216	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894029	87894029	single nucleotide variant	NM_000314.8(PTEN):c.84T>G (p.Ile28Met)	P60484	I	28	M
+195060	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894033	87894033	single nucleotide variant	NM_000314.8(PTEN):c.88C>A (p.Pro30Thr)	P60484	P	30	T
+3427421	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894033	87894033	single nucleotide variant	NM_000314.8(PTEN):c.88C>T (p.Pro30Ser)	P60484	P	30	S
+468722	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894038	87894038	single nucleotide variant	NM_000314.8(PTEN):c.93C>A (p.Asn31Lys)	P60484	N	31	K
+1462894	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894040	87894040	single nucleotide variant	NM_000314.8(PTEN):c.95T>A (p.Ile32Asn)	P60484	I	32	N
+1719163	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894045	87894045	single nucleotide variant	NM_000314.8(PTEN):c.100G>A (p.Ala34Thr)	P60484	A	34	T
+976722	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87894048	87894048	single nucleotide variant	NM_000314.8(PTEN):c.103A>C (p.Met35Leu)	P60484	M	35	L
+229912	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87894057	87894057	single nucleotide variant	NM_000314.8(PTEN):c.112C>A (p.Pro38Thr)	P60484	P	38	T
+424262	PTEN	1	Pathogenic	criteria provided, single submitter	10	87894058	87894058	single nucleotide variant	NM_000314.8(PTEN):c.113C>G (p.Pro38Arg)	P60484	P	38	R
+1012092	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894058	87894058	single nucleotide variant	NM_000314.8(PTEN):c.113C>A (p.Pro38His)	P60484	P	38	H
+1506231	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894060	87894060	single nucleotide variant	NM_000314.8(PTEN):c.115G>A (p.Ala39Thr)	P60484	A	39	T
+1427165	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894061	87894061	single nucleotide variant	NM_000314.8(PTEN):c.116C>A (p.Ala39Glu)	P60484	A	39	E
+2022313	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894061	87894061	single nucleotide variant	NM_000314.8(PTEN):c.116C>T (p.Ala39Val)	P60484	A	39	V
+484616	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894068	87894068	single nucleotide variant	NM_000314.8(PTEN):c.123A>T (p.Arg41Ser)	P60484	R	41	S
+853190	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894070	87894070	single nucleotide variant	NM_000314.8(PTEN):c.125T>C (p.Leu42Pro)	P60484	L	42	P
+486222	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894072	87894072	single nucleotide variant	NM_000314.8(PTEN):c.127G>A (p.Glu43Lys)	P60484	E	43	K
+2505479	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894073	87894073	single nucleotide variant	NM_000314.8(PTEN):c.128A>G (p.Glu43Gly)	P60484	E	43	G
+2855793	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894073	87894073	single nucleotide variant	NM_000314.8(PTEN):c.128A>C (p.Glu43Ala)	P60484	E	43	A
+3427450	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894076	87894076	single nucleotide variant	NM_000314.8(PTEN):c.131G>T (p.Gly44Val)	P60484	G	44	V
+1053430	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894078	87894078	single nucleotide variant	NM_000314.8(PTEN):c.133G>A (p.Val45Ile)	P60484	V	45	I
+418614	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894081	87894081	single nucleotide variant	NM_000314.8(PTEN):c.136T>G (p.Tyr46Asp)	P60484	Y	46	D
+1701143	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87894081	87894081	single nucleotide variant	NM_000314.8(PTEN):c.136T>C (p.Tyr46His)	P60484	Y	46	H
+1368242	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894082	87894082	single nucleotide variant	NM_000314.8(PTEN):c.137A>G (p.Tyr46Cys)	P60484	Y	46	C
+576858	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894095	87894095	single nucleotide variant	NM_000314.8(PTEN):c.150T>G (p.Ile50Met)	P60484	I	50	M
+1002716	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894097	87894097	single nucleotide variant	NM_000314.8(PTEN):c.152A>G (p.Asp51Gly)	P60484	D	51	G
+566934	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894099	87894099	single nucleotide variant	NM_000314.8(PTEN):c.154G>A (p.Asp52Asn)	P60484	D	52	N
+3427440	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894100	87894100	single nucleotide variant	NM_000314.8(PTEN):c.155A>G (p.Asp52Gly)	P60484	D	52	G
+2136907	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894102	87894102	single nucleotide variant	NM_000314.8(PTEN):c.157G>A (p.Val53Ile)	P60484	V	53	I
+916219	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87894103	87894103	single nucleotide variant	NM_000314.8(PTEN):c.158T>C (p.Val53Ala)	P60484	V	53	A
+189464	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87894105	87894105	single nucleotide variant	NM_000314.8(PTEN):c.160G>A (p.Val54Ile)	P60484	V	54	I
+1776587	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894106	87894106	single nucleotide variant	NM_000314.8(PTEN):c.161T>G (p.Val54Gly)	P60484	V	54	G
+2028680	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87894109	87894109	single nucleotide variant	NM_000314.8(PTEN):c.164G>A (p.Arg55Lys)	P60484	R	55	K
+1777889	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87925515	87925515	single nucleotide variant	NM_000314.8(PTEN):c.167T>C (p.Phe56Ser)	P60484	F	56	S
+2815563	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925515	87925515	single nucleotide variant	NM_000314.8(PTEN):c.167T>A (p.Phe56Tyr)	P60484	F	56	Y
+1778538	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925518	87925518	single nucleotide variant	NM_000314.8(PTEN):c.170T>C (p.Leu57Ser)	P60484	L	57	S
+578122	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925520	87925520	single nucleotide variant	NM_000314.8(PTEN):c.172G>T (p.Asp58Tyr)	P60484	D	58	Y
+430284	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925521	87925521	single nucleotide variant	NM_000314.8(PTEN):c.173A>G (p.Asp58Gly)	P60484	D	58	G
+2730744	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925522	87925522	single nucleotide variant	NM_000314.8(PTEN):c.174T>G (p.Asp58Glu)	P60484	D	58	E
+404153	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925523	87925523	single nucleotide variant	NM_000314.8(PTEN):c.175T>C (p.Ser59Pro)	P60484	S	59	P
+3662804	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925524	87925524	single nucleotide variant	NM_000314.8(PTEN):c.176C>T (p.Ser59Leu)	P60484	S	59	L
+2664745	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925526	87925526	single nucleotide variant	NM_000314.8(PTEN):c.178A>C (p.Lys60Gln)	P60484	K	60	Q
+1780734	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925529	87925529	single nucleotide variant	NM_000314.8(PTEN):c.181C>A (p.His61Asn)	P60484	H	61	N
+3231146	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87925530	87925530	single nucleotide variant	NM_000314.8(PTEN):c.182A>C (p.His61Pro)	P60484	H	61	P
+1719591	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925531	87925531	single nucleotide variant	NM_000314.8(PTEN):c.183T>G (p.His61Gln)	P60484	H	61	Q
+3231147	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925533	87925533	single nucleotide variant	NM_000314.8(PTEN):c.185A>G (p.Lys62Arg)	P60484	K	62	R
+1395465	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925536	87925536	single nucleotide variant	NM_000314.8(PTEN):c.188A>G (p.Asn63Ser)	P60484	N	63	S
+2430990	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925536	87925536	single nucleotide variant	NM_000314.8(PTEN):c.188A>C (p.Asn63Thr)	P60484	N	63	T
+1393335	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925538	87925538	single nucleotide variant	NM_000314.8(PTEN):c.190C>A (p.His64Asn)	P60484	H	64	N
+3240232	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925540	87925540	single nucleotide variant	NM_000314.8(PTEN):c.192T>G (p.His64Gln)	P60484	H	64	Q
+3337498	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925541	87925541	single nucleotide variant	NM_000314.8(PTEN):c.193T>G (p.Tyr65Asp)	P60484	Y	65	D
+962600	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925542	87925542	single nucleotide variant	NM_000314.8(PTEN):c.194A>G (p.Tyr65Cys)	P60484	Y	65	C
+2499958	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87925544	87925544	single nucleotide variant	NM_000314.8(PTEN):c.196A>G (p.Lys66Glu)	P60484	K	66	E
+3069948	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925544	87925544	single nucleotide variant	NM_000314.8(PTEN):c.196A>C (p.Lys66Gln)	P60484	K	66	Q
+2863055	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925547	87925547	single nucleotide variant	NM_000314.8(PTEN):c.199A>G (p.Ile67Val)	P60484	I	67	V
+2891032	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925547	87925547	single nucleotide variant	NM_000314.8(PTEN):c.199A>T (p.Ile67Leu)	P60484	I	67	L
+839209	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925548	87925548	single nucleotide variant	NM_000314.8(PTEN):c.200T>A (p.Ile67Lys)	P60484	I	67	K
+1380044	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925548	87925548	single nucleotide variant	NM_000314.8(PTEN):c.200T>C (p.Ile67Thr)	P60484	I	67	T
+2429351	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87925548	87925548	single nucleotide variant	NM_000314.8(PTEN):c.200T>G (p.Ile67Arg)	P60484	I	67	R
+92815	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925550	87925550	single nucleotide variant	NM_000314.8(PTEN):c.202T>A (p.Tyr68Asn)	P60484	Y	68	N
+481032	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925551	87925551	single nucleotide variant	NM_000314.8(PTEN):c.203A>C (p.Tyr68Ser)	P60484	Y	68	S
+928126	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925553	87925553	single nucleotide variant	NM_000314.8(PTEN):c.205A>C (p.Asn69His)	P60484	N	69	H
+189476	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925554	87925554	single nucleotide variant	NM_000314.8(PTEN):c.206A>G (p.Asn69Ser)	P60484	N	69	S
+2126293	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925554	87925554	single nucleotide variant	NM_000314.8(PTEN):c.206A>T (p.Asn69Ile)	P60484	N	69	I
+820673	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87925555	87925555	single nucleotide variant	NM_000314.8(PTEN):c.207T>G (p.Asn69Lys)	P60484	N	69	K
+1785871	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87925557	87925557	single nucleotide variant	NM_000314.8(PTEN):c.209T>G (p.Leu70Arg)	P60484	L	70	R
+3427434	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931047	87931047	single nucleotide variant	NM_000314.8(PTEN):c.211T>G (p.Cys71Gly)	P60484	C	71	G
+468675	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87931048	87931048	single nucleotide variant	NM_000314.8(PTEN):c.212G>T (p.Cys71Phe)	P60484	C	71	F
+820795	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87931049	87931049	single nucleotide variant	NM_000314.8(PTEN):c.213T>G (p.Cys71Trp)	P60484	C	71	W
+2043159	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931050	87931050	single nucleotide variant	NM_000314.8(PTEN):c.214G>A (p.Ala72Thr)	P60484	A	72	T
+1978595	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931051	87931051	single nucleotide variant	NM_000314.8(PTEN):c.215C>G (p.Ala72Gly)	P60484	A	72	G
+1788390	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931060	87931060	single nucleotide variant	NM_000314.8(PTEN):c.224A>T (p.His75Leu)	P60484	H	75	L
+1321127	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931063	87931063	single nucleotide variant	NM_000314.8(PTEN):c.227A>T (p.Tyr76Phe)	P60484	Y	76	F
+481095	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931065	87931065	single nucleotide variant	NM_000314.8(PTEN):c.229G>C (p.Asp77His)	P60484	D	77	H
+484623	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931067	87931067	single nucleotide variant	NM_000314.8(PTEN):c.231C>A (p.Asp77Glu)	P60484	D	77	E
+919215	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931069	87931069	single nucleotide variant	NM_000314.8(PTEN):c.233C>T (p.Thr78Ile)	P60484	T	78	I
+404155	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87931071	87931071	single nucleotide variant	NM_000314.8(PTEN):c.235G>T (p.Ala79Ser)	P60484	A	79	S
+3311254	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931072	87931072	single nucleotide variant	NM_000314.8(PTEN):c.236C>A (p.Ala79Asp)	P60484	A	79	D
+955524	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931075	87931075	single nucleotide variant	NM_000314.8(PTEN):c.239A>C (p.Lys80Thr)	P60484	K	80	T
+234710	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87931078	87931078	single nucleotide variant	NM_000314.8(PTEN):c.242T>G (p.Phe81Cys)	P60484	F	81	C
+1802604	PTEN	1	Pathogenic	criteria provided, single submitter	10	87931079	87931079	single nucleotide variant	NM_000314.8(PTEN):c.243T>G (p.Phe81Leu)	P60484	F	81	L
+418435	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931080	87931080	single nucleotide variant	NM_000314.8(PTEN):c.244A>G (p.Asn82Asp)	P60484	N	82	D
+3427427	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931084	87931084	single nucleotide variant	NM_000314.8(PTEN):c.248G>C (p.Cys83Ser)	P60484	C	83	S
+923833	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931086	87931086	single nucleotide variant	NM_000314.8(PTEN):c.250A>G (p.Arg84Gly)	P60484	R	84	G
+2567272	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931088	87931088	single nucleotide variant	NM_000314.8(PTEN):c.252A>C (p.Arg84Ser)	P60484	R	84	S
+2499932	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87931089	87931089	single nucleotide variant	NM_000314.8(PTEN):c.253G>A (p.Val85Ile)	P60484	V	85	I
+584752	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933015	87933015	single nucleotide variant	NM_000314.8(PTEN):c.256G>A (p.Ala86Thr)	P60484	A	86	T
+591438	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933016	87933016	single nucleotide variant	NM_000314.8(PTEN):c.257C>T (p.Ala86Val)	P60484	A	86	V
+2587207	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933022	87933022	single nucleotide variant	NM_000314.8(PTEN):c.263A>T (p.Tyr88Phe)	P60484	Y	88	F
+156512	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933024	87933024	single nucleotide variant	NM_000314.8(PTEN):c.265C>T (p.Pro89Ser)	P60484	P	89	S
+482078	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933025	87933025	single nucleotide variant	NM_000314.8(PTEN):c.266C>T (p.Pro89Leu)	P60484	P	89	L
+492324	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933030	87933030	single nucleotide variant	NM_000314.8(PTEN):c.271G>A (p.Glu91Lys)	P60484	E	91	K
+2703168	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933030	87933030	single nucleotide variant	NM_000314.8(PTEN):c.271G>C (p.Glu91Gln)	P60484	E	91	Q
+2836880	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933031	87933031	single nucleotide variant	NM_000314.8(PTEN):c.272A>G (p.Glu91Gly)	P60484	E	91	G
+1795656	PTEN	1	Pathogenic	criteria provided, single submitter	10	87933034	87933034	single nucleotide variant	NM_000314.8(PTEN):c.275A>T (p.Asp92Val)	P60484	D	92	V
+1043062	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933035	87933035	single nucleotide variant	NM_000314.8(PTEN):c.276C>G (p.Asp92Glu)	P60484	D	92	E
+189482	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933036	87933036	single nucleotide variant	NM_000314.8(PTEN):c.277C>G (p.His93Asp)	P60484	H	93	D
+523356	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933036	87933036	single nucleotide variant	NM_000314.8(PTEN):c.277C>A (p.His93Asn)	P60484	H	93	N
+1442462	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933037	87933037	single nucleotide variant	NM_000314.8(PTEN):c.278A>T (p.His93Leu)	P60484	H	93	L
+2824871	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933039	87933039	single nucleotide variant	NM_000314.8(PTEN):c.280A>T (p.Asn94Tyr)	P60484	N	94	Y
+1381124	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933042	87933042	single nucleotide variant	NM_000314.8(PTEN):c.283C>T (p.Pro95Ser)	P60484	P	95	S
+1796695	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933042	87933042	single nucleotide variant	NM_000314.8(PTEN):c.283C>G (p.Pro95Ala)	P60484	P	95	A
+3613675	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933043	87933043	single nucleotide variant	NM_000314.8(PTEN):c.284C>A (p.Pro95Gln)	P60484	P	95	Q
+92819	PTEN	1	Pathogenic	criteria provided, single submitter	10	87933045	87933045	single nucleotide variant	NM_000314.8(PTEN):c.286C>T (p.Pro96Ser)	P60484	P	96	S
+280630	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933045	87933045	single nucleotide variant	NM_000314.8(PTEN):c.286C>G (p.Pro96Ala)	P60484	P	96	A
+1797556	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933049	87933049	single nucleotide variant	NM_000314.8(PTEN):c.290A>G (p.Gln97Arg)	P60484	Q	97	R
+2567275	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933050	87933050	single nucleotide variant	NM_000314.8(PTEN):c.291G>T (p.Gln97His)	P60484	Q	97	H
+822278	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933051	87933051	single nucleotide variant	NM_000314.8(PTEN):c.292C>G (p.Leu98Val)	P60484	L	98	V
+1389580	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933054	87933054	single nucleotide variant	NM_000314.8(PTEN):c.295G>C (p.Glu99Gln)	P60484	E	99	Q
+2774179	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933054	87933054	single nucleotide variant	NM_000314.8(PTEN):c.295G>A (p.Glu99Lys)	P60484	E	99	K
+1207213	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933057	87933057	single nucleotide variant	NM_000314.8(PTEN):c.298C>T (p.Leu100Phe)	P60484	L	100	F
+2687621	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933057	87933057	single nucleotide variant	NM_000314.8(PTEN):c.298C>A (p.Leu100Ile)	P60484	L	100	I
+641295	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933058	87933058	single nucleotide variant	NM_000314.8(PTEN):c.299T>C (p.Leu100Pro)	P60484	L	100	P
+4709745	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933060	87933060	single nucleotide variant	NM_000314.8(PTEN):c.301A>T (p.Ile101Phe)	P60484	I	101	F
+2813304	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933060	87933060	single nucleotide variant	NM_000314.8(PTEN):c.301A>C (p.Ile101Leu)	P60484	I	101	L
+2095828	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933066	87933066	single nucleotide variant	NM_000314.8(PTEN):c.307C>T (p.Pro103Ser)	P60484	P	103	S
+588868	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933070	87933070	single nucleotide variant	NM_000314.8(PTEN):c.311T>A (p.Phe104Tyr)	P60484	F	104	Y
+2091925	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933070	87933070	single nucleotide variant	NM_000314.8(PTEN):c.311T>C (p.Phe104Ser)	P60484	F	104	S
+1728081	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933072	87933072	single nucleotide variant	NM_000314.8(PTEN):c.313T>G (p.Cys105Gly)	P60484	C	105	G
+1728902	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933079	87933079	single nucleotide variant	NM_000314.8(PTEN):c.320A>G (p.Asp107Gly)	P60484	D	107	G
+1729064	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933080	87933080	single nucleotide variant	NM_000314.8(PTEN):c.321T>A (p.Asp107Glu)	P60484	D	107	E
+3231151	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933080	87933080	single nucleotide variant	NM_000314.8(PTEN):c.321T>G (p.Asp107Glu)	P60484	D	107	E
+2562403	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933081	87933081	single nucleotide variant	NM_000314.8(PTEN):c.322C>T (p.Leu108Phe)	P60484	L	108	F
+2764628	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933082	87933082	single nucleotide variant	NM_000314.8(PTEN):c.323T>G (p.Leu108Arg)	P60484	L	108	R
+1729705	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933086	87933086	single nucleotide variant	NM_000314.8(PTEN):c.327C>A (p.Asp109Glu)	P60484	D	109	E
+428229	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933087	87933087	single nucleotide variant	NM_000314.8(PTEN):c.328C>G (p.Gln110Glu)	P60484	Q	110	E
+1186260	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933087	87933087	single nucleotide variant	NM_000314.8(PTEN):c.328C>A (p.Gln110Lys)	P60484	Q	110	K
+936720	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933090	87933090	single nucleotide variant	NM_000314.8(PTEN):c.331T>G (p.Trp111Gly)	P60484	W	111	G
+581617	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933092	87933092	single nucleotide variant	NM_000314.8(PTEN):c.333G>C (p.Trp111Cys)	P60484	W	111	C
+3669092	PTEN	1	Pathogenic	criteria provided, single submitter	10	87933092	87933092	single nucleotide variant	NM_000314.8(PTEN):c.333G>T (p.Trp111Cys)	P60484	W	111	C
+7832	PTEN	1	Pathogenic	criteria provided, single submitter	10	87933094	87933094	single nucleotide variant	NM_000314.8(PTEN):c.335T>C (p.Leu112Pro)	P60484	L	112	P
+2567268	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933094	87933094	single nucleotide variant	NM_000314.8(PTEN):c.335T>A (p.Leu112Gln)	P60484	L	112	Q
+492326	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933096	87933096	single nucleotide variant	NM_000314.8(PTEN):c.337A>C (p.Ser113Arg)	P60484	S	113	R
+2502137	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933102	87933102	single nucleotide variant	NM_000314.8(PTEN):c.343G>T (p.Asp115Tyr)	P60484	D	115	Y
+1377430	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933104	87933104	single nucleotide variant	NM_000314.8(PTEN):c.345T>A (p.Asp115Glu)	P60484	D	115	E
+630187	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933106	87933106	single nucleotide variant	NM_000314.8(PTEN):c.347A>G (p.Asp116Gly)	P60484	D	116	G
+3311260	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933106	87933106	single nucleotide variant	NM_000314.8(PTEN):c.347A>C (p.Asp116Ala)	P60484	D	116	A
+849802	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933107	87933107	single nucleotide variant	NM_000314.8(PTEN):c.348C>A (p.Asp116Glu)	P60484	D	116	E
+185588	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933108	87933108	single nucleotide variant	NM_000314.8(PTEN):c.349A>C (p.Asn117His)	P60484	N	117	H
+216421	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933109	87933109	single nucleotide variant	NM_000314.8(PTEN):c.350A>G (p.Asn117Ser)	P60484	N	117	S
+2753005	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933110	87933110	single nucleotide variant	NM_000314.8(PTEN):c.351T>A (p.Asn117Lys)	P60484	N	117	K
+565348	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933111	87933111	single nucleotide variant	NM_000314.8(PTEN):c.352C>T (p.His118Tyr)	P60484	H	118	Y
+2624869	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933112	87933112	single nucleotide variant	NM_000314.8(PTEN):c.353A>C (p.His118Pro)	P60484	H	118	P
+484619	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933115	87933115	single nucleotide variant	NM_000314.8(PTEN):c.356T>G (p.Val119Gly)	P60484	V	119	G
+189485	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933117	87933117	single nucleotide variant	NM_000314.8(PTEN):c.358G>A (p.Ala120Thr)	P60484	A	120	T
+1498241	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933118	87933118	single nucleotide variant	NM_000314.8(PTEN):c.359C>G (p.Ala120Gly)	P60484	A	120	G
+2502558	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933120	87933120	single nucleotide variant	NM_000314.8(PTEN):c.361G>A (p.Ala121Thr)	P60484	A	121	T
+2687614	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933120	87933120	single nucleotide variant	NM_000314.8(PTEN):c.361G>C (p.Ala121Pro)	P60484	A	121	P
+7842	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933121	87933121	single nucleotide variant	NM_000314.8(PTEN):c.362C>G (p.Ala121Gly)	P60484	A	121	G
+1371888	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933121	87933121	single nucleotide variant	NM_000314.8(PTEN):c.362C>T (p.Ala121Val)	P60484	A	121	V
+2674284	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933121	87933121	single nucleotide variant	NM_000314.8(PTEN):c.362C>A (p.Ala121Glu)	P60484	A	121	E
+824039	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933124	87933124	single nucleotide variant	NM_000314.8(PTEN):c.365T>G (p.Ile122Ser)	P60484	I	122	S
+3572467	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933126	87933126	single nucleotide variant	NM_000314.8(PTEN):c.367C>A (p.His123Asn)	P60484	H	123	N
+1803052	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933133	87933133	single nucleotide variant	NM_000314.8(PTEN):c.374A>G (p.Lys125Arg)	P60484	K	125	R
+1360588	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933134	87933134	single nucleotide variant	NM_000314.8(PTEN):c.375A>C (p.Lys125Asn)	P60484	K	125	N
+484625	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933135	87933135	single nucleotide variant	NM_000314.8(PTEN):c.376G>T (p.Ala126Ser)	P60484	A	126	S
+1508589	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933136	87933136	single nucleotide variant	NM_000314.8(PTEN):c.377C>G (p.Ala126Gly)	P60484	A	126	G
+2674283	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933138	87933138	single nucleotide variant	NM_000314.8(PTEN):c.379G>C (p.Gly127Arg)	P60484	G	127	R
+92821	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933139	87933139	single nucleotide variant	NM_000314.8(PTEN):c.380G>T (p.Gly127Val)	P60484	G	127	V
+428225	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933139	87933139	single nucleotide variant	NM_000314.8(PTEN):c.380G>A (p.Gly127Glu)	P60484	G	127	E
+1967574	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933139	87933139	single nucleotide variant	NM_000314.8(PTEN):c.380G>C (p.Gly127Ala)	P60484	G	127	A
+1954944	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933150	87933150	single nucleotide variant	NM_000314.8(PTEN):c.391A>G (p.Thr131Ala)	P60484	T	131	A
+482073	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933151	87933151	single nucleotide variant	NM_000314.8(PTEN):c.392C>G (p.Thr131Ser)	P60484	T	131	S
+2443991	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933151	87933151	single nucleotide variant	NM_000314.8(PTEN):c.392C>A (p.Thr131Asn)	P60484	T	131	N
+971265	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933156	87933156	single nucleotide variant	NM_000314.8(PTEN):c.397G>A (p.Val133Ile)	P60484	V	133	I
+2015349	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933156	87933156	single nucleotide variant	NM_000314.8(PTEN):c.397G>T (p.Val133Leu)	P60484	V	133	L
+2033861	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933159	87933159	single nucleotide variant	NM_000314.8(PTEN):c.400A>G (p.Met134Val)	P60484	M	134	V
+431829	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933160	87933160	single nucleotide variant	NM_000314.8(PTEN):c.401T>G (p.Met134Arg)	P60484	M	134	R
+1036651	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933160	87933160	single nucleotide variant	NM_000314.8(PTEN):c.401T>A (p.Met134Lys)	P60484	M	134	K
+2028290	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933161	87933161	single nucleotide variant	NM_000314.8(PTEN):c.402G>A (p.Met134Ile)	P60484	M	134	I
+1737440	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933164	87933164	single nucleotide variant	NM_000314.8(PTEN):c.405A>G (p.Ile135Met)	P60484	I	135	M
+841362	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933168	87933168	single nucleotide variant	NM_000314.8(PTEN):c.409G>C (p.Ala137Pro)	P60484	A	137	P
+2443228	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933169	87933169	single nucleotide variant	NM_000314.8(PTEN):c.410C>G (p.Ala137Gly)	P60484	A	137	G
+3340217	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933169	87933169	single nucleotide variant	NM_000314.8(PTEN):c.410C>A (p.Ala137Glu)	P60484	A	137	E
+864397	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933171	87933171	single nucleotide variant	NM_000314.8(PTEN):c.412T>C (p.Tyr138His)	P60484	Y	138	H
+1738466	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933176	87933176	single nucleotide variant	NM_000314.8(PTEN):c.417A>C (p.Leu139Phe)	P60484	L	139	F
+1929420	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933176	87933176	single nucleotide variant	NM_000314.8(PTEN):c.417A>T (p.Leu139Phe)	P60484	L	139	F
+2091506	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933177	87933177	single nucleotide variant	NM_000314.8(PTEN):c.418T>A (p.Leu140Ile)	P60484	L	140	I
+404171	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933180	87933180	single nucleotide variant	NM_000314.8(PTEN):c.421C>G (p.His141Asp)	P60484	H	141	D
+418438	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933181	87933181	single nucleotide variant	NM_000314.8(PTEN):c.422A>G (p.His141Arg)	P60484	H	141	R
+237646	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933184	87933184	single nucleotide variant	NM_000314.8(PTEN):c.425G>A (p.Arg142Gln)	P60484	R	142	Q
+486225	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933184	87933184	single nucleotide variant	NM_000314.8(PTEN):c.425G>C (p.Arg142Pro)	P60484	R	142	P
+1171869	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933186	87933186	single nucleotide variant	NM_000314.8(PTEN):c.427G>A (p.Gly143Ser)	P60484	G	143	S
+2452967	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933186	87933186	single nucleotide variant	NM_000314.8(PTEN):c.427G>C (p.Gly143Arg)	P60484	G	143	R
+1419656	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933192	87933192	single nucleotide variant	NM_000314.8(PTEN):c.433T>C (p.Phe145Leu)	P60484	F	145	L
+2687519	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933192	87933192	single nucleotide variant	NM_000314.8(PTEN):c.433T>G (p.Phe145Val)	P60484	F	145	V
+806543	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933193	87933193	single nucleotide variant	NM_000314.8(PTEN):c.434T>C (p.Phe145Ser)	P60484	F	145	S
+1171836	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933194	87933194	single nucleotide variant	NM_000314.8(PTEN):c.435T>A (p.Phe145Leu)	P60484	F	145	L
+2099299	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933195	87933195	single nucleotide variant	NM_000314.8(PTEN):c.436T>G (p.Leu146Val)	P60484	L	146	V
+490113	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933199	87933199	single nucleotide variant	NM_000314.8(PTEN):c.440A>G (p.Lys147Arg)	P60484	K	147	R
+468687	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933208	87933208	single nucleotide variant	NM_000314.8(PTEN):c.449A>G (p.Glu150Gly)	P60484	E	150	G
+2735436	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933211	87933211	single nucleotide variant	NM_000314.8(PTEN):c.452C>A (p.Ala151Asp)	P60484	A	151	D
+2861996	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933211	87933211	single nucleotide variant	NM_000314.8(PTEN):c.452C>T (p.Ala151Val)	P60484	A	151	V
+1721463	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933214	87933214	single nucleotide variant	NM_000314.8(PTEN):c.455T>G (p.Leu152Arg)	P60484	L	152	R
+404159	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933216	87933216	single nucleotide variant	NM_000314.8(PTEN):c.457G>A (p.Asp153Asn)	P60484	D	153	N
+1741636	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933216	87933216	single nucleotide variant	NM_000314.8(PTEN):c.457G>T (p.Asp153Tyr)	P60484	D	153	Y
+2757141	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933219	87933219	single nucleotide variant	NM_000314.8(PTEN):c.460T>A (p.Phe154Ile)	P60484	F	154	I
+3639783	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933220	87933220	single nucleotide variant	NM_000314.8(PTEN):c.461T>C (p.Phe154Ser)	P60484	F	154	S
+933783	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933221	87933221	single nucleotide variant	NM_000314.8(PTEN):c.462C>G (p.Phe154Leu)	P60484	F	154	L
+2015340	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933221	87933221	single nucleotide variant	NM_000314.8(PTEN):c.462C>A (p.Phe154Leu)	P60484	F	154	L
+1742096	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933222	87933222	single nucleotide variant	NM_000314.8(PTEN):c.463T>A (p.Tyr155Asn)	P60484	Y	155	N
+3660310	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933223	87933223	single nucleotide variant	NM_000314.8(PTEN):c.464A>T (p.Tyr155Phe)	P60484	Y	155	F
+468688	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933225	87933225	single nucleotide variant	NM_000314.8(PTEN):c.466G>A (p.Gly156Arg)	P60484	G	156	R
+2007139	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933225	87933225	single nucleotide variant	NM_000314.8(PTEN):c.466G>C (p.Gly156Arg)	P60484	G	156	R
+3240230	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933226	87933226	single nucleotide variant	NM_000314.8(PTEN):c.467G>T (p.Gly156Val)	P60484	G	156	V
+427593	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933229	87933229	single nucleotide variant	NM_000314.8(PTEN):c.470A>G (p.Glu157Gly)	P60484	E	157	G
+492329	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933231	87933231	single nucleotide variant	NM_000314.8(PTEN):c.472G>A (p.Val158Ile)	P60484	V	158	I
+1037500	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933231	87933231	single nucleotide variant	NM_000314.8(PTEN):c.472G>T (p.Val158Leu)	P60484	V	158	L
+428262	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933235	87933235	single nucleotide variant	NM_000314.8(PTEN):c.476G>T (p.Arg159Met)	P60484	R	159	M
+2735437	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933235	87933235	single nucleotide variant	NM_000314.8(PTEN):c.476G>C (p.Arg159Thr)	P60484	R	159	T
+1347476	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933236	87933236	single nucleotide variant	NM_000314.8(PTEN):c.477G>C (p.Arg159Ser)	P60484	R	159	S
+404170	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933237	87933237	single nucleotide variant	NM_000314.8(PTEN):c.478A>C (p.Thr160Pro)	P60484	T	160	P
+431851	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87933238	87933238	single nucleotide variant	NM_000314.8(PTEN):c.479C>T (p.Thr160Ile)	P60484	T	160	I
+1743421	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933241	87933241	single nucleotide variant	NM_000314.8(PTEN):c.482G>C (p.Arg161Thr)	P60484	R	161	T
+2707439	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87933244	87933244	single nucleotide variant	NM_000314.8(PTEN):c.485A>T (p.Asp162Val)	P60484	D	162	V
+3071050	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933250	87933250	single nucleotide variant	NM_000314.8(PTEN):c.491A>T (p.Lys164Met)	P60484	K	164	M
+2501532	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87933251	87933251	single nucleotide variant	NM_000314.8(PTEN):c.492G>C (p.Lys164Asn)	P60484	K	164	N
+844343	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952119	87952119	single nucleotide variant	NM_000314.8(PTEN):c.494G>A (p.Gly165Glu)	P60484	G	165	E
+187015	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952121	87952121	single nucleotide variant	NM_000314.8(PTEN):c.496G>A (p.Val166Ile)	P60484	V	166	I
+1046897	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952121	87952121	single nucleotide variant	NM_000314.8(PTEN):c.496G>T (p.Val166Leu)	P60484	V	166	L
+486974	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952122	87952122	single nucleotide variant	NM_000314.8(PTEN):c.497T>A (p.Val166Glu)	P60484	V	166	E
+1686107	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952124	87952124	single nucleotide variant	NM_000314.8(PTEN):c.499A>G (p.Thr167Ala)	P60484	T	167	A
+953955	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952127	87952127	single nucleotide variant	NM_000314.8(PTEN):c.502A>G (p.Ile168Val)	P60484	I	168	V
+468694	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952128	87952128	single nucleotide variant	NM_000314.8(PTEN):c.503T>C (p.Ile168Thr)	P60484	I	168	T
+2581178	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952129	87952129	single nucleotide variant	NM_000314.8(PTEN):c.504T>G (p.Ile168Met)	P60484	I	168	M
+591816	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952130	87952130	single nucleotide variant	NM_000314.8(PTEN):c.505C>G (p.Pro169Ala)	P60484	P	169	A
+536559	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952133	87952133	single nucleotide variant	NM_000314.8(PTEN):c.508A>G (p.Ser170Gly)	P60484	S	170	G
+1485373	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952133	87952133	single nucleotide variant	NM_000314.8(PTEN):c.508A>T (p.Ser170Cys)	P60484	S	170	C
+1745325	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952134	87952134	single nucleotide variant	NM_000314.8(PTEN):c.509G>C (p.Ser170Thr)	P60484	S	170	T
+1198486	PTEN	1	Pathogenic	criteria provided, single submitter	10	87952136	87952136	single nucleotide variant	NM_000314.8(PTEN):c.511C>A (p.Gln171Lys)	P60484	Q	171	K
+573168	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952137	87952137	single nucleotide variant	NM_000314.8(PTEN):c.512A>C (p.Gln171Pro)	P60484	Q	171	P
+825490	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952140	87952140	single nucleotide variant	NM_000314.8(PTEN):c.515G>C (p.Arg172Thr)	P60484	R	172	T
+1003046	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952140	87952140	single nucleotide variant	NM_000314.8(PTEN):c.515G>T (p.Arg172Met)	P60484	R	172	M
+404142	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952142	87952142	single nucleotide variant	NM_000314.8(PTEN):c.517C>A (p.Arg173Ser)	P60484	R	173	S
+428258	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952143	87952143	single nucleotide variant	NM_000314.8(PTEN):c.518G>T (p.Arg173Leu)	P60484	R	173	L
+3220859	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952145	87952145	single nucleotide variant	NM_000314.8(PTEN):c.520T>C (p.Tyr174His)	P60484	Y	174	H
+960928	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952148	87952148	single nucleotide variant	NM_000314.8(PTEN):c.523G>T (p.Val175Leu)	P60484	V	175	L
+185585	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952152	87952152	single nucleotide variant	NM_000314.8(PTEN):c.527A>G (p.Tyr176Cys)	P60484	Y	176	C
+974864	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952154	87952154	single nucleotide variant	NM_000314.8(PTEN):c.529T>C (p.Tyr177His)	P60484	Y	177	H
+988005	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952154	87952154	single nucleotide variant	NM_000314.8(PTEN):c.529T>G (p.Tyr177Asp)	P60484	Y	177	D
+945254	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952157	87952157	single nucleotide variant	NM_000314.8(PTEN):c.532T>G (p.Tyr178Asp)	P60484	Y	178	D
+2081510	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952157	87952157	single nucleotide variant	NM_000314.8(PTEN):c.532T>C (p.Tyr178His)	P60484	Y	178	H
+189413	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952158	87952158	single nucleotide variant	NM_000314.8(PTEN):c.533A>G (p.Tyr178Cys)	P60484	Y	178	C
+1746919	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952158	87952158	single nucleotide variant	NM_000314.8(PTEN):c.533A>T (p.Tyr178Phe)	P60484	Y	178	F
+1408807	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952161	87952161	single nucleotide variant	NM_000314.8(PTEN):c.536G>A (p.Ser179Asn)	P60484	S	179	N
+481129	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952163	87952163	single nucleotide variant	NM_000314.8(PTEN):c.538T>C (p.Tyr180His)	P60484	Y	180	H
+141636	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952176	87952176	single nucleotide variant	NM_000314.8(PTEN):c.551A>T (p.Asn184Ile)	P60484	N	184	I
+2118280	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952179	87952179	single nucleotide variant	NM_000314.8(PTEN):c.554A>G (p.His185Arg)	P60484	H	185	R
+3598499	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952182	87952182	single nucleotide variant	NM_000314.8(PTEN):c.557T>C (p.Leu186Pro)	P60484	L	186	P
+1401407	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952187	87952187	single nucleotide variant	NM_000314.8(PTEN):c.562T>G (p.Tyr188Asp)	P60484	Y	188	D
+1319460	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952188	87952188	single nucleotide variant	NM_000314.8(PTEN):c.563A>G (p.Tyr188Cys)	P60484	Y	188	C
+1748789	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952188	87952188	single nucleotide variant	NM_000314.8(PTEN):c.563A>T (p.Tyr188Phe)	P60484	Y	188	F
+825885	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952191	87952191	single nucleotide variant	NM_000314.8(PTEN):c.566G>C (p.Arg189Thr)	P60484	R	189	T
+1748955	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952191	87952191	single nucleotide variant	NM_000314.8(PTEN):c.566G>A (p.Arg189Lys)	P60484	R	189	K
+468698	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952194	87952194	single nucleotide variant	NM_000314.8(PTEN):c.569C>T (p.Pro190Leu)	P60484	P	190	L
+423079	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952196	87952196	single nucleotide variant	NM_000314.8(PTEN):c.571G>C (p.Val191Leu)	P60484	V	191	L
+2833276	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952199	87952199	single nucleotide variant	NM_000314.8(PTEN):c.574G>T (p.Ala192Ser)	P60484	A	192	S
+3074642	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952200	87952200	single nucleotide variant	NM_000314.8(PTEN):c.575C>G (p.Ala192Gly)	P60484	A	192	G
+431875	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952203	87952203	single nucleotide variant	NM_000314.8(PTEN):c.578T>C (p.Leu193Pro)	P60484	L	193	P
+2442682	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952205	87952205	single nucleotide variant	NM_000314.8(PTEN):c.580T>A (p.Leu194Met)	P60484	L	194	M
+1014592	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952208	87952208	single nucleotide variant	NM_000314.8(PTEN):c.583T>C (p.Phe195Leu)	P60484	F	195	L
+1750073	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952209	87952209	single nucleotide variant	NM_000314.8(PTEN):c.584T>C (p.Phe195Ser)	P60484	F	195	S
+618852	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952212	87952212	single nucleotide variant	NM_000314.8(PTEN):c.587A>G (p.His196Arg)	P60484	H	196	R
+629237	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952214	87952214	single nucleotide variant	NM_000314.8(PTEN):c.589A>C (p.Lys197Gln)	P60484	K	197	Q
+2749648	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952214	87952214	single nucleotide variant	NM_000314.8(PTEN):c.589A>G (p.Lys197Glu)	P60484	K	197	E
+1750436	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952215	87952215	single nucleotide variant	NM_000314.8(PTEN):c.590A>G (p.Lys197Arg)	P60484	K	197	R
+468702	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952218	87952218	single nucleotide variant	NM_000314.8(PTEN):c.593T>A (p.Met198Lys)	P60484	M	198	K
+2774181	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952218	87952218	single nucleotide variant	NM_000314.8(PTEN):c.593T>G (p.Met198Arg)	P60484	M	198	R
+1750675	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952219	87952219	single nucleotide variant	NM_000314.8(PTEN):c.594G>A (p.Met198Ile)	P60484	M	198	I
+629479	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952220	87952220	single nucleotide variant	NM_000314.8(PTEN):c.595A>G (p.Met199Val)	P60484	M	199	V
+919891	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952220	87952220	single nucleotide variant	NM_000314.8(PTEN):c.595A>T (p.Met199Leu)	P60484	M	199	L
+2814792	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952222	87952222	single nucleotide variant	NM_000314.8(PTEN):c.597G>C (p.Met199Ile)	P60484	M	199	I
+142452	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87952223	87952223	single nucleotide variant	NM_000314.8(PTEN):c.598T>G (p.Phe200Val)	P60484	F	200	V
+427595	PTEN	1	Pathogenic	criteria provided, single submitter	10	87952230	87952230	single nucleotide variant	NM_000314.8(PTEN):c.605C>T (p.Thr202Ile)	P60484	T	202	I
+1716764	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952230	87952230	single nucleotide variant	NM_000314.8(PTEN):c.605C>G (p.Thr202Ser)	P60484	T	202	S
+578650	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952232	87952232	single nucleotide variant	NM_000314.8(PTEN):c.607A>G (p.Ile203Val)	P60484	I	203	V
+2713606	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952233	87952233	single nucleotide variant	NM_000314.8(PTEN):c.608T>G (p.Ile203Ser)	P60484	I	203	S
+468704	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952235	87952235	single nucleotide variant	NM_000314.8(PTEN):c.610C>T (p.Pro204Ser)	P60484	P	204	S
+1462187	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952238	87952238	single nucleotide variant	NM_000314.8(PTEN):c.613A>T (p.Met205Leu)	P60484	M	205	L
+480381	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952239	87952239	single nucleotide variant	NM_000314.8(PTEN):c.614T>C (p.Met205Thr)	P60484	M	205	T
+492734	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952240	87952240	single nucleotide variant	NM_000314.8(PTEN):c.615G>A (p.Met205Ile)	P60484	M	205	I
+2758375	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952241	87952241	single nucleotide variant	NM_000314.8(PTEN):c.616T>G (p.Phe206Val)	P60484	F	206	V
+1752060	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952242	87952242	single nucleotide variant	NM_000314.8(PTEN):c.617T>A (p.Phe206Tyr)	P60484	F	206	Y
+3311257	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952243	87952243	single nucleotide variant	NM_000314.8(PTEN):c.618C>G (p.Phe206Leu)	P60484	F	206	L
+826234	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952244	87952244	single nucleotide variant	NM_000314.8(PTEN):c.619A>T (p.Ser207Cys)	P60484	S	207	C
+2818811	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952245	87952245	single nucleotide variant	NM_000314.8(PTEN):c.620G>T (p.Ser207Ile)	P60484	S	207	I
+490114	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87952250	87952250	single nucleotide variant	NM_000314.8(PTEN):c.625G>A (p.Gly209Arg)	P60484	G	209	R
+1320458	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87952259	87952259	single nucleotide variant	NM_000314.8(PTEN):c.634A>G (p.Asn212Asp)	P60484	N	212	D
+826369	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957855	87957855	single nucleotide variant	NM_000314.8(PTEN):c.637C>T (p.Pro213Ser)	P60484	P	213	S
+522165	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957856	87957856	single nucleotide variant	NM_000314.8(PTEN):c.638C>A (p.Pro213His)	P60484	P	213	H
+1485363	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957856	87957856	single nucleotide variant	NM_000314.8(PTEN):c.638C>T (p.Pro213Leu)	P60484	P	213	L
+587985	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957859	87957859	single nucleotide variant	NM_000314.8(PTEN):c.641A>C (p.Gln214Pro)	P60484	Q	214	P
+1470275	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957859	87957859	single nucleotide variant	NM_000314.8(PTEN):c.641A>T (p.Gln214Leu)	P60484	Q	214	L
+1012022	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957861	87957861	single nucleotide variant	NM_000314.8(PTEN):c.643T>G (p.Phe215Val)	P60484	F	215	V
+2848369	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957863	87957863	single nucleotide variant	NM_000314.8(PTEN):c.645T>G (p.Phe215Leu)	P60484	F	215	L
+3072410	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957867	87957867	single nucleotide variant	NM_000314.8(PTEN):c.649G>C (p.Val217Leu)	P60484	V	217	L
+2866544	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957870	87957870	single nucleotide variant	NM_000314.8(PTEN):c.652T>C (p.Cys218Arg)	P60484	C	218	R
+449090	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957874	87957874	single nucleotide variant	NM_000314.8(PTEN):c.656A>C (p.Gln219Pro)	P60484	Q	219	P
+3311265	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957876	87957876	single nucleotide variant	NM_000314.8(PTEN):c.658C>G (p.Leu220Val)	P60484	L	220	V
+928466	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957877	87957877	single nucleotide variant	NM_000314.8(PTEN):c.659T>C (p.Leu220Pro)	P60484	L	220	P
+3026433	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87957879	87957879	single nucleotide variant	NM_000314.8(PTEN):c.661A>G (p.Lys221Glu)	P60484	K	221	E
+237652	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957882	87957882	single nucleotide variant	NM_000314.8(PTEN):c.664G>T (p.Val222Leu)	P60484	V	222	L
+3427444	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957887	87957887	single nucleotide variant	NM_000314.8(PTEN):c.669G>C (p.Lys223Asn)	P60484	K	223	N
+999105	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957889	87957889	single nucleotide variant	NM_000314.8(PTEN):c.671T>A (p.Ile224Lys)	P60484	I	224	K
+231899	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957891	87957891	single nucleotide variant	NM_000314.8(PTEN):c.673T>C (p.Tyr225His)	P60484	Y	225	H
+3311261	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957897	87957897	single nucleotide variant	NM_000314.8(PTEN):c.679T>A (p.Ser227Thr)	P60484	S	227	T
+2452972	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957898	87957898	single nucleotide variant	NM_000314.8(PTEN):c.680C>T (p.Ser227Phe)	P60484	S	227	F
+404154	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957901	87957901	single nucleotide variant	NM_000314.8(PTEN):c.683A>G (p.Asn228Ser)	P60484	N	228	S
+2832413	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957901	87957901	single nucleotide variant	NM_000314.8(PTEN):c.683A>C (p.Asn228Thr)	P60484	N	228	T
+1755993	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957906	87957906	single nucleotide variant	NM_000314.8(PTEN):c.688G>A (p.Gly230Arg)	P60484	G	230	R
+1756040	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957907	87957907	single nucleotide variant	NM_000314.8(PTEN):c.689G>A (p.Gly230Glu)	P60484	G	230	E
+1720896	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957909	87957909	single nucleotide variant	NM_000314.8(PTEN):c.691C>A (p.Pro231Thr)	P60484	P	231	T
+2828231	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957913	87957913	single nucleotide variant	NM_000314.8(PTEN):c.695C>A (p.Thr232Lys)	P60484	T	232	K
+3075548	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957919	87957919	single nucleotide variant	NM_000314.8(PTEN):c.701G>T (p.Arg234Leu)	P60484	R	234	L
+940273	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957924	87957924	single nucleotide variant	NM_000314.8(PTEN):c.706G>A (p.Asp236Asn)	P60484	D	236	N
+2080106	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957924	87957924	single nucleotide variant	NM_000314.8(PTEN):c.706G>T (p.Asp236Tyr)	P60484	D	236	Y
+2805466	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957925	87957925	single nucleotide variant	NM_000314.8(PTEN):c.707A>C (p.Asp236Ala)	P60484	D	236	A
+2452981	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957930	87957930	single nucleotide variant	NM_000314.8(PTEN):c.712T>G (p.Phe238Val)	P60484	F	238	V
+3070715	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957931	87957931	single nucleotide variant	NM_000314.8(PTEN):c.713T>C (p.Phe238Ser)	P60484	F	238	S
+826884	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957934	87957934	single nucleotide variant	NM_000314.8(PTEN):c.716T>C (p.Met239Thr)	P60484	M	239	T
+450079	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957939	87957939	single nucleotide variant	NM_000314.8(PTEN):c.721T>G (p.Phe241Val)	P60484	F	241	V
+428247	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957941	87957941	single nucleotide variant	NM_000314.8(PTEN):c.723T>G (p.Phe241Leu)	P60484	F	241	L
+1332611	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957942	87957942	single nucleotide variant	NM_000314.8(PTEN):c.724G>A (p.Glu242Lys)	P60484	E	242	K
+420743	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957948	87957948	single nucleotide variant	NM_000314.8(PTEN):c.730C>T (p.Pro244Ser)	P60484	P	244	S
+826986	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957953	87957953	single nucleotide variant	NM_000314.8(PTEN):c.735G>C (p.Gln245His)	P60484	Q	245	H
+965633	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957954	87957954	single nucleotide variant	NM_000314.8(PTEN):c.736C>A (p.Pro246Thr)	P60484	P	246	T
+2587208	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957955	87957955	single nucleotide variant	NM_000314.8(PTEN):c.737C>G (p.Pro246Arg)	P60484	P	246	R
+1332212	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957961	87957961	single nucleotide variant	NM_000314.8(PTEN):c.743C>G (p.Pro248Arg)	P60484	P	248	R
+2823685	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957961	87957961	single nucleotide variant	NM_000314.8(PTEN):c.743C>T (p.Pro248Leu)	P60484	P	248	L
+1525684	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957964	87957964	single nucleotide variant	NM_000314.8(PTEN):c.746T>A (p.Val249Glu)	P60484	V	249	E
+1759194	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957967	87957967	single nucleotide variant	NM_000314.8(PTEN):c.749G>A (p.Cys250Tyr)	P60484	C	250	Y
+468711	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957970	87957970	single nucleotide variant	NM_000314.8(PTEN):c.752G>C (p.Gly251Ala)	P60484	G	251	A
+1064566	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957970	87957970	single nucleotide variant	NM_000314.8(PTEN):c.752G>A (p.Gly251Asp)	P60484	G	251	D
+3311267	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957975	87957975	single nucleotide variant	NM_000314.8(PTEN):c.757A>G (p.Ile253Val)	P60484	I	253	V
+1478930	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957976	87957976	single nucleotide variant	NM_000314.8(PTEN):c.758T>G (p.Ile253Ser)	P60484	I	253	S
+1382720	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957979	87957979	single nucleotide variant	NM_000314.8(PTEN):c.761A>G (p.Lys254Arg)	P60484	K	254	R
+1687639	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957979	87957979	single nucleotide variant	NM_000314.8(PTEN):c.761A>T (p.Lys254Ile)	P60484	K	254	I
+1759934	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957981	87957981	single nucleotide variant	NM_000314.8(PTEN):c.763G>A (p.Val255Ile)	P60484	V	255	I
+3381971	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87957982	87957982	single nucleotide variant	NM_000314.8(PTEN):c.764T>G (p.Val255Gly)	P60484	V	255	G
+2764864	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957985	87957985	single nucleotide variant	NM_000314.8(PTEN):c.767A>G (p.Glu256Gly)	P60484	E	256	G
+3387546	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957986	87957986	single nucleotide variant	NM_000314.8(PTEN):c.768G>C (p.Glu256Asp)	P60484	E	256	D
+492340	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87957989	87957989	single nucleotide variant	NM_000314.8(PTEN):c.771C>A (p.Phe257Leu)	P60484	F	257	L
+404167	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87957997	87957997	single nucleotide variant	NM_000314.8(PTEN):c.779A>G (p.Lys260Arg)	P60484	K	260	R
+468713	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958001	87958001	single nucleotide variant	NM_000314.8(PTEN):c.783G>T (p.Gln261His)	P60484	Q	261	H
+2764865	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958001	87958001	single nucleotide variant	NM_000314.8(PTEN):c.783G>C (p.Gln261His)	P60484	Q	261	H
+492341	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958003	87958003	single nucleotide variant	NM_000314.8(PTEN):c.785A>C (p.Asn262Thr)	P60484	N	262	T
+1387816	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958004	87958004	single nucleotide variant	NM_000314.8(PTEN):c.786C>A (p.Asn262Lys)	P60484	N	262	K
+1483449	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958011	87958011	single nucleotide variant	NM_000314.8(PTEN):c.793C>G (p.Leu265Val)	P60484	L	265	V
+468715	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958012	87958012	single nucleotide variant	NM_000314.8(PTEN):c.794T>C (p.Leu265Pro)	P60484	L	265	P
+2010415	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87958014	87958014	single nucleotide variant	NM_000314.8(PTEN):c.796A>G (p.Lys266Glu)	P60484	K	266	E
+1518655	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87958018	87958018	single nucleotide variant	NM_000314.8(PTEN):c.800A>C (p.Lys267Thr)	P60484	K	267	T
+92834	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960896	87960896	single nucleotide variant	NM_000314.8(PTEN):c.804C>A (p.Asp268Glu)	P60484	D	268	E
+1761790	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960896	87960896	single nucleotide variant	NM_000314.8(PTEN):c.804C>G (p.Asp268Glu)	P60484	D	268	E
+838212	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960897	87960897	single nucleotide variant	NM_000314.8(PTEN):c.805A>G (p.Lys269Glu)	P60484	K	269	E
+1508866	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960900	87960900	single nucleotide variant	NM_000314.8(PTEN):c.808A>C (p.Met270Leu)	P60484	M	270	L
+1431374	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960901	87960901	single nucleotide variant	NM_000314.8(PTEN):c.809T>A (p.Met270Lys)	P60484	M	270	K
+3376309	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960901	87960901	single nucleotide variant	NM_000314.8(PTEN):c.809T>G (p.Met270Arg)	P60484	M	270	R
+584754	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960902	87960902	single nucleotide variant	NM_000314.8(PTEN):c.810G>T (p.Met270Ile)	P60484	M	270	I
+2579956	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960902	87960902	single nucleotide variant	NM_000314.8(PTEN):c.810G>C (p.Met270Ile)	P60484	M	270	I
+428223	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87960907	87960907	single nucleotide variant	NM_000314.8(PTEN):c.815A>C (p.His272Pro)	P60484	H	272	P
+2832004	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960908	87960908	single nucleotide variant	NM_000314.8(PTEN):c.816C>G (p.His272Gln)	P60484	H	272	Q
+3370722	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960909	87960909	single nucleotide variant	NM_000314.8(PTEN):c.817T>A (p.Phe273Ile)	P60484	F	273	I
+655461	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960912	87960912	single nucleotide variant	NM_000314.8(PTEN):c.820T>C (p.Trp274Arg)	P60484	W	274	R
+2747932	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960912	87960912	single nucleotide variant	NM_000314.8(PTEN):c.820T>G (p.Trp274Gly)	P60484	W	274	G
+1762552	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960914	87960914	single nucleotide variant	NM_000314.8(PTEN):c.822G>C (p.Trp274Cys)	P60484	W	274	C
+627703	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960915	87960915	single nucleotide variant	NM_000314.8(PTEN):c.823G>A (p.Val275Ile)	P60484	V	275	I
+2682204	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960916	87960916	single nucleotide variant	NM_000314.8(PTEN):c.824T>C (p.Val275Ala)	P60484	V	275	A
+653985	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960918	87960918	single nucleotide variant	NM_000314.8(PTEN):c.826A>G (p.Asn276Asp)	P60484	N	276	D
+988006	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960919	87960919	single nucleotide variant	NM_000314.8(PTEN):c.827A>T (p.Asn276Ile)	P60484	N	276	I
+2090171	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960920	87960920	single nucleotide variant	NM_000314.8(PTEN):c.828T>A (p.Asn276Lys)	P60484	N	276	K
+571869	PTEN	1	Pathogenic	criteria provided, single submitter	10	87960921	87960921	single nucleotide variant	NM_000314.8(PTEN):c.829A>G (p.Thr277Ala)	P60484	T	277	A
+3371163	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960924	87960924	single nucleotide variant	NM_000314.8(PTEN):c.832T>C (p.Phe278Leu)	P60484	F	278	L
+1375150	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960925	87960925	single nucleotide variant	NM_000314.8(PTEN):c.833T>G (p.Phe278Cys)	P60484	F	278	C
+2576379	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960927	87960927	single nucleotide variant	NM_000314.8(PTEN):c.835T>C (p.Phe279Leu)	P60484	F	279	L
+2774185	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960931	87960931	single nucleotide variant	NM_000314.8(PTEN):c.839T>A (p.Ile280Lys)	P60484	I	280	K
+3370850	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960932	87960932	single nucleotide variant	NM_000314.8(PTEN):c.840A>G (p.Ile280Met)	P60484	I	280	M
+468720	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960933	87960933	single nucleotide variant	NM_000314.8(PTEN):c.841C>T (p.Pro281Ser)	P60484	P	281	S
+2567282	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960936	87960936	single nucleotide variant	NM_000314.8(PTEN):c.844G>C (p.Gly282Arg)	P60484	G	282	R
+947876	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960944	87960944	single nucleotide variant	NM_000314.8(PTEN):c.852G>T (p.Glu284Asp)	P60484	E	284	D
+2777407	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960948	87960948	single nucleotide variant	NM_000314.8(PTEN):c.856A>G (p.Thr286Ala)	P60484	T	286	A
+2814779	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960949	87960949	single nucleotide variant	NM_000314.8(PTEN):c.857C>A (p.Thr286Asn)	P60484	T	286	N
+1763987	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960951	87960951	single nucleotide variant	NM_000314.8(PTEN):c.859T>A (p.Ser287Thr)	P60484	S	287	T
+3654135	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960952	87960952	single nucleotide variant	NM_000314.8(PTEN):c.860C>T (p.Ser287Leu)	P60484	S	287	L
+2687759	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960958	87960958	single nucleotide variant	NM_000314.8(PTEN):c.866A>G (p.Lys289Arg)	P60484	K	289	R
+822663	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960960	87960960	single nucleotide variant	NM_000314.8(PTEN):c.868G>C (p.Val290Leu)	P60484	V	290	L
+840900	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960960	87960960	single nucleotide variant	NM_000314.8(PTEN):c.868G>A (p.Val290Ile)	P60484	V	290	I
+578559	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960964	87960964	single nucleotide variant	NM_000314.8(PTEN):c.872A>G (p.Glu291Gly)	P60484	E	291	G
+3240231	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960966	87960966	single nucleotide variant	NM_000314.8(PTEN):c.874A>G (p.Asn292Asp)	P60484	N	292	D
+1425524	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960967	87960967	single nucleotide variant	NM_000314.8(PTEN):c.875A>G (p.Asn292Ser)	P60484	N	292	S
+2877017	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960967	87960967	single nucleotide variant	NM_000314.8(PTEN):c.875A>T (p.Asn292Ile)	P60484	N	292	I
+958992	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960970	87960970	single nucleotide variant	NM_000314.8(PTEN):c.878G>T (p.Gly293Val)	P60484	G	293	V
+484617	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960973	87960973	single nucleotide variant	NM_000314.8(PTEN):c.881G>A (p.Ser294Asn)	P60484	S	294	N
+404163	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960979	87960979	single nucleotide variant	NM_000314.8(PTEN):c.887G>A (p.Cys296Tyr)	P60484	C	296	Y
+1052858	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960982	87960982	single nucleotide variant	NM_000314.8(PTEN):c.890A>G (p.Asp297Gly)	P60484	D	297	G
+2105292	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960985	87960985	single nucleotide variant	NM_000314.8(PTEN):c.893A>C (p.Gln298Pro)	P60484	Q	298	P
+2788987	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960987	87960987	single nucleotide variant	NM_000314.8(PTEN):c.895G>A (p.Glu299Lys)	P60484	E	299	K
+1692373	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87960990	87960990	single nucleotide variant	NM_000314.8(PTEN):c.898A>G (p.Ile300Val)	P60484	I	300	V
+233963	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960993	87960993	single nucleotide variant	NM_000314.8(PTEN):c.901G>A (p.Asp301Asn)	P60484	D	301	N
+1501773	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960996	87960996	single nucleotide variant	NM_000314.8(PTEN):c.904A>G (p.Ser302Gly)	P60484	S	302	G
+486226	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87960997	87960997	single nucleotide variant	NM_000314.8(PTEN):c.905G>A (p.Ser302Asn)	P60484	S	302	N
+230633	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961000	87961000	single nucleotide variant	NM_000314.8(PTEN):c.908T>G (p.Ile303Ser)	P60484	I	303	S
+230819	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961005	87961005	single nucleotide variant	NM_000314.8(PTEN):c.913A>G (p.Ser305Gly)	P60484	S	305	G
+185517	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961011	87961011	single nucleotide variant	NM_000314.8(PTEN):c.919G>C (p.Glu307Gln)	P60484	E	307	Q
+2754132	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961013	87961013	single nucleotide variant	NM_000314.8(PTEN):c.921G>C (p.Glu307Asp)	P60484	E	307	D
+420367	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961014	87961014	single nucleotide variant	NM_000314.8(PTEN):c.922C>T (p.Arg308Cys)	P60484	R	308	C
+184506	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961015	87961015	single nucleotide variant	NM_000314.8(PTEN):c.923G>A (p.Arg308His)	P60484	R	308	H
+237656	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961026	87961026	single nucleotide variant	NM_000314.8(PTEN):c.934G>A (p.Asp312Asn)	P60484	D	312	N
+216423	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961027	87961027	single nucleotide variant	NM_000314.8(PTEN):c.935A>G (p.Asp312Gly)	P60484	D	312	G
+2452979	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961027	87961027	single nucleotide variant	NM_000314.8(PTEN):c.935A>T (p.Asp312Val)	P60484	D	312	V
+3649417	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961030	87961030	single nucleotide variant	NM_000314.8(PTEN):c.938A>C (p.Lys313Thr)	P60484	K	313	T
+452024	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961033	87961033	single nucleotide variant	NM_000314.8(PTEN):c.941A>C (p.Glu314Ala)	P60484	E	314	A
+936326	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961033	87961033	single nucleotide variant	NM_000314.8(PTEN):c.941A>T (p.Glu314Val)	P60484	E	314	V
+1766972	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961035	87961035	single nucleotide variant	NM_000314.8(PTEN):c.943T>G (p.Tyr315Asp)	P60484	Y	315	D
+1767056	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961038	87961038	single nucleotide variant	NM_000314.8(PTEN):c.946C>G (p.Leu316Val)	P60484	L	316	V
+2103446	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961041	87961041	single nucleotide variant	NM_000314.8(PTEN):c.949G>C (p.Val317Leu)	P60484	V	317	L
+1317087	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961048	87961048	single nucleotide variant	NM_000314.8(PTEN):c.956C>T (p.Thr319Ile)	P60484	T	319	I
+3427443	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961050	87961050	single nucleotide variant	NM_000314.8(PTEN):c.958T>G (p.Leu320Val)	P60484	L	320	V
+1767610	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961054	87961054	single nucleotide variant	NM_000314.8(PTEN):c.962C>T (p.Thr321Ile)	P60484	T	321	I
+1767686	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961057	87961057	single nucleotide variant	NM_000314.8(PTEN):c.965A>G (p.Lys322Arg)	P60484	K	322	R
+823396	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961059	87961059	single nucleotide variant	NM_000314.8(PTEN):c.967A>C (p.Asn323His)	P60484	N	323	H
+644448	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961060	87961060	single nucleotide variant	NM_000314.8(PTEN):c.968A>C (p.Asn323Thr)	P60484	N	323	T
+1767858	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961061	87961061	single nucleotide variant	NM_000314.8(PTEN):c.969T>A (p.Asn323Lys)	P60484	N	323	K
+1768042	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961065	87961065	single nucleotide variant	NM_000314.8(PTEN):c.973C>A (p.Leu325Ile)	P60484	L	325	I
+428231	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961066	87961066	single nucleotide variant	NM_000314.8(PTEN):c.974T>C (p.Leu325Pro)	P60484	L	325	P
+428251	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961066	87961066	single nucleotide variant	NM_000314.8(PTEN):c.974T>G (p.Leu325Arg)	P60484	L	325	R
+1000404	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961070	87961070	single nucleotide variant	NM_000314.8(PTEN):c.978C>A (p.Asp326Glu)	P60484	D	326	E
+944439	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961078	87961078	single nucleotide variant	NM_000314.8(PTEN):c.986A>G (p.Asn329Ser)	P60484	N	329	S
+1768513	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961081	87961081	single nucleotide variant	NM_000314.8(PTEN):c.989A>G (p.Lys330Arg)	P60484	K	330	R
+484606	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961090	87961090	single nucleotide variant	NM_000314.8(PTEN):c.998C>T (p.Ala333Val)	P60484	A	333	V
+490110	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961093	87961093	single nucleotide variant	NM_000314.8(PTEN):c.1001A>G (p.Asn334Ser)	P60484	N	334	S
+2001625	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961093	87961093	single nucleotide variant	NM_000314.8(PTEN):c.1001A>T (p.Asn334Ile)	P60484	N	334	I
+3647581	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961096	87961096	single nucleotide variant	NM_000314.8(PTEN):c.1004G>C (p.Arg335Pro)	P60484	R	335	P
+2109916	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961099	87961099	single nucleotide variant	NM_000314.8(PTEN):c.1007A>G (p.Tyr336Cys)	P60484	Y	336	C
+1439337	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961104	87961104	single nucleotide variant	NM_000314.8(PTEN):c.1012T>A (p.Ser338Thr)	P60484	S	338	T
+2834356	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961105	87961105	single nucleotide variant	NM_000314.8(PTEN):c.1013C>A (p.Ser338Tyr)	P60484	S	338	Y
+3073991	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961107	87961107	single nucleotide variant	NM_000314.8(PTEN):c.1015C>G (p.Pro339Ala)	P60484	P	339	A
+584755	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961108	87961108	single nucleotide variant	NM_000314.8(PTEN):c.1016C>A (p.Pro339Gln)	P60484	P	339	Q
+189510	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87961110	87961110	single nucleotide variant	NM_000314.8(PTEN):c.1018A>C (p.Asn340His)	P60484	N	340	H
+1752598	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961111	87961111	single nucleotide variant	NM_000314.8(PTEN):c.1019A>G (p.Asn340Ser)	P60484	N	340	S
+1013941	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961113	87961113	single nucleotide variant	NM_000314.8(PTEN):c.1021T>A (p.Phe341Ile)	P60484	F	341	I
+847564	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87961114	87961114	single nucleotide variant	NM_000314.8(PTEN):c.1022T>G (p.Phe341Cys)	P60484	F	341	C
+1067478	PTEN	1	Likely pathogenic	criteria provided, single submitter	10	87961118	87961118	single nucleotide variant	NM_000314.8(PTEN):c.1026G>T (p.Lys342Asn)	P60484	K	342	N
+630756	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965288	87965288	single nucleotide variant	NM_000314.8(PTEN):c.1028T>G (p.Val343Gly)	P60484	V	343	G
+923007	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965291	87965291	single nucleotide variant	NM_000314.8(PTEN):c.1031A>G (p.Lys344Arg)	P60484	K	344	R
+802613	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965294	87965294	single nucleotide variant	NM_000314.8(PTEN):c.1034T>G (p.Leu345Arg)	P60484	L	345	R
+2745184	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965294	87965294	single nucleotide variant	NM_000314.8(PTEN):c.1034T>A (p.Leu345Gln)	P60484	L	345	Q
+822057	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965296	87965296	single nucleotide variant	NM_000314.8(PTEN):c.1036T>G (p.Tyr346Asp)	P60484	Y	346	D
+1045279	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965301	87965301	single nucleotide variant	NM_000314.8(PTEN):c.1041C>G (p.Phe347Leu)	P60484	F	347	L
+1774712	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965303	87965303	single nucleotide variant	NM_000314.8(PTEN):c.1043C>G (p.Thr348Arg)	P60484	T	348	R
+3393458	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965303	87965303	single nucleotide variant	NM_000314.8(PTEN):c.1043C>T (p.Thr348Ile)	P60484	T	348	I
+3427451	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965305	87965305	single nucleotide variant	NM_000314.8(PTEN):c.1045A>C (p.Lys349Gln)	P60484	K	349	Q
+1775972	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965308	87965308	single nucleotide variant	NM_000314.8(PTEN):c.1048A>C (p.Thr350Pro)	P60484	T	350	P
+2452977	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965308	87965308	single nucleotide variant	NM_000314.8(PTEN):c.1048A>G (p.Thr350Ala)	P60484	T	350	A
+1351177	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965315	87965315	single nucleotide variant	NM_000314.8(PTEN):c.1055A>G (p.Glu352Gly)	P60484	E	352	G
+3240233	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965316	87965316	single nucleotide variant	NM_000314.8(PTEN):c.1056G>T (p.Glu352Asp)	P60484	E	352	D
+237638	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965318	87965318	single nucleotide variant	NM_000314.8(PTEN):c.1058A>G (p.Glu353Gly)	P60484	E	353	G
+1780374	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965321	87965321	single nucleotide variant	NM_000314.8(PTEN):c.1061C>G (p.Pro354Arg)	P60484	P	354	R
+142263	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965326	87965326	single nucleotide variant	NM_000314.8(PTEN):c.1066A>G (p.Asn356Asp)	P60484	N	356	D
+3311266	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965326	87965326	single nucleotide variant	NM_000314.8(PTEN):c.1066A>C (p.Asn356His)	P60484	N	356	H
+628653	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965327	87965327	single nucleotide variant	NM_000314.8(PTEN):c.1067A>T (p.Asn356Ile)	P60484	N	356	I
+234861	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965329	87965329	single nucleotide variant	NM_000314.8(PTEN):c.1069C>A (p.Pro357Thr)	P60484	P	357	T
+854810	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965329	87965329	single nucleotide variant	NM_000314.8(PTEN):c.1069C>G (p.Pro357Ala)	P60484	P	357	A
+961773	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965332	87965332	single nucleotide variant	NM_000314.8(PTEN):c.1072G>A (p.Glu358Lys)	P60484	E	358	K
+1063157	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965332	87965332	single nucleotide variant	NM_000314.8(PTEN):c.1072G>C (p.Glu358Gln)	P60484	E	358	Q
+231962	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965334	87965334	single nucleotide variant	NM_000314.8(PTEN):c.1074G>C (p.Glu358Asp)	P60484	E	358	D
+1695819	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965336	87965336	single nucleotide variant	NM_000314.8(PTEN):c.1076C>T (p.Ala359Val)	P60484	A	359	V
+492314	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965341	87965341	single nucleotide variant	NM_000314.8(PTEN):c.1081A>C (p.Ser361Arg)	P60484	S	361	R
+2774186	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965341	87965341	single nucleotide variant	NM_000314.8(PTEN):c.1081A>G (p.Ser361Gly)	P60484	S	361	G
+1786821	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965342	87965342	single nucleotide variant	NM_000314.8(PTEN):c.1082G>T (p.Ser361Ile)	P60484	S	361	I
+3231144	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965342	87965342	single nucleotide variant	NM_000314.8(PTEN):c.1082G>C (p.Ser361Thr)	P60484	S	361	T
+484607	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965347	87965347	single nucleotide variant	NM_000314.8(PTEN):c.1087A>G (p.Thr363Ala)	P60484	T	363	A
+818353	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965348	87965348	single nucleotide variant	NM_000314.8(PTEN):c.1088C>T (p.Thr363Ile)	P60484	T	363	I
+1022675	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965350	87965350	single nucleotide variant	NM_000314.8(PTEN):c.1090T>C (p.Ser364Pro)	P60484	S	364	P
+857491	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965351	87965351	single nucleotide variant	NM_000314.8(PTEN):c.1091C>G (p.Ser364Cys)	P60484	S	364	C
+3427435	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965351	87965351	single nucleotide variant	NM_000314.8(PTEN):c.1091C>T (p.Ser364Phe)	P60484	S	364	F
+2452976	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965353	87965353	single nucleotide variant	NM_000314.8(PTEN):c.1093G>C (p.Val365Leu)	P60484	V	365	L
+949056	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965363	87965363	single nucleotide variant	NM_000314.8(PTEN):c.1103A>T (p.Asp368Val)	P60484	D	368	V
+468670	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965375	87965375	single nucleotide variant	NM_000314.8(PTEN):c.1115A>G (p.Asn372Ser)	P60484	N	372	S
+1796384	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965376	87965376	single nucleotide variant	NM_000314.8(PTEN):c.1116T>A (p.Asn372Lys)	P60484	N	372	K
+568323	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965383	87965383	single nucleotide variant	NM_000314.8(PTEN):c.1123G>A (p.Asp375Asn)	P60484	D	375	N
+651164	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965384	87965384	single nucleotide variant	NM_000314.8(PTEN):c.1124A>G (p.Asp375Gly)	P60484	D	375	G
+2682052	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965386	87965386	single nucleotide variant	NM_000314.8(PTEN):c.1126C>G (p.His376Asp)	P60484	H	376	D
+186450	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965390	87965390	single nucleotide variant	NM_000314.8(PTEN):c.1130A>T (p.Tyr377Phe)	P60484	Y	377	F
+536550	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965392	87965392	single nucleotide variant	NM_000314.8(PTEN):c.1132A>G (p.Arg378Gly)	P60484	R	378	G
+2431002	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965393	87965393	single nucleotide variant	NM_000314.8(PTEN):c.1133G>C (p.Arg378Thr)	P60484	R	378	T
+1062913	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965419	87965419	single nucleotide variant	NM_000314.8(PTEN):c.1159C>T (p.Pro387Ser)	P60484	P	387	S
+3387549	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965422	87965422	single nucleotide variant	NM_000314.8(PTEN):c.1162G>C (p.Glu388Gln)	P60484	E	388	Q
+2587203	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965423	87965423	single nucleotide variant	NM_000314.8(PTEN):c.1163A>T (p.Glu388Val)	P60484	E	388	V
+1379559	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965424	87965424	single nucleotide variant	NM_000314.8(PTEN):c.1164G>T (p.Glu388Asp)	P60484	E	388	D
+3652409	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965425	87965425	single nucleotide variant	NM_000314.8(PTEN):c.1165A>G (p.Asn389Asp)	P60484	N	389	D
+3631062	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965428	87965428	single nucleotide variant	NM_000314.8(PTEN):c.1168G>C (p.Glu390Gln)	P60484	E	390	Q
+3642442	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965431	87965431	single nucleotide variant	NM_000314.8(PTEN):c.1171C>A (p.Pro391Thr)	P60484	P	391	T
+490111	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965432	87965432	single nucleotide variant	NM_000314.8(PTEN):c.1172C>A (p.Pro391His)	P60484	P	391	H
+490112	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965432	87965432	single nucleotide variant	NM_000314.8(PTEN):c.1172C>T (p.Pro391Leu)	P60484	P	391	L
+560733	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965438	87965438	single nucleotide variant	NM_000314.8(PTEN):c.1178A>G (p.Asp393Gly)	P60484	D	393	G
+2126147	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965443	87965443	single nucleotide variant	NM_000314.8(PTEN):c.1183G>T (p.Asp395Tyr)	P60484	D	395	Y
+1742938	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965444	87965444	single nucleotide variant	NM_000314.8(PTEN):c.1184A>G (p.Asp395Gly)	P60484	D	395	G
+2452973	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965446	87965446	single nucleotide variant	NM_000314.8(PTEN):c.1186C>G (p.Gln396Glu)	P60484	Q	396	E
+921678	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965457	87965457	single nucleotide variant	NM_000314.8(PTEN):c.1197A>C (p.Gln399His)	P60484	Q	399	H
+1318532	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965457	87965457	single nucleotide variant	NM_000314.8(PTEN):c.1197A>T (p.Gln399His)	P60484	Q	399	H
+3427449	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965458	87965458	single nucleotide variant	NM_000314.8(PTEN):c.1198A>T (p.Ile400Phe)	P60484	I	400	F
+422815	PTEN	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	10	87965466	87965466	single nucleotide variant	NM_000314.8(PTEN):c.1206A>C (p.Lys402Asn)	P60484	K	402	N
+1401113	PTEN	-1	Uncertain significance	criteria provided, single submitter	10	87965467	87965467	single nucleotide variant	NM_000314.8(PTEN):c.1207G>A (p.Val403Ile)	P60484	V	403	I

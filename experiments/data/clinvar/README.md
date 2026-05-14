@@ -1,9 +1,11 @@
-# Bundled ClinVar BRCA1 missense variants
+# Bundled ClinVar missense variants — BRCA1 + 4 audience-pick genes
 
 Pre-cached so the workshop demo doesn't depend on a 440 MB download from
-NCBI when the conference Wi-Fi is shaky. ~2 MB committed.
+NCBI when the conference Wi-Fi is shaky. ~10 MB committed total.
 
 ## What's here
+
+### BRCA1 (default, at this directory's root)
 
 | File | Bytes | Contents |
 |---|---|---|
@@ -14,6 +16,22 @@ NCBI when the conference Wi-Fi is shaky. ~2 MB committed.
 
 Pulled from NCBI's `variant_summary.txt.gz` on **2026-05-07**, GRCh38, ≥ 1-star
 review status, single-nucleotide missense.
+
+### Audience-pick genes (subdirectories, added 2026-05-10)
+
+Same schema, same NCBI snapshot, one subdirectory per gene. Built for
+B18 ("Same harness, any gene") so audience picks never hit NCBI live.
+
+| Subdir | UniProt | aa  | P / B / VUS    | Notes |
+|--------|---------|-----|----------------|-------|
+| `tp53/`  | P04637  | 393  | 206 / 82 / 712  | rich both sides; strongest live demo after BRCA1 |
+| `brca2/` | P51587  | 3418 | 54 / 172 / 774  | mostly benign; long sequence, exercises truncation |
+| `pten/`  | P60484  | 403  | 234 / 6 / 760   | **thin benign set (n=6) — redirect if too sparse** |
+| `mlh1/`  | P40692  | 756  | 135 / 32 / 833  | balanced; medium sequence |
+
+To invoke from the canonical Phase-1 harness, override
+`data.data_dir` directly (not the top-level `data_dir`) — see
+`docs/internal/FRIDAY_CODEALONG.md` B18 for the override map.
 
 ## Refreshing or expanding
 

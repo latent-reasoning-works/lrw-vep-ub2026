@@ -1,0 +1,1001 @@
+variation_id	gene_symbol	label	clinical_significance	review_status	chromosome	start	stop	variant_type	name	uniprot	wt_aa	position	alt_aa
+89994	MLH1	1	Pathogenic	reviewed by expert panel	3	36993548	36993548	single nucleotide variant	NM_000249.4(MLH1):c.1A>G (p.Met1Val)	P40692	M	1	V
+90134	MLH1	1	Pathogenic	reviewed by expert panel	3	36993549	36993549	single nucleotide variant	NM_000249.4(MLH1):c.2T>A (p.Met1Lys)	P40692	M	1	K
+90135	MLH1	1	Pathogenic	reviewed by expert panel	3	36993549	36993549	single nucleotide variant	NM_000249.4(MLH1):c.2T>C (p.Met1Thr)	P40692	M	1	T
+90136	MLH1	1	Pathogenic	reviewed by expert panel	3	36993549	36993549	single nucleotide variant	NM_000249.4(MLH1):c.2T>G (p.Met1Arg)	P40692	M	1	R
+90211	MLH1	1	Pathogenic	reviewed by expert panel	3	36993550	36993550	single nucleotide variant	NM_000249.4(MLH1):c.3G>A (p.Met1Ile)	P40692	M	1	I
+90274	MLH1	1	Pathogenic	reviewed by expert panel	3	36993602	36993602	single nucleotide variant	NM_000249.4(MLH1):c.55A>T (p.Ile19Phe)	P40692	I	19	F
+90297	MLH1	1	Pathogenic	reviewed by expert panel	3	36993609	36993609	single nucleotide variant	NM_000249.4(MLH1):c.62C>A (p.Ala21Glu)	P40692	A	21	E
+90298	MLH1	1	Pathogenic	reviewed by expert panel	3	36993609	36993609	single nucleotide variant	NM_000249.4(MLH1):c.62C>T (p.Ala21Val)	P40692	A	21	V
+90306	MLH1	0	Benign	reviewed by expert panel	3	36993612	36993612	single nucleotide variant	NM_000249.4(MLH1):c.65G>C (p.Gly22Ala)	P40692	G	22	A
+90343	MLH1	1	Likely pathogenic	reviewed by expert panel	3	36993620	36993620	single nucleotide variant	NM_000249.4(MLH1):c.73A>T (p.Ile25Phe)	P40692	I	25	F
+90388	MLH1	1	Pathogenic	reviewed by expert panel	3	36993630	36993630	single nucleotide variant	NM_000249.4(MLH1):c.83C>T (p.Pro28Leu)	P40692	P	28	L
+90403	MLH1	1	Pathogenic	reviewed by expert panel	3	36993633	36993633	single nucleotide variant	NM_000249.4(MLH1):c.86C>G (p.Ala29Gly)	P40692	A	29	G
+89631	MLH1	1	Pathogenic	reviewed by expert panel	3	36993651	36993651	single nucleotide variant	NM_000249.4(MLH1):c.104T>G (p.Met35Arg)	P40692	M	35	R
+89645	MLH1	1	Pathogenic	reviewed by expert panel	3	36993659	36993659	single nucleotide variant	NM_000249.4(MLH1):c.112A>C (p.Asn38His)	P40692	N	38	H
+89648	MLH1	1	Pathogenic	reviewed by expert panel	3	36993660	36993660	single nucleotide variant	NM_000249.4(MLH1):c.113A>G (p.Asn38Ser)	P40692	N	38	S
+89651	MLH1	1	Pathogenic	reviewed by expert panel	3	36993661	36993661	single nucleotide variant	NM_000249.4(MLH1):c.114C>G (p.Asn38Lys)	P40692	N	38	K
+561169	MLH1	1	Likely pathogenic	reviewed by expert panel	3	36993661	36993661	single nucleotide variant	NM_000249.4(MLH1):c.114C>A (p.Asn38Lys)	P40692	N	38	K
+89662	MLH1	-1	Uncertain significance	reviewed by expert panel	3	36993663	36993663	single nucleotide variant	NM_000249.4(MLH1):c.116G>A (p.Cys39Tyr)	P40692	C	39	Y
+89663	MLH1	-1	Uncertain significance	reviewed by expert panel	3	36993663	36993663	single nucleotide variant	NM_000249.4(MLH1):c.116G>T (p.Cys39Phe)	P40692	C	39	F
+89682	MLH1	1	Pathogenic	reviewed by expert panel	3	36996623	36996623	single nucleotide variant	NM_000249.4(MLH1):c.121G>C (p.Asp41His)	P40692	D	41	H
+89684	MLH1	1	Pathogenic	reviewed by expert panel	3	36996624	36996624	single nucleotide variant	NM_000249.4(MLH1):c.122A>G (p.Asp41Gly)	P40692	D	41	G
+17079	MLH1	1	Pathogenic	reviewed by expert panel	3	36996633	36996633	single nucleotide variant	NM_000249.4(MLH1):c.131C>T (p.Ser44Phe)	P40692	S	44	F
+89739	MLH1	1	Likely pathogenic	reviewed by expert panel	3	36996645	36996645	single nucleotide variant	NM_000249.4(MLH1):c.143A>C (p.Gln48Pro)	P40692	Q	48	P
+89749	MLH1	1	Pathogenic	reviewed by expert panel	3	36996648	36996648	single nucleotide variant	NM_000249.4(MLH1):c.146T>A (p.Val49Glu)	P40692	V	49	E
+89934	MLH1	1	Pathogenic	reviewed by expert panel	3	36996691	36996691	single nucleotide variant	NM_000249.4(MLH1):c.189C>A (p.Asp63Glu)	P40692	D	63	E
+89955	MLH1	1	Likely pathogenic	reviewed by expert panel	3	36996696	36996696	single nucleotide variant	NM_000249.4(MLH1):c.194G>A (p.Gly65Asp)	P40692	G	65	D
+17088	MLH1	1	Pathogenic	reviewed by expert panel	3	36996701	36996701	single nucleotide variant	NM_000249.4(MLH1):c.199G>T (p.Gly67Trp)	P40692	G	67	W
+89992	MLH1	1	Pathogenic	reviewed by expert panel	3	36996701	36996701	single nucleotide variant	NM_000249.4(MLH1):c.199G>A (p.Gly67Arg)	P40692	G	67	R
+17106	MLH1	1	Pathogenic	reviewed by expert panel	3	36996702	36996702	single nucleotide variant	NM_000249.4(MLH1):c.200G>A (p.Gly67Glu)	P40692	G	67	E
+90008	MLH1	1	Likely pathogenic	reviewed by expert panel	3	36996705	36996705	single nucleotide variant	NM_000249.4(MLH1):c.203T>A (p.Ile68Asn)	P40692	I	68	N
+90110	MLH1	1	Pathogenic	reviewed by expert panel	3	37000976	37000976	single nucleotide variant	NM_000249.4(MLH1):c.229T>C (p.Cys77Arg)	P40692	C	77	R
+90112	MLH1	1	Pathogenic	reviewed by expert panel	3	37000977	37000977	single nucleotide variant	NM_000249.4(MLH1):c.230G>A (p.Cys77Tyr)	P40692	C	77	Y
+90115	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37000985	37000985	single nucleotide variant	NM_000249.4(MLH1):c.238T>G (p.Phe80Val)	P40692	F	80	V
+90116	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37000991	37000991	single nucleotide variant	NM_000249.4(MLH1):c.244A>G (p.Thr82Ala)	P40692	T	82	A
+90118	MLH1	1	Pathogenic	reviewed by expert panel	3	37000992	37000992	single nucleotide variant	NM_000249.4(MLH1):c.245C>T (p.Thr82Ile)	P40692	T	82	I
+90120	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37000997	37000997	single nucleotide variant	NM_000249.4(MLH1):c.250A>G (p.Lys84Glu)	P40692	K	84	E
+90133	MLH1	1	Pathogenic	reviewed by expert panel	3	37001046	37001046	single nucleotide variant	NM_000249.4(MLH1):c.299G>C (p.Arg100Pro)	P40692	R	100	P
+90137	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37001048	37001048	single nucleotide variant	NM_000249.4(MLH1):c.301G>A (p.Gly101Ser)	P40692	G	101	S
+90138	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37001049	37001049	single nucleotide variant	NM_000249.4(MLH1):c.302G>A (p.Gly101Asp)	P40692	G	101	D
+90141	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37001051	37001051	single nucleotide variant	NM_000249.4(MLH1):c.304G>A (p.Glu102Lys)	P40692	E	102	K
+90150	MLH1	1	Pathogenic	reviewed by expert panel	3	37001053	37001053	single nucleotide variant	NM_000249.4(MLH1):c.306G>C (p.Glu102Asp)	P40692	E	102	D
+90151	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37001053	37001053	single nucleotide variant	NM_000249.4(MLH1):c.306G>T (p.Glu102Asp)	P40692	E	102	D
+90167	MLH1	1	Pathogenic	reviewed by expert panel	3	37004414	37004414	single nucleotide variant	NM_000249.4(MLH1):c.320T>G (p.Ile107Arg)	P40692	I	107	R
+90171	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37004426	37004426	single nucleotide variant	NM_000249.4(MLH1):c.332C>T (p.Ala111Val)	P40692	A	111	V
+17094	MLH1	1	Pathogenic	reviewed by expert panel	3	37004444	37004444	single nucleotide variant	NM_000249.4(MLH1):c.350C>T (p.Thr117Met)	P40692	T	117	M
+90178	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37004444	37004444	single nucleotide variant	NM_000249.4(MLH1):c.350C>G (p.Thr117Arg)	P40692	T	117	R
+90194	MLH1	1	Pathogenic	reviewed by expert panel	3	37004474	37004474	single nucleotide variant	NM_000249.4(MLH1):c.380G>A (p.Arg127Lys)	P40692	R	127	K
+90199	MLH1	1	Pathogenic	reviewed by expert panel	3	37006992	37006992	single nucleotide variant	NM_000249.4(MLH1):c.382G>C (p.Ala128Pro)	P40692	A	128	P
+17096	MLH1	0	Benign	reviewed by expert panel	3	37007004	37007004	single nucleotide variant	NM_000249.4(MLH1):c.394G>C (p.Asp132His)	P40692	D	132	H
+574220	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37007050	37007050	single nucleotide variant	NM_000249.4(MLH1):c.440G>A (p.Gly147Glu)	P40692	G	147	E
+90241	MLH1	1	Pathogenic	reviewed by expert panel	3	37008824	37008824	single nucleotide variant	NM_000249.4(MLH1):c.464T>G (p.Leu155Arg)	P40692	L	155	R
+90258	MLH1	1	Pathogenic	reviewed by expert panel	3	37008904	37008904	single nucleotide variant	NM_000249.4(MLH1):c.544A>G (p.Arg182Gly)	P40692	R	182	G
+90264	MLH1	1	Pathogenic	reviewed by expert panel	3	37008905	37008905	single nucleotide variant	NM_000249.4(MLH1):c.545G>A (p.Arg182Lys)	P40692	R	182	K
+90272	MLH1	1	Pathogenic	reviewed by expert panel	3	37011828	37011828	single nucleotide variant	NM_000249.4(MLH1):c.554T>G (p.Val185Gly)	P40692	V	185	G
+41640	MLH1	0	Benign	reviewed by expert panel	3	37012059	37012059	single nucleotide variant	NM_000249.4(MLH1):c.637G>A (p.Val213Met)	P40692	V	213	M
+36557	MLH1	0	Benign	reviewed by expert panel	3	37012077	37012077	single nucleotide variant	NM_000249.4(MLH1):c.655A>G (p.Ile219Val)	P40692	I	219	V
+90305	MLH1	0	Benign	reviewed by expert panel	3	37012077	37012077	single nucleotide variant	NM_000249.4(MLH1):c.655A>C (p.Ile219Leu)	P40692	I	219	L
+90318	MLH1	1	Pathogenic	reviewed by expert panel	3	37012099	37012099	single nucleotide variant	NM_000249.4(MLH1):c.677G>A (p.Arg226Gln)	P40692	R	226	Q
+90319	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37012099	37012099	single nucleotide variant	NM_000249.4(MLH1):c.677G>T (p.Arg226Leu)	P40692	R	226	L
+90339	MLH1	1	Pathogenic	reviewed by expert panel	3	37014485	37014485	single nucleotide variant	NM_000249.4(MLH1):c.731G>A (p.Gly244Asp)	P40692	G	244	D
+90342	MLH1	1	Pathogenic	reviewed by expert panel	3	37014493	37014493	single nucleotide variant	NM_000249.4(MLH1):c.739T>C (p.Ser247Pro)	P40692	S	247	P
+90350	MLH1	1	Pathogenic	reviewed by expert panel	3	37014533	37014533	single nucleotide variant	NM_000249.4(MLH1):c.779T>G (p.Leu260Arg)	P40692	L	260	R
+29654	MLH1	1	Pathogenic	reviewed by expert panel	3	37017508	37017508	single nucleotide variant	NM_000249.4(MLH1):c.793C>T (p.Arg265Cys)	P40692	R	265	C
+90380	MLH1	1	Pathogenic	reviewed by expert panel	3	37017508	37017508	single nucleotide variant	NM_000249.4(MLH1):c.793C>A (p.Arg265Ser)	P40692	R	265	S
+433856	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37017509	37017509	single nucleotide variant	NM_000249.4(MLH1):c.794G>C (p.Arg265Pro)	P40692	R	265	P
+90382	MLH1	0	Benign	reviewed by expert panel	3	37017518	37017518	single nucleotide variant	NM_000249.4(MLH1):c.803A>G (p.Glu268Gly)	P40692	E	268	G
+520540	MLH1	1	Pathogenic	reviewed by expert panel	3	37017542	37017542	single nucleotide variant	NM_000249.4(MLH1):c.827T>G (p.Ile276Arg)	P40692	I	276	R
+90390	MLH1	1	Pathogenic	reviewed by expert panel	3	37017557	37017557	single nucleotide variant	NM_000249.4(MLH1):c.842C>T (p.Ala281Val)	P40692	A	281	V
+90391	MLH1	0	Likely benign	reviewed by expert panel	3	37017560	37017560	single nucleotide variant	NM_000249.4(MLH1):c.845C>G (p.Ala282Gly)	P40692	A	282	G
+90408	MLH1	1	Pathogenic	reviewed by expert panel	3	37017598	37017598	single nucleotide variant	NM_000249.4(MLH1):c.883A>C (p.Ser295Arg)	P40692	S	295	R
+90409	MLH1	1	Pathogenic	reviewed by expert panel	3	37017598	37017598	single nucleotide variant	NM_000249.4(MLH1):c.883A>G (p.Ser295Gly)	P40692	S	295	G
+90415	MLH1	1	Pathogenic	reviewed by expert panel	3	37017599	37017599	single nucleotide variant	NM_000249.4(MLH1):c.884G>A (p.Ser295Asn)	P40692	S	295	N
+90416	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37017599	37017599	single nucleotide variant	NM_000249.4(MLH1):c.884G>C (p.Ser295Thr)	P40692	S	295	T
+90439	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37020336	37020336	single nucleotide variant	NM_000249.4(MLH1):c.911A>T (p.Asp304Val)	P40692	D	304	V
+90441	MLH1	1	Pathogenic	reviewed by expert panel	3	37020343	37020343	single nucleotide variant	NM_000249.4(MLH1):c.918T>A (p.Asn306Lys)	P40692	N	306	K
+561172	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37020348	37020348	single nucleotide variant	NM_000249.4(MLH1):c.923A>C (p.His308Pro)	P40692	H	308	P
+230595	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37020356	37020356	single nucleotide variant	NM_000249.4(MLH1):c.931A>G (p.Lys311Glu)	P40692	K	311	E
+90456	MLH1	0	Likely benign	reviewed by expert panel	3	37020399	37020399	single nucleotide variant	NM_000249.4(MLH1):c.974G>A (p.Arg325Gln)	P40692	R	325	Q
+42496	MLH1	0	Benign	reviewed by expert panel	3	37020402	37020402	single nucleotide variant	NM_000249.4(MLH1):c.977T>C (p.Val326Ala)	P40692	V	326	A
+17085	MLH1	1	Pathogenic	reviewed by expert panel	3	37020411	37020411	single nucleotide variant	NM_000249.4(MLH1):c.986A>C (p.His329Pro)	P40692	H	329	P
+89610	MLH1	1	Pathogenic	reviewed by expert panel	3	37020462	37020462	single nucleotide variant	NM_000249.4(MLH1):c.1037A>G (p.Gln346Arg)	P40692	Q	346	R
+89617	MLH1	1	Pathogenic	reviewed by expert panel	3	37020463	37020463	single nucleotide variant	NM_000249.4(MLH1):c.1038G>C (p.Gln346His)	P40692	Q	346	H
+89618	MLH1	1	Pathogenic	reviewed by expert panel	3	37020463	37020463	single nucleotide variant	NM_000249.4(MLH1):c.1038G>T (p.Gln346His)	P40692	Q	346	H
+89629	MLH1	0	Benign	reviewed by expert panel	3	37025638	37025638	single nucleotide variant	NM_000249.4(MLH1):c.1040C>A (p.Thr347Asn)	P40692	T	347	N
+142276	MLH1	0	Likely benign	reviewed by expert panel	3	37025734	37025734	single nucleotide variant	NM_000249.4(MLH1):c.1136A>G (p.Tyr379Cys)	P40692	Y	379	C
+41632	MLH1	0	Benign	reviewed by expert panel	3	37025749	37025749	single nucleotide variant	NM_000249.4(MLH1):c.1151T>A (p.Val384Asp)	P40692	V	384	D
+41634	MLH1	0	Benign	reviewed by expert panel	3	37025815	37025815	single nucleotide variant	NM_000249.4(MLH1):c.1217G>A (p.Ser406Asn)	P40692	S	406	N
+89696	MLH1	0	Benign	reviewed by expert panel	3	37025919	37025919	single nucleotide variant	NM_000249.4(MLH1):c.1321G>A (p.Ala441Thr)	P40692	A	441	T
+633500	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37040239	37040239	single nucleotide variant	NM_000249.4(MLH1):c.1612T>G (p.Trp538Gly)	P40692	W	538	G
+89818	MLH1	1	Pathogenic	reviewed by expert panel	3	37040276	37040276	single nucleotide variant	NM_000249.4(MLH1):c.1649T>C (p.Leu550Pro)	P40692	L	550	P
+237316	MLH1	0	Benign	reviewed by expert panel	3	37040279	37040279	single nucleotide variant	NM_000249.4(MLH1):c.1652A>G (p.Asn551Ser)	P40692	N	551	S
+89822	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37040291	37040291	single nucleotide variant	NM_000249.4(MLH1):c.1664T>C (p.Leu555Pro)	P40692	L	555	P
+89825	MLH1	1	Pathogenic	reviewed by expert panel	3	37040294	37040294	single nucleotide variant	NM_000249.4(MLH1):c.1667G>T (p.Ser556Ile)	P40692	S	556	I
+89836	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37042276	37042276	single nucleotide variant	NM_000249.4(MLH1):c.1676T>G (p.Leu559Arg)	P40692	L	559	R
+219290	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37042276	37042276	single nucleotide variant	NM_000249.4(MLH1):c.1676T>C (p.Leu559Pro)	P40692	L	559	P
+89846	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37042321	37042321	single nucleotide variant	NM_000249.4(MLH1):c.1721T>C (p.Leu574Pro)	P40692	L	574	P
+17090	MLH1	0	Benign	reviewed by expert panel	3	37047520	37047520	single nucleotide variant	NM_000249.4(MLH1):c.1733A>G (p.Glu578Gly)	P40692	E	578	G
+41635	MLH1	0	Likely benign	reviewed by expert panel	3	37047529	37047529	single nucleotide variant	NM_000249.4(MLH1):c.1742C>T (p.Pro581Leu)	P40692	P	581	L
+89871	MLH1	1	Pathogenic	reviewed by expert panel	3	37047532	37047532	single nucleotide variant	NM_000249.4(MLH1):c.1745T>C (p.Leu582Pro)	P40692	L	582	P
+89884	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37047553	37047553	single nucleotide variant	NM_000249.4(MLH1):c.1766C>A (p.Ala589Asp)	P40692	A	589	D
+89890	MLH1	0	Benign	reviewed by expert panel	3	37047586	37047586	single nucleotide variant	NM_000249.4(MLH1):c.1799A>G (p.Glu600Gly)	P40692	E	600	G
+41636	MLH1	0	Likely benign	reviewed by expert panel	3	37047595	37047595	single nucleotide variant	NM_000249.4(MLH1):c.1808C>G (p.Pro603Arg)	P40692	P	603	R
+89895	MLH1	0	Likely benign	reviewed by expert panel	3	37047607	37047607	single nucleotide variant	NM_000249.4(MLH1):c.1820T>A (p.Leu607His)	P40692	L	607	H
+89897	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37047610	37047610	single nucleotide variant	NM_000249.4(MLH1):c.1823C>A (p.Ala608Asp)	P40692	A	608	D
+89906	MLH1	0	Benign	reviewed by expert panel	3	37047640	37047640	single nucleotide variant	NM_000249.4(MLH1):c.1853A>C (p.Lys618Thr)	P40692	K	618	T
+89907	MLH1	0	Likely benign	reviewed by expert panel	3	37047640	37047640	single nucleotide variant	NM_000249.4(MLH1):c.1853A>G (p.Lys618Arg)	P40692	K	618	R
+89909	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37047642	37047642	single nucleotide variant	NM_000249.4(MLH1):c.1855G>C (p.Ala619Pro)	P40692	A	619	P
+29657	MLH1	1	Pathogenic	reviewed by expert panel	3	37047652	37047652	single nucleotide variant	NM_000249.4(MLH1):c.1865T>A (p.Leu622His)	P40692	L	622	H
+89911	MLH1	1	Pathogenic	reviewed by expert panel	3	37047652	37047652	single nucleotide variant	NM_000249.4(MLH1):c.1865T>C (p.Leu622Pro)	P40692	L	622	P
+89945	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37048538	37048538	single nucleotide variant	NM_000249.4(MLH1):c.1918C>T (p.Pro640Ser)	P40692	P	640	S
+17097	MLH1	1	Pathogenic	reviewed by expert panel	3	37048562	37048562	single nucleotide variant	NM_000249.4(MLH1):c.1942C>T (p.Pro648Ser)	P40692	P	648	S
+89953	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37048563	37048563	single nucleotide variant	NM_000249.4(MLH1):c.1943C>T (p.Pro648Leu)	P40692	P	648	L
+89957	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37048578	37048578	single nucleotide variant	NM_000249.4(MLH1):c.1958T>G (p.Leu653Arg)	P40692	L	653	R
+89959	MLH1	1	Pathogenic	reviewed by expert panel	3	37048581	37048581	single nucleotide variant	NM_000249.4(MLH1):c.1961C>T (p.Pro654Leu)	P40692	P	654	L
+41637	MLH1	0	Likely benign	reviewed by expert panel	3	37048583	37048583	single nucleotide variant	NM_000249.4(MLH1):c.1963A>G (p.Ile655Val)	P40692	I	655	V
+89965	MLH1	1	Pathogenic	reviewed by expert panel	3	37048596	37048596	single nucleotide variant	NM_000249.4(MLH1):c.1976G>C (p.Arg659Pro)	P40692	R	659	P
+89966	MLH1	1	Pathogenic	reviewed by expert panel	3	37048596	37048596	single nucleotide variant	NM_000249.4(MLH1):c.1976G>T (p.Arg659Leu)	P40692	R	659	L
+89968	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37048604	37048604	single nucleotide variant	NM_000249.4(MLH1):c.1984A>C (p.Thr662Pro)	P40692	T	662	P
+89970	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37048608	37048608	single nucleotide variant	NM_000249.4(MLH1):c.1988A>C (p.Glu663Ala)	P40692	E	663	A
+89980	MLH1	1	Pathogenic	reviewed by expert panel	3	37048609	37048609	single nucleotide variant	NM_000249.4(MLH1):c.1989G>T (p.Glu663Asp)	P40692	E	663	D
+90006	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37048952	37048952	single nucleotide variant	NM_000249.4(MLH1):c.2038T>C (p.Cys680Arg)	P40692	C	680	R
+17099	MLH1	1	Pathogenic	reviewed by expert panel	3	37048955	37048955	single nucleotide variant	NM_000249.4(MLH1):c.2041G>A (p.Ala681Thr)	P40692	A	681	T
+90012	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37048962	37048962	single nucleotide variant	NM_000249.4(MLH1):c.2048T>C (p.Phe683Ser)	P40692	F	683	S
+90014	MLH1	1	Pathogenic	reviewed by expert panel	3	37048973	37048973	single nucleotide variant	NM_000249.4(MLH1):c.2059C>T (p.Arg687Trp)	P40692	R	687	W
+90016	MLH1	0	Benign	reviewed by expert panel	3	37048980	37048980	single nucleotide variant	NM_000249.4(MLH1):c.2066A>G (p.Gln689Arg)	P40692	Q	689	R
+127621	MLH1	0	Benign	reviewed by expert panel	3	37048988	37048988	single nucleotide variant	NM_000249.4(MLH1):c.2074T>C (p.Ser692Pro)	P40692	S	692	P
+90042	MLH1	0	Likely benign	reviewed by expert panel	3	37049015	37049015	single nucleotide variant	NM_000249.4(MLH1):c.2101C>A (p.Gln701Lys)	P40692	Q	701	K
+90049	MLH1	1	Pathogenic	reviewed by expert panel	3	37049017	37049017	single nucleotide variant	NM_000249.4(MLH1):c.2103G>C (p.Gln701His)	P40692	Q	701	H
+41639	MLH1	0	Benign	reviewed by expert panel	3	37050528	37050528	single nucleotide variant	NM_000249.4(MLH1):c.2146G>A (p.Val716Met)	P40692	V	716	M
+36547	MLH1	0	Benign	reviewed by expert panel	3	37050534	37050534	single nucleotide variant	NM_000249.4(MLH1):c.2152C>T (p.His718Tyr)	P40692	H	718	Y
+90071	MLH1	1	Likely pathogenic	reviewed by expert panel	3	37050535	37050535	single nucleotide variant	NM_000249.4(MLH1):c.2153A>C (p.His718Pro)	P40692	H	718	P
+479712	MLH1	0	Likely benign	reviewed by expert panel	3	37050579	37050579	single nucleotide variant	NM_000249.4(MLH1):c.2197C>T (p.His733Tyr)	P40692	H	733	Y
+90097	MLH1	1	Pathogenic	reviewed by expert panel	3	37050628	37050628	single nucleotide variant	NM_000249.4(MLH1):c.2246T>C (p.Leu749Pro)	P40692	L	749	P
+90100	MLH1	0	Likely benign	reviewed by expert panel	3	37050634	37050634	single nucleotide variant	NM_000249.4(MLH1):c.2252A>G (p.Lys751Arg)	P40692	K	751	R
+219292	MLH1	1	Pathogenic	reviewed by expert panel	3	37050645	37050645	single nucleotide variant	NM_000249.4(MLH1):c.2263A>G (p.Arg755Gly)	P40692	R	755	G
+90106	MLH1	-1	Uncertain significance	reviewed by expert panel	3	37050647	37050647	single nucleotide variant	NM_000249.4(MLH1):c.2265G>C (p.Arg755Ser)	P40692	R	755	S
+630189	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993557	36993557	single nucleotide variant	NM_000249.4(MLH1):c.10G>A (p.Val4Met)	P40692	V	4	M
+487011	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993560	36993560	single nucleotide variant	NM_000249.4(MLH1):c.13G>C (p.Ala5Pro)	P40692	A	5	P
+90122	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993572	36993572	single nucleotide variant	NM_000249.4(MLH1):c.25C>T (p.Arg9Trp)	P40692	R	9	W
+576418	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993573	36993573	single nucleotide variant	NM_000249.4(MLH1):c.26G>A (p.Arg9Gln)	P40692	R	9	Q
+439176	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993575	36993575	single nucleotide variant	NM_000249.4(MLH1):c.28C>G (p.Arg10Gly)	P40692	R	10	G
+489898	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993575	36993575	single nucleotide variant	NM_000249.4(MLH1):c.28C>T (p.Arg10Trp)	P40692	R	10	W
+230802	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993576	36993576	single nucleotide variant	NM_000249.4(MLH1):c.29G>A (p.Arg10Gln)	P40692	R	10	Q
+489899	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993576	36993576	single nucleotide variant	NM_000249.4(MLH1):c.29G>T (p.Arg10Leu)	P40692	R	10	L
+220598	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993578	36993578	single nucleotide variant	NM_000249.4(MLH1):c.31C>G (p.Leu11Val)	P40692	L	11	V
+232845	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993581	36993581	single nucleotide variant	NM_000249.4(MLH1):c.34G>A (p.Asp12Asn)	P40692	D	12	N
+142017	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993583	36993583	single nucleotide variant	NM_000249.4(MLH1):c.36C>G (p.Asp12Glu)	P40692	D	12	E
+486850	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993584	36993584	single nucleotide variant	NM_000249.4(MLH1):c.37G>C (p.Glu13Gln)	P40692	E	13	Q
+824352	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993585	36993585	single nucleotide variant	NM_000249.4(MLH1):c.38A>G (p.Glu13Gly)	P40692	E	13	G
+644911	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993590	36993590	single nucleotide variant	NM_000249.4(MLH1):c.43G>C (p.Val15Leu)	P40692	V	15	L
+232514	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993593	36993593	single nucleotide variant	NM_000249.4(MLH1):c.46G>A (p.Val16Met)	P40692	V	16	M
+449059	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993594	36993594	single nucleotide variant	NM_000249.4(MLH1):c.47T>G (p.Val16Gly)	P40692	V	16	G
+483588	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993597	36993597	single nucleotide variant	NM_000249.4(MLH1):c.50A>G (p.Asn17Ser)	P40692	N	17	S
+483546	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993599	36993599	single nucleotide variant	NM_000249.4(MLH1):c.52C>G (p.Arg18Gly)	P40692	R	18	G
+479684	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993600	36993600	single nucleotide variant	NM_000249.4(MLH1):c.53G>A (p.Arg18His)	P40692	R	18	H
+825846	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993602	36993602	single nucleotide variant	NM_000249.4(MLH1):c.55A>C (p.Ile19Leu)	P40692	I	19	L
+90330	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993614	36993614	single nucleotide variant	NM_000249.4(MLH1):c.67G>A (p.Glu23Lys)	P40692	E	23	K
+826691	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993615	36993615	single nucleotide variant	NM_000249.4(MLH1):c.68A>G (p.Glu23Gly)	P40692	E	23	G
+422984	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993620	36993620	single nucleotide variant	NM_000249.4(MLH1):c.73A>G (p.Ile25Val)	P40692	I	25	V
+1365650	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993621	36993621	single nucleotide variant	NM_000249.4(MLH1):c.74T>C (p.Ile25Thr)	P40692	I	25	T
+455452	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993624	36993624	single nucleotide variant	NM_000249.4(MLH1):c.77A>C (p.Gln26Pro)	P40692	Q	26	P
+455453	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993624	36993624	single nucleotide variant	NM_000249.4(MLH1):c.77A>G (p.Gln26Arg)	P40692	Q	26	R
+489903	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993626	36993626	single nucleotide variant	NM_000249.4(MLH1):c.79C>G (p.Arg27Gly)	P40692	R	27	G
+629311	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993633	36993633	single nucleotide variant	NM_000249.4(MLH1):c.86C>A (p.Ala29Asp)	P40692	A	29	D
+216338	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993637	36993637	single nucleotide variant	NM_000249.4(MLH1):c.90T>G (p.Asn30Lys)	P40692	N	30	K
+420921	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993638	36993638	single nucleotide variant	NM_000249.4(MLH1):c.91G>A (p.Ala31Thr)	P40692	A	31	T
+183068	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993639	36993639	single nucleotide variant	NM_000249.4(MLH1):c.92C>G (p.Ala31Gly)	P40692	A	31	G
+455465	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993643	36993643	single nucleotide variant	NM_000249.4(MLH1):c.96C>G (p.Ile32Met)	P40692	I	32	M
+237353	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993644	36993644	single nucleotide variant	NM_000249.4(MLH1):c.97A>G (p.Lys33Glu)	P40692	K	33	E
+823596	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993646	36993646	single nucleotide variant	NM_000249.4(MLH1):c.99A>C (p.Lys33Asn)	P40692	K	33	N
+455372	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993653	36993653	single nucleotide variant	NM_000249.4(MLH1):c.106A>T (p.Ile36Phe)	P40692	I	36	F
+577034	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993654	36993654	single nucleotide variant	NM_000249.4(MLH1):c.107T>C (p.Ile36Thr)	P40692	I	36	T
+182535	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36993655	36993655	single nucleotide variant	NM_000249.4(MLH1):c.108T>G (p.Ile36Met)	P40692	I	36	M
+89640	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	36993656	36993656	single nucleotide variant	NM_000249.4(MLH1):c.109G>A (p.Glu37Lys)	P40692	E	37	K
+818578	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996622	36996622	single nucleotide variant	NM_000249.4(MLH1):c.120A>C (p.Leu40Phe)	P40692	L	40	F
+455379	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	36996624	36996624	single nucleotide variant	NM_000249.4(MLH1):c.122A>T (p.Asp41Val)	P40692	D	41	V
+818732	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996627	36996627	single nucleotide variant	NM_000249.4(MLH1):c.125C>G (p.Ala42Gly)	P40692	A	42	G
+619504	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	36996633	36996633	single nucleotide variant	NM_000249.4(MLH1):c.131C>A (p.Ser44Tyr)	P40692	S	44	Y
+639639	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996633	36996633	single nucleotide variant	NM_000249.4(MLH1):c.131C>G (p.Ser44Cys)	P40692	S	44	C
+405429	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996635	36996635	single nucleotide variant	NM_000249.4(MLH1):c.133A>G (p.Thr45Ala)	P40692	T	45	A
+819045	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996639	36996639	single nucleotide variant	NM_000249.4(MLH1):c.137G>A (p.Ser46Asn)	P40692	S	46	N
+619505	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996641	36996641	single nucleotide variant	NM_000249.4(MLH1):c.139A>G (p.Ile47Val)	P40692	I	47	V
+479672	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996644	36996644	single nucleotide variant	NM_000249.4(MLH1):c.142C>G (p.Gln48Glu)	P40692	Q	48	E
+449060	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996646	36996646	single nucleotide variant	NM_000249.4(MLH1):c.144A>C (p.Gln48His)	P40692	Q	48	H
+801201	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996647	36996647	single nucleotide variant	NM_000249.4(MLH1):c.145G>A (p.Val49Met)	P40692	V	49	M
+630797	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996650	36996650	single nucleotide variant	NM_000249.4(MLH1):c.148A>T (p.Ile50Phe)	P40692	I	50	F
+628871	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996662	36996662	single nucleotide variant	NM_000249.4(MLH1):c.160G>A (p.Gly54Arg)	P40692	G	54	R
+422798	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996665	36996665	single nucleotide variant	NM_000249.4(MLH1):c.163G>A (p.Gly55Ser)	P40692	G	55	S
+455397	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996666	36996666	single nucleotide variant	NM_000249.4(MLH1):c.164G>A (p.Gly55Asp)	P40692	G	55	D
+234589	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996671	36996671	single nucleotide variant	NM_000249.4(MLH1):c.169A>C (p.Lys57Gln)	P40692	K	57	Q
+233030	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996672	36996672	single nucleotide variant	NM_000249.4(MLH1):c.170A>G (p.Lys57Arg)	P40692	K	57	R
+455402	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996679	36996679	single nucleotide variant	NM_000249.4(MLH1):c.177T>G (p.Ile59Met)	P40692	I	59	M
+405393	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996683	36996683	single nucleotide variant	NM_000249.4(MLH1):c.181A>G (p.Ile61Val)	P40692	I	61	V
+455407	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996684	36996684	single nucleotide variant	NM_000249.4(MLH1):c.182T>G (p.Ile61Ser)	P40692	I	61	S
+89920	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	36996689	36996689	single nucleotide variant	NM_000249.4(MLH1):c.187G>A (p.Asp63Asn)	P40692	D	63	N
+479674	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996692	36996692	single nucleotide variant	NM_000249.4(MLH1):c.190A>T (p.Asn64Tyr)	P40692	N	64	Y
+234208	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996698	36996698	single nucleotide variant	NM_000249.4(MLH1):c.196A>G (p.Thr66Ala)	P40692	T	66	A
+495763	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	36996701	36996701	single nucleotide variant	NM_000249.4(MLH1):c.199G>C (p.Gly67Arg)	P40692	G	67	R
+525612	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	36996708	36996708	single nucleotide variant	NM_000249.4(MLH1):c.206G>C (p.Arg69Thr)	P40692	R	69	T
+820801	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000961	37000961	single nucleotide variant	NM_000249.4(MLH1):c.214G>A (p.Asp72Asn)	P40692	D	72	N
+455420	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000962	37000962	single nucleotide variant	NM_000249.4(MLH1):c.215A>G (p.Asp72Gly)	P40692	D	72	G
+487017	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000964	37000964	single nucleotide variant	NM_000249.4(MLH1):c.217C>G (p.Leu73Val)	P40692	L	73	V
+569141	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000964	37000964	single nucleotide variant	NM_000249.4(MLH1):c.217C>A (p.Leu73Met)	P40692	L	73	M
+42192	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37000965	37000965	single nucleotide variant	NM_000249.4(MLH1):c.218T>G (p.Leu73Arg)	P40692	L	73	R
+1365656	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37000965	37000965	single nucleotide variant	NM_000249.4(MLH1):c.218T>C (p.Leu73Pro)	P40692	L	73	P
+572402	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000967	37000967	single nucleotide variant	NM_000249.4(MLH1):c.220G>A (p.Asp74Asn)	P40692	D	74	N
+405409	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000970	37000970	single nucleotide variant	NM_000249.4(MLH1):c.223A>T (p.Ile75Phe)	P40692	I	75	F
+820939	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000970	37000970	single nucleotide variant	NM_000249.4(MLH1):c.223A>G (p.Ile75Val)	P40692	I	75	V
+234084	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000971	37000971	single nucleotide variant	NM_000249.4(MLH1):c.224T>C (p.Ile75Thr)	P40692	I	75	T
+642117	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000976	37000976	single nucleotide variant	NM_000249.4(MLH1):c.229T>G (p.Cys77Gly)	P40692	C	77	G
+483597	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000983	37000983	single nucleotide variant	NM_000249.4(MLH1):c.236G>A (p.Arg79Lys)	P40692	R	79	K
+455422	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000984	37000984	single nucleotide variant	NM_000249.4(MLH1):c.237G>T (p.Arg79Ser)	P40692	R	79	S
+187452	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000988	37000988	single nucleotide variant	NM_000249.4(MLH1):c.241A>G (p.Thr81Ala)	P40692	T	81	A
+233361	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37000989	37000989	single nucleotide variant	NM_000249.4(MLH1):c.242C>G (p.Thr81Ser)	P40692	T	81	S
+483561	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001003	37001003	single nucleotide variant	NM_000249.4(MLH1):c.256C>G (p.Gln86Glu)	P40692	Q	86	E
+568777	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001013	37001013	single nucleotide variant	NM_000249.4(MLH1):c.266A>G (p.Glu89Gly)	P40692	E	89	G
+525604	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001025	37001025	single nucleotide variant	NM_000249.4(MLH1):c.278G>A (p.Ser93Asn)	P40692	S	93	N
+525644	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001027	37001027	single nucleotide variant	NM_000249.4(MLH1):c.280A>G (p.Ile94Val)	P40692	I	94	V
+801204	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001034	37001034	single nucleotide variant	NM_000249.4(MLH1):c.287C>T (p.Thr96Ile)	P40692	T	96	I
+483568	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001036	37001036	single nucleotide variant	NM_000249.4(MLH1):c.289T>G (p.Tyr97Asp)	P40692	Y	97	D
+90132	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37001046	37001046	single nucleotide variant	NM_000249.4(MLH1):c.299G>A (p.Arg100Gln)	P40692	R	100	Q
+572275	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37001048	37001048	single nucleotide variant	NM_000249.4(MLH1):c.301G>C (p.Gly101Arg)	P40692	G	101	R
+90163	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004401	37004401	single nucleotide variant	NM_000249.4(MLH1):c.307G>C (p.Ala103Pro)	P40692	A	103	P
+483571	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004413	37004413	single nucleotide variant	NM_000249.4(MLH1):c.319A>C (p.Ile107Leu)	P40692	I	107	L
+659950	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37004414	37004414	single nucleotide variant	NM_000249.4(MLH1):c.320T>A (p.Ile107Lys)	P40692	I	107	K
+574920	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004420	37004420	single nucleotide variant	NM_000249.4(MLH1):c.326A>G (p.His109Arg)	P40692	H	109	R
+628998	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004428	37004428	single nucleotide variant	NM_000249.4(MLH1):c.334C>G (p.His112Asp)	P40692	H	112	D
+455429	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004429	37004429	single nucleotide variant	NM_000249.4(MLH1):c.335A>G (p.His112Arg)	P40692	H	112	R
+483591	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004434	37004434	single nucleotide variant	NM_000249.4(MLH1):c.340A>G (p.Thr114Ala)	P40692	T	114	A
+576398	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004441	37004441	single nucleotide variant	NM_000249.4(MLH1):c.347C>T (p.Thr116Ile)	P40692	T	116	I
+422124	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004443	37004443	single nucleotide variant	NM_000249.4(MLH1):c.349A>G (p.Thr117Ala)	P40692	T	117	A
+1720333	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004453	37004453	single nucleotide variant	NM_000249.4(MLH1):c.359C>T (p.Ala120Val)	P40692	A	120	V
+629087	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004461	37004461	single nucleotide variant	NM_000249.4(MLH1):c.367A>G (p.Lys123Glu)	P40692	K	123	E
+650036	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004465	37004465	single nucleotide variant	NM_000249.4(MLH1):c.371G>C (p.Cys124Ser)	P40692	C	124	S
+433851	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37004468	37004468	single nucleotide variant	NM_000249.4(MLH1):c.374C>A (p.Ala125Glu)	P40692	A	125	E
+479669	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37004468	37004468	single nucleotide variant	NM_000249.4(MLH1):c.374C>T (p.Ala125Val)	P40692	A	125	V
+182516	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37004474	37004474	single nucleotide variant	NM_000249.4(MLH1):c.380G>T (p.Arg127Ile)	P40692	R	127	I
+639289	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37006992	37006992	single nucleotide variant	NM_000249.4(MLH1):c.382G>A (p.Ala128Thr)	P40692	A	128	T
+422919	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37006993	37006993	single nucleotide variant	NM_000249.4(MLH1):c.383C>G (p.Ala128Gly)	P40692	A	128	G
+571099	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37006995	37006995	single nucleotide variant	NM_000249.4(MLH1):c.385A>G (p.Ser129Gly)	P40692	S	129	G
+1523598	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37006998	37006998	single nucleotide variant	NM_000249.4(MLH1):c.388T>C (p.Tyr130His)	P40692	Y	130	H
+1735971	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37006999	37006999	single nucleotide variant	NM_000249.4(MLH1):c.389A>G (p.Tyr130Cys)	P40692	Y	130	C
+489900	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007005	37007005	single nucleotide variant	NM_000249.4(MLH1):c.395A>G (p.Asp132Gly)	P40692	D	132	G
+405430	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007010	37007010	single nucleotide variant	NM_000249.4(MLH1):c.400A>G (p.Lys134Glu)	P40692	K	134	E
+234592	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007014	37007014	single nucleotide variant	NM_000249.4(MLH1):c.404T>C (p.Leu135Pro)	P40692	L	135	P
+643180	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007016	37007016	single nucleotide variant	NM_000249.4(MLH1):c.406A>G (p.Lys136Glu)	P40692	K	136	E
+234444	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007019	37007019	single nucleotide variant	NM_000249.4(MLH1):c.409G>A (p.Ala137Thr)	P40692	A	137	T
+185670	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007020	37007020	single nucleotide variant	NM_000249.4(MLH1):c.410C>T (p.Ala137Val)	P40692	A	137	V
+455433	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007032	37007032	single nucleotide variant	NM_000249.4(MLH1):c.422C>T (p.Pro141Leu)	P40692	P	141	L
+565359	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007032	37007032	single nucleotide variant	NM_000249.4(MLH1):c.422C>G (p.Pro141Arg)	P40692	P	141	R
+455434	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007034	37007034	single nucleotide variant	NM_000249.4(MLH1):c.424T>A (p.Cys142Ser)	P40692	C	142	S
+455435	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007034	37007034	single nucleotide variant	NM_000249.4(MLH1):c.424T>C (p.Cys142Arg)	P40692	C	142	R
+455436	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007035	37007035	single nucleotide variant	NM_000249.4(MLH1):c.425G>C (p.Cys142Ser)	P40692	C	142	S
+232279	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007037	37007037	single nucleotide variant	NM_000249.4(MLH1):c.427G>A (p.Ala143Thr)	P40692	A	143	T
+485798	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007038	37007038	single nucleotide variant	NM_000249.4(MLH1):c.428C>T (p.Ala143Val)	P40692	A	143	V
+455437	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007044	37007044	single nucleotide variant	NM_000249.4(MLH1):c.434A>G (p.Asn145Ser)	P40692	N	145	S
+628321	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007047	37007047	single nucleotide variant	NM_000249.4(MLH1):c.437A>G (p.Gln146Arg)	P40692	Q	146	R
+90220	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007057	37007057	single nucleotide variant	NM_000249.4(MLH1):c.447G>C (p.Gln149His)	P40692	Q	149	H
+485793	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007058	37007058	single nucleotide variant	NM_000249.4(MLH1):c.448A>C (p.Ile150Leu)	P40692	I	150	L
+185839	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37007059	37007059	single nucleotide variant	NM_000249.4(MLH1):c.449T>A (p.Ile150Asn)	P40692	I	150	N
+479705	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008814	37008814	single nucleotide variant	NM_000249.4(MLH1):c.454G>T (p.Val152Leu)	P40692	V	152	L
+505563	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008817	37008817	single nucleotide variant	NM_000249.4(MLH1):c.457G>A (p.Glu153Lys)	P40692	E	153	K
+455438	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008818	37008818	single nucleotide variant	NM_000249.4(MLH1):c.458A>G (p.Glu153Gly)	P40692	E	153	G
+639753	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008822	37008822	single nucleotide variant	NM_000249.4(MLH1):c.462C>A (p.Asp154Glu)	P40692	D	154	E
+405394	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008826	37008826	single nucleotide variant	NM_000249.4(MLH1):c.466T>C (p.Phe156Leu)	P40692	F	156	L
+629883	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008832	37008832	single nucleotide variant	NM_000249.4(MLH1):c.472A>C (p.Asn158His)	P40692	N	158	H
+566262	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008835	37008835	single nucleotide variant	NM_000249.4(MLH1):c.475A>G (p.Ile159Val)	P40692	I	159	V
+483582	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008839	37008839	single nucleotide variant	NM_000249.4(MLH1):c.479C>G (p.Ala160Gly)	P40692	A	160	G
+485804	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008847	37008847	single nucleotide variant	NM_000249.4(MLH1):c.487A>G (p.Arg163Gly)	P40692	R	163	G
+419731	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008851	37008851	single nucleotide variant	NM_000249.4(MLH1):c.491A>T (p.Lys164Ile)	P40692	K	164	I
+455440	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008852	37008852	single nucleotide variant	NM_000249.4(MLH1):c.492A>C (p.Lys164Asn)	P40692	K	164	N
+643141	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008860	37008860	single nucleotide variant	NM_000249.4(MLH1):c.500A>G (p.Lys167Arg)	P40692	K	167	R
+525825	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008863	37008863	single nucleotide variant	NM_000249.4(MLH1):c.503A>T (p.Asn168Ile)	P40692	N	168	I
+573608	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008866	37008866	single nucleotide variant	NM_000249.4(MLH1):c.506C>A (p.Pro169Gln)	P40692	P	169	Q
+419110	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008869	37008869	single nucleotide variant	NM_000249.4(MLH1):c.509G>C (p.Ser170Thr)	P40692	S	170	T
+631091	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008869	37008869	single nucleotide variant	NM_000249.4(MLH1):c.509G>A (p.Ser170Asn)	P40692	S	170	N
+455442	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008886	37008886	single nucleotide variant	NM_000249.4(MLH1):c.526A>T (p.Ile176Phe)	P40692	I	176	F
+525800	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008892	37008892	single nucleotide variant	NM_000249.4(MLH1):c.532G>A (p.Glu178Lys)	P40692	E	178	K
+643641	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008892	37008892	single nucleotide variant	NM_000249.4(MLH1):c.532G>C (p.Glu178Gln)	P40692	E	178	Q
+572440	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008898	37008898	single nucleotide variant	NM_000249.4(MLH1):c.538G>T (p.Val180Phe)	P40692	V	180	F
+142349	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37008899	37008899	single nucleotide variant	NM_000249.4(MLH1):c.539T>C (p.Val180Ala)	P40692	V	180	A
+486861	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011822	37011822	single nucleotide variant	NM_000249.4(MLH1):c.548A>G (p.Tyr183Cys)	P40692	Y	183	C
+422870	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011825	37011825	single nucleotide variant	NM_000249.4(MLH1):c.551C>T (p.Ser184Leu)	P40692	S	184	L
+629884	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011830	37011830	single nucleotide variant	NM_000249.4(MLH1):c.556C>T (p.His186Tyr)	P40692	H	186	Y
+405435	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011831	37011831	single nucleotide variant	NM_000249.4(MLH1):c.557A>C (p.His186Pro)	P40692	H	186	P
+486841	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011834	37011834	single nucleotide variant	NM_000249.4(MLH1):c.560A>G (p.Asn187Ser)	P40692	N	187	S
+491713	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011840	37011840	single nucleotide variant	NM_000249.4(MLH1):c.566G>C (p.Gly189Ala)	P40692	G	189	A
+185258	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011842	37011842	single nucleotide variant	NM_000249.4(MLH1):c.568A>G (p.Ile190Val)	P40692	I	190	V
+2673885	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37011851	37011851	single nucleotide variant	NM_000249.4(MLH1):c.577T>C (p.Ser193Pro)	P40692	S	193	P
+652652	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37011852	37011852	single nucleotide variant	NM_000249.4(MLH1):c.578C>T (p.Ser193Leu)	P40692	S	193	L
+231105	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37011855	37011855	single nucleotide variant	NM_000249.4(MLH1):c.581T>G (p.Val194Gly)	P40692	V	194	G
+231634	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012024	37012024	single nucleotide variant	NM_000249.4(MLH1):c.602T>C (p.Val201Ala)	P40692	V	201	A
+405431	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012029	37012029	single nucleotide variant	NM_000249.4(MLH1):c.607G>C (p.Asp203His)	P40692	D	203	H
+219679	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012048	37012048	single nucleotide variant	NM_000249.4(MLH1):c.626A>C (p.Asn209Thr)	P40692	N	209	T
+581788	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012050	37012050	single nucleotide variant	NM_000249.4(MLH1):c.628G>C (p.Ala210Pro)	P40692	A	210	P
+90300	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012059	37012059	single nucleotide variant	NM_000249.4(MLH1):c.637G>T (p.Val213Leu)	P40692	V	213	L
+525659	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012071	37012071	single nucleotide variant	NM_000249.4(MLH1):c.649C>A (p.Arg217Ser)	P40692	R	217	S
+483584	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012078	37012078	single nucleotide variant	NM_000249.4(MLH1):c.656T>C (p.Ile219Thr)	P40692	I	219	T
+491718	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012090	37012090	single nucleotide variant	NM_000249.4(MLH1):c.668C>T (p.Ala223Val)	P40692	A	223	V
+574890	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012090	37012090	single nucleotide variant	NM_000249.4(MLH1):c.668C>G (p.Ala223Gly)	P40692	A	223	G
+141669	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012095	37012095	single nucleotide variant	NM_000249.4(MLH1):c.673A>G (p.Ser225Gly)	P40692	S	225	G
+419297	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37012097	37012097	single nucleotide variant	NM_000249.4(MLH1):c.675T>A (p.Ser225Arg)	P40692	S	225	R
+579414	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014440	37014440	single nucleotide variant	NM_000249.4(MLH1):c.686T>C (p.Ile229Thr)	P40692	I	229	T
+483554	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014442	37014442	single nucleotide variant	NM_000249.4(MLH1):c.688G>C (p.Glu230Gln)	P40692	E	230	Q
+186461	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014449	37014449	single nucleotide variant	NM_000249.4(MLH1):c.695G>A (p.Gly232Glu)	P40692	G	232	E
+646770	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014449	37014449	single nucleotide variant	NM_000249.4(MLH1):c.695G>T (p.Gly232Val)	P40692	G	232	V
+231969	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014454	37014454	single nucleotide variant	NM_000249.4(MLH1):c.700G>A (p.Glu234Lys)	P40692	E	234	K
+525803	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014460	37014460	single nucleotide variant	NM_000249.4(MLH1):c.706A>G (p.Lys236Glu)	P40692	K	236	E
+419044	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014464	37014464	single nucleotide variant	NM_000249.4(MLH1):c.710C>T (p.Thr237Ile)	P40692	T	237	I
+479693	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014466	37014466	single nucleotide variant	NM_000249.4(MLH1):c.712C>G (p.Leu238Val)	P40692	L	238	V
+134657	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014475	37014475	single nucleotide variant	NM_000249.4(MLH1):c.721A>G (p.Lys241Glu)	P40692	K	241	E
+618211	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014480	37014480	single nucleotide variant	NM_000249.4(MLH1):c.726G>A (p.Met242Ile)	P40692	M	242	I
+631100	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014482	37014482	single nucleotide variant	NM_000249.4(MLH1):c.728A>G (p.Asn243Ser)	P40692	N	243	S
+237344	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014490	37014490	single nucleotide variant	NM_000249.4(MLH1):c.736A>T (p.Ile246Leu)	P40692	I	246	L
+142890	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014497	37014497	single nucleotide variant	NM_000249.4(MLH1):c.743A>G (p.Asn248Ser)	P40692	N	248	S
+186639	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014502	37014502	single nucleotide variant	NM_000249.4(MLH1):c.748A>C (p.Asn250His)	P40692	N	250	H
+650377	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014502	37014502	single nucleotide variant	NM_000249.4(MLH1):c.748A>G (p.Asn250Asp)	P40692	N	250	D
+233140	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014506	37014506	single nucleotide variant	NM_000249.4(MLH1):c.752A>G (p.Tyr251Cys)	P40692	Y	251	C
+234855	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014508	37014508	single nucleotide variant	NM_000249.4(MLH1):c.754T>C (p.Ser252Pro)	P40692	S	252	P
+405436	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014509	37014509	single nucleotide variant	NM_000249.4(MLH1):c.755C>T (p.Ser252Leu)	P40692	S	252	L
+650758	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014514	37014514	single nucleotide variant	NM_000249.4(MLH1):c.760A>C (p.Lys254Gln)	P40692	K	254	Q
+185876	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014515	37014515	single nucleotide variant	NM_000249.4(MLH1):c.761A>G (p.Lys254Arg)	P40692	K	254	R
+568774	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014517	37014517	single nucleotide variant	NM_000249.4(MLH1):c.763A>C (p.Lys255Gln)	P40692	K	255	Q
+232268	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014521	37014521	single nucleotide variant	NM_000249.4(MLH1):c.767G>A (p.Cys256Tyr)	P40692	C	256	Y
+232951	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014523	37014523	single nucleotide variant	NM_000249.4(MLH1):c.769A>G (p.Ile257Val)	P40692	I	257	V
+455451	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014528	37014528	single nucleotide variant	NM_000249.4(MLH1):c.774C>G (p.Phe258Leu)	P40692	F	258	L
+479681	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014538	37014538	single nucleotide variant	NM_000249.4(MLH1):c.784A>G (p.Ile262Val)	P40692	I	262	V
+90353	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014542	37014542	single nucleotide variant	NM_000249.4(MLH1):c.788A>C (p.Asn263Thr)	P40692	N	263	T
+455454	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37014542	37014542	single nucleotide variant	NM_000249.4(MLH1):c.788A>G (p.Asn263Ser)	P40692	N	263	S
+801205	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37017508	37017508	single nucleotide variant	NM_000249.4(MLH1):c.793C>G (p.Arg265Gly)	P40692	R	265	G
+233949	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017514	37017514	single nucleotide variant	NM_000249.4(MLH1):c.799G>A (p.Val267Ile)	P40692	V	267	I
+187298	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017520	37017520	single nucleotide variant	NM_000249.4(MLH1):c.805T>C (p.Ser269Pro)	P40692	S	269	P
+578391	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017520	37017520	single nucleotide variant	NM_000249.4(MLH1):c.805T>A (p.Ser269Thr)	P40692	S	269	T
+90385	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017529	37017529	single nucleotide variant	NM_000249.4(MLH1):c.814T>G (p.Leu272Val)	P40692	L	272	V
+233420	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017541	37017541	single nucleotide variant	NM_000249.4(MLH1):c.826A>G (p.Ile276Val)	P40692	I	276	V
+619509	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017550	37017550	single nucleotide variant	NM_000249.4(MLH1):c.835G>C (p.Val279Leu)	P40692	V	279	L
+489904	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017551	37017551	single nucleotide variant	NM_000249.4(MLH1):c.836T>C (p.Val279Ala)	P40692	V	279	A
+639304	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017557	37017557	single nucleotide variant	NM_000249.4(MLH1):c.842C>G (p.Ala281Gly)	P40692	A	281	G
+420749	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017568	37017568	single nucleotide variant	NM_000249.4(MLH1):c.853C>T (p.Pro285Ser)	P40692	P	285	S
+2734465	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017571	37017571	single nucleotide variant	NM_000249.4(MLH1):c.856A>C (p.Lys286Gln)	P40692	K	286	Q
+455458	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017576	37017576	single nucleotide variant	NM_000249.4(MLH1):c.861C>G (p.Asn287Lys)	P40692	N	287	K
+182521	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017577	37017577	single nucleotide variant	NM_000249.4(MLH1):c.862A>G (p.Thr288Ala)	P40692	T	288	A
+187629	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017578	37017578	single nucleotide variant	NM_000249.4(MLH1):c.863C>T (p.Thr288Ile)	P40692	T	288	I
+489905	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37017583	37017583	single nucleotide variant	NM_000249.4(MLH1):c.868C>G (p.Pro290Ala)	P40692	P	290	A
+90404	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37017590	37017590	single nucleotide variant	NM_000249.4(MLH1):c.875T>C (p.Leu292Pro)	P40692	L	292	P
+483580	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020321	37020321	single nucleotide variant	NM_000249.4(MLH1):c.896G>A (p.Ser299Asn)	P40692	S	299	N
+525789	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020322	37020322	single nucleotide variant	NM_000249.4(MLH1):c.897T>G (p.Ser299Arg)	P40692	S	299	R
+631158	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020326	37020326	single nucleotide variant	NM_000249.4(MLH1):c.901C>G (p.Gln301Glu)	P40692	Q	301	E
+489906	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020332	37020332	single nucleotide variant	NM_000249.4(MLH1):c.907G>C (p.Val303Leu)	P40692	V	303	L
+455461	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020336	37020336	single nucleotide variant	NM_000249.4(MLH1):c.911A>C (p.Asp304Ala)	P40692	D	304	A
+231940	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020342	37020342	single nucleotide variant	NM_000249.4(MLH1):c.917A>T (p.Asn306Ile)	P40692	N	306	I
+185469	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020344	37020344	single nucleotide variant	NM_000249.4(MLH1):c.919G>A (p.Val307Met)	P40692	V	307	M
+216339	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020345	37020345	single nucleotide variant	NM_000249.4(MLH1):c.920T>C (p.Val307Ala)	P40692	V	307	A
+491734	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020354	37020354	single nucleotide variant	NM_000249.4(MLH1):c.929C>G (p.Thr310Arg)	P40692	T	310	R
+233984	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020358	37020358	single nucleotide variant	NM_000249.4(MLH1):c.933G>T (p.Lys311Asn)	P40692	K	311	N
+483576	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020360	37020360	single nucleotide variant	NM_000249.4(MLH1):c.935A>C (p.His312Pro)	P40692	H	312	P
+575285	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020378	37020378	single nucleotide variant	NM_000249.4(MLH1):c.953A>G (p.His318Arg)	P40692	H	318	R
+479668	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020381	37020381	single nucleotide variant	NM_000249.4(MLH1):c.956A>C (p.Glu319Ala)	P40692	E	319	A
+483567	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020387	37020387	single nucleotide variant	NM_000249.4(MLH1):c.962G>A (p.Ser321Asn)	P40692	S	321	N
+525716	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020390	37020390	single nucleotide variant	NM_000249.4(MLH1):c.965T>C (p.Ile322Thr)	P40692	I	322	T
+455466	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020410	37020410	single nucleotide variant	NM_000249.4(MLH1):c.985C>T (p.His329Tyr)	P40692	H	329	Y
+648297	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020422	37020422	single nucleotide variant	NM_000249.4(MLH1):c.997A>G (p.Lys333Glu)	P40692	K	333	E
+573568	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020432	37020432	single nucleotide variant	NM_000249.4(MLH1):c.1007G>C (p.Gly336Ala)	P40692	G	336	A
+186715	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020435	37020435	single nucleotide variant	NM_000249.4(MLH1):c.1010C>G (p.Ser337Cys)	P40692	S	337	C
+640508	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020437	37020437	single nucleotide variant	NM_000249.4(MLH1):c.1012A>C (p.Asn338His)	P40692	N	338	H
+483573	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020450	37020450	single nucleotide variant	NM_000249.4(MLH1):c.1025T>G (p.Met342Arg)	P40692	M	342	R
+405414	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020451	37020451	single nucleotide variant	NM_000249.4(MLH1):c.1026G>A (p.Met342Ile)	P40692	M	342	I
+234091	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37020453	37020453	single nucleotide variant	NM_000249.4(MLH1):c.1028A>G (p.Tyr343Cys)	P40692	Y	343	C
+479664	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025646	37025646	single nucleotide variant	NM_000249.4(MLH1):c.1048C>T (p.Pro350Ser)	P40692	P	350	S
+491669	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025655	37025655	single nucleotide variant	NM_000249.4(MLH1):c.1057G>A (p.Ala353Thr)	P40692	A	353	T
+631017	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025661	37025661	single nucleotide variant	NM_000249.4(MLH1):c.1063C>G (p.Pro355Ala)	P40692	P	355	A
+182523	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025668	37025668	single nucleotide variant	NM_000249.4(MLH1):c.1070G>T (p.Gly357Val)	P40692	G	357	V
+525730	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025670	37025670	single nucleotide variant	NM_000249.4(MLH1):c.1072G>A (p.Glu358Lys)	P40692	E	358	K
+230138	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025674	37025674	single nucleotide variant	NM_000249.4(MLH1):c.1076T>C (p.Met359Thr)	P40692	M	359	T
+237309	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025676	37025676	single nucleotide variant	NM_000249.4(MLH1):c.1078G>T (p.Val360Phe)	P40692	V	360	F
+185023	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025679	37025679	single nucleotide variant	NM_000249.4(MLH1):c.1081A>G (p.Lys361Glu)	P40692	K	361	E
+89639	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025688	37025688	single nucleotide variant	NM_000249.4(MLH1):c.1090A>G (p.Thr364Ala)	P40692	T	364	A
+572681	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025698	37025698	single nucleotide variant	NM_000249.4(MLH1):c.1100C>T (p.Thr367Ile)	P40692	T	367	I
+629890	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025698	37025698	single nucleotide variant	NM_000249.4(MLH1):c.1100C>A (p.Thr367Asn)	P40692	T	367	N
+631050	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025704	37025704	single nucleotide variant	NM_000249.4(MLH1):c.1106C>A (p.Ser369Tyr)	P40692	S	369	Y
+219728	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025716	37025716	single nucleotide variant	NM_000249.4(MLH1):c.1118G>A (p.Gly373Glu)	P40692	G	373	E
+582186	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025719	37025719	single nucleotide variant	NM_000249.4(MLH1):c.1121G>A (p.Ser374Asn)	P40692	S	374	N
+405402	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025725	37025725	single nucleotide variant	NM_000249.4(MLH1):c.1127A>T (p.Asp376Val)	P40692	D	376	V
+525707	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025733	37025733	single nucleotide variant	NM_000249.4(MLH1):c.1135T>C (p.Tyr379His)	P40692	Y	379	H
+230837	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025744	37025744	single nucleotide variant	NM_000249.4(MLH1):c.1146G>C (p.Gln382His)	P40692	Q	382	H
+648793	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025745	37025745	single nucleotide variant	NM_000249.4(MLH1):c.1147A>G (p.Met383Val)	P40692	M	383	V
+405425	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025752	37025752	single nucleotide variant	NM_000249.4(MLH1):c.1154G>T (p.Arg385Leu)	P40692	R	385	L
+489885	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025763	37025763	single nucleotide variant	NM_000249.4(MLH1):c.1165C>G (p.Arg389Gly)	P40692	R	389	G
+628318	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025769	37025769	single nucleotide variant	NM_000249.4(MLH1):c.1171C>A (p.Gln391Lys)	P40692	Q	391	K
+135845	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025773	37025773	single nucleotide variant	NM_000249.4(MLH1):c.1175A>G (p.Lys392Arg)	P40692	K	392	R
+187024	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025776	37025776	single nucleotide variant	NM_000249.4(MLH1):c.1178T>G (p.Leu393Arg)	P40692	L	393	R
+661442	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025778	37025778	single nucleotide variant	NM_000249.4(MLH1):c.1180G>T (p.Asp394Tyr)	P40692	D	394	Y
+489886	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025779	37025779	single nucleotide variant	NM_000249.4(MLH1):c.1181A>G (p.Asp394Gly)	P40692	D	394	G
+419842	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025782	37025782	single nucleotide variant	NM_000249.4(MLH1):c.1184C>T (p.Ala395Val)	P40692	A	395	V
+489887	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025790	37025790	single nucleotide variant	NM_000249.4(MLH1):c.1192C>G (p.Gln398Glu)	P40692	Q	398	E
+232262	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025793	37025793	single nucleotide variant	NM_000249.4(MLH1):c.1195C>T (p.Pro399Ser)	P40692	P	399	S
+433864	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025794	37025794	single nucleotide variant	NM_000249.4(MLH1):c.1196C>T (p.Pro399Leu)	P40692	P	399	L
+578512	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025805	37025805	single nucleotide variant	NM_000249.4(MLH1):c.1207C>A (p.Pro403Thr)	P40692	P	403	T
+525601	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025806	37025806	single nucleotide variant	NM_000249.4(MLH1):c.1208C>G (p.Pro403Arg)	P40692	P	403	R
+486862	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025808	37025808	single nucleotide variant	NM_000249.4(MLH1):c.1210C>A (p.Leu404Met)	P40692	L	404	M
+662368	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025821	37025821	single nucleotide variant	NM_000249.4(MLH1):c.1223C>A (p.Pro408His)	P40692	P	408	H
+645473	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025823	37025823	single nucleotide variant	NM_000249.4(MLH1):c.1225C>G (p.Gln409Glu)	P40692	Q	409	E
+580885	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025824	37025824	single nucleotide variant	NM_000249.4(MLH1):c.1226A>G (p.Gln409Arg)	P40692	Q	409	R
+185131	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025830	37025830	single nucleotide variant	NM_000249.4(MLH1):c.1232T>G (p.Ile411Ser)	P40692	I	411	S
+89685	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025844	37025844	single nucleotide variant	NM_000249.4(MLH1):c.1246A>G (p.Lys416Glu)	P40692	K	416	E
+423761	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025851	37025851	single nucleotide variant	NM_000249.4(MLH1):c.1253A>G (p.Asp418Gly)	P40692	D	418	G
+455380	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025853	37025853	single nucleotide variant	NM_000249.4(MLH1):c.1255A>G (p.Ile419Val)	P40692	I	419	V
+491672	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025857	37025857	single nucleotide variant	NM_000249.4(MLH1):c.1259C>T (p.Ser420Phe)	P40692	S	420	F
+232095	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025859	37025859	single nucleotide variant	NM_000249.4(MLH1):c.1261A>G (p.Ser421Gly)	P40692	S	421	G
+483559	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025862	37025862	single nucleotide variant	NM_000249.4(MLH1):c.1264G>A (p.Gly422Ser)	P40692	G	422	S
+525745	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025863	37025863	single nucleotide variant	NM_000249.4(MLH1):c.1265G>A (p.Gly422Asp)	P40692	G	422	D
+654245	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025869	37025869	single nucleotide variant	NM_000249.4(MLH1):c.1271C>T (p.Ala424Val)	P40692	A	424	V
+455382	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025872	37025872	single nucleotide variant	NM_000249.4(MLH1):c.1274G>C (p.Arg425Thr)	P40692	R	425	T
+479700	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025880	37025880	single nucleotide variant	NM_000249.4(MLH1):c.1282G>A (p.Asp428Asn)	P40692	D	428	N
+573414	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025884	37025884	single nucleotide variant	NM_000249.4(MLH1):c.1286A>C (p.Glu429Ala)	P40692	E	429	A
+455383	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025886	37025886	single nucleotide variant	NM_000249.4(MLH1):c.1288G>C (p.Glu430Gln)	P40692	E	430	Q
+628247	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025889	37025889	single nucleotide variant	NM_000249.4(MLH1):c.1291A>G (p.Met431Val)	P40692	M	431	V
+232474	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025892	37025892	single nucleotide variant	NM_000249.4(MLH1):c.1294C>T (p.Leu432Phe)	P40692	L	432	F
+658102	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025892	37025892	single nucleotide variant	NM_000249.4(MLH1):c.1294C>G (p.Leu432Val)	P40692	L	432	V
+89693	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025895	37025895	single nucleotide variant	NM_000249.4(MLH1):c.1297G>C (p.Glu433Gln)	P40692	E	433	Q
+491673	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025895	37025895	single nucleotide variant	NM_000249.4(MLH1):c.1297G>A (p.Glu433Lys)	P40692	E	433	K
+489888	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025898	37025898	single nucleotide variant	NM_000249.4(MLH1):c.1300C>T (p.Leu434Phe)	P40692	L	434	F
+525670	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025899	37025899	single nucleotide variant	NM_000249.4(MLH1):c.1301T>C (p.Leu434Pro)	P40692	L	434	P
+525664	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025907	37025907	single nucleotide variant	NM_000249.4(MLH1):c.1309C>T (p.Pro437Ser)	P40692	P	437	S
+479711	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025923	37025923	single nucleotide variant	NM_000249.4(MLH1):c.1325C>G (p.Ala442Gly)	P40692	A	442	G
+630934	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025943	37025943	single nucleotide variant	NM_000249.4(MLH1):c.1345G>A (p.Gly449Arg)	P40692	G	449	R
+483555	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025944	37025944	single nucleotide variant	NM_000249.4(MLH1):c.1346G>A (p.Gly449Glu)	P40692	G	449	E
+663135	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025946	37025946	single nucleotide variant	NM_000249.4(MLH1):c.1348G>A (p.Asp450Asn)	P40692	D	450	N
+525591	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025950	37025950	single nucleotide variant	NM_000249.4(MLH1):c.1352C>T (p.Thr451Ile)	P40692	T	451	I
+629281	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025952	37025952	single nucleotide variant	NM_000249.4(MLH1):c.1354A>G (p.Thr452Ala)	P40692	T	452	A
+627941	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025967	37025967	single nucleotide variant	NM_000249.4(MLH1):c.1369G>A (p.Glu457Lys)	P40692	E	457	K
+483534	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025970	37025970	single nucleotide variant	NM_000249.4(MLH1):c.1372A>G (p.Met458Val)	P40692	M	458	V
+186483	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025991	37025991	single nucleotide variant	NM_000249.4(MLH1):c.1393A>G (p.Thr465Ala)	P40692	T	465	A
+187313	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025998	37025998	single nucleotide variant	NM_000249.4(MLH1):c.1400G>A (p.Ser467Asn)	P40692	S	467	N
+455385	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37025999	37025999	single nucleotide variant	NM_000249.4(MLH1):c.1401C>G (p.Ser467Arg)	P40692	S	467	R
+231451	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37026001	37026001	single nucleotide variant	NM_000249.4(MLH1):c.1403A>G (p.Asn468Ser)	P40692	N	468	S
+405400	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028791	37028791	single nucleotide variant	NM_000249.4(MLH1):c.1417C>T (p.His473Tyr)	P40692	H	473	Y
+187668	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028806	37028806	single nucleotide variant	NM_000249.4(MLH1):c.1432G>T (p.Asp478Tyr)	P40692	D	478	Y
+418302	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028807	37028807	single nucleotide variant	NM_000249.4(MLH1):c.1433A>G (p.Asp478Gly)	P40692	D	478	G
+525784	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028807	37028807	single nucleotide variant	NM_000249.4(MLH1):c.1433A>T (p.Asp478Val)	P40692	D	478	V
+182525	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028824	37028824	single nucleotide variant	NM_000249.4(MLH1):c.1450G>T (p.Asp484Tyr)	P40692	D	484	Y
+455390	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028828	37028828	single nucleotide variant	NM_000249.4(MLH1):c.1454A>G (p.Asp485Gly)	P40692	D	485	G
+405392	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028834	37028834	single nucleotide variant	NM_000249.4(MLH1):c.1460G>T (p.Arg487Leu)	P40692	R	487	L
+491680	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028840	37028840	single nucleotide variant	NM_000249.4(MLH1):c.1466A>C (p.Glu489Ala)	P40692	E	489	A
+405426	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028844	37028844	single nucleotide variant	NM_000249.4(MLH1):c.1470G>C (p.Met490Ile)	P40692	M	490	I
+658026	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028844	37028844	single nucleotide variant	NM_000249.4(MLH1):c.1470G>T (p.Met490Ile)	P40692	M	490	I
+234240	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028854	37028854	single nucleotide variant	NM_000249.4(MLH1):c.1480T>G (p.Cys494Gly)	P40692	C	494	G
+229795	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028855	37028855	single nucleotide variant	NM_000249.4(MLH1):c.1481G>A (p.Cys494Tyr)	P40692	C	494	Y
+405383	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028858	37028858	single nucleotide variant	NM_000249.4(MLH1):c.1484C>T (p.Thr495Ile)	P40692	T	495	I
+489889	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028858	37028858	single nucleotide variant	NM_000249.4(MLH1):c.1484C>A (p.Thr495Asn)	P40692	T	495	N
+577560	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028861	37028861	single nucleotide variant	NM_000249.4(MLH1):c.1487C>A (p.Pro496His)	P40692	P	496	H
+483585	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028866	37028866	single nucleotide variant	NM_000249.4(MLH1):c.1492A>G (p.Arg498Gly)	P40692	R	498	G
+186200	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028871	37028871	single nucleotide variant	NM_000249.4(MLH1):c.1497G>T (p.Arg499Ser)	P40692	R	499	S
+419712	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028874	37028874	single nucleotide variant	NM_000249.4(MLH1):c.1500C>G (p.Ile500Met)	P40692	I	500	M
+632896	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028875	37028875	single nucleotide variant	NM_000249.4(MLH1):c.1501A>G (p.Ile501Val)	P40692	I	501	V
+657470	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028876	37028876	single nucleotide variant	NM_000249.4(MLH1):c.1502T>C (p.Ile501Thr)	P40692	I	501	T
+483542	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028884	37028884	single nucleotide variant	NM_000249.4(MLH1):c.1510A>G (p.Thr504Ala)	P40692	T	504	A
+233884	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028885	37028885	single nucleotide variant	NM_000249.4(MLH1):c.1511C>G (p.Thr504Ser)	P40692	T	504	S
+216330	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028895	37028895	single nucleotide variant	NM_000249.4(MLH1):c.1521G>C (p.Leu507Phe)	P40692	L	507	F
+344908	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028898	37028898	single nucleotide variant	NM_000249.4(MLH1):c.1524T>G (p.Ser508Arg)	P40692	S	508	R
+89760	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028899	37028899	single nucleotide variant	NM_000249.4(MLH1):c.1525C>T (p.Leu509Phe)	P40692	L	509	F
+483592	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37028927	37028927	single nucleotide variant	NM_000249.4(MLH1):c.1553A>G (p.His518Arg)	P40692	H	518	R
+495759	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040186	37040186	single nucleotide variant	NM_000249.4(MLH1):c.1559T>C (p.Val520Ala)	P40692	V	520	A
+455394	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040188	37040188	single nucleotide variant	NM_000249.4(MLH1):c.1561C>T (p.Leu521Phe)	P40692	L	521	F
+483549	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040191	37040191	single nucleotide variant	NM_000249.4(MLH1):c.1564C>G (p.Arg522Gly)	P40692	R	522	G
+483586	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040200	37040200	single nucleotide variant	NM_000249.4(MLH1):c.1573T>G (p.Leu525Val)	P40692	L	525	V
+216332	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040209	37040209	single nucleotide variant	NM_000249.4(MLH1):c.1582C>T (p.His528Tyr)	P40692	H	528	Y
+567883	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040216	37040216	single nucleotide variant	NM_000249.4(MLH1):c.1589T>C (p.Phe530Ser)	P40692	F	530	S
+418617	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040217	37040217	single nucleotide variant	NM_000249.4(MLH1):c.1590C>G (p.Phe530Leu)	P40692	F	530	L
+231556	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040221	37040221	single nucleotide variant	NM_000249.4(MLH1):c.1594G>T (p.Gly532Cys)	P40692	G	532	C
+489891	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040221	37040221	single nucleotide variant	NM_000249.4(MLH1):c.1594G>A (p.Gly532Ser)	P40692	G	532	S
+455396	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040225	37040225	single nucleotide variant	NM_000249.4(MLH1):c.1598G>A (p.Cys533Tyr)	P40692	C	533	Y
+479666	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040225	37040225	single nucleotide variant	NM_000249.4(MLH1):c.1598G>C (p.Cys533Ser)	P40692	C	533	S
+489892	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040234	37040234	single nucleotide variant	NM_000249.4(MLH1):c.1607C>T (p.Pro536Leu)	P40692	P	536	L
+584642	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040242	37040242	single nucleotide variant	NM_000249.4(MLH1):c.1615G>T (p.Ala539Ser)	P40692	A	539	S
+1343456	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37040243	37040243	single nucleotide variant	NM_000249.4(MLH1):c.1616C>A (p.Ala539Asp)	P40692	A	539	D
+2734466	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040252	37040252	single nucleotide variant	NM_000249.4(MLH1):c.1625A>T (p.Gln542Leu)	P40692	Q	542	L
+653041	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040252	37040252	single nucleotide variant	NM_000249.4(MLH1):c.1625A>G (p.Gln542Arg)	P40692	Q	542	R
+405418	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040263	37040263	single nucleotide variant	NM_000249.4(MLH1):c.1636A>G (p.Lys546Glu)	P40692	K	546	E
+647421	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040267	37040267	single nucleotide variant	NM_000249.4(MLH1):c.1640T>C (p.Leu547Ser)	P40692	L	547	S
+525676	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040272	37040272	single nucleotide variant	NM_000249.4(MLH1):c.1645C>G (p.Leu549Val)	P40692	L	549	V
+570087	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040275	37040275	single nucleotide variant	NM_000249.4(MLH1):c.1648C>G (p.Leu550Val)	P40692	L	550	V
+633307	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040284	37040284	single nucleotide variant	NM_000249.4(MLH1):c.1657A>G (p.Thr553Ala)	P40692	T	553	A
+405417	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37040285	37040285	single nucleotide variant	NM_000249.4(MLH1):c.1658C>T (p.Thr553Ile)	P40692	T	553	I
+433869	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37040291	37040291	single nucleotide variant	NM_000249.4(MLH1):c.1664T>G (p.Leu555Arg)	P40692	L	555	R
+449776	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37040294	37040294	single nucleotide variant	NM_000249.4(MLH1):c.1667G>A (p.Ser556Asn)	P40692	S	556	N
+483536	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042282	37042282	single nucleotide variant	NM_000249.4(MLH1):c.1682A>G (p.Tyr561Cys)	P40692	Y	561	C
+233000	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042287	37042287	single nucleotide variant	NM_000249.4(MLH1):c.1687A>G (p.Ile563Val)	P40692	I	563	V
+483590	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042287	37042287	single nucleotide variant	NM_000249.4(MLH1):c.1687A>C (p.Ile563Leu)	P40692	I	563	L
+182527	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042296	37042296	single nucleotide variant	NM_000249.4(MLH1):c.1696T>C (p.Tyr566His)	P40692	Y	566	H
+1778577	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042311	37042311	single nucleotide variant	NM_000249.4(MLH1):c.1711T>C (p.Phe571Leu)	P40692	F	571	L
+479695	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042315	37042315	single nucleotide variant	NM_000249.4(MLH1):c.1715G>A (p.Gly572Asp)	P40692	G	572	D
+525643	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042317	37042317	single nucleotide variant	NM_000249.4(MLH1):c.1717G>A (p.Val573Ile)	P40692	V	573	I
+483538	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042328	37042328	single nucleotide variant	NM_000249.4(MLH1):c.1728A>C (p.Leu576Phe)	P40692	L	576	F
+182528	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37042330	37042330	single nucleotide variant	NM_000249.4(MLH1):c.1730C>G (p.Ser577Trp)	P40692	S	577	W
+216333	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047519	37047519	single nucleotide variant	NM_000249.4(MLH1):c.1732G>A (p.Glu578Lys)	P40692	E	578	K
+495760	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047521	37047521	single nucleotide variant	NM_000249.4(MLH1):c.1734G>C (p.Glu578Asp)	P40692	E	578	D
+89877	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37047544	37047544	single nucleotide variant	NM_000249.4(MLH1):c.1757C>A (p.Ala586Asp)	P40692	A	586	D
+629891	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047546	37047546	single nucleotide variant	NM_000249.4(MLH1):c.1759A>G (p.Met587Val)	P40692	M	587	V
+89881	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047547	37047547	single nucleotide variant	NM_000249.4(MLH1):c.1760T>C (p.Met587Thr)	P40692	M	587	T
+455403	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047567	37047567	single nucleotide variant	NM_000249.4(MLH1):c.1780G>C (p.Glu594Gln)	P40692	E	594	Q
+495761	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047567	37047567	single nucleotide variant	NM_000249.4(MLH1):c.1780G>A (p.Glu594Lys)	P40692	E	594	K
+230773	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047570	37047570	single nucleotide variant	NM_000249.4(MLH1):c.1783A>C (p.Ser595Arg)	P40692	S	595	R
+631334	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047582	37047582	single nucleotide variant	NM_000249.4(MLH1):c.1795G>A (p.Glu599Lys)	P40692	E	599	K
+89892	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047589	37047589	single nucleotide variant	NM_000249.4(MLH1):c.1802A>G (p.Asp601Gly)	P40692	D	601	G
+422053	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047598	37047598	single nucleotide variant	NM_000249.4(MLH1):c.1811A>G (p.Lys604Arg)	P40692	K	604	R
+629994	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047604	37047604	single nucleotide variant	NM_000249.4(MLH1):c.1817G>C (p.Gly606Ala)	P40692	G	606	A
+420847	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047612	37047612	single nucleotide variant	NM_000249.4(MLH1):c.1825G>A (p.Glu609Lys)	P40692	E	609	K
+231039	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047626	37047626	single nucleotide variant	NM_000249.4(MLH1):c.1839G>T (p.Glu613Asp)	P40692	E	613	D
+658130	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047635	37047635	single nucleotide variant	NM_000249.4(MLH1):c.1848G>T (p.Lys616Asn)	P40692	K	616	N
+663684	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047636	37047636	single nucleotide variant	NM_000249.4(MLH1):c.1849A>G (p.Lys617Glu)	P40692	K	617	E
+455408	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047643	37047643	single nucleotide variant	NM_000249.4(MLH1):c.1856C>A (p.Ala619Asp)	P40692	A	619	D
+583218	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047649	37047649	single nucleotide variant	NM_000249.4(MLH1):c.1862T>A (p.Met621Lys)	P40692	M	621	K
+405384	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047655	37047655	single nucleotide variant	NM_000249.4(MLH1):c.1868C>T (p.Ala623Val)	P40692	A	623	V
+420481	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047674	37047674	single nucleotide variant	NM_000249.4(MLH1):c.1887A>T (p.Glu629Asp)	P40692	E	629	D
+419094	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37047682	37047682	single nucleotide variant	NM_000249.4(MLH1):c.1895A>G (p.Glu632Gly)	P40692	E	632	G
+185711	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048521	37048521	single nucleotide variant	NM_000249.4(MLH1):c.1901G>T (p.Gly634Val)	P40692	G	634	V
+220846	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048526	37048526	single nucleotide variant	NM_000249.4(MLH1):c.1906C>G (p.Leu636Val)	P40692	L	636	V
+644454	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048530	37048530	single nucleotide variant	NM_000249.4(MLH1):c.1910T>C (p.Ile637Thr)	P40692	I	637	T
+233119	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048531	37048531	single nucleotide variant	NM_000249.4(MLH1):c.1911T>G (p.Ile637Met)	P40692	I	637	M
+492688	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048538	37048538	single nucleotide variant	NM_000249.4(MLH1):c.1918C>A (p.Pro640Thr)	P40692	P	640	T
+89946	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048539	37048539	single nucleotide variant	NM_000249.4(MLH1):c.1919C>T (p.Pro640Leu)	P40692	P	640	L
+479679	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048548	37048548	single nucleotide variant	NM_000249.4(MLH1):c.1928T>C (p.Ile643Thr)	P40692	I	643	T
+89951	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048554	37048554	single nucleotide variant	NM_000249.4(MLH1):c.1934A>G (p.Asn645Ser)	P40692	N	645	S
+216335	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048555	37048555	single nucleotide variant	NM_000249.4(MLH1):c.1935C>G (p.Asn645Lys)	P40692	N	645	K
+233213	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048555	37048555	single nucleotide variant	NM_000249.4(MLH1):c.1935C>A (p.Asn645Lys)	P40692	N	645	K
+479665	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048559	37048559	single nucleotide variant	NM_000249.4(MLH1):c.1939G>T (p.Val647Leu)	P40692	V	647	L
+234041	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048560	37048560	single nucleotide variant	NM_000249.4(MLH1):c.1940T>C (p.Val647Ala)	P40692	V	647	A
+479696	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048563	37048563	single nucleotide variant	NM_000249.4(MLH1):c.1943C>G (p.Pro648Arg)	P40692	P	648	R
+661526	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048575	37048575	single nucleotide variant	NM_000249.4(MLH1):c.1955G>A (p.Gly652Glu)	P40692	G	652	E
+216336	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048578	37048578	single nucleotide variant	NM_000249.4(MLH1):c.1958T>C (p.Leu653Pro)	P40692	L	653	P
+185279	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048593	37048593	single nucleotide variant	NM_000249.4(MLH1):c.1973T>C (p.Leu658Pro)	P40692	L	658	P
+574269	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048605	37048605	single nucleotide variant	NM_000249.4(MLH1):c.1985C>T (p.Thr662Ile)	P40692	T	662	I
+230980	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048607	37048607	single nucleotide variant	NM_000249.4(MLH1):c.1987G>A (p.Glu663Lys)	P40692	E	663	K
+639057	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048609	37048609	single nucleotide variant	NM_000249.4(MLH1):c.1989G>C (p.Glu663Asp)	P40692	E	663	D
+186421	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048905	37048905	single nucleotide variant	NM_000249.4(MLH1):c.1991T>G (p.Val664Gly)	P40692	V	664	G
+483574	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048907	37048907	single nucleotide variant	NM_000249.4(MLH1):c.1993A>G (p.Asn665Asp)	P40692	N	665	D
+627755	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048917	37048917	single nucleotide variant	NM_000249.4(MLH1):c.2003A>G (p.Glu668Gly)	P40692	E	668	G
+135848	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048931	37048931	single nucleotide variant	NM_000249.4(MLH1):c.2017T>C (p.Phe673Leu)	P40692	F	673	L
+234563	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048938	37048938	single nucleotide variant	NM_000249.4(MLH1):c.2024G>A (p.Ser675Asn)	P40692	S	675	N
+237328	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048938	37048938	single nucleotide variant	NM_000249.4(MLH1):c.2024G>T (p.Ser675Ile)	P40692	S	675	I
+439173	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048938	37048938	single nucleotide variant	NM_000249.4(MLH1):c.2024G>C (p.Ser675Thr)	P40692	S	675	T
+90004	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048944	37048944	single nucleotide variant	NM_000249.4(MLH1):c.2030G>A (p.Ser677Asn)	P40692	S	677	N
+489895	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048946	37048946	single nucleotide variant	NM_000249.4(MLH1):c.2032A>G (p.Lys678Glu)	P40692	K	678	E
+573885	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048947	37048947	single nucleotide variant	NM_000249.4(MLH1):c.2033A>G (p.Lys678Arg)	P40692	K	678	R
+233523	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048955	37048955	single nucleotide variant	NM_000249.4(MLH1):c.2041G>C (p.Ala681Pro)	P40692	A	681	P
+90011	MLH1	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048956	37048956	single nucleotide variant	NM_000249.4(MLH1):c.2042C>T (p.Ala681Val)	P40692	A	681	V
+405396	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048959	37048959	single nucleotide variant	NM_000249.4(MLH1):c.2045T>C (p.Met682Thr)	P40692	M	682	T
+591339	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048964	37048964	single nucleotide variant	NM_000249.4(MLH1):c.2050T>C (p.Tyr684His)	P40692	Y	684	H
+663235	MLH1	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3	37048964	37048964	single nucleotide variant	NM_000249.4(MLH1):c.2050T>G (p.Tyr684Asp)	P40692	Y	684	D
+232338	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048979	37048979	single nucleotide variant	NM_000249.4(MLH1):c.2065C>A (p.Gln689Lys)	P40692	Q	689	K
+230847	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048986	37048986	single nucleotide variant	NM_000249.4(MLH1):c.2072T>C (p.Ile691Thr)	P40692	I	691	T
+630511	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048986	37048986	single nucleotide variant	NM_000249.4(MLH1):c.2072T>A (p.Ile691Lys)	P40692	I	691	K
+229906	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048998	37048998	single nucleotide variant	NM_000249.4(MLH1):c.2084C>G (p.Ser695Trp)	P40692	S	695	W
+483566	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37048998	37048998	single nucleotide variant	NM_000249.4(MLH1):c.2084C>T (p.Ser695Leu)	P40692	S	695	L
+405423	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37049001	37049001	single nucleotide variant	NM_000249.4(MLH1):c.2087C>T (p.Thr696Ile)	P40692	T	696	I
+234666	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37049003	37049003	single nucleotide variant	NM_000249.4(MLH1):c.2089C>G (p.Leu697Val)	P40692	L	697	V
+418307	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37049007	37049007	single nucleotide variant	NM_000249.4(MLH1):c.2093C>T (p.Ser698Leu)	P40692	S	698	L
+631445	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050487	37050487	single nucleotide variant	NM_000249.4(MLH1):c.2105G>C (p.Ser702Thr)	P40692	S	702	T
+186481	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050489	37050489	single nucleotide variant	NM_000249.4(MLH1):c.2107G>C (p.Glu703Gln)	P40692	E	703	Q
+525855	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050490	37050490	single nucleotide variant	NM_000249.4(MLH1):c.2108A>C (p.Glu703Ala)	P40692	E	703	A
+141517	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050492	37050492	single nucleotide variant	NM_000249.4(MLH1):c.2110G>C (p.Val704Leu)	P40692	V	704	L
+135850	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050493	37050493	single nucleotide variant	NM_000249.4(MLH1):c.2111T>G (p.Val704Gly)	P40692	V	704	G
+631395	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050505	37050505	single nucleotide variant	NM_000249.4(MLH1):c.2123T>A (p.Ile708Asn)	P40692	I	708	N
+237330	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050512	37050512	single nucleotide variant	NM_000249.4(MLH1):c.2130C>G (p.Asn710Lys)	P40692	N	710	K
+237331	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050520	37050520	single nucleotide variant	NM_000249.4(MLH1):c.2138A>C (p.Lys713Thr)	P40692	K	713	T
+650453	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050529	37050529	single nucleotide variant	NM_000249.4(MLH1):c.2147T>C (p.Val716Ala)	P40692	V	716	A
+525695	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050537	37050537	single nucleotide variant	NM_000249.4(MLH1):c.2155A>C (p.Ile719Leu)	P40692	I	719	L
+582479	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050546	37050546	single nucleotide variant	NM_000249.4(MLH1):c.2164A>G (p.Lys722Glu)	P40692	K	722	E
+560782	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050549	37050549	single nucleotide variant	NM_000249.4(MLH1):c.2167G>A (p.Ala723Thr)	P40692	A	723	T
+229812	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050555	37050555	single nucleotide variant	NM_000249.4(MLH1):c.2173C>G (p.Arg725Gly)	P40692	R	725	G
+126989	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050562	37050562	single nucleotide variant	NM_000249.4(MLH1):c.2180A>T (p.His727Leu)	P40692	H	727	L
+90085	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050567	37050567	single nucleotide variant	NM_000249.4(MLH1):c.2185C>G (p.Leu729Val)	P40692	L	729	V
+234735	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050573	37050573	single nucleotide variant	NM_000249.4(MLH1):c.2191C>T (p.Pro731Ser)	P40692	P	731	S
+479701	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050576	37050576	single nucleotide variant	NM_000249.4(MLH1):c.2194A>G (p.Lys732Glu)	P40692	K	732	E
+495765	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050576	37050576	single nucleotide variant	NM_000249.4(MLH1):c.2194A>C (p.Lys732Gln)	P40692	K	732	Q
+479690	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050580	37050580	single nucleotide variant	NM_000249.4(MLH1):c.2198A>G (p.His733Arg)	P40692	H	733	R
+629824	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050591	37050591	single nucleotide variant	NM_000249.4(MLH1):c.2209G>A (p.Asp737Asn)	P40692	D	737	N
+661958	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050592	37050592	single nucleotide variant	NM_000249.4(MLH1):c.2210A>G (p.Asp737Gly)	P40692	D	737	G
+449063	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050601	37050601	single nucleotide variant	NM_000249.4(MLH1):c.2219T>C (p.Ile740Thr)	P40692	I	740	T
+525769	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050622	37050622	single nucleotide variant	NM_000249.4(MLH1):c.2240C>G (p.Pro747Arg)	P40692	P	747	R
+187193	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050624	37050624	single nucleotide variant	NM_000249.4(MLH1):c.2242G>A (p.Asp748Asn)	P40692	D	748	N
+489897	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050630	37050630	single nucleotide variant	NM_000249.4(MLH1):c.2248T>C (p.Tyr750His)	P40692	Y	750	H
+495766	MLH1	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	3	37050648	37050648	single nucleotide variant	NM_000249.4(MLH1):c.2266T>G (p.Cys756Gly)	P40692	C	756	G
+491697	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	36993548	36993548	single nucleotide variant	NM_000249.4(MLH1):c.1A>C (p.Met1Leu)	P40692	M	1	L
+619516	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	36993550	36993550	single nucleotide variant	NM_000249.4(MLH1):c.3G>T (p.Met1Ile)	P40692	M	1	I
+182533	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993552	36993552	single nucleotide variant	NM_000249.4(MLH1):c.5C>T (p.Ser2Leu)	P40692	S	2	L
+237346	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993554	36993554	single nucleotide variant	NM_000249.4(MLH1):c.7T>C (p.Phe3Leu)	P40692	F	3	L
+185790	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993556	36993556	single nucleotide variant	NM_000249.4(MLH1):c.9C>G (p.Phe3Leu)	P40692	F	3	L
+819111	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993560	36993560	single nucleotide variant	NM_000249.4(MLH1):c.13G>T (p.Ala5Ser)	P40692	A	5	S
+237315	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993561	36993561	single nucleotide variant	NM_000249.4(MLH1):c.14C>T (p.Ala5Val)	P40692	A	5	V
+182534	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993566	36993566	single nucleotide variant	NM_000249.4(MLH1):c.19G>T (p.Val7Phe)	P40692	V	7	F
+525868	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993582	36993582	single nucleotide variant	NM_000249.4(MLH1):c.35A>G (p.Asp12Gly)	P40692	D	12	G
+192220	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993584	36993584	single nucleotide variant	NM_000249.4(MLH1):c.37G>A (p.Glu13Lys)	P40692	E	13	K
+479698	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993586	36993586	single nucleotide variant	NM_000249.4(MLH1):c.39G>C (p.Glu13Asp)	P40692	E	13	D
+405381	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993588	36993588	single nucleotide variant	NM_000249.4(MLH1):c.41C>T (p.Thr14Ile)	P40692	T	14	I
+233273	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993590	36993590	single nucleotide variant	NM_000249.4(MLH1):c.43G>A (p.Val15Met)	P40692	V	15	M
+576391	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993590	36993590	single nucleotide variant	NM_000249.4(MLH1):c.43G>T (p.Val15Leu)	P40692	V	15	L
+220145	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993591	36993591	single nucleotide variant	NM_000249.4(MLH1):c.44T>C (p.Val15Ala)	P40692	V	15	A
+455439	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993593	36993593	single nucleotide variant	NM_000249.4(MLH1):c.46G>C (p.Val16Leu)	P40692	V	16	L
+134656	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993599	36993599	single nucleotide variant	NM_000249.4(MLH1):c.52C>T (p.Arg18Cys)	P40692	R	18	C
+489901	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993605	36993605	single nucleotide variant	NM_000249.4(MLH1):c.58G>A (p.Ala20Thr)	P40692	A	20	T
+826689	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993615	36993615	single nucleotide variant	NM_000249.4(MLH1):c.68A>C (p.Glu23Ala)	P40692	E	23	A
+90335	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993616	36993616	single nucleotide variant	NM_000249.4(MLH1):c.69A>T (p.Glu23Asp)	P40692	E	23	D
+479677	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993626	36993626	single nucleotide variant	NM_000249.4(MLH1):c.79C>T (p.Arg27Trp)	P40692	R	27	W
+216337	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993627	36993627	single nucleotide variant	NM_000249.4(MLH1):c.80G>A (p.Arg27Gln)	P40692	R	27	Q
+627728	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993629	36993629	single nucleotide variant	NM_000249.4(MLH1):c.82C>T (p.Pro28Ser)	P40692	P	28	S
+90397	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993632	36993632	single nucleotide variant	NM_000249.4(MLH1):c.85G>T (p.Ala29Ser)	P40692	A	29	S
+439183	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993639	36993639	single nucleotide variant	NM_000249.4(MLH1):c.92C>T (p.Ala31Val)	P40692	A	31	V
+36560	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993641	36993641	single nucleotide variant	NM_000249.4(MLH1):c.94A>G (p.Ile32Val)	P40692	I	32	V
+584530	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993641	36993641	single nucleotide variant	NM_000249.4(MLH1):c.94A>T (p.Ile32Phe)	P40692	I	32	F
+823364	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	36993642	36993642	single nucleotide variant	NM_000249.4(MLH1):c.95T>A (p.Ile32Asn)	P40692	I	32	N
+619551	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993647	36993647	single nucleotide variant	NM_000249.4(MLH1):c.100G>A (p.Glu34Lys)	P40692	E	34	K
+232314	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993650	36993650	single nucleotide variant	NM_000249.4(MLH1):c.103A>G (p.Met35Val)	P40692	M	35	V
+525781	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993652	36993652	single nucleotide variant	NM_000249.4(MLH1):c.105G>T (p.Met35Ile)	P40692	M	35	I
+1786123	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993654	36993654	single nucleotide variant	NM_000249.4(MLH1):c.107T>A (p.Ile36Asn)	P40692	I	36	N
+231565	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993656	36993656	single nucleotide variant	NM_000249.4(MLH1):c.109G>C (p.Glu37Gln)	P40692	E	37	Q
+230139	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993657	36993657	single nucleotide variant	NM_000249.4(MLH1):c.110A>G (p.Glu37Gly)	P40692	E	37	G
+220346	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993658	36993658	single nucleotide variant	NM_000249.4(MLH1):c.111G>T (p.Glu37Asp)	P40692	E	37	D
+455373	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36993658	36993658	single nucleotide variant	NM_000249.4(MLH1):c.111G>C (p.Glu37Asp)	P40692	E	37	D
+619503	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993660	36993660	single nucleotide variant	NM_000249.4(MLH1):c.113A>C (p.Asn38Thr)	P40692	N	38	T
+89655	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36993662	36993662	single nucleotide variant	NM_000249.4(MLH1):c.115T>C (p.Cys39Arg)	P40692	C	39	R
+455377	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996619	36996619	single nucleotide variant	NM_000249.4(MLH1):c.117T>G (p.Cys39Trp)	P40692	C	39	W
+89688	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996627	36996627	single nucleotide variant	NM_000249.4(MLH1):c.125C>T (p.Ala42Val)	P40692	A	42	V
+230155	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36996635	36996635	single nucleotide variant	NM_000249.4(MLH1):c.133A>T (p.Thr45Ser)	P40692	T	45	S
+819365	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996650	36996650	single nucleotide variant	NM_000249.4(MLH1):c.148A>G (p.Ile50Val)	P40692	I	50	V
+525629	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36996654	36996654	single nucleotide variant	NM_000249.4(MLH1):c.152T>C (p.Val51Ala)	P40692	V	51	A
+234586	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996659	36996659	single nucleotide variant	NM_000249.4(MLH1):c.157G>A (p.Glu53Lys)	P40692	E	53	K
+127618	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996672	36996672	single nucleotide variant	NM_000249.4(MLH1):c.170A>C (p.Lys57Thr)	P40692	K	57	T
+619506	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36996678	36996678	single nucleotide variant	NM_000249.4(MLH1):c.176T>A (p.Ile59Asn)	P40692	I	59	N
+422297	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996690	36996690	single nucleotide variant	NM_000249.4(MLH1):c.188A>G (p.Asp63Gly)	P40692	D	63	G
+89947	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996693	36996693	single nucleotide variant	NM_000249.4(MLH1):c.191A>G (p.Asn64Ser)	P40692	N	64	S
+218021	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36996696	36996696	single nucleotide variant	NM_000249.4(MLH1):c.194G>T (p.Gly65Val)	P40692	G	65	V
+800484	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996702	36996702	single nucleotide variant	NM_000249.4(MLH1):c.200G>T (p.Gly67Val)	P40692	G	67	V
+820555	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	36996704	36996704	single nucleotide variant	NM_000249.4(MLH1):c.202A>G (p.Ile68Val)	P40692	I	68	V
+820585	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	36996705	36996705	single nucleotide variant	NM_000249.4(MLH1):c.203T>G (p.Ile68Ser)	P40692	I	68	S
+486852	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996706	36996706	single nucleotide variant	NM_000249.4(MLH1):c.204C>G (p.Ile68Met)	P40692	I	68	M
+489896	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	36996708	36996708	single nucleotide variant	NM_000249.4(MLH1):c.206G>A (p.Arg69Lys)	P40692	R	69	K
+455419	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37000959	37000959	single nucleotide variant	NM_000249.4(MLH1):c.212A>G (p.Glu71Gly)	P40692	E	71	G
+525788	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37000961	37000961	single nucleotide variant	NM_000249.4(MLH1):c.214G>T (p.Asp72Tyr)	P40692	D	72	Y
+405401	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37000968	37000968	single nucleotide variant	NM_000249.4(MLH1):c.221A>T (p.Asp74Val)	P40692	D	74	V
+237335	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37000973	37000973	single nucleotide variant	NM_000249.4(MLH1):c.226G>A (p.Val76Ile)	P40692	V	76	I
+525711	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37000974	37000974	single nucleotide variant	NM_000249.4(MLH1):c.227T>A (p.Val76Glu)	P40692	V	76	E
+422226	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37000977	37000977	single nucleotide variant	NM_000249.4(MLH1):c.230G>C (p.Cys77Ser)	P40692	C	77	S
+659436	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37000980	37000980	single nucleotide variant	NM_000249.4(MLH1):c.233A>C (p.Glu78Ala)	P40692	E	78	A
+135852	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37000989	37000989	single nucleotide variant	NM_000249.4(MLH1):c.242C>T (p.Thr81Ile)	P40692	T	81	I
+3774392	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37000995	37000995	single nucleotide variant	NM_000249.4(MLH1):c.248G>T (p.Ser83Ile)	P40692	S	83	I
+662299	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37000995	37000995	single nucleotide variant	NM_000249.4(MLH1):c.248G>A (p.Ser83Asn)	P40692	S	83	N
+90126	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001024	37001024	single nucleotide variant	NM_000249.4(MLH1):c.277A>G (p.Ser93Gly)	P40692	S	93	G
+90127	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001030	37001030	single nucleotide variant	NM_000249.4(MLH1):c.283T>G (p.Ser95Ala)	P40692	S	95	A
+188169	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001033	37001033	single nucleotide variant	NM_000249.4(MLH1):c.286A>G (p.Thr96Ala)	P40692	T	96	A
+184486	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001037	37001037	single nucleotide variant	NM_000249.4(MLH1):c.290A>G (p.Tyr97Cys)	P40692	Y	97	C
+90128	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001039	37001039	single nucleotide variant	NM_000249.4(MLH1):c.292G>A (p.Gly98Ser)	P40692	G	98	S
+90129	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001039	37001039	single nucleotide variant	NM_000249.4(MLH1):c.292G>C (p.Gly98Arg)	P40692	G	98	R
+218023	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001040	37001040	single nucleotide variant	NM_000249.4(MLH1):c.293G>A (p.Gly98Asp)	P40692	G	98	D
+1723354	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001049	37001049	single nucleotide variant	NM_000249.4(MLH1):c.302G>T (p.Gly101Val)	P40692	G	101	V
+486866	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37001052	37001052	single nucleotide variant	NM_000249.4(MLH1):c.305A>C (p.Glu102Ala)	P40692	E	102	A
+455425	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37004405	37004405	single nucleotide variant	NM_000249.4(MLH1):c.311T>C (p.Leu104Ser)	P40692	L	104	S
+455426	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004410	37004410	single nucleotide variant	NM_000249.4(MLH1):c.316A>G (p.Ser106Gly)	P40692	S	106	G
+491706	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004411	37004411	single nucleotide variant	NM_000249.4(MLH1):c.317G>A (p.Ser106Asn)	P40692	S	106	N
+1503388	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37004412	37004412	single nucleotide variant	NM_000249.4(MLH1):c.318C>G (p.Ser106Arg)	P40692	S	106	R
+188068	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004413	37004413	single nucleotide variant	NM_000249.4(MLH1):c.319A>G (p.Ile107Val)	P40692	I	107	V
+455427	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37004417	37004417	single nucleotide variant	NM_000249.4(MLH1):c.323G>A (p.Ser108Asn)	P40692	S	108	N
+1729595	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004420	37004420	single nucleotide variant	NM_000249.4(MLH1):c.326A>C (p.His109Pro)	P40692	H	109	P
+90172	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004432	37004432	single nucleotide variant	NM_000249.4(MLH1):c.338T>A (p.Val113Asp)	P40692	V	113	D
+455430	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004437	37004437	single nucleotide variant	NM_000249.4(MLH1):c.343A>G (p.Ile115Val)	P40692	I	115	V
+525605	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004438	37004438	single nucleotide variant	NM_000249.4(MLH1):c.344T>A (p.Ile115Asn)	P40692	I	115	N
+483579	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004440	37004440	single nucleotide variant	NM_000249.4(MLH1):c.346A>G (p.Thr116Ala)	P40692	T	116	A
+90176	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004441	37004441	single nucleotide variant	NM_000249.4(MLH1):c.347C>A (p.Thr116Lys)	P40692	T	116	K
+479692	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37004446	37004446	single nucleotide variant	NM_000249.4(MLH1):c.352A>G (p.Lys118Glu)	P40692	K	118	E
+405424	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004453	37004453	single nucleotide variant	NM_000249.4(MLH1):c.359C>G (p.Ala120Gly)	P40692	A	120	G
+182514	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004456	37004456	single nucleotide variant	NM_000249.4(MLH1):c.362A>G (p.Asp121Gly)	P40692	D	121	G
+479691	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004464	37004464	single nucleotide variant	NM_000249.4(MLH1):c.370T>C (p.Cys124Arg)	P40692	C	124	R
+182515	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004465	37004465	single nucleotide variant	NM_000249.4(MLH1):c.371G>A (p.Cys124Tyr)	P40692	C	124	Y
+90184	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37004470	37004470	single nucleotide variant	NM_000249.4(MLH1):c.376T>A (p.Tyr126Asn)	P40692	Y	126	N
+656950	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37006996	37006996	single nucleotide variant	NM_000249.4(MLH1):c.386G>A (p.Ser129Asn)	P40692	S	129	N
+578307	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37007002	37007002	single nucleotide variant	NM_000249.4(MLH1):c.392C>T (p.Ser131Leu)	P40692	S	131	L
+486857	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37007023	37007023	single nucleotide variant	NM_000249.4(MLH1):c.413C>G (p.Pro138Arg)	P40692	P	138	R
+187211	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37007025	37007025	single nucleotide variant	NM_000249.4(MLH1):c.415C>G (p.Pro139Ala)	P40692	P	139	A
+90218	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37007049	37007049	single nucleotide variant	NM_000249.4(MLH1):c.439G>C (p.Gly147Arg)	P40692	G	147	R
+405410	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37007050	37007050	single nucleotide variant	NM_000249.4(MLH1):c.440G>C (p.Gly147Ala)	P40692	G	147	A
+186027	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37007062	37007062	single nucleotide variant	NM_000249.4(MLH1):c.452C>T (p.Thr151Met)	P40692	T	151	M
+184683	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008814	37008814	single nucleotide variant	NM_000249.4(MLH1):c.454G>A (p.Val152Met)	P40692	V	152	M
+579404	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008815	37008815	single nucleotide variant	NM_000249.4(MLH1):c.455T>G (p.Val152Gly)	P40692	V	152	G
+230752	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37008821	37008821	single nucleotide variant	NM_000249.4(MLH1):c.461A>T (p.Asp154Val)	P40692	D	154	V
+231743	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008838	37008838	single nucleotide variant	NM_000249.4(MLH1):c.478G>T (p.Ala160Ser)	P40692	A	160	S
+90244	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008839	37008839	single nucleotide variant	NM_000249.4(MLH1):c.479C>T (p.Ala160Val)	P40692	A	160	V
+421591	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008842	37008842	single nucleotide variant	NM_000249.4(MLH1):c.482C>T (p.Thr161Met)	P40692	T	161	M
+90251	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008866	37008866	single nucleotide variant	NM_000249.4(MLH1):c.506C>T (p.Pro169Leu)	P40692	P	169	L
+483587	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008868	37008868	single nucleotide variant	NM_000249.4(MLH1):c.508A>G (p.Ser170Gly)	P40692	S	170	G
+455441	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37008884	37008884	single nucleotide variant	NM_000249.4(MLH1):c.524A>T (p.Lys175Ile)	P40692	K	175	I
+483599	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008890	37008890	single nucleotide variant	NM_000249.4(MLH1):c.530T>C (p.Leu177Ser)	P40692	L	177	S
+90257	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008899	37008899	single nucleotide variant	NM_000249.4(MLH1):c.539T>G (p.Val180Gly)	P40692	V	180	G
+422298	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008901	37008901	single nucleotide variant	NM_000249.4(MLH1):c.541G>A (p.Gly181Ser)	P40692	G	181	S
+224531	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37008905	37008905	single nucleotide variant	NM_000249.4(MLH1):c.545G>C (p.Arg182Thr)	P40692	R	182	T
+185903	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37011828	37011828	single nucleotide variant	NM_000249.4(MLH1):c.554T>A (p.Val185Glu)	P40692	V	185	E
+419939	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37011837	37011837	single nucleotide variant	NM_000249.4(MLH1):c.563C>T (p.Ala188Val)	P40692	A	188	V
+231068	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37011839	37011839	single nucleotide variant	NM_000249.4(MLH1):c.565G>A (p.Gly189Ser)	P40692	G	189	S
+1749321	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37011846	37011846	single nucleotide variant	NM_000249.4(MLH1):c.572G>T (p.Ser191Ile)	P40692	S	191	I
+232595	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37011861	37011861	single nucleotide variant	NM_000249.4(MLH1):c.587A>C (p.Lys196Thr)	P40692	K	196	T
+483598	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37012015	37012015	single nucleotide variant	NM_000249.4(MLH1):c.593G>A (p.Gly198Glu)	P40692	G	198	E
+90293	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012017	37012017	single nucleotide variant	NM_000249.4(MLH1):c.595G>C (p.Glu199Gln)	P40692	E	199	Q
+186017	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012023	37012023	single nucleotide variant	NM_000249.4(MLH1):c.601G>C (p.Val201Leu)	P40692	V	201	L
+234489	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012030	37012030	single nucleotide variant	NM_000249.4(MLH1):c.608A>T (p.Asp203Val)	P40692	D	203	V
+232419	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37012030	37012030	single nucleotide variant	NM_000249.4(MLH1):c.608A>G (p.Asp203Gly)	P40692	D	203	G
+580970	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37012036	37012036	single nucleotide variant	NM_000249.4(MLH1):c.614G>T (p.Arg205Met)	P40692	R	205	M
+141121	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012044	37012044	single nucleotide variant	NM_000249.4(MLH1):c.622C>T (p.Pro208Ser)	P40692	P	208	S
+231361	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37012045	37012045	single nucleotide variant	NM_000249.4(MLH1):c.623C>G (p.Pro208Arg)	P40692	P	208	R
+142980	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012048	37012048	single nucleotide variant	NM_000249.4(MLH1):c.626A>G (p.Asn209Ser)	P40692	N	209	S
+405388	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012056	37012056	single nucleotide variant	NM_000249.4(MLH1):c.634A>G (p.Thr212Ala)	P40692	T	212	A
+90301	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012066	37012066	single nucleotide variant	NM_000249.4(MLH1):c.644A>G (p.Asn215Ser)	P40692	N	215	S
+90303	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012071	37012071	single nucleotide variant	NM_000249.4(MLH1):c.649C>T (p.Arg217Cys)	P40692	R	217	C
+220367	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012072	37012072	single nucleotide variant	NM_000249.4(MLH1):c.650G>A (p.Arg217His)	P40692	R	217	H
+629885	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012072	37012072	single nucleotide variant	NM_000249.4(MLH1):c.650G>C (p.Arg217Pro)	P40692	R	217	P
+405413	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012074	37012074	single nucleotide variant	NM_000249.4(MLH1):c.652T>C (p.Ser218Pro)	P40692	S	218	P
+489902	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37012079	37012079	single nucleotide variant	NM_000249.4(MLH1):c.657C>G (p.Ile219Met)	P40692	I	219	M
+483557	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012087	37012087	single nucleotide variant	NM_000249.4(MLH1):c.665A>G (p.Asn222Ser)	P40692	N	222	S
+455448	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37012092	37012092	single nucleotide variant	NM_000249.4(MLH1):c.670G>A (p.Val224Ile)	P40692	V	224	I
+184050	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014436	37014436	single nucleotide variant	NM_000249.4(MLH1):c.682C>A (p.Leu228Met)	P40692	L	228	M
+433854	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014448	37014448	single nucleotide variant	NM_000249.4(MLH1):c.694G>A (p.Gly232Arg)	P40692	G	232	R
+141115	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014458	37014458	single nucleotide variant	NM_000249.4(MLH1):c.704A>T (p.Asp235Val)	P40692	D	235	V
+619507	MLH1	0	Likely benign	criteria provided, single submitter	3	37014470	37014470	single nucleotide variant	NM_000249.4(MLH1):c.716C>T (p.Ala239Val)	P40692	A	239	V
+405379	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014476	37014476	single nucleotide variant	NM_000249.4(MLH1):c.722A>G (p.Lys241Arg)	P40692	K	241	R
+90340	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014485	37014485	single nucleotide variant	NM_000249.4(MLH1):c.731G>T (p.Gly244Val)	P40692	G	244	V
+483594	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014490	37014490	single nucleotide variant	NM_000249.4(MLH1):c.736A>G (p.Ile246Val)	P40692	I	246	V
+126985	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014493	37014493	single nucleotide variant	NM_000249.4(MLH1):c.739T>G (p.Ser247Ala)	P40692	S	247	A
+229680	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014499	37014499	single nucleotide variant	NM_000249.4(MLH1):c.745G>A (p.Ala249Thr)	P40692	A	249	T
+560785	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014502	37014502	single nucleotide variant	NM_000249.4(MLH1):c.748A>T (p.Asn250Tyr)	P40692	N	250	Y
+479678	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014520	37014520	single nucleotide variant	NM_000249.4(MLH1):c.766T>A (p.Cys256Ser)	P40692	C	256	S
+644983	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014521	37014521	single nucleotide variant	NM_000249.4(MLH1):c.767G>T (p.Cys256Phe)	P40692	C	256	F
+182519	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014530	37014530	single nucleotide variant	NM_000249.4(MLH1):c.776T>C (p.Leu259Ser)	P40692	L	259	S
+645025	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014531	37014531	single nucleotide variant	NM_000249.4(MLH1):c.777A>C (p.Leu259Phe)	P40692	L	259	F
+90349	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014532	37014532	single nucleotide variant	NM_000249.4(MLH1):c.778C>T (p.Leu260Phe)	P40692	L	260	F
+231936	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014532	37014532	single nucleotide variant	NM_000249.4(MLH1):c.778C>G (p.Leu260Val)	P40692	L	260	V
+405420	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014533	37014533	single nucleotide variant	NM_000249.4(MLH1):c.779T>A (p.Leu260His)	P40692	L	260	H
+483593	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37014539	37014539	single nucleotide variant	NM_000249.4(MLH1):c.785T>G (p.Ile262Ser)	P40692	I	262	S
+187425	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014540	37014540	single nucleotide variant	NM_000249.4(MLH1):c.786C>G (p.Ile262Met)	P40692	I	262	M
+90367	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014544	37014544	single nucleotide variant	NM_000249.4(MLH1):c.790C>T (p.His264Tyr)	P40692	H	264	Y
+182520	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37014544	37014544	single nucleotide variant	NM_000249.4(MLH1):c.790C>G (p.His264Asp)	P40692	H	264	D
+1761206	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37017506	37017506	single nucleotide variant	NM_000249.4(MLH1):c.791A>G (p.His264Arg)	P40692	H	264	R
+142116	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017506	37017506	single nucleotide variant	NM_000249.4(MLH1):c.791A>T (p.His264Leu)	P40692	H	264	L
+90381	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017509	37017509	single nucleotide variant	NM_000249.4(MLH1):c.794G>A (p.Arg265His)	P40692	R	265	H
+230184	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017523	37017523	single nucleotide variant	NM_000249.4(MLH1):c.808A>G (p.Thr270Ala)	P40692	T	270	A
+418300	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017536	37017536	single nucleotide variant	NM_000249.4(MLH1):c.821A>G (p.Lys274Arg)	P40692	K	274	R
+449833	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017542	37017542	single nucleotide variant	NM_000249.4(MLH1):c.827T>C (p.Ile276Thr)	P40692	I	276	T
+485796	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37017544	37017544	single nucleotide variant	NM_000249.4(MLH1):c.829G>A (p.Glu277Lys)	P40692	E	277	K
+446501	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017551	37017551	single nucleotide variant	NM_000249.4(MLH1):c.836T>G (p.Val279Gly)	P40692	V	279	G
+90387	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017553	37017553	single nucleotide variant	NM_000249.4(MLH1):c.838T>G (p.Tyr280Asp)	P40692	Y	280	D
+455457	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017559	37017559	single nucleotide variant	NM_000249.4(MLH1):c.844G>A (p.Ala282Thr)	P40692	A	282	T
+232984	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37017563	37017563	single nucleotide variant	NM_000249.4(MLH1):c.848A>G (p.Tyr283Cys)	P40692	Y	283	C
+650136	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37017565	37017565	single nucleotide variant	NM_000249.4(MLH1):c.850T>G (p.Leu284Val)	P40692	L	284	V
+647064	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37017586	37017586	single nucleotide variant	NM_000249.4(MLH1):c.871T>C (p.Phe291Leu)	P40692	F	291	L
+232668	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020312	37020312	single nucleotide variant	NM_000249.4(MLH1):c.887T>C (p.Leu296Ser)	P40692	L	296	S
+230892	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37020320	37020320	single nucleotide variant	NM_000249.4(MLH1):c.895A>G (p.Ser299Gly)	P40692	S	299	G
+663156	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37020320	37020320	single nucleotide variant	NM_000249.4(MLH1):c.895A>T (p.Ser299Cys)	P40692	S	299	C
+455460	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020335	37020335	single nucleotide variant	NM_000249.4(MLH1):c.910G>T (p.Asp304Tyr)	P40692	D	304	Y
+90438	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020336	37020336	single nucleotide variant	NM_000249.4(MLH1):c.911A>G (p.Asp304Gly)	P40692	D	304	G
+455462	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020342	37020342	single nucleotide variant	NM_000249.4(MLH1):c.917A>G (p.Asn306Ser)	P40692	N	306	S
+90444	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020350	37020350	single nucleotide variant	NM_000249.4(MLH1):c.925C>T (p.Pro309Ser)	P40692	P	309	S
+237351	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020353	37020353	single nucleotide variant	NM_000249.4(MLH1):c.928A>G (p.Thr310Ala)	P40692	T	310	A
+216340	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020365	37020365	single nucleotide variant	NM_000249.4(MLH1):c.940G>T (p.Val314Phe)	P40692	V	314	F
+483550	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020368	37020368	single nucleotide variant	NM_000249.4(MLH1):c.943C>T (p.His315Tyr)	P40692	H	315	Y
+185359	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37020369	37020369	single nucleotide variant	NM_000249.4(MLH1):c.944A>C (p.His315Pro)	P40692	H	315	P
+127623	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020370	37020370	single nucleotide variant	NM_000249.4(MLH1):c.945C>G (p.His315Gln)	P40692	H	315	Q
+187486	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020379	37020379	single nucleotide variant	NM_000249.4(MLH1):c.954C>A (p.His318Gln)	P40692	H	318	Q
+90452	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020380	37020380	single nucleotide variant	NM_000249.4(MLH1):c.955G>A (p.Glu319Lys)	P40692	E	319	K
+90454	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020385	37020385	single nucleotide variant	NM_000249.4(MLH1):c.960G>C (p.Glu320Asp)	P40692	E	320	D
+418912	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020398	37020398	single nucleotide variant	NM_000249.4(MLH1):c.973C>T (p.Arg325Trp)	P40692	R	325	W
+182522	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020401	37020401	single nucleotide variant	NM_000249.4(MLH1):c.976G>A (p.Val326Met)	P40692	V	326	M
+231925	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020402	37020402	single nucleotide variant	NM_000249.4(MLH1):c.977T>A (p.Val326Glu)	P40692	V	326	E
+141891	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020404	37020404	single nucleotide variant	NM_000249.4(MLH1):c.979C>G (p.Gln327Glu)	P40692	Q	327	E
+664823	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37020409	37020409	single nucleotide variant	NM_000249.4(MLH1):c.984G>C (p.Gln328His)	P40692	Q	328	H
+237354	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020413	37020413	single nucleotide variant	NM_000249.4(MLH1):c.988A>G (p.Ile330Val)	P40692	I	330	V
+630850	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37020414	37020414	single nucleotide variant	NM_000249.4(MLH1):c.989T>C (p.Ile330Thr)	P40692	I	330	T
+230317	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020416	37020416	single nucleotide variant	NM_000249.4(MLH1):c.991G>A (p.Glu331Lys)	P40692	E	331	K
+486848	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37020423	37020423	single nucleotide variant	NM_000249.4(MLH1):c.998A>G (p.Lys333Arg)	P40692	K	333	R
+141442	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020432	37020432	single nucleotide variant	NM_000249.4(MLH1):c.1007G>A (p.Gly336Asp)	P40692	G	336	D
+89605	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020438	37020438	single nucleotide variant	NM_000249.4(MLH1):c.1013A>G (p.Asn338Ser)	P40692	N	338	S
+455364	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37020459	37020459	single nucleotide variant	NM_000249.4(MLH1):c.1034C>T (p.Thr345Ile)	P40692	T	345	I
+231026	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025641	37025641	single nucleotide variant	NM_000249.4(MLH1):c.1043T>C (p.Leu348Ser)	P40692	L	348	S
+525673	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025649	37025649	single nucleotide variant	NM_000249.4(MLH1):c.1051G>A (p.Gly351Arg)	P40692	G	351	R
+658532	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025658	37025658	single nucleotide variant	NM_000249.4(MLH1):c.1060G>A (p.Gly354Ser)	P40692	G	354	S
+237308	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025661	37025661	single nucleotide variant	NM_000249.4(MLH1):c.1063C>T (p.Pro355Ser)	P40692	P	355	S
+142439	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025662	37025662	single nucleotide variant	NM_000249.4(MLH1):c.1064C>T (p.Pro355Leu)	P40692	P	355	L
+216329	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025665	37025665	single nucleotide variant	NM_000249.4(MLH1):c.1067C>T (p.Ser356Phe)	P40692	S	356	F
+486845	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025673	37025673	single nucleotide variant	NM_000249.4(MLH1):c.1075A>T (p.Met359Leu)	P40692	M	359	L
+575660	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025676	37025676	single nucleotide variant	NM_000249.4(MLH1):c.1078G>C (p.Val360Leu)	P40692	V	360	L
+479680	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025691	37025691	single nucleotide variant	NM_000249.4(MLH1):c.1093A>C (p.Ser365Arg)	P40692	S	365	R
+183738	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025701	37025701	single nucleotide variant	NM_000249.4(MLH1):c.1103C>T (p.Ser368Leu)	P40692	S	368	L
+405389	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025709	37025709	single nucleotide variant	NM_000249.4(MLH1):c.1111A>T (p.Thr371Ser)	P40692	T	371	S
+479708	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025709	37025709	single nucleotide variant	NM_000249.4(MLH1):c.1111A>G (p.Thr371Ala)	P40692	T	371	A
+186843	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025715	37025715	single nucleotide variant	NM_000249.4(MLH1):c.1117G>A (p.Gly373Arg)	P40692	G	373	R
+219943	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025720	37025720	single nucleotide variant	NM_000249.4(MLH1):c.1122T>G (p.Ser374Arg)	P40692	S	374	R
+405397	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025721	37025721	single nucleotide variant	NM_000249.4(MLH1):c.1123A>G (p.Ser375Gly)	P40692	S	375	G
+127608	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025734	37025734	single nucleotide variant	NM_000249.4(MLH1):c.1136A>T (p.Tyr379Phe)	P40692	Y	379	F
+187221	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025734	37025734	single nucleotide variant	NM_000249.4(MLH1):c.1136A>C (p.Tyr379Ser)	P40692	Y	379	S
+89649	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025739	37025739	single nucleotide variant	NM_000249.4(MLH1):c.1141C>T (p.His381Tyr)	P40692	H	381	Y
+127609	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025746	37025746	single nucleotide variant	NM_000249.4(MLH1):c.1148T>C (p.Met383Thr)	P40692	M	383	T
+405421	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025748	37025748	single nucleotide variant	NM_000249.4(MLH1):c.1150G>A (p.Val384Ile)	P40692	V	384	I
+89653	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025751	37025751	single nucleotide variant	NM_000249.4(MLH1):c.1153C>T (p.Arg385Cys)	P40692	R	385	C
+89654	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025752	37025752	single nucleotide variant	NM_000249.4(MLH1):c.1154G>C (p.Arg385Pro)	P40692	R	385	P
+140759	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025752	37025752	single nucleotide variant	NM_000249.4(MLH1):c.1154G>A (p.Arg385His)	P40692	R	385	H
+421013	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025761	37025761	single nucleotide variant	NM_000249.4(MLH1):c.1163C>T (p.Ser388Phe)	P40692	S	388	F
+89661	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025763	37025763	single nucleotide variant	NM_000249.4(MLH1):c.1165C>T (p.Arg389Trp)	P40692	R	389	W
+41633	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025764	37025764	single nucleotide variant	NM_000249.4(MLH1):c.1166G>A (p.Arg389Gln)	P40692	R	389	Q
+143002	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025770	37025770	single nucleotide variant	NM_000249.4(MLH1):c.1172A>G (p.Gln391Arg)	P40692	Q	391	R
+219291	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025776	37025776	single nucleotide variant	NM_000249.4(MLH1):c.1178T>C (p.Leu393Pro)	P40692	L	393	P
+486868	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025782	37025782	single nucleotide variant	NM_000249.4(MLH1):c.1184C>G (p.Ala395Gly)	P40692	A	395	G
+653943	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025784	37025784	single nucleotide variant	NM_000249.4(MLH1):c.1186T>A (p.Phe396Ile)	P40692	F	396	I
+127611	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025800	37025800	single nucleotide variant	NM_000249.4(MLH1):c.1202G>A (p.Ser401Asn)	P40692	S	401	N
+89677	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025805	37025805	single nucleotide variant	NM_000249.4(MLH1):c.1207C>T (p.Pro403Ser)	P40692	P	403	S
+220891	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025814	37025814	single nucleotide variant	NM_000249.4(MLH1):c.1216A>G (p.Ser406Gly)	P40692	S	406	G
+232409	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025825	37025825	single nucleotide variant	NM_000249.4(MLH1):c.1227G>C (p.Gln409His)	P40692	Q	409	H
+378142	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025836	37025836	single nucleotide variant	NM_000249.4(MLH1):c.1238C>T (p.Thr413Ile)	P40692	T	413	I
+182524	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025841	37025841	single nucleotide variant	NM_000249.4(MLH1):c.1243G>A (p.Asp415Asn)	P40692	D	415	N
+234772	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025843	37025843	single nucleotide variant	NM_000249.4(MLH1):c.1245T>G (p.Asp415Glu)	P40692	D	415	E
+230461	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025848	37025848	single nucleotide variant	NM_000249.4(MLH1):c.1250C>T (p.Thr417Ile)	P40692	T	417	I
+479667	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025854	37025854	single nucleotide variant	NM_000249.4(MLH1):c.1256T>C (p.Ile419Thr)	P40692	I	419	T
+1365691	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025857	37025857	single nucleotide variant	NM_000249.4(MLH1):c.1259C>G (p.Ser420Cys)	P40692	S	420	C
+619510	MLH1	0	Likely benign	criteria provided, single submitter	3	37025865	37025865	single nucleotide variant	NM_000249.4(MLH1):c.1267A>G (p.Arg423Gly)	P40692	R	423	G
+135846	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025866	37025866	single nucleotide variant	NM_000249.4(MLH1):c.1268G>A (p.Arg423Lys)	P40692	R	423	K
+483533	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025866	37025866	single nucleotide variant	NM_000249.4(MLH1):c.1268G>C (p.Arg423Thr)	P40692	R	423	T
+220203	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025868	37025868	single nucleotide variant	NM_000249.4(MLH1):c.1270G>A (p.Ala424Thr)	P40692	A	424	T
+231598	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025875	37025875	single nucleotide variant	NM_000249.4(MLH1):c.1277A>T (p.Gln426Leu)	P40692	Q	426	L
+483565	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025896	37025896	single nucleotide variant	NM_000249.4(MLH1):c.1298A>G (p.Glu433Gly)	P40692	E	433	G
+186401	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025901	37025901	single nucleotide variant	NM_000249.4(MLH1):c.1303C>A (p.Pro435Thr)	P40692	P	435	T
+142163	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025907	37025907	single nucleotide variant	NM_000249.4(MLH1):c.1309C>G (p.Pro437Ala)	P40692	P	437	A
+630477	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025914	37025914	single nucleotide variant	NM_000249.4(MLH1):c.1316A>C (p.Glu439Ala)	P40692	E	439	A
+219784	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025916	37025916	single nucleotide variant	NM_000249.4(MLH1):c.1318G>A (p.Val440Met)	P40692	V	440	M
+655277	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025920	37025920	single nucleotide variant	NM_000249.4(MLH1):c.1322C>T (p.Ala441Val)	P40692	A	441	V
+629089	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025923	37025923	single nucleotide variant	NM_000249.4(MLH1):c.1325C>A (p.Ala442Asp)	P40692	A	442	D
+89698	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025925	37025925	single nucleotide variant	NM_000249.4(MLH1):c.1327A>C (p.Lys443Gln)	P40692	K	443	Q
+232730	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025928	37025928	single nucleotide variant	NM_000249.4(MLH1):c.1330A>C (p.Asn444His)	P40692	N	444	H
+413382	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025929	37025929	single nucleotide variant	NM_000249.4(MLH1):c.1331A>G (p.Asn444Ser)	P40692	N	444	S
+127612	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025942	37025942	single nucleotide variant	NM_000249.4(MLH1):c.1344G>T (p.Glu448Asp)	P40692	E	448	D
+663344	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025942	37025942	single nucleotide variant	NM_000249.4(MLH1):c.1344G>C (p.Glu448Asp)	P40692	E	448	D
+231818	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025946	37025946	single nucleotide variant	NM_000249.4(MLH1):c.1348G>T (p.Asp450Tyr)	P40692	D	450	Y
+219538	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025949	37025949	single nucleotide variant	NM_000249.4(MLH1):c.1351A>G (p.Thr451Ala)	P40692	T	451	A
+188113	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025957	37025957	single nucleotide variant	NM_000249.4(MLH1):c.1359G>C (p.Lys453Asn)	P40692	K	453	N
+89705	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025958	37025958	single nucleotide variant	NM_000249.4(MLH1):c.1360G>C (p.Gly454Arg)	P40692	G	454	R
+479706	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37025965	37025965	single nucleotide variant	NM_000249.4(MLH1):c.1367C>T (p.Ser456Leu)	P40692	S	456	L
+186810	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025968	37025968	single nucleotide variant	NM_000249.4(MLH1):c.1370A>T (p.Glu457Val)	P40692	E	457	V
+127613	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37025977	37025977	single nucleotide variant	NM_000249.4(MLH1):c.1379A>C (p.Glu460Ala)	P40692	E	460	A
+183714	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028789	37028789	single nucleotide variant	NM_000249.4(MLH1):c.1415G>A (p.Arg472Lys)	P40692	R	472	K
+89735	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028794	37028794	single nucleotide variant	NM_000249.4(MLH1):c.1420C>T (p.Arg474Trp)	P40692	R	474	W
+127614	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028794	37028794	single nucleotide variant	NM_000249.4(MLH1):c.1420C>G (p.Arg474Gly)	P40692	R	474	G
+89737	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028795	37028795	single nucleotide variant	NM_000249.4(MLH1):c.1421G>A (p.Arg474Gln)	P40692	R	474	Q
+455388	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028815	37028815	single nucleotide variant	NM_000249.4(MLH1):c.1441A>G (p.Met481Val)	P40692	M	481	V
+572215	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028817	37028817	single nucleotide variant	NM_000249.4(MLH1):c.1443G>A (p.Met481Ile)	P40692	M	481	I
+640923	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37028818	37028818	single nucleotide variant	NM_000249.4(MLH1):c.1444G>T (p.Val482Leu)	P40692	V	482	L
+525731	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028821	37028821	single nucleotide variant	NM_000249.4(MLH1):c.1447G>A (p.Glu483Lys)	P40692	E	483	K
+232486	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028825	37028825	single nucleotide variant	NM_000249.4(MLH1):c.1451A>G (p.Asp484Gly)	P40692	D	484	G
+584640	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028827	37028827	single nucleotide variant	NM_000249.4(MLH1):c.1453G>T (p.Asp485Tyr)	P40692	D	485	Y
+405411	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028831	37028831	single nucleotide variant	NM_000249.4(MLH1):c.1457C>T (p.Ser486Phe)	P40692	S	486	F
+89745	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028834	37028834	single nucleotide variant	NM_000249.4(MLH1):c.1460G>A (p.Arg487Gln)	P40692	R	487	Q
+232383	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028842	37028842	single nucleotide variant	NM_000249.4(MLH1):c.1468A>G (p.Met490Val)	P40692	M	490	V
+89750	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028848	37028848	single nucleotide variant	NM_000249.4(MLH1):c.1474G>A (p.Ala492Thr)	P40692	A	492	T
+420973	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028849	37028849	single nucleotide variant	NM_000249.4(MLH1):c.1475C>T (p.Ala492Val)	P40692	A	492	V
+89751	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028861	37028861	single nucleotide variant	NM_000249.4(MLH1):c.1487C>G (p.Pro496Arg)	P40692	P	496	R
+185027	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028861	37028861	single nucleotide variant	NM_000249.4(MLH1):c.1487C>T (p.Pro496Leu)	P40692	P	496	L
+142946	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028863	37028863	single nucleotide variant	NM_000249.4(MLH1):c.1489C>T (p.Arg497Trp)	P40692	R	497	W
+405404	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028863	37028863	single nucleotide variant	NM_000249.4(MLH1):c.1489C>G (p.Arg497Gly)	P40692	R	497	G
+234466	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028864	37028864	single nucleotide variant	NM_000249.4(MLH1):c.1490G>A (p.Arg497Gln)	P40692	R	497	Q
+491682	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37028864	37028864	single nucleotide variant	NM_000249.4(MLH1):c.1490G>C (p.Arg497Pro)	P40692	R	497	P
+135847	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028876	37028876	single nucleotide variant	NM_000249.4(MLH1):c.1502T>G (p.Ile501Ser)	P40692	I	501	S
+185154	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028888	37028888	single nucleotide variant	NM_000249.4(MLH1):c.1514G>A (p.Ser505Asn)	P40692	S	505	N
+89757	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028891	37028891	single nucleotide variant	NM_000249.4(MLH1):c.1517T>C (p.Val506Ala)	P40692	V	506	A
+479686	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37028891	37028891	single nucleotide variant	NM_000249.4(MLH1):c.1517T>A (p.Val506Asp)	P40692	V	506	D
+230656	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028912	37028912	single nucleotide variant	NM_000249.4(MLH1):c.1538T>C (p.Ile513Thr)	P40692	I	513	T
+663969	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37028914	37028914	single nucleotide variant	NM_000249.4(MLH1):c.1540A>C (p.Asn514His)	P40692	N	514	H
+455393	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37028915	37028915	single nucleotide variant	NM_000249.4(MLH1):c.1541A>G (p.Asn514Ser)	P40692	N	514	S
+141297	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37028923	37028923	single nucleotide variant	NM_000249.4(MLH1):c.1549G>C (p.Gly517Arg)	P40692	G	517	R
+216331	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040191	37040191	single nucleotide variant	NM_000249.4(MLH1):c.1564C>T (p.Arg522Trp)	P40692	R	522	W
+89791	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040192	37040192	single nucleotide variant	NM_000249.4(MLH1):c.1565G>A (p.Arg522Gln)	P40692	R	522	Q
+89792	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040196	37040196	single nucleotide variant	NM_000249.4(MLH1):c.1569G>T (p.Glu523Asp)	P40692	E	523	D
+127616	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040199	37040199	single nucleotide variant	NM_000249.4(MLH1):c.1572G>C (p.Met524Ile)	P40692	M	524	I
+187310	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040199	37040199	single nucleotide variant	NM_000249.4(MLH1):c.1572G>T (p.Met524Ile)	P40692	M	524	I
+455395	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040204	37040204	single nucleotide variant	NM_000249.4(MLH1):c.1577A>G (p.His526Arg)	P40692	H	526	R
+642277	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37040213	37040213	single nucleotide variant	NM_000249.4(MLH1):c.1586C>T (p.Ser529Phe)	P40692	S	529	F
+188166	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040218	37040218	single nucleotide variant	NM_000249.4(MLH1):c.1591G>A (p.Val531Met)	P40692	V	531	M
+419002	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040248	37040248	single nucleotide variant	NM_000249.4(MLH1):c.1621G>C (p.Ala541Pro)	P40692	A	541	P
+1776675	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	37040252	37040252	single nucleotide variant	NM_000249.4(MLH1):c.1625A>C (p.Gln542Pro)	P40692	Q	542	P
+182526	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040255	37040255	single nucleotide variant	NM_000249.4(MLH1):c.1628A>G (p.His543Arg)	P40692	H	543	R
+89812	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040260	37040260	single nucleotide variant	NM_000249.4(MLH1):c.1633A>G (p.Thr545Ala)	P40692	T	545	A
+127617	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040264	37040264	single nucleotide variant	NM_000249.4(MLH1):c.1637A>G (p.Lys546Arg)	P40692	K	546	R
+187383	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040269	37040269	single nucleotide variant	NM_000249.4(MLH1):c.1642T>C (p.Tyr548His)	P40692	Y	548	H
+89816	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040273	37040273	single nucleotide variant	NM_000249.4(MLH1):c.1646T>C (p.Leu549Pro)	P40692	L	549	P
+89819	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040279	37040279	single nucleotide variant	NM_000249.4(MLH1):c.1652A>C (p.Asn551Thr)	P40692	N	551	T
+185187	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37040294	37040294	single nucleotide variant	NM_000249.4(MLH1):c.1667G>C (p.Ser556Thr)	P40692	S	556	T
+449062	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042269	37042269	single nucleotide variant	NM_000249.4(MLH1):c.1669G>A (p.Glu557Lys)	P40692	E	557	K
+418304	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042275	37042275	single nucleotide variant	NM_000249.4(MLH1):c.1675C>A (p.Leu559Met)	P40692	L	559	M
+547537	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042285	37042285	single nucleotide variant	NM_000249.4(MLH1):c.1685A>C (p.Gln562Pro)	P40692	Q	562	P
+186100	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042290	37042290	single nucleotide variant	NM_000249.4(MLH1):c.1690C>T (p.Leu564Phe)	P40692	L	564	F
+89842	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042293	37042293	single nucleotide variant	NM_000249.4(MLH1):c.1693A>T (p.Ile565Phe)	P40692	I	565	F
+628441	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37042297	37042297	single nucleotide variant	NM_000249.4(MLH1):c.1697A>G (p.Tyr566Cys)	P40692	Y	566	C
+405433	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37042301	37042301	single nucleotide variant	NM_000249.4(MLH1):c.1701T>A (p.Asp567Glu)	P40692	D	567	E
+632895	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042306	37042306	single nucleotide variant	NM_000249.4(MLH1):c.1706C>T (p.Ala569Val)	P40692	A	569	V
+134658	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042309	37042309	single nucleotide variant	NM_000249.4(MLH1):c.1709A>G (p.Asn570Ser)	P40692	N	570	S
+141502	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042314	37042314	single nucleotide variant	NM_000249.4(MLH1):c.1714G>A (p.Gly572Ser)	P40692	G	572	S
+127619	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37042330	37042330	single nucleotide variant	NM_000249.4(MLH1):c.1730C>T (p.Ser577Leu)	P40692	S	577	L
+220454	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047525	37047525	single nucleotide variant	NM_000249.4(MLH1):c.1738G>C (p.Ala580Pro)	P40692	A	580	P
+405428	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047525	37047525	single nucleotide variant	NM_000249.4(MLH1):c.1738G>A (p.Ala580Thr)	P40692	A	580	T
+89869	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047531	37047531	single nucleotide variant	NM_000249.4(MLH1):c.1744C>G (p.Leu582Val)	P40692	L	582	V
+89870	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047531	37047531	single nucleotide variant	NM_000249.4(MLH1):c.1744C>T (p.Leu582Phe)	P40692	L	582	F
+237321	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047539	37047539	single nucleotide variant	NM_000249.4(MLH1):c.1752C>G (p.Asp584Glu)	P40692	D	584	E
+1779452	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	37047541	37047541	single nucleotide variant	NM_000249.4(MLH1):c.1754T>G (p.Leu585Arg)	P40692	L	585	R
+483581	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047541	37047541	single nucleotide variant	NM_000249.4(MLH1):c.1754T>C (p.Leu585Pro)	P40692	L	585	P
+89882	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047550	37047550	single nucleotide variant	NM_000249.4(MLH1):c.1763T>C (p.Leu588Pro)	P40692	L	588	P
+233750	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047553	37047553	single nucleotide variant	NM_000249.4(MLH1):c.1766C>T (p.Ala589Val)	P40692	A	589	V
+184860	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047557	37047557	single nucleotide variant	NM_000249.4(MLH1):c.1770A>C (p.Leu590Phe)	P40692	L	590	F
+142658	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047562	37047562	single nucleotide variant	NM_000249.4(MLH1):c.1775G>C (p.Ser592Thr)	P40692	S	592	T
+219961	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047562	37047562	single nucleotide variant	NM_000249.4(MLH1):c.1775G>A (p.Ser592Asn)	P40692	S	592	N
+584643	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047578	37047578	single nucleotide variant	NM_000249.4(MLH1):c.1791G>T (p.Trp597Cys)	P40692	W	597	C
+485795	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047585	37047585	single nucleotide variant	NM_000249.4(MLH1):c.1798G>A (p.Glu600Lys)	P40692	E	600	K
+237322	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047595	37047595	single nucleotide variant	NM_000249.4(MLH1):c.1808C>T (p.Pro603Leu)	P40692	P	603	L
+455406	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047606	37047606	single nucleotide variant	NM_000249.4(MLH1):c.1819C>G (p.Leu607Val)	P40692	L	607	V
+233120	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047610	37047610	single nucleotide variant	NM_000249.4(MLH1):c.1823C>T (p.Ala608Val)	P40692	A	608	V
+127620	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047621	37047621	single nucleotide variant	NM_000249.4(MLH1):c.1834G>A (p.Val612Ile)	P40692	V	612	I
+216334	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047637	37047637	single nucleotide variant	NM_000249.4(MLH1):c.1850A>C (p.Lys617Thr)	P40692	K	617	T
+89903	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047639	37047639	single nucleotide variant	NM_000249.4(MLH1):c.1852A>G (p.Lys618Glu)	P40692	K	618	E
+188186	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047640	37047640	single nucleotide variant	NM_000249.4(MLH1):c.1853A>T (p.Lys618Met)	P40692	K	618	M
+650527	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047654	37047654	single nucleotide variant	NM_000249.4(MLH1):c.1867G>C (p.Ala623Pro)	P40692	A	623	P
+232394	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047661	37047661	single nucleotide variant	NM_000249.4(MLH1):c.1874A>G (p.Tyr625Cys)	P40692	Y	625	C
+231139	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047663	37047663	single nucleotide variant	NM_000249.4(MLH1):c.1876T>C (p.Phe626Leu)	P40692	F	626	L
+89915	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047664	37047664	single nucleotide variant	NM_000249.4(MLH1):c.1877T>C (p.Phe626Ser)	P40692	F	626	S
+142962	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047665	37047665	single nucleotide variant	NM_000249.4(MLH1):c.1878C>A (p.Phe626Leu)	P40692	F	626	L
+4108541	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047666	37047666	single nucleotide variant	NM_000249.4(MLH1):c.1879T>A (p.Ser627Thr)	P40692	S	627	T
+619511	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37047676	37047676	single nucleotide variant	NM_000249.4(MLH1):c.1889T>A (p.Ile630Asn)	P40692	I	630	N
+489893	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37047677	37047677	single nucleotide variant	NM_000249.4(MLH1):c.1890T>G (p.Ile630Met)	P40692	I	630	M
+89937	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048524	37048524	single nucleotide variant	NM_000249.4(MLH1):c.1904A>G (p.Asn635Ser)	P40692	N	635	S
+2203332	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048525	37048525	single nucleotide variant	NM_000249.4(MLH1):c.1905C>G (p.Asn635Lys)	P40692	N	635	K
+581225	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048525	37048525	single nucleotide variant	NM_000249.4(MLH1):c.1905C>A (p.Asn635Lys)	P40692	N	635	K
+89940	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048527	37048527	single nucleotide variant	NM_000249.4(MLH1):c.1907T>C (p.Leu636Pro)	P40692	L	636	P
+232280	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048544	37048544	single nucleotide variant	NM_000249.4(MLH1):c.1924C>G (p.Leu642Val)	P40692	L	642	V
+619512	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048545	37048545	single nucleotide variant	NM_000249.4(MLH1):c.1925T>A (p.Leu642Gln)	P40692	L	642	Q
+418739	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048550	37048550	single nucleotide variant	NM_000249.4(MLH1):c.1930G>A (p.Asp644Asn)	P40692	D	644	N
+455411	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048556	37048556	single nucleotide variant	NM_000249.4(MLH1):c.1936T>A (p.Tyr646Asn)	P40692	Y	646	N
+36545	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048557	37048557	single nucleotide variant	NM_000249.4(MLH1):c.1937A>G (p.Tyr646Cys)	P40692	Y	646	C
+237324	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048557	37048557	single nucleotide variant	NM_000249.4(MLH1):c.1937A>C (p.Tyr646Ser)	P40692	Y	646	S
+89952	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048559	37048559	single nucleotide variant	NM_000249.4(MLH1):c.1939G>A (p.Val647Met)	P40692	V	647	M
+525804	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048562	37048562	single nucleotide variant	NM_000249.4(MLH1):c.1942C>G (p.Pro648Ala)	P40692	P	648	A
+568133	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048565	37048565	single nucleotide variant	NM_000249.4(MLH1):c.1945C>T (p.Pro649Ser)	P40692	P	649	S
+525786	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048569	37048569	single nucleotide variant	NM_000249.4(MLH1):c.1949T>C (p.Leu650Ser)	P40692	L	650	S
+619552	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048580	37048580	single nucleotide variant	NM_000249.4(MLH1):c.1960C>T (p.Pro654Ser)	P40692	P	654	S
+41638	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048584	37048584	single nucleotide variant	NM_000249.4(MLH1):c.1964T>C (p.Ile655Thr)	P40692	I	655	T
+479685	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048584	37048584	single nucleotide variant	NM_000249.4(MLH1):c.1964T>A (p.Ile655Asn)	P40692	I	655	N
+641816	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048592	37048592	single nucleotide variant	NM_000249.4(MLH1):c.1972C>T (p.Leu658Phe)	P40692	L	658	F
+89964	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048596	37048596	single nucleotide variant	NM_000249.4(MLH1):c.1976G>A (p.Arg659Gln)	P40692	R	659	Q
+619553	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048599	37048599	single nucleotide variant	NM_000249.4(MLH1):c.1979T>C (p.Leu660Pro)	P40692	L	660	P
+629497	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048604	37048604	single nucleotide variant	NM_000249.4(MLH1):c.1984A>T (p.Thr662Ser)	P40692	T	662	S
+89971	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048608	37048608	single nucleotide variant	NM_000249.4(MLH1):c.1988A>G (p.Glu663Gly)	P40692	E	663	G
+2673628	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	37048910	37048910	single nucleotide variant	NM_000249.4(MLH1):c.1996T>C (p.Trp666Arg)	P40692	W	666	R
+619554	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048911	37048911	single nucleotide variant	NM_000249.4(MLH1):c.1997G>C (p.Trp666Ser)	P40692	W	666	S
+187389	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048916	37048916	single nucleotide variant	NM_000249.4(MLH1):c.2002G>A (p.Glu668Lys)	P40692	E	668	K
+422767	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048923	37048923	single nucleotide variant	NM_000249.4(MLH1):c.2009A>G (p.Lys670Arg)	P40692	K	670	R
+219626	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048926	37048926	single nucleotide variant	NM_000249.4(MLH1):c.2012A>G (p.Glu671Gly)	P40692	E	671	G
+455413	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048930	37048930	single nucleotide variant	NM_000249.4(MLH1):c.2016T>G (p.Cys672Trp)	P40692	C	672	W
+405432	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048934	37048934	single nucleotide variant	NM_000249.4(MLH1):c.2020G>A (p.Glu674Lys)	P40692	E	674	K
+90001	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048941	37048941	single nucleotide variant	NM_000249.4(MLH1):c.2027T>C (p.Leu676Pro)	P40692	L	676	P
+1784677	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	37048941	37048941	single nucleotide variant	NM_000249.4(MLH1):c.2027T>G (p.Leu676Arg)	P40692	L	676	R
+135849	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048943	37048943	single nucleotide variant	NM_000249.4(MLH1):c.2029A>T (p.Ser677Cys)	P40692	S	677	C
+90007	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048952	37048952	single nucleotide variant	NM_000249.4(MLH1):c.2038T>G (p.Cys680Gly)	P40692	C	680	G
+90013	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048965	37048965	single nucleotide variant	NM_000249.4(MLH1):c.2051A>G (p.Tyr684Cys)	P40692	Y	684	C
+418728	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048965	37048965	single nucleotide variant	NM_000249.4(MLH1):c.2051A>C (p.Tyr684Ser)	P40692	Y	684	S
+422929	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048968	37048968	single nucleotide variant	NM_000249.4(MLH1):c.2054C>T (p.Ser685Phe)	P40692	S	685	F
+619555	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048968	37048968	single nucleotide variant	NM_000249.4(MLH1):c.2054C>A (p.Ser685Tyr)	P40692	S	685	Y
+405422	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048973	37048973	single nucleotide variant	NM_000249.4(MLH1):c.2059C>G (p.Arg687Gly)	P40692	R	687	G
+140838	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048974	37048974	single nucleotide variant	NM_000249.4(MLH1):c.2060G>A (p.Arg687Gln)	P40692	R	687	Q
+483553	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37048977	37048977	single nucleotide variant	NM_000249.4(MLH1):c.2063A>G (p.Lys688Arg)	P40692	K	688	R
+182530	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37048985	37048985	single nucleotide variant	NM_000249.4(MLH1):c.2071A>G (p.Ile691Val)	P40692	I	691	V
+233011	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050489	37050489	single nucleotide variant	NM_000249.4(MLH1):c.2107G>A (p.Glu703Lys)	P40692	E	703	K
+644643	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050501	37050501	single nucleotide variant	NM_000249.4(MLH1):c.2119T>C (p.Ser707Pro)	P40692	S	707	P
+583197	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050510	37050510	single nucleotide variant	NM_000249.4(MLH1):c.2128A>C (p.Asn710His)	P40692	N	710	H
+480879	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050511	37050511	single nucleotide variant	NM_000249.4(MLH1):c.2129A>T (p.Asn710Ile)	P40692	N	710	I
+140884	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050513	37050513	single nucleotide variant	NM_000249.4(MLH1):c.2131T>C (p.Ser711Pro)	P40692	S	711	P
+405437	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050517	37050517	single nucleotide variant	NM_000249.4(MLH1):c.2135G>T (p.Trp712Leu)	P40692	W	712	L
+495764	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050517	37050517	single nucleotide variant	NM_000249.4(MLH1):c.2135G>C (p.Trp712Ser)	P40692	W	712	S
+487010	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050533	37050533	single nucleotide variant	NM_000249.4(MLH1):c.2151A>T (p.Glu717Asp)	P40692	E	717	D
+186721	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050537	37050537	single nucleotide variant	NM_000249.4(MLH1):c.2155A>G (p.Ile719Val)	P40692	I	719	V
+230725	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050538	37050538	single nucleotide variant	NM_000249.4(MLH1):c.2156T>C (p.Ile719Thr)	P40692	I	719	T
+90076	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050541	37050541	single nucleotide variant	NM_000249.4(MLH1):c.2159T>G (p.Val720Gly)	P40692	V	720	G
+633306	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050543	37050543	single nucleotide variant	NM_000249.4(MLH1):c.2161T>C (p.Tyr721His)	P40692	Y	721	H
+90078	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050544	37050544	single nucleotide variant	NM_000249.4(MLH1):c.2162A>G (p.Tyr721Cys)	P40692	Y	721	C
+90081	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050555	37050555	single nucleotide variant	NM_000249.4(MLH1):c.2173C>T (p.Arg725Cys)	P40692	R	725	C
+90082	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050556	37050556	single nucleotide variant	NM_000249.4(MLH1):c.2174G>A (p.Arg725His)	P40692	R	725	H
+647498	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050566	37050566	single nucleotide variant	NM_000249.4(MLH1):c.2184T>G (p.Ile728Met)	P40692	I	728	M
+525858	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050568	37050568	single nucleotide variant	NM_000249.4(MLH1):c.2186T>C (p.Leu729Pro)	P40692	L	729	P
+90090	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050592	37050592	single nucleotide variant	NM_000249.4(MLH1):c.2210A>T (p.Asp737Val)	P40692	D	737	V
+36548	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050595	37050595	single nucleotide variant	NM_000249.4(MLH1):c.2213G>A (p.Gly738Glu)	P40692	G	738	E
+525639	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050599	37050599	single nucleotide variant	NM_000249.4(MLH1):c.2217T>G (p.Asn739Lys)	P40692	N	739	K
+486869	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050601	37050601	single nucleotide variant	NM_000249.4(MLH1):c.2219T>A (p.Ile740Asn)	P40692	I	740	N
+187247	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050603	37050603	single nucleotide variant	NM_000249.4(MLH1):c.2221C>A (p.Leu741Met)	P40692	L	741	M
+655144	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050609	37050609	single nucleotide variant	NM_000249.4(MLH1):c.2227C>T (p.Leu743Phe)	P40692	L	743	F
+219801	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050610	37050610	single nucleotide variant	NM_000249.4(MLH1):c.2228T>G (p.Leu743Arg)	P40692	L	743	R
+127622	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050621	37050621	single nucleotide variant	NM_000249.4(MLH1):c.2239C>T (p.Pro747Ser)	P40692	P	747	S
+405434	MLH1	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	3	37050624	37050624	single nucleotide variant	NM_000249.4(MLH1):c.2242G>C (p.Asp748His)	P40692	D	748	H
+3230775	MLH1	1	Likely pathogenic	criteria provided, single submitter	3	37050640	37050640	single nucleotide variant	NM_000249.4(MLH1):c.2258T>C (p.Phe753Ser)	P40692	F	753	S
+220259	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050642	37050642	single nucleotide variant	NM_000249.4(MLH1):c.2260G>A (p.Glu754Lys)	P40692	E	754	K
+485803	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050644	37050644	single nucleotide variant	NM_000249.4(MLH1):c.2262G>T (p.Glu754Asp)	P40692	E	754	D
+525793	MLH1	-1	Uncertain significance	criteria provided, single submitter	3	37050649	37050649	single nucleotide variant	NM_000249.4(MLH1):c.2267G>A (p.Cys756Tyr)	P40692	C	756	Y

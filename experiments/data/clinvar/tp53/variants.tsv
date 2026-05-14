@@ -1,0 +1,1001 @@
+variation_id	gene_symbol	label	clinical_significance	review_status	chromosome	start	stop	variant_type	name	uniprot	wt_aa	position	alt_aa
+141425	TP53	0	Likely benign	reviewed by expert panel	17	7669628	7669628	single nucleotide variant	NM_000546.6(TP53):c.1163A>C (p.Glu388Ala)	P04637	E	388	A
+406575	TP53	0	Benign	reviewed by expert panel	17	7669640	7669640	single nucleotide variant	NM_000546.6(TP53):c.1151T>C (p.Met384Thr)	P04637	M	384	T
+182939	TP53	0	Likely benign	reviewed by expert panel	17	7669641	7669641	single nucleotide variant	NM_000546.6(TP53):c.1150A>G (p.Met384Val)	P04637	M	384	V
+216463	TP53	0	Likely benign	reviewed by expert panel	17	7669655	7669655	single nucleotide variant	NM_000546.6(TP53):c.1136G>T (p.Arg379Leu)	P04637	R	379	L
+246221	TP53	0	Likely benign	reviewed by expert panel	17	7669655	7669655	single nucleotide variant	NM_000546.6(TP53):c.1136G>A (p.Arg379His)	P04637	R	379	H
+186762	TP53	0	Likely benign	reviewed by expert panel	17	7669656	7669656	single nucleotide variant	NM_000546.6(TP53):c.1135C>A (p.Arg379Ser)	P04637	R	379	S
+230269	TP53	0	Benign	reviewed by expert panel	17	7669671	7669671	single nucleotide variant	NM_000546.6(TP53):c.1120G>C (p.Gly374Arg)	P04637	G	374	R
+188342	TP53	-1	Uncertain significance	reviewed by expert panel	17	7669689	7669689	single nucleotide variant	NM_000546.6(TP53):c.1102C>T (p.His368Tyr)	P04637	H	368	Y
+135360	TP53	0	Benign	reviewed by expert panel	17	7670613	7670613	single nucleotide variant	NM_000546.6(TP53):c.1096T>G (p.Ser366Ala)	P04637	S	366	A
+80708	TP53	0	Likely benign	reviewed by expert panel	17	7670616	7670616	single nucleotide variant	NM_000546.6(TP53):c.1093C>T (p.His365Tyr)	P04637	H	365	Y
+142003	TP53	0	Benign	reviewed by expert panel	17	7670630	7670630	single nucleotide variant	NM_000546.6(TP53):c.1079G>C (p.Gly360Ala)	P04637	G	360	A
+234059	TP53	0	Likely benign	reviewed by expert panel	17	7670643	7670643	single nucleotide variant	NM_000546.6(TP53):c.1066G>C (p.Gly356Arg)	P04637	G	356	R
+231485	TP53	0	Benign	reviewed by expert panel	17	7670649	7670649	single nucleotide variant	NM_000546.6(TP53):c.1060C>A (p.Gln354Lys)	P04637	Q	354	K
+43587	TP53	1	Pathogenic	reviewed by expert panel	17	7670669	7670669	single nucleotide variant	NM_000546.6(TP53):c.1040C>A (p.Ala347Asp)	P04637	A	347	D
+662690	TP53	-1	Uncertain significance	reviewed by expert panel	17	7670670	7670670	single nucleotide variant	NM_000546.6(TP53):c.1039G>A (p.Ala347Thr)	P04637	A	347	T
+12375	TP53	1	Likely pathogenic	reviewed by expert panel	17	7670678	7670678	single nucleotide variant	NM_000546.6(TP53):c.1031T>C (p.Leu344Pro)	P04637	L	344	P
+215996	TP53	1	Pathogenic	reviewed by expert panel	17	7670684	7670684	single nucleotide variant	NM_000546.6(TP53):c.1025G>C (p.Arg342Pro)	P04637	R	342	P
+233136	TP53	0	Likely benign	reviewed by expert panel	17	7670684	7670684	single nucleotide variant	NM_000546.6(TP53):c.1025G>A (p.Arg342Gln)	P04637	R	342	Q
+141893	TP53	0	Likely benign	reviewed by expert panel	17	7670694	7670694	single nucleotide variant	NM_000546.6(TP53):c.1015G>C (p.Glu339Gln)	P04637	E	339	Q
+142828	TP53	1	Likely pathogenic	reviewed by expert panel	17	7670699	7670699	single nucleotide variant	NM_000546.6(TP53):c.1010G>T (p.Arg337Leu)	P04637	R	337	L
+177879	TP53	1	Likely pathogenic	reviewed by expert panel	17	7670699	7670699	single nucleotide variant	NM_000546.6(TP53):c.1010G>C (p.Arg337Pro)	P04637	R	337	P
+142536	TP53	1	Pathogenic	reviewed by expert panel	17	7670700	7670700	single nucleotide variant	NM_000546.6(TP53):c.1009C>T (p.Arg337Cys)	P04637	R	337	C
+237938	TP53	1	Likely pathogenic	reviewed by expert panel	17	7670700	7670700	single nucleotide variant	NM_000546.6(TP53):c.1009C>G (p.Arg337Gly)	P04637	R	337	G
+1019612	TP53	1	Likely pathogenic	reviewed by expert panel	17	7670700	7670700	single nucleotide variant	NM_000546.6(TP53):c.1009C>A (p.Arg337Ser)	P04637	R	337	S
+141159	TP53	0	Likely benign	reviewed by expert panel	17	7670706	7670706	single nucleotide variant	NM_000546.6(TP53):c.1003C>T (p.Arg335Cys)	P04637	R	335	C
+182969	TP53	-1	Uncertain significance	reviewed by expert panel	17	7670709	7670709	single nucleotide variant	NM_000546.6(TP53):c.1000G>C (p.Gly334Arg)	P04637	G	334	R
+142273	TP53	0	Benign	reviewed by expert panel	17	7670711	7670711	single nucleotide variant	NM_000546.6(TP53):c.998G>A (p.Arg333His)	P04637	R	333	H
+184745	TP53	0	Likely benign	reviewed by expert panel	17	7670712	7670712	single nucleotide variant	NM_000546.6(TP53):c.997C>T (p.Arg333Cys)	P04637	R	333	C
+231008	TP53	0	Benign	reviewed by expert panel	17	7673579	7673579	single nucleotide variant	NM_000546.6(TP53):c.949C>A (p.Gln317Lys)	P04637	Q	317	K
+230382	TP53	0	Likely benign	reviewed by expert panel	17	7673582	7673582	single nucleotide variant	NM_000546.6(TP53):c.946C>A (p.Pro316Thr)	P04637	P	316	T
+185212	TP53	0	Likely benign	reviewed by expert panel	17	7673585	7673585	single nucleotide variant	NM_000546.6(TP53):c.943T>A (p.Ser315Thr)	P04637	S	315	T
+141102	TP53	0	Benign	reviewed by expert panel	17	7673593	7673593	single nucleotide variant	NM_000546.6(TP53):c.935C>G (p.Thr312Ser)	P04637	T	312	S
+142332	TP53	0	Likely benign	reviewed by expert panel	17	7673713	7673713	single nucleotide variant	NM_000546.6(TP53):c.907A>G (p.Ser303Gly)	P04637	S	303	G
+141483	TP53	0	Benign	reviewed by expert panel	17	7673728	7673728	single nucleotide variant	NM_000546.6(TP53):c.892G>A (p.Glu298Lys)	P04637	E	298	K
+132973	TP53	0	Likely benign	reviewed by expert panel	17	7673734	7673734	single nucleotide variant	NM_000546.6(TP53):c.886C>T (p.His296Tyr)	P04637	H	296	Y
+428862	TP53	0	Likely benign	reviewed by expert panel	17	7673737	7673737	single nucleotide variant	NM_000546.6(TP53):c.883C>T (p.Pro295Ser)	P04637	P	295	S
+127826	TP53	0	Likely benign	reviewed by expert panel	17	7673743	7673743	single nucleotide variant	NM_000546.6(TP53):c.877G>T (p.Gly293Trp)	P04637	G	293	W
+406577	TP53	0	Likely benign	reviewed by expert panel	17	7673745	7673745	single nucleotide variant	NM_000546.6(TP53):c.875A>G (p.Lys292Arg)	P04637	K	292	R
+127825	TP53	0	Benign	reviewed by expert panel	17	7673751	7673751	single nucleotide variant	NM_000546.6(TP53):c.869G>A (p.Arg290His)	P04637	R	290	H
+216472	TP53	0	Benign	reviewed by expert panel	17	7673752	7673752	single nucleotide variant	NM_000546.6(TP53):c.868C>T (p.Arg290Cys)	P04637	R	290	C
+1172923	TP53	0	Likely benign	reviewed by expert panel	17	7673754	7673754	single nucleotide variant	NM_000546.6(TP53):c.866T>C (p.Leu289Pro)	P04637	L	289	P
+216471	TP53	0	Likely benign	reviewed by expert panel	17	7673769	7673769	single nucleotide variant	NM_000546.6(TP53):c.851C>T (p.Thr284Ile)	P04637	T	284	I
+486555	TP53	1	Pathogenic	reviewed by expert panel	17	7673772	7673772	single nucleotide variant	NM_000546.6(TP53):c.848G>C (p.Arg283Pro)	P04637	R	283	P
+127824	TP53	0	Likely benign	reviewed by expert panel	17	7673773	7673773	single nucleotide variant	NM_000546.6(TP53):c.847C>T (p.Arg283Cys)	P04637	R	283	C
+182938	TP53	-1	Uncertain significance	reviewed by expert panel	17	7673775	7673775	single nucleotide variant	NM_000546.6(TP53):c.845G>T (p.Arg282Leu)	P04637	R	282	L
+988616	TP53	1	Pathogenic	reviewed by expert panel	17	7673780	7673780	single nucleotide variant	NM_000546.6(TP53):c.840A>T (p.Arg280Ser)	P04637	R	280	S
+421804	TP53	-1	Uncertain significance	reviewed by expert panel	17	7673791	7673791	single nucleotide variant	NM_000546.6(TP53):c.829T>C (p.Cys277Arg)	P04637	C	277	R
+12366	TP53	1	Pathogenic	reviewed by expert panel	17	7673802	7673802	single nucleotide variant	NM_000546.6(TP53):c.818G>A (p.Arg273His)	P04637	R	273	H
+185814	TP53	1	Pathogenic	reviewed by expert panel	17	7673806	7673806	single nucleotide variant	NM_000546.6(TP53):c.814G>A (p.Val272Met)	P04637	V	272	M
+127823	TP53	-1	Uncertain significance	reviewed by expert panel	17	7673820	7673820	single nucleotide variant	NM_000546.6(TP53):c.800G>A (p.Arg267Gln)	P04637	R	267	Q
+480759	TP53	-1	Uncertain significance	reviewed by expert panel	17	7673829	7673829	single nucleotide variant	NM_000546.6(TP53):c.791T>C (p.Leu264Pro)	P04637	L	264	P
+141228	TP53	0	Likely benign	reviewed by expert panel	17	7673836	7673836	single nucleotide variant	NM_000546.6(TP53):c.784G>A (p.Gly262Ser)	P04637	G	262	S
+231033	TP53	0	Likely benign	reviewed by expert panel	17	7674184	7674184	single nucleotide variant	NM_000546.6(TP53):c.779C>A (p.Ser260Tyr)	P04637	S	260	Y
+856299	TP53	1	Pathogenic	reviewed by expert panel	17	7674202	7674202	single nucleotide variant	NM_000546.6(TP53):c.761T>A (p.Ile254Asn)	P04637	I	254	N
+406605	TP53	0	Likely benign	reviewed by expert panel	17	7674203	7674203	single nucleotide variant	NM_000546.6(TP53):c.760A>G (p.Ile254Val)	P04637	I	254	V
+12356	TP53	1	Pathogenic	reviewed by expert panel	17	7674220	7674220	single nucleotide variant	NM_000546.6(TP53):c.743G>A (p.Arg248Gln)	P04637	R	248	Q
+230253	TP53	1	Pathogenic	reviewed by expert panel	17	7674220	7674220	single nucleotide variant	NM_000546.6(TP53):c.743G>T (p.Arg248Leu)	P04637	R	248	L
+12347	TP53	1	Pathogenic	reviewed by expert panel	17	7674221	7674221	single nucleotide variant	NM_000546.6(TP53):c.742C>T (p.Arg248Trp)	P04637	R	248	W
+12365	TP53	1	Pathogenic	reviewed by expert panel	17	7674230	7674230	single nucleotide variant	NM_000546.6(TP53):c.733G>A (p.Gly245Ser)	P04637	G	245	S
+142714	TP53	1	Pathogenic	reviewed by expert panel	17	7674252	7674252	single nucleotide variant	NM_000546.6(TP53):c.711G>A (p.Met237Ile)	P04637	M	237	I
+127821	TP53	0	Benign	reviewed by expert panel	17	7674259	7674259	single nucleotide variant	NM_000546.6(TP53):c.704A>G (p.Asn235Ser)	P04637	N	235	S
+127819	TP53	1	Pathogenic	reviewed by expert panel	17	7674872	7674872	single nucleotide variant	NM_000546.6(TP53):c.659A>G (p.Tyr220Cys)	P04637	Y	220	C
+826488	TP53	-1	Uncertain significance	reviewed by expert panel	17	7674875	7674875	single nucleotide variant	NM_000546.6(TP53):c.656C>T (p.Pro219Leu)	P04637	P	219	L
+376615	TP53	1	Pathogenic	reviewed by expert panel	17	7674890	7674890	single nucleotide variant	NM_000546.6(TP53):c.641A>G (p.His214Arg)	P04637	H	214	R
+376616	TP53	1	Likely pathogenic	reviewed by expert panel	17	7674890	7674890	single nucleotide variant	NM_000546.6(TP53):c.641A>T (p.His214Leu)	P04637	H	214	L
+1053808	TP53	-1	Uncertain significance	reviewed by expert panel	17	7674891	7674891	single nucleotide variant	NM_000546.6(TP53):c.640C>T (p.His214Tyr)	P04637	H	214	Y
+422414	TP53	-1	Uncertain significance	reviewed by expert panel	17	7674897	7674897	single nucleotide variant	NM_000546.6(TP53):c.634T>A (p.Phe212Ile)	P04637	F	212	I
+962629	TP53	0	Likely benign	reviewed by expert panel	17	7674905	7674905	single nucleotide variant	NM_000546.6(TP53):c.626G>A (p.Arg209Lys)	P04637	R	209	K
+182933	TP53	-1	Uncertain significance	reviewed by expert panel	17	7674924	7674924	single nucleotide variant	NM_000546.6(TP53):c.607G>A (p.Val203Met)	P04637	V	203	M
+188060	TP53	1	Likely pathogenic	reviewed by expert panel	17	7674942	7674942	single nucleotide variant	NM_000546.6(TP53):c.589G>A (p.Val197Met)	P04637	V	197	M
+216467	TP53	-1	Uncertain significance	reviewed by expert panel	17	7674944	7674944	single nucleotide variant	NM_000546.6(TP53):c.587G>A (p.Arg196Gln)	P04637	R	196	Q
+376633	TP53	1	Pathogenic	reviewed by expert panel	17	7674950	7674950	single nucleotide variant	NM_000546.6(TP53):c.581T>G (p.Leu194Arg)	P04637	L	194	R
+376612	TP53	1	Pathogenic	reviewed by expert panel	17	7674953	7674953	single nucleotide variant	NM_000546.6(TP53):c.578A>C (p.His193Pro)	P04637	H	193	P
+127816	TP53	0	Likely benign	reviewed by expert panel	17	7674959	7674959	single nucleotide variant	NM_000546.6(TP53):c.572C>G (p.Pro191Arg)	P04637	P	191	R
+418517	TP53	1	Likely pathogenic	reviewed by expert panel	17	7674962	7674962	single nucleotide variant	NM_000546.6(TP53):c.569C>T (p.Pro190Leu)	P04637	P	190	L
+406601	TP53	0	Likely benign	reviewed by expert panel	17	7675056	7675056	single nucleotide variant	NM_000546.6(TP53):c.556G>A (p.Asp186Asn)	P04637	D	186	N
+141359	TP53	0	Likely benign	reviewed by expert panel	17	7675058	7675058	single nucleotide variant	NM_000546.6(TP53):c.554G>A (p.Ser185Asn)	P04637	S	185	N
+142624	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675071	7675071	single nucleotide variant	NM_000546.6(TP53):c.541C>T (p.Arg181Cys)	P04637	R	181	C
+230764	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675071	7675071	single nucleotide variant	NM_000546.6(TP53):c.541C>A (p.Arg181Ser)	P04637	R	181	S
+245711	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675074	7675074	single nucleotide variant	NM_000546.6(TP53):c.538G>A (p.Glu180Lys)	P04637	E	180	K
+406578	TP53	1	Pathogenic	reviewed by expert panel	17	7675075	7675075	single nucleotide variant	NM_000546.6(TP53):c.537T>A (p.His179Gln)	P04637	H	179	Q
+482223	TP53	1	Pathogenic	reviewed by expert panel	17	7675080	7675080	single nucleotide variant	NM_000546.6(TP53):c.532C>G (p.His178Asp)	P04637	H	178	D
+12374	TP53	1	Pathogenic	reviewed by expert panel	17	7675088	7675088	single nucleotide variant	NM_000546.6(TP53):c.524G>A (p.Arg175His)	P04637	R	175	H
+182963	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675088	7675088	single nucleotide variant	NM_000546.6(TP53):c.524G>T (p.Arg175Leu)	P04637	R	175	L
+245851	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675089	7675089	single nucleotide variant	NM_000546.6(TP53):c.523C>T (p.Arg175Cys)	P04637	R	175	C
+376649	TP53	1	Pathogenic	reviewed by expert panel	17	7675089	7675089	single nucleotide variant	NM_000546.6(TP53):c.523C>G (p.Arg175Gly)	P04637	R	175	G
+233951	TP53	1	Pathogenic	reviewed by expert panel	17	7675095	7675095	single nucleotide variant	NM_000546.6(TP53):c.517G>A (p.Val173Met)	P04637	V	173	M
+141566	TP53	0	Likely benign	reviewed by expert panel	17	7675101	7675101	single nucleotide variant	NM_000546.6(TP53):c.511G>A (p.Glu171Lys)	P04637	E	171	K
+184014	TP53	0	Likely benign	reviewed by expert panel	17	7675103	7675103	single nucleotide variant	NM_000546.6(TP53):c.509C>T (p.Thr170Met)	P04637	T	170	M
+246416	TP53	1	Pathogenic	reviewed by expert panel	17	7675122	7675122	single nucleotide variant	NM_000546.6(TP53):c.490A>G (p.Lys164Glu)	P04637	K	164	E
+127814	TP53	1	Pathogenic	reviewed by expert panel	17	7675124	7675124	single nucleotide variant	NM_000546.6(TP53):c.488A>G (p.Tyr163Cys)	P04637	Y	163	C
+376680	TP53	1	Pathogenic	reviewed by expert panel	17	7675125	7675125	single nucleotide variant	NM_000546.6(TP53):c.487T>C (p.Tyr163His)	P04637	Y	163	H
+230758	TP53	0	Likely benign	reviewed by expert panel	17	7675132	7675132	single nucleotide variant	NM_000546.6(TP53):c.480G>A (p.Met160Ile)	P04637	M	160	I
+246118	TP53	1	Pathogenic	reviewed by expert panel	17	7675139	7675139	single nucleotide variant	NM_000546.6(TP53):c.473G>C (p.Arg158Pro)	P04637	R	158	P
+528248	TP53	1	Pathogenic	reviewed by expert panel	17	7675139	7675139	single nucleotide variant	NM_000546.6(TP53):c.473G>T (p.Arg158Leu)	P04637	R	158	L
+127812	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675140	7675140	single nucleotide variant	NM_000546.6(TP53):c.472C>T (p.Arg158Cys)	P04637	R	158	C
+185404	TP53	0	Likely benign	reviewed by expert panel	17	7675143	7675143	single nucleotide variant	NM_000546.6(TP53):c.469G>A (p.Val157Ile)	P04637	V	157	I
+127811	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675145	7675145	single nucleotide variant	NM_000546.6(TP53):c.467G>A (p.Arg156His)	P04637	R	156	H
+237950	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675151	7675151	single nucleotide variant	NM_000546.6(TP53):c.461G>A (p.Gly154Asp)	P04637	G	154	D
+482229	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675152	7675152	single nucleotide variant	NM_000546.6(TP53):c.460G>C (p.Gly154Arg)	P04637	G	154	R
+142766	TP53	1	Pathogenic	reviewed by expert panel	17	7675157	7675157	single nucleotide variant	NM_000546.6(TP53):c.455C>T (p.Pro152Leu)	P04637	P	152	L
+186587	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675176	7675176	single nucleotide variant	NM_000546.6(TP53):c.436T>G (p.Trp146Gly)	P04637	W	146	G
+376647	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675181	7675181	single nucleotide variant	NM_000546.6(TP53):c.431A>T (p.Gln144Leu)	P04637	Q	144	L
+804214	TP53	1	Pathogenic	reviewed by expert panel	17	7675184	7675184	single nucleotide variant	NM_000546.6(TP53):c.428T>C (p.Val143Ala)	P04637	V	143	A
+184863	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675199	7675199	single nucleotide variant	NM_000546.6(TP53):c.413C>T (p.Ala138Val)	P04637	A	138	V
+528270	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675199	7675199	single nucleotide variant	NM_000546.6(TP53):c.413C>A (p.Ala138Asp)	P04637	A	138	D
+12376	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675200	7675200	single nucleotide variant	NM_000546.6(TP53):c.412G>C (p.Ala138Pro)	P04637	A	138	P
+1053218	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675200	7675200	single nucleotide variant	NM_000546.6(TP53):c.412G>A (p.Ala138Thr)	P04637	A	138	T
+376563	TP53	1	Pathogenic	reviewed by expert panel	17	7675209	7675209	single nucleotide variant	NM_000546.6(TP53):c.403T>G (p.Cys135Gly)	P04637	C	135	G
+376624	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675216	7675216	single nucleotide variant	NM_000546.6(TP53):c.396G>C (p.Lys132Asn)	P04637	K	132	N
+246429	TP53	-1	Uncertain significance	reviewed by expert panel	17	7675219	7675219	single nucleotide variant	NM_000546.6(TP53):c.393C>A (p.Asn131Lys)	P04637	N	131	K
+219532	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675232	7675232	single nucleotide variant	NM_000546.6(TP53):c.380C>G (p.Ser127Cys)	P04637	S	127	C
+656751	TP53	1	Pathogenic	reviewed by expert panel	17	7675232	7675232	single nucleotide variant	NM_000546.6(TP53):c.380C>A (p.Ser127Tyr)	P04637	S	127	Y
+824232	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675233	7675233	single nucleotide variant	NM_000546.6(TP53):c.379T>A (p.Ser127Thr)	P04637	S	127	T
+934410	TP53	1	Likely pathogenic	reviewed by expert panel	17	7675233	7675233	single nucleotide variant	NM_000546.6(TP53):c.379T>C (p.Ser127Pro)	P04637	S	127	P
+182926	TP53	0	Likely benign	reviewed by expert panel	17	7675999	7675999	single nucleotide variant	NM_000546.6(TP53):c.370T>A (p.Cys124Ser)	P04637	C	124	S
+141101	TP53	0	Likely benign	reviewed by expert panel	17	7676005	7676005	single nucleotide variant	NM_000546.6(TP53):c.364G>A (p.Val122Met)	P04637	V	122	M
+419837	TP53	0	Likely benign	reviewed by expert panel	17	7676016	7676016	single nucleotide variant	NM_000546.6(TP53):c.353C>T (p.Thr118Ile)	P04637	T	118	I
+182925	TP53	0	Likely benign	reviewed by expert panel	17	7676025	7676025	single nucleotide variant	NM_000546.6(TP53):c.344A>G (p.His115Arg)	P04637	H	115	R
+376630	TP53	1	Pathogenic	reviewed by expert panel	17	7676037	7676037	single nucleotide variant	NM_000546.6(TP53):c.332T>C (p.Leu111Pro)	P04637	L	111	P
+376631	TP53	1	Pathogenic	reviewed by expert panel	17	7676037	7676037	single nucleotide variant	NM_000546.6(TP53):c.332T>G (p.Leu111Arg)	P04637	L	111	R
+376632	TP53	1	Pathogenic	reviewed by expert panel	17	7676037	7676037	single nucleotide variant	NM_000546.6(TP53):c.332T>A (p.Leu111Gln)	P04637	L	111	Q
+127808	TP53	0	Likely benign	reviewed by expert panel	17	7676040	7676040	single nucleotide variant	NM_000546.6(TP53):c.329G>A (p.Arg110His)	P04637	R	110	H
+233627	TP53	1	Pathogenic	reviewed by expert panel	17	7676040	7676040	single nucleotide variant	NM_000546.6(TP53):c.329G>C (p.Arg110Pro)	P04637	R	110	P
+406597	TP53	1	Pathogenic	reviewed by expert panel	17	7676040	7676040	single nucleotide variant	NM_000546.6(TP53):c.329G>T (p.Arg110Leu)	P04637	R	110	L
+142206	TP53	-1	Uncertain significance	reviewed by expert panel	17	7676041	7676041	single nucleotide variant	NM_000546.6(TP53):c.328C>T (p.Arg110Cys)	P04637	R	110	C
+823452	TP53	1	Likely pathogenic	reviewed by expert panel	17	7676041	7676041	single nucleotide variant	NM_000546.6(TP53):c.328C>G (p.Arg110Gly)	P04637	R	110	G
+142431	TP53	0	Likely benign	reviewed by expert panel	17	7676047	7676047	single nucleotide variant	NM_000546.6(TP53):c.322G>A (p.Gly108Ser)	P04637	G	108	S
+140786	TP53	0	Benign	reviewed by expert panel	17	7676050	7676050	single nucleotide variant	NM_000546.5(TP53):c.319T>C (p.Tyr107His)	P04637	Y	107	H
+492752	TP53	1	Pathogenic	reviewed by expert panel	17	7676051	7676051	single nucleotide variant	NM_000546.6(TP53):c.318C>G (p.Ser106Arg)	P04637	S	106	R
+140833	TP53	0	Likely benign	reviewed by expert panel	17	7676119	7676119	single nucleotide variant	NM_000546.6(TP53):c.250G>A (p.Ala84Thr)	P04637	A	84	T
+182946	TP53	0	Likely benign	reviewed by expert panel	17	7676124	7676124	single nucleotide variant	NM_000546.6(TP53):c.245C>T (p.Pro82Leu)	P04637	P	82	L
+141547	TP53	0	Likely benign	reviewed by expert panel	17	7676148	7676148	single nucleotide variant	NM_000546.6(TP53):c.221C>T (p.Ala74Val)	P04637	A	74	V
+142386	TP53	0	Benign	reviewed by expert panel	17	7676152	7676152	single nucleotide variant	NM_000546.6(TP53):c.217G>A (p.Val73Met)	P04637	V	73	M
+12351	TP53	0	Benign	reviewed by expert panel	17	7676154	7676154	single nucleotide variant	NM_000546.6(TP53):c.215C>G (p.Pro72Arg)	P04637	P	72	R
+185120	TP53	0	Benign	reviewed by expert panel	17	7676154	7676154	single nucleotide variant	NM_000546.6(TP53):c.215C>A (p.Pro72His)	P04637	P	72	H
+142854	TP53	0	Likely benign	reviewed by expert panel	17	7676155	7676155	single nucleotide variant	NM_000546.6(TP53):c.214C>G (p.Pro72Ala)	P04637	P	72	A
+230112	TP53	-1	Uncertain significance	reviewed by expert panel	17	7676163	7676163	single nucleotide variant	NM_000546.6(TP53):c.206C>G (p.Ala69Gly)	P04637	A	69	G
+182922	TP53	0	Benign	reviewed by expert panel	17	7676181	7676181	single nucleotide variant	NM_000546.6(TP53):c.188C>T (p.Ala63Val)	P04637	A	63	V
+229693	TP53	0	Likely benign	reviewed by expert panel	17	7676181	7676181	single nucleotide variant	NM_000546.6(TP53):c.188C>G (p.Ala63Gly)	P04637	A	63	G
+216464	TP53	0	Likely benign	reviewed by expert panel	17	7676220	7676220	single nucleotide variant	NM_000546.6(TP53):c.149T>C (p.Ile50Thr)	P04637	I	50	T
+135948	TP53	0	Benign	reviewed by expert panel	17	7676224	7676224	single nucleotide variant	NM_000546.6(TP53):c.145G>C (p.Asp49His)	P04637	D	49	H
+186363	TP53	0	Benign	reviewed by expert panel	17	7676224	7676224	single nucleotide variant	NM_000546.6(TP53):c.145G>A (p.Asp49Asn)	P04637	D	49	N
+141056	TP53	0	Likely benign	reviewed by expert panel	17	7676225	7676225	single nucleotide variant	NM_000546.6(TP53):c.144C>A (p.Asp48Glu)	P04637	D	48	E
+43588	TP53	0	Benign	reviewed by expert panel	17	7676230	7676230	single nucleotide variant	NM_000546.6(TP53):c.139C>T (p.Pro47Ser)	P04637	P	47	S
+141597	TP53	0	Benign	reviewed by expert panel	17	7676262	7676262	single nucleotide variant	NM_000546.6(TP53):c.107C>A (p.Pro36Gln)	P04637	P	36	Q
+12371	TP53	-1	Uncertain significance	reviewed by expert panel	17	7676264	7676264	single nucleotide variant	NM_000546.6(TP53):c.105G>T (p.Leu35Phe)	P04637	L	35	F
+142562	TP53	0	Likely benign	reviewed by expert panel	17	7676264	7676264	single nucleotide variant	NM_000546.6(TP53):c.105G>C (p.Leu35Phe)	P04637	L	35	F
+1172924	TP53	-1	Uncertain significance	reviewed by expert panel	17	7676549	7676549	single nucleotide variant	NM_000546.6(TP53):c.46C>A (p.Gln16Lys)	P04637	Q	16	K
+406604	TP53	-1	Uncertain significance	reviewed by expert panel	17	7676558	7676558	single nucleotide variant	NM_000546.6(TP53):c.37C>T (p.Pro13Ser)	P04637	P	13	S
+127806	TP53	0	Benign	reviewed by expert panel	17	7676567	7676567	single nucleotide variant	NM_000546.6(TP53):c.28G>A (p.Val10Ile)	P04637	V	10	I
+231387	TP53	0	Likely benign	reviewed by expert panel	17	7676567	7676567	single nucleotide variant	NM_000546.6(TP53):c.28G>C (p.Val10Leu)	P04637	V	10	L
+140782	TP53	0	Likely benign	reviewed by expert panel	17	7676574	7676574	single nucleotide variant	NM_000546.6(TP53):c.21T>A (p.Asp7Glu)	P04637	D	7	E
+237941	TP53	0	Likely benign	reviewed by expert panel	17	7676584	7676584	single nucleotide variant	NM_000546.6(TP53):c.11C>T (p.Pro4Leu)	P04637	P	4	L
+629063	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7669618	7669618	single nucleotide variant	NM_000546.6(TP53):c.1173C>G (p.Asp391Glu)	P04637	D	391	E
+860528	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7669646	7669646	single nucleotide variant	NM_000546.6(TP53):c.1145A>C (p.Lys382Thr)	P04637	K	382	T
+976475	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7669650	7669650	single nucleotide variant	NM_000546.6(TP53):c.1141A>G (p.Lys381Glu)	P04637	K	381	E
+569094	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7669662	7669662	single nucleotide variant	NM_000546.6(TP53):c.1129A>G (p.Thr377Ala)	P04637	T	377	A
+919211	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7669689	7669689	single nucleotide variant	NM_000546.6(TP53):c.1102C>A (p.His368Asn)	P04637	H	368	N
+231953	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670610	7670610	single nucleotide variant	NM_000546.6(TP53):c.1099A>G (p.Ser367Gly)	P04637	S	367	G
+927316	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670612	7670612	single nucleotide variant	NM_000546.6(TP53):c.1097C>G (p.Ser366Cys)	P04637	S	366	C
+528252	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670613	7670613	single nucleotide variant	NM_000546.6(TP53):c.1096T>C (p.Ser366Pro)	P04637	S	366	P
+568955	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670618	7670618	single nucleotide variant	NM_000546.6(TP53):c.1091C>T (p.Ala364Val)	P04637	A	364	V
+1414768	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670619	7670619	single nucleotide variant	NM_000546.6(TP53):c.1090G>A (p.Ala364Thr)	P04637	A	364	T
+233244	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670621	7670621	single nucleotide variant	NM_000546.6(TP53):c.1088G>A (p.Arg363Lys)	P04637	R	363	K
+1205464	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670625	7670625	single nucleotide variant	NM_000546.6(TP53):c.1084A>G (p.Ser362Gly)	P04637	S	362	G
+480761	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670628	7670628	single nucleotide variant	NM_000546.6(TP53):c.1081G>C (p.Gly361Arg)	P04637	G	361	R
+1468494	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670646	7670646	single nucleotide variant	NM_000546.6(TP53):c.1063G>T (p.Ala355Ser)	P04637	A	355	S
+822085	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670656	7670656	single nucleotide variant	NM_000546.6(TP53):c.1053G>T (p.Lys351Asn)	P04637	K	351	N
+72340	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670658	7670658	single nucleotide variant	NM_000546.6(TP53):c.1051A>G (p.Lys351Glu)	P04637	K	351	E
+422725	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670669	7670669	single nucleotide variant	NM_000546.6(TP53):c.1040C>T (p.Ala347Val)	P04637	A	347	V
+956897	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670679	7670679	single nucleotide variant	NM_000546.6(TP53):c.1030C>G (p.Leu344Val)	P04637	L	344	V
+818264	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670690	7670690	single nucleotide variant	NM_000546.6(TP53):c.1019T>A (p.Met340Lys)	P04637	M	340	K
+423398	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670696	7670696	single nucleotide variant	NM_000546.6(TP53):c.1013T>C (p.Phe338Ser)	P04637	F	338	S
+628432	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670696	7670696	single nucleotide variant	NM_000546.6(TP53):c.1013T>G (p.Phe338Cys)	P04637	F	338	C
+12379	TP53	1	Pathogenic/Likely pathogenic/Pathogenic, low penetrance	criteria provided, multiple submitters, no conflicts	17	7670699	7670699	single nucleotide variant	NM_000546.6(TP53):c.1010G>A (p.Arg337His)	P04637	R	337	H
+951578	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7670708	7670708	single nucleotide variant	NM_000546.6(TP53):c.1001G>A (p.Gly334Glu)	P04637	G	334	E
+428876	TP53	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7670709	7670709	single nucleotide variant	NM_000546.6(TP53):c.1000G>T (p.Gly334Trp)	P04637	G	334	W
+823553	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673537	7673537	single nucleotide variant	NM_000546.6(TP53):c.991C>A (p.Gln331Lys)	P04637	Q	331	K
+1021810	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673550	7673550	single nucleotide variant	NM_000546.6(TP53):c.978A>T (p.Glu326Asp)	P04637	E	326	D
+630832	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673558	7673558	single nucleotide variant	NM_000546.6(TP53):c.970G>T (p.Asp324Tyr)	P04637	D	324	Y
+855943	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673578	7673578	single nucleotide variant	NM_000546.6(TP53):c.950A>T (p.Gln317Leu)	P04637	Q	317	L
+927085	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673584	7673584	single nucleotide variant	NM_000546.6(TP53):c.944C>G (p.Ser315Cys)	P04637	S	315	C
+848532	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673587	7673587	single nucleotide variant	NM_000546.6(TP53):c.941C>G (p.Ser314Cys)	P04637	S	314	C
+219969	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673596	7673596	single nucleotide variant	NM_000546.6(TP53):c.932A>C (p.Asn311Thr)	P04637	N	311	T
+1020758	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673709	7673709	single nucleotide variant	NM_000546.6(TP53):c.911C>T (p.Thr304Ile)	P04637	T	304	I
+926470	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673729	7673729	single nucleotide variant	NM_000546.6(TP53):c.891C>G (p.His297Gln)	P04637	H	297	Q
+231990	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673730	7673730	single nucleotide variant	NM_000546.6(TP53):c.890A>G (p.His297Arg)	P04637	H	297	R
+12378	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673745	7673745	single nucleotide variant	NM_000546.6(TP53):c.875A>T (p.Lys292Ile)	P04637	K	292	I
+633445	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673751	7673751	single nucleotide variant	NM_000546.6(TP53):c.869G>T (p.Arg290Leu)	P04637	R	290	L
+183752	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673764	7673764	single nucleotide variant	NM_000546.6(TP53):c.856G>A (p.Glu286Lys)	P04637	E	286	K
+919894	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673766	7673766	single nucleotide variant	NM_000546.6(TP53):c.854A>G (p.Glu285Gly)	P04637	E	285	G
+420133	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673767	7673767	single nucleotide variant	NM_000546.6(TP53):c.853G>A (p.Glu285Lys)	P04637	E	285	K
+954095	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673767	7673767	single nucleotide variant	NM_000546.6(TP53):c.853G>C (p.Glu285Gln)	P04637	E	285	Q
+142324	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673772	7673772	single nucleotide variant	NM_000546.6(TP53):c.848G>A (p.Arg283His)	P04637	R	283	H
+580186	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673773	7673773	single nucleotide variant	NM_000546.6(TP53):c.847C>G (p.Arg283Gly)	P04637	R	283	G
+376659	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673775	7673775	single nucleotide variant	NM_000546.6(TP53):c.845G>C (p.Arg282Pro)	P04637	R	282	P
+12364	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673776	7673776	single nucleotide variant	NM_000546.6(TP53):c.844C>T (p.Arg282Trp)	P04637	R	282	W
+140821	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673776	7673776	single nucleotide variant	NM_000546.6(TP53):c.844C>G (p.Arg282Gly)	P04637	R	282	G
+376587	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673777	7673777	single nucleotide variant	NM_000546.6(TP53):c.843C>G (p.Asp281Glu)	P04637	D	281	E
+406568	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673777	7673777	single nucleotide variant	NM_000546.6(TP53):c.843C>A (p.Asp281Glu)	P04637	D	281	E
+141141	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673778	7673778	single nucleotide variant	NM_000546.6(TP53):c.842A>G (p.Asp281Gly)	P04637	D	281	G
+182968	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673778	7673778	single nucleotide variant	NM_000546.6(TP53):c.842A>T (p.Asp281Val)	P04637	D	281	V
+376589	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673778	7673778	single nucleotide variant	NM_000546.6(TP53):c.842A>C (p.Asp281Ala)	P04637	D	281	A
+376585	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673779	7673779	single nucleotide variant	NM_000546.6(TP53):c.841G>T (p.Asp281Tyr)	P04637	D	281	Y
+376586	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673779	7673779	single nucleotide variant	NM_000546.6(TP53):c.841G>A (p.Asp281Asn)	P04637	D	281	N
+376588	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673779	7673779	single nucleotide variant	NM_000546.6(TP53):c.841G>C (p.Asp281His)	P04637	D	281	H
+634747	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673780	7673780	single nucleotide variant	NM_000546.6(TP53):c.840A>C (p.Arg280Ser)	P04637	R	280	S
+12368	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673781	7673781	single nucleotide variant	NM_000546.6(TP53):c.839G>C (p.Arg280Thr)	P04637	R	280	T
+232497	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673787	7673787	single nucleotide variant	NM_000546.6(TP53):c.833C>T (p.Pro278Leu)	P04637	P	278	L
+376642	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673788	7673788	single nucleotide variant	NM_000546.6(TP53):c.832C>T (p.Pro278Ser)	P04637	P	278	S
+376643	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673788	7673788	single nucleotide variant	NM_000546.6(TP53):c.832C>A (p.Pro278Thr)	P04637	P	278	T
+655556	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673790	7673790	single nucleotide variant	NM_000546.6(TP53):c.830G>C (p.Cys277Ser)	P04637	C	277	S
+185319	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673793	7673793	single nucleotide variant	NM_000546.6(TP53):c.827C>G (p.Ala276Gly)	P04637	A	276	G
+827547	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673794	7673794	single nucleotide variant	NM_000546.6(TP53):c.826G>A (p.Ala276Thr)	P04637	A	276	T
+215997	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673796	7673796	single nucleotide variant	NM_000546.6(TP53):c.824G>A (p.Cys275Tyr)	P04637	C	275	Y
+376582	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673796	7673796	single nucleotide variant	NM_000546.6(TP53):c.824G>T (p.Cys275Phe)	P04637	C	275	F
+231060	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673802	7673802	single nucleotide variant	NM_000546.6(TP53):c.818G>C (p.Arg273Pro)	P04637	R	273	P
+376655	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673802	7673802	single nucleotide variant	NM_000546.6(TP53):c.818G>T (p.Arg273Leu)	P04637	R	273	L
+43594	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673803	7673803	single nucleotide variant	NM_000546.6(TP53):c.817C>T (p.Arg273Cys)	P04637	R	273	C
+376656	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673803	7673803	single nucleotide variant	NM_000546.6(TP53):c.817C>A (p.Arg273Ser)	P04637	R	273	S
+634682	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673803	7673803	single nucleotide variant	NM_000546.6(TP53):c.817C>G (p.Arg273Gly)	P04637	R	273	G
+565884	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673805	7673805	single nucleotide variant	NM_000546.6(TP53):c.815T>C (p.Val272Ala)	P04637	V	272	A
+12358	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673806	7673806	single nucleotide variant	NM_000546.6(TP53):c.814G>T (p.Val272Leu)	P04637	V	272	L
+574679	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673806	7673806	single nucleotide variant	NM_000546.6(TP53):c.814G>C (p.Val272Leu)	P04637	V	272	L
+376594	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673811	7673811	single nucleotide variant	NM_000546.6(TP53):c.809T>C (p.Phe270Ser)	P04637	F	270	S
+428867	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673820	7673820	single nucleotide variant	NM_000546.6(TP53):c.800G>C (p.Arg267Pro)	P04637	R	267	P
+852206	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7673820	7673820	single nucleotide variant	NM_000546.6(TP53):c.800G>T (p.Arg267Leu)	P04637	R	267	L
+141764	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673821	7673821	single nucleotide variant	NM_000546.6(TP53):c.799C>T (p.Arg267Trp)	P04637	R	267	W
+161516	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673823	7673823	single nucleotide variant	NM_000546.6(TP53):c.797G>A (p.Gly266Glu)	P04637	G	266	E
+376605	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673824	7673824	single nucleotide variant	NM_000546.6(TP53):c.796G>C (p.Gly266Arg)	P04637	G	266	R
+458566	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7673824	7673824	single nucleotide variant	NM_000546.6(TP53):c.796G>A (p.Gly266Arg)	P04637	G	266	R
+245777	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673826	7673826	single nucleotide variant	NM_000546.6(TP53):c.794T>C (p.Leu265Pro)	P04637	L	265	P
+953467	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7673826	7673826	single nucleotide variant	NM_000546.6(TP53):c.794T>A (p.Leu265Gln)	P04637	L	265	Q
+187005	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674181	7674181	single nucleotide variant	NM_000546.6(TP53):c.782G>C (p.Ser261Thr)	P04637	S	261	T
+188349	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674187	7674187	single nucleotide variant	NM_000546.6(TP53):c.776A>G (p.Asp259Gly)	P04637	D	259	G
+1349622	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674188	7674188	single nucleotide variant	NM_000546.6(TP53):c.775G>C (p.Asp259His)	P04637	D	259	H
+458563	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674190	7674190	single nucleotide variant	NM_000546.6(TP53):c.773A>C (p.Glu258Ala)	P04637	E	258	A
+12348	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674191	7674191	single nucleotide variant	NM_000546.6(TP53):c.772G>A (p.Glu258Lys)	P04637	E	258	K
+858889	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674196	7674196	single nucleotide variant	NM_000546.6(TP53):c.767C>T (p.Thr256Ile)	P04637	T	256	I
+141011	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674197	7674197	single nucleotide variant	NM_000546.6(TP53):c.766A>G (p.Thr256Ala)	P04637	T	256	A
+505571	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674205	7674205	single nucleotide variant	NM_000546.6(TP53):c.758C>A (p.Thr253Asn)	P04637	T	253	N
+827132	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674206	7674206	single nucleotide variant	NM_000546.6(TP53):c.757A>G (p.Thr253Ala)	P04637	T	253	A
+485046	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674210	7674210	single nucleotide variant	NM_000546.6(TP53):c.753C>G (p.Ile251Met)	P04637	I	251	M
+182937	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674212	7674212	single nucleotide variant	NM_000546.6(TP53):c.751A>C (p.Ile251Leu)	P04637	I	251	L
+1518844	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674212	7674212	single nucleotide variant	NM_000546.6(TP53):c.751A>T (p.Ile251Phe)	P04637	I	251	F
+420136	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674214	7674214	single nucleotide variant	NM_000546.6(TP53):c.749C>T (p.Pro250Leu)	P04637	P	250	L
+1316970	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674215	7674215	single nucleotide variant	NM_000546.6(TP53):c.748C>T (p.Pro250Ser)	P04637	P	250	S
+12352	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674216	7674216	single nucleotide variant	NM_000546.6(TP53):c.747G>T (p.Arg249Ser)	P04637	R	249	S
+376015	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674217	7674217	single nucleotide variant	NM_000546.6(TP53):c.746G>C (p.Arg249Thr)	P04637	R	249	T
+237954	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674220	7674220	single nucleotide variant	NM_000546.6(TP53):c.743G>C (p.Arg248Pro)	P04637	R	248	P
+376652	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674221	7674221	single nucleotide variant	NM_000546.6(TP53):c.742C>G (p.Arg248Gly)	P04637	R	248	G
+184882	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674223	7674223	single nucleotide variant	NM_000546.6(TP53):c.740A>T (p.Asn247Ile)	P04637	N	247	I
+480961	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674225	7674225	single nucleotide variant	NM_000546.6(TP53):c.738G>A (p.Met246Ile)	P04637	M	246	I
+480764	TP53	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674226	7674226	single nucleotide variant	NM_000546.6(TP53):c.737T>A (p.Met246Lys)	P04637	M	246	K
+100815	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674227	7674227	single nucleotide variant	NM_000546.6(TP53):c.736A>G (p.Met246Val)	P04637	M	246	V
+12355	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674229	7674229	single nucleotide variant	NM_000546.6(TP53):c.734G>A (p.Gly245Asp)	P04637	G	245	D
+376603	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674229	7674229	single nucleotide variant	NM_000546.6(TP53):c.734G>T (p.Gly245Val)	P04637	G	245	V
+12349	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674230	7674230	single nucleotide variant	NM_000546.6(TP53):c.733G>T (p.Gly245Cys)	P04637	G	245	C
+372785	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674232	7674232	single nucleotide variant	NM_000546.6(TP53):c.731G>A (p.Gly244Asp)	P04637	G	244	D
+458560	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674232	7674232	single nucleotide variant	NM_000546.6(TP53):c.731G>C (p.Gly244Ala)	P04637	G	244	A
+376600	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674233	7674233	single nucleotide variant	NM_000546.6(TP53):c.730G>A (p.Gly244Ser)	P04637	G	244	S
+186653	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674236	7674236	single nucleotide variant	NM_000546.6(TP53):c.727A>C (p.Met243Leu)	P04637	M	243	L
+12354	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674238	7674238	single nucleotide variant	NM_000546.6(TP53):c.725G>A (p.Cys242Tyr)	P04637	C	242	Y
+12359	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674241	7674241	single nucleotide variant	NM_000546.6(TP53):c.722C>T (p.Ser241Phe)	P04637	S	241	F
+177791	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674241	7674241	single nucleotide variant	NM_000546.6(TP53):c.722C>G (p.Ser241Cys)	P04637	S	241	C
+376663	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674241	7674241	single nucleotide variant	NM_000546.6(TP53):c.722C>A (p.Ser241Tyr)	P04637	S	241	Y
+376665	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674242	7674242	single nucleotide variant	NM_000546.6(TP53):c.721T>G (p.Ser241Ala)	P04637	S	241	A
+959232	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674242	7674242	single nucleotide variant	NM_000546.6(TP53):c.721T>A (p.Ser241Thr)	P04637	S	241	T
+458559	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674243	7674243	single nucleotide variant	NM_000546.6(TP53):c.720T>G (p.Ser240Arg)	P04637	S	240	R
+1504304	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674243	7674243	single nucleotide variant	NM_000546.6(TP53):c.720T>A (p.Ser240Arg)	P04637	S	240	R
+1036853	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674244	7674244	single nucleotide variant	NM_000546.6(TP53):c.719G>T (p.Ser240Ile)	P04637	S	240	I
+584921	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674245	7674245	single nucleotide variant	NM_000546.6(TP53):c.718A>G (p.Ser240Gly)	P04637	S	240	G
+376637	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674247	7674247	single nucleotide variant	NM_000546.6(TP53):c.716A>G (p.Asn239Ser)	P04637	N	239	S
+161515	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674249	7674249	single nucleotide variant	NM_000546.6(TP53):c.714T>G (p.Cys238Trp)	P04637	C	238	W
+182935	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674250	7674250	single nucleotide variant	NM_000546.6(TP53):c.713G>A (p.Cys238Tyr)	P04637	C	238	Y
+376574	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674250	7674250	single nucleotide variant	NM_000546.6(TP53):c.713G>T (p.Cys238Phe)	P04637	C	238	F
+376575	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674250	7674250	single nucleotide variant	NM_000546.6(TP53):c.713G>C (p.Cys238Ser)	P04637	C	238	S
+376576	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674251	7674251	single nucleotide variant	NM_000546.6(TP53):c.712T>C (p.Cys238Arg)	P04637	C	238	R
+376577	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674251	7674251	single nucleotide variant	NM_000546.6(TP53):c.712T>G (p.Cys238Gly)	P04637	C	238	G
+634770	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674252	7674252	single nucleotide variant	NM_000546.6(TP53):c.711G>T (p.Met237Ile)	P04637	M	237	I
+376636	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674253	7674253	single nucleotide variant	NM_000546.6(TP53):c.710T>A (p.Met237Lys)	P04637	M	237	K
+419524	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674253	7674253	single nucleotide variant	NM_000546.6(TP53):c.710T>G (p.Met237Arg)	P04637	M	237	R
+481069	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674253	7674253	single nucleotide variant	NM_000546.6(TP53):c.710T>C (p.Met237Thr)	P04637	M	237	T
+376693	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674256	7674256	single nucleotide variant	NM_000546.6(TP53):c.707A>G (p.Tyr236Cys)	P04637	Y	236	C
+216469	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674257	7674257	single nucleotide variant	NM_000546.6(TP53):c.706T>C (p.Tyr236His)	P04637	Y	236	H
+127820	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674262	7674262	single nucleotide variant	NM_000546.6(TP53):c.701A>G (p.Tyr234Cys)	P04637	Y	234	C
+219759	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674263	7674263	single nucleotide variant	NM_000546.6(TP53):c.700T>G (p.Tyr234Asp)	P04637	Y	234	D
+376691	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674263	7674263	single nucleotide variant	NM_000546.6(TP53):c.700T>C (p.Tyr234His)	P04637	Y	234	H
+376692	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674263	7674263	single nucleotide variant	NM_000546.6(TP53):c.700T>A (p.Tyr234Asn)	P04637	Y	234	N
+141224	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674268	7674268	single nucleotide variant	NM_000546.6(TP53):c.695T>C (p.Ile232Thr)	P04637	I	232	T
+850008	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674268	7674268	single nucleotide variant	NM_000546.6(TP53):c.695T>A (p.Ile232Asn)	P04637	I	232	N
+458557	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674271	7674271	single nucleotide variant	NM_000546.6(TP53):c.692C>T (p.Thr231Ile)	P04637	T	231	I
+921142	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674271	7674271	single nucleotide variant	NM_000546.6(TP53):c.692C>G (p.Thr231Ser)	P04637	T	231	S
+863153	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674272	7674272	single nucleotide variant	NM_000546.6(TP53):c.691A>G (p.Thr231Ala)	P04637	T	231	A
+953956	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674275	7674275	single nucleotide variant	NM_000546.6(TP53):c.688A>G (p.Thr230Ala)	P04637	T	230	A
+1026715	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674278	7674278	single nucleotide variant	NM_000546.6(TP53):c.685T>G (p.Cys229Gly)	P04637	C	229	G
+951459	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674286	7674286	single nucleotide variant	NM_000546.6(TP53):c.677G>C (p.Gly226Ala)	P04637	G	226	A
+648028	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674287	7674287	single nucleotide variant	NM_000546.6(TP53):c.676G>A (p.Gly226Ser)	P04637	G	226	S
+428892	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674860	7674860	single nucleotide variant	NM_000546.6(TP53):c.671A>C (p.Glu224Ala)	P04637	E	224	A
+826574	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674860	7674860	single nucleotide variant	NM_000546.6(TP53):c.671A>G (p.Glu224Gly)	P04637	E	224	G
+480767	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674861	7674861	single nucleotide variant	NM_000546.6(TP53):c.670G>A (p.Glu224Lys)	P04637	E	224	K
+234214	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674863	7674863	single nucleotide variant	NM_000546.6(TP53):c.668C>T (p.Pro223Leu)	P04637	P	223	L
+184647	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674870	7674870	single nucleotide variant	NM_000546.6(TP53):c.661G>A (p.Glu221Lys)	P04637	E	221	K
+12383	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674872	7674872	single nucleotide variant	NM_000546.6(TP53):c.659A>C (p.Tyr220Ser)	P04637	Y	220	S
+376687	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674873	7674873	single nucleotide variant	NM_000546.6(TP53):c.658T>C (p.Tyr220His)	P04637	Y	220	H
+376672	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674884	7674884	single nucleotide variant	NM_000546.6(TP53):c.647T>A (p.Val216Glu)	P04637	V	216	E
+182965	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674885	7674885	single nucleotide variant	NM_000546.6(TP53):c.646G>A (p.Val216Met)	P04637	V	216	M
+643078	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674890	7674890	single nucleotide variant	NM_000546.6(TP53):c.641A>C (p.His214Pro)	P04637	H	214	P
+230254	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674891	7674891	single nucleotide variant	NM_000546.6(TP53):c.640C>A (p.His214Asn)	P04637	H	214	N
+135359	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674893	7674893	single nucleotide variant	NM_000546.6(TP53):c.638G>A (p.Arg213Gln)	P04637	R	213	Q
+231214	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674893	7674893	single nucleotide variant	NM_000546.6(TP53):c.638G>C (p.Arg213Pro)	P04637	R	213	P
+406581	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674900	7674900	single nucleotide variant	NM_000546.6(TP53):c.631A>G (p.Thr211Ala)	P04637	T	211	A
+584922	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674908	7674908	single nucleotide variant	NM_000546.6(TP53):c.623A>G (p.Asp208Gly)	P04637	D	208	G
+826261	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674909	7674909	single nucleotide variant	NM_000546.6(TP53):c.622G>C (p.Asp208His)	P04637	D	208	H
+376681	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674917	7674917	single nucleotide variant	NM_000546.6(TP53):c.614A>G (p.Tyr205Cys)	P04637	Y	205	C
+376685	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674918	7674918	single nucleotide variant	NM_000546.6(TP53):c.613T>C (p.Tyr205His)	P04637	Y	205	H
+376686	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674918	7674918	single nucleotide variant	NM_000546.6(TP53):c.613T>G (p.Tyr205Asp)	P04637	Y	205	D
+482235	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674924	7674924	single nucleotide variant	NM_000546.6(TP53):c.607G>C (p.Val203Leu)	P04637	V	203	L
+482218	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674924	7674924	single nucleotide variant	NM_000546.6(TP53):c.607G>T (p.Val203Leu)	P04637	V	203	L
+182932	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674926	7674926	single nucleotide variant	NM_000546.6(TP53):c.605G>T (p.Arg202Leu)	P04637	R	202	L
+1061739	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674933	7674933	single nucleotide variant	NM_000546.6(TP53):c.598A>G (p.Asn200Asp)	P04637	N	200	D
+582257	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674935	7674935	single nucleotide variant	NM_000546.6(TP53):c.596G>A (p.Gly199Glu)	P04637	G	199	E
+1015039	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674936	7674936	single nucleotide variant	NM_000546.6(TP53):c.595G>A (p.Gly199Arg)	P04637	G	199	R
+634757	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674941	7674941	single nucleotide variant	NM_000546.6(TP53):c.590T>A (p.Val197Glu)	P04637	V	197	E
+826051	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674941	7674941	single nucleotide variant	NM_000546.6(TP53):c.590T>G (p.Val197Gly)	P04637	V	197	G
+216468	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674942	7674942	single nucleotide variant	NM_000546.6(TP53):c.589G>T (p.Val197Leu)	P04637	V	197	L
+480766	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674942	7674942	single nucleotide variant	NM_000546.6(TP53):c.589G>C (p.Val197Leu)	P04637	V	197	L
+231165	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674944	7674944	single nucleotide variant	NM_000546.6(TP53):c.587G>C (p.Arg196Pro)	P04637	R	196	P
+376620	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674946	7674946	single nucleotide variant	NM_000546.6(TP53):c.585C>G (p.Ile195Met)	P04637	I	195	M
+216077	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7674947	7674947	single nucleotide variant	NM_000546.6(TP53):c.584T>C (p.Ile195Thr)	P04637	I	195	T
+127817	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674951	7674951	single nucleotide variant	NM_000546.6(TP53):c.580C>T (p.Leu194Phe)	P04637	L	194	F
+184979	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674953	7674953	single nucleotide variant	NM_000546.6(TP53):c.578A>G (p.His193Arg)	P04637	H	193	R
+230256	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674954	7674954	single nucleotide variant	NM_000546.6(TP53):c.577C>T (p.His193Tyr)	P04637	H	193	Y
+3460301	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7674954	7674954	single nucleotide variant	NM_000546.6(TP53):c.577C>A (p.His193Asn)	P04637	H	193	N
+922531	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674955	7674955	single nucleotide variant	NM_000546.6(TP53):c.576G>T (p.Gln192His)	P04637	Q	192	H
+853530	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674959	7674959	single nucleotide variant	NM_000546.6(TP53):c.572C>A (p.Pro191His)	P04637	P	191	H
+233197	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674963	7674963	single nucleotide variant	NM_000546.6(TP53):c.568C>A (p.Pro190Thr)	P04637	P	190	T
+646725	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674963	7674963	single nucleotide variant	NM_000546.6(TP53):c.568C>T (p.Pro190Ser)	P04637	P	190	S
+528262	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674966	7674966	single nucleotide variant	NM_000546.6(TP53):c.565G>T (p.Ala189Ser)	P04637	A	189	S
+422532	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7674971	7674971	single nucleotide variant	NM_000546.6(TP53):c.560G>A (p.Gly187Asp)	P04637	G	187	D
+230006	TP53	0	Likely benign	criteria provided, multiple submitters, no conflicts	17	7675054	7675054	single nucleotide variant	NM_000546.6(TP53):c.558T>A (p.Asp186Glu)	P04637	D	186	E
+423137	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675066	7675066	single nucleotide variant	NM_000546.6(TP53):c.546C>G (p.Cys182Trp)	P04637	C	182	W
+142320	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675070	7675070	single nucleotide variant	NM_000546.6(TP53):c.542G>A (p.Arg181His)	P04637	R	181	H
+825729	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675070	7675070	single nucleotide variant	NM_000546.6(TP53):c.542G>C (p.Arg181Pro)	P04637	R	181	P
+376607	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675075	7675075	single nucleotide variant	NM_000546.6(TP53):c.537T>G (p.His179Gln)	P04637	H	179	Q
+376606	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675076	7675076	single nucleotide variant	NM_000546.6(TP53):c.536A>G (p.His179Arg)	P04637	H	179	R
+127815	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675077	7675077	single nucleotide variant	NM_000546.6(TP53):c.535C>T (p.His179Tyr)	P04637	H	179	Y
+376610	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675077	7675077	single nucleotide variant	NM_000546.6(TP53):c.535C>G (p.His179Asp)	P04637	H	179	D
+575702	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675078	7675078	single nucleotide variant	NM_000546.6(TP53):c.534C>A (p.His178Gln)	P04637	H	178	Q
+947223	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675078	7675078	single nucleotide variant	NM_000546.6(TP53):c.534C>G (p.His178Gln)	P04637	H	178	Q
+421546	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675080	7675080	single nucleotide variant	NM_000546.6(TP53):c.532C>A (p.His178Asn)	P04637	H	178	N
+458547	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675082	7675082	single nucleotide variant	NM_000546.6(TP53):c.530C>G (p.Pro177Arg)	P04637	P	177	R
+956854	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675082	7675082	single nucleotide variant	NM_000546.6(TP53):c.530C>A (p.Pro177His)	P04637	P	177	H
+482220	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675083	7675083	single nucleotide variant	NM_000546.6(TP53):c.529C>A (p.Pro177Thr)	P04637	P	177	T
+646495	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675083	7675083	single nucleotide variant	NM_000546.6(TP53):c.529C>T (p.Pro177Ser)	P04637	P	177	S
+186451	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675085	7675085	single nucleotide variant	NM_000546.6(TP53):c.527G>A (p.Cys176Tyr)	P04637	C	176	Y
+376569	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675085	7675085	single nucleotide variant	NM_000546.6(TP53):c.527G>T (p.Cys176Phe)	P04637	C	176	F
+1058186	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675090	7675090	single nucleotide variant	NM_000546.6(TP53):c.522G>C (p.Arg174Ser)	P04637	R	174	S
+219487	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675092	7675092	single nucleotide variant	NM_000546.6(TP53):c.520A>G (p.Arg174Gly)	P04637	R	174	G
+376017	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675094	7675094	single nucleotide variant	NM_000546.6(TP53):c.518T>C (p.Val173Ala)	P04637	V	173	A
+376668	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675095	7675095	single nucleotide variant	NM_000546.6(TP53):c.517G>T (p.Val173Leu)	P04637	V	173	L
+825481	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675098	7675098	single nucleotide variant	NM_000546.6(TP53):c.514G>A (p.Val172Ile)	P04637	V	172	I
+490174	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675103	7675103	single nucleotide variant	NM_000546.6(TP53):c.509C>G (p.Thr170Arg)	P04637	T	170	R
+135949	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675104	7675104	single nucleotide variant	NM_000546.6(TP53):c.508A>G (p.Thr170Ala)	P04637	T	170	A
+919322	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675105	7675105	single nucleotide variant	NM_000546.6(TP53):c.507G>T (p.Met169Ile)	P04637	M	169	I
+844926	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675107	7675107	single nucleotide variant	NM_000546.6(TP53):c.505A>G (p.Met169Val)	P04637	M	169	V
+490173	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675112	7675112	single nucleotide variant	NM_000546.6(TP53):c.500A>C (p.Gln167Pro)	P04637	Q	167	P
+528239	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675115	7675115	single nucleotide variant	NM_000546.6(TP53):c.497C>T (p.Ser166Leu)	P04637	S	166	L
+161518	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675131	7675131	single nucleotide variant	NM_000546.6(TP53):c.481G>A (p.Ala161Thr)	P04637	A	161	T
+458545	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675136	7675136	single nucleotide variant	NM_000546.6(TP53):c.476C>T (p.Ala159Val)	P04637	A	159	V
+1026335	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675136	7675136	single nucleotide variant	NM_000546.6(TP53):c.476C>A (p.Ala159Asp)	P04637	A	159	D
+141963	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675139	7675139	single nucleotide variant	NM_000546.6(TP53):c.473G>A (p.Arg158His)	P04637	R	158	H
+856171	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675140	7675140	single nucleotide variant	NM_000546.6(TP53):c.472C>G (p.Arg158Gly)	P04637	R	158	G
+915695	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675142	7675142	single nucleotide variant	NM_000546.6(TP53):c.470T>G (p.Val157Gly)	P04637	V	157	G
+12353	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675143	7675143	single nucleotide variant	NM_000546.6(TP53):c.469G>T (p.Val157Phe)	P04637	V	157	F
+634768	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675145	7675145	single nucleotide variant	NM_000546.6(TP53):c.467G>C (p.Arg156Pro)	P04637	R	156	P
+406564	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675148	7675148	single nucleotide variant	NM_000546.6(TP53):c.464C>A (p.Thr155Asn)	P04637	T	155	N
+133284	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675152	7675152	single nucleotide variant	NM_000546.6(TP53):c.460G>A (p.Gly154Ser)	P04637	G	154	S
+824998	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675157	7675157	single nucleotide variant	NM_000546.6(TP53):c.455C>G (p.Pro152Arg)	P04637	P	152	R
+1058730	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675157	7675157	single nucleotide variant	NM_000546.6(TP53):c.455C>A (p.Pro152Gln)	P04637	P	152	Q
+376640	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675160	7675160	single nucleotide variant	NM_000546.6(TP53):c.452C>G (p.Pro151Arg)	P04637	P	151	R
+12369	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675161	7675161	single nucleotide variant	NM_000546.6(TP53):c.451C>A (p.Pro151Thr)	P04637	P	151	T
+12370	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675161	7675161	single nucleotide variant	NM_000546.6(TP53):c.451C>T (p.Pro151Ser)	P04637	P	151	S
+376641	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675161	7675161	single nucleotide variant	NM_000546.6(TP53):c.451C>G (p.Pro151Ala)	P04637	P	151	A
+486559	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675166	7675166	single nucleotide variant	NM_000546.6(TP53):c.446C>T (p.Ser149Phe)	P04637	S	149	F
+842812	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675172	7675172	single nucleotide variant	NM_000546.6(TP53):c.440T>C (p.Val147Ala)	P04637	V	147	A
+824855	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675174	7675174	single nucleotide variant	NM_000546.6(TP53):c.438G>T (p.Trp146Cys)	P04637	W	146	C
+486556	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675184	7675184	single nucleotide variant	NM_000546.6(TP53):c.428T>G (p.Val143Gly)	P04637	V	143	G
+142657	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675185	7675185	single nucleotide variant	NM_000546.6(TP53):c.427G>A (p.Val143Met)	P04637	V	143	M
+185729	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675185	7675185	single nucleotide variant	NM_000546.6(TP53):c.427G>T (p.Val143Leu)	P04637	V	143	L
+824720	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675188	7675188	single nucleotide variant	NM_000546.6(TP53):c.424C>T (p.Pro142Ser)	P04637	P	142	S
+376564	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675189	7675189	single nucleotide variant	NM_000546.6(TP53):c.423C>G (p.Cys141Trp)	P04637	C	141	W
+140801	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675190	7675190	single nucleotide variant	NM_000546.6(TP53):c.422G>A (p.Cys141Tyr)	P04637	C	141	Y
+1525853	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675194	7675194	single nucleotide variant	NM_000546.6(TP53):c.418A>T (p.Thr140Ser)	P04637	T	140	S
+584923	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675195	7675195	single nucleotide variant	NM_000546.6(TP53):c.417G>T (p.Lys139Asn)	P04637	K	139	N
+1338658	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675196	7675196	single nucleotide variant	NM_000546.6(TP53):c.416A>C (p.Lys139Thr)	P04637	K	139	T
+658923	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675197	7675197	single nucleotide variant	NM_000546.6(TP53):c.415A>G (p.Lys139Glu)	P04637	K	139	E
+186301	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675204	7675204	single nucleotide variant	NM_000546.6(TP53):c.408A>C (p.Gln136His)	P04637	Q	136	H
+482213	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675204	7675204	single nucleotide variant	NM_000546.6(TP53):c.408A>T (p.Gln136His)	P04637	Q	136	H
+376559	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675208	7675208	single nucleotide variant	NM_000546.6(TP53):c.404G>T (p.Cys135Phe)	P04637	C	135	F
+376560	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675209	7675209	single nucleotide variant	NM_000546.6(TP53):c.403T>C (p.Cys135Arg)	P04637	C	135	R
+230477	TP53	1	Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675211	7675211	single nucleotide variant	NM_000546.6(TP53):c.401T>G (p.Phe134Cys)	P04637	F	134	C
+12357	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675214	7675214	single nucleotide variant	NM_000546.6(TP53):c.398T>C (p.Met133Thr)	P04637	M	133	T
+634773	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675216	7675216	single nucleotide variant	NM_000546.6(TP53):c.396G>T (p.Lys132Asn)	P04637	K	132	N
+376625	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675217	7675217	single nucleotide variant	NM_000546.6(TP53):c.395A>G (p.Lys132Arg)	P04637	K	132	R
+428902	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675220	7675220	single nucleotide variant	NM_000546.6(TP53):c.392A>T (p.Asn131Ile)	P04637	N	131	I
+1057941	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675220	7675220	single nucleotide variant	NM_000546.6(TP53):c.392A>G (p.Asn131Ser)	P04637	N	131	S
+428873	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675223	7675223	single nucleotide variant	NM_000546.6(TP53):c.389T>C (p.Leu130Pro)	P04637	L	130	P
+824286	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7675229	7675229	single nucleotide variant	NM_000546.6(TP53):c.383C>T (p.Pro128Leu)	P04637	P	128	L
+182928	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675232	7675232	single nucleotide variant	NM_000546.6(TP53):c.380C>T (p.Ser127Phe)	P04637	S	127	F
+265333	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675236	7675236	single nucleotide variant	NM_000546.6(TP53):c.376T>G (p.Tyr126Asp)	P04637	Y	126	D
+216465	TP53	1	Pathogenic	criteria provided, multiple submitters, no conflicts	17	7675995	7675995	single nucleotide variant	NM_000546.6(TP53):c.374C>A (p.Thr125Lys)	P04637	T	125	K
+376667	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7675995	7675995	single nucleotide variant	NM_000546.6(TP53):c.374C>G (p.Thr125Arg)	P04637	T	125	R
+480737	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676001	7676001	single nucleotide variant	NM_000546.6(TP53):c.368C>T (p.Thr123Ile)	P04637	T	123	I
+854451	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676008	7676008	single nucleotide variant	NM_000546.6(TP53):c.361T>C (p.Ser121Pro)	P04637	S	121	P
+917693	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676010	7676010	single nucleotide variant	NM_000546.6(TP53):c.359A>T (p.Lys120Met)	P04637	K	120	M
+423255	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676011	7676011	single nucleotide variant	NM_000546.6(TP53):c.358A>C (p.Lys120Gln)	P04637	K	120	Q
+481073	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676014	7676014	single nucleotide variant	NM_000546.6(TP53):c.355G>C (p.Ala119Pro)	P04637	A	119	P
+480758	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676020	7676020	single nucleotide variant	NM_000546.6(TP53):c.349G>A (p.Gly117Arg)	P04637	G	117	R
+1319402	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676034	7676034	single nucleotide variant	NM_000546.6(TP53):c.335G>A (p.Gly112Asp)	P04637	G	112	D
+836750	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676038	7676038	single nucleotide variant	NM_000546.6(TP53):c.331C>A (p.Leu111Met)	P04637	L	111	M
+140921	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676041	7676041	single nucleotide variant	NM_000546.6(TP53):c.328C>A (p.Arg110Ser)	P04637	R	110	S
+423970	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676043	7676043	single nucleotide variant	NM_000546.6(TP53):c.326T>C (p.Phe109Ser)	P04637	F	109	S
+458535	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676047	7676047	single nucleotide variant	NM_000546.6(TP53):c.322G>C (p.Gly108Arg)	P04637	G	108	R
+142691	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676049	7676049	single nucleotide variant	NM_000546.6(TP53):c.320A>G (p.Tyr107Cys)	P04637	Y	107	C
+406574	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7676056	7676056	single nucleotide variant	NM_000546.6(TP53):c.313G>C (p.Gly105Arg)	P04637	G	105	R
+428884	TP53	1	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	17	7676056	7676056	single nucleotide variant	NM_000546.6(TP53):c.313G>A (p.Gly105Ser)	P04637	G	105	S
+237947	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676066	7676066	single nucleotide variant	NM_000546.6(TP53):c.303A>T (p.Lys101Asn)	P04637	K	101	N
+1059163	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676068	7676068	single nucleotide variant	NM_000546.6(TP53):c.301A>G (p.Lys101Glu)	P04637	K	101	E
+822279	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676077	7676077	single nucleotide variant	NM_000546.6(TP53):c.292C>T (p.Pro98Ser)	P04637	P	98	S
+1039474	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676077	7676077	single nucleotide variant	NM_000546.6(TP53):c.292C>G (p.Pro98Ala)	P04637	P	98	A
+182924	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676079	7676079	single nucleotide variant	NM_000546.6(TP53):c.290T>A (p.Val97Asp)	P04637	V	97	D
+1026336	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676080	7676080	single nucleotide variant	NM_000546.6(TP53):c.289G>A (p.Val97Ile)	P04637	V	97	I
+528268	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676100	7676100	single nucleotide variant	NM_000546.6(TP53):c.269C>T (p.Ser90Phe)	P04637	S	90	F
+923486	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676116	7676116	single nucleotide variant	NM_000546.6(TP53):c.253C>T (p.Pro85Ser)	P04637	P	85	S
+406593	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676131	7676131	single nucleotide variant	NM_000546.6(TP53):c.238C>T (p.Pro80Ser)	P04637	P	80	S
+655254	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676133	7676133	single nucleotide variant	NM_000546.6(TP53):c.236C>G (p.Ala79Gly)	P04637	A	79	G
+630031	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676160	7676160	single nucleotide variant	NM_000546.6(TP53):c.209C>T (p.Ala70Val)	P04637	A	70	V
+490170	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676167	7676167	single nucleotide variant	NM_000546.6(TP53):c.202G>C (p.Glu68Gln)	P04637	E	68	Q
+237942	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676214	7676214	single nucleotide variant	NM_000546.6(TP53):c.155A>G (p.Gln52Arg)	P04637	Q	52	R
+187302	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676220	7676220	single nucleotide variant	NM_000546.6(TP53):c.149T>A (p.Ile50Asn)	P04637	I	50	N
+182921	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676263	7676263	single nucleotide variant	NM_000546.6(TP53):c.106C>T (p.Pro36Ser)	P04637	P	36	S
+818276	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676268	7676268	single nucleotide variant	NM_000546.6(TP53):c.101C>T (p.Pro34Leu)	P04637	P	34	L
+233852	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676387	7676387	single nucleotide variant	NM_000546.6(TP53):c.91G>T (p.Val31Phe)	P04637	V	31	F
+638927	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676391	7676391	single nucleotide variant	NM_000546.6(TP53):c.87C>G (p.Asn29Lys)	P04637	N	29	K
+842527	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676392	7676392	single nucleotide variant	NM_000546.6(TP53):c.86A>C (p.Asn29Thr)	P04637	N	29	T
+664352	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676398	7676398	single nucleotide variant	NM_000546.6(TP53):c.80C>G (p.Pro27Arg)	P04637	P	27	R
+528271	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676399	7676399	single nucleotide variant	NM_000546.6(TP53):c.79C>T (p.Pro27Ser)	P04637	P	27	S
+826109	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676536	7676536	single nucleotide variant	NM_000546.6(TP53):c.59C>T (p.Ser20Leu)	P04637	S	20	L
+232673	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676537	7676537	single nucleotide variant	NM_000546.6(TP53):c.58T>C (p.Ser20Pro)	P04637	S	20	P
+642623	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676547	7676547	single nucleotide variant	NM_000546.6(TP53):c.48G>C (p.Gln16His)	P04637	Q	16	H
+821828	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676568	7676568	single nucleotide variant	NM_000546.6(TP53):c.27C>A (p.Ser9Arg)	P04637	S	9	R
+187706	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676587	7676587	single nucleotide variant	NM_000546.6(TP53):c.8A>G (p.Glu3Gly)	P04637	E	3	G
+861772	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676588	7676588	single nucleotide variant	NM_000546.6(TP53):c.7G>C (p.Glu3Gln)	P04637	E	3	Q
+926778	TP53	-1	Uncertain significance	criteria provided, multiple submitters, no conflicts	17	7676590	7676590	single nucleotide variant	NM_000546.6(TP53):c.5A>G (p.Glu2Gly)	P04637	E	2	G
+1026463	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669612	7669612	single nucleotide variant	NM_000546.6(TP53):c.1179C>G (p.Asp393Glu)	P04637	D	393	E
+492574	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669614	7669614	single nucleotide variant	NM_000546.6(TP53):c.1177G>A (p.Asp393Asn)	P04637	D	393	N
+818502	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669614	7669614	single nucleotide variant	NM_000546.6(TP53):c.1177G>C (p.Asp393His)	P04637	D	393	H
+818485	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7669623	7669623	single nucleotide variant	NM_000546.6(TP53):c.1168C>A (p.Pro390Thr)	P04637	P	390	T
+458522	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669626	7669626	single nucleotide variant	NM_000546.6(TP53):c.1165G>A (p.Gly389Arg)	P04637	G	389	R
+485050	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669631	7669631	single nucleotide variant	NM_000546.6(TP53):c.1160C>G (p.Thr387Arg)	P04637	T	387	R
+818446	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669634	7669634	single nucleotide variant	NM_000546.6(TP53):c.1157A>G (p.Lys386Arg)	P04637	K	386	R
+485029	TP53	0	Likely benign	criteria provided, single submitter	17	7669638	7669638	single nucleotide variant	NM_000546.6(TP53):c.1153T>C (p.Phe385Leu)	P04637	F	385	L
+639734	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669639	7669639	single nucleotide variant	NM_000546.6(TP53):c.1152G>A (p.Met384Ile)	P04637	M	384	I
+458521	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7669640	7669640	single nucleotide variant	NM_000546.6(TP53):c.1151T>G (p.Met384Arg)	P04637	M	384	R
+619733	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669644	7669644	single nucleotide variant	NM_000546.6(TP53):c.1147C>T (p.Leu383Phe)	P04637	L	383	F
+186611	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669656	7669656	single nucleotide variant	NM_000546.6(TP53):c.1135C>T (p.Arg379Cys)	P04637	R	379	C
+480749	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669658	7669658	single nucleotide variant	NM_000546.6(TP53):c.1133C>G (p.Ser378Cys)	P04637	S	378	C
+822222	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669661	7669661	single nucleotide variant	NM_000546.6(TP53):c.1130C>T (p.Thr377Ile)	P04637	T	377	I
+975959	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669662	7669662	single nucleotide variant	NM_000546.6(TP53):c.1129A>C (p.Thr377Pro)	P04637	T	377	P
+492573	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7669664	7669664	single nucleotide variant	NM_000546.6(TP53):c.1127C>T (p.Ser376Phe)	P04637	S	376	F
+141583	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669671	7669671	single nucleotide variant	NM_000546.6(TP53):c.1120G>A (p.Gly374Ser)	P04637	G	374	S
+665996	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669671	7669671	single nucleotide variant	NM_000546.6(TP53):c.1120G>T (p.Gly374Cys)	P04637	G	374	C
+839498	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669672	7669672	single nucleotide variant	NM_000546.6(TP53):c.1119G>T (p.Lys373Asn)	P04637	K	373	N
+577458	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669673	7669673	single nucleotide variant	NM_000546.6(TP53):c.1118A>G (p.Lys373Arg)	P04637	K	373	R
+1059527	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7669673	7669673	single nucleotide variant	NM_000546.6(TP53):c.1118A>T (p.Lys373Met)	P04637	K	373	M
+230970	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669676	7669676	single nucleotide variant	NM_000546.6(TP53):c.1115A>G (p.Lys372Arg)	P04637	K	372	R
+439315	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7669676	7669676	single nucleotide variant	NM_000546.6(TP53):c.1115A>C (p.Lys372Thr)	P04637	K	372	T
+485038	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669687	7669687	single nucleotide variant	NM_000546.6(TP53):c.1104C>G (p.His368Gln)	P04637	H	368	Q
+657014	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7669687	7669687	single nucleotide variant	NM_000546.6(TP53):c.1104C>A (p.His368Gln)	P04637	H	368	Q
+1386302	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7669688	7669688	single nucleotide variant	NM_000546.6(TP53):c.1103A>G (p.His368Arg)	P04637	H	368	R
+858737	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670609	7670609	single nucleotide variant	NM_000546.6(TP53):c.1100G>C (p.Ser367Thr)	P04637	S	367	T
+848951	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670619	7670619	single nucleotide variant	NM_000546.6(TP53):c.1090G>T (p.Ala364Ser)	P04637	A	364	S
+945439	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670620	7670620	single nucleotide variant	NM_000546.6(TP53):c.1089G>T (p.Arg363Ser)	P04637	R	363	S
+188151	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670622	7670622	single nucleotide variant	NM_000546.6(TP53):c.1087A>G (p.Arg363Gly)	P04637	R	363	G
+458516	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670624	7670624	single nucleotide variant	NM_000546.6(TP53):c.1085G>A (p.Ser362Asn)	P04637	S	362	N
+485048	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670624	7670624	single nucleotide variant	NM_000546.6(TP53):c.1085G>T (p.Ser362Ile)	P04637	S	362	I
+458515	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670625	7670625	single nucleotide variant	NM_000546.6(TP53):c.1084A>T (p.Ser362Cys)	P04637	S	362	C
+141331	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670627	7670627	single nucleotide variant	NM_000546.6(TP53):c.1082G>A (p.Gly361Glu)	P04637	G	361	E
+142552	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670630	7670630	single nucleotide variant	NM_000546.6(TP53):c.1079G>T (p.Gly360Val)	P04637	G	360	V
+230306	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670630	7670630	single nucleotide variant	NM_000546.6(TP53):c.1079G>A (p.Gly360Glu)	P04637	G	360	E
+186887	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670631	7670631	single nucleotide variant	NM_000546.6(TP53):c.1078G>A (p.Gly360Arg)	P04637	G	360	R
+480753	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670631	7670631	single nucleotide variant	NM_000546.6(TP53):c.1078G>T (p.Gly360Trp)	P04637	G	360	W
+1171953	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670633	7670633	single nucleotide variant	NM_000546.6(TP53):c.1076C>G (p.Pro359Arg)	P04637	P	359	R
+230534	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670636	7670636	single nucleotide variant	NM_000546.6(TP53):c.1073A>T (p.Glu358Val)	P04637	E	358	V
+142105	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670637	7670637	single nucleotide variant	NM_000546.6(TP53):c.1072G>A (p.Glu358Lys)	P04637	E	358	K
+584919	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670640	7670640	single nucleotide variant	NM_000546.6(TP53):c.1069A>G (p.Lys357Glu)	P04637	K	357	E
+528241	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670645	7670645	single nucleotide variant	NM_000546.6(TP53):c.1064C>T (p.Ala355Val)	P04637	A	355	V
+1046623	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670645	7670645	single nucleotide variant	NM_000546.6(TP53):c.1064C>G (p.Ala355Gly)	P04637	A	355	G
+629928	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670648	7670648	single nucleotide variant	NM_000546.6(TP53):c.1061A>G (p.Gln354Arg)	P04637	Q	354	R
+1061283	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670649	7670649	single nucleotide variant	NM_000546.6(TP53):c.1060C>G (p.Gln354Glu)	P04637	Q	354	E
+481148	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670655	7670655	single nucleotide variant	NM_000546.6(TP53):c.1054G>T (p.Asp352Tyr)	P04637	D	352	Y
+458513	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670657	7670657	single nucleotide variant	NM_000546.6(TP53):c.1052A>G (p.Lys351Arg)	P04637	K	351	R
+481022	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670661	7670661	single nucleotide variant	NM_000546.6(TP53):c.1048C>T (p.Leu350Phe)	P04637	L	350	F
+854234	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670661	7670661	single nucleotide variant	NM_000546.6(TP53):c.1048C>G (p.Leu350Val)	P04637	L	350	V
+657729	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670664	7670664	single nucleotide variant	NM_000546.6(TP53):c.1045G>C (p.Glu349Gln)	P04637	E	349	Q
+839717	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670664	7670664	single nucleotide variant	NM_000546.6(TP53):c.1045G>A (p.Glu349Lys)	P04637	E	349	K
+406571	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670667	7670667	single nucleotide variant	NM_000546.6(TP53):c.1042T>G (p.Leu348Val)	P04637	L	348	V
+480755	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670671	7670671	single nucleotide variant	NM_000546.6(TP53):c.1038G>C (p.Glu346Asp)	P04637	E	346	D
+646925	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670673	7670673	single nucleotide variant	NM_000546.6(TP53):c.1036G>A (p.Glu346Lys)	P04637	E	346	K
+1015453	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670682	7670682	single nucleotide variant	NM_000546.6(TP53):c.1027G>C (p.Glu343Gln)	P04637	E	343	Q
+1055894	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670684	7670684	single nucleotide variant	NM_000546.6(TP53):c.1025G>T (p.Arg342Leu)	P04637	R	342	L
+1020154	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670689	7670689	single nucleotide variant	NM_000546.6(TP53):c.1020G>A (p.Met340Ile)	P04637	M	340	I
+822016	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670693	7670693	single nucleotide variant	NM_000546.6(TP53):c.1016A>G (p.Glu339Gly)	P04637	E	339	G
+959616	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670693	7670693	single nucleotide variant	NM_000546.6(TP53):c.1016A>T (p.Glu339Val)	P04637	E	339	V
+142846	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670694	7670694	single nucleotide variant	NM_000546.6(TP53):c.1015G>A (p.Glu339Lys)	P04637	E	339	K
+482226	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670695	7670695	single nucleotide variant	NM_000546.6(TP53):c.1014C>G (p.Phe338Leu)	P04637	F	338	L
+480738	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670705	7670705	single nucleotide variant	NM_000546.6(TP53):c.1004G>A (p.Arg335His)	P04637	R	335	H
+840626	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670705	7670705	single nucleotide variant	NM_000546.6(TP53):c.1004G>C (p.Arg335Pro)	P04637	R	335	P
+186086	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7670709	7670709	single nucleotide variant	NM_000546.6(TP53):c.1000G>A (p.Gly334Arg)	P04637	G	334	R
+458583	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7670713	7670713	single nucleotide variant	NM_000546.6(TP53):c.996C>G (p.Ile332Met)	P04637	I	332	M
+421319	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673536	7673536	single nucleotide variant	NM_000546.6(TP53):c.992A>G (p.Gln331Arg)	P04637	Q	331	R
+651580	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673539	7673539	single nucleotide variant	NM_000546.6(TP53):c.989T>C (p.Leu330Pro)	P04637	L	330	P
+1409387	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673539	7673539	single nucleotide variant	NM_000546.6(TP53):c.989T>A (p.Leu330His)	P04637	L	330	H
+1024800	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673540	7673540	single nucleotide variant	NM_000546.6(TP53):c.988C>T (p.Leu330Phe)	P04637	L	330	F
+652718	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673542	7673542	single nucleotide variant	NM_000546.6(TP53):c.986C>T (p.Thr329Ile)	P04637	T	329	I
+939133	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673543	7673543	single nucleotide variant	NM_000546.6(TP53):c.985A>G (p.Thr329Ala)	P04637	T	329	A
+648339	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673545	7673545	single nucleotide variant	NM_000546.6(TP53):c.983T>C (p.Phe328Ser)	P04637	F	328	S
+12367	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673554	7673554	single nucleotide variant	NM_000546.6(TP53):c.974G>T (p.Gly325Val)	P04637	G	325	V
+480952	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673554	7673554	single nucleotide variant	NM_000546.6(TP53):c.974G>A (p.Gly325Glu)	P04637	G	325	E
+480740	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673555	7673555	single nucleotide variant	NM_000546.6(TP53):c.973G>A (p.Gly325Arg)	P04637	G	325	R
+420950	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673558	7673558	single nucleotide variant	NM_000546.6(TP53):c.970G>C (p.Asp324His)	P04637	D	324	H
+823403	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673560	7673560	single nucleotide variant	NM_000546.6(TP53):c.968T>C (p.Leu323Pro)	P04637	L	323	P
+216475	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673564	7673564	single nucleotide variant	NM_000546.6(TP53):c.964C>T (p.Pro322Ser)	P04637	P	322	S
+231553	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673564	7673564	single nucleotide variant	NM_000546.6(TP53):c.964C>A (p.Pro322Thr)	P04637	P	322	T
+492627	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673575	7673575	single nucleotide variant	NM_000546.6(TP53):c.953C>T (p.Pro318Leu)	P04637	P	318	L
+406585	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673577	7673577	single nucleotide variant	NM_000546.6(TP53):c.951G>T (p.Gln317His)	P04637	Q	317	H
+581024	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673578	7673578	single nucleotide variant	NM_000546.6(TP53):c.950A>G (p.Gln317Arg)	P04637	Q	317	R
+528273	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673581	7673581	single nucleotide variant	NM_000546.6(TP53):c.947C>T (p.Pro316Leu)	P04637	P	316	L
+823268	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673582	7673582	single nucleotide variant	NM_000546.6(TP53):c.946C>T (p.Pro316Ser)	P04637	P	316	S
+1009427	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673584	7673584	single nucleotide variant	NM_000546.6(TP53):c.944C>T (p.Ser315Phe)	P04637	S	315	F
+406587	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673587	7673587	single nucleotide variant	NM_000546.6(TP53):c.941C>T (p.Ser314Phe)	P04637	S	314	F
+406589	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673596	7673596	single nucleotide variant	NM_000546.6(TP53):c.932A>G (p.Asn311Ser)	P04637	N	311	S
+528240	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673597	7673597	single nucleotide variant	NM_000546.6(TP53):c.931A>C (p.Asn311His)	P04637	N	311	H
+234067	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673598	7673598	single nucleotide variant	NM_000546.6(TP53):c.930C>A (p.Asn310Lys)	P04637	N	310	K
+428879	TP53	0	Likely benign	criteria provided, single submitter	17	7673598	7673598	single nucleotide variant	NM_000546.6(TP53):c.930C>G (p.Asn310Lys)	P04637	N	310	K
+651517	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673600	7673600	single nucleotide variant	NM_000546.6(TP53):c.928A>G (p.Asn310Asp)	P04637	N	310	D
+458575	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673603	7673603	single nucleotide variant	NM_000546.6(TP53):c.925C>T (p.Pro309Ser)	P04637	P	309	S
+485027	TP53	0	Likely benign	criteria provided, single submitter	17	7673608	7673608	single nucleotide variant	NM_000546.6(TP53):c.920C>G (p.Ala307Gly)	P04637	A	307	G
+666137	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673608	7673608	single nucleotide variant	NM_000546.6(TP53):c.920C>T (p.Ala307Val)	P04637	A	307	V
+458574	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673703	7673703	single nucleotide variant	NM_000546.6(TP53):c.917G>A (p.Arg306Gln)	P04637	R	306	Q
+142702	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673710	7673710	single nucleotide variant	NM_000546.6(TP53):c.910A>G (p.Thr304Ala)	P04637	T	304	A
+1024359	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673711	7673711	single nucleotide variant	NM_000546.6(TP53):c.909C>G (p.Ser303Arg)	P04637	S	303	R
+230695	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673712	7673712	single nucleotide variant	NM_000546.6(TP53):c.908G>A (p.Ser303Asn)	P04637	S	303	N
+406591	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673715	7673715	single nucleotide variant	NM_000546.6(TP53):c.905G>A (p.Gly302Glu)	P04637	G	302	E
+216473	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673716	7673716	single nucleotide variant	NM_000546.6(TP53):c.904G>C (p.Gly302Arg)	P04637	G	302	R
+1047514	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673716	7673716	single nucleotide variant	NM_000546.6(TP53):c.904G>A (p.Gly302Arg)	P04637	G	302	R
+481049	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673718	7673718	single nucleotide variant	NM_000546.6(TP53):c.902C>T (p.Pro301Leu)	P04637	P	301	L
+1332597	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673719	7673719	single nucleotide variant	NM_000546.6(TP53):c.901C>G (p.Pro301Ala)	P04637	P	301	A
+1469089	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673719	7673719	single nucleotide variant	NM_000546.6(TP53):c.901C>T (p.Pro301Ser)	P04637	P	301	S
+927512	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673727	7673727	single nucleotide variant	NM_000546.6(TP53):c.893A>G (p.Glu298Gly)	P04637	E	298	G
+1495821	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673728	7673728	single nucleotide variant	NM_000546.6(TP53):c.892G>C (p.Glu298Gln)	P04637	E	298	Q
+660046	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673729	7673729	single nucleotide variant	NM_000546.6(TP53):c.891C>A (p.His297Gln)	P04637	H	297	Q
+420974	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673736	7673736	single nucleotide variant	NM_000546.6(TP53):c.884C>T (p.Pro295Leu)	P04637	P	295	L
+1494469	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673739	7673739	single nucleotide variant	NM_000546.6(TP53):c.881A>C (p.Glu294Ala)	P04637	E	294	A
+1001614	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673740	7673740	single nucleotide variant	NM_000546.6(TP53):c.880G>A (p.Glu294Lys)	P04637	E	294	K
+230208	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673743	7673743	single nucleotide variant	NM_000546.6(TP53):c.877G>A (p.Gly293Arg)	P04637	G	293	R
+1021706	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673745	7673745	single nucleotide variant	NM_000546.6(TP53):c.875A>C (p.Lys292Thr)	P04637	K	292	T
+1006477	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673746	7673746	single nucleotide variant	NM_000546.6(TP53):c.874A>G (p.Lys292Glu)	P04637	K	292	E
+629930	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673747	7673747	single nucleotide variant	NM_000546.6(TP53):c.873G>C (p.Lys291Asn)	P04637	K	291	N
+480951	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673749	7673749	single nucleotide variant	NM_000546.6(TP53):c.871A>G (p.Lys291Glu)	P04637	K	291	E
+1061526	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673749	7673749	single nucleotide variant	NM_000546.6(TP53):c.871A>C (p.Lys291Gln)	P04637	K	291	Q
+458572	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673751	7673751	single nucleotide variant	NM_000546.6(TP53):c.869G>C (p.Arg290Pro)	P04637	R	290	P
+628970	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673752	7673752	single nucleotide variant	NM_000546.6(TP53):c.868C>G (p.Arg290Gly)	P04637	R	290	G
+496049	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673755	7673755	single nucleotide variant	NM_000546.6(TP53):c.865C>G (p.Leu289Val)	P04637	L	289	V
+822635	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673755	7673755	single nucleotide variant	NM_000546.6(TP53):c.865C>T (p.Leu289Phe)	P04637	L	289	F
+1439164	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673755	7673755	single nucleotide variant	NM_000546.6(TP53):c.865C>A (p.Leu289Ile)	P04637	L	289	I
+1024822	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673758	7673758	single nucleotide variant	NM_000546.6(TP53):c.862A>G (p.Asn288Asp)	P04637	N	288	D
+422130	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673759	7673759	single nucleotide variant	NM_000546.6(TP53):c.861G>C (p.Glu287Asp)	P04637	E	287	D
+925213	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673759	7673759	single nucleotide variant	NM_000546.6(TP53):c.861G>T (p.Glu287Asp)	P04637	E	287	D
+141781	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673761	7673761	single nucleotide variant	NM_000546.6(TP53):c.859G>A (p.Glu287Lys)	P04637	E	287	K
+376590	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673763	7673763	single nucleotide variant	NM_000546.6(TP53):c.857A>G (p.Glu286Gly)	P04637	E	286	G
+376592	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673763	7673763	single nucleotide variant	NM_000546.6(TP53):c.857A>T (p.Glu286Val)	P04637	E	286	V
+376593	TP53	1	Likely pathogenic	criteria provided, single submitter	17	7673763	7673763	single nucleotide variant	NM_000546.6(TP53):c.857A>C (p.Glu286Ala)	P04637	E	286	A
+376591	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673764	7673764	single nucleotide variant	NM_000546.6(TP53):c.856G>C (p.Glu286Gln)	P04637	E	286	Q
+12384	TP53	1	Pathogenic	criteria provided, single submitter	17	7673766	7673766	single nucleotide variant	NM_000546.6(TP53):c.854A>T (p.Glu285Val)	P04637	E	285	V
+458571	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673770	7673770	single nucleotide variant	NM_000546.6(TP53):c.850A>T (p.Thr284Ser)	P04637	T	284	S
+964952	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673770	7673770	single nucleotide variant	NM_000546.6(TP53):c.850A>G (p.Thr284Ala)	P04637	T	284	A
+237956	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673775	7673775	single nucleotide variant	NM_000546.6(TP53):c.845G>A (p.Arg282Gln)	P04637	R	282	Q
+161517	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673781	7673781	single nucleotide variant	NM_000546.6(TP53):c.839G>T (p.Arg280Ile)	P04637	R	280	I
+376657	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673781	7673781	single nucleotide variant	NM_000546.6(TP53):c.839G>A (p.Arg280Lys)	P04637	R	280	K
+376658	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673782	7673782	single nucleotide variant	NM_000546.6(TP53):c.838A>G (p.Arg280Gly)	P04637	R	280	G
+419454	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673784	7673784	single nucleotide variant	NM_000546.6(TP53):c.836G>A (p.Gly279Glu)	P04637	G	279	E
+458568	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673785	7673785	single nucleotide variant	NM_000546.6(TP53):c.835G>A (p.Gly279Arg)	P04637	G	279	R
+376644	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673787	7673787	single nucleotide variant	NM_000546.6(TP53):c.833C>G (p.Pro278Arg)	P04637	P	278	R
+376646	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673787	7673787	single nucleotide variant	NM_000546.6(TP53):c.833C>A (p.Pro278His)	P04637	P	278	H
+376645	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673788	7673788	single nucleotide variant	NM_000546.6(TP53):c.832C>G (p.Pro278Ala)	P04637	P	278	A
+185722	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673790	7673790	single nucleotide variant	NM_000546.6(TP53):c.830G>A (p.Cys277Tyr)	P04637	C	277	Y
+458567	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673790	7673790	single nucleotide variant	NM_000546.6(TP53):c.830G>T (p.Cys277Phe)	P04637	C	277	F
+232683	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673793	7673793	single nucleotide variant	NM_000546.6(TP53):c.827C>A (p.Ala276Asp)	P04637	A	276	D
+428893	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673794	7673794	single nucleotide variant	NM_000546.6(TP53):c.826G>C (p.Ala276Pro)	P04637	A	276	P
+485044	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673795	7673795	single nucleotide variant	NM_000546.6(TP53):c.825T>G (p.Cys275Trp)	P04637	C	275	W
+376583	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673796	7673796	single nucleotide variant	NM_000546.6(TP53):c.824G>C (p.Cys275Ser)	P04637	C	275	S
+376584	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673797	7673797	single nucleotide variant	NM_000546.6(TP53):c.823T>C (p.Cys275Arg)	P04637	C	275	R
+960924	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673797	7673797	single nucleotide variant	NM_000546.6(TP53):c.823T>A (p.Cys275Ser)	P04637	C	275	S
+1414106	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673797	7673797	single nucleotide variant	NM_000546.6(TP53):c.823T>G (p.Cys275Gly)	P04637	C	275	G
+376675	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673799	7673799	single nucleotide variant	NM_000546.6(TP53):c.821T>A (p.Val274Asp)	P04637	V	274	D
+376676	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673799	7673799	single nucleotide variant	NM_000546.6(TP53):c.821T>G (p.Val274Gly)	P04637	V	274	G
+376677	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673799	7673799	single nucleotide variant	NM_000546.6(TP53):c.821T>C (p.Val274Ala)	P04637	V	274	A
+376674	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673800	7673800	single nucleotide variant	NM_000546.6(TP53):c.820G>T (p.Val274Phe)	P04637	V	274	F
+376678	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673800	7673800	single nucleotide variant	NM_000546.6(TP53):c.820G>C (p.Val274Leu)	P04637	V	274	L
+233323	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673805	7673805	single nucleotide variant	NM_000546.6(TP53):c.815T>G (p.Val272Gly)	P04637	V	272	G
+376673	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673805	7673805	single nucleotide variant	NM_000546.6(TP53):c.815T>A (p.Val272Glu)	P04637	V	272	E
+859912	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673807	7673807	single nucleotide variant	NM_000546.6(TP53):c.813G>T (p.Glu271Asp)	P04637	E	271	D
+406566	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673809	7673809	single nucleotide variant	NM_000546.6(TP53):c.811G>A (p.Glu271Lys)	P04637	E	271	K
+376597	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673811	7673811	single nucleotide variant	NM_000546.6(TP53):c.809T>G (p.Phe270Cys)	P04637	F	270	C
+376596	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673812	7673812	single nucleotide variant	NM_000546.6(TP53):c.808T>A (p.Phe270Ile)	P04637	F	270	I
+376598	TP53	1	Pathogenic	criteria provided, single submitter	17	7673812	7673812	single nucleotide variant	NM_000546.6(TP53):c.808T>G (p.Phe270Val)	P04637	F	270	V
+634778	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673812	7673812	single nucleotide variant	NM_000546.6(TP53):c.808T>C (p.Phe270Leu)	P04637	F	270	L
+647256	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673815	7673815	single nucleotide variant	NM_000546.6(TP53):c.805A>C (p.Ser269Arg)	P04637	S	269	R
+1349719	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673816	7673816	single nucleotide variant	NM_000546.6(TP53):c.804C>G (p.Asn268Lys)	P04637	N	268	K
+827405	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673818	7673818	single nucleotide variant	NM_000546.6(TP53):c.802A>T (p.Asn268Tyr)	P04637	N	268	Y
+233303	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673823	7673823	single nucleotide variant	NM_000546.6(TP53):c.797G>T (p.Gly266Val)	P04637	G	266	V
+640121	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673830	7673830	single nucleotide variant	NM_000546.6(TP53):c.790C>A (p.Leu264Ile)	P04637	L	264	I
+485047	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673831	7673831	single nucleotide variant	NM_000546.6(TP53):c.789T>A (p.Asn263Lys)	P04637	N	263	K
+827313	TP53	0	Likely benign	criteria provided, single submitter	17	7673832	7673832	single nucleotide variant	NM_000546.6(TP53):c.788A>G (p.Asn263Ser)	P04637	N	263	S
+142916	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673833	7673833	single nucleotide variant	NM_000546.6(TP53):c.787A>G (p.Asn263Asp)	P04637	N	263	D
+528251	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673833	7673833	single nucleotide variant	NM_000546.6(TP53):c.787A>C (p.Asn263His)	P04637	N	263	H
+1364128	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7673833	7673833	single nucleotide variant	NM_000546.6(TP53):c.787A>T (p.Asn263Tyr)	P04637	N	263	Y
+428889	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7673835	7673835	single nucleotide variant	NM_000546.6(TP53):c.785G>T (p.Gly262Val)	P04637	G	262	V
+1383522	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674182	7674182	single nucleotide variant	NM_000546.6(TP53):c.781A>G (p.Ser261Gly)	P04637	S	261	G
+485034	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674187	7674187	single nucleotide variant	NM_000546.6(TP53):c.776A>T (p.Asp259Val)	P04637	D	259	V
+634680	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674188	7674188	single nucleotide variant	NM_000546.6(TP53):c.775G>T (p.Asp259Tyr)	P04637	D	259	Y
+406590	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674190	7674190	single nucleotide variant	NM_000546.6(TP53):c.773A>G (p.Glu258Gly)	P04637	E	258	G
+12372	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674193	7674193	single nucleotide variant	NM_000546.6(TP53):c.770T>A (p.Leu257Gln)	P04637	L	257	Q
+142134	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674193	7674193	single nucleotide variant	NM_000546.6(TP53):c.770T>G (p.Leu257Arg)	P04637	L	257	R
+458562	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674193	7674193	single nucleotide variant	NM_000546.6(TP53):c.770T>C (p.Leu257Pro)	P04637	L	257	P
+827201	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674194	7674194	single nucleotide variant	NM_000546.6(TP53):c.769C>G (p.Leu257Val)	P04637	L	257	V
+528269	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674197	7674197	single nucleotide variant	NM_000546.6(TP53):c.766A>C (p.Thr256Pro)	P04637	T	256	P
+232289	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674199	7674199	single nucleotide variant	NM_000546.6(TP53):c.764T>A (p.Ile255Asn)	P04637	I	255	N
+376622	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674199	7674199	single nucleotide variant	NM_000546.6(TP53):c.764T>G (p.Ile255Ser)	P04637	I	255	S
+376623	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674199	7674199	single nucleotide variant	NM_000546.6(TP53):c.764T>C (p.Ile255Thr)	P04637	I	255	T
+376621	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674200	7674200	single nucleotide variant	NM_000546.6(TP53):c.763A>T (p.Ile255Phe)	P04637	I	255	F
+659457	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674202	7674202	single nucleotide variant	NM_000546.6(TP53):c.761T>G (p.Ile254Ser)	P04637	I	254	S
+837688	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674205	7674205	single nucleotide variant	NM_000546.6(TP53):c.758C>T (p.Thr253Ile)	P04637	T	253	I
+12350	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674208	7674208	single nucleotide variant	NM_000546.6(TP53):c.755T>C (p.Leu252Pro)	P04637	L	252	P
+1053765	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674209	7674209	single nucleotide variant	NM_000546.6(TP53):c.754C>T (p.Leu252Phe)	P04637	L	252	F
+182967	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674211	7674211	single nucleotide variant	NM_000546.6(TP53):c.752T>G (p.Ile251Ser)	P04637	I	251	S
+439320	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674211	7674211	single nucleotide variant	NM_000546.6(TP53):c.752T>C (p.Ile251Thr)	P04637	I	251	T
+528254	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674211	7674211	single nucleotide variant	NM_000546.6(TP53):c.752T>A (p.Ile251Asn)	P04637	I	251	N
+406598	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674216	7674216	single nucleotide variant	NM_000546.6(TP53):c.747G>C (p.Arg249Ser)	P04637	R	249	S
+142241	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674217	7674217	single nucleotide variant	NM_000546.6(TP53):c.746G>A (p.Arg249Lys)	P04637	R	249	K
+376653	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674217	7674217	single nucleotide variant	NM_000546.6(TP53):c.746G>T (p.Arg249Met)	P04637	R	249	M
+141881	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674218	7674218	single nucleotide variant	NM_000546.6(TP53):c.745A>T (p.Arg249Trp)	P04637	R	249	W
+376654	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674218	7674218	single nucleotide variant	NM_000546.6(TP53):c.745A>G (p.Arg249Gly)	P04637	R	249	G
+406595	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674223	7674223	single nucleotide variant	NM_000546.6(TP53):c.740A>G (p.Asn247Ser)	P04637	N	247	S
+968639	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674225	7674225	single nucleotide variant	NM_000546.6(TP53):c.738G>T (p.Met246Ile)	P04637	M	246	I
+127822	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674226	7674226	single nucleotide variant	NM_000546.6(TP53):c.737T>G (p.Met246Arg)	P04637	M	246	R
+428886	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674226	7674226	single nucleotide variant	NM_000546.6(TP53):c.737T>C (p.Met246Thr)	P04637	M	246	T
+186737	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674227	7674227	single nucleotide variant	NM_000546.6(TP53):c.736A>C (p.Met246Leu)	P04637	M	246	L
+406586	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674227	7674227	single nucleotide variant	NM_000546.6(TP53):c.736A>T (p.Met246Leu)	P04637	M	246	L
+265357	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674229	7674229	single nucleotide variant	NM_000546.6(TP53):c.734G>C (p.Gly245Ala)	P04637	G	245	A
+376604	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674230	7674230	single nucleotide variant	NM_000546.6(TP53):c.733G>C (p.Gly245Arg)	P04637	G	245	R
+376601	TP53	1	Likely pathogenic	criteria provided, single submitter	17	7674232	7674232	single nucleotide variant	NM_000546.6(TP53):c.731G>T (p.Gly244Val)	P04637	G	244	V
+376599	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674233	7674233	single nucleotide variant	NM_000546.6(TP53):c.730G>T (p.Gly244Cys)	P04637	G	244	C
+3634428	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674233	7674233	single nucleotide variant	NM_000546.6(TP53):c.730G>C (p.Gly244Arg)	P04637	G	244	R
+840505	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674234	7674234	single nucleotide variant	NM_000546.6(TP53):c.729G>A (p.Met243Ile)	P04637	M	243	I
+182936	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674235	7674235	single nucleotide variant	NM_000546.6(TP53):c.728T>C (p.Met243Thr)	P04637	M	243	T
+406567	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674236	7674236	single nucleotide variant	NM_000546.6(TP53):c.727A>G (p.Met243Val)	P04637	M	243	V
+376580	TP53	1	Pathogenic	criteria provided, single submitter	17	7674237	7674237	single nucleotide variant	NM_000546.6(TP53):c.726C>G (p.Cys242Trp)	P04637	C	242	W
+376578	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674238	7674238	single nucleotide variant	NM_000546.6(TP53):c.725G>T (p.Cys242Phe)	P04637	C	242	F
+647334	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674238	7674238	single nucleotide variant	NM_000546.6(TP53):c.725G>C (p.Cys242Ser)	P04637	C	242	S
+376579	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674239	7674239	single nucleotide variant	NM_000546.6(TP53):c.724T>A (p.Cys242Ser)	P04637	C	242	S
+376581	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674239	7674239	single nucleotide variant	NM_000546.6(TP53):c.724T>G (p.Cys242Gly)	P04637	C	242	G
+449512	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674239	7674239	single nucleotide variant	NM_000546.6(TP53):c.724T>C (p.Cys242Arg)	P04637	C	242	R
+376664	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674242	7674242	single nucleotide variant	NM_000546.6(TP53):c.721T>C (p.Ser241Pro)	P04637	S	241	P
+826894	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674245	7674245	single nucleotide variant	NM_000546.6(TP53):c.718A>C (p.Ser240Arg)	P04637	S	240	R
+385614	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674246	7674246	single nucleotide variant	NM_000546.6(TP53):c.717C>G (p.Asn239Lys)	P04637	N	239	K
+376638	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674247	7674247	single nucleotide variant	NM_000546.6(TP53):c.716A>C (p.Asn239Thr)	P04637	N	239	T
+234036	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674248	7674248	single nucleotide variant	NM_000546.6(TP53):c.715A>G (p.Asn239Asp)	P04637	N	239	D
+485039	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674251	7674251	single nucleotide variant	NM_000546.6(TP53):c.712T>A (p.Cys238Ser)	P04637	C	238	S
+182934	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674254	7674254	single nucleotide variant	NM_000546.6(TP53):c.709A>G (p.Met237Val)	P04637	M	237	V
+182966	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674256	7674256	single nucleotide variant	NM_000546.6(TP53):c.707A>C (p.Tyr236Ser)	P04637	Y	236	S
+142183	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674257	7674257	single nucleotide variant	NM_000546.6(TP53):c.706T>G (p.Tyr236Asp)	P04637	Y	236	D
+376694	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674257	7674257	single nucleotide variant	NM_000546.6(TP53):c.706T>A (p.Tyr236Asn)	P04637	Y	236	N
+188206	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674260	7674260	single nucleotide variant	NM_000546.6(TP53):c.703A>T (p.Asn235Tyr)	P04637	N	235	Y
+919580	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674260	7674260	single nucleotide variant	NM_000546.6(TP53):c.703A>G (p.Asn235Asp)	P04637	N	235	D
+376690	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674262	7674262	single nucleotide variant	NM_000546.6(TP53):c.701A>C (p.Tyr234Ser)	P04637	Y	234	S
+246388	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674265	7674265	single nucleotide variant	NM_000546.6(TP53):c.698A>G (p.His233Arg)	P04637	H	233	R
+634756	TP53	1	Pathogenic	criteria provided, single submitter	17	7674268	7674268	single nucleotide variant	NM_000546.6(TP53):c.695T>G (p.Ile232Ser)	P04637	I	232	S
+482214	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674269	7674269	single nucleotide variant	NM_000546.6(TP53):c.694A>C (p.Ile232Leu)	P04637	I	232	L
+1366616	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674274	7674274	single nucleotide variant	NM_000546.6(TP53):c.689C>T (p.Thr230Ile)	P04637	T	230	I
+419040	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674277	7674277	single nucleotide variant	NM_000546.6(TP53):c.686G>A (p.Cys229Tyr)	P04637	C	229	Y
+582302	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674277	7674277	single nucleotide variant	NM_000546.6(TP53):c.686G>C (p.Cys229Ser)	P04637	C	229	S
+420137	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674278	7674278	single nucleotide variant	NM_000546.6(TP53):c.685T>C (p.Cys229Arg)	P04637	C	229	R
+926556	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674279	7674279	single nucleotide variant	NM_000546.6(TP53):c.684C>G (p.Asp228Glu)	P04637	D	228	E
+954848	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674279	7674279	single nucleotide variant	NM_000546.6(TP53):c.684C>A (p.Asp228Glu)	P04637	D	228	E
+458556	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674286	7674286	single nucleotide variant	NM_000546.6(TP53):c.677G>T (p.Gly226Val)	P04637	G	226	V
+850916	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674289	7674289	single nucleotide variant	NM_000546.6(TP53):c.674T>A (p.Val225Asp)	P04637	V	225	D
+480736	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674290	7674290	single nucleotide variant	NM_000546.6(TP53):c.673G>A (p.Val225Ile)	P04637	V	225	I
+635390	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674859	7674859	single nucleotide variant	NM_000546.6(TP53):c.672G>T (p.Glu224Asp)	P04637	E	224	D
+1493447	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674859	7674859	single nucleotide variant	NM_000546.6(TP53):c.672G>C (p.Glu224Asp)	P04637	E	224	D
+161397	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674866	7674866	single nucleotide variant	NM_000546.6(TP53):c.665C>T (p.Pro222Leu)	P04637	P	222	L
+406592	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674867	7674867	single nucleotide variant	NM_000546.6(TP53):c.664C>T (p.Pro222Ser)	P04637	P	222	S
+573679	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674869	7674869	single nucleotide variant	NM_000546.6(TP53):c.662A>C (p.Glu221Ala)	P04637	E	221	A
+376688	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674873	7674873	single nucleotide variant	NM_000546.6(TP53):c.658T>A (p.Tyr220Asn)	P04637	Y	220	N
+376689	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674873	7674873	single nucleotide variant	NM_000546.6(TP53):c.658T>G (p.Tyr220Asp)	P04637	Y	220	D
+953426	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674875	7674875	single nucleotide variant	NM_000546.6(TP53):c.656C>G (p.Pro219Arg)	P04637	P	219	R
+245673	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674876	7674876	single nucleotide variant	NM_000546.6(TP53):c.655C>T (p.Pro219Ser)	P04637	P	219	S
+528249	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674878	7674878	single nucleotide variant	NM_000546.6(TP53):c.653T>G (p.Val218Gly)	P04637	V	218	G
+237952	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674879	7674879	single nucleotide variant	NM_000546.6(TP53):c.652G>A (p.Val218Met)	P04637	V	218	M
+183071	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674882	7674882	single nucleotide variant	NM_000546.6(TP53):c.649G>A (p.Val217Met)	P04637	V	217	M
+1386154	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674882	7674882	single nucleotide variant	NM_000546.6(TP53):c.649G>T (p.Val217Leu)	P04637	V	217	L
+376671	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674884	7674884	single nucleotide variant	NM_000546.6(TP53):c.647T>G (p.Val216Gly)	P04637	V	216	G
+376670	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674885	7674885	single nucleotide variant	NM_000546.6(TP53):c.646G>T (p.Val216Leu)	P04637	V	216	L
+406596	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674885	7674885	single nucleotide variant	NM_000546.6(TP53):c.646G>C (p.Val216Leu)	P04637	V	216	L
+376661	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674886	7674886	single nucleotide variant	NM_000546.6(TP53):c.645T>G (p.Ser215Arg)	P04637	S	215	R
+142012	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674887	7674887	single nucleotide variant	NM_000546.6(TP53):c.644G>C (p.Ser215Thr)	P04637	S	215	T
+376660	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674887	7674887	single nucleotide variant	NM_000546.6(TP53):c.644G>T (p.Ser215Ile)	P04637	S	215	I
+376662	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674887	7674887	single nucleotide variant	NM_000546.6(TP53):c.644G>A (p.Ser215Asn)	P04637	S	215	N
+265337	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674888	7674888	single nucleotide variant	NM_000546.6(TP53):c.643A>G (p.Ser215Gly)	P04637	S	215	G
+428895	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674888	7674888	single nucleotide variant	NM_000546.6(TP53):c.643A>C (p.Ser215Arg)	P04637	S	215	R
+140943	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674889	7674889	single nucleotide variant	NM_000546.6(TP53):c.642T>G (p.His214Gln)	P04637	H	214	Q
+376650	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674893	7674893	single nucleotide variant	NM_000546.6(TP53):c.638G>T (p.Arg213Leu)	P04637	R	213	L
+376651	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674894	7674894	single nucleotide variant	NM_000546.6(TP53):c.637C>G (p.Arg213Gly)	P04637	R	213	G
+1019369	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674899	7674899	single nucleotide variant	NM_000546.6(TP53):c.632C>G (p.Thr211Ser)	P04637	T	211	S
+528235	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674900	7674900	single nucleotide variant	NM_000546.6(TP53):c.631A>C (p.Thr211Pro)	P04637	T	211	P
+406588	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674903	7674903	single nucleotide variant	NM_000546.6(TP53):c.628A>T (p.Asn210Tyr)	P04637	N	210	Y
+627819	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674906	7674906	single nucleotide variant	NM_000546.6(TP53):c.625A>G (p.Arg209Gly)	P04637	R	209	G
+1036023	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674908	7674908	single nucleotide variant	NM_000546.6(TP53):c.623A>T (p.Asp208Val)	P04637	D	208	V
+919639	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674912	7674912	single nucleotide variant	NM_000546.6(TP53):c.619G>C (p.Asp207His)	P04637	D	207	H
+439319	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674914	7674914	single nucleotide variant	NM_000546.6(TP53):c.617T>C (p.Leu206Ser)	P04637	L	206	S
+4800655	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674917	7674917	single nucleotide variant	NM_000546.6(TP53):c.614A>T (p.Tyr205Phe)	P04637	Y	205	F
+3634430	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674917	7674917	single nucleotide variant	NM_000546.6(TP53):c.614A>C (p.Tyr205Ser)	P04637	Y	205	S
+376684	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674918	7674918	single nucleotide variant	NM_000546.6(TP53):c.613T>A (p.Tyr205Asn)	P04637	Y	205	N
+949463	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674920	7674920	single nucleotide variant	NM_000546.6(TP53):c.611A>G (p.Glu204Gly)	P04637	E	204	G
+644883	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674923	7674923	single nucleotide variant	NM_000546.6(TP53):c.608T>A (p.Val203Glu)	P04637	V	203	E
+135358	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674926	7674926	single nucleotide variant	NM_000546.6(TP53):c.605G>A (p.Arg202His)	P04637	R	202	H
+826165	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674926	7674926	single nucleotide variant	NM_000546.6(TP53):c.605G>C (p.Arg202Pro)	P04637	R	202	P
+127818	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674927	7674927	single nucleotide variant	NM_000546.6(TP53):c.604C>T (p.Arg202Cys)	P04637	R	202	C
+231661	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674927	7674927	single nucleotide variant	NM_000546.6(TP53):c.604C>G (p.Arg202Gly)	P04637	R	202	G
+924379	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674932	7674932	single nucleotide variant	NM_000546.6(TP53):c.599A>G (p.Asn200Ser)	P04637	N	200	S
+451799	TP53	1	Likely pathogenic	criteria provided, single submitter	17	7674935	7674935	single nucleotide variant	NM_000546.6(TP53):c.596G>T (p.Gly199Val)	P04637	G	199	V
+100814	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674944	7674944	single nucleotide variant	NM_000546.6(TP53):c.587G>T (p.Arg196Leu)	P04637	R	196	L
+232344	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674945	7674945	single nucleotide variant	NM_000546.6(TP53):c.586C>G (p.Arg196Gly)	P04637	R	196	G
+376618	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674947	7674947	single nucleotide variant	NM_000546.6(TP53):c.584T>A (p.Ile195Asn)	P04637	I	195	N
+376619	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674947	7674947	single nucleotide variant	NM_000546.6(TP53):c.584T>G (p.Ile195Ser)	P04637	I	195	S
+376617	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674948	7674948	single nucleotide variant	NM_000546.6(TP53):c.583A>T (p.Ile195Phe)	P04637	I	195	F
+376634	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674950	7674950	single nucleotide variant	NM_000546.6(TP53):c.581T>A (p.Leu194His)	P04637	L	194	H
+376635	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674950	7674950	single nucleotide variant	NM_000546.6(TP53):c.581T>C (p.Leu194Pro)	P04637	L	194	P
+825975	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674952	7674952	single nucleotide variant	NM_000546.6(TP53):c.579T>A (p.His193Gln)	P04637	H	193	Q
+185822	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674953	7674953	single nucleotide variant	NM_000546.6(TP53):c.578A>T (p.His193Leu)	P04637	H	193	L
+376613	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674954	7674954	single nucleotide variant	NM_000546.6(TP53):c.577C>G (p.His193Asp)	P04637	H	193	D
+988617	TP53	0	Likely benign	criteria provided, single submitter	17	7674955	7674955	single nucleotide variant	NM_000546.6(TP53):c.576G>C (p.Gln192His)	P04637	Q	192	H
+182931	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674956	7674956	single nucleotide variant	NM_000546.6(TP53):c.575A>G (p.Gln192Arg)	P04637	Q	192	R
+1036209	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674956	7674956	single nucleotide variant	NM_000546.6(TP53):c.575A>C (p.Gln192Pro)	P04637	Q	192	P
+1024017	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674960	7674960	single nucleotide variant	NM_000546.6(TP53):c.571C>T (p.Pro191Ser)	P04637	P	191	S
+234061	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674962	7674962	single nucleotide variant	NM_000546.6(TP53):c.569C>G (p.Pro190Arg)	P04637	P	190	R
+1021934	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674963	7674963	single nucleotide variant	NM_000546.6(TP53):c.568C>G (p.Pro190Ala)	P04637	P	190	A
+12382	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7674965	7674965	single nucleotide variant	NM_000546.6(TP53):c.566C>T (p.Ala189Val)	P04637	A	189	V
+933702	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7674969	7674969	single nucleotide variant	NM_000546.6(TP53):c.562C>G (p.Leu188Val)	P04637	L	188	V
+635392	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675053	7675053	single nucleotide variant	NM_000546.6(TP53):c.559G>C (p.Gly187Arg)	P04637	G	187	R
+840399	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675053	7675053	single nucleotide variant	NM_000546.6(TP53):c.559G>A (p.Gly187Ser)	P04637	G	187	S
+406606	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675061	7675061	single nucleotide variant	NM_000546.6(TP53):c.551A>G (p.Asp184Gly)	P04637	D	184	G
+480735	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675064	7675064	single nucleotide variant	NM_000546.6(TP53):c.548C>T (p.Ser183Leu)	P04637	S	183	L
+39420	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675070	7675070	single nucleotide variant	NM_000546.6(TP53):c.542G>T (p.Arg181Leu)	P04637	R	181	L
+376608	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675076	7675076	single nucleotide variant	NM_000546.6(TP53):c.536A>T (p.His179Leu)	P04637	H	179	L
+376611	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675076	7675076	single nucleotide variant	NM_000546.6(TP53):c.536A>C (p.His179Pro)	P04637	H	179	P
+376609	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675077	7675077	single nucleotide variant	NM_000546.6(TP53):c.535C>A (p.His179Asn)	P04637	H	179	N
+485030	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675079	7675079	single nucleotide variant	NM_000546.6(TP53):c.533A>C (p.His178Pro)	P04637	H	178	P
+406583	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675082	7675082	single nucleotide variant	NM_000546.6(TP53):c.530C>T (p.Pro177Leu)	P04637	P	177	L
+376572	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675084	7675084	single nucleotide variant	NM_000546.6(TP53):c.528C>G (p.Cys176Trp)	P04637	C	176	W
+376570	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675086	7675086	single nucleotide variant	NM_000546.6(TP53):c.526T>A (p.Cys176Ser)	P04637	C	176	S
+376571	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675086	7675086	single nucleotide variant	NM_000546.6(TP53):c.526T>G (p.Cys176Gly)	P04637	C	176	G
+376573	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675086	7675086	single nucleotide variant	NM_000546.6(TP53):c.526T>C (p.Cys176Arg)	P04637	C	176	R
+423887	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675091	7675091	single nucleotide variant	NM_000546.6(TP53):c.521G>A (p.Arg174Lys)	P04637	R	174	K
+964680	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675092	7675092	single nucleotide variant	NM_000546.6(TP53):c.520A>T (p.Arg174Trp)	P04637	R	174	W
+376016	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675094	7675094	single nucleotide variant	NM_000546.6(TP53):c.518T>G (p.Val173Gly)	P04637	V	173	G
+376669	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675094	7675094	single nucleotide variant	NM_000546.6(TP53):c.518T>A (p.Val173Glu)	P04637	V	173	E
+428883	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675097	7675097	single nucleotide variant	NM_000546.6(TP53):c.515T>G (p.Val172Gly)	P04637	V	172	G
+528245	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675097	7675097	single nucleotide variant	NM_000546.6(TP53):c.515T>C (p.Val172Ala)	P04637	V	172	A
+836761	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675097	7675097	single nucleotide variant	NM_000546.6(TP53):c.515T>A (p.Val172Asp)	P04637	V	172	D
+428909	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675098	7675098	single nucleotide variant	NM_000546.6(TP53):c.514G>T (p.Val172Phe)	P04637	V	172	F
+568736	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675106	7675106	single nucleotide variant	NM_000546.6(TP53):c.506T>G (p.Met169Arg)	P04637	M	169	R
+428866	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675109	7675109	single nucleotide variant	NM_000546.6(TP53):c.503A>G (p.His168Arg)	P04637	H	168	R
+653104	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675112	7675112	single nucleotide variant	NM_000546.6(TP53):c.500A>G (p.Gln167Arg)	P04637	Q	167	R
+482232	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675119	7675119	single nucleotide variant	NM_000546.6(TP53):c.493C>A (p.Gln165Lys)	P04637	Q	165	K
+428899	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675120	7675120	single nucleotide variant	NM_000546.6(TP53):c.492G>C (p.Lys164Asn)	P04637	K	164	N
+187052	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675125	7675125	single nucleotide variant	NM_000546.6(TP53):c.487T>G (p.Tyr163Asp)	P04637	Y	163	D
+376679	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675125	7675125	single nucleotide variant	NM_000546.6(TP53):c.487T>A (p.Tyr163Asn)	P04637	Y	163	N
+127813	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675127	7675127	single nucleotide variant	NM_000546.6(TP53):c.485T>G (p.Ile162Ser)	P04637	I	162	S
+948225	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675128	7675128	single nucleotide variant	NM_000546.6(TP53):c.484A>T (p.Ile162Phe)	P04637	I	162	F
+422295	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675130	7675130	single nucleotide variant	NM_000546.6(TP53):c.482C>A (p.Ala161Asp)	P04637	A	161	D
+444396	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675134	7675134	single nucleotide variant	NM_000546.6(TP53):c.478A>G (p.Met160Val)	P04637	M	160	V
+182929	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675137	7675137	single nucleotide variant	NM_000546.6(TP53):c.475G>C (p.Ala159Pro)	P04637	A	159	P
+1067910	TP53	1	Pathogenic	criteria provided, single submitter	17	7675140	7675140	single nucleotide variant	NM_000546.6(TP53):c.472C>A (p.Arg158Ser)	P04637	R	158	S
+428887	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675142	7675142	single nucleotide variant	NM_000546.6(TP53):c.470T>C (p.Val157Ala)	P04637	V	157	A
+482231	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675142	7675142	single nucleotide variant	NM_000546.6(TP53):c.470T>A (p.Val157Asp)	P04637	V	157	D
+127810	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675146	7675146	single nucleotide variant	NM_000546.6(TP53):c.466C>T (p.Arg156Cys)	P04637	R	156	C
+186179	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675148	7675148	single nucleotide variant	NM_000546.6(TP53):c.464C>G (p.Thr155Ser)	P04637	T	155	S
+1005876	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675148	7675148	single nucleotide variant	NM_000546.6(TP53):c.464C>T (p.Thr155Ile)	P04637	T	155	I
+458544	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675149	7675149	single nucleotide variant	NM_000546.6(TP53):c.463A>G (p.Thr155Ala)	P04637	T	155	A
+651769	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675151	7675151	single nucleotide variant	NM_000546.6(TP53):c.461G>T (p.Gly154Val)	P04637	G	154	V
+645432	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675154	7675154	single nucleotide variant	NM_000546.6(TP53):c.458C>T (p.Pro153Leu)	P04637	P	153	L
+422563	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675155	7675155	single nucleotide variant	NM_000546.6(TP53):c.457C>T (p.Pro153Ser)	P04637	P	153	S
+482230	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675158	7675158	single nucleotide variant	NM_000546.6(TP53):c.454C>T (p.Pro152Ser)	P04637	P	152	S
+376639	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675160	7675160	single nucleotide variant	NM_000546.6(TP53):c.452C>A (p.Pro151His)	P04637	P	151	H
+485032	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675169	7675169	single nucleotide variant	NM_000546.6(TP53):c.443A>C (p.Asp148Ala)	P04637	D	148	A
+428863	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675170	7675170	single nucleotide variant	NM_000546.6(TP53):c.442G>T (p.Asp148Tyr)	P04637	D	148	Y
+568069	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675170	7675170	single nucleotide variant	NM_000546.6(TP53):c.442G>A (p.Asp148Asn)	P04637	D	148	N
+528255	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675173	7675173	single nucleotide variant	NM_000546.6(TP53):c.439G>A (p.Val147Ile)	P04637	V	147	I
+142050	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675178	7675178	single nucleotide variant	NM_000546.6(TP53):c.434T>C (p.Leu145Pro)	P04637	L	145	P
+480760	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675178	7675178	single nucleotide variant	NM_000546.6(TP53):c.434T>A (p.Leu145Gln)	P04637	L	145	Q
+1027110	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675178	7675178	single nucleotide variant	NM_000546.6(TP53):c.434T>G (p.Leu145Arg)	P04637	L	145	R
+376648	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675180	7675180	single nucleotide variant	NM_000546.6(TP53):c.432G>T (p.Gln144His)	P04637	Q	144	H
+186594	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675181	7675181	single nucleotide variant	NM_000546.6(TP53):c.431A>C (p.Gln144Pro)	P04637	Q	144	P
+864520	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675187	7675187	single nucleotide variant	NM_000546.6(TP53):c.425C>T (p.Pro142Leu)	P04637	P	142	L
+376568	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675190	7675190	single nucleotide variant	NM_000546.6(TP53):c.422G>T (p.Cys141Phe)	P04637	C	141	F
+376565	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675191	7675191	single nucleotide variant	NM_000546.6(TP53):c.421T>C (p.Cys141Arg)	P04637	C	141	R
+185918	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675193	7675193	single nucleotide variant	NM_000546.6(TP53):c.419C>A (p.Thr140Asn)	P04637	T	140	N
+644101	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675194	7675194	single nucleotide variant	NM_000546.6(TP53):c.418A>G (p.Thr140Ala)	P04637	T	140	A
+1005829	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675203	7675203	single nucleotide variant	NM_000546.6(TP53):c.409C>G (p.Leu137Val)	P04637	L	137	V
+580807	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675205	7675205	single nucleotide variant	NM_000546.6(TP53):c.407A>C (p.Gln136Pro)	P04637	Q	136	P
+480751	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675206	7675206	single nucleotide variant	NM_000546.6(TP53):c.406C>G (p.Gln136Glu)	P04637	Q	136	E
+376561	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675207	7675207	single nucleotide variant	NM_000546.6(TP53):c.405C>G (p.Cys135Trp)	P04637	C	135	W
+141762	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675208	7675208	single nucleotide variant	NM_000546.6(TP53):c.404G>A (p.Cys135Tyr)	P04637	C	135	Y
+376562	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675209	7675209	single nucleotide variant	NM_000546.6(TP53):c.403T>A (p.Cys135Ser)	P04637	C	135	S
+871293	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675210	7675210	single nucleotide variant	NM_000546.6(TP53):c.402T>A (p.Phe134Leu)	P04637	F	134	L
+1018290	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675210	7675210	single nucleotide variant	NM_000546.6(TP53):c.402T>G (p.Phe134Leu)	P04637	F	134	L
+1509393	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675211	7675211	single nucleotide variant	NM_000546.6(TP53):c.401T>A (p.Phe134Tyr)	P04637	F	134	Y
+80710	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675212	7675212	single nucleotide variant	NM_000546.6(TP53):c.400T>C (p.Phe134Leu)	P04637	F	134	L
+480953	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675212	7675212	single nucleotide variant	NM_000546.6(TP53):c.400T>A (p.Phe134Ile)	P04637	F	134	I
+988615	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675212	7675212	single nucleotide variant	NM_000546.6(TP53):c.400T>G (p.Phe134Val)	P04637	F	134	V
+421437	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675213	7675213	single nucleotide variant	NM_000546.6(TP53):c.399G>A (p.Met133Ile)	P04637	M	133	I
+528246	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675215	7675215	single nucleotide variant	NM_000546.6(TP53):c.397A>G (p.Met133Val)	P04637	M	133	V
+376627	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675217	7675217	single nucleotide variant	NM_000546.6(TP53):c.395A>C (p.Lys132Thr)	P04637	K	132	T
+376629	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675217	7675217	single nucleotide variant	NM_000546.6(TP53):c.395A>T (p.Lys132Met)	P04637	K	132	M
+376626	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675218	7675218	single nucleotide variant	NM_000546.6(TP53):c.394A>G (p.Lys132Glu)	P04637	K	132	E
+376628	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675218	7675218	single nucleotide variant	NM_000546.6(TP53):c.394A>C (p.Lys132Gln)	P04637	K	132	Q
+141988	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675221	7675221	single nucleotide variant	NM_000546.6(TP53):c.391A>T (p.Asn131Tyr)	P04637	N	131	Y
+824351	TP53	1	Pathogenic	criteria provided, single submitter	17	7675223	7675223	single nucleotide variant	NM_000546.6(TP53):c.389T>A (p.Leu130His)	P04637	L	130	H
+216466	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675224	7675224	single nucleotide variant	NM_000546.6(TP53):c.388C>T (p.Leu130Phe)	P04637	L	130	F
+458543	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675224	7675224	single nucleotide variant	NM_000546.6(TP53):c.388C>G (p.Leu130Val)	P04637	L	130	V
+458542	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675226	7675226	single nucleotide variant	NM_000546.6(TP53):c.386C>G (p.Ala129Gly)	P04637	A	129	G
+482217	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675227	7675227	single nucleotide variant	NM_000546.6(TP53):c.385G>A (p.Ala129Thr)	P04637	A	129	T
+824314	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675227	7675227	single nucleotide variant	NM_000546.6(TP53):c.385G>T (p.Ala129Ser)	P04637	A	129	S
+480743	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675230	7675230	single nucleotide variant	NM_000546.6(TP53):c.382C>A (p.Pro128Thr)	P04637	P	128	T
+458541	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675235	7675235	single nucleotide variant	NM_000546.6(TP53):c.377A>G (p.Tyr126Cys)	P04637	Y	126	C
+1054765	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675235	7675235	single nucleotide variant	NM_000546.6(TP53):c.377A>C (p.Tyr126Ser)	P04637	Y	126	S
+428871	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675236	7675236	single nucleotide variant	NM_000546.6(TP53):c.376T>A (p.Tyr126Asn)	P04637	Y	126	N
+183748	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675995	7675995	single nucleotide variant	NM_000546.6(TP53):c.374C>T (p.Thr125Met)	P04637	T	125	M
+376666	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7675996	7675996	single nucleotide variant	NM_000546.6(TP53):c.373A>C (p.Thr125Pro)	P04637	T	125	P
+1021578	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675998	7675998	single nucleotide variant	NM_000546.6(TP53):c.371G>C (p.Cys124Ser)	P04637	C	124	S
+230661	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7675999	7675999	single nucleotide variant	NM_000546.6(TP53):c.370T>G (p.Cys124Gly)	P04637	C	124	G
+141098	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676011	7676011	single nucleotide variant	NM_000546.6(TP53):c.358A>G (p.Lys120Glu)	P04637	K	120	E
+949408	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676013	7676013	single nucleotide variant	NM_000546.6(TP53):c.356C>G (p.Ala119Gly)	P04637	A	119	G
+837018	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676019	7676019	single nucleotide variant	NM_000546.6(TP53):c.350G>T (p.Gly117Val)	P04637	G	117	V
+1055289	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676019	7676019	single nucleotide variant	NM_000546.6(TP53):c.350G>C (p.Gly117Ala)	P04637	G	117	A
+649358	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676023	7676023	single nucleotide variant	NM_000546.6(TP53):c.346T>G (p.Ser116Ala)	P04637	S	116	A
+480741	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676026	7676026	single nucleotide variant	NM_000546.6(TP53):c.343C>A (p.His115Asn)	P04637	H	115	N
+458536	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676028	7676028	single nucleotide variant	NM_000546.6(TP53):c.341T>C (p.Leu114Ser)	P04637	L	114	S
+1011474	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676029	7676029	single nucleotide variant	NM_000546.6(TP53):c.340T>G (p.Leu114Val)	P04637	L	114	V
+634690	TP53	1	Pathogenic	criteria provided, single submitter	17	7676031	7676031	single nucleotide variant	NM_000546.6(TP53):c.338T>G (p.Phe113Cys)	P04637	F	113	C
+823709	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676031	7676031	single nucleotide variant	NM_000546.6(TP53):c.338T>C (p.Phe113Ser)	P04637	F	113	S
+141302	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676032	7676032	single nucleotide variant	NM_000546.6(TP53):c.337T>G (p.Phe113Val)	P04637	F	113	V
+492575	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676035	7676035	single nucleotide variant	NM_000546.6(TP53):c.334G>A (p.Gly112Ser)	P04637	G	112	S
+634784	TP53	1	Likely pathogenic	criteria provided, single submitter	17	7676043	7676043	single nucleotide variant	NM_000546.6(TP53):c.326T>G (p.Phe109Cys)	P04637	F	109	C
+1054035	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676043	7676043	single nucleotide variant	NM_000546.6(TP53):c.326T>A (p.Phe109Tyr)	P04637	F	109	Y
+389644	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676044	7676044	single nucleotide variant	NM_000546.6(TP53):c.325T>G (p.Phe109Val)	P04637	F	109	V
+142414	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676049	7676049	single nucleotide variant	NM_000546.6(TP53):c.320A>C (p.Tyr107Ser)	P04637	Y	107	S
+406572	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676050	7676050	single nucleotide variant	NM_000546.6(TP53):c.319T>A (p.Tyr107Asn)	P04637	Y	107	N
+641482	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676050	7676050	single nucleotide variant	NM_000546.6(TP53):c.319T>G (p.Tyr107Asp)	P04637	Y	107	D
+629791	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676052	7676052	single nucleotide variant	NM_000546.6(TP53):c.317G>T (p.Ser106Ile)	P04637	S	106	I
+141114	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676055	7676055	single nucleotide variant	NM_000546.6(TP53):c.314G>A (p.Gly105Asp)	P04637	G	105	D
+634708	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676055	7676055	single nucleotide variant	NM_000546.6(TP53):c.314G>T (p.Gly105Val)	P04637	G	105	V
+945802	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676058	7676058	single nucleotide variant	NM_000546.6(TP53):c.311A>T (p.Gln104Leu)	P04637	Q	104	L
+186132	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676064	7676064	single nucleotide variant	NM_000546.6(TP53):c.305C>T (p.Thr102Ile)	P04637	T	102	I
+582041	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676065	7676065	single nucleotide variant	NM_000546.6(TP53):c.304A>T (p.Thr102Ser)	P04637	T	102	S
+649735	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676068	7676068	single nucleotide variant	NM_000546.6(TP53):c.301A>C (p.Lys101Gln)	P04637	K	101	Q
+566954	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676073	7676073	single nucleotide variant	NM_000546.6(TP53):c.296C>G (p.Ser99Cys)	P04637	S	99	C
+579376	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676073	7676073	single nucleotide variant	NM_000546.6(TP53):c.296C>T (p.Ser99Phe)	P04637	S	99	F
+528236	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676076	7676076	single nucleotide variant	NM_000546.6(TP53):c.293C>T (p.Pro98Leu)	P04637	P	98	L
+182962	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676080	7676080	single nucleotide variant	NM_000546.6(TP53):c.289G>C (p.Val97Leu)	P04637	V	97	L
+458532	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676080	7676080	single nucleotide variant	NM_000546.6(TP53):c.289G>T (p.Val97Phe)	P04637	V	97	F
+480733	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676094	7676094	single nucleotide variant	NM_000546.6(TP53):c.275C>T (p.Pro92Leu)	P04637	P	92	L
+845798	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676098	7676098	single nucleotide variant	NM_000546.6(TP53):c.271T>C (p.Trp91Arg)	P04637	W	91	R
+182923	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676103	7676103	single nucleotide variant	NM_000546.6(TP53):c.266C>T (p.Pro89Leu)	P04637	P	89	L
+821636	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676104	7676104	single nucleotide variant	NM_000546.6(TP53):c.265C>A (p.Pro89Thr)	P04637	P	89	T
+480734	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676106	7676106	single nucleotide variant	NM_000546.6(TP53):c.263C>T (p.Ala88Val)	P04637	A	88	V
+1343497	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676106	7676106	single nucleotide variant	NM_000546.6(TP53):c.263C>G (p.Ala88Gly)	P04637	A	88	G
+629276	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676107	7676107	single nucleotide variant	NM_000546.6(TP53):c.262G>C (p.Ala88Pro)	P04637	A	88	P
+942021	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676109	7676109	single nucleotide variant	NM_000546.6(TP53):c.260C>T (p.Pro87Leu)	P04637	P	87	L
+654187	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676112	7676112	single nucleotide variant	NM_000546.6(TP53):c.257C>T (p.Ala86Val)	P04637	A	86	V
+141967	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676113	7676113	single nucleotide variant	NM_000546.6(TP53):c.256G>A (p.Ala86Thr)	P04637	A	86	T
+127805	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676121	7676121	single nucleotide variant	NM_000546.6(TP53):c.248C>T (p.Ala83Val)	P04637	A	83	V
+141956	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676121	7676121	single nucleotide variant	NM_000546.6(TP53):c.248C>A (p.Ala83Glu)	P04637	A	83	E
+458530	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676124	7676124	single nucleotide variant	NM_000546.6(TP53):c.245C>G (p.Pro82Arg)	P04637	P	82	R
+482216	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676125	7676125	single nucleotide variant	NM_000546.6(TP53):c.244C>G (p.Pro82Ala)	P04637	P	82	A
+1021579	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676125	7676125	single nucleotide variant	NM_000546.6(TP53):c.244C>T (p.Pro82Ser)	P04637	P	82	S
+583101	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676127	7676127	single nucleotide variant	NM_000546.6(TP53):c.242C>T (p.Thr81Ile)	P04637	T	81	I
+230368	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676136	7676136	single nucleotide variant	NM_000546.6(TP53):c.233C>G (p.Ala78Gly)	P04637	A	78	G
+485045	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676137	7676137	single nucleotide variant	NM_000546.6(TP53):c.232G>A (p.Ala78Thr)	P04637	A	78	T
+848797	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676137	7676137	single nucleotide variant	NM_000546.6(TP53):c.232G>T (p.Ala78Ser)	P04637	A	78	S
+458528	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676140	7676140	single nucleotide variant	NM_000546.6(TP53):c.229C>A (p.Pro77Thr)	P04637	P	77	T
+528266	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676140	7676140	single nucleotide variant	NM_000546.6(TP53):c.229C>T (p.Pro77Ser)	P04637	P	77	S
+1171287	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676143	7676143	single nucleotide variant	NM_000546.6(TP53):c.226G>A (p.Ala76Thr)	P04637	A	76	T
+836766	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676145	7676145	single nucleotide variant	NM_000546.6(TP53):c.224C>T (p.Pro75Leu)	P04637	P	75	L
+864652	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676154	7676154	single nucleotide variant	NM_000546.6(TP53):c.215C>T (p.Pro72Leu)	P04637	P	72	L
+232750	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676155	7676155	single nucleotide variant	NM_000546.6(TP53):c.214C>A (p.Pro72Thr)	P04637	P	72	T
+485023	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676155	7676155	single nucleotide variant	NM_000546.6(TP53):c.214C>T (p.Pro72Ser)	P04637	P	72	S
+237943	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676157	7676157	single nucleotide variant	NM_000546.6(TP53):c.212C>G (p.Pro71Arg)	P04637	P	71	R
+572378	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676158	7676158	single nucleotide variant	NM_000546.6(TP53):c.211C>T (p.Pro71Ser)	P04637	P	71	S
+577431	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676158	7676158	single nucleotide variant	NM_000546.6(TP53):c.211C>G (p.Pro71Ala)	P04637	P	71	A
+528260	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676163	7676163	single nucleotide variant	NM_000546.6(TP53):c.206C>T (p.Ala69Val)	P04637	A	69	V
+575773	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676164	7676164	single nucleotide variant	NM_000546.6(TP53):c.205G>A (p.Ala69Thr)	P04637	A	69	T
+919370	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676164	7676164	single nucleotide variant	NM_000546.6(TP53):c.205G>C (p.Ala69Pro)	P04637	A	69	P
+528264	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676169	7676169	single nucleotide variant	NM_000546.6(TP53):c.200C>A (p.Pro67Gln)	P04637	P	67	Q
+835228	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676170	7676170	single nucleotide variant	NM_000546.6(TP53):c.199C>T (p.Pro67Ser)	P04637	P	67	S
+480745	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676171	7676171	single nucleotide variant	NM_000546.6(TP53):c.198G>A (p.Met66Ile)	P04637	M	66	I
+1316731	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676172	7676172	single nucleotide variant	NM_000546.6(TP53):c.197T>C (p.Met66Thr)	P04637	M	66	T
+406607	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676175	7676175	single nucleotide variant	NM_000546.6(TP53):c.194G>C (p.Arg65Thr)	P04637	R	65	T
+820372	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676176	7676176	single nucleotide variant	NM_000546.6(TP53):c.193A>G (p.Arg65Gly)	P04637	R	65	G
+231015	TP53	0	Likely benign	criteria provided, single submitter	17	7676182	7676182	single nucleotide variant	NM_000546.6(TP53):c.187G>A (p.Ala63Thr)	P04637	A	63	T
+1388326	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676184	7676184	single nucleotide variant	NM_000546.6(TP53):c.185A>C (p.Glu62Ala)	P04637	E	62	A
+859320	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676185	7676185	single nucleotide variant	NM_000546.6(TP53):c.184G>A (p.Glu62Lys)	P04637	E	62	K
+820144	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676186	7676186	single nucleotide variant	NM_000546.6(TP53):c.183T>A (p.Asp61Glu)	P04637	D	61	E
+950660	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676187	7676187	single nucleotide variant	NM_000546.6(TP53):c.182A>G (p.Asp61Gly)	P04637	D	61	G
+1347666	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676187	7676187	single nucleotide variant	NM_000546.6(TP53):c.182A>T (p.Asp61Val)	P04637	D	61	V
+820098	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676190	7676190	single nucleotide variant	NM_000546.6(TP53):c.179C>T (p.Pro60Leu)	P04637	P	60	L
+820048	TP53	0	Likely benign	criteria provided, single submitter	17	7676193	7676193	single nucleotide variant	NM_000546.6(TP53):c.176G>A (p.Gly59Asp)	P04637	G	59	D
+1491657	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676194	7676194	single nucleotide variant	NM_000546.6(TP53):c.175G>C (p.Gly59Arg)	P04637	G	59	R
+127804	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676196	7676196	single nucleotide variant	NM_000546.6(TP53):c.173C>G (p.Pro58Arg)	P04637	P	58	R
+947099	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676197	7676197	single nucleotide variant	NM_000546.6(TP53):c.172C>A (p.Pro58Thr)	P04637	P	58	T
+142863	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676198	7676198	single nucleotide variant	NM_000546.6(TP53):c.171C>A (p.Asp57Glu)	P04637	D	57	E
+481098	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676209	7676209	single nucleotide variant	NM_000546.6(TP53):c.160T>C (p.Phe54Leu)	P04637	F	54	L
+577888	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676217	7676217	single nucleotide variant	NM_000546.6(TP53):c.152A>G (p.Glu51Gly)	P04637	E	51	G
+850781	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676218	7676218	single nucleotide variant	NM_000546.6(TP53):c.151G>A (p.Glu51Lys)	P04637	E	51	K
+1506044	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676222	7676222	single nucleotide variant	NM_000546.6(TP53):c.147T>G (p.Asp49Glu)	P04637	D	49	E
+1361888	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676222	7676222	single nucleotide variant	NM_000546.6(TP53):c.147T>A (p.Asp49Glu)	P04637	D	49	E
+231133	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676223	7676223	single nucleotide variant	NM_000546.6(TP53):c.146A>G (p.Asp49Gly)	P04637	D	49	G
+819145	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676229	7676229	single nucleotide variant	NM_000546.6(TP53):c.140C>G (p.Pro47Arg)	P04637	P	47	R
+406608	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676230	7676230	single nucleotide variant	NM_000546.6(TP53):c.139C>A (p.Pro47Thr)	P04637	P	47	T
+659626	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676232	7676232	single nucleotide variant	NM_000546.6(TP53):c.137C>A (p.Ser46Tyr)	P04637	S	46	Y
+232223	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676233	7676233	single nucleotide variant	NM_000546.6(TP53):c.136T>C (p.Ser46Pro)	P04637	S	46	P
+246049	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676235	7676235	single nucleotide variant	NM_000546.6(TP53):c.134T>C (p.Leu45Pro)	P04637	L	45	P
+659842	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676236	7676236	single nucleotide variant	NM_000546.6(TP53):c.133C>G (p.Leu45Val)	P04637	L	45	V
+406565	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676237	7676237	single nucleotide variant	NM_000546.6(TP53):c.132G>A (p.Met44Ile)	P04637	M	44	I
+928344	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676238	7676238	single nucleotide variant	NM_000546.6(TP53):c.131T>G (p.Met44Arg)	P04637	M	44	R
+864154	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676240	7676240	single nucleotide variant	NM_000546.6(TP53):c.129G>T (p.Leu43Phe)	P04637	L	43	F
+663719	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676242	7676242	single nucleotide variant	NM_000546.6(TP53):c.127T>A (p.Leu43Met)	P04637	L	43	M
+141464	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676244	7676244	single nucleotide variant	NM_000546.6(TP53):c.125A>G (p.Asp42Gly)	P04637	D	42	G
+1471049	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676245	7676245	single nucleotide variant	NM_000546.6(TP53):c.124G>A (p.Asp42Asn)	P04637	D	42	N
+863522	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676247	7676247	single nucleotide variant	NM_000546.6(TP53):c.122A>G (p.Asp41Gly)	P04637	D	41	G
+485040	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676248	7676248	single nucleotide variant	NM_000546.6(TP53):c.121G>A (p.Asp41Asn)	P04637	D	41	N
+142995	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676250	7676250	single nucleotide variant	NM_000546.6(TP53):c.119T>C (p.Met40Thr)	P04637	M	40	T
+643576	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676251	7676251	single nucleotide variant	NM_000546.6(TP53):c.118A>G (p.Met40Val)	P04637	M	40	V
+569629	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676253	7676253	single nucleotide variant	NM_000546.6(TP53):c.116C>T (p.Ala39Val)	P04637	A	39	V
+1035024	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676254	7676254	single nucleotide variant	NM_000546.6(TP53):c.115G>A (p.Ala39Thr)	P04637	A	39	T
+940878	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676256	7676256	single nucleotide variant	NM_000546.6(TP53):c.113A>C (p.Gln38Pro)	P04637	Q	38	P
+567972	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676259	7676259	single nucleotide variant	NM_000546.6(TP53):c.110C>T (p.Ser37Phe)	P04637	S	37	F
+818331	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676262	7676262	single nucleotide variant	NM_000546.6(TP53):c.107C>T (p.Pro36Leu)	P04637	P	36	L
+406609	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676266	7676266	single nucleotide variant	NM_000546.6(TP53):c.103T>A (p.Leu35Met)	P04637	L	35	M
+628478	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676268	7676268	single nucleotide variant	NM_000546.6(TP53):c.101C>G (p.Pro34Arg)	P04637	P	34	R
+186313	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676269	7676269	single nucleotide variant	NM_000546.6(TP53):c.100C>G (p.Pro34Ala)	P04637	P	34	A
+185157	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676269	7676269	single nucleotide variant	NM_000546.6(TP53):c.100C>A (p.Pro34Thr)	P04637	P	34	T
+935999	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676269	7676269	single nucleotide variant	NM_000546.6(TP53):c.100C>T (p.Pro34Ser)	P04637	P	34	S
+482211	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676271	7676271	single nucleotide variant	NM_000546.6(TP53):c.98C>A (p.Ser33Tyr)	P04637	S	33	Y
+649861	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676271	7676271	single nucleotide variant	NM_000546.6(TP53):c.98C>T (p.Ser33Phe)	P04637	S	33	F
+1043464	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676272	7676272	single nucleotide variant	NM_000546.6(TP53):c.97T>A (p.Ser33Thr)	P04637	S	33	T
+127827	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676387	7676387	single nucleotide variant	NM_000546.6(TP53):c.91G>A (p.Val31Ile)	P04637	V	31	I
+822586	TP53	0	Likely benign	criteria provided, single submitter	17	7676393	7676393	single nucleotide variant	NM_000546.6(TP53):c.85A>G (p.Asn29Asp)	P04637	N	29	D
+185581	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676395	7676395	single nucleotide variant	NM_000546.6(TP53):c.83A>T (p.Glu28Val)	P04637	E	28	V
+481176	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676398	7676398	single nucleotide variant	NM_000546.6(TP53):c.80C>T (p.Pro27Leu)	P04637	P	27	L
+406600	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676399	7676399	single nucleotide variant	NM_000546.6(TP53):c.79C>A (p.Pro27Thr)	P04637	P	27	T
+923838	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676402	7676402	single nucleotide variant	NM_000546.6(TP53):c.76C>A (p.Leu26Ile)	P04637	L	26	I
+1415322	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676543	7676543	single nucleotide variant	NM_000546.6(TP53):c.52A>T (p.Thr18Ser)	P04637	T	18	S
+835067	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676548	7676548	single nucleotide variant	NM_000546.6(TP53):c.47A>G (p.Gln16Arg)	P04637	Q	16	R
+1016947	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676552	7676552	single nucleotide variant	NM_000546.6(TP53):c.43A>C (p.Ser15Arg)	P04637	S	15	R
+577290	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676555	7676555	single nucleotide variant	NM_000546.6(TP53):c.40C>G (p.Leu14Val)	P04637	L	14	V
+237949	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676557	7676557	single nucleotide variant	NM_000546.6(TP53):c.38C>T (p.Pro13Leu)	P04637	P	13	L
+485028	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676557	7676557	single nucleotide variant	NM_000546.6(TP53):c.38C>G (p.Pro13Arg)	P04637	P	13	R
+528258	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676560	7676560	single nucleotide variant	NM_000546.6(TP53):c.35C>T (p.Pro12Leu)	P04637	P	12	L
+578235	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676560	7676560	single nucleotide variant	NM_000546.6(TP53):c.35C>A (p.Pro12His)	P04637	P	12	H
+663876	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676560	7676560	single nucleotide variant	NM_000546.6(TP53):c.35C>G (p.Pro12Arg)	P04637	P	12	R
+41723	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676564	7676564	single nucleotide variant	NM_000546.6(TP53):c.31G>C (p.Glu11Gln)	P04637	E	11	Q
+418693	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676564	7676564	single nucleotide variant	NM_000546.6(TP53):c.31G>A (p.Glu11Lys)	P04637	E	11	K
+822501	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676566	7676566	single nucleotide variant	NM_000546.6(TP53):c.29T>G (p.Val10Gly)	P04637	V	10	G
+968647	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676567	7676567	single nucleotide variant	NM_000546.6(TP53):c.28G>T (p.Val10Phe)	P04637	V	10	F
+496047	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676568	7676568	single nucleotide variant	NM_000546.6(TP53):c.27C>G (p.Ser9Arg)	P04637	S	9	R
+458531	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676569	7676569	single nucleotide variant	NM_000546.6(TP53):c.26G>A (p.Ser9Asn)	P04637	S	9	N
+528238	TP53	-1	Uncertain significance	criteria provided, single submitter	17	7676570	7676570	single nucleotide variant	NM_000546.6(TP53):c.25A>C (p.Ser9Arg)	P04637	S	9	R
+231868	TP53	0	Likely benign	criteria provided, single submitter	17	7676572	7676572	single nucleotide variant	NM_000546.6(TP53):c.23C>T (p.Pro8Leu)	P04637	P	8	L
+664710	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676573	7676573	single nucleotide variant	NM_000546.6(TP53):c.22C>A (p.Pro8Thr)	P04637	P	8	T
+485049	TP53	0	Likely benign	criteria provided, single submitter	17	7676574	7676574	single nucleotide variant	NM_000546.6(TP53):c.21T>G (p.Asp7Glu)	P04637	D	7	E
+142689	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676576	7676576	single nucleotide variant	NM_000546.6(TP53):c.19G>C (p.Asp7His)	P04637	D	7	H
+233248	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676581	7676581	single nucleotide variant	NM_000546.6(TP53):c.14A>G (p.Gln5Arg)	P04637	Q	5	R
+406582	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676584	7676584	single nucleotide variant	NM_000546.6(TP53):c.11C>G (p.Pro4Arg)	P04637	P	4	R
+858236	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676588	7676588	single nucleotide variant	NM_000546.6(TP53):c.7G>A (p.Glu3Lys)	P04637	E	3	K
+490172	TP53	-1	Conflicting classifications of pathogenicity	criteria provided, conflicting classifications	17	7676591	7676591	single nucleotide variant	NM_000546.6(TP53):c.4G>A (p.Glu2Lys)	P04637	E	2	K
