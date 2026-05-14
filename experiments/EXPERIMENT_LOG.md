@@ -30,6 +30,13 @@ Append-only chronicle of non-trivial runs. One entry per run that produced shipp
 
 <!-- New entries below this line, most recent first. -->
 
+## 2026-05-14 — manylatents-omics submodule SHA bump (cceb1fa → e97d469)
+
+- **Pin:** manylatents-omics commit `e97d469` (branch `workshop/lrw-ub2026`).
+- **Why:** the Brandes-correct LLR + `manylatents.dogma.vep` API lived only in this repo's working-tree copy of the submodule. A fresh `git clone --recurse-submodules` would have pulled the old `cceb1fa` and missed the fix entirely. Upstreamed `__init__.py`, `encoders/esm.py` (added `encode_with_logits`, `tok_id`), and the new `dogma/vep.py` (380 lines: parsing, truncation, scorers, sign-conventions), then bumped the parent pin.
+- **Effect:** library scope (Path B/C: cluster + sweep) now hits the same LLR formula as the notebook prototype (Path A). Workshop attendees who clone fresh get the fix. Re-running `experiments/analysis/02_llr_distribution.py` against the cache still reproduces AUROC = 0.9300 (anchor-asserted within 5e-4).
+- **Tests:** the cache (`notebooks/data/s3_scores.npz`) is unchanged — produced by the previous run that already used Brandes-correct LLR via notebook scope. Library scope had no in-tree caller exercising it before this commit; first end-to-end test of upstream `dogma.vep` will land with the S4 sweep work.
+
 ## 2026-05-14 — 02_llr_distribution.py (new headline figure)
 
 - **Pin:** manylatents-omics submodule (unchanged from 2026-05-13 cache rebuild); analysis script lives in this repo, no submodule bump.
