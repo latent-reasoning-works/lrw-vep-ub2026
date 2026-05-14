@@ -23,6 +23,7 @@ lrw-vep-ub2026/
 ├── ARCHITECTURE.md             # this file — agent orientation
 ├── CLAUDE.md                   # agent operation: how to drive the harness
 ├── README.md                   # human entry point + workshop quickstart
+├── .claude/skills/dispatcher/  # substrate router (local CPU/GPU/MPS/SLURM); workshop mirror of `shop`
 ├── experiments/                # experimentStash (per expaper convention)
 │   ├── CLAUDE.md               # tool API contract + numbered-script rules
 │   ├── EXPERIMENT_LOG.md       # append-only run chronicle
@@ -31,18 +32,21 @@ lrw-vep-ub2026/
 │   │   ├── meta.yaml           # tool registry for this project
 │   │   └── manylatents-omics/
 │   │       └── experiment/     # Hydra overrides — these ARE the prompts
-│   │           ├── encode_evo2.yaml
-│   │           ├── encode_esm3.yaml
-│   │           ├── encode_orthrus.yaml
-│   │           ├── alignment_matrix.yaml
-│   │           ├── fusion_base.yaml
-│   │           ├── fusion/      # autoencoder, concat, svd, ...
-│   │           └── single_modality_baselines.yaml
+│   │           ├── encode_esm1b_brca1.yaml             # workshop demo (Phase 1)
+│   │           ├── encode_esm1b_brca1_slurm_template.yaml  # cluster handoff (Phase 2)
+│   │           └── encode_{evo2,esm3,orthrus}.yaml + alignment_matrix / fusion*  # inherited from merging-dogma; not workshop-load-bearing
 │   ├── tools/
 │   │   └── manylatents-omics/  # git submodule — pinned, has its own ARCHITECTURE.md
-│   ├── scripts/                # add_tool, run_experiment, snapshot_experiment
+│   ├── scripts/                # add_tool, run_experiment, snapshot_experiment, cache_s3_scores
 │   ├── notebooks/
-│   │   └── 01_workshop_followalong.ipynb   # Colab fallback, 1:1 with agent path
+│   │   ├── 01_workshop_followalong.ipynb   # the workshop (Colab + local)
+│   │   ├── CLAUDE.md                       # notebook-scope orientation
+│   │   ├── vep_utils.py                    # encode_variant + scorers + ESM1bEncoder prototype
+│   │   ├── validate.py                     # reproducibility validator (s1+s2 quick / +s3 full)
+│   │   ├── validate_paper.py               # prompt → 2-page paper smoke test (ships its own tectonic)
+│   │   ├── test_vep_utils.py
+│   │   ├── requirements-workshop.txt       # pip/uv pins for Colab + local
+│   │   └── data/                           # workshop_set.tsv + proteins.fasta + manifest + demo_pair
 │   ├── analysis/               # numbered scripts (NN_*.py) — paper-cited code
 │   └── outputs/                # raw runs (gitignored)
 ├── paper/
@@ -174,23 +178,50 @@ NeurIPS-style preprint scaffold. Compiles locally via `tectonic`
 (`expaper sync push/pull`). The `[preprint]` style option keeps author names
 visible (arXiv-bound, not anonymous submission).
 
+### Workshop validators (`experiments/notebooks/validate*.py`)
+
+Two smoke tests, one per arrow in the workshop story (prompt → result →
+paper):
+
+- **`validate.py`** — `--quick` (~10s) reproduces the S2 demo-pair LLRs;
+  `--full` (~4 min) regenerates the 500-variant S3 cache and asserts AUROC
+  + bootstrap CI95 against `experiments/notebooks/data/workshop_set_manifest.json`.
+- **`validate_paper.py`** — `--prepare` cleans `_paper_validation_tmp/`
+  and emits a self-contained PROMPT.md; default mode validates that a
+  subagent's output produces a buildable 2-page LaTeX preprint citing
+  Brandes 2023 by DOI. Ships its own LaTeX renderer: tectonic from PATH,
+  then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to
+  auto-download. Page count parsed directly from the PDF's compressed
+  object streams — no poppler / mdls dependency.
+
+### Dispatcher skill (`.claude/skills/dispatcher/`)
+
+Substrate router; converts a workload spec (`n_items`, `requires_gpu`,
+`gpu_memory_gb`, `per_item_memory_gb`, …) into an execution plan for one
+of {`local_cpu`, `local_gpu`, `mps`, `slurm`}. Emit-only contract:
+`scripts/route.py` reads workload JSON on stdin and prints the plan; it
+does not execute. Used for any S4-style "scale this scoring loop"
+workload that isn't shaped like a Hydra multirun. Workshop mirror of the
+upstream `latent-reasoning-works/shop` skill; the bundled subset omits
+maintainer-personal cluster manifests (see `.claude/skills/dispatcher/README.md`).
+
 ### External CLIs (`expaper`, `expstash`, `expanalysis`)
 
 The harness depends on three external CLIs that live outside the repo. An
 agent landing on any S4-style handoff task reaches for these rather than
 hand-rolling equivalents. Each enforces conventions documented in §6.
 
-| Tool | Path | Purpose | Primary commands |
-|---|---|---|---|
-| `expaper` | `/network/scratch/c/cesar.valdez/expaper` | Paper-project scaffolding + Overleaf sync. Already used to generate this repo's layout. | `expaper init <name>`, `expaper add-tool <path>`, `expaper link-overleaf <url>`, `expaper sync pull/push`, `expaper build --open` |
-| `expstash` | `/network/scratch/c/cesar.valdez/expstash` | Experiment-registry + wandb-native sweep orchestration | `expstash add-experiment`, `expstash launch <experiment>`, `expstash fetch <sweep_id>` |
-| `expanalysis` | `/network/scratch/c/cesar.valdez/expanalysis` | Cross-experiment figure aggregation + summary tables | `expanalysis aggregate`, `expanalysis figure <name>` |
+| Tool | Purpose | Primary commands |
+|---|---|---|
+| `expaper` | Paper-project scaffolding + Overleaf sync. Already used to generate this repo's layout. | `expaper init <name>`, `expaper add-tool <path>`, `expaper link-overleaf <url>`, `expaper sync pull/push`, `expaper build --open` |
+| `expstash` | Experiment-registry + wandb-native sweep orchestration. | `expstash add-experiment`, `expstash launch <experiment>`, `expstash fetch <sweep_id>` |
+| `expanalysis` | Cross-experiment figure aggregation + summary tables. | `expanalysis aggregate`, `expanalysis figure <name>` |
 
-The canonical sub-command form for `expaper` is `add-tool` (hyphenated,
-single noun-verb pair). `<tool> --help` is the authoritative interface
-for each. If a `which expaper` returns no result, the CLI hasn't been
-installed on the current machine — fall back to running through the
-scratch path directly.
+Install via `uv tool install git+https://github.com/cmvcordova/<tool>`
+(public). The canonical sub-command form for `expaper` is `add-tool`
+(hyphenated, single noun-verb pair). `<tool> --help` is the
+authoritative interface for each. If `which <tool>` returns no result,
+the CLI hasn't been installed on the current machine.
 
 ## 4. Data Stores
 
@@ -327,11 +358,23 @@ cd ../..
 .venv/bin/python experiments/analysis/00_demo_umap.py
 ```
 
-Results land in W&B at `cesar-valdez-mcgill-university/upper-bound-2026`.
+Results land in W&B at `${WANDB_ENTITY}/${WANDB_PROJECT}` (defaults baked
+in §5 above; override per checkout via `.env`).
 
 **Phase 2 — cluster sbatch handoff:** same prompt, but the agent dispatches
-the encode step via `sbatch` to Mila / Tamia / DRAC (whichever cluster's
-config the user picks at run time). Demonstrates the harness's portability.
+the encode step to whichever SLURM backend the caller has wired up. Two
+substrate-agnostic paths:
+- **Hydra-config path** — `experiment=encode_esm1b_brca1_slurm_template` +
+  user-supplied `cluster=<name> launcher=<name>_launcher` overrides (see
+  the template's header comment).
+- **Dispatcher-skill path** — drop a backend manifest under
+  `.claude/skills/dispatcher/references/backends/<name>.json` (or the
+  user-global `~/.claude/skills/dispatcher/backends/`); the dispatcher
+  picks the substrate and emits the sbatch plan. Preferred for workloads
+  that aren't Hydra-shaped (S4-sweep, ad-hoc scoring).
+
+Demonstrates the harness's portability without baking in any
+maintainer-specific cluster.
 
 - **Attendee fallback (Colab):** `experiments/notebooks/01_workshop_followalong.ipynb`
   has an "Open in Colab" badge; runs the same six tasks manually on a free
@@ -341,16 +384,17 @@ config the user picks at run time). Demonstrates the harness's portability.
   already supports `--smoke`.
 
 **Sweep launcher convention.** Hydra multiruns dispatch through one of:
-- `hydra/launcher=submitit_slurm` for cluster work (mila, narval, tamia
-  — each has a paired `cluster=<name>` config under
-  `experiments/configs/manylatents-omics/cluster/`).
-- `hydra/launcher=joblib` for local multiruns (laptop / workstation).
+- `hydra/launcher=submitit_slurm` — for any SLURM cluster the caller
+  has wired up under `experiments/configs/manylatents-omics/cluster/<name>.yaml`
+  and `launcher/<name>_launcher.yaml`. No default cluster is shipped.
+- `hydra/launcher=joblib` — for local multiruns (laptop / workstation).
 
 Set per-experiment in the Hydra config's `defaults` block; never
 inline-override at the CLI. The `encode_esm1b_brca1_slurm_template.yaml`
-experiment shows the cluster-handoff pattern; it does not ship a
-default cluster — the caller supplies `cluster=<name> launcher=<name>_launcher`
-either as Hydra-config `override` lines or at the CLI.
+experiment shows the cluster-handoff pattern. For workloads that aren't
+shaped like a Hydra multirun (ad-hoc scoring, S4-sweep), prefer the
+dispatcher skill (`.claude/skills/dispatcher/`) — same substrate
+abstraction, different invocation contract.
 
 ## 7. Security Considerations
 
@@ -358,9 +402,8 @@ either as Hydra-config `override` lines or at the CLI.
   `wandb login` (never in env or committed). `WANDB_ENTITY`,
   `WANDB_PROJECT`, and `HUGGING_FACE_HUB_TOKEN` read from env via `.env`.
   `.env.example` lists names; `.env` is gitignored.
-- **Public exposure:** the repo is **private** during workshop preparation;
-  intended to be flipped public the day of the talk. No PHI / PII used —
-  ClinVar variants are public.
+- **Public exposure:** the repo is **public**. No PHI / PII used —
+  ClinVar variants are themselves public.
 - **Submodule pinning:** SHA-pinned via `.gitmodules` so a future re-clone
   doesn't pull a moved/breaking upstream.
 - **Overleaf:** treat `overleaf/master` as a live coauthor; never overwrite
@@ -410,7 +453,7 @@ Python pin: 3.12 (manylatents-omics requires `<3.13,>=3.11`). uv-managed.
 | Maintainer | César M. Valdez Córdova |
 | Workshop | Upper Bound 2026 |
 | Companion paper | arXiv preprint (NeurIPS-style; venue TBD) |
-| Companion talk | Upper Bound 2026 — *Agentic Research Engineering* |
+| Companion talk | Upper Bound 2026 — *The Biology of Agentic Research Engineering: An Agent-Driven Variant Effect Prediction Workshop* |
 
 ## 11. Glossary
 
