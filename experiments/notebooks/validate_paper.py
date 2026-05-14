@@ -450,6 +450,38 @@ def cmd_check(allow_fetch: bool) -> int:
     return 0
 
 
+REAL_PAPER_TEX = REPO_ROOT / "paper" / "main.tex"
+
+
+def cmd_real_paper(allow_fetch: bool) -> int:
+    """Build the real paper/main.tex (not the smoke-test paper).
+
+    Structural compile only — no content assertions. Catches breakage when
+    an Overleaf coauthor lands a bad \\cite, a missing figure path, etc.
+    Placeholder `% TODO(agent)` sections are expected.
+    """
+    _section("Real paper build: paper/main.tex")
+    if not REAL_PAPER_TEX.exists():
+        print(f"  FAIL  missing: {REAL_PAPER_TEX}")
+        return 1
+    tectonic, reason = _ensure_tectonic(allow_fetch=allow_fetch)
+    if tectonic is None:
+        print(f"  FAIL  tectonic unavailable: {reason}")
+        return 1
+    print(f"  building with {tectonic}")
+    ok, msg = _build_pdf(tectonic, REAL_PAPER_TEX.parent)
+    if not ok:
+        print(f"  FAIL  {msg}")
+        return 1
+    pdf = REAL_PAPER_TEX.parent / "main.pdf"
+    if not pdf.exists():
+        print(f"  FAIL  build returned 0 but no main.pdf at {pdf}")
+        return 1
+    pages = _pdf_page_count(pdf)
+    print(f"  PASS  paper/main.pdf built ({pdf.stat().st_size} bytes, {pages or '?'} pages)")
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument(
@@ -466,9 +498,19 @@ def main() -> int:
             "to build the PDF"
         ),
     )
+    p.add_argument(
+        "--real-paper",
+        action="store_true",
+        help=(
+            "build the real paper/main.tex (structural compile only — TODO "
+            "placeholders are expected). Catches Overleaf-coauthor breakage."
+        ),
+    )
     args = p.parse_args()
     if args.prepare:
         return cmd_prepare()
+    if args.real_paper:
+        return cmd_real_paper(allow_fetch=args.fetch_tectonic)
     return cmd_check(allow_fetch=args.fetch_tectonic)
 
 

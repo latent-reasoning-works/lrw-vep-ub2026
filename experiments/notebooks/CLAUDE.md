@@ -85,6 +85,18 @@ uv run python validate_notebook.py     # ~20 s when the s3 cache short-circuit f
 
 15 code cells span S1 → S3 (S4 is markdown-only handoff prompts; no execution). The script exits non-zero on any cell error and prints the failing cell's id, first line, and traceback ename/evalue.
 
+Two more bridges complete the chain:
+
+```bash
+# Library-scope path (fair-esm + manylatents.dogma.vep, run from the submodule venv):
+experiments/tools/manylatents-omics/.venv/bin/python experiments/scripts/verify_library_vep.py
+
+# Real paper compile (paper/main.tex with all its TODO placeholders — structural only):
+cd experiments/notebooks && uv run python validate_paper.py --real-paper
+```
+
+`verify_library_vep.py` exercises the just-upstreamed library scope (notebook validators only cover notebook-scope `vep_utils.ESM1bEncoder`). It encodes the demo pair via `ESMEncoder.encode_with_logits` + `manylatents.dogma.vep.compute_llr` and asserts cross-library agreement with the notebook cache (LLR_TOL 0.05; in practice diff is 0 on identical hardware). `validate_paper.py --real-paper` builds `paper/main.tex` and asserts structural compile only — TODO sections are expected.
+
 `validate_paper.py` is the matching check for the other half of the workshop story: prompt → biological result is covered by `validate.py`; prompt → paper edit is covered here. Two-phase:
 
 ```bash
