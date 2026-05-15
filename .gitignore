@@ -133,6 +133,12 @@ experiments/outputs/
 experiments/cache/
 experiments/notebooks/_paper_validation_tmp/
 /outputs/
+
+# Notebook cell-output figures dumped by `validate_notebook.py --save-figures`.
+# These regenerate from the cache on every CI run; we ship them as a CI
+# artifact, not as source-controlled files. The canonical figures
+# (demo_umap_brca1, resolution_panels, llr_distribution_500, …) stay tracked.
+experiments/analysis/figures/notebook_*.png
 *.pt
 *.pth
 *.ckpt

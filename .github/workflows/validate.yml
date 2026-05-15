@@ -61,10 +61,10 @@ jobs:
           cd experiments/notebooks
           uv run python validate.py --quick
 
-      - name: validate_notebook.py  (15 code cells execute via nbconvert)
+      - name: validate_notebook.py  (15 code cells execute via nbconvert; dumps fallback PNGs)
         run: |
           cd experiments/notebooks
-          uv run python validate_notebook.py
+          uv run python validate_notebook.py --save-figures
 
       - name: validate_paper.py --prepare  (workdir scaffolding sanity)
         run: |
@@ -86,3 +86,28 @@ jobs:
         run: |
           cd experiments/notebooks
           uv run python validate_genes.py --n 5 --device cpu
+
+      - name: 01_resolution_panels.py  (3-panel resolution figure, ~5 s)
+        # Reads pre-computed inputs (demo_pair_scores.json + s3_scores.npz);
+        # no encoder calls, fast standalone.
+        run: |
+          experiments/notebooks/.venv/bin/python experiments/analysis/01_resolution_panels.py
+
+      - name: 02_llr_distribution.py  (headline LLR KDE, ~30 s)
+        # Reads s3_scores.npz; asserts AUROC against the manifest (within 5e-4).
+        run: |
+          experiments/notebooks/.venv/bin/python experiments/analysis/02_llr_distribution.py
+
+      - name: Upload fallback figure bundle
+        # Downloadable from the Actions tab on any green run. Pair this with
+        # paper/main.pdf for a complete "if the live demo fails, I have
+        # everything I need on disk" bundle.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fallback-figures
+          path: |
+            experiments/analysis/figures/
+            paper/main.pdf
+          if-no-files-found: warn
+          retention-days: 30
