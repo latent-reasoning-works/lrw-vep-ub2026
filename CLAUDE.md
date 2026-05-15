@@ -14,18 +14,21 @@ contract. The submodule at
 
 ## Where to look first
 
+The repo's inventory, component APIs, encoder protocol, external-system
+conventions, sweep-launcher rules, and project glossary all live in
+[`ARCHITECTURE.md`](./ARCHITECTURE.md) — read it for anything resembling
+"what is X and where does it live." This file owns *operating behavior*
+(commands, principles, writing style); the table below lists only the
+cross-doc pointers ARCHITECTURE.md can't surface on its own:
+
 | If you need… | Read |
 |---|---|
-| What this repo is and how it's laid out | [`ARCHITECTURE.md`](./ARCHITECTURE.md) |
-| How to run an experiment | [`experiments/CLAUDE.md`](./experiments/CLAUDE.md) |
-| How `manylatents-omics` works internally | `experiments/tools/manylatents-omics/CLAUDE.md` |
-| What's been run | [`experiments/EXPERIMENT_LOG.md`](./experiments/EXPERIMENT_LOG.md) |
-| What figure came from where | [`experiments/PROVENANCE.md`](./experiments/PROVENANCE.md) |
+| How to run an experiment / numbered-script contract | [`experiments/CLAUDE.md`](./experiments/CLAUDE.md) |
+| Workshop-notebook surface (validators, vep_utils, data) | [`experiments/notebooks/CLAUDE.md`](./experiments/notebooks/CLAUDE.md) |
+| How `manylatents-omics` works internally | `experiments/tools/manylatents-omics/{ARCHITECTURE,CLAUDE}.md` |
+| Append-only chronicle of runs | [`experiments/EXPERIMENT_LOG.md`](./experiments/EXPERIMENT_LOG.md) |
+| Figure → script → input lineage | [`experiments/PROVENANCE.md`](./experiments/PROVENANCE.md) |
 | How to compile / sync the paper | this file → *Overleaf sync* |
-| Encoder protocol, prototype-vs-library API table | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §3 |
-| External CLIs (`expaper`, `expstash`, `expanalysis`) | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §3 |
-| Conventions (bootstrap seed, wandb schema, hosted encoders, figure paths) | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §5 |
-| Sweep launcher (submitit_slurm / joblib) | [`ARCHITECTURE.md`](./ARCHITECTURE.md) §6 |
 | How an agent should behave when handoffs land | this file → *Operating principles* |
 
 ## Operating principles
