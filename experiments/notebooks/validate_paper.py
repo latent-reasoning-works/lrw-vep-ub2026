@@ -43,8 +43,8 @@ PROMPT_PATH = WORKDIR / "PROMPT.md"
 PAPER_DIR = REPO_ROOT / "paper"
 NEURIPS_STY = PAPER_DIR / "neurips_2024.sty"
 MANIFEST_PATH = NB_DIR / "data" / "workshop_set_manifest.json"
-FIGURE_REL = "experiments/analysis/figures/llr_distribution_500.pdf"
-FIGURE_STEM = "llr_distribution_500"
+FIGURE_REL = "experiments/analysis/figures/resolution_panels.pdf"
+FIGURE_STEM = "resolution_panels"
 
 BRANDES_DOI = "10.1038/s41588-023-01465-0"
 BRANDES_TITLE_FRAGMENT = "Genome-wide prediction of disease variant"
@@ -97,13 +97,26 @@ NeurIPS .sty copied in).
      Brandes et al. 2023 via `\\citep{{brandes2023}}`** as the methodology
      anchor. The bib entry's `doi` field must be `{BRANDES_DOI}`.
    - **§Results** (1 paragraph + 1 figure): report AUROC = {auroc:.4f}
-     (95 % CI [{lo:.4f}, {hi:.4f}]) on the 500-variant ClinVar workshop set.
+     (95 % CI [{lo:.4f}, {hi:.4f}]) on the 500-variant ClinVar workshop set,
+     and frame it inside the resolution ladder the figure makes visible.
      Include the figure with
      `\\includegraphics[width=\\linewidth]{{{FIGURE_STEM}}}` and a
-     one-sentence caption — the figure shows the LLR KDE for pathogenic
-     vs benign across all 500 variants, so the AUROC literally is what
-     the reader sees. The PDF lives at `{fig_abs}` — copy it into
-     `{WORKDIR}/` so the `\\includegraphics` resolves locally.
+     one-sentence caption that names all three panels. The figure is a
+     left-to-right resolution ladder:
+       - **Panel A — n = 2:** the demo-pair LLR bars (BRCA1 L1854P
+         pathogenic vs P1859R benign). The prototype beat.
+       - **Panel B — n = 500:** ROC curves for delta-norm + LLR over
+         the workshop validation set, AUROCs in the legend, dashed
+         chance line. The validate beat.
+       - **Panel C — n = 36 537:** Brandes et al. 2023 literature
+         anchor at ESM-1b zero-shot AUROC 0.905 on ClinVar missense,
+         with the panel-B LLR (0.64 at the displayed layer) pulled
+         forward as a dashed reference line. The ceiling.
+     The argument: the same harness reproduces the literature
+     methodology at workshop scale. The §Results paragraph should walk
+     the panels in order and close with the ceiling-gap interpretation.
+     The PDF lives at `{fig_abs}` — copy it into `{WORKDIR}/` so the
+     `\\includegraphics` resolves locally.
    - `\\bibliographystyle{{plainnat}}` + `\\bibliography{{references}}`.
 
 2. `{WORKDIR}/references.bib` — at minimum the Brandes entry. Use cite-key
