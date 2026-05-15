@@ -82,27 +82,38 @@ def _load_n500() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
 
 
 def panel_a(ax: plt.Axes, scores: dict) -> None:
-    """n=2 — LLR bars for the BRCA1 demo pair (benign vs pathogenic).
+    """n=2 — deleteriousness bars for the BRCA1 demo pair (benign vs pathogenic).
+
+    Plots ``-LLR`` so "more deleterious = taller positive bar," which
+    keeps panel A's visual direction consistent with panel B's AUROC
+    and panel C's Brandes anchor (higher bar = stronger pathogenic
+    signal). The raw Brandes LLRs are shown as text labels for honesty
+    — pathogenic L1854P is more negative under Brandes (negative ⇒
+    deleterious), as the AUROC predictor at the metric callsite
+    (panel B's ``-llr``) reflects.
 
     Delta L2 norm is dropped from this panel: at n=2 the two values
     (~0.03) are visually indistinguishable from zero and dilute the
     LLR signal the prototype is meant to demonstrate. Both metrics
-    still appear in panel B at scale, where the AUROC comparison
-    makes them mutually informative.
+    still appear in panel B at scale.
     """
     p, b = scores["pathogenic"], scores["benign"]
     labels = [f"Benign\n{b['hgvs']}", f"Pathogenic\n{p['hgvs']}"]
-    values = [b["llr"], p["llr"]]
+    raw_llr = [b["llr"], p["llr"]]            # Brandes: negative ⇒ deleterious
+    values = [-v for v in raw_llr]            # plot deleteriousness: positive ⇒ deleterious
     colors = [PALETTE["Benign"], PALETTE["Pathogenic"]]
     x = np.arange(len(labels))
     ax.bar(x, values, width=0.55, color=colors, edgecolor="white", linewidth=0.8)
-    for xi, v in zip(x, values):
-        ax.text(xi, v + 0.02, f"{v:+.2f}", ha="center", va="bottom",
-                fontsize=10, weight="bold")
+    for xi, v, raw in zip(x, values, raw_llr):
+        ax.text(
+            xi, v + 0.15,
+            f"−LLR = {v:+.2f}\n(LLR {raw:+.2f})",
+            ha="center", va="bottom", fontsize=9, weight="bold",
+        )
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
-    ax.set_title(f"n = 2 — BRCA1 prototype, LLR")
-    ax.set_ylabel("LLR")
+    ax.set_title("n = 2 — BRCA1 prototype, −LLR (Brandes)")
+    ax.set_ylabel("Deleteriousness (−LLR)")
     ax.axhline(0, color="black", linewidth=0.4)
     ax.spines[["top", "right"]].set_visible(False)
 

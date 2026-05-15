@@ -1,6 +1,7 @@
 # Provenance — lrw-vep-ub2026
 
-Figure → script → CSV mapping. Updated whenever a figure or its inputs change.
+Figure → script → CSV mapping. 
+Updated whenever a figure or its inputs change.
 
 Format:
 
@@ -22,12 +23,17 @@ Format:
   `experiments/data/demo_pair.json` (sha256 `faf7ac58…a654b08cc`).
   Encoder: HF transformers ESM-1b via `vep_utils.ESM1bEncoder`,
   fp32 on MPS. Variant pair: BRCA1 L1854P (pathogenic, `clinvar_55631`,
-  LLR +0.873) vs BRCA1 P1859R (benign, `clinvar_55634`, LLR +0.217).
-  **Panel A is LLR-only as of 2026-05-11.** Delta L2 norm bars
-  dropped — at n=2 the values (~0.03) sit near zero and dilute the
-  LLR contrast. Both metrics still appear in panel B at scale.
-  Underlying delta_norm/cosine values remain in `demo_pair_scores.json`
-  for anyone who wants them.
+  LLR **−6.5283**) vs BRCA1 P1859R (benign, `clinvar_55634`,
+  LLR **−3.7580**) — both negative under Brandes 2023's convention
+  (`LLR = log P(mut|WT_seq) − log P(wt|WT_seq)`; negative ⇒
+  deleterious). Pathogenic is more negative, as expected.
+  **Panel A plots −LLR** so the visual story matches panels B and C
+  (taller bar = stronger pathogenic signal). The raw Brandes LLR
+  value is rendered as a text label on each bar so readers see the
+  actual sign. Delta L2 norm bars dropped — at n=2 the values (~0.03)
+  sit near zero and dilute the LLR contrast; both metrics still
+  appear in panel B at scale. Underlying delta_norm/cosine values
+  remain in `demo_pair_scores.json` for anyone who wants them.
 - Inputs (n=500): `notebooks/data/s3_scores.npz`
   (sha256 `c00eeae60744…`, 500 rows: 250 P + 250 B across
   **400 unique genes**) — pre-scored by `scripts/cache_s3_scores.py`
