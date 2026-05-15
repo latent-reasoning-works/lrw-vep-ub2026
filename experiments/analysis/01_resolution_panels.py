@@ -107,8 +107,8 @@ def panel_a(ax: plt.Axes, scores: dict) -> None:
     for xi, v, raw in zip(x, values, raw_llr):
         ax.text(
             xi, v + 0.15,
-            f"−LLR = {v:+.2f}\n(LLR {raw:+.2f})",
-            ha="center", va="bottom", fontsize=9, weight="bold",
+            f"{v:+.2f}\n(LLR {raw:+.2f})",
+            ha="center", va="bottom", fontsize=8, weight="bold",
         )
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
@@ -116,6 +116,9 @@ def panel_a(ax: plt.Axes, scores: dict) -> None:
     ax.set_ylabel("Deleteriousness (−LLR)")
     ax.axhline(0, color="black", linewidth=0.4)
     ax.spines[["top", "right"]].set_visible(False)
+    # Reserve headroom so the two-line text labels above the bars don't
+    # collide with the panel title.
+    ax.set_ylim(top=max(values) * 1.35)
 
 
 def panel_b(ax: plt.Axes, y: np.ndarray, dn: np.ndarray, llr: np.ndarray,
