@@ -159,11 +159,17 @@ all follow this convention.
 
 ### `experiments/configs/manylatents-omics/experiment/` — *configs as prompts*
 
-Each YAML file is a structured prompt. `encode_evo2.yaml` says "encode DNA via
-Evo2 on the BRCA1 preset." `alignment_matrix.yaml` says "compute $k$-NN
-Jaccard between DNA and protein embeddings." The agent translates a natural-
-language ask into a config file, or selects an existing one and overrides via
-Hydra CLI (`data.preset=clinvar`).
+Each YAML file is a structured prompt. `encode_esm1b_brca1.yaml` is the
+workshop demo (Phase 1); `encode_esm1b_brca1_slurm_template.yaml` is its
+cluster handoff (Phase 2). `encode_evo2.yaml`, `encode_esm3.yaml`,
+`alignment_matrix.yaml`, and the `fusion/` family are inherited from the
+upstream `merging-dogma` flow — they describe deeper cross-modal
+experiments but **were not hardened with the Phase-1 fixes** (the
+`data_dir` pin, `_recursive_: false`, and the `/config` self-reference
+drop). Start from `encode_esm1b_brca1.yaml` as the working template if
+you adapt them. The agent translates a natural-language ask into a
+config file, or selects an existing one and overrides via Hydra CLI
+(`data.preset=clinvar`).
 
 ### `experiments/analysis/` — numbered scripts (when populated)
 
@@ -345,56 +351,51 @@ in `paper/main.tex` follow this pattern.
 ## 6. Deployment & Infrastructure
 
 This is a research repo, not a service — "deployment" means *the demo path*.
-The workshop ships two demo phases:
+Two demo phases, both substrate-agnostic; commands for running them live in
+[`CLAUDE.md`](./CLAUDE.md) §workshop-demo (this section names the design,
+not the invocation).
 
-**Phase 1 — local agentic run (the canonical test):** the user prompts the
-agent ("score top 200 ClinVar BRCA1 missense with ESM-1b, UMAP, log to
-wandb"). The agent reads `CLAUDE.md`, runs:
+**Phase 1 — local agentic run** (the canonical test). The user prompts the
+agent; the agent encodes ~200 ClinVar BRCA1 missense via ESM-1b, runs UMAP,
+logs to W&B at `${WANDB_ENTITY}/${WANDB_PROJECT}` (defaults baked in §5).
+Backed by `experiment=encode_esm1b_brca1` + `00_demo_umap.py`.
 
-```
-cd experiments/tools/manylatents-omics
-.venv/bin/python -m manylatents.main +experiment=encode_esm1b_brca1
-cd ../..
-.venv/bin/python experiments/analysis/00_demo_umap.py
-```
-
-Results land in W&B at `${WANDB_ENTITY}/${WANDB_PROJECT}` (defaults baked
-in §5 above; override per checkout via `.env`).
-
-**Phase 2 — cluster sbatch handoff:** same prompt, but the agent dispatches
-the encode step to whichever SLURM backend the caller has wired up. Two
-substrate-agnostic paths:
-- **Hydra-config path** — `experiment=encode_esm1b_brca1_slurm_template` +
-  user-supplied `cluster=<name> launcher=<name>_launcher` overrides (see
-  the template's header comment).
+**Phase 2 — cluster handoff.** Same prompt, encode dispatched to a SLURM
+backend the caller has wired up. Two substrate-agnostic paths:
+- **Hydra-config path** — `experiment=encode_esm1b_brca1_slurm_template`
+  inherits Phase 1 and expects the caller to supply
+  `cluster=<name> launcher=<name>_launcher` overrides under
+  `experiments/configs/manylatents-omics/`. No default cluster ships.
 - **Dispatcher-skill path** — drop a backend manifest under
   `.claude/skills/dispatcher/references/backends/<name>.json` (or the
   user-global `~/.claude/skills/dispatcher/backends/`); the dispatcher
   picks the substrate and emits the sbatch plan. Preferred for workloads
-  that aren't Hydra-shaped (S4-sweep, ad-hoc scoring).
+  that aren't Hydra-shaped (S4 sweeps, ad-hoc scoring).
 
-Demonstrates the harness's portability without baking in any
-maintainer-specific cluster.
+The two-path design lets the same workshop demo target a laptop or any
+SLURM cluster without baking in maintainer-specific cluster names.
 
-- **Attendee fallback (Colab):** `experiments/notebooks/01_workshop_followalong.ipynb`
-  has an "Open in Colab" badge; runs the same six tasks manually on a free
-  T4. Available once the repo is flipped public.
-- **CI** (future): a `--smoke` flag on each numbered script (per
-  `experiments/CLAUDE.md` contract); runs in <60s on CPU. `00_demo_umap.py`
-  already supports `--smoke`.
+**Attendee fallback (Colab).** `experiments/notebooks/01_workshop_followalong.ipynb`
+has an "Open in Colab" badge; runs the same chain on a free T4.
+
+**CI.** `.github/workflows/validate.yml` exercises the validator trinity
+(`validate.py --quick`, `validate_notebook.py`, `validate_paper.py
+--real-paper`, `validate_genes.py`) plus the analysis-figure scripts on
+every push to main + every PR. Caches HF model weights + the auto-fetched
+tectonic binary; uploads `experiments/analysis/figures/` + `paper/main.pdf`
+as the `fallback-figures` artifact. Heavy validators (`validate.py --full`,
+`run_first_prompt.py`, `verify_library_vep.py`) run manually.
 
 **Sweep launcher convention.** Hydra multiruns dispatch through one of:
-- `hydra/launcher=submitit_slurm` — for any SLURM cluster the caller
-  has wired up under `experiments/configs/manylatents-omics/cluster/<name>.yaml`
-  and `launcher/<name>_launcher.yaml`. No default cluster is shipped.
+- `hydra/launcher=submitit_slurm` — for any SLURM cluster the caller has
+  wired up under `experiments/configs/manylatents-omics/cluster/<name>.yaml`
+  + `launcher/<name>_launcher.yaml`. No default cluster ships.
 - `hydra/launcher=joblib` — for local multiruns (laptop / workstation).
 
 Set per-experiment in the Hydra config's `defaults` block; never
-inline-override at the CLI. The `encode_esm1b_brca1_slurm_template.yaml`
-experiment shows the cluster-handoff pattern. For workloads that aren't
-shaped like a Hydra multirun (ad-hoc scoring, S4-sweep), prefer the
-dispatcher skill (`.claude/skills/dispatcher/`) — same substrate
-abstraction, different invocation contract.
+inline-override at the CLI. For workloads that aren't shaped like a Hydra
+multirun (ad-hoc scoring, S4-sweep), prefer the dispatcher skill —
+same substrate abstraction, different invocation contract.
 
 ## 7. Security Considerations
 

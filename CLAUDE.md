@@ -186,27 +186,9 @@ cp -r .claude/skills/dispatcher ~/.claude/skills/
 
 After that, future Claude Code sessions list `dispatcher` in their
 available-skills set and invoke via the Skill tool natively. The bundled
-mirror tracks the upstream `dispatcher` skill (`latent-reasoning-works/shop`,
-private as of 2026-05-13); for full schema docs, anonymized backend
-examples, and SSH-config templates see upstream once it's public.
-
-### Generic multi-modal pattern
-
-For deeper experimentation (cross-modal alignment), the harness also supports
-the encode/encode/align flow inherited from merging-dogma. Same invocation
-pattern (`--config-path=...` + `experiment=<name>`, from project root):
-
-```bash
-experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=encode_evo2          # DNA
-experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=encode_esm3          # protein
-experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main --config-path=$(pwd)/experiments/configs/manylatents-omics experiment=alignment_matrix     # k-NN Jaccard
-```
-
-Configs at `experiments/configs/manylatents-omics/experiment/`. **NB:** these
-inherited configs were *not* hardened with the Phase-1 fixes (data_dir pin,
-`_recursive_: false`, dropping the `/config` self-reference). They likely
-need the same treatment before they'll run cleanly — start from
-`encode_esm1b_brca1.yaml` as the working template.
+mirror is self-contained for the workshop demo; the upstream `dispatcher`
+skill at `latent-reasoning-works/shop` carries the full schema docs,
+anonymized backend examples, and SSH-config templates.
 
 ## Working with this project
 
