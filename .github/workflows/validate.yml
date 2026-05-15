@@ -76,7 +76,13 @@ jobs:
           cd experiments/notebooks
           uv run python validate_paper.py --real-paper --fetch-tectonic
 
-      - name: validate_genes.py --n 2  (TP53/BRCA2/PTEN/MLH1 LLR sign convention)
+      - name: validate_genes.py --n 5  (TP53/BRCA2/PTEN/MLH1 LLR sign convention)
+        # --n 5 (5 P + 5 B per gene) matches the local default. --n 2 is too
+        # tight for some genes — at n=2 the head-of-TSV picker for MLH1 lands
+        # on weak path / strong benign variants and inverts. n=5 averages
+        # over enough variance to surface the real signal on every gene.
+        # CPU wall clock ~8-12 min for 4 genes; warm-cache HF download adds
+        # 30 s on cold-cache runs.
         run: |
           cd experiments/notebooks
-          uv run python validate_genes.py --n 2 --device cpu
+          uv run python validate_genes.py --n 5 --device cpu
