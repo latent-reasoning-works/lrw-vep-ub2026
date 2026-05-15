@@ -82,47 +82,67 @@ You are producing a 2-page LaTeX preprint that smoke-tests the workshop's
 paper-prep pipeline. The output goes in `{WORKDIR}` (already prepared with the
 NeurIPS .sty copied in).
 
+## Canonical structure
+
+This paper **mirrors the section structure of the working template at
+`{REPO_ROOT}/paper/main.tex`** — Introduction, Related Work, Methods,
+Results, Discussion — and uses the same fill pattern: Methods is filled,
+the other four sections are short paragraphs with the load-bearing
+citations wired up. Read that file first if anything below is ambiguous;
+it is the source of truth for what a paper from this repo looks like.
+
 ## What to write
 
-1. `{WORKDIR}/main.tex` — a NeurIPS-preprint-styled 2-pager:
+1. `{WORKDIR}/main.tex` — a 2-page NeurIPS-preprint:
    - `\\documentclass{{article}}` + `\\usepackage[preprint]{{neurips_2024}}` (the
      `.sty` is already in this directory; do not edit it).
    - Title: something descriptive of "agent-driven VEP with ESM-1b on
      ClinVar"; single author `{author}`.
-   - **Abstract** (2–3 sentences): the task + the headline number.
-   - **§Introduction** (1 short paragraph): why VEP, why ESM-1b, what an
-     agent-driven harness buys you over hand-rolled pipelines.
-   - **§Method** (1 paragraph): describe the LLR scoring (log P(mut|WT) −
-     log P(wt|WT) under a single masked-LM forward pass). **Cite
-     Brandes et al. 2023 via `\\citep{{brandes2023}}`** as the methodology
-     anchor. The bib entry's `doi` field must be `{BRANDES_DOI}`.
+   - **Abstract** (2–3 sentences): the task + the headline AUROC + the
+     Brandes anchor.
+   - **§Introduction** (1 short paragraph + at least one `\\citep`):
+     why VEP, why ESM-1b, what an agent-driven harness buys you over
+     hand-rolled pipelines. Cite Brandes 2023 and one of ClinVar /
+     ESM-2 as appropriate.
+   - **§Related Work** (1 short paragraph or 2 `\\paragraph` stubs):
+     protein language models (ESM-1 / ESM-2 / Brandes-ESM-1b VEP work)
+     and optionally cross-modal foundation models (Evo for DNA).
+     One sentence per category, each backed by a `\\citep`.
+   - **§Methods** (1 paragraph, **filled**): describe the LLR scoring
+     equation `\\mathrm{{LLR}} = \\log P(\\text{{mut}} | \\text{{WT}}) -
+     \\log P(\\text{{wt}} | \\text{{WT}})` under a single masked-LM
+     forward pass (use `amsmath`'s `\\begin{{equation}}` if you want
+     a numbered equation). **Cite Brandes et al. 2023 via
+     `\\citep{{brandes2023}}`** as the methodology anchor; the bib
+     entry's `doi` field must be `{BRANDES_DOI}`. Cover the truncation
+     policy (variant-centered window at 1022 aa, Brandes "option 4")
+     and name the workshop validation set (500 variants, 250 P / 250 B,
+     400 genes).
    - **§Results** (1 paragraph + 1 figure): report AUROC = {auroc:.4f}
-     (95 % CI [{lo:.4f}, {hi:.4f}]) on the 500-variant ClinVar workshop set,
-     and frame it inside the resolution ladder the figure makes visible.
-     Include the figure with
+     (95 % CI [{lo:.4f}, {hi:.4f}]) on the 500-variant ClinVar workshop
+     set, and frame it inside the resolution ladder the figure makes
+     visible. Include the figure with
      `\\includegraphics[width=\\linewidth]{{{FIGURE_STEM}}}` and a
-     one-sentence caption that names all three panels. The figure is a
-     left-to-right resolution ladder:
-       - **Panel A — n = 2:** the demo-pair LLR bars (BRCA1 L1854P
-         pathogenic vs P1859R benign). The prototype beat.
-       - **Panel B — n = 500:** ROC curves for delta-norm + LLR over
-         the workshop validation set, AUROCs in the legend, dashed
-         chance line. The validate beat.
-       - **Panel C — n = 36 537:** Brandes et al. 2023 literature
-         anchor at ESM-1b zero-shot AUROC 0.905 on ClinVar missense,
-         with the panel-B LLR (0.64 at the displayed layer) pulled
-         forward as a dashed reference line. The ceiling.
-     The argument: the same harness reproduces the literature
-     methodology at workshop scale. The §Results paragraph should walk
-     the panels in order and close with the ceiling-gap interpretation.
-     The PDF lives at `{fig_abs}` — copy it into `{WORKDIR}/` so the
-     `\\includegraphics` resolves locally.
+     caption that names all three panels (A: n=2 demo pair LLR;
+     B: n=500 ROC; C: Brandes n=36{{,}}537 anchor at 0.905).
+     Walk the panels left-to-right and close with the ceiling-gap
+     interpretation. The PDF lives at `{fig_abs}` — copy it into
+     `{WORKDIR}/` so the `\\includegraphics` resolves locally.
+   - **§Discussion** (1 short paragraph): can be a stub. What the
+     harness made cheap, what the agent still needed human input for,
+     honest limitations (gene-singleton structure of the workshop set,
+     ESM-1b's 1022-aa context window).
    - `\\bibliographystyle{{plainnat}}` + `\\bibliography{{references}}`.
 
-2. `{WORKDIR}/references.bib` — at minimum the Brandes entry. Use cite-key
-   `brandes2023`. Required fields: `title`, `author`, `journal`, `year`,
-   `volume`, `pages`, `doi = {{{BRANDES_DOI}}}`. Title should contain the
-   substring "{BRANDES_TITLE_FRAGMENT}".
+2. `{WORKDIR}/references.bib` — copy the canonical entries you cite from
+   `{REPO_ROOT}/shared/bib/references.bib` (that's the canonical bib for
+   this repo; every entry has a `doi` field per the writing directives).
+   At minimum the Brandes entry must be present: cite-key `brandes2023`,
+   required fields `title` / `author` / `journal` / `year` / `volume` /
+   `pages` / `doi = {{{BRANDES_DOI}}}`. Title should contain
+   "{BRANDES_TITLE_FRAGMENT}". Add the other entries you reference in
+   Introduction / Related Work (Lin 2023, Rives 2021, Nguyen 2024,
+   Landrum 2018 are all available in the canonical bib).
 
 3. Build the PDF. Run **from `{WORKDIR}`**:
    - Prefer `tectonic main.tex` if installed.
@@ -309,8 +329,10 @@ def _check_tex_structure(res: CheckResult, tex: Path) -> None:
         ("\\begin{document}", "begin document"),
         ("\\title", "title macro"),
         ("\\section{Introduction}", "Introduction section"),
-        ("\\section{Method}", "Method section"),
+        ("\\section{Related Work}", "Related Work section"),
+        ("\\section{Methods}", "Methods section"),
         ("\\section{Results}", "Results section"),
+        ("\\section{Discussion}", "Discussion section"),
         ("\\includegraphics", "figure inclusion"),
         ("\\bibliography{", "bibliography reference"),
     ]

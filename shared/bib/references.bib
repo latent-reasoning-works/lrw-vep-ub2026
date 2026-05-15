@@ -1,13 +1,27 @@
 % references.bib for lrw-vep-ub2026
 % Foundation-model and VEP citations the paper draws on.
-% The agent is expected to add entries as it pulls citations into Results /
-% Background. Keep keys lowercase-author-year (e.g. nguyen2024evo2).
+% Every entry MUST include a `doi` field (per CLAUDE.md writing directives).
+% Add new entries here as the paper pulls in citations; keep keys
+% lowercase-author-year (e.g. nguyen2024evo2).
 
-@article{nguyen2024evo2,
-  title   = {Sequence modeling and design from molecular to genome scale with {Evo}},
-  author  = {Nguyen, Eric and Poli, Michael and Durrant, Matthew G and others},
-  journal = {bioRxiv},
-  year    = {2024},
+@article{brandes2023,
+  title   = {Genome-wide prediction of disease variant effects with a deep protein language model},
+  author  = {Brandes, Nadav and Goldman, Grant and Wang, Charlotte H. and Ye, Chun Jimmie and Ntranos, Vasilis},
+  journal = {Nature Genetics},
+  year    = {2023},
+  volume  = {55},
+  pages   = {1512--1522},
+  doi     = {10.1038/s41588-023-01465-0},
+}
+
+@article{rives2021esm,
+  title   = {Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences},
+  author  = {Rives, Alexander and Meier, Joshua and Sercu, Tom and Goyal, Siddharth and Lin, Zeming and Liu, Jason and Guo, Demi and Ott, Myle and Zitnick, C.\ Lawrence and Ma, Jerry and Fergus, Rob},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {2021},
+  volume  = {118},
+  number  = {15},
+  doi     = {10.1073/pnas.2016239118},
 }
 
 @article{lin2023esm,
@@ -18,6 +32,15 @@
   number  = {6637},
   pages   = {1123--1130},
   year    = {2023},
+  doi     = {10.1126/science.ade2574},
+}
+
+@article{nguyen2024evo2,
+  title   = {Sequence modeling and design from molecular to genome scale with {Evo}},
+  author  = {Nguyen, Eric and Poli, Michael and Durrant, Matthew G and others},
+  journal = {bioRxiv},
+  year    = {2024},
+  doi     = {10.1101/2024.02.27.582234},
 }
 
 @article{landrum2018clinvar,
@@ -28,4 +51,5 @@
   number  = {D1},
   pages   = {D1062--D1067},
   year    = {2018},
+  doi     = {10.1093/nar/gkx1153},
 }
