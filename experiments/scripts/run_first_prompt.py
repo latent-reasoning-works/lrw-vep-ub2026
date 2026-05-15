@@ -29,9 +29,8 @@ What it does:
 Wall clock: ~3-5 min on MPS, ~15-20 min on CPU.
 
 Usage:
-    cd experiments/notebooks && uv sync           # one-time
-    cd ../..
-    experiments/notebooks/.venv/bin/python experiments/scripts/run_first_prompt.py
+    uv sync                                       # one-time, from repo root
+    uv run python experiments/scripts/run_first_prompt.py
 """
 
 from __future__ import annotations

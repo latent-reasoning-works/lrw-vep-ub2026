@@ -28,14 +28,13 @@ You are a workshop attendee. Do these four things in order:
 
 1. **Clone with submodules** —
    `git clone --recurse-submodules https://github.com/latent-reasoning-works/lrw-vep-ub2026`
-2. **Confirm your install works** — pick one installer:
+2. **Confirm your install works** — from the repo root, pick one installer:
    ```bash
-   cd experiments/notebooks
    # uv (recommended — uses pyproject.toml + uv.lock for bit-identical pins):
-   uv sync && uv run python validate.py --quick
+   uv sync && uv run python experiments/notebooks/validate.py --quick
 
    # pip (works against the same floors via requirements-workshop.txt):
-   pip install -r requirements-workshop.txt && python validate.py --quick
+   pip install -r requirements-workshop.txt && python experiments/notebooks/validate.py --quick
    ```
    ~10 s; PASS line if the env reproduces the demo-pair LLRs.
 3. **Open the notebook** — either via Colab (button below) or any local
@@ -88,11 +87,10 @@ story — taking a real biological result and turning it into a 2-page LaTeX
 preprint citing the methodology paper by DOI:
 
 ```bash
-cd experiments/notebooks
-python validate_paper.py --prepare       # cleans the workdir, writes PROMPT.md
+uv run python experiments/notebooks/validate_paper.py --prepare       # writes PROMPT.md
 # in your Claude Code session, paste:
 #     read experiments/notebooks/_paper_validation_tmp/PROMPT.md and execute it
-python validate_paper.py --fetch-tectonic  # builds the PDF and validates it
+uv run python experiments/notebooks/validate_paper.py --fetch-tectonic  # builds + validates
 ```
 
 First run downloads tectonic (~50 MB; cached at `~/.cache/lrw-vep-ub2026/`,

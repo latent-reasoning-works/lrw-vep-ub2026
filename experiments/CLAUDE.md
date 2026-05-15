@@ -160,11 +160,12 @@ belongs in `_config.py`.
 Two venvs cover everything; pick by what the script imports:
 
 ```bash
-# Default — uses notebook-scope deps (HF transformers, no fair-esm).
-# Covers 01_resolution_panels.py, 02_llr_distribution.py, and anything
-# else that only reads caches.
-experiments/notebooks/.venv/bin/python experiments/analysis/02_<name>.py
-experiments/notebooks/.venv/bin/python experiments/analysis/02_<name>.py --smoke
+# Default — uses workshop deps (HF transformers, no fair-esm). Run from
+# the repo root after `uv sync`. Covers 01_resolution_panels.py,
+# 02_llr_distribution.py, and anything else that only reads caches.
+.venv/bin/python experiments/analysis/02_<name>.py
+.venv/bin/python experiments/analysis/02_<name>.py --smoke
+# Or `uv run python ...` from anywhere in the repo.
 
 # Submodule venv — when the script needs library-scope encoders
 # (fair-esm via `manylatents.dogma.encoders.ESMEncoder`) or the full
@@ -194,7 +195,7 @@ Append-only chronicle. One entry per non-trivial run:
 
 - **Pin:** manylatents-omics `<sha>` (branch `<branch>`); manylatents
   `x.y.z`; relevant other libs.
-- **Cmd:** `experiments/notebooks/.venv/bin/python ../../analysis/NN_<name>.py`
+- **Cmd:** `.venv/bin/python experiments/analysis/NN_<name>.py` (from repo root)
 - **Output:** `figures/<name>.{pdf,png}`, `results/<name>.csv` (N rows)
 - **Numbers:** AUROC, CI, anchor match
 - **Notes:** what you actually learned. Don't auto-generate.

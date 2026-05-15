@@ -1,0 +1,49 @@
+[project]
+name = "lrw-vep-ub2026"
+version = "0.1.0"
+description = "Workshop harness for Upper Bound 2026 — agent-driven variant effect prediction."
+requires-python = ">=3.10,<3.13"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "César Miguel Valdez Córdova", email = "cesar.valdez@mila.quebec" },
+]
+
+# These pins are the workshop env. Mirrored inline by the notebook's
+# `s1-install` cell (for Colab attendees who never see this file) and by
+# `experiments/notebooks/requirements-workshop.txt` (for pip-only users).
+# Floors chosen to avoid:
+#   - transformers <4.45 breakage on `output_hidden_states=True` for ESM
+#   - numpy <2.0 missing `numpy.strings` (referenced by transformers 5.x);
+#     capped <3 to stay ABI-stable
+#   - scipy <1.13 lacks numpy-2.x C-ABI support
+#   - pandas 3.x breaks Colab's google-colab / bqplot / gradio
+#   - scikit-learn <1.3 deprecations the notebook hits
+#   - seaborn 0.12.x kdeplot API differences
+dependencies = [
+    "transformers>=4.45,<6",
+    "torch>=2.0",
+    "numpy>=2.0,<3",
+    "scipy>=1.13",
+    "pandas>=2.0,<3",
+    "scikit-learn>=1.3",
+    "seaborn>=0.13",
+    "tqdm>=4.65",
+    "matplotlib>=3.7",
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+    "umap-learn>=0.5",
+    "wandb>=0.16",
+    "nbformat>=5.10",
+    "nbconvert>=7.16",
+]
+
+[project.urls]
+Homepage = "https://github.com/latent-reasoning-works/lrw-vep-ub2026"
+
+# This isn't a publishable package; uv treats it as a virtual project
+# (deps-only). The submodule at `experiments/tools/manylatents-omics/`
+# carries its own pyproject + venv — intentionally separate so fair-esm
+# doesn't co-resolve with the workshop notebook's HF-transformers route.
+[tool.uv]
+package = false

@@ -26,7 +26,7 @@ contract. This file is the notebook-specific orientation.
 | Expected AUROCs + Brandes 2023 anchor + lineage | `../PROVENANCE.md` — **canonical**. (The manifest's AUROC field is a build-time snapshot; PROVENANCE is what's updated when the cache regenerates.) |
 | What's been run (chronicle) | `../EXPERIMENT_LOG.md` |
 | Archived predecessors of the dataset (historical) | `data/_archive/` |
-| Pinned env for local + Colab attendees | `pyproject.toml` + `uv.lock` (uv-native: `uv sync`); `requirements-workshop.txt` (pip path; same floors). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
+| Pinned env for local + Colab attendees | `../../pyproject.toml` + `../../uv.lock` (uv-native: `uv sync` from repo root); `../../requirements-workshop.txt` (pip path; same floors). The notebook's `s1-install` cell mirrors the same pins inline so Colab works without an external fetch. |
 | Reproducibility validator | `validate.py` — runs the s1+s2 (quick) or s1+s2+s3 (full) cell logic and asserts the computed values match `data/workshop_set_manifest.json` to documented tolerances. The workshop's "did my setup work" check. |
 | Agent-driven paper-prep smoke test | `validate_paper.py` — `--prepare` cleans `_paper_validation_tmp/` and emits a self-contained prompt; running the script after a subagent has produced the paper validates the TeX structure, DOI citation, figure include, headline AUROC, and the PDF page count. Ships its own LaTeX renderer: tectonic from PATH, then `~/.cache/lrw-vep-ub2026/tectonic/`, then `--fetch-tectonic` to auto-download. `--real-paper` builds `paper/main.tex` (structural compile only — TODO placeholders are expected). |
 | Literal-notebook smoke test | `validate_notebook.py` — executes every code cell in `01_workshop_followalong.ipynb` via nbconvert's `ExecutePreprocessor` and reports per-cell PASS/FAIL. Catches a different class of bugs from `validate.py`: a typo in `s3-distributions`, a stale import in `s2-visualize`, a `plt.show()` glitch under the non-interactive backend. Numbers come from `validate.py`; this is the "cells don't explode" check. ~20 s when the s3 cache short-circuit fires; ~4 min cold. |
@@ -34,35 +34,33 @@ contract. This file is the notebook-specific orientation.
 
 ## Running the notebook locally
 
-For attendees not on Colab:
+For attendees not on Colab, run from the repo root:
 
 ```bash
-cd experiments/notebooks
 # uv (recommended — uses pyproject.toml + uv.lock for bit-identical pins):
-uv sync                                    # creates .venv/, installs locked deps
-uv run python validate.py --quick          # ~10s: confirms install reproduces demo-pair LLRs
-uv run jupyter notebook 01_workshop_followalong.ipynb
+uv sync                                                          # creates ./.venv/, installs locked deps
+uv run python experiments/notebooks/validate.py --quick          # ~10s: confirms install reproduces demo-pair LLRs
+uv run jupyter notebook experiments/notebooks/01_workshop_followalong.ipynb
 
 # pip (works against the same floors via requirements-workshop.txt):
 pip install -r requirements-workshop.txt
-python validate.py --quick
-jupyter notebook 01_workshop_followalong.ipynb
+python experiments/notebooks/validate.py --quick
+jupyter notebook experiments/notebooks/01_workshop_followalong.ipynb
 ```
 
 The notebook's `s1-install` cell is a no-op when these are already installed — pip detects "Requirement already satisfied" and skips.
 
 On Colab: just run cells top-to-bottom; `s1-install` brings the env up.
 
-If something breaks on the env, the pins live in three places (in priority order: `pyproject.toml`/`uv.lock` for the uv path, `requirements-workshop.txt` for the pip path, the inline `s1-install` cell for Colab). When bumping a floor, update all three to keep them in sync.
+If something breaks on the env, the pins live in three places (in priority order: `pyproject.toml` + `uv.lock` for the uv path at the repo root, `requirements-workshop.txt` for the pip path at the repo root, the inline `s1-install` cell for Colab). When bumping a floor, update all three to keep them in sync.
 
 ## Validating reproducibility
 
 `validate.py` is the workshop's "did my setup work" check. It runs the same logic as the notebook cells and asserts the computed values match `data/workshop_set_manifest.json` within documented tolerances. Two modes:
 
 ```bash
-cd experiments/notebooks
-python validate.py --quick   # ~10s: schema + demo pair + 5-variant sample
-python validate.py --full    # ~4 min: regenerates 500-variant cache, asserts AUROC + CI95
+uv run python experiments/notebooks/validate.py --quick   # ~10s: schema + demo pair + 5-variant sample
+uv run python experiments/notebooks/validate.py --full    # ~4 min: regenerates 500-variant cache, asserts AUROC + CI95
 ```
 
 Quick mode runs:
@@ -80,8 +78,7 @@ When the validator fails, the per-check FAIL lines name the diverging value and 
 `validate_notebook.py` is the third validator — it executes every code cell in `01_workshop_followalong.ipynb` via `nbconvert.ExecutePreprocessor` and reports per-cell PASS/FAIL. Catches cell-level bugs (typo, broken import, plot backend glitch) that `validate.py` doesn't see because `validate.py` calls the primitives directly, not the cells.
 
 ```bash
-cd experiments/notebooks
-uv run python validate_notebook.py     # ~20 s when the s3 cache short-circuit fires
+uv run python experiments/notebooks/validate_notebook.py     # ~20 s when the s3 cache short-circuit fires
 ```
 
 15 code cells span S1 → S3 (S4 is markdown-only handoff prompts; no execution). The script exits non-zero on any cell error and prints the failing cell's id, first line, and traceback ename/evalue.
@@ -90,16 +87,16 @@ More targeted checks:
 
 ```bash
 # Audience-pick gene smoke (TP53 / BRCA2 / PTEN / MLH1, ~18 s on MPS):
-cd experiments/notebooks && uv run python validate_genes.py
+uv run python experiments/notebooks/validate_genes.py
 
 # Library-scope path (fair-esm + manylatents.dogma.vep, run from the submodule venv):
 experiments/tools/manylatents-omics/.venv/bin/python experiments/scripts/verify_library_vep.py
 
 # Real paper compile (paper/main.tex with its TODO placeholders — structural only):
-cd experiments/notebooks && uv run python validate_paper.py --real-paper
+uv run python experiments/notebooks/validate_paper.py --real-paper
 
 # Slide-1 fallback (regenerate the first-prompt UMAP figure, ~3-5 min on MPS):
-experiments/notebooks/.venv/bin/python experiments/scripts/run_first_prompt.py
+uv run python experiments/scripts/run_first_prompt.py
 ```
 
 `verify_library_vep.py` exercises the just-upstreamed library scope (notebook validators only cover notebook-scope `vep_utils.ESM1bEncoder`). It encodes the demo pair via `ESMEncoder.encode_with_logits` + `manylatents.dogma.vep.compute_llr` and asserts cross-library agreement with the notebook cache (LLR_TOL 0.05; in practice diff is 0 on identical hardware). `validate_paper.py --real-paper` builds `paper/main.tex` and asserts structural compile only — TODO sections are expected.
@@ -107,10 +104,9 @@ experiments/notebooks/.venv/bin/python experiments/scripts/run_first_prompt.py
 `validate_paper.py` is the matching check for the other half of the workshop story: prompt → biological result is covered by `validate.py`; prompt → paper edit is covered here. Two-phase:
 
 ```bash
-cd experiments/notebooks
-python validate_paper.py --prepare    # wipe + recreate _paper_validation_tmp/, emit PROMPT.md
+uv run python experiments/notebooks/validate_paper.py --prepare    # writes PROMPT.md to _paper_validation_tmp/
 # now, from your Claude Code session, spawn a subagent with PROMPT.md
-python validate_paper.py              # validate what the agent produced
+uv run python experiments/notebooks/validate_paper.py              # validate what the agent produced
 ```
 
 Per-stage checks: required files present (main.tex + references.bib), TeX structure (NeurIPS preprint style, required sections, `\cite` + `\bibliography`), Brandes DOI present in the bib, cite-keys resolve, headline AUROC mentioned, and a 2-page PDF build. The workdir is gitignored, so re-running `--prepare` is a clean slate.

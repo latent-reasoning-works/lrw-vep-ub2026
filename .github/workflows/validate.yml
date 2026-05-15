@@ -9,8 +9,8 @@ name: validate
 #   - validate_paper.py (default) : requires a Claude Code subagent to produce
 #                                   the smoke-test paper before validation
 #
-# All five of those are runnable manually from a maintainer's machine; the
-# pre-PR loop here covers the four that CI can carry without GPUs.
+# All four of those are runnable manually from a maintainer's machine; the
+# pre-PR loop here covers the rest that CI can carry without GPUs.
 
 on:
   push:
@@ -51,30 +51,20 @@ jobs:
           path: ~/.cache/lrw-vep-ub2026
           key: tectonic-${{ runner.os }}
 
-      - name: uv sync (workshop env)
-        run: |
-          cd experiments/notebooks
-          uv sync
+      - name: uv sync (workshop env — root pyproject)
+        run: uv sync
 
       - name: validate.py --quick  (demo-pair LLRs reproduce manifest)
-        run: |
-          cd experiments/notebooks
-          uv run python validate.py --quick
+        run: uv run python experiments/notebooks/validate.py --quick
 
       - name: validate_notebook.py  (15 code cells execute via nbconvert; dumps fallback PNGs)
-        run: |
-          cd experiments/notebooks
-          uv run python validate_notebook.py --save-figures
+        run: uv run python experiments/notebooks/validate_notebook.py --save-figures
 
       - name: validate_paper.py --prepare  (workdir scaffolding sanity)
-        run: |
-          cd experiments/notebooks
-          uv run python validate_paper.py --prepare
+        run: uv run python experiments/notebooks/validate_paper.py --prepare
 
       - name: validate_paper.py --real-paper  (paper/main.tex compiles via tectonic)
-        run: |
-          cd experiments/notebooks
-          uv run python validate_paper.py --real-paper --fetch-tectonic
+        run: uv run python experiments/notebooks/validate_paper.py --real-paper --fetch-tectonic
 
       - name: validate_genes.py --n 5  (TP53/BRCA2/PTEN/MLH1 LLR sign convention)
         # --n 5 (5 P + 5 B per gene) matches the local default. --n 2 is too
@@ -83,20 +73,16 @@ jobs:
         # over enough variance to surface the real signal on every gene.
         # CPU wall clock ~8-12 min for 4 genes; warm-cache HF download adds
         # 30 s on cold-cache runs.
-        run: |
-          cd experiments/notebooks
-          uv run python validate_genes.py --n 5 --device cpu
+        run: uv run python experiments/notebooks/validate_genes.py --n 5 --device cpu
 
       - name: 01_resolution_panels.py  (3-panel resolution figure, ~5 s)
         # Reads pre-computed inputs (demo_pair_scores.json + s3_scores.npz);
         # no encoder calls, fast standalone.
-        run: |
-          experiments/notebooks/.venv/bin/python experiments/analysis/01_resolution_panels.py
+        run: uv run python experiments/analysis/01_resolution_panels.py
 
       - name: 02_llr_distribution.py  (headline LLR KDE, ~30 s)
         # Reads s3_scores.npz; asserts AUROC against the manifest (within 5e-4).
-        run: |
-          experiments/notebooks/.venv/bin/python experiments/analysis/02_llr_distribution.py
+        run: uv run python experiments/analysis/02_llr_distribution.py
 
       - name: Upload fallback figure bundle
         # Downloadable from the Actions tab on any green run. Pair this with
