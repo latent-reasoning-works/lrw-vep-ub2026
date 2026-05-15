@@ -1,53 +1,60 @@
 # Experiments
 
-This folder produces every CSV, JSON, and figure cited in the paper. **Public-facing reproduction surface** — assume a reviewer lands here cold and runs scripts in numeric order.
+This folder produces every CSV, JSON, and figure cited in the paper or the
+slide deck. **Public-facing reproduction surface** — assume a reviewer
+lands here cold and runs scripts in numeric order.
 
-## CRITICAL: Use the tool's API first
+## How analysis scripts work (cache-first regenerators)
 
-Every numbered script in `analysis/` calls the upstream tool's Python API directly. **No wrappers, no local re-implementations, no helper functions.**
+Every `analysis/NN_*.py` is a *paper-figure regenerator*: it reads a
+committed artifact (a `.npz`, `.json`, or Hydra-output `.pt`) and produces
+a figure + a results table. Encoding runs upstream — in the notebook
+(`s2-encode`, `s3-score-loop`), in `experiments/scripts/cache_s3_scores.py`,
+in `experiments/scripts/score_demo_pair.py`, or via a Hydra config
+(`experiment=encode_esm1b_brca1`). Analysis scripts **do not call the
+encoder**; that's the upstream caller's job. This makes them fast (~5–30 s
+on CPU), deterministic (no float drift across machines), and CI-runnable
+against committed inputs.
 
-```python
-# CORRECT — direct functional call into the tool
-from <module>.api import run
+When a numbered script is the producer of an artifact the paper anchors
+on (`02_llr_distribution.py` → AUROC headline; `01_resolution_panels.py`
+→ slide-anchor figure), it asserts its computed numbers against
+`experiments/notebooks/data/workshop_set_manifest.json` within a documented
+tolerance. The assertion is the script's own integrity check, not a unit
+test.
 
-result = run(data=..., algorithms=..., metrics=...)
-```
-
-```python
-# WRONG — wrapping the API hides the surface the paper depends on
-def run_my_thing(...):
-    ...
-```
-
-```python
-# WRONG — re-implementing what the tool already provides
-from sklearn.neighbors import NearestNeighbors  # tool already has this, with caching
-```
-
-If the tool lacks a primitive you need, **add it upstream first** (with tests), then call it from here.
+If you need a primitive that doesn't exist (e.g. a new scorer, a different
+truncation strategy), **add it upstream first** — in
+`experiments/notebooks/vep_utils.py` (notebook scope) or
+`manylatents.dogma.vep` (library scope, in the submodule) — then call it
+from your numbered script. Re-implementing scoring rules inside an
+analysis script silently forks the methodology.
 
 ## Layout
 
 ```
 experiments/
   CLAUDE.md                  # this file
-  EXPERIMENT_LOG.md          # chronicle: what was run when, against which tool pin
-  PROVENANCE.md              # figure → script → CSV mapping
+  EXPERIMENT_LOG.md          # chronicle: what was run when, against which pin
+  PROVENANCE.md              # figure → script → input mapping
   configs/<tool>/            # Hydra overrides for sweep launches
   tools/<tool>/              # git submodules
-  scripts/                   # infrastructure (add_tool, run_experiment, snapshot_experiment)
+  scripts/                   # producers (cache_s3_scores, score_demo_pair,
+                             # pick_demo_pair, build_validation_set,
+                             # snapshot_experiment, add_tool, run_experiment)
+                             # + `_archive/` for retired one-shots
+  notebooks/                 # workshop notebook scope (vep_utils, data, validators)
   analysis/                  # numbered scripts — the reviewer's reading order
-    _config.py               # shared paths, dataset registry, I/O helpers
-    00_smoke.py              # health check: API + cfg work end-to-end
-    01_*.py                  # data prep
-    02_*.py                  # ...
-    NN_figures.py            # all body figures
+    _config.py               # shared paths + I/O helpers
+    00_demo_umap.py          # Phase-1 agentic-demo UMAP (reads Hydra .pt)
+    01_resolution_panels.py  # 3-panel resolution ladder (reads .json + .npz)
+    02_llr_distribution.py   # headline LLR KDE (reads .npz; asserts anchor)
     results/                 # CSVs/JSONs land here
     figures/                 # PDF + PNG land here
     embeddings/              # cached run() outputs
-    data/                    # caches
-    _archive/                # exploratory scripts not on the figure-reproduction path
-  outputs/                   # raw experiment outputs (gitignored)
+    data/                    # cached intermediate artifacts
+    _archive/                # exploratory scripts not on the figure-repro path
+  outputs/                   # raw Hydra outputs (gitignored)
 ```
 
 ## Numbered-script contract
@@ -58,129 +65,164 @@ Every `analysis/NN_*.py` follows this template:
 #!/usr/bin/env python
 """NN_<name>.py — <one-line paper claim this script supports>.
 
-Paper anchor: §X.Y (<arc name>).
-Inputs:  <prior numbered outputs + cfg.load_*>
-Outputs: results/<name>.csv, results/<name>.json
-Runtime: <CPU/GPU>, ~<minutes>
+Paper anchor: §<Section> (<arc name>).
+Inputs:  <input artifact path(s)>
+Outputs: figures/<name>.{pdf,png}, results/<name>.csv [, results/<name>.json]
+Runtime: CPU, ~<seconds>
 """
-# Default § anchors when the prompt doesn't specify:
-#   data prep / setup scripts   → §Methods
-#   headline-result scripts     → §Results
-#   diagnostic / ablation       → §Experiments
-#   sweeps + supplementary      → §Appendix
-# Override in the script's docstring with the real anchor once
-# paper/main.tex is structured.
+
+from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-
-from <module>.api import run
+import matplotlib.pyplot as plt
 
 import _config as cfg
 
+CACHE_PATH = cfg.EXPERIMENTS_DIR / "notebooks" / "data" / "<artifact>.npz"
 
-def main():
-    # 1. Load via cfg
-    # 2. Call run() per (dataset, algorithm, ...) — no wrappers
-    # 3. Aggregate → DataFrame
-    # 4. cfg.save_csv / cfg.save_result
+
+def main(smoke: bool = False) -> None:
+    # 1. Load cached artifact (no encoder calls).
+    d = np.load(CACHE_PATH, allow_pickle=True)
+
+    # 2. Compute paper claim (AUROC, summary stat, panel layout, …).
     ...
+
+    # 3. Save figure + results via cfg helpers.
+    cfg.save_figure("<name>", fig)
+    cfg.save_csv("<name>", df)
+
+    # 4. (Headline scripts only) anchor-assert against the manifest.
+    if not smoke:
+        anchor = json.loads(MANIFEST_PATH.read_text())["..."]
+        if abs(computed - anchor) > TOL:
+            raise SystemExit(f"drift: got {computed}, expects {anchor}")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--smoke", action="store_true",
+                   help="fast variant (smaller bootstrap / skip anchor)")
+    args = p.parse_args()
+    main(smoke=args.smoke)
 ```
 
 ### Forbidden
 
-- Wrapping `run()` in a helper function.
-- Re-implementing primitives the tool already provides.
-- `argparse` for anything except `--smoke` (CI flag).
+- Calling the encoder inline. Encoding happens upstream (scripts/ or
+  notebook S2/S3 cells); analysis scripts read the cache.
+- Re-implementing scoring rules. Use `vep_utils.compute_*` (notebook
+  scope) or `manylatents.dogma.vep.compute_*` (library scope). If
+  you need a new scorer, add it to one of those modules first.
 - Path constants inline — use `cfg.*`.
 - Cross-script imports. Communicate through files in `results/`.
 
 ### Required
 
-- Module docstring naming paper anchor + inputs/outputs/runtime.
+- Module docstring naming paper anchor + inputs + outputs + runtime.
 - Only project-local import is `import _config as cfg`.
-- Output filenames match the script's number prefix.
-- A `--smoke` flag that runs in <60s on CPU. CI runs this.
+- Output filenames match the script's number prefix (e.g.
+  `02_llr_distribution.py` → `02_llr_distribution.{pdf,png,csv,json}`
+  *or* the conventional unnumbered stem like `llr_distribution_500`
+  when the artifact is referenced elsewhere by name).
+- A `--smoke` flag for a fast variant — typically a smaller bootstrap
+  count + skip the anchor assertion. Runs in <30 s on CPU.
+- If the script regenerates a number the paper or manifest cites,
+  add an anchor-assertion against the manifest in non-smoke mode.
+  Document the tolerance.
 
 ## `_config.py`
 
-Single source of truth for paths, datasets, and I/O. Never duplicate across scripts.
+Single source of truth for paths and I/O helpers. Never duplicate
+across scripts. Current surface:
 
 ```python
 EXPERIMENTS_DIR = Path(__file__).resolve().parent.parent
+PROJECT_ROOT    = EXPERIMENTS_DIR.parent
 ANALYSIS_DIR    = EXPERIMENTS_DIR / "analysis"
 RESULTS_DIR     = ANALYSIS_DIR / "results"
 FIGURES_DIR     = ANALYSIS_DIR / "figures"
+EMBEDDINGS_DIR  = ANALYSIS_DIR / "embeddings"
 
-DATASETS   = { ... }   # name → {pca: ..., label_key: ...}
-ALGORITHMS = [...]
-K_SWEEP    = [...]
-
-def load_pca(dataset: str): ...
-def load_labels(dataset: str): ...
-def save_csv(name: str, df): ...
-def save_result(name: str, data): ...
-def load_result(name: str): ...
+def latest_hydra_run(experiment_name: str) -> Path: ...
+def load_encoded(experiment_name: str) -> (np.ndarray, pd.DataFrame): ...
+def save_csv(name: str, df: pd.DataFrame) -> Path: ...
+def save_figure(name: str, fig, formats=("pdf", "png")) -> list[Path]: ...
 ```
 
-When a constant or helper shows up in two scripts, that's the signal it belongs in `_config.py`.
+When a constant or helper shows up in two scripts, that's the signal it
+belongs in `_config.py`.
 
 ## Running scripts
 
-```bash
-# From the tool's venv (so the tool is importable)
-cd experiments/tools/<tool>
-.venv/bin/python3 ../../analysis/03_<name>.py
-.venv/bin/python3 ../../analysis/03_<name>.py --smoke
-```
-
-Long jobs go through your cluster submitter, never raw `sbatch --wrap`.
-
-Hydra sweeps (different surface — these launch the tool's CLI, not numbered scripts):
+Two venvs cover everything; pick by what the script imports:
 
 ```bash
-.venv/bin/python3 -m <module>.main --config-path=../../configs/<tool> \
-  -m experiment=<name> cluster=<profile>
+# Default — uses notebook-scope deps (HF transformers, no fair-esm).
+# Covers 01_resolution_panels.py, 02_llr_distribution.py, and anything
+# else that only reads caches.
+experiments/notebooks/.venv/bin/python experiments/analysis/02_<name>.py
+experiments/notebooks/.venv/bin/python experiments/analysis/02_<name>.py --smoke
+
+# Submodule venv — when the script needs library-scope encoders
+# (fair-esm via `manylatents.dogma.encoders.ESMEncoder`) or the full
+# Hydra entrypoint. 00_demo_umap.py + Hydra encode launches go here.
+experiments/tools/manylatents-omics/.venv/bin/python experiments/analysis/00_demo_umap.py
 ```
+
+Hydra sweeps (different surface — these launch the tool's CLI, not
+numbered scripts):
+
+```bash
+experiments/tools/manylatents-omics/.venv/bin/python -m manylatents.main \
+    --config-path=$(pwd)/experiments/configs/manylatents-omics \
+    experiment=<name> [cluster=<profile> launcher=<profile>_launcher]
+```
+
+Long jobs go through a SLURM submitter (via the `submitit_slurm`
+launcher or the dispatcher skill — see root `CLAUDE.md` §workshop-demo
+Phase 2), never raw `sbatch --wrap`.
 
 ## EXPERIMENT_LOG.md
 
 Append-only chronicle. One entry per non-trivial run:
 
 ```markdown
-## YYYY-MM-DD — NN_<name> <smoke|run>
+## YYYY-MM-DD — <script-or-experiment> <smoke|run>
 
-- **Pin:** <tool> commit `<sha>`, version `x.y.z`
-- **Cmd:** `.venv/bin/python3 ../../analysis/NN_<name>.py [...]`
-- **Output:** `results/<name>.csv` (N rows)
-- **Notes:** <what you actually learned>
+- **Pin:** manylatents-omics `<sha>` (branch `<branch>`); manylatents
+  `x.y.z`; relevant other libs.
+- **Cmd:** `experiments/notebooks/.venv/bin/python ../../analysis/NN_<name>.py`
+- **Output:** `figures/<name>.{pdf,png}`, `results/<name>.csv` (N rows)
+- **Numbers:** AUROC, CI, anchor match
+- **Notes:** what you actually learned. Don't auto-generate.
 ```
-
-The point of the log is the human-readable note. Don't auto-generate.
 
 ## PROVENANCE.md
 
-Figure → script → CSV mapping. Updated whenever a figure or its inputs change:
+Figure → script → input mapping. Updated whenever a figure or its
+inputs change:
 
 ```markdown
-## Figure N (§X.Y)
+## <Figure name> (slide / §section)
 
-- Script: `analysis/NN_figures.py::figure_<name>()`
-- Inputs: `results/<name>.csv`
-- Producing script: `analysis/NN_<name>.py`
-- Generated: YYYY-MM-DD against <tool> `<sha>`
+- Script: `analysis/NN_<name>.py`
+- Inputs: `notebooks/data/<artifact>.npz` (sha256 `…`)
+- Outputs: `analysis/figures/<name>.{pdf,png}`, `analysis/results/<name>.csv`
+- Generated: YYYY-MM-DD against manylatents-omics `<sha>`
 ```
 
 ## Pre-PR checklist for numbered scripts
 
-- [ ] Module docstring names paper anchor + inputs/outputs/runtime.
+- [ ] Module docstring names paper anchor + inputs + outputs + runtime.
 - [ ] Only project-local import is `import _config as cfg`.
-- [ ] All `run()` calls are direct.
-- [ ] `--smoke` flag runs in <60s on CPU.
-- [ ] Outputs land in `cfg.RESULTS_DIR` / `cfg.FIGURES_DIR`.
+- [ ] No encoder calls in the script (encoding lives upstream).
+- [ ] `--smoke` flag exists and runs in <30 s on CPU.
+- [ ] Outputs land in `cfg.RESULTS_DIR` / `cfg.FIGURES_DIR` via
+      `cfg.save_csv` / `cfg.save_figure`.
+- [ ] If the script regenerates a paper-cited number, an anchor
+      assertion against the manifest runs in non-smoke mode.
 - [ ] `EXPERIMENT_LOG.md` entry added for any shipped data.
 - [ ] `PROVENANCE.md` updated if a figure changed.
