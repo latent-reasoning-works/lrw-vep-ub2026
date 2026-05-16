@@ -21,7 +21,7 @@ authors = [
 #   - scikit-learn <1.3 deprecations the notebook hits
 #   - seaborn 0.12.x kdeplot API differences
 dependencies = [
-    "transformers>=4.45,<5",
+    "transformers==4.50.3",  # last known-good for ESM (issue #37361 broke 4.51; #39405 broke 4.53)
     "torch>=2.0",
     "numpy>=2.0,<3",
     "scipy>=1.13",
