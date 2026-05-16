@@ -15,7 +15,7 @@ s2-encode, s3-score-loop, and s3-auroc. Expected values come from
 
 If a check fails, you'll get a tolerance report telling you which
 value diverged and by how much. Common causes:
-  - Wrong transformers version (see requirements-workshop.txt)
+  - Wrong fair-esm version (see requirements-workshop.txt)
   - CPU vs GPU/MPS numerical drift (LLR tolerance is generous; AUROC
     should match to 4 decimals on any device)
   - Stale cache (delete data/s3_scores.npz and rerun --full)
@@ -88,8 +88,9 @@ def _load_manifest() -> dict:
 
 def stage_env_and_schema(manifest: dict) -> dict:
     print(_yellow("\n== Stage 1: env + schema =="))
-    import torch, transformers
-    print(f"  torch={torch.__version__}, transformers={transformers.__version__}")
+    import torch, esm
+    esm_ver = getattr(esm, "__version__", "(unknown)")
+    print(f"  torch={torch.__version__}, fair-esm={esm_ver}")
     print(f"  detected device: {_detect_device()}")
 
     df = pd.read_csv(THIS_DIR / "data" / "workshop_set.tsv", sep="\t")
@@ -122,7 +123,7 @@ def stage_demo_pair(state: dict, manifest: dict) -> dict:
     t0 = time.time()
     encoder = ESM1bEncoder(device=device)
     print(f"  loaded in {time.time() - t0:.1f}s")
-    wt_tok = {aa: encoder.tokenizer.convert_tokens_to_ids(aa) for aa in "ACDEFGHIKLMNPQRSTVWY"}
+    wt_tok = {aa: encoder.tok_id(aa) for aa in "ACDEFGHIKLMNPQRSTVWY"}
 
     # Score both variants
     llrs = {}
@@ -293,7 +294,7 @@ def main():
     else:
         print(_red("== VALIDATION FAILED =="))
         print("See per-check FAIL lines above. Common causes:")
-        print("  - Wrong transformers version (pip install -r requirements-workshop.txt)")
+        print("  - Wrong fair-esm version (pip install -r requirements-workshop.txt)")
         print("  - Stale cache (delete data/s3_scores.npz, rerun --full)")
         print("  - Cross-device numerical drift (LLR_TOL=0.05 is generous, but huge")
         print("    differences mean the encoder weights or tokenizer changed)")

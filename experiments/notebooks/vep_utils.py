@@ -155,35 +155,44 @@ def truncate_around_mutation(
 
 
 class ESM1bEncoder:
-    """Thin wrapper around ESM-1b via HuggingFace transformers.
+    """Thin wrapper around ESM-1b via fair-esm (Facebook's official ESM library).
 
-    Loads facebook/esm1b_t33_650M_UR50S, which is fully open (no auth required).
+    fair-esm is the library Brandes et al. 2023 used to produce the ESM-1b
+    zero-shot AUROC 0.905 anchor on ClinVar. We use it here too — single
+    `pip install fair-esm`, no transformers dependency chain, no tokenizers
+    version pin, no numpy.strings ABI fights with Colab's pre-installed
+    scientific stack. The model checkpoint is the same one HuggingFace
+    serves (`esm1b_t33_650M_UR50S`); fair-esm fetches it from S3 on first
+    load (~1.4 GB, cached at ~/.cache/torch/hub/checkpoints/).
+
     Returns per-sequence mean-pooled embeddings and per-residue logits.
     """
 
-    MODEL_NAME = "facebook/esm1b_t33_650M_UR50S"
+    MODEL_NAME = "esm1b_t33_650M_UR50S"
     EMBED_DIM = 1280
     # Max residue count the encoder can ingest. ESM-1b's position-embedding
-    # table has 1024 slots, and the HF tokenizer prepends BOS and appends EOS,
+    # table has 1024 slots, and the alphabet prepends BOS and appends EOS,
     # so a sequence of L residues becomes L+2 tokens. L must therefore be
     # <= 1022. All call sites (validate_sequence(max_length=MAX_LEN),
     # truncate_around_mutation(window=MAX_LEN)) treat MAX_LEN as residues.
     MAX_LEN = 1022
+    REPR_LAYER = 33  # final layer (ESM-1b has 33 transformer layers)
 
     def __init__(self, device: str | None = None) -> None:
-        from transformers import AutoModelForMaskedLM, AutoTokenizer
+        from esm import pretrained
 
         if device is None:
-            device = "cuda" if torch.cuda.is_available() else "cpu"
+            if torch.cuda.is_available():
+                device = "cuda"
+            elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+                device = "mps"
+            else:
+                device = "cpu"
         self.device = device
-        print(f"Loading ESM-1b on {device}... (first load takes ~1 min)")
-        self.tokenizer = AutoTokenizer.from_pretrained(self.MODEL_NAME)
-        self.model = AutoModelForMaskedLM.from_pretrained(
-            self.MODEL_NAME,
-            torch_dtype=torch.float16 if device == "cuda" else torch.float32,
-        )
-        self.model.to(device)
-        self.model.eval()
+        print(f"Loading ESM-1b on {device}... (first load downloads ~1.4 GB)")
+        self.model, self.alphabet = pretrained.load_model_and_alphabet(self.MODEL_NAME)
+        self.model = self.model.to(device).eval()
+        self._batch_converter = self.alphabet.get_batch_converter()
         print("ESM-1b loaded.")
 
     @torch.no_grad()
@@ -198,18 +207,30 @@ class ESM1bEncoder:
             1-indexed position p, use logits[p, ...].
         """
         sequence = validate_sequence(sequence, max_length=self.MAX_LEN)
-        inputs = self.tokenizer(sequence, return_tensors="pt").to(self.device)
-        outputs = self.model(**inputs, output_hidden_states=True)
+        _, _, tokens = self._batch_converter([("_", sequence)])
+        tokens = tokens.to(self.device)
 
-        # Hidden states from final layer, skip BOS/EOS for pooling
-        hidden = outputs.hidden_states[-1][0]  # (seq_len + 2, 1280)
+        outputs = self.model(tokens, repr_layers=[self.REPR_LAYER], return_contacts=False)
+
+        # Last-layer hidden states, skip BOS/EOS for pooling.
+        hidden = outputs["representations"][self.REPR_LAYER][0]  # (seq_len + 2, 1280)
         embedding = hidden[1:-1].mean(dim=0).float().cpu().numpy()
-
-        logits = outputs.logits[0].float().cpu().numpy()  # (seq_len + 2, vocab)
+        logits = outputs["logits"][0].float().cpu().numpy()  # (seq_len + 2, vocab)
 
         if np.isnan(embedding).any():
             raise RuntimeError("Embedding contains NaN — possible OOM, try a shorter sequence")
         return embedding, logits
+
+    def tok_id(self, aa: str) -> int:
+        """Return the fair-esm alphabet index for a single amino-acid letter.
+
+        Compute LLR by indexing into logits row `mutation.position` with the
+        tok_id of the wild-type and mutant residues. Token IDs are not
+        portable across libraries (fair-esm's alphabet ordering differs from
+        HuggingFace's tokenizer); always pair tok_id() output with logits
+        produced by the SAME encoder instance.
+        """
+        return self.alphabet.get_idx(aa)
 
 
 def encode_variant(

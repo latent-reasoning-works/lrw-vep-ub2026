@@ -158,13 +158,8 @@ def _score_gene(
 
 
 def _tok_id(encoder, aa: str) -> int:
-    """Fallback for encoder backends that don't expose a `.tok_id` method."""
-    try:
-        return encoder.tokenizer.convert_tokens_to_ids(aa)
-    except AttributeError:
-        raise AttributeError(
-            "encoder needs either a `.tok_id(aa)` method or a HF-style tokenizer"
-        )
+    """Compat shim — modern ESM1bEncoder exposes `.tok_id(aa)` directly."""
+    return encoder.tok_id(aa)
 
 
 def main(n_per_class: int = 5, device: str | None = None) -> int:

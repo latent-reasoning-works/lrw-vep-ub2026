@@ -57,10 +57,7 @@ def main() -> int:
     encoder = ESM1bEncoder(device="mps")
     print(f"[INFO] encoder warm in {time.time() - t0:.1f}s")
 
-    wt_token_ids = {
-        aa: encoder.tokenizer.convert_tokens_to_ids(aa)
-        for aa in "ACDEFGHIKLMNPQRSTVWY"
-    }
+    wt_token_ids = {aa: encoder.tok_id(aa) for aa in "ACDEFGHIKLMNPQRSTVWY"}
 
     results = {}
     for tag in ["pathogenic", "benign"]:

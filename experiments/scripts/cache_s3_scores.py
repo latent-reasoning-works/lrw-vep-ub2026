@@ -97,9 +97,7 @@ def main() -> int:
     encoder = ESM1bEncoder(device=args.device)
     print(f"[INFO] encoder loaded in {time.time() - t0:.1f}s")
 
-    wt_token_ids = {
-        aa: encoder.tokenizer.convert_tokens_to_ids(aa) for aa in "ACDEFGHIKLMNPQRSTVWY"
-    }
+    wt_token_ids = {aa: encoder.tok_id(aa) for aa in "ACDEFGHIKLMNPQRSTVWY"}
 
     rows: list[tuple[str, str, int]] = []
     dn: list[float] = []
