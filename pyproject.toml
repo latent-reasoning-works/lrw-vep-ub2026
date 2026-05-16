@@ -21,7 +21,7 @@ authors = [
 #   - scikit-learn <1.3 deprecations the notebook hits
 #   - seaborn 0.12.x kdeplot API differences
 dependencies = [
-    "transformers>=4.45,<6",
+    "transformers>=4.45,<5",
     "torch>=2.0",
     "numpy>=2.0,<3",
     "scipy>=1.13",
